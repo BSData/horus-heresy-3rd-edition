@@ -2146,12 +2146,6 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="bc44-6839-48e4-96b3"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Chainsword" hidden="false" id="3ba3-3239-49ce-b26e" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b9b8-4346-4739-9b18"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c491-b1be-4923-9115"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Frag grenades" hidden="false" id="c1bf-c349-44a7-b3ab" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b2e-9a58-4a74-a63f"/>
@@ -2219,6 +2213,27 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
                   </modifierGroups>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee Weapon" id="23fc-b2e9-cc11-3d24" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="3ba3-3239-49ce-b26e" type="selectionEntry" targetId="78f4-4967-2896-c3a5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c491-b1be-4923-9115"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fenrisian axe" hidden="false" id="c927-3e83-8212-c4c1" type="selectionEntry" targetId="278c-bdcf-2780-d9cf">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8a6-6bab-0674-ae99"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="49e4-6ba3-8852-7c9b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf36-587a-4acc-11f2"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -2327,7 +2342,7 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6285-cd50-4e7d-bc7a"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Frost sword" hidden="false" id="3387-baf0-4cd6-8d77" type="selectionEntry" targetId="82d4-949f-2713-d05b" sortIndex="2">
+                <entryLink import="true" name="Frost sword" hidden="false" id="3387-baf0-4cd6-8d77" type="selectionEntry" targetId="82d4-949f-2713-d05b" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -2335,7 +2350,7 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bee-46fc-4bec-8520"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Frost axe" hidden="false" id="df28-53f5-47b9-92d2" type="selectionEntry" targetId="1deb-afd8-f63d-0fe5" sortIndex="3">
+                <entryLink import="true" name="Frost axe" hidden="false" id="df28-53f5-47b9-92d2" type="selectionEntry" targetId="1deb-afd8-f63d-0fe5" sortIndex="4">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -2343,13 +2358,21 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef07-84f8-4d4c-ae87"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Frost claw" hidden="false" id="07df-4ac1-47a2-9fe4" type="selectionEntry" targetId="e14f-7600-8fdd-65ce" sortIndex="4">
+                <entryLink import="true" name="Frost claw" hidden="false" id="07df-4ac1-47a2-9fe4" type="selectionEntry" targetId="e14f-7600-8fdd-65ce" sortIndex="5">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7c5-953d-419f-874f"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fenrisian axe" hidden="false" id="d138-2bae-2e89-a732" type="selectionEntry" targetId="278c-bdcf-2780-d9cf" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2206-e613-7931-4d2b"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
