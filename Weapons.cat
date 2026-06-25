@@ -9092,6 +9092,36 @@
         <infoLink name="Subterranean" id="5e74-c416-a282-9a6d" hidden="false" type="rule" targetId="4cd3-8bb8-3e73-42b4"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Purge Incinerator" hidden="false" id="7c7e-78be-68e5-2e67">
+      <profiles>
+        <profile name="Purge Incinerator" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="212d-9b33-a45b-6f24">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Breaching (6+), Panic (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Template" id="3b58-024c-975b-89db" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+        <infoLink name="Breaching (X)" id="3ee5-9140-03e3-2bff" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="replace" value="+6" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Panic (X)" id="fdde-da93-c4ca-1b12" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Force Weapon" id="89e6-2502-2486-71f4" hidden="false" defaultSelectionEntryId="970d-7af0-0052-e25c">
