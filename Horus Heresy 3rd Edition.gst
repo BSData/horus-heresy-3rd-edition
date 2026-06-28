@@ -30496,7 +30496,7 @@
     </forceEntry>
     <forceEntry name="Zone Mortalis" id="0100-417d-f496-971d" hidden="false" childForcesLabel="Detachments">
       <forceEntries>
-        <forceEntry name="Primary - The Strike Force" id="33cf-087a-39ee-2532" hidden="true">
+        <forceEntry name="Primary - Strike Force" id="33cf-087a-39ee-2532" hidden="true">
           <categoryLinks>
             <categoryLink name="High Command" hidden="false" id="9198-5509-41a5-9bc1" targetId="d9a6-9b5f-b18a-4d63">
               <constraints>
@@ -31508,7 +31508,7 @@
             </modifier>
           </modifiers>
         </forceEntry>
-        <forceEntry name="Primary - The Bulkwark" id="a4bf-9629-2065-4885" hidden="true">
+        <forceEntry name="Primary - Bulkwark" id="a4bf-9629-2065-4885" hidden="true">
           <categoryLinks>
             <categoryLink name="Prime Command - Centurions Only" hidden="false" id="01c9-aad6-ef56-16c3" targetId="afc8-c83d-00a6-936e">
               <modifiers>
@@ -32515,7 +32515,7 @@
             </modifier>
           </modifiers>
         </forceEntry>
-        <forceEntry name="Primary - The Linebreaker" id="e46a-e7a0-2dfe-66cf" hidden="true">
+        <forceEntry name="Primary - Linebreaker" id="e46a-e7a0-2dfe-66cf" hidden="true">
           <categoryLinks>
             <categoryLink name="Prime Command - Centurions Only" hidden="false" id="87a1-06c2-e0fb-ddbf" targetId="afc8-c83d-00a6-936e">
               <modifiers>
