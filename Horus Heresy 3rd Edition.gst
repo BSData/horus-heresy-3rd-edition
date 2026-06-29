@@ -35490,7 +35490,7 @@ A Doorway can be the target if a Charge and can be Engaged and attacked during t
         <categoryLink targetId="abfa-86ab-1726-077a" id="7c4d-e76b-dfd7-2543" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Zone Mortalis Specific" hidden="false" id="ac9b-af12-a761-c3de" type="selectionEntry" targetId="8c20-d283-0a02-c2b6">
+    <entryLink import="true" name="Zone Mortalis" hidden="false" id="ac9b-af12-a761-c3de" type="selectionEntry" targetId="8c20-d283-0a02-c2b6">
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="5002-76a5-de89-5e7d" primary="true" name="Army Configuration"/>
       </categoryLinks>
