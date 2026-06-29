@@ -33879,6 +33879,7 @@
         <constraint type="max" value="0" field="3e8e-05ee-be52-12d6" scope="self" shared="true" id="5b70-8bd4-2c8a-9224" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="0" field="159d-855c-533d-f592" scope="self" shared="true" id="c248-8789-89ae-e3fb" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="cc17-bc8c-7165-5b78" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="37ff-b26e-18a9-7f57" scope="roster" shared="true" id="3fd0-ac62-baa7-faa4" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <forceEntryLinks>
         <forceEntryLink name="Auxiliary - Armoured Fist" id="4eae-3d91-d822-85b4" hidden="true" targetId="cc51-fdce-8a34-dbcf" type="forceEntry">
@@ -34221,6 +34222,16 @@
           </repeats>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink name="Allegiance" hidden="false" id="9a15-b263-9757-a4c1" targetId="c408-52f1-b632-4c82">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d96e-17f0-157e-62dc" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b14-687f-4ed6-e505" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Open Beta Release" hidden="false" id="e455-e7a9-705a-4c4a" targetId="c5ac-45c2-a8a9-e32c"/>
+        <categoryLink name="Army Configuration" hidden="false" id="ddec-c4d3-14d9-29ba" targetId="abfa-86ab-1726-077a"/>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
@@ -34773,25 +34784,6 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fd4-dabb-4067-dea3"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-              <conditions>
-                <condition type="instanceOf" value="1" field="forces" scope="force" childId="3be1-161a-ee6d-24e0" shared="true" includeChildSelections="true" childName="Apex - Armoured Command Squadron Detachment"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Allegiance" id="9fa8-cbae-ef5e-4b7c" hidden="false" defaultSelectionEntryId="none">
       <selectionEntries>
@@ -34977,6 +34969,21 @@
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Advanced Reactions" id="a6ea-f57c-7bca-f91b" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Zone Mortalis Advanced Reactions" hidden="false" id="210d-9042-89be-0d53" type="selectionEntry" targetId="3ffa-9d93-cc2f-b6c4"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Special Rules" id="7276-2485-cf2e-b68f" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Zone Mortalis Special Rules" hidden="false" id="f4fc-4333-7894-6c2a" type="selectionEntry" targetId="a7b6-aa43-6e89-1a4e"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Terrain" id="cde6-2c4b-1fce-6c0c" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Zone Mortalis Terrain" hidden="false" id="8899-257f-4776-40ed" type="selectionEntry" targetId="a017-5adc-fa89-dd16"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
@@ -35259,11 +35266,233 @@ Note that The Paragon of Malevolence Prime Advantage may be selected if the Unit
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Zone Mortalis" hidden="true" id="8c20-d283-0a02-c2b6">
+      <entryLinks>
+        <entryLink import="true" name="Advanced Reactions" hidden="false" id="8ebb-fc6b-5dcd-0aee" type="selectionEntryGroup" targetId="a6ea-f57c-7bca-f91b"/>
+        <entryLink import="true" name="Special Rules" hidden="false" id="d1cc-df97-0c20-1e4f" type="selectionEntryGroup" targetId="7276-2485-cf2e-b68f"/>
+        <entryLink import="true" name="Terrain" hidden="false" id="9182-ff12-a3b0-2eb4" type="selectionEntryGroup" targetId="cde6-2c4b-1fce-6c0c"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6568-6fae-0ae8-f565"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a075-5df4-da2b-79af"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true" childId="0100-417d-f496-971d" childName="Zone Mortalis"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Zone Mortalis Advanced Reactions" hidden="false" id="3ffa-9d93-cc2f-b6c4">
+      <profiles>
+        <profile name="Take Cover" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="b8f5-5dcd-ee1b-5017">
+          <characteristics>
+            <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Advanced Reaction allows Models to attempt to move out of the line of enemy fire.</characteristic>
+            <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare the Take Cover Reaction in the Shooting Phase, during Step 1 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.</characteristic>
+            <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Take Cover Advanced Reaction - this cost paid as soon as the declaration is made.</characteristic>
+            <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Shooting Attack triggered the Reaction. The Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Reaction.</characteristic>
+            <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Take Cover Advanced Reaction has been declared, the Reactive Player must roll a Dice. Each Model in the Reacting Unit may be moved up to a distance in inches equal to the result of the Dice roll.
+2. Once the Reacting Unit has been moved, all Models in the Unit gain the Shrouded (6+) Special Rule until the Shooting Attack that triggered this Reaction is completely resolved.
+3. The Active Player must resolve the remaining steps, resuming from Step 2, Check Target, of the Shooting Attack that triggered this Reaction.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bypass Cogitator" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="1d42-22da-4e5f-9879">
+          <characteristics>
+            <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Advanced Reaction allows Models with the Battlesmith (X) Special Rule to change the State of Doorways on the Zone Mortalis Battlefield.</characteristic>
+            <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Bypass Cogitator Advanced Reaction in Step 2 of the Move Sub-Phase process if an enemy Unit ends a move more than 8&quot; away from a friendly Model with the Battlesmith (X) Special Rule.</characteristic>
+            <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Bypass Cogitator Advanced Reaction - this cost paid as soon as the declaration is made.</characteristic>
+            <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose move triggered the Reaction. Once the cost has been paid, the Reactive Player must select one Unit under their control that has at least one Model with the Battlesmith (X) Special Rule, that has no Models within 8&quot; of any Enemy Models - that Unit is the Reacting Unit.</characteristic>
+            <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Bypass Cogitator Advanced Reaction has been declared, the Active Player must completely resolve the Target Unit&apos;s movement.
+2. Once the Target Unit has finished its move, the Reactive Player may select a number of Doorways up to the value of the Battlesmith (X) Special Rule that any one Model in the Reacting Unit has.
+3. The Reactive Player must make an Intelligence Check for each selected Doorway in an order selected by them, using the Characteristic of the Model selected in Stage 2 of this process. If the Intelligence Check is Passed, the State of the selected Doorway must be changed, either from Open to Closed, or Closed to Open, as applicable. Resolve the effects of the Doorway&apos;s State change before moving on to the next selected Doorway. If the Intelligence Check is failed, nothing happens and the Reactive Player must make a Check for the next selected Doorway, or move to Sgtep 4 of this process if all selected Doorways have been resolved.
+4. Once the Reacting Player has resolved all selected Doorways, the Movement Phase continues as normal.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b218-bb3c-e592-5c2c"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85b7-545f-e187-857b"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Zone Mortalis Special Rules" hidden="false" id="a7b6-aa43-6e89-1a4e">
+      <rules>
+        <rule name="Barrage Weapons in Zone Mortalis" id="9029-fd5b-9c4d-aa00" hidden="false">
+          <description>&quot;Weapons with the Barrage (X) Special Rule may not make attacks without Line of Sight&quot;
+
+
+Weapons with the Barrage (X) Special Rule cannot be used to make Shooting Attacks targeting Units to which they do not have Line of Sight, but may make Shooting Attacks as normal targeting Units to which they do have Line of Sight.</description>
+        </rule>
+        <rule name="Firestorm &amp; Shrapnel" id="4eaf-bd35-f9d0-b10b" hidden="false">
+          <description>&quot;The Scatter distance of Blasts is limited by Walls and Doorways.&quot;
+
+
+Blast Markers cannot scatter through Wall Terrain or Doorways in the Closed State. If a Scatter roll takes a Blast Marker&apos;s centre point into contact with a Wall or Door in a Closed State, the Blast Marker scatters only as far as the point where its centre contacts the edge of the Wall or Doorway in the Closed State. Resolve the Weapon&apos;s effect from that spot.
+
+
+If a line cannot be drawn between any point of the Base of a Model hit by a Blast Marker or Template and the centre of the Blast Marker (or any point of the Base of the Model making the attack in the case of a Weapon that has the Template Special Rule) that does not pass through a Wall or Doorway in the Closed State, then that Model is not hit by the attack.</description>
+        </rule>
+        <rule name="No Fly Zone" id="114f-c1d9-6ff5-dcdb" hidden="false">
+          <description>&quot;Flyers cannot be used in Zone Mortalis Battles.&quot;
+
+
+Models with the Flyer Sub-Type may not be used in Zone Mortalis Missions. If either Player has included a Model with the Flyer Sub-Type in their Army Roster, the Model may not be Deployed onto the Battlefield at any point during the Battle, but is not counted as having been Removed as a Casualty or otherwise destroyed for the purpose of resolving the Mission.</description>
+        </rule>
+        <rule name="Blind Panic" id="f06f-7f64-034b-45a9" hidden="false">
+          <description>&quot;Routed Units can cause other friendly Pinned, Stunned or Suppressed Units to become Routed when moving past them.&quot;
+
+
+If any Model from a Unit that is Falling Back ends its move or passes within 2&quot; of any Models from other friendly Units that are under the effect of a Tactical Status that is not the Routed Status, then a Leadership Check must be made for each of those Units in the following Morale Sub-Phase. If the Check made for any of those Units is failed, all Models in that Unit gain the Routed Status.</description>
+        </rule>
+        <rule name="Confined Space (X)" id="54a7-8aad-d346-0386" hidden="false">
+          <alias>Confined Space</alias>
+          <description>&quot;Confined Spaces are Impassable to Models with the Bulky (X) Special Rule.&quot;
+
+
+Specific rooms, corridors or sections of the Zone Mortalis Battlefield are defined as having different versions of the Confined Space (X) Special Rule, according to the Mission being used. Players should take note of how the Confined Space (X) Special Rule is applied in the Mission they intend to play when selecting their Army.
+
+
+Each area defined as having the Confined Space (X) Special Rule (sometimes referred to as &quot;Confined Spaces&quot;) is counted as Impassable Terrain for all Models with the Vehicle Type that have a Base Hull Points Characteristic of 3 or greater or Models with a variant of the Bulky (X) Special Rule that is equal to or greater than the variant of the Confined Space (X) Special Rule. For example, an area defined as having Confined Space (4) is Impassable Terrain for all Models with Bulky (4) and greater.
+
+
+Note that Models with the Antigrav Sub-Type that have the Bulky (X) Special Rule may not be moved over or through a Confined Space that counts as Impassable Terrain for that Model.
+
+
+Confined Spaces otherwise count as Open Terrain and as such do not provide a Cover Save, unless other Area Terrain is also defined in the same area.</description>
+        </rule>
+        <rule name="Doorway (X)" id="e88e-daf4-7163-3f05" hidden="false">
+          <description>&quot;Doorways may slow the movement of Models if those Models have the Bulky (X) Special Rule.&quot;
+
+
+A Model may make a Set-up Move or Charge Move through an area of Doorway Terrain (sometimes referred to as a &apos;Doorway&apos;) if the Model has a variant of the Bulky (X) Special Rule, of which the value of X is greater than the value of X in teh Doorway (X) Special Rule assigned to that Doorway. Otherwise, a Doorway does not reduce the distance of Set-up Moves or Charge Moves. Each Doorway counts as Impassable Terrain to Models with the Vehicle Type, regardless of the Doorway&apos;s State.
+
+
+Additionally, if a Unit starts a Move outside any area of Doorway Terrain, but includes any Models with the Bulky (X) Special Rule that could potentially enter an area of Doorway Terrain, the Player must declare if they want their Unit to cross through any Area of Doorway Terrain as part of their Move.
+
+
+If the Controlling Player chooses not to cross any area of Doorway Terrain the Unit moves as normal, but no Models in the Unit may cross any area of Doorway Terrain. If the Controlling Player chooses for any Model with the Bulky (X) Special Rule in the Unit to cross any are of Doorway Terrain, then the Model with the Bulky (X) Special Rule&apos;s Movement Characteristic is reduced by the amount by which its variant of the Doorway (X) Special Rule exceeds that variant of the Doorway (X) Special Rule, for the duration of that Movement Phase. For example, a Model with the Bulky (6) Special Rule that is moved through a Doorway with the Doorway (4) Special Rule, would have its Movement Characteristic reduced by 2&quot;.
+
+
+If the application of this modifier would leave the Unit unable to reach an area of Doorway Terrain it is still applied, even if the Controlling Player alters the Unit&apos;s movement and no longer intends for it to cross the Doorway.
+
+
+Models with the Bulky (X) variant may move normally through a Doorway if the value of Vulky (X) is equal to or less than the value of the Doorway (X) Special Rule assigned to the Doorway they intend to Move through.
+
+
+If the variant of the Bulky (X) Special Rule that a Model has is greater than double the number that is X in the variant of the Doorway (X) Special Rule, that item of Terrain counts as Impassable Terrain to that Model.
+
+
+**STATE**
+A Doorway van either be Closed or Open. Unless stated otherwise in the Mission Rules, all Doorways begin the Battle in the Closed State.
+
+
+**Open**: Doorways in the Open State do not block Line of Sight and Models may Move through the Doorway in accordance with the Doorway (X) Special Rule.
+**Closed**: A Doorway in the Closed State is Impassable Terrain. Models cannot Move or draw Line of Sight through a Doorway in the Closed State.
+
+
+**OPERATING DOORWAYS**
+During the Movement Phase, the Controlling Player of a Unit that has started or ended a Move with at least one Model in Base Contact with a Doorway may attempt to change its State, either opening a Closed Doorway or closing an Open Doorway, by making an Intelligence Check using the Characteristics of any single Model that is within 2&quot; of the Doorway. If the Intelligence Check is successful, the State of the Doorway is immediately changed. If the Intelligence Check is unsuccessful, the State remains unchanged. No more than one Check per Unit may be made for each Dooway during each Player Turn.
+
+
+**CRUSHED**
+If any Model is on a piece of Doorway Terrain when it is changed from the Open State to the Closed State, or this results in one or more Models from any Unit being no longer positioned in Unit Coherency, the Unit the Model is part of , or the Unit that is no longer in Unit Coherency, suffers an immediate hit, with a Strength of 8, an AP of - and a Damage Characteristic of 2. The Doorway Terrain then counts as Open Terrain for the remainder of the Battle and the Doorway Terrain Piece must be removed from the Battlefield if possible.</description>
+        </rule>
+        <rule name="Abyssal Darkness" id="1a3c-0625-b424-dc04" hidden="false">
+          <description>If this Zone Mortalis Mission Special Rule is in effect, no Line of Sight may be drawn through more than 6&quot; of an area (or areas) defined as having the Abyssal Darkness Special Rule.</description>
+        </rule>
+        <rule name="Breach Action" id="5b43-1d79-fb24-4745" hidden="false">
+          <description>During the Reserves Sub-Phase of their first Player Turn, each Player may change the State of D3 Doorways that are within their Deployment Zone from Closed to Open. Doorways that have their State changed in this manner remain open for the duration of the Battle, and their State may not be changed for any reason.</description>
+        </rule>
+        <rule name="Cogitator Terminal" id="9f38-8b99-c1db-5fb5" hidden="false">
+          <description>Any Model that ends its Movement in Base Contact with a Cogitator Terminal may attempt to manipulate it by taking an Interface Test before another Unit is selected to Move, or before the Reactive Player resolves any Reaction that may be triggered by that Movement.
+
+
+To take an Interface Test, roll 2D6 and subtract the result from the current value of the Model&apos;s Intelligence Characteristic before consulting the following table to determine the effect.
+
+
+-2 or less - Malicious Input Detected! - This Interface Test is failed. The Model for which the Interface Check was made suffers three Hits with a Strength of 4, an AP of -, and a Damage of 1. No further Interface Tests may be made at this Cogitator Terminal for the remainder of theBattle.
+-1 - Failed Interface. - This Interface Test is failed. All Doorways on the Battlefield are immediately set to the Closed State and any further Interface Tests taken at this Cogitator Terminal are modified by an additional -2.
+0 - Interfacing... - This Interface Test is failed. There is no effect of this Interface Test, but any further Interface Tests taken at this Cogitator Terminal are modified by an additional -2.
+1 - Access Granted. - This Interface Test is suvccessful. The Controlling Player may select one Doorway that is Closed and change its State to Open.
+2 - Welcome, Adept. - This Interface Test is successful. The Controlling Player may select one Doorway and change its State to any State, and may select one Section of the Battlefield  to gain the Abyssal Darkness Special Rule (or lose that Special Rule if the Section already has it).
+3+ - Debug Protocols Online. - This Interface Test is successful. The Controlling Player may select up to 3 Doorways and change their State to any State, and up to 3 Sections of the Battlefield to gain the Abyssal Darkness Special Rule (or lose that Special Rule if that Section already has it). Additionally, all Interface Tests made by the Controlling Player are modified by +1 until the Player makes a failed Interface Test, and all Interface Tests made by the Opposing Player are modified by -2 until that Player makes a successful Interface Test.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0dfa-4e68-85b2-f201"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="934b-4b73-87c9-81df"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Zone Mortalis Terrain" hidden="false" id="a017-5adc-fa89-dd16">
+      <rules>
+        <rule name="The Ceiling" id="1d76-9672-b07d-ffd4" hidden="false">
+          <description>All of Zone Mortalis Missions detailed within this Journal Tactica assume that there is a ceiling over the Battlefield. This affects the Rules by preventing the use of indirect fire weapons and aircraft but also in conjunction with the Rules for Walls, divides the Battlefield into discrete areas. It is usually impractical to represent the ceiling with Terrain, but it is good practice for both Players to confirm prior to selecting Armies for, and playing any of the Zone Mortalis Missions, that they understand how the ceiling impacts gameplay.</description>
+        </rule>
+        <rule name="Corridors and Chambers" id="0b5c-58e9-973e-16b2" hidden="false">
+          <description>&quot;Players must make Hazard Checks if Models are Moved over 9&quot; through Corridors &amp; Chambers.&quot;
+
+
+Corridors &amp;  Chambers are Open Terrain, as defined on page 235 of the Warhammer: The Horus Heresy - Age of Darkness Rulebook. However, if any Model is moved a distance greater than 9&quot; during any Phase, not including the total distance of a combined Set-up Move and Charge, the Controlling Player of that Model must take a Hazard Test for that Model. To take a Hazard Test, the Controlling Player must roll a Dice. On a result of 1, that Model is immediately Removed as a Casualty. Unless otherwise stated in the Mission Rules, which may designate specific areas of the Battlefield as having variants of the Confined Space (X) Special Rule, all Corridors &amp; Chambers have the Confined Space (10) Special Rule.
+
+
+Note that Area Terrain has the same variant of the Confined Space (X) Special Rule as the area of the Zone Mortalis Battlefield that it is placed in. Any Dangerous Terrain Tests that the Controlling Player of any Models is required to make are made in addition to any Hazard Tests that they are required to make.</description>
+        </rule>
+        <rule name="Walls" id="1d7c-3958-6d65-6599" hidden="false">
+          <description>&quot;Walls block Line of Sight and cannot be moved through or over.&quot;
+
+
+Walls are Impassable Terrain to all Models and no Line of Movement or Line of Sight can be drawn through or over them, including for Models with the Antigrav Sub-Type. Note, Terrain representing broken or incomplete walls or barriers may instead be designated as Barricades.</description>
+        </rule>
+        <rule name="Ladders Stairways and Hatches" id="8c0a-e47c-a576-094d" hidden="false">
+          <description>&quot;These Terrain pieces provide access for Models to move between different levels.&quot;
+
+
+In a Zone Mortalis Battle, Models may only move vertically when in Base Contact with a piece of Terrain designated as Ladder, Stairways &amp; Hatches, Models use the Rules for vertical movement on page 234 of the Warhammer: The Horus Heresy - Age of Darkness Rulebook.</description>
+        </rule>
+        <rule name="Barricades" id="db6d-c9a8-f138-7579" hidden="false">
+          <description>&quot;Models behind a Barricade gain a 5+ Cover Save from Shooting Attacks.&quot;
+
+
+Any Model that is part of a Unit that is the Target of a Shooting Attack gains a 5+ Cover Save if all of the following conditions are met:
+
+
+- The Line of Sight from every Model that is making a Shooting Attack in a set Fire Group, to all Models in the Target Unit, passes through a Barricade.
+- The generated Fire Pool does not contain any Weapons with the Barrage (X) Special Rule.
+- Any Models from the Target Unit are closer to at least one Barricade than Models from the Unit making the Shooting Attack.
+
+
+Models can move through Barricades, and if they do move through such a Barricade, they must reduce the maximum distance that can be moved in that Move by 2&quot; as if it was Difficult Terrain. Barricades do not block Line of Sight drawn through them.</description>
+        </rule>
+        <rule name="Doorways" id="2056-c856-fa48-29ad" hidden="false">
+          <description>&quot;Doorways are bulkheads or openings in Walls, and may be opened and closed during the Battle.&quot;
+
+
+Doorways may be designated in gaps between Walls that are between 2&quot; and 4&quot; in width. Doorways have the Fortification Type so may be targeted by Shooting Attacks and attacked in Combat, and have an Armour Value of 12 on all facings and 3 Hull Points.
+
+
+**Attacking Doorways**
+When determining if a Doorway can be targeted by a Shooting Attack, Charged and fought in Combat, or affected by a Special Rule, treat the Doorway as a Vehicle unless it is specifically stated otherwise. When attacking a Doorway, make Hit Tests and Armour Penetration Tests as if it were a Stationary Vehicle. In Combat, Doorways are hit automatically and treated as having a Movement Characteristic of 0 and can be attacked with Weapons that have the Detonation Special Rule. If a Doorway suffers a Glancing Hit then it suffers 1 point of Damage regardless of the Damage Characteristic of the Hit. If a Doorway suffers a Penetrating Hit, then that Doorway suffers Damage equal to the Damage Characteristic of the Hit. When a Doorway has its Hull Points Characteristic reduced to 0, its State is immediately changed to Open and cannot be changed again for the remainder of the Battle.
+
+
+**Doorways and Combat**
+A Doorway can be the target if a Charge and can be Engaged and attacked during the Assault Phase. However, a Doorway may never make attacks of any kind during the Assault Phase and cannot lock an enemy Unit in Combat. In the Resolution Sub-Phase of the Assault Phase, if one side of the Combat is always the winner, regardless of how many Combat Resolution Points are scored. However, a Doorway never takes Panic Checks and has no Aftermath option selected for it - any Units on the opposing side have Aftermath options selected as normal. If a side in a Combat has both Doorways and Models with other Types then the winner of the Combat is determined normally - but any Doorways cannot have Aftermath options chosen for them. Additional Rules for operating Doorways are detailed in the Doorways (X) Special Rule.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5df3-c58f-1152-5cac"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93b8-14e8-37c1-5900"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Army Configuration" hidden="false" id="e528-702e-f73e-5890" type="selectionEntry" targetId="a827-ee7f-fe7d-9e0e">
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="7c4d-e76b-dfd7-2543" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Zone Mortalis Specific" hidden="false" id="ac9b-af12-a761-c3de" type="selectionEntry" targetId="8c20-d283-0a02-c2b6">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="5002-76a5-de89-5e7d" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
