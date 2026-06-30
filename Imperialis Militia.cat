@@ -10036,6 +10036,21 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </conditionGroup>
                   </conditionGroups>
                 </modifierGroup>
+				<modifierGroup type="and">
+                  <comment>Warrior Elite</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="9" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="fbc6-d055-654b-5241" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifierGroup>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
                   <modifiers>
