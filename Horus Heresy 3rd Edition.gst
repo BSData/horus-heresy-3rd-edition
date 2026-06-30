@@ -33874,12 +33874,12 @@
         </forceEntry>
       </forceEntries>
       <constraints>
-        <constraint type="max" value="1" field="37ff-b26e-18a9-7f57" scope="roster" shared="true" id="1f29-6e55-3821-3905" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="e3d1-981e-659f-68d5" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="37ff-b26e-18a9-7f57" scope="self" shared="true" id="1f29-6e55-3821-3905" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="e3d1-981e-659f-68d5" includeChildSelections="false" includeChildForces="false"/>
         <constraint type="max" value="0" field="3e8e-05ee-be52-12d6" scope="self" shared="true" id="5b70-8bd4-2c8a-9224" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="0" field="159d-855c-533d-f592" scope="self" shared="true" id="c248-8789-89ae-e3fb" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="cc17-bc8c-7165-5b78" includeChildSelections="true"/>
-        <constraint type="min" value="1" field="37ff-b26e-18a9-7f57" scope="roster" shared="true" id="3fd0-ac62-baa7-faa4" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="cc17-bc8c-7165-5b78" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="min" value="1" field="37ff-b26e-18a9-7f57" scope="self" shared="true" id="3fd0-ac62-baa7-faa4" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <forceEntryLinks>
         <forceEntryLink name="Auxiliary - Armoured Fist" id="4eae-3d91-d822-85b4" hidden="true" targetId="cc51-fdce-8a34-dbcf" type="forceEntry">
