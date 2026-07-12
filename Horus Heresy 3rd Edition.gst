@@ -764,6 +764,7 @@
     <categoryEntry name="Iron Tercio" id="6c30-79ee-136f-d340" hidden="false"/>
     <categoryEntry name="Tank Commander" id="3134-c5e1-b266-d2e0" hidden="false"/>
     <categoryEntry name="ZM Primary Detachment" id="c83f-3c44-31ab-1ffd" hidden="false"/>
+    <categoryEntry name="Command - Librarian or Esotesrist Only" id="952f-23ed-7659-a0c3" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
