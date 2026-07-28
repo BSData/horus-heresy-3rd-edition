@@ -25110,70 +25110,6 @@
             "sortIndex": 4
           },
           {
-            "entryLinks": [
-              {
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": "Two photonic incinerators",
-                    "field": "name"
-                  }
-                ],
-                "import": true,
-                "name": "Photonic incinerator",
-                "hidden": false,
-                "id": "2d32-b642-f57d-024b",
-                "type": "selectionEntry",
-                "targetId": "51f6-0820-9443-77e0",
-                "sortIndex": 1
-              },
-              {
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": "Two concussive resonators",
-                    "field": "name"
-                  }
-                ],
-                "costs": [
-                  {
-                    "name": "Point(s)",
-                    "typeId": "9893-c379-920b-8982",
-                    "value": 10
-                  }
-                ],
-                "import": true,
-                "name": "Concussive resonator",
-                "hidden": false,
-                "id": "2c04-494c-0611-f74a",
-                "type": "selectionEntry",
-                "targetId": "caa9-3bee-f09a-9b2f",
-                "sortIndex": 2
-              },
-              {
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": "Two heavy particle shredders",
-                    "field": "name"
-                  }
-                ],
-                "costs": [
-                  {
-                    "name": "Point(s)",
-                    "typeId": "9893-c379-920b-8982",
-                    "value": 10
-                  }
-                ],
-                "import": true,
-                "name": "Heavy particle shredder",
-                "hidden": false,
-                "id": "21a6-3466-4ffb-38a2",
-                "type": "selectionEntry",
-                "targetId": "ea02-9e5a-9a9b-7e67",
-                "sortIndex": 3
-              }
-            ],
             "constraints": [
               {
                 "type": "min",
@@ -25197,8 +25133,202 @@
             "name": "Both of this Model's photonic incinerators may be exchanged for one of the following:",
             "id": "717a-95ae-5034-04a4",
             "hidden": false,
-            "defaultSelectionEntryId": "2d32-b642-f57d-024b",
-            "sortIndex": 3
+            "defaultSelectionEntryId": "eb1d-f91a-924a-f77d",
+            "sortIndex": 3,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Two Photonic incinerators",
+                "hidden": false,
+                "id": "eb1d-f91a-924a-f77d",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Photonic incinerator",
+                    "hidden": false,
+                    "id": "2d32-b642-f57d-024b",
+                    "type": "selectionEntry",
+                    "targetId": "51f6-0820-9443-77e0",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "2f57-c2db-3fc7-d3df"
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "fcbc-ba4b-37b2-7483"
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 1
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Two Concussive resonators",
+                "hidden": false,
+                "id": "304e-3d7e-8ba3-f2f5",
+                "sortIndex": 2,
+                "costs": [
+                  {
+                    "name": "Point(s)",
+                    "typeId": "9893-c379-920b-8982",
+                    "value": 10
+                  },
+                  {
+                    "name": "Reaction Point(s)",
+                    "typeId": "c9ba-097e-c47f-ecc2",
+                    "value": 0
+                  },
+                  {
+                    "name": "Auxiliary Detachment(s)",
+                    "typeId": "3e8e-05ee-be52-12d6",
+                    "value": 0
+                  },
+                  {
+                    "name": "Apex Detachment(s)",
+                    "typeId": "159d-855c-533d-f592",
+                    "value": 0
+                  },
+                  {
+                    "name": "Combined Warlord and Lord of War Points",
+                    "typeId": "14bd-cad0-cd3d-8b23",
+                    "value": 0
+                  },
+                  {
+                    "name": "Mech LB",
+                    "typeId": "7275-cbe8-a563-7152",
+                    "value": 0
+                  },
+                  {
+                    "name": "Tank Detachments",
+                    "typeId": "2cdf-186c-a655-d907",
+                    "value": 0
+                  },
+                  {
+                    "name": "ZM Primary Detachment",
+                    "typeId": "37ff-b26e-18a9-7f57",
+                    "value": 0
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Concussive resonator",
+                    "hidden": false,
+                    "id": "2c04-494c-0611-f74a",
+                    "type": "selectionEntry",
+                    "targetId": "caa9-3bee-f09a-9b2f",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "ef5c-f5ad-d2e1-1671"
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "1d99-d1ee-fd2b-5362"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Two Heavy particle shredders",
+                "hidden": false,
+                "id": "5b46-d463-eafa-51ff",
+                "costs": [
+                  {
+                    "name": "Point(s)",
+                    "typeId": "9893-c379-920b-8982",
+                    "value": 10
+                  },
+                  {
+                    "name": "Reaction Point(s)",
+                    "typeId": "c9ba-097e-c47f-ecc2",
+                    "value": 0
+                  },
+                  {
+                    "name": "Auxiliary Detachment(s)",
+                    "typeId": "3e8e-05ee-be52-12d6",
+                    "value": 0
+                  },
+                  {
+                    "name": "Apex Detachment(s)",
+                    "typeId": "159d-855c-533d-f592",
+                    "value": 0
+                  },
+                  {
+                    "name": "Combined Warlord and Lord of War Points",
+                    "typeId": "14bd-cad0-cd3d-8b23",
+                    "value": 0
+                  },
+                  {
+                    "name": "Mech LB",
+                    "typeId": "7275-cbe8-a563-7152",
+                    "value": 0
+                  },
+                  {
+                    "name": "Tank Detachments",
+                    "typeId": "2cdf-186c-a655-d907",
+                    "value": 0
+                  },
+                  {
+                    "name": "ZM Primary Detachment",
+                    "typeId": "37ff-b26e-18a9-7f57",
+                    "value": 0
+                  }
+                ],
+                "sortIndex": 3,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Heavy particle shredder",
+                    "hidden": false,
+                    "id": "21a6-3466-4ffb-38a2",
+                    "type": "selectionEntry",
+                    "targetId": "ea02-9e5a-9a9b-7e67",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "b2b6-40da-ab7d-55f5"
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "0d42-7c64-b387-bb84"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ],
         "entryLinks": [
