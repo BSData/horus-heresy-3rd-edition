@@ -173821,6 +173821,31 @@
                 "type": "selectionEntryGroup",
                 "targetId": "e1d9-d2ce-e0fe-4f54",
                 "sortIndex": 3
+              },
+              {
+                "import": true,
+                "name": "Breacher Charges",
+                "hidden": false,
+                "id": "2184-7232-8de2-8580",
+                "costs": [
+                  {
+                    "name": "Point(s)",
+                    "typeId": "9893-c379-920b-8982",
+                    "value": 10
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dee1-df1e-f877-dfdb"
+                  }
+                ],
+                "type": "selectionEntry",
+                "targetId": "01bd-4377-904c-6625"
               }
             ],
             "selectionEntryGroups": [
@@ -211753,7 +211778,67 @@
             "id": "85b1-0089-f754-c9a6",
             "type": "selectionEntry",
             "targetId": "01e9-334c-80cb-f1c6",
-            "sortIndex": 41
+            "sortIndex": 41,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Breacher Charges",
+                "hidden": true,
+                "id": "7040-4e62-96fe-9d17",
+                "type": "selectionEntry",
+                "targetId": "01bd-4377-904c-6625",
+                "costs": [
+                  {
+                    "name": "Point(s)",
+                    "typeId": "9893-c379-920b-8982",
+                    "value": 10
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ccbe-d9db-1adc-246d"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "9871-cb62-5283-2216",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "8045-89a4-76d4-fcef",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "childName": "Sergeant Model Sub-Type"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "costs": [
