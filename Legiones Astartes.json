@@ -102674,42 +102674,6 @@
                 "targetId": "bb42-fb24-9e5c-061d"
               },
               {
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": false,
-                    "id": "584c-b108-4b1f-1f89",
-                    "includeChildSelections": false
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": false,
-                    "id": "a653-9cf6-3867-95d5",
-                    "includeChildSelections": false
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Two Sponson Mounted",
-                    "field": "name"
-                  }
-                ],
-                "import": true,
-                "name": "Twin lascannon",
-                "hidden": false,
-                "id": "c992-30fe-1192-724c",
-                "type": "selectionEntry",
-                "targetId": "8e62-3fda-37e1-5f0a",
-                "sortIndex": 2
-              },
-              {
                 "modifiers": [
                   {
                     "conditions": [
@@ -102919,7 +102883,47 @@
             "name": "Land Raider Explorator",
             "hidden": false,
             "id": "131c-d297-7115-48f4",
-            "sortIndex": 1
+            "sortIndex": 1,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Two Sponson Mounted Twin Lascannon",
+                "hidden": false,
+                "id": "96a0-2a46-6087-c0e6",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Twin lascannon",
+                    "hidden": false,
+                    "id": "c992-30fe-1192-724c",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": false,
+                        "id": "584c-b108-4b1f-1f89",
+                        "includeChildSelections": false
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": false,
+                        "id": "a653-9cf6-3867-95d5",
+                        "includeChildSelections": false
+                      }
+                    ],
+                    "type": "selectionEntry",
+                    "targetId": "8e62-3fda-37e1-5f0a"
+                  }
+                ],
+                "sortIndex": 2
+              }
+            ]
           }
         ],
         "infoLinks": [
