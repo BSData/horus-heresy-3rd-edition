@@ -9848,92 +9848,6 @@
             "defaultSelectionEntryId": "none"
           },
           {
-            "entryLinks": [
-              {
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": "2 Graviton guns",
-                    "field": "name"
-                  },
-                  {
-                    "type": "set",
-                    "value": 20,
-                    "field": "9893-c379-920b-8982"
-                  }
-                ],
-                "import": true,
-                "name": "Graviton gun",
-                "hidden": false,
-                "id": "1e70-e4a1-4ff2-eaa7",
-                "type": "selectionEntry",
-                "targetId": "4a06-c55e-a06f-bd0c",
-                "sortIndex": 2
-              },
-              {
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": "2 Plasma guns",
-                    "field": "name"
-                  },
-                  {
-                    "type": "set",
-                    "value": 20,
-                    "field": "9893-c379-920b-8982"
-                  }
-                ],
-                "import": true,
-                "name": "Plasma gun",
-                "hidden": false,
-                "id": "7a2a-8df3-470c-fc19",
-                "type": "selectionEntry",
-                "targetId": "433d-56e0-9878-dea1",
-                "sortIndex": 3
-              },
-              {
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": "2 Combi-bolters",
-                    "field": "name"
-                  },
-                  {
-                    "type": "set",
-                    "value": 1,
-                    "field": "defaultAmount"
-                  }
-                ],
-                "import": true,
-                "name": "Combi-bolter",
-                "hidden": false,
-                "id": "de5f-d9e6-5071-9073",
-                "type": "selectionEntry",
-                "targetId": "042d-9e60-db9e-c147",
-                "sortIndex": 1
-              },
-              {
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": "2 Irad-cleansers",
-                    "field": "name"
-                  },
-                  {
-                    "type": "set",
-                    "value": 30,
-                    "field": "9893-c379-920b-8982"
-                  }
-                ],
-                "import": true,
-                "name": "Irad-cleanser",
-                "hidden": false,
-                "id": "650d-a5db-47e0-d724",
-                "type": "selectionEntry",
-                "targetId": "910e-3579-4968-44af",
-                "sortIndex": 4
-              }
-            ],
             "constraints": [
               {
                 "type": "min",
@@ -9955,8 +9869,279 @@
             "name": "May exchange it's two combi-bolters for:",
             "id": "5619-0575-f8ab-b9d3",
             "hidden": false,
-            "defaultSelectionEntryId": "de5f-d9e6-5071-9073",
-            "sortIndex": 2
+            "defaultSelectionEntryId": "8af1-b637-f7cc-4047",
+            "sortIndex": 2,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Two combi-bolters",
+                "hidden": false,
+                "id": "8af1-b637-f7cc-4047",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Combi-bolter",
+                    "hidden": false,
+                    "id": "de5f-d9e6-5071-9073",
+                    "type": "selectionEntry",
+                    "targetId": "042d-9e60-db9e-c147",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "32fa-e7a0-a3e5-51ff"
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "0409-ac3a-e20a-3e96"
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 1
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Two graviton guns",
+                "hidden": false,
+                "id": "d079-b902-c3b3-5a79",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Graviton gun",
+                    "hidden": false,
+                    "id": "1e70-e4a1-4ff2-eaa7",
+                    "type": "selectionEntry",
+                    "targetId": "4a06-c55e-a06f-bd0c",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "912f-e26f-4639-6fd3"
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "e8bc-a56d-4308-e7fb"
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Point(s)",
+                    "typeId": "9893-c379-920b-8982",
+                    "value": 20
+                  },
+                  {
+                    "name": "Reaction Point(s)",
+                    "typeId": "c9ba-097e-c47f-ecc2",
+                    "value": 0
+                  },
+                  {
+                    "name": "Auxiliary Detachment(s)",
+                    "typeId": "3e8e-05ee-be52-12d6",
+                    "value": 0
+                  },
+                  {
+                    "name": "Apex Detachment(s)",
+                    "typeId": "159d-855c-533d-f592",
+                    "value": 0
+                  },
+                  {
+                    "name": "Combined Warlord and Lord of War Points",
+                    "typeId": "14bd-cad0-cd3d-8b23",
+                    "value": 0
+                  },
+                  {
+                    "name": "Mech LB",
+                    "typeId": "7275-cbe8-a563-7152",
+                    "value": 0
+                  },
+                  {
+                    "name": "Tank Detachments",
+                    "typeId": "2cdf-186c-a655-d907",
+                    "value": 0
+                  },
+                  {
+                    "name": "ZM Primary Detachment",
+                    "typeId": "37ff-b26e-18a9-7f57",
+                    "value": 0
+                  }
+                ],
+                "sortIndex": 2
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Two plasma guns",
+                "hidden": false,
+                "id": "6249-749a-485c-f441",
+                "sortIndex": 3,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Plasma gun",
+                    "hidden": false,
+                    "id": "7a2a-8df3-470c-fc19",
+                    "type": "selectionEntry",
+                    "targetId": "433d-56e0-9878-dea1",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "740d-fd1c-b2ee-bad2"
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "e9e7-3f4a-d0df-78b6"
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Point(s)",
+                    "typeId": "9893-c379-920b-8982",
+                    "value": 20
+                  },
+                  {
+                    "name": "Reaction Point(s)",
+                    "typeId": "c9ba-097e-c47f-ecc2",
+                    "value": 0
+                  },
+                  {
+                    "name": "Auxiliary Detachment(s)",
+                    "typeId": "3e8e-05ee-be52-12d6",
+                    "value": 0
+                  },
+                  {
+                    "name": "Apex Detachment(s)",
+                    "typeId": "159d-855c-533d-f592",
+                    "value": 0
+                  },
+                  {
+                    "name": "Combined Warlord and Lord of War Points",
+                    "typeId": "14bd-cad0-cd3d-8b23",
+                    "value": 0
+                  },
+                  {
+                    "name": "Mech LB",
+                    "typeId": "7275-cbe8-a563-7152",
+                    "value": 0
+                  },
+                  {
+                    "name": "Tank Detachments",
+                    "typeId": "2cdf-186c-a655-d907",
+                    "value": 0
+                  },
+                  {
+                    "name": "ZM Primary Detachment",
+                    "typeId": "37ff-b26e-18a9-7f57",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Two irad-cleansers",
+                "hidden": false,
+                "id": "1ed3-9b46-0273-efbb",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Irad-cleanser",
+                    "hidden": false,
+                    "id": "650d-a5db-47e0-d724",
+                    "type": "selectionEntry",
+                    "targetId": "910e-3579-4968-44af",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6705-0ed9-8636-b630"
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "530d-713d-dc76-a37a"
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Point(s)",
+                    "typeId": "9893-c379-920b-8982",
+                    "value": 30
+                  },
+                  {
+                    "name": "Reaction Point(s)",
+                    "typeId": "c9ba-097e-c47f-ecc2",
+                    "value": 0
+                  },
+                  {
+                    "name": "Auxiliary Detachment(s)",
+                    "typeId": "3e8e-05ee-be52-12d6",
+                    "value": 0
+                  },
+                  {
+                    "name": "Apex Detachment(s)",
+                    "typeId": "159d-855c-533d-f592",
+                    "value": 0
+                  },
+                  {
+                    "name": "Combined Warlord and Lord of War Points",
+                    "typeId": "14bd-cad0-cd3d-8b23",
+                    "value": 0
+                  },
+                  {
+                    "name": "Mech LB",
+                    "typeId": "7275-cbe8-a563-7152",
+                    "value": 0
+                  },
+                  {
+                    "name": "Tank Detachments",
+                    "typeId": "2cdf-186c-a655-d907",
+                    "value": 0
+                  },
+                  {
+                    "name": "ZM Primary Detachment",
+                    "typeId": "37ff-b26e-18a9-7f57",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
           }
         ],
         "rules": [
