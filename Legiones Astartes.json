@@ -95397,70 +95397,6 @@
         ],
         "selectionEntryGroups": [
           {
-            "entryLinks": [
-              {
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Two Pintle Mounted",
-                    "field": "name"
-                  }
-                ],
-                "import": true,
-                "name": "Combi-bolter",
-                "hidden": false,
-                "id": "504d-f53b-2f7f-49c4",
-                "type": "selectionEntry",
-                "targetId": "042d-9e60-db9e-c147",
-                "sortIndex": 1
-              },
-              {
-                "costs": [
-                  {
-                    "name": "Point(s)",
-                    "typeId": "9893-c379-920b-8982",
-                    "value": 5
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Two Pintle Mounted",
-                    "field": "name"
-                  }
-                ],
-                "import": true,
-                "name": "Heavy flamer",
-                "hidden": false,
-                "id": "b582-b1bc-f410-6ebf",
-                "type": "selectionEntry",
-                "targetId": "4fa7-ea45-2a89-ad86",
-                "sortIndex": 3
-              },
-              {
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Two Pintle Mounted",
-                    "field": "name"
-                  }
-                ],
-                "costs": [
-                  {
-                    "name": "Point(s)",
-                    "typeId": "9893-c379-920b-8982",
-                    "value": 10
-                  }
-                ],
-                "import": true,
-                "name": "Twin volkite charger",
-                "hidden": false,
-                "id": "eed5-8d08-f449-ccc2",
-                "type": "selectionEntry",
-                "targetId": "af81-2c71-7fe0-16bd",
-                "sortIndex": 2
-              }
-            ],
             "constraints": [
               {
                 "type": "min",
@@ -95484,8 +95420,209 @@
             "name": "Pintle Weapons",
             "id": "0ed3-be9e-097c-0d08",
             "hidden": false,
-            "defaultSelectionEntryId": "504d-f53b-2f7f-49c4",
-            "sortIndex": 2
+            "defaultSelectionEntryId": "34ba-1ba1-011d-e97b",
+            "sortIndex": 2,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Two Pintle Mounted combi-bolters",
+                "hidden": false,
+                "id": "34ba-1ba1-011d-e97b",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Combi-bolter",
+                    "hidden": false,
+                    "id": "504d-f53b-2f7f-49c4",
+                    "type": "selectionEntry",
+                    "targetId": "042d-9e60-db9e-c147",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "9dd2-7885-6898-d749"
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "94b9-572c-91b4-b911"
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 1
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Two Pintle Mounted twin volkite chargers",
+                "hidden": false,
+                "id": "92f8-e3d3-f159-4e57",
+                "costs": [
+                  {
+                    "name": "Point(s)",
+                    "typeId": "9893-c379-920b-8982",
+                    "value": 10
+                  },
+                  {
+                    "name": "Reaction Point(s)",
+                    "typeId": "c9ba-097e-c47f-ecc2",
+                    "value": 0
+                  },
+                  {
+                    "name": "Auxiliary Detachment(s)",
+                    "typeId": "3e8e-05ee-be52-12d6",
+                    "value": 0
+                  },
+                  {
+                    "name": "Apex Detachment(s)",
+                    "typeId": "159d-855c-533d-f592",
+                    "value": 0
+                  },
+                  {
+                    "name": "Combined Warlord and Lord of War Points",
+                    "typeId": "14bd-cad0-cd3d-8b23",
+                    "value": 0
+                  },
+                  {
+                    "name": "Mech LB",
+                    "typeId": "7275-cbe8-a563-7152",
+                    "value": 0
+                  },
+                  {
+                    "name": "Tank Detachments",
+                    "typeId": "2cdf-186c-a655-d907",
+                    "value": 0
+                  },
+                  {
+                    "name": "ZM Primary Detachment",
+                    "typeId": "37ff-b26e-18a9-7f57",
+                    "value": 0
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Twin volkite charger",
+                    "hidden": false,
+                    "id": "eed5-8d08-f449-ccc2",
+                    "type": "selectionEntry",
+                    "targetId": "af81-2c71-7fe0-16bd",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "3e79-7267-dc96-9422"
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "4ec3-c14f-540f-d2ab"
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 2
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Two heavy flamers",
+                "hidden": false,
+                "id": "dce6-ea80-c9af-ece9",
+                "sortIndex": 3,
+                "costs": [
+                  {
+                    "name": "Point(s)",
+                    "typeId": "9893-c379-920b-8982",
+                    "value": 5
+                  },
+                  {
+                    "name": "Reaction Point(s)",
+                    "typeId": "c9ba-097e-c47f-ecc2",
+                    "value": 0
+                  },
+                  {
+                    "name": "Auxiliary Detachment(s)",
+                    "typeId": "3e8e-05ee-be52-12d6",
+                    "value": 0
+                  },
+                  {
+                    "name": "Apex Detachment(s)",
+                    "typeId": "159d-855c-533d-f592",
+                    "value": 0
+                  },
+                  {
+                    "name": "Combined Warlord and Lord of War Points",
+                    "typeId": "14bd-cad0-cd3d-8b23",
+                    "value": 0
+                  },
+                  {
+                    "name": "Mech LB",
+                    "typeId": "7275-cbe8-a563-7152",
+                    "value": 0
+                  },
+                  {
+                    "name": "Tank Detachments",
+                    "typeId": "2cdf-186c-a655-d907",
+                    "value": 0
+                  },
+                  {
+                    "name": "ZM Primary Detachment",
+                    "typeId": "37ff-b26e-18a9-7f57",
+                    "value": 0
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Heavy flamer",
+                    "hidden": false,
+                    "id": "b582-b1bc-f410-6ebf",
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 5
+                      }
+                    ],
+                    "type": "selectionEntry",
+                    "targetId": "4fa7-ea45-2a89-ad86",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6ed3-aeb7-e5f8-d0c5"
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6108-b924-5e7c-d7ce"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -107507,84 +107644,6 @@
                     "targetId": "b341-159d-9dfb-ff31",
                     "sortIndex": 1,
                     "defaultAmount": 1
-                  },
-                  {
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "Two heavy flamers",
-                        "field": "name"
-                      }
-                    ],
-                    "import": true,
-                    "name": "Heavy flamer",
-                    "hidden": false,
-                    "id": "20b1-860c-80eb-05b1",
-                    "type": "selectionEntry",
-                    "targetId": "4fa7-ea45-2a89-ad86",
-                    "sortIndex": 2
-                  },
-                  {
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "Two heavy bolters",
-                        "field": "name"
-                      }
-                    ],
-                    "import": true,
-                    "name": "Heavy bolter",
-                    "hidden": false,
-                    "id": "18ad-55fb-5752-e372",
-                    "type": "selectionEntry",
-                    "targetId": "bc40-b14a-978e-0232",
-                    "sortIndex": 3
-                  },
-                  {
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "Two lascannon",
-                        "field": "name"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Point(s)",
-                        "typeId": "9893-c379-920b-8982",
-                        "value": 5
-                      }
-                    ],
-                    "import": true,
-                    "name": "Lascannon",
-                    "hidden": false,
-                    "id": "525f-10c2-ed00-9df9",
-                    "type": "selectionEntry",
-                    "targetId": "b6d5-4be2-c37e-2197",
-                    "sortIndex": 5
-                  },
-                  {
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "Two volkite culverin",
-                        "field": "name"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Point(s)",
-                        "typeId": "9893-c379-920b-8982",
-                        "value": 5
-                      }
-                    ],
-                    "import": true,
-                    "name": "Volkite culverin",
-                    "hidden": false,
-                    "id": "da59-e24d-2ca3-a1b9",
-                    "type": "selectionEntry",
-                    "targetId": "fcf0-9c1b-d51e-6bc7",
-                    "sortIndex": 6
                   }
                 ],
                 "constraints": [
@@ -107609,7 +107668,237 @@
                 "id": "1870-05ef-278b-a1bb",
                 "hidden": false,
                 "defaultSelectionEntryId": "e703-3d7c-d27c-84be",
-                "sortIndex": 3
+                "sortIndex": 3,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two heavy flamers",
+                    "hidden": false,
+                    "id": "cc53-95a7-285f-faae",
+                    "sortIndex": 2,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Heavy flamer",
+                        "hidden": false,
+                        "id": "20b1-860c-80eb-05b1",
+                        "type": "selectionEntry",
+                        "targetId": "4fa7-ea45-2a89-ad86",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "8236-30d8-3e52-b843"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "db96-ec29-1b91-e7b0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two heavy bolters",
+                    "hidden": false,
+                    "id": "959c-382a-48ad-a7e5",
+                    "sortIndex": 3,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Heavy bolter",
+                        "hidden": false,
+                        "id": "18ad-55fb-5752-e372",
+                        "type": "selectionEntry",
+                        "targetId": "bc40-b14a-978e-0232",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "48c2-a39b-c9c7-eae0"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "d68a-1b8f-4982-cea0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two lascannon",
+                    "hidden": false,
+                    "id": "3801-f394-148e-a40c",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Lascannon",
+                        "hidden": false,
+                        "id": "525f-10c2-ed00-9df9",
+                        "type": "selectionEntry",
+                        "targetId": "b6d5-4be2-c37e-2197",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "38ae-40ad-01eb-ff78"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "6575-a564-3b9a-1ca0"
+                          }
+                        ]
+                      }
+                    ],
+                    "sortIndex": 4,
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 5
+                      },
+                      {
+                        "name": "Reaction Point(s)",
+                        "typeId": "c9ba-097e-c47f-ecc2",
+                        "value": 0
+                      },
+                      {
+                        "name": "Auxiliary Detachment(s)",
+                        "typeId": "3e8e-05ee-be52-12d6",
+                        "value": 0
+                      },
+                      {
+                        "name": "Apex Detachment(s)",
+                        "typeId": "159d-855c-533d-f592",
+                        "value": 0
+                      },
+                      {
+                        "name": "Combined Warlord and Lord of War Points",
+                        "typeId": "14bd-cad0-cd3d-8b23",
+                        "value": 0
+                      },
+                      {
+                        "name": "Mech LB",
+                        "typeId": "7275-cbe8-a563-7152",
+                        "value": 0
+                      },
+                      {
+                        "name": "Tank Detachments",
+                        "typeId": "2cdf-186c-a655-d907",
+                        "value": 0
+                      },
+                      {
+                        "name": "ZM Primary Detachment",
+                        "typeId": "37ff-b26e-18a9-7f57",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two volkite culverin",
+                    "hidden": false,
+                    "id": "a0e1-2434-3c96-47fc",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Volkite culverin",
+                        "hidden": false,
+                        "id": "da59-e24d-2ca3-a1b9",
+                        "type": "selectionEntry",
+                        "targetId": "fcf0-9c1b-d51e-6bc7",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "a358-7add-a4a0-d708"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "ce8d-24a1-1ff8-850c"
+                          }
+                        ]
+                      }
+                    ],
+                    "sortIndex": 5,
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 5
+                      },
+                      {
+                        "name": "Reaction Point(s)",
+                        "typeId": "c9ba-097e-c47f-ecc2",
+                        "value": 0
+                      },
+                      {
+                        "name": "Auxiliary Detachment(s)",
+                        "typeId": "3e8e-05ee-be52-12d6",
+                        "value": 0
+                      },
+                      {
+                        "name": "Apex Detachment(s)",
+                        "typeId": "159d-855c-533d-f592",
+                        "value": 0
+                      },
+                      {
+                        "name": "Combined Warlord and Lord of War Points",
+                        "typeId": "14bd-cad0-cd3d-8b23",
+                        "value": 0
+                      },
+                      {
+                        "name": "Mech LB",
+                        "typeId": "7275-cbe8-a563-7152",
+                        "value": 0
+                      },
+                      {
+                        "name": "Tank Detachments",
+                        "typeId": "2cdf-186c-a655-d907",
+                        "value": 0
+                      },
+                      {
+                        "name": "ZM Primary Detachment",
+                        "typeId": "37ff-b26e-18a9-7f57",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "infoLinks": [
@@ -186794,427 +187083,6 @@
             ],
             "selectionEntryGroups": [
               {
-                "entryLinks": [
-                  {
-                    "modifiers": [
-                      {
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "bcb8-e658-5a0e-0c1a",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "4273-9b82-0a75-92bb",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "4a06-c55e-a06f-bd0c",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "659f-d52e-1515-2912",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "set",
-                        "field": "name",
-                        "value": "Two bolt pistols"
-                      },
-                      {
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "roster",
-                            "childId": "4d86-d6e9-8bca-0ad5",
-                            "shared": true,
-                            "includeChildSelections": true,
-                            "includeChildForces": true
-                          }
-                        ],
-                        "type": "set",
-                        "value": 0,
-                        "field": "753e-6015-46ef-97a1"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "753e-6015-46ef-97a1",
-                        "automatic": true
-                      }
-                    ],
-                    "hidden": false,
-                    "type": "selectionEntry",
-                    "targetId": "2942-f783-d627-33c5",
-                    "id": "ead4-430d-4330-9656",
-                    "name": "Bolt pistol",
-                    "defaultAmount": 1,
-                    "sortIndex": 1
-                  },
-                  {
-                    "costs": [
-                      {
-                        "name": "Point(s)",
-                        "typeId": "9893-c379-920b-8982",
-                        "value": 5
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "bcb8-e658-5a0e-0c1a",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "4273-9b82-0a75-92bb",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "4a06-c55e-a06f-bd0c",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "659f-d52e-1515-2912",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "set",
-                        "field": "name",
-                        "value": "Two volkite serpentas"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "c644-e865-472d-8bf1"
-                      }
-                    ],
-                    "hidden": false,
-                    "type": "selectionEntry",
-                    "targetId": "b7c3-1de1-087c-3d6e",
-                    "id": "fa61-dcc3-4c20-b70d",
-                    "name": "Volkite serpenta"
-                  },
-                  {
-                    "costs": [
-                      {
-                        "name": "Point(s)",
-                        "typeId": "9893-c379-920b-8982",
-                        "value": 5
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "bcb8-e658-5a0e-0c1a",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "4273-9b82-0a75-92bb",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "4a06-c55e-a06f-bd0c",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "equalTo",
-                                "value": 0,
-                                "field": "selections",
-                                "scope": "model",
-                                "childId": "659f-d52e-1515-2912",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "set",
-                        "field": "name",
-                        "value": "Two hand flamers"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "7296-0112-4e9f-9796"
-                      }
-                    ],
-                    "hidden": false,
-                    "type": "selectionEntry",
-                    "targetId": "9322-09ed-abec-6e13",
-                    "id": "385a-0512-4e0d-aa2f",
-                    "name": "Hand flamer"
-                  },
-                  {
-                    "modifiers": [
-                      {
-                        "conditionGroups": [
-                          {
-                            "conditionGroups": [
-                              {
-                                "conditions": [
-                                  {
-                                    "type": "instanceOf",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "force",
-                                    "childId": "c195-9a6a-a56b-4634",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  },
-                                  {
-                                    "type": "atLeast",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "roster",
-                                    "childId": "4061-bc47-ebca-dc39",
-                                    "shared": true,
-                                    "includeChildSelections": true,
-                                    "includeChildForces": true
-                                  }
-                                ],
-                                "type": "and"
-                              },
-                              {
-                                "conditions": [
-                                  {
-                                    "type": "atLeast",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "model",
-                                    "childId": "1d11-e616-eb66-a6ce",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  },
-                                  {
-                                    "type": "instanceOf",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "force",
-                                    "childId": "3256-29e9-1d7a-12a7",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  }
-                                ],
-                                "type": "and"
-                              }
-                            ],
-                            "conditions": [
-                              {
-                                "type": "instanceOf",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "force",
-                                "childId": "21c0-18db-03dd-ae07",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "or"
-                          }
-                        ],
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": "Two shrapnel pistols",
-                        "field": "name"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Point(s)",
-                        "typeId": "9893-c379-920b-8982",
-                        "value": 2
-                      }
-                    ],
-                    "import": true,
-                    "name": "Shrapnel pistol",
-                    "hidden": true,
-                    "id": "5128-a34c-ed7e-942f",
-                    "type": "selectionEntry",
-                    "targetId": "d735-44bc-116a-be41"
-                  },
-                  {
-                    "modifiers": [
-                      {
-                        "conditionGroups": [
-                          {
-                            "conditionGroups": [
-                              {
-                                "conditions": [
-                                  {
-                                    "type": "instanceOf",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "force",
-                                    "childId": "c195-9a6a-a56b-4634",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  },
-                                  {
-                                    "type": "atLeast",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "roster",
-                                    "childId": "4eec-9111-7656-2023",
-                                    "shared": true,
-                                    "includeChildSelections": true,
-                                    "includeChildForces": true
-                                  }
-                                ],
-                                "type": "and"
-                              },
-                              {
-                                "conditions": [
-                                  {
-                                    "type": "atLeast",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "model",
-                                    "childId": "f16b-151d-008f-72e0",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  },
-                                  {
-                                    "type": "instanceOf",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "force",
-                                    "childId": "3256-29e9-1d7a-12a7",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  }
-                                ],
-                                "type": "and"
-                              }
-                            ],
-                            "conditions": [
-                              {
-                                "type": "instanceOf",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "force",
-                                "childId": "2496-21e2-1870-e9b8",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "or"
-                          }
-                        ],
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": "Two asphyx pistols",
-                        "field": "name"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Point(s)",
-                        "typeId": "9893-c379-920b-8982",
-                        "value": 2
-                      }
-                    ],
-                    "import": true,
-                    "name": "Asphyx pistol",
-                    "hidden": true,
-                    "id": "360d-3333-88c5-531e",
-                    "type": "selectionEntry",
-                    "targetId": "d293-df49-e8c3-f3bf"
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "max",
@@ -187331,7 +187199,528 @@
                 "name": "May have its two bolt pistols exchanged for one of the following:",
                 "id": "b5d9-6172-4c0c-b23f",
                 "sortIndex": 2,
-                "defaultSelectionEntryId": "ead4-430d-4330-9656"
+                "defaultSelectionEntryId": "cc4b-7faf-f89c-6d02",
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two bolt pistols",
+                    "hidden": false,
+                    "id": "cc4b-7faf-f89c-6d02",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Bolt pistol",
+                        "hidden": false,
+                        "id": "f4e3-a4bb-e845-d961",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "8c71-ec35-e3bf-8d36"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "52f4-d4ad-6aaa-6b04"
+                          }
+                        ],
+                        "type": "selectionEntry",
+                        "targetId": "2942-f783-d627-33c5",
+                        "defaultAmount": 1
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "0243-efec-5ac8-2491",
+                        "automatic": true
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "0243-efec-5ac8-2491",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "4d86-d6e9-8bca-0ad5",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ],
+                    "defaultAmount": "1"
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two Asphyx pistols",
+                    "hidden": true,
+                    "id": "27de-2c55-986a-f9e7",
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 4
+                      },
+                      {
+                        "name": "Reaction Point(s)",
+                        "typeId": "c9ba-097e-c47f-ecc2",
+                        "value": 0
+                      },
+                      {
+                        "name": "Auxiliary Detachment(s)",
+                        "typeId": "3e8e-05ee-be52-12d6",
+                        "value": 0
+                      },
+                      {
+                        "name": "Apex Detachment(s)",
+                        "typeId": "159d-855c-533d-f592",
+                        "value": 0
+                      },
+                      {
+                        "name": "Combined Warlord and Lord of War Points",
+                        "typeId": "14bd-cad0-cd3d-8b23",
+                        "value": 0
+                      },
+                      {
+                        "name": "Mech LB",
+                        "typeId": "7275-cbe8-a563-7152",
+                        "value": 0
+                      },
+                      {
+                        "name": "Tank Detachments",
+                        "typeId": "2cdf-186c-a655-d907",
+                        "value": 0
+                      },
+                      {
+                        "name": "ZM Primary Detachment",
+                        "typeId": "37ff-b26e-18a9-7f57",
+                        "value": 0
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Asphyx pistol",
+                        "hidden": false,
+                        "id": "bbff-3a9d-60e1-0e1a",
+                        "type": "selectionEntry",
+                        "targetId": "d293-df49-e8c3-f3bf",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "39b8-bd2c-240e-78e0"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "d1b8-c0c9-0f7c-7d4a"
+                          }
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditionGroups": [
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {
+                                    "type": "instanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "force",
+                                    "childId": "c195-9a6a-a56b-4634",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  },
+                                  {
+                                    "type": "atLeast",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "roster",
+                                    "childId": "4eec-9111-7656-2023",
+                                    "shared": true,
+                                    "includeChildSelections": true,
+                                    "includeChildForces": true
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {
+                                    "type": "atLeast",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "model",
+                                    "childId": "f16b-151d-008f-72e0",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  },
+                                  {
+                                    "type": "instanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "force",
+                                    "childId": "3256-29e9-1d7a-12a7",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  }
+                                ]
+                              }
+                            ],
+                            "conditions": [
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "2496-21e2-1870-e9b8",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two hand flamers",
+                    "hidden": false,
+                    "id": "937e-68a5-647a-4623",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Hand flamer",
+                        "hidden": false,
+                        "id": "3cc1-d432-c49d-ceff",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "c58b-99a5-2d5b-b00a"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "eb1f-9de8-55cc-e0a2"
+                          }
+                        ],
+                        "type": "selectionEntry",
+                        "targetId": "9322-09ed-abec-6e13"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 5
+                      },
+                      {
+                        "name": "Reaction Point(s)",
+                        "typeId": "c9ba-097e-c47f-ecc2",
+                        "value": 0
+                      },
+                      {
+                        "name": "Auxiliary Detachment(s)",
+                        "typeId": "3e8e-05ee-be52-12d6",
+                        "value": 0
+                      },
+                      {
+                        "name": "Apex Detachment(s)",
+                        "typeId": "159d-855c-533d-f592",
+                        "value": 0
+                      },
+                      {
+                        "name": "Combined Warlord and Lord of War Points",
+                        "typeId": "14bd-cad0-cd3d-8b23",
+                        "value": 0
+                      },
+                      {
+                        "name": "Mech LB",
+                        "typeId": "7275-cbe8-a563-7152",
+                        "value": 0
+                      },
+                      {
+                        "name": "Tank Detachments",
+                        "typeId": "2cdf-186c-a655-d907",
+                        "value": 0
+                      },
+                      {
+                        "name": "ZM Primary Detachment",
+                        "typeId": "37ff-b26e-18a9-7f57",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two Shrapnel pistols",
+                    "hidden": true,
+                    "id": "4cf9-c280-a68b-f10d",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditionGroups": [
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {
+                                    "type": "instanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "force",
+                                    "childId": "c195-9a6a-a56b-4634",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  },
+                                  {
+                                    "type": "atLeast",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "roster",
+                                    "childId": "4061-bc47-ebca-dc39",
+                                    "shared": true,
+                                    "includeChildSelections": true,
+                                    "includeChildForces": true
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {
+                                    "type": "atLeast",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "model",
+                                    "childId": "1d11-e616-eb66-a6ce",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  },
+                                  {
+                                    "type": "instanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "force",
+                                    "childId": "3256-29e9-1d7a-12a7",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  }
+                                ]
+                              }
+                            ],
+                            "conditions": [
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "21c0-18db-03dd-ae07",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Shrapnel pistol",
+                        "hidden": false,
+                        "id": "764f-2c1b-50e2-ce11",
+                        "type": "selectionEntry",
+                        "targetId": "d735-44bc-116a-be41",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "d637-f0e9-d104-1101"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "8335-ad87-d92c-8489"
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 4
+                      },
+                      {
+                        "name": "Reaction Point(s)",
+                        "typeId": "c9ba-097e-c47f-ecc2",
+                        "value": 0
+                      },
+                      {
+                        "name": "Auxiliary Detachment(s)",
+                        "typeId": "3e8e-05ee-be52-12d6",
+                        "value": 0
+                      },
+                      {
+                        "name": "Apex Detachment(s)",
+                        "typeId": "159d-855c-533d-f592",
+                        "value": 0
+                      },
+                      {
+                        "name": "Combined Warlord and Lord of War Points",
+                        "typeId": "14bd-cad0-cd3d-8b23",
+                        "value": 0
+                      },
+                      {
+                        "name": "Mech LB",
+                        "typeId": "7275-cbe8-a563-7152",
+                        "value": 0
+                      },
+                      {
+                        "name": "Tank Detachments",
+                        "typeId": "2cdf-186c-a655-d907",
+                        "value": 0
+                      },
+                      {
+                        "name": "ZM Primary Detachment",
+                        "typeId": "37ff-b26e-18a9-7f57",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two volkite sepenta",
+                    "hidden": false,
+                    "id": "5132-7b96-d1be-e212",
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 5
+                      },
+                      {
+                        "name": "Reaction Point(s)",
+                        "typeId": "c9ba-097e-c47f-ecc2",
+                        "value": 0
+                      },
+                      {
+                        "name": "Auxiliary Detachment(s)",
+                        "typeId": "3e8e-05ee-be52-12d6",
+                        "value": 0
+                      },
+                      {
+                        "name": "Apex Detachment(s)",
+                        "typeId": "159d-855c-533d-f592",
+                        "value": 0
+                      },
+                      {
+                        "name": "Combined Warlord and Lord of War Points",
+                        "typeId": "14bd-cad0-cd3d-8b23",
+                        "value": 0
+                      },
+                      {
+                        "name": "Mech LB",
+                        "typeId": "7275-cbe8-a563-7152",
+                        "value": 0
+                      },
+                      {
+                        "name": "Tank Detachments",
+                        "typeId": "2cdf-186c-a655-d907",
+                        "value": 0
+                      },
+                      {
+                        "name": "ZM Primary Detachment",
+                        "typeId": "37ff-b26e-18a9-7f57",
+                        "value": 0
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Volkite serpenta",
+                        "hidden": false,
+                        "id": "0834-ba50-74e4-afa2",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "cff3-5c6f-edbc-f324"
+                          },
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "626b-657a-7a0b-d19e"
+                          }
+                        ],
+                        "type": "selectionEntry",
+                        "targetId": "b7c3-1de1-087c-3d6e"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "entryLinks": [
@@ -188227,298 +188616,6 @@
                 "defaultSelectionEntryId": "9906-b6c5-4bbb-b314"
               },
               {
-                "entryLinks": [
-                  {
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "field": "name",
-                        "value": "Two bolt pistols"
-                      },
-                      {
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "roster",
-                            "childId": "4d86-d6e9-8bca-0ad5",
-                            "shared": true,
-                            "includeChildSelections": true,
-                            "includeChildForces": true
-                          }
-                        ],
-                        "type": "set",
-                        "value": 0,
-                        "field": "6a5c-cd6a-4f9a-bedc"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "6a5c-cd6a-4f9a-bedc",
-                        "automatic": true
-                      }
-                    ],
-                    "hidden": false,
-                    "type": "selectionEntry",
-                    "targetId": "2942-f783-d627-33c5",
-                    "id": "c165-f9e8-4e21-ad71",
-                    "name": "Bolt pistol",
-                    "defaultAmount": 1,
-                    "sortIndex": 1
-                  },
-                  {
-                    "costs": [
-                      {
-                        "name": "Point(s)",
-                        "typeId": "9893-c379-920b-8982",
-                        "value": 5
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "field": "name",
-                        "value": "Two volkite serpentas"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "cc68-c8e6-4a98-9037"
-                      }
-                    ],
-                    "hidden": false,
-                    "type": "selectionEntry",
-                    "targetId": "b7c3-1de1-087c-3d6e",
-                    "id": "4fa5-ee13-4e0a-b9c8",
-                    "name": "Volkite serpenta"
-                  },
-                  {
-                    "costs": [
-                      {
-                        "name": "Point(s)",
-                        "typeId": "9893-c379-920b-8982",
-                        "value": 5
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "field": "name",
-                        "value": "Two hand flamers"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "6695-de71-4532-97d9"
-                      }
-                    ],
-                    "hidden": false,
-                    "type": "selectionEntry",
-                    "targetId": "9322-09ed-abec-6e13",
-                    "id": "46cb-d4f0-4e61-bb3d",
-                    "name": "Hand flamer"
-                  },
-                  {
-                    "modifiers": [
-                      {
-                        "conditionGroups": [
-                          {
-                            "conditionGroups": [
-                              {
-                                "conditions": [
-                                  {
-                                    "type": "instanceOf",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "force",
-                                    "childId": "c195-9a6a-a56b-4634",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  },
-                                  {
-                                    "type": "atLeast",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "roster",
-                                    "childId": "4061-bc47-ebca-dc39",
-                                    "shared": true,
-                                    "includeChildSelections": true,
-                                    "includeChildForces": true
-                                  }
-                                ],
-                                "type": "and"
-                              },
-                              {
-                                "conditions": [
-                                  {
-                                    "type": "atLeast",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "model",
-                                    "childId": "1d11-e616-eb66-a6ce",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  },
-                                  {
-                                    "type": "instanceOf",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "force",
-                                    "childId": "3256-29e9-1d7a-12a7",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  }
-                                ],
-                                "type": "and"
-                              }
-                            ],
-                            "conditions": [
-                              {
-                                "type": "instanceOf",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "force",
-                                "childId": "21c0-18db-03dd-ae07",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "or"
-                          }
-                        ],
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": "Two shrapnel pistols",
-                        "field": "name"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Point(s)",
-                        "typeId": "9893-c379-920b-8982",
-                        "value": 2
-                      }
-                    ],
-                    "import": true,
-                    "name": "Shrapnel pistol",
-                    "hidden": true,
-                    "id": "5e0e-6c7a-3eaa-8ae0",
-                    "type": "selectionEntry",
-                    "targetId": "d735-44bc-116a-be41"
-                  },
-                  {
-                    "modifiers": [
-                      {
-                        "conditionGroups": [
-                          {
-                            "conditionGroups": [
-                              {
-                                "conditions": [
-                                  {
-                                    "type": "instanceOf",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "force",
-                                    "childId": "c195-9a6a-a56b-4634",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  },
-                                  {
-                                    "type": "atLeast",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "roster",
-                                    "childId": "4eec-9111-7656-2023",
-                                    "shared": true,
-                                    "includeChildSelections": true,
-                                    "includeChildForces": true
-                                  }
-                                ],
-                                "type": "and"
-                              },
-                              {
-                                "conditions": [
-                                  {
-                                    "type": "atLeast",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "model",
-                                    "childId": "f16b-151d-008f-72e0",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  },
-                                  {
-                                    "type": "instanceOf",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "force",
-                                    "childId": "3256-29e9-1d7a-12a7",
-                                    "shared": true,
-                                    "includeChildSelections": true
-                                  }
-                                ],
-                                "type": "and"
-                              }
-                            ],
-                            "conditions": [
-                              {
-                                "type": "instanceOf",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "force",
-                                "childId": "2496-21e2-1870-e9b8",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "or"
-                          }
-                        ],
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": "Two asphyx pistols",
-                        "field": "name"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Point(s)",
-                        "typeId": "9893-c379-920b-8982",
-                        "value": 2
-                      }
-                    ],
-                    "import": true,
-                    "name": "Asphyx pistol",
-                    "hidden": true,
-                    "id": "e169-d189-8d5c-9d41",
-                    "type": "selectionEntry",
-                    "targetId": "d293-df49-e8c3-f3bf"
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "max",
@@ -188586,7 +188683,725 @@
                 "name": "May have its two bolt pistols exchanged for one of the following:",
                 "id": "4009-adbf-4afd-b1c6",
                 "sortIndex": 2,
-                "defaultSelectionEntryId": "c165-f9e8-4e21-ad71"
+                "defaultSelectionEntryId": "4ecd-2037-559a-57d1",
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two bolt pistols",
+                    "hidden": false,
+                    "id": "4ecd-2037-559a-57d1",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Bolt pistol",
+                        "hidden": false,
+                        "id": "c165-f9e8-4e21-ad71",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "bc64-6a45-8a07-9581"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "15dd-a249-6b74-d2ff"
+                          }
+                        ],
+                        "type": "selectionEntry",
+                        "targetId": "2942-f783-d627-33c5",
+                        "defaultAmount": 1
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6a5c-cd6a-4f9a-bedc",
+                        "automatic": true
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "6a5c-cd6a-4f9a-bedc",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "4d86-d6e9-8bca-0ad5",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ],
+                    "sortIndex": 1,
+                    "defaultAmount": "1"
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two Asphyx pistols",
+                    "hidden": true,
+                    "id": "b1ba-fa2c-2c87-2df9",
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 4
+                      },
+                      {
+                        "name": "Reaction Point(s)",
+                        "typeId": "c9ba-097e-c47f-ecc2",
+                        "value": 0
+                      },
+                      {
+                        "name": "Auxiliary Detachment(s)",
+                        "typeId": "3e8e-05ee-be52-12d6",
+                        "value": 0
+                      },
+                      {
+                        "name": "Apex Detachment(s)",
+                        "typeId": "159d-855c-533d-f592",
+                        "value": 0
+                      },
+                      {
+                        "name": "Combined Warlord and Lord of War Points",
+                        "typeId": "14bd-cad0-cd3d-8b23",
+                        "value": 0
+                      },
+                      {
+                        "name": "Mech LB",
+                        "typeId": "7275-cbe8-a563-7152",
+                        "value": 0
+                      },
+                      {
+                        "name": "Tank Detachments",
+                        "typeId": "2cdf-186c-a655-d907",
+                        "value": 0
+                      },
+                      {
+                        "name": "ZM Primary Detachment",
+                        "typeId": "37ff-b26e-18a9-7f57",
+                        "value": 0
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Asphyx pistol",
+                        "hidden": false,
+                        "id": "e169-d189-8d5c-9d41",
+                        "type": "selectionEntry",
+                        "targetId": "d293-df49-e8c3-f3bf",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "3dcc-0dbf-5f1c-8d26"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "2c14-a718-31b4-2efa"
+                          }
+                        ]
+                      }
+                    ],
+                    "sortIndex": 2,
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditionGroups": [
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {
+                                    "type": "instanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "force",
+                                    "childId": "c195-9a6a-a56b-4634",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  },
+                                  {
+                                    "type": "atLeast",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "roster",
+                                    "childId": "4eec-9111-7656-2023",
+                                    "shared": true,
+                                    "includeChildSelections": true,
+                                    "includeChildForces": true
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {
+                                    "type": "atLeast",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "model",
+                                    "childId": "f16b-151d-008f-72e0",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  },
+                                  {
+                                    "type": "instanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "force",
+                                    "childId": "3256-29e9-1d7a-12a7",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  }
+                                ]
+                              }
+                            ],
+                            "conditions": [
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "2496-21e2-1870-e9b8",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two hand flamers",
+                    "hidden": false,
+                    "id": "afab-b5cb-c9ea-1d07",
+                    "sortIndex": 3,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Hand flamer",
+                        "hidden": false,
+                        "id": "46cb-d4f0-4e61-bb3d",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "138b-2cbf-ea3b-213b"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "36fd-b1bb-ec88-be02"
+                          }
+                        ],
+                        "type": "selectionEntry",
+                        "targetId": "9322-09ed-abec-6e13"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 5
+                      },
+                      {
+                        "name": "Reaction Point(s)",
+                        "typeId": "c9ba-097e-c47f-ecc2",
+                        "value": 0
+                      },
+                      {
+                        "name": "Auxiliary Detachment(s)",
+                        "typeId": "3e8e-05ee-be52-12d6",
+                        "value": 0
+                      },
+                      {
+                        "name": "Apex Detachment(s)",
+                        "typeId": "159d-855c-533d-f592",
+                        "value": 0
+                      },
+                      {
+                        "name": "Combined Warlord and Lord of War Points",
+                        "typeId": "14bd-cad0-cd3d-8b23",
+                        "value": 0
+                      },
+                      {
+                        "name": "Mech LB",
+                        "typeId": "7275-cbe8-a563-7152",
+                        "value": 0
+                      },
+                      {
+                        "name": "Tank Detachments",
+                        "typeId": "2cdf-186c-a655-d907",
+                        "value": 0
+                      },
+                      {
+                        "name": "ZM Primary Detachment",
+                        "typeId": "37ff-b26e-18a9-7f57",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two Forge-crafted hand flamers",
+                    "hidden": true,
+                    "id": "376d-aabb-7933-a736",
+                    "sortIndex": 4,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Forge-crafted hand flamer",
+                        "hidden": false,
+                        "id": "71e4-2f01-ecde-0245",
+                        "type": "selectionEntry",
+                        "targetId": "fe39-b979-bb90-117f",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "c74c-b468-33dc-ebac"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "1506-eff9-c272-f613"
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 15
+                      },
+                      {
+                        "name": "Reaction Point(s)",
+                        "typeId": "c9ba-097e-c47f-ecc2",
+                        "value": 0
+                      },
+                      {
+                        "name": "Auxiliary Detachment(s)",
+                        "typeId": "3e8e-05ee-be52-12d6",
+                        "value": 0
+                      },
+                      {
+                        "name": "Apex Detachment(s)",
+                        "typeId": "159d-855c-533d-f592",
+                        "value": 0
+                      },
+                      {
+                        "name": "Combined Warlord and Lord of War Points",
+                        "typeId": "14bd-cad0-cd3d-8b23",
+                        "value": 0
+                      },
+                      {
+                        "name": "Mech LB",
+                        "typeId": "7275-cbe8-a563-7152",
+                        "value": 0
+                      },
+                      {
+                        "name": "Tank Detachments",
+                        "typeId": "2cdf-186c-a655-d907",
+                        "value": 0
+                      },
+                      {
+                        "name": "ZM Primary Detachment",
+                        "typeId": "37ff-b26e-18a9-7f57",
+                        "value": 0
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "model",
+                                "childId": "8045-89a4-76d4-fcef",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ],
+                            "comment": "SL",
+                            "conditionGroups": [
+                              {
+                                "type": "or",
+                                "conditionGroups": [
+                                  {
+                                    "type": "and",
+                                    "conditions": [
+                                      {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "force",
+                                        "childId": "c195-9a6a-a56b-4634",
+                                        "shared": true,
+                                        "includeChildSelections": true
+                                      },
+                                      {
+                                        "type": "atLeast",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "roster",
+                                        "childId": "fde7-fb71-1ecc-7365",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "and",
+                                    "conditions": [
+                                      {
+                                        "type": "atLeast",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "model",
+                                        "childId": "0320-4ca9-6d7c-8d3c",
+                                        "shared": true,
+                                        "includeChildSelections": true
+                                      },
+                                      {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "force",
+                                        "childId": "3256-29e9-1d7a-12a7",
+                                        "shared": true,
+                                        "includeChildSelections": true
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "and",
+                                    "conditions": [
+                                      {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "force",
+                                        "childId": "3256-29e9-1d7a-12a7",
+                                        "shared": true,
+                                        "includeChildSelections": true
+                                      },
+                                      {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "unit",
+                                        "childId": "acc7-7ab0-1b70-15c2",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "childName": "Exemplars of the Legion - Salamanders"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "conditions": [
+                                  {
+                                    "type": "instanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "force",
+                                    "childId": "f148-a6e4-5a8c-3aeb",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "comment": "SL+Sgt Only"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two Shrapnel pistols",
+                    "hidden": true,
+                    "id": "7116-d0e8-ea0f-bf41",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditionGroups": [
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {
+                                    "type": "instanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "force",
+                                    "childId": "c195-9a6a-a56b-4634",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  },
+                                  {
+                                    "type": "atLeast",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "roster",
+                                    "childId": "4061-bc47-ebca-dc39",
+                                    "shared": true,
+                                    "includeChildSelections": true,
+                                    "includeChildForces": true
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {
+                                    "type": "atLeast",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "model",
+                                    "childId": "1d11-e616-eb66-a6ce",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  },
+                                  {
+                                    "type": "instanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "force",
+                                    "childId": "3256-29e9-1d7a-12a7",
+                                    "shared": true,
+                                    "includeChildSelections": true
+                                  }
+                                ]
+                              }
+                            ],
+                            "conditions": [
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "21c0-18db-03dd-ae07",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Shrapnel pistol",
+                        "hidden": false,
+                        "id": "5e0e-6c7a-3eaa-8ae0",
+                        "type": "selectionEntry",
+                        "targetId": "d735-44bc-116a-be41",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "ef79-838d-df63-6d15"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "88ad-6578-369c-5cc1"
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 4
+                      },
+                      {
+                        "name": "Reaction Point(s)",
+                        "typeId": "c9ba-097e-c47f-ecc2",
+                        "value": 0
+                      },
+                      {
+                        "name": "Auxiliary Detachment(s)",
+                        "typeId": "3e8e-05ee-be52-12d6",
+                        "value": 0
+                      },
+                      {
+                        "name": "Apex Detachment(s)",
+                        "typeId": "159d-855c-533d-f592",
+                        "value": 0
+                      },
+                      {
+                        "name": "Combined Warlord and Lord of War Points",
+                        "typeId": "14bd-cad0-cd3d-8b23",
+                        "value": 0
+                      },
+                      {
+                        "name": "Mech LB",
+                        "typeId": "7275-cbe8-a563-7152",
+                        "value": 0
+                      },
+                      {
+                        "name": "Tank Detachments",
+                        "typeId": "2cdf-186c-a655-d907",
+                        "value": 0
+                      },
+                      {
+                        "name": "ZM Primary Detachment",
+                        "typeId": "37ff-b26e-18a9-7f57",
+                        "value": 0
+                      }
+                    ],
+                    "sortIndex": 5
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two volkite sepenta",
+                    "hidden": false,
+                    "id": "9227-8a32-6d0a-133d",
+                    "sortIndex": 6,
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 5
+                      },
+                      {
+                        "name": "Reaction Point(s)",
+                        "typeId": "c9ba-097e-c47f-ecc2",
+                        "value": 0
+                      },
+                      {
+                        "name": "Auxiliary Detachment(s)",
+                        "typeId": "3e8e-05ee-be52-12d6",
+                        "value": 0
+                      },
+                      {
+                        "name": "Apex Detachment(s)",
+                        "typeId": "159d-855c-533d-f592",
+                        "value": 0
+                      },
+                      {
+                        "name": "Combined Warlord and Lord of War Points",
+                        "typeId": "14bd-cad0-cd3d-8b23",
+                        "value": 0
+                      },
+                      {
+                        "name": "Mech LB",
+                        "typeId": "7275-cbe8-a563-7152",
+                        "value": 0
+                      },
+                      {
+                        "name": "Tank Detachments",
+                        "typeId": "2cdf-186c-a655-d907",
+                        "value": 0
+                      },
+                      {
+                        "name": "ZM Primary Detachment",
+                        "typeId": "37ff-b26e-18a9-7f57",
+                        "value": 0
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Volkite serpenta",
+                        "hidden": false,
+                        "id": "4fa5-ee13-4e0a-b9c8",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "cc68-c8e6-4a98-9037"
+                          },
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "e8c6-ceb8-3121-ca57"
+                          }
+                        ],
+                        "type": "selectionEntry",
+                        "targetId": "b7c3-1de1-087c-3d6e"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "entryLinks": [
