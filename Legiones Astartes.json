@@ -234026,14 +234026,6 @@
                         "includeChildForces": true
                       },
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "forces",
-                        "scope": "roster",
-                        "childId": "8f12-c30a-6c20-6296",
-                        "shared": true
-                      },
-                      {
                         "type": "instanceOf",
                         "value": 1,
                         "field": "selections",
@@ -234105,6 +234097,30 @@
                           }
                         ],
                         "type": "or"
+                      },
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "forces",
+                            "scope": "roster",
+                            "childId": "8f12-c30a-6c20-6296",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "shared": true,
+                            "childName": "ZM Primary Detachment",
+                            "includeChildSelections": false,
+                            "includeChildForces": true,
+                            "childId": "c83f-3c44-31ab-1ffd"
+                          }
+                        ]
                       }
                     ],
                     "type": "and"
