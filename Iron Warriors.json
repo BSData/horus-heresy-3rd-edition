@@ -6392,85 +6392,6 @@
                 ],
                 "selectionEntries": [
                   {
-                    "entryLinks": [
-                      {
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "5343-ae4e-25b2-dbfb"
-                          },
-                          {
-                            "type": "max",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "a405-a6be-ef70-f6b2"
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "set",
-                            "value": "Two Sponson Mounted twin heavy bolters",
-                            "field": "name"
-                          }
-                        ],
-                        "import": true,
-                        "name": "Twin heavy bolter",
-                        "hidden": false,
-                        "id": "e5be-6b83-11b5-009a",
-                        "type": "selectionEntry",
-                        "targetId": "e0bc-e3e1-54e7-bd75"
-                      },
-                      {
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "b543-d280-a16a-5448"
-                          },
-                          {
-                            "type": "max",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "c7b2-e4fb-187c-9cd1"
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "instanceOf",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "ancestor",
-                                "childId": "any",
-                                "shared": true,
-                                "includeChildSelections": false
-                              }
-                            ],
-                            "type": "set",
-                            "value": "Two Sponson Mounted lascannon",
-                            "field": "name"
-                          }
-                        ],
-                        "import": true,
-                        "name": "Lascannon",
-                        "hidden": false,
-                        "id": "a6b8-a15e-ece4-13f0",
-                        "type": "selectionEntry",
-                        "targetId": "b6d5-4be2-c37e-2197"
-                      }
-                    ],
                     "constraints": [
                       {
                         "type": "max",
@@ -6513,88 +6434,83 @@
                     "name": "Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters",
                     "hidden": false,
                     "id": "8351-33d8-64fc-8aa5",
-                    "sortIndex": 1
-                  },
-                  {
-                    "entryLinks": [
+                    "sortIndex": 1,
+                    "selectionEntries": [
                       {
-                        "constraints": [
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Two Sponson Mounted lascannon",
+                        "hidden": false,
+                        "id": "fc5d-d28b-ff4d-2550",
+                        "sortIndex": 1,
+                        "entryLinks": [
                           {
-                            "type": "min",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "e738-8d76-f728-543e"
-                          },
-                          {
-                            "type": "max",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "a102-f38d-ec74-20cc"
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "conditions": [
+                            "import": true,
+                            "name": "Lascannon",
+                            "hidden": false,
+                            "id": "a6b8-a15e-ece4-13f0",
+                            "constraints": [
                               {
-                                "type": "instanceOf",
-                                "value": 1,
+                                "type": "min",
+                                "value": 2,
                                 "field": "selections",
-                                "scope": "ancestor",
-                                "childId": "any",
+                                "scope": "parent",
                                 "shared": true,
-                                "includeChildSelections": false
+                                "id": "b543-d280-a16a-5448"
+                              },
+                              {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "c7b2-e4fb-187c-9cd1"
                               }
                             ],
-                            "type": "set",
-                            "value": "Two Sponson Mounted lascannon",
-                            "field": "name"
+                            "type": "selectionEntry",
+                            "targetId": "b6d5-4be2-c37e-2197"
                           }
-                        ],
-                        "import": true,
-                        "name": "Lascannon",
-                        "hidden": false,
-                        "id": "32a0-3345-ac1d-8cb4",
-                        "type": "selectionEntry",
-                        "targetId": "b6d5-4be2-c37e-2197"
+                        ]
                       },
                       {
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "c861-3cc0-4f4c-7449"
-                          },
-                          {
-                            "type": "max",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "eac8-2dc6-d5d1-8e08"
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "set",
-                            "value": "Two Sponson Mounted twin heavy flamers",
-                            "field": "name"
-                          }
-                        ],
+                        "type": "upgrade",
                         "import": true,
-                        "name": "Twin heavy flamer",
+                        "name": "Two Sponson Mounted twin heavy bolters",
                         "hidden": false,
-                        "id": "a102-e529-49b2-1a94",
-                        "type": "selectionEntry",
-                        "targetId": "f797-93eb-d6fe-586a"
+                        "id": "13cf-6978-2bcf-cddb",
+                        "sortIndex": 2,
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Twin heavy bolter",
+                            "hidden": false,
+                            "id": "e5be-6b83-11b5-009a",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "5343-ae4e-25b2-dbfb"
+                              },
+                              {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "a405-a6be-ef70-f6b2"
+                              }
+                            ],
+                            "type": "selectionEntry",
+                            "targetId": "e0bc-e3e1-54e7-bd75"
+                          }
+                        ]
                       }
-                    ],
+                    ]
+                  },
+                  {
                     "costs": [
                       {
                         "name": "Point(s)",
@@ -6627,7 +6543,80 @@
                     "name": "Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers",
                     "hidden": false,
                     "id": "46cc-ed5a-d1ce-2b50",
-                    "sortIndex": 2
+                    "sortIndex": 2,
+                    "selectionEntries": [
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Two Sponson Mounted lascannon",
+                        "hidden": false,
+                        "id": "501e-109f-ef3e-c9bc",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Lascannon",
+                            "hidden": false,
+                            "id": "c4a6-8ff1-6e3d-8dd6",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "cd55-5765-5fca-5d3b"
+                              },
+                              {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "e2f4-dec7-11f7-cb1c"
+                              }
+                            ],
+                            "type": "selectionEntry",
+                            "targetId": "b6d5-4be2-c37e-2197"
+                          }
+                        ],
+                        "sortIndex": 1
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Two Sponson Mounted Twin heavy flamers",
+                        "hidden": false,
+                        "id": "61c3-feae-24c7-65ef",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Twin heavy flamer",
+                            "hidden": false,
+                            "id": "a102-e529-49b2-1a94",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "c861-3cc0-4f4c-7449"
+                              },
+                              {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "eac8-2dc6-d5d1-8e08"
+                              }
+                            ],
+                            "type": "selectionEntry",
+                            "targetId": "f797-93eb-d6fe-586a"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "name": "This Model may have one of the following selected for it:",
