@@ -33028,24 +33028,6 @@
                     "value": 18
                   }
                 ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e442-f5f3-4f52-ba34"
-                  },
-                  {
-                    "type": "max",
-                    "value": 5,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "8b21-0f13-42d5-bda8"
-                  }
-                ],
                 "selectionEntryGroups": [
                   {
                     "selectionEntryGroups": [
@@ -33141,7 +33123,8 @@
                         "name": "Every Model must have one:",
                         "id": "d202-8d56-6877-f6ed",
                         "hidden": false,
-                        "sortIndex": 1
+                        "sortIndex": 1,
+                        "defaultSelectionEntryId": "none"
                       }
                     ],
                     "name": "Options",
@@ -33170,13 +33153,6 @@
                     "id": "0354-b563-4486-91f3",
                     "targetId": "d2d6-5a84-672b-2833",
                     "primary": false
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "add",
-                    "value": "3760-2dfb-561a-b603",
-                    "field": "category"
                   }
                 ],
                 "type": "model",
@@ -33690,16 +33666,6 @@
                       {
                         "entryLinks": [
                           {
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "86b6-56e6-3a2e-fbc6"
-                              }
-                            ],
                             "import": true,
                             "name": "Militia Melee Weapons",
                             "hidden": false,
@@ -33734,217 +33700,148 @@
                         "sortIndex": 2
                       },
                       {
-                        "entryLinks": [
-                          {
-                            "modifiers": [
-                              {
-                                "type": "set",
-                                "value": "Two heavy stubbers",
-                                "field": "name"
-                              }
-                            ],
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "3e74-3152-4f18-a42e"
-                              }
-                            ],
-                            "import": true,
-                            "name": "Heavy stubber",
-                            "hidden": false,
-                            "id": "7176-f057-4f84-83e2",
-                            "type": "selectionEntry",
-                            "targetId": "51af-9efb-4c72-90be"
-                          },
-                          {
-                            "modifiers": [
-                              {
-                                "type": "set",
-                                "value": "Two combi-bolters",
-                                "field": "name"
-                              }
-                            ],
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "f8fe-0a60-4d8b-8e9f"
-                              }
-                            ],
-                            "import": true,
-                            "name": "Combi-bolter",
-                            "hidden": false,
-                            "id": "d2bd-e9d7-42db-ba2c",
-                            "type": "selectionEntry",
-                            "targetId": "042d-9e60-db9e-c147",
-                            "defaultAmount": 1
-                          }
-                        ],
                         "constraints": [
+                          {
+                            "type": "min",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "f550-1904-39df-56ba"
+                          },
                           {
                             "type": "max",
                             "value": 1,
                             "field": "selections",
                             "scope": "parent",
                             "shared": true,
-                            "id": "7ef0-1d91-4761-b4c7",
-                            "automatic": true
-                          }
-                        ],
-                        "selectionEntryGroups": [
-                          {
-                            "selectionEntries": [
-                              {
-                                "comment": "Has to be unique in Unit and clashes with Quad Meltagun",
-                                "profiles": [
-                                  {
-                                    "characteristics": [
-                                      {
-                                        "$text": "12",
-                                        "name": "R",
-                                        "typeId": "cdb0-8654-6840-1037"
-                                      },
-                                      {
-                                        "$text": "1",
-                                        "name": "FP",
-                                        "typeId": "5037-1f27-1790-e355"
-                                      },
-                                      {
-                                        "$text": "8",
-                                        "name": "RS",
-                                        "typeId": "b9da-ee13-79f9-fa63"
-                                      },
-                                      {
-                                        "$text": "2",
-                                        "name": "AP",
-                                        "typeId": "7a23-0248-2b94-5951"
-                                      },
-                                      {
-                                        "$text": "3",
-                                        "name": "D",
-                                        "typeId": "88c3-1ca5-7dc1-f291"
-                                      },
-                                      {
-                                        "$text": "Melta (6)",
-                                        "name": "Special Rules",
-                                        "typeId": "5aad-137a-8ee2-63fd"
-                                      },
-                                      {
-                                        "$text": "Melta",
-                                        "name": "Traits",
-                                        "typeId": "1247-79d2-6cc1-8a03"
-                                      }
-                                    ],
-                                    "modifiers": [
-                                      {
-                                        "type": "set",
-                                        "value": "Meltagun (x2)",
-                                        "field": "name"
-                                      }
-                                    ],
-                                    "name": "Trike Meltagun",
-                                    "typeId": "c591-09ed-3e6f-eb2b",
-                                    "typeName": "Ranged Weapon",
-                                    "hidden": false,
-                                    "id": "68c2-0344-06cd-cba4",
-                                    "page": 53,
-                                    "publicationId": "a5ca-d2f8-fa5a-c120"
-                                  }
-                                ],
-                                "infoLinks": [
-                                  {
-                                    "modifiers": [
-                                      {
-                                        "type": "set",
-                                        "value": "Melta (6)",
-                                        "field": "name"
-                                      }
-                                    ],
-                                    "comment": "6",
-                                    "name": "Melta (X)",
-                                    "id": "8dc3-efe6-c175-3c70",
-                                    "hidden": false,
-                                    "type": "rule",
-                                    "targetId": "8ef6-917e-93da-43c3"
-                                  }
-                                ],
-                                "constraints": [
-                                  {
-                                    "type": "max",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "parent",
-                                    "shared": true,
-                                    "id": "4854-3d0a-4816-0148"
-                                  },
-                                  {
-                                    "type": "max",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "unit",
-                                    "shared": true,
-                                    "id": "4b8d-31a0-5165-bd99",
-                                    "includeChildSelections": true
-                                  }
-                                ],
-                                "modifiers": [
-                                  {
-                                    "type": "set",
-                                    "value": "Two meltaguns",
-                                    "field": "name"
-                                  }
-                                ],
-                                "costs": [
-                                  {
-                                    "name": "Point(s)",
-                                    "typeId": "9893-c379-920b-8982",
-                                    "value": 20
-                                  },
-                                  {
-                                    "name": "Asset Point(s)",
-                                    "typeId": "57e3-1031-7d4d-5ae3",
-                                    "value": 0
-                                  },
-                                  {
-                                    "name": "Reaction Point(s)",
-                                    "typeId": "c9ba-097e-c47f-ecc2",
-                                    "value": 0
-                                  },
-                                  {
-                                    "name": "Auxiliary Detachment(s)",
-                                    "typeId": "3e8e-05ee-be52-12d6",
-                                    "value": 0
-                                  },
-                                  {
-                                    "name": "Apex Detachment(s)",
-                                    "typeId": "159d-855c-533d-f592",
-                                    "value": 0
-                                  }
-                                ],
-                                "type": "upgrade",
-                                "import": true,
-                                "name": "Trike Meltagun",
-                                "hidden": false,
-                                "id": "45b1-eaea-bec4-ffe4"
-                              }
-                            ],
-                            "name": "One Militia Trike may take:",
-                            "id": "57df-9459-cd8b-8d6f",
-                            "hidden": false
+                            "id": "e6ea-712a-a696-4480"
                           }
                         ],
                         "name": "May have both of its combi-bolters exchanged for:",
                         "id": "5e71-d9e8-4976-b2b9",
                         "hidden": false,
-                        "defaultSelectionEntryId": "d2bd-e9d7-42db-ba2c",
-                        "sortIndex": 1
+                        "defaultSelectionEntryId": "d5c8-f57d-9079-64a5",
+                        "sortIndex": 1,
+                        "selectionEntries": [
+                          {
+                            "type": "upgrade",
+                            "import": true,
+                            "name": "Two combi-bolters",
+                            "hidden": false,
+                            "id": "d5c8-f57d-9079-64a5",
+                            "entryLinks": [
+                              {
+                                "import": true,
+                                "name": "Combi-bolter",
+                                "hidden": false,
+                                "id": "d2bd-e9d7-42db-ba2c",
+                                "constraints": [
+                                  {
+                                    "type": "max",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "f8fe-0a60-4d8b-8e9f"
+                                  },
+                                  {
+                                    "type": "min",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "4ead-dc0c-195a-c316"
+                                  }
+                                ],
+                                "type": "selectionEntry",
+                                "targetId": "042d-9e60-db9e-c147",
+                                "defaultAmount": 1
+                              }
+                            ]
+                          },
+                          {
+                            "type": "upgrade",
+                            "import": true,
+                            "name": "Two Heavy stubbers",
+                            "hidden": false,
+                            "id": "2414-a80a-c25e-e955",
+                            "entryLinks": [
+                              {
+                                "import": true,
+                                "name": "Heavy stubber",
+                                "hidden": false,
+                                "id": "7176-f057-4f84-83e2",
+                                "constraints": [
+                                  {
+                                    "type": "max",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "3e74-3152-4f18-a42e"
+                                  },
+                                  {
+                                    "type": "min",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "c36c-2394-45bd-33f1"
+                                  }
+                                ],
+                                "type": "selectionEntry",
+                                "targetId": "51af-9efb-4c72-90be"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "upgrade",
+                            "import": true,
+                            "name": "Two meltaguns (One trike only)",
+                            "hidden": false,
+                            "id": "de76-0077-ce45-0b97",
+                            "entryLinks": [
+                              {
+                                "import": true,
+                                "name": "Meltagun",
+                                "hidden": false,
+                                "id": "f736-5842-3eaa-f2e2",
+                                "type": "selectionEntry",
+                                "targetId": "b1e1-e164-5877-6734",
+                                "constraints": [
+                                  {
+                                    "type": "min",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "3f15-c051-3391-5637"
+                                  },
+                                  {
+                                    "type": "max",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "514d-3308-c4e1-f54e"
+                                  }
+                                ]
+                              }
+                            ],
+                            "constraints": [
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "unit",
+                                "shared": true,
+                                "id": "7e7e-b657-c1c4-74ba",
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "name": "Options",
@@ -33973,13 +33870,6 @@
                     "id": "ddad-0e6f-40c4-a574",
                     "targetId": "d2d6-5a84-672b-2833",
                     "primary": false
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "add",
-                    "value": "3760-2dfb-561a-b603",
-                    "field": "category"
                   }
                 ],
                 "type": "model",
@@ -34012,7 +33902,8 @@
             "name": "Unit Option",
             "id": "b46f-8ed2-9310-5337",
             "hidden": false,
-            "sortIndex": 1
+            "sortIndex": 1,
+            "defaultSelectionEntryId": "19b9-8ac5-4b4d-88e4"
           }
         ],
         "categoryLinks": [
@@ -34027,6 +33918,11 @@
           {
             "type": "add",
             "value": "7f0e-74eb-0683-b34f",
+            "field": "category"
+          },
+          {
+            "type": "add",
+            "value": "3760-2dfb-561a-b603",
             "field": "category"
           }
         ],
