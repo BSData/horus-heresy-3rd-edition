@@ -2647,6 +2647,32 @@
                     "type": "increment",
                     "value": 1,
                     "field": "4cd1-9b97-f2e4-f29a"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Command",
@@ -2936,6 +2962,84 @@
                     "type": "set",
                     "value": 4,
                     "field": "d641-4561-177f-2149"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "610d-c9b0-ccb0-cba9",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "f5dc-c13a-5848-f3b8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "forces",
+                                "scope": "primary-catalogue",
+                                "childId": "c195-9a6a-a56b-4634",
+                                "shared": true
+                              }
+                            ]
+                          },
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "f5dc-c13a-5848-f3b8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 0,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "610d-c9b0-ccb0-cba9",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "forces",
+                                "scope": "primary-catalogue",
+                                "childId": "c195-9a6a-a56b-4634",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Elites",
@@ -5744,6 +5848,31 @@
                     "type": "increment",
                     "value": 1,
                     "field": "5a1b-bae6-7bea-4a8a"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "f5dc-c13a-5848-f3b8",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Troops",
@@ -9555,6 +9684,32 @@
                     "type": "set",
                     "value": 4,
                     "field": "aadd-6985-c329-e156"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Transport",
@@ -9600,6 +9755,32 @@
                     "type": "set",
                     "value": 4,
                     "field": "2796-15f4-0561-d11b"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Heavy Transport",
@@ -11195,6 +11376,31 @@
                     "type": "set",
                     "value": 2,
                     "field": "9c86-e88f-16b7-b9b8"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Troops",
@@ -11239,6 +11445,31 @@
                     "type": "set",
                     "value": 2,
                     "field": "98f8-8860-4dd3-58d7"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Support",
@@ -12832,6 +13063,31 @@
                     "type": "set",
                     "value": 4,
                     "field": "0b7c-566a-8311-703d"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Armour",
@@ -14326,6 +14582,31 @@
                     "type": "set",
                     "value": 1,
                     "field": "1fe7-5114-3d7d-e501"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime War-engine",
@@ -15820,6 +16101,31 @@
                     "type": "set",
                     "value": 2,
                     "field": "f4fd-d341-0f65-784b"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Recon",
@@ -17314,6 +17620,31 @@
                     "type": "set",
                     "value": 2,
                     "field": "0dc3-2e75-42a7-ef00"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Heavy Assault",
@@ -18808,6 +19139,31 @@
                     "type": "set",
                     "value": 2,
                     "field": "0764-c4bb-2d59-a5d0"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Fast Attack",
@@ -22409,6 +22765,22 @@
                     "type": "set",
                     "value": 0,
                     "field": "d6ac-cfd0-4b4e-00b3"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Command",
@@ -60363,6 +60735,32 @@
                     "type": "set",
                     "value": 3,
                     "field": "1315-060f-0e17-d34a"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Heavy Assault",
@@ -61123,6 +61521,31 @@
                     "type": "set",
                     "value": 1,
                     "field": "aecf-057e-51d1-57fc"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Retinue",
@@ -61168,6 +61591,31 @@
                     "type": "set",
                     "value": 1,
                     "field": "9f0d-4bb0-c1d5-c0b2"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Elites",
@@ -61213,6 +61661,31 @@
                     "type": "set",
                     "value": 1,
                     "field": "e705-c4b0-9fa3-ead3"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Heavy Transport",
@@ -64665,6 +65138,31 @@
                     "type": "set",
                     "value": 2,
                     "field": "8dee-7e51-463d-06b4"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Support",
@@ -64710,6 +65208,31 @@
                     "type": "set",
                     "value": 2,
                     "field": "68ac-f1bf-3818-8aca"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Armour",
@@ -66415,6 +66938,31 @@
                     "type": "set",
                     "value": 1,
                     "field": "2ee1-f541-0f54-3238"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Retinue",
@@ -74903,6 +75451,31 @@
                     "type": "set",
                     "value": 1,
                     "field": "2967-a04e-900f-39e9"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Retinue",
@@ -76340,6 +76913,31 @@
                     "type": "set",
                     "value": 1,
                     "field": "4a85-93dd-6b94-0527"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Retinue",
@@ -77827,6 +78425,31 @@
                     "type": "set",
                     "value": 1,
                     "field": "b1e1-d557-048a-4c01"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Retinue",
@@ -79450,6 +80073,31 @@
                     "type": "set",
                     "value": 2,
                     "field": "56d6-8c0a-d706-9dae"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Support",
@@ -87680,6 +88328,31 @@
                     "type": "set",
                     "value": 4,
                     "field": "e103-6327-f99b-d852"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Armour",
@@ -91227,12 +91900,18 @@
                     "type": "set",
                     "value": 0,
                     "field": "60ca-4b4f-c056-648d"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "tracked"
                   }
                 ],
                 "name": "Prime Command",
                 "hidden": false,
                 "id": "1f4c-0a81-4707-e9cf",
-                "targetId": "c85c-2963-658f-1bb9"
+                "targetId": "c85c-2963-658f-1bb9",
+                "tracked": true
               },
               {
                 "constraints": [
@@ -91612,6 +92291,31 @@
                     "type": "set",
                     "value": 4,
                     "field": "c3e6-9a72-5678-0ea7"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Troops",
@@ -100312,6 +101016,84 @@
                     "type": "set",
                     "value": 4,
                     "field": "877f-ce6d-e864-9a18"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "f5dc-c13a-5848-f3b8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 0,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "610d-c9b0-ccb0-cba9",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "forces",
+                                "scope": "primary-catalogue",
+                                "childId": "c195-9a6a-a56b-4634",
+                                "shared": true
+                              }
+                            ]
+                          },
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "610d-c9b0-ccb0-cba9",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "f5dc-c13a-5848-f3b8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "forces",
+                                "scope": "primary-catalogue",
+                                "childId": "c195-9a6a-a56b-4634",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Elites",
@@ -100566,6 +101348,31 @@
                     "type": "set",
                     "value": 0,
                     "field": "8b87-9002-daba-0b57"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "f5dc-c13a-5848-f3b8",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Troops",
@@ -103533,6 +104340,84 @@
                     "type": "set",
                     "value": 4,
                     "field": "ea9c-d7fe-ef4d-f510"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "f5dc-c13a-5848-f3b8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 0,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "610d-c9b0-ccb0-cba9",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "forces",
+                                "scope": "primary-catalogue",
+                                "childId": "c195-9a6a-a56b-4634",
+                                "shared": true
+                              }
+                            ]
+                          },
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "610d-c9b0-ccb0-cba9",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "f5dc-c13a-5848-f3b8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "forces",
+                                "scope": "primary-catalogue",
+                                "childId": "c195-9a6a-a56b-4634",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Elites",
@@ -103772,6 +104657,31 @@
                     "type": "set",
                     "value": 0,
                     "field": "0e3d-e1bb-da0a-ee14"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "f5dc-c13a-5848-f3b8",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Troops",
@@ -106823,8 +107733,7 @@
                 "name": "Troops",
                 "hidden": false,
                 "id": "2abf-8c40-fcf4-359c",
-                "targetId": "88e6-d373-4152-0dd8",
-                "tracked": true
+                "targetId": "88e6-d373-4152-0dd8"
               },
               {
                 "constraints": [
@@ -106865,13 +107774,16 @@
                     "field": "01e8-29ce-a2af-73fb"
                   },
                   {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
                     "conditions": [
                       {
                         "type": "atLeast",
                         "value": 1,
                         "field": "selections",
                         "scope": "roster",
-                        "childId": "f5dc-c13a-5848-f3b8",
+                        "childId": "610d-c9b0-ccb0-cba9",
                         "shared": true,
                         "includeChildSelections": true,
                         "includeChildForces": true
@@ -106884,10 +107796,7 @@
                         "childId": "c195-9a6a-a56b-4634",
                         "shared": true
                       }
-                    ],
-                    "type": "set",
-                    "value": 0,
-                    "field": "01e8-29ce-a2af-73fb"
+                    ]
                   }
                 ],
                 "name": "Prime Troops",
@@ -111383,12 +112292,39 @@
                     "type": "increment",
                     "value": 1,
                     "field": "b489-3124-4c87-c518"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Command",
                 "hidden": false,
                 "id": "38ed-db73-0950-ee9d",
-                "targetId": "c85c-2963-658f-1bb9"
+                "targetId": "c85c-2963-658f-1bb9",
+                "tracked": true
               },
               {
                 "constraints": [
@@ -111671,6 +112607,84 @@
                     "type": "set",
                     "value": 4,
                     "field": "a65e-21b3-41ae-4468"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "f5dc-c13a-5848-f3b8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 0,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "610d-c9b0-ccb0-cba9",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "forces",
+                                "scope": "primary-catalogue",
+                                "childId": "c195-9a6a-a56b-4634",
+                                "shared": true
+                              }
+                            ]
+                          },
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "610d-c9b0-ccb0-cba9",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "f5dc-c13a-5848-f3b8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "forces",
+                                "scope": "primary-catalogue",
+                                "childId": "c195-9a6a-a56b-4634",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Elites",
@@ -114468,12 +115482,38 @@
                     "type": "increment",
                     "value": 1,
                     "field": "1d50-e192-f6d0-8f6c"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "f5dc-c13a-5848-f3b8",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Troops",
                 "hidden": false,
                 "id": "02f4-ef85-0749-46b0",
-                "targetId": "c3f9-a7f3-984b-3fda"
+                "targetId": "c3f9-a7f3-984b-3fda",
+                "tracked": true
               },
               {
                 "constraints": [
