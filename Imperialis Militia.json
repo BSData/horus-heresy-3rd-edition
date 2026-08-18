@@ -1854,480 +1854,22 @@
                     "typeId": "a76f-8e23-8c3e-166d",
                     "typeName": "Profile",
                     "hidden": false,
-                    "id": "4904-e6bd-4899-8800"
-                  },
-                  {
-                    "characteristics": [
+                    "id": "4904-e6bd-4899-8800",
+                    "modifiers": [
                       {
-                        "$text": "Infantry (Command)",
-                        "typeId": "50fc-9241-d4a2-045b",
-                        "name": "Type"
-                      },
-                      {
-                        "$text": "6",
-                        "typeId": "a106-a779-d272-5e93",
-                        "name": "M"
-                      },
-                      {
-                        "$text": "4",
-                        "typeId": "253c-d694-4695-c89e",
-                        "name": "WS"
-                      },
-                      {
-                        "$text": "3",
-                        "typeId": "0cd5-b269-e3bc-028b",
-                        "name": "BS"
-                      },
-                      {
-                        "$text": "3",
-                        "typeId": "498f-dce1-59fd-d8d7",
-                        "name": "S"
-                      },
-                      {
-                        "$text": "3",
-                        "typeId": "3120-8275-e537-ecd2",
-                        "name": "T"
-                      },
-                      {
-                        "$text": "2",
-                        "typeId": "f5cc-79a3-d302-cc1d",
-                        "name": "W"
-                      },
-                      {
-                        "$text": "3",
-                        "typeId": "af9d-7db8-dc95-71c1",
-                        "name": "I"
-                      },
-                      {
-                        "$text": "2",
-                        "typeId": "024e-bdb1-7982-25a0",
-                        "name": "A"
-                      },
-                      {
-                        "$text": "8",
-                        "typeId": "02ad-ebe6-86e7-9fd6",
-                        "name": "LD"
-                      },
-                      {
-                        "$text": "8",
-                        "typeId": "9cd1-0e7c-2cd6-5f2f",
-                        "name": "CL"
-                      },
-                      {
-                        "$text": "7",
-                        "typeId": "f714-1726-37d3-44df",
-                        "name": "WP"
-                      },
-                      {
-                        "$text": "6",
-                        "typeId": "29c5-925d-5b1d-1e77",
-                        "name": "IN"
-                      },
-                      {
-                        "$text": "5+",
-                        "typeId": "03bd-4ecb-351d-143b",
-                        "name": "SAV"
-                      },
-                      {
-                        "$text": "5+",
-                        "typeId": "a951-a772-7ce0-0b64",
-                        "name": "INV"
-                      }
-                    ],
-                    "modifierGroups": [
-                      {
-                        "comment": "Combat Veterans",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "02ad-ebe6-86e7-9fd6"
-                          },
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "9cd1-0e7c-2cd6-5f2f"
-                          },
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "f714-1726-37d3-44df"
-                          },
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "29c5-925d-5b1d-1e77"
-                          },
-                          {
-                            "type": "ceil",
-                            "value": 10,
-                            "field": "02ad-ebe6-86e7-9fd6"
-                          },
-                          {
-                            "type": "ceil",
-                            "value": 10,
-                            "field": "9cd1-0e7c-2cd6-5f2f"
-                          },
-                          {
-                            "type": "ceil",
-                            "value": 10,
-                            "field": "f714-1726-37d3-44df"
-                          },
-                          {
-                            "type": "ceil",
-                            "value": 10,
-                            "field": "29c5-925d-5b1d-1e77"
-                          }
-                        ],
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "unit",
-                            "childId": "8cf8-9be5-91d6-c96d",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Voidjumpers",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "6f0c-cd4f-15fd-a798",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "set",
-                            "value": 10,
-                            "field": "a106-a779-d272-5e93"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "498f-dce1-59fd-d8d7"
-                          },
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "0cd5-b269-e3bc-028b"
-                          }
-                        ],
-                        "comment": "Abhuman Muster",
+                        "type": "set",
+                        "value": true,
+                        "field": "hidden",
                         "conditionGroups": [
                           {
+                            "type": "and",
                             "conditions": [
                               {
-                                "type": "atLeast",
+                                "type": "equalTo",
                                 "value": 1,
                                 "field": "selections",
-                                "scope": "roster",
-                                "childId": "36e7-0899-8689-0228",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "modifiers": [
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "03bd-4ecb-351d-143b"
-                          },
-                          {
-                            "type": "floor",
-                            "value": 3,
-                            "field": "03bd-4ecb-351d-143b"
-                          }
-                        ],
-                        "comment": "Armoury of Old Night",
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "8cfa-d603-c5e3-995c",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "594d-fa82-13cb-a345",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Debased Rabble",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "9cd1-0e7c-2cd6-5f2f"
-                          },
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "29c5-925d-5b1d-1e77"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "7beb-77c0-3e6e-52a8",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Cyber-Augmentics",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "29c5-925d-5b1d-1e77"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "a3c5-5465-34f7-4060",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "594d-fa82-13cb-a345",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Kinfolk Helots",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "3120-8275-e537-ecd2"
-                          },
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "a106-a779-d272-5e93"
-                          },
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "af9d-7db8-dc95-71c1"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "baca-1393-31e5-6d2b",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "594d-fa82-13cb-a345",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Legacy of the Great Crusade",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "0cd5-b269-e3bc-028b"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "lessThan",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "afa3-a012-61dd-ae9c",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "7665-bd37-c552-1876",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Paragon of Battle",
-                        "modifiers": [
-                          {
-                            "comment": "Paragon of Battle",
-                            "type": "increment",
-                            "value": 1,
-                            "field": "253c-d694-4695-c89e"
-                          },
-                          {
-                            "comment": "Paragon of Battle",
-                            "type": "increment",
-                            "value": 1,
-                            "field": "0cd5-b269-e3bc-028b"
-                          },
-                          {
-                            "comment": "Paragon of Battle",
-                            "type": "increment",
-                            "value": 1,
-                            "field": "024e-bdb1-7982-25a0"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "unit",
-                                "childId": "20cb-4eec-0844-8a97",
+                                "scope": "model-self",
+                                "childId": "af6d-a8eb-5c34-1b8d",
                                 "shared": true,
                                 "includeChildSelections": true
                               },
@@ -2336,121 +1878,16 @@
                                 "value": 1,
                                 "field": "selections",
                                 "scope": "parent",
-                                "childId": "af6d-a8eb-5c34-1b8d",
+                                "childId": "c3fe-89e1-4b5f-a120",
                                 "shared": true,
+                                "childName": "Discipline Master",
                                 "includeChildSelections": true
                               }
-                            ],
-                            "type": "and"
+                            ]
                           }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Warrior Elite",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "02ad-ebe6-86e7-9fd6"
-                          },
-                          {
-                            "type": "ceil",
-                            "value": 9,
-                            "field": "02ad-ebe6-86e7-9fd6"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "fbc6-d055-654b-5241",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
+                        ]
                       }
-                    ],
-                    "modifiers": [
-                      {
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "b522-3ee5-c591-5ff6",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "594d-fa82-13cb-a345",
-                                "shared": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "add",
-                        "value": "f4ba-00e5-3d2e-eaac",
-                        "field": "category"
-                      },
-                      {
-                        "conditions": [
-                          {
-                            "type": "equalTo",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "2716-21c9-70ae-443a",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ],
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      }
-                    ],
-                    "name": "Paragon Discipline Master",
-                    "typeId": "a76f-8e23-8c3e-166d",
-                    "typeName": "Profile",
-                    "hidden": true,
-                    "id": "01a6-b768-4834-ac63"
+                    ]
                   }
                 ],
                 "costs": [
@@ -2678,14 +2115,6 @@
                         "type": "selectionEntry",
                         "targetId": "bdd6-6165-3349-ad0c",
                         "sortIndex": 4
-                      },
-                      {
-                        "import": true,
-                        "name": "Paragon",
-                        "hidden": false,
-                        "id": "2716-21c9-70ae-443a",
-                        "type": "selectionEntry",
-                        "targetId": "af6d-a8eb-5c34-1b8d"
                       }
                     ],
                     "name": "Options",
@@ -2756,20 +2185,45 @@
                     "field": "category"
                   },
                   {
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "unit",
-                        "childId": "e567-503d-4220-9ec3",
-                        "shared": true,
-                        "includeChildSelections": true
-                      }
-                    ],
                     "type": "set",
                     "value": 0,
-                    "field": "27fd-e757-c97a-f732"
+                    "field": "27fd-e757-c97a-f732",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "e567-503d-4220-9ec3",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "53b5-6780-7fb1-b2c0",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "childName": "Paragon Discipline Master"
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "27b9-8702-564c-e0f6",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "childName": "Paragon Mounted Discipline Master"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -3284,567 +2738,40 @@
                     "typeId": "a76f-8e23-8c3e-166d",
                     "typeName": "Profile",
                     "hidden": false,
-                    "id": "7f18-5463-4ce3-8cc6"
-                  },
-                  {
-                    "characteristics": [
+                    "id": "7f18-5463-4ce3-8cc6",
+                    "modifiers": [
                       {
-                        "$text": "Cavalry (Command)",
-                        "typeId": "50fc-9241-d4a2-045b",
-                        "name": "Type"
-                      },
-                      {
-                        "$text": "12",
-                        "typeId": "a106-a779-d272-5e93",
-                        "name": "M"
-                      },
-                      {
-                        "$text": "4",
-                        "typeId": "253c-d694-4695-c89e",
-                        "name": "WS"
-                      },
-                      {
-                        "$text": "3",
-                        "typeId": "0cd5-b269-e3bc-028b",
-                        "name": "BS"
-                      },
-                      {
-                        "$text": "3",
-                        "typeId": "498f-dce1-59fd-d8d7",
-                        "name": "S"
-                      },
-                      {
-                        "$text": "3",
-                        "typeId": "3120-8275-e537-ecd2",
-                        "name": "T"
-                      },
-                      {
-                        "$text": "2",
-                        "typeId": "f5cc-79a3-d302-cc1d",
-                        "name": "W"
-                      },
-                      {
-                        "$text": "3",
-                        "typeId": "af9d-7db8-dc95-71c1",
-                        "name": "I"
-                      },
-                      {
-                        "$text": "2",
-                        "typeId": "024e-bdb1-7982-25a0",
-                        "name": "A"
-                      },
-                      {
-                        "$text": "8",
-                        "typeId": "02ad-ebe6-86e7-9fd6",
-                        "name": "LD"
-                      },
-                      {
-                        "$text": "8",
-                        "typeId": "9cd1-0e7c-2cd6-5f2f",
-                        "name": "CL"
-                      },
-                      {
-                        "$text": "7",
-                        "typeId": "f714-1726-37d3-44df",
-                        "name": "WP"
-                      },
-                      {
-                        "$text": "6",
-                        "typeId": "29c5-925d-5b1d-1e77",
-                        "name": "IN"
-                      },
-                      {
-                        "$text": "5+",
-                        "typeId": "03bd-4ecb-351d-143b",
-                        "name": "SAV"
-                      },
-                      {
-                        "$text": "5+",
-                        "typeId": "a951-a772-7ce0-0b64",
-                        "name": "INV"
-                      }
-                    ],
-                    "modifierGroups": [
-                      {
-                        "comment": "Combat Veterans",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "02ad-ebe6-86e7-9fd6"
-                          },
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "9cd1-0e7c-2cd6-5f2f"
-                          },
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "f714-1726-37d3-44df"
-                          },
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "29c5-925d-5b1d-1e77"
-                          },
-                          {
-                            "type": "ceil",
-                            "value": 10,
-                            "field": "02ad-ebe6-86e7-9fd6"
-                          },
-                          {
-                            "type": "ceil",
-                            "value": 10,
-                            "field": "9cd1-0e7c-2cd6-5f2f"
-                          },
-                          {
-                            "type": "ceil",
-                            "value": 10,
-                            "field": "f714-1726-37d3-44df"
-                          },
-                          {
-                            "type": "ceil",
-                            "value": 10,
-                            "field": "29c5-925d-5b1d-1e77"
-                          }
-                        ],
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "unit",
-                            "childId": "8cf8-9be5-91d6-c96d",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Voidjumpers",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "6f0c-cd4f-15fd-a798",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "set",
-                            "value": 10,
-                            "field": "a106-a779-d272-5e93"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "498f-dce1-59fd-d8d7"
-                          },
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "0cd5-b269-e3bc-028b"
-                          }
-                        ],
-                        "comment": "Abhuman Muster",
+                        "type": "set",
+                        "value": true,
+                        "field": "hidden",
                         "conditionGroups": [
                           {
+                            "type": "and",
                             "conditions": [
                               {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "36e7-0899-8689-0228",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
+                                "type": "equalTo",
                                 "value": 1,
                                 "field": "selections",
                                 "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
+                                "childId": "e567-503d-4220-9ec3",
                                 "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "modifiers": [
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "03bd-4ecb-351d-143b"
-                          },
-                          {
-                            "type": "floor",
-                            "value": 3,
-                            "field": "03bd-4ecb-351d-143b"
-                          }
-                        ],
-                        "comment": "Armoury of Old Night",
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "8cfa-d603-c5e3-995c",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "594d-fa82-13cb-a345",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Debased Rabble",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "9cd1-0e7c-2cd6-5f2f"
-                          },
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "29c5-925d-5b1d-1e77"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "7beb-77c0-3e6e-52a8",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Cyber-Augmentics",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "29c5-925d-5b1d-1e77"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "a3c5-5465-34f7-4060",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "594d-fa82-13cb-a345",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Imperialis Provosts",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "9cd1-0e7c-2cd6-5f2f"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "039c-e091-fc12-b5f1",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "594d-fa82-13cb-a345",
-                                "shared": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Kinfolk Helots",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "3120-8275-e537-ecd2"
-                          },
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "a106-a779-d272-5e93"
-                          },
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "af9d-7db8-dc95-71c1"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "baca-1393-31e5-6d2b",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "594d-fa82-13cb-a345",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Legacy of the Great Crusade",
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "0cd5-b269-e3bc-028b"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "lessThan",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "afa3-a012-61dd-ae9c",
-                                "shared": true,
-                                "includeChildSelections": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "roster",
-                                "childId": "7665-bd37-c552-1876",
-                                "shared": true,
-                                "includeChildSelections": true,
-                                "includeChildForces": true
-                              },
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "3760-2dfb-561a-b603",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ],
-                            "type": "and"
-                          }
-                        ],
-                        "type": "and"
-                      },
-                      {
-                        "comment": "Paragon of Battle",
-                        "modifiers": [
-                          {
-                            "comment": "Paragon of Battle",
-                            "type": "increment",
-                            "value": 1,
-                            "field": "253c-d694-4695-c89e"
-                          },
-                          {
-                            "comment": "Paragon of Battle",
-                            "type": "increment",
-                            "value": 1,
-                            "field": "0cd5-b269-e3bc-028b"
-                          },
-                          {
-                            "comment": "Paragon of Battle",
-                            "type": "increment",
-                            "value": 1,
-                            "field": "024e-bdb1-7982-25a0"
-                          }
-                        ],
-                        "conditionGroups": [
-                          {
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "unit",
-                                "childId": "20cb-4eec-0844-8a97",
-                                "shared": true,
+                                "childName": "Mounted Discipline Master",
                                 "includeChildSelections": true
                               },
                               {
                                 "type": "equalTo",
                                 "value": 1,
                                 "field": "selections",
-                                "scope": "parent",
+                                "scope": "model-self",
                                 "childId": "af6d-a8eb-5c34-1b8d",
                                 "shared": true,
                                 "includeChildSelections": true
                               }
-                            ],
-                            "type": "and"
+                            ]
                           }
-                        ],
-                        "type": "and"
+                        ]
                       }
-                    ],
-                    "modifiers": [
-                      {
-                        "conditions": [
-                          {
-                            "type": "equalTo",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "7f74-e206-6ccb-458e",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ],
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      }
-                    ],
-                    "name": "Paragon Mounted Discipline Master",
-                    "typeId": "a76f-8e23-8c3e-166d",
-                    "typeName": "Profile",
-                    "hidden": true,
-                    "id": "3e46-6a2c-7ee3-4f02"
+                    ]
                   }
                 ],
                 "costs": [
@@ -4082,14 +3009,6 @@
                         "type": "selectionEntry",
                         "targetId": "bdd6-6165-3349-ad0c",
                         "sortIndex": 4
-                      },
-                      {
-                        "import": true,
-                        "name": "Mounted Paragon",
-                        "hidden": false,
-                        "id": "7f74-e206-6ccb-458e",
-                        "type": "selectionEntry",
-                        "targetId": "35b9-4dc0-f68f-b758"
                       }
                     ],
                     "name": "Options",
@@ -4204,6 +3123,1858 @@
                 "id": "e567-503d-4220-9ec3",
                 "page": 14,
                 "publicationId": "f5e5-c199-d3d4-ccf6"
+              },
+              {
+                "type": "model",
+                "import": true,
+                "name": "Paragon Discipline Master",
+                "hidden": true,
+                "id": "53b5-6780-7fb1-b2c0",
+                "profiles": [
+                  {
+                    "name": "Paragon Discipline Master",
+                    "typeId": "a76f-8e23-8c3e-166d",
+                    "typeName": "Profile",
+                    "hidden": false,
+                    "id": "1c43-8876-bdc2-baf9",
+                    "characteristics": [
+                      {
+                        "$text": "Infantry (Command)",
+                        "typeId": "50fc-9241-d4a2-045b",
+                        "name": "Type"
+                      },
+                      {
+                        "$text": "6",
+                        "typeId": "a106-a779-d272-5e93",
+                        "name": "M"
+                      },
+                      {
+                        "$text": "4",
+                        "typeId": "253c-d694-4695-c89e",
+                        "name": "WS"
+                      },
+                      {
+                        "$text": "3",
+                        "typeId": "0cd5-b269-e3bc-028b",
+                        "name": "BS"
+                      },
+                      {
+                        "$text": "3",
+                        "typeId": "498f-dce1-59fd-d8d7",
+                        "name": "S"
+                      },
+                      {
+                        "$text": "3",
+                        "typeId": "3120-8275-e537-ecd2",
+                        "name": "T"
+                      },
+                      {
+                        "$text": "2",
+                        "typeId": "f5cc-79a3-d302-cc1d",
+                        "name": "W"
+                      },
+                      {
+                        "$text": "3",
+                        "typeId": "af9d-7db8-dc95-71c1",
+                        "name": "I"
+                      },
+                      {
+                        "$text": "2",
+                        "typeId": "024e-bdb1-7982-25a0",
+                        "name": "A"
+                      },
+                      {
+                        "$text": "8",
+                        "typeId": "02ad-ebe6-86e7-9fd6",
+                        "name": "LD"
+                      },
+                      {
+                        "$text": "8",
+                        "typeId": "9cd1-0e7c-2cd6-5f2f",
+                        "name": "CL"
+                      },
+                      {
+                        "$text": "7",
+                        "typeId": "f714-1726-37d3-44df",
+                        "name": "WP"
+                      },
+                      {
+                        "$text": "6",
+                        "typeId": "29c5-925d-5b1d-1e77",
+                        "name": "IN"
+                      },
+                      {
+                        "$text": "5+",
+                        "typeId": "03bd-4ecb-351d-143b",
+                        "name": "SAV"
+                      },
+                      {
+                        "$text": "5+",
+                        "typeId": "a951-a772-7ce0-0b64",
+                        "name": "INV"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "comment": "Combat Veterans",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "02ad-ebe6-86e7-9fd6"
+                          },
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "9cd1-0e7c-2cd6-5f2f"
+                          },
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "f714-1726-37d3-44df"
+                          },
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "29c5-925d-5b1d-1e77"
+                          },
+                          {
+                            "type": "ceil",
+                            "value": 10,
+                            "field": "02ad-ebe6-86e7-9fd6"
+                          },
+                          {
+                            "type": "ceil",
+                            "value": 10,
+                            "field": "9cd1-0e7c-2cd6-5f2f"
+                          },
+                          {
+                            "type": "ceil",
+                            "value": 10,
+                            "field": "f714-1726-37d3-44df"
+                          },
+                          {
+                            "type": "ceil",
+                            "value": 10,
+                            "field": "29c5-925d-5b1d-1e77"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "8cf8-9be5-91d6-c96d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Voidjumpers",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "6f0c-cd4f-15fd-a798",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": 10,
+                            "field": "a106-a779-d272-5e93"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "498f-dce1-59fd-d8d7"
+                          },
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "0cd5-b269-e3bc-028b"
+                          }
+                        ],
+                        "comment": "Abhuman Muster",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "36e7-0899-8689-0228",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "03bd-4ecb-351d-143b"
+                          },
+                          {
+                            "type": "floor",
+                            "value": 3,
+                            "field": "03bd-4ecb-351d-143b"
+                          }
+                        ],
+                        "comment": "Armoury of Old Night",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "8cfa-d603-c5e3-995c",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "594d-fa82-13cb-a345",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Debased Rabble",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "9cd1-0e7c-2cd6-5f2f"
+                          },
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "29c5-925d-5b1d-1e77"
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "7beb-77c0-3e6e-52a8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Cyber-Augmentics",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "29c5-925d-5b1d-1e77"
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "a3c5-5465-34f7-4060",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "594d-fa82-13cb-a345",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Kinfolk Helots",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "3120-8275-e537-ecd2"
+                          },
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "a106-a779-d272-5e93"
+                          },
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "af9d-7db8-dc95-71c1"
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "baca-1393-31e5-6d2b",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "594d-fa82-13cb-a345",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Legacy of the Great Crusade",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "0cd5-b269-e3bc-028b"
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "lessThan",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "afa3-a012-61dd-ae9c",
+                                "shared": true,
+                                "includeChildSelections": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "7665-bd37-c552-1876",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Paragon of Battle",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "253c-d694-4695-c89e",
+                            "comment": "Paragon of Battle"
+                          },
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "0cd5-b269-e3bc-028b",
+                            "comment": "Paragon of Battle"
+                          },
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "024e-bdb1-7982-25a0",
+                            "comment": "Paragon of Battle"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Warrior Elite",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "02ad-ebe6-86e7-9fd6"
+                          },
+                          {
+                            "type": "ceil",
+                            "value": 9,
+                            "field": "02ad-ebe6-86e7-9fd6"
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "fbc6-d055-654b-5241",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "add",
+                        "value": "f4ba-00e5-3d2e-eaac",
+                        "field": "category",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "b522-3ee5-c591-5ff6",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "594d-fa82-13cb-a345",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Point(s)",
+                    "typeId": "9893-c379-920b-8982",
+                    "value": 30
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Frag grenades",
+                    "hidden": false,
+                    "id": "da05-8ab4-baf5-f76e",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6a2a-2067-8879-72c2"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "c81f-c66a-7625-8a62"
+                      }
+                    ],
+                    "type": "selectionEntry",
+                    "targetId": "60e4-ca33-2e68-9afc"
+                  },
+                  {
+                    "import": true,
+                    "name": "Rad grenades",
+                    "hidden": true,
+                    "id": "25dc-9e86-3486-09b5",
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "a3c5-5465-34f7-4060",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "fcdb-058d-7438-6d82"
+                      }
+                    ],
+                    "type": "selectionEntry",
+                    "targetId": "cd5f-1eff-df69-6bd2"
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Options",
+                    "id": "0bcd-aa8a-1196-e81f",
+                    "hidden": false,
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Militia pistol may be exchanged for:",
+                        "id": "5af6-e8ce-7648-369f",
+                        "hidden": false,
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Militia pistol",
+                            "hidden": false,
+                            "id": "6ff6-5d7c-529d-5722",
+                            "constraints": [
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": false,
+                                "id": "4a7d-2220-cb89-46c9"
+                              }
+                            ],
+                            "type": "selectionEntry",
+                            "targetId": "7702-e5d6-4f99-96b4"
+                          },
+                          {
+                            "import": true,
+                            "name": "Militia Officer Weapons",
+                            "hidden": false,
+                            "id": "d153-fa37-e319-4682",
+                            "type": "selectionEntryGroup",
+                            "targetId": "9edc-fe43-4c9e-bcac"
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "0298-58b8-a50c-4596"
+                          },
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": false,
+                            "id": "332e-c882-b122-147c"
+                          }
+                        ],
+                        "sortIndex": 1,
+                        "defaultSelectionEntryId": "68b3-b54b-439b-8696"
+                      },
+                      {
+                        "name": "May select one item from the Militia Assault Weapons list.",
+                        "id": "9a44-83f6-fe36-b4d5",
+                        "hidden": false,
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Militia Assault Weapons",
+                            "hidden": false,
+                            "id": "2273-b371-0350-1d6b",
+                            "type": "selectionEntryGroup",
+                            "targetId": "0fea-c788-4956-a432"
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": false,
+                            "id": "e38b-4968-6d0b-8292"
+                          }
+                        ],
+                        "sortIndex": 3
+                      },
+                      {
+                        "name": "May select one item from the Militia Officer Weapons list or one item from the Militia Melee Weapons list.",
+                        "id": "b8e1-f89e-05ef-2fd2",
+                        "hidden": false,
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Militia Officer Weapons",
+                            "hidden": false,
+                            "id": "e906-184f-4900-d69f",
+                            "type": "selectionEntryGroup",
+                            "targetId": "9edc-fe43-4c9e-bcac",
+                            "sortIndex": 1
+                          },
+                          {
+                            "import": true,
+                            "name": "Militia Melee Weapons",
+                            "hidden": false,
+                            "id": "c0a8-08d1-4145-7e99",
+                            "type": "selectionEntryGroup",
+                            "targetId": "01b9-96bd-443f-9756",
+                            "sortIndex": 2
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": false,
+                            "id": "dd2a-2049-34fc-4e85"
+                          }
+                        ],
+                        "sortIndex": 2
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Officer of the Line",
+                        "hidden": false,
+                        "id": "fd79-76da-adff-f245",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "shared": true,
+                            "id": "cecb-85ad-f293-f53d",
+                            "includeChildSelections": true
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Point(s)",
+                            "typeId": "9893-c379-920b-8982",
+                            "value": 20
+                          }
+                        ],
+                        "type": "selectionEntry",
+                        "targetId": "bdd6-6165-3349-ad0c",
+                        "sortIndex": 4
+                      }
+                    ],
+                    "sortIndex": 1
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "name": "Infantry Model Type",
+                    "hidden": false,
+                    "id": "f1d5-c416-c99e-c84a",
+                    "targetId": "594d-fa82-13cb-a345",
+                    "primary": false
+                  },
+                  {
+                    "name": "Command Model Sub-type",
+                    "hidden": false,
+                    "id": "3a7e-af53-f5d1-938f",
+                    "targetId": "9871-cb62-5283-2216",
+                    "primary": false
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "add",
+                    "value": "3760-2dfb-561a-b603",
+                    "field": "category"
+                  },
+                  {
+                    "type": "add",
+                    "value": "f4ba-00e5-3d2e-eaac",
+                    "field": "category",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "b522-3ee5-c591-5ff6",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "3760-2dfb-561a-b603",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "594d-fa82-13cb-a345",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "be7e-20a9-28b8-98b4",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "e567-503d-4220-9ec3",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "20cb-4eec-0844-8a97",
+                        "shared": true,
+                        "childName": "Paragon of Battle",
+                        "includeChildSelections": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "7d9c-a43a-10d2-0506",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "27b9-8702-564c-e0f6",
+                        "shared": true,
+                        "childName": "Paragon Mounted Discipline Master"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7d9c-a43a-10d2-0506",
+                    "automatic": true
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "05e6-2e67-3ae5-001c"
+                  }
+                ],
+                "page": 14,
+                "publicationId": "f5e5-c199-d3d4-ccf6",
+                "defaultAmount": 1
+              },
+              {
+                "type": "model",
+                "import": true,
+                "name": "Paragon Mounted Discipline Master",
+                "hidden": true,
+                "id": "27b9-8702-564c-e0f6",
+                "profiles": [
+                  {
+                    "name": "Paragon Mounted Discipline Master",
+                    "typeId": "a76f-8e23-8c3e-166d",
+                    "typeName": "Profile",
+                    "hidden": false,
+                    "id": "c453-25f3-bdba-5ab2",
+                    "characteristics": [
+                      {
+                        "$text": "Cavalry (Command)",
+                        "typeId": "50fc-9241-d4a2-045b",
+                        "name": "Type"
+                      },
+                      {
+                        "$text": "12",
+                        "typeId": "a106-a779-d272-5e93",
+                        "name": "M"
+                      },
+                      {
+                        "$text": "4",
+                        "typeId": "253c-d694-4695-c89e",
+                        "name": "WS"
+                      },
+                      {
+                        "$text": "3",
+                        "typeId": "0cd5-b269-e3bc-028b",
+                        "name": "BS"
+                      },
+                      {
+                        "$text": "3",
+                        "typeId": "498f-dce1-59fd-d8d7",
+                        "name": "S"
+                      },
+                      {
+                        "$text": "3",
+                        "typeId": "3120-8275-e537-ecd2",
+                        "name": "T"
+                      },
+                      {
+                        "$text": "2",
+                        "typeId": "f5cc-79a3-d302-cc1d",
+                        "name": "W"
+                      },
+                      {
+                        "$text": "3",
+                        "typeId": "af9d-7db8-dc95-71c1",
+                        "name": "I"
+                      },
+                      {
+                        "$text": "2",
+                        "typeId": "024e-bdb1-7982-25a0",
+                        "name": "A"
+                      },
+                      {
+                        "$text": "8",
+                        "typeId": "02ad-ebe6-86e7-9fd6",
+                        "name": "LD"
+                      },
+                      {
+                        "$text": "8",
+                        "typeId": "9cd1-0e7c-2cd6-5f2f",
+                        "name": "CL"
+                      },
+                      {
+                        "$text": "7",
+                        "typeId": "f714-1726-37d3-44df",
+                        "name": "WP"
+                      },
+                      {
+                        "$text": "6",
+                        "typeId": "29c5-925d-5b1d-1e77",
+                        "name": "IN"
+                      },
+                      {
+                        "$text": "5+",
+                        "typeId": "03bd-4ecb-351d-143b",
+                        "name": "SAV"
+                      },
+                      {
+                        "$text": "5+",
+                        "typeId": "a951-a772-7ce0-0b64",
+                        "name": "INV"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "comment": "Combat Veterans",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "02ad-ebe6-86e7-9fd6"
+                          },
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "9cd1-0e7c-2cd6-5f2f"
+                          },
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "f714-1726-37d3-44df"
+                          },
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "29c5-925d-5b1d-1e77"
+                          },
+                          {
+                            "type": "ceil",
+                            "value": 10,
+                            "field": "02ad-ebe6-86e7-9fd6"
+                          },
+                          {
+                            "type": "ceil",
+                            "value": 10,
+                            "field": "9cd1-0e7c-2cd6-5f2f"
+                          },
+                          {
+                            "type": "ceil",
+                            "value": 10,
+                            "field": "f714-1726-37d3-44df"
+                          },
+                          {
+                            "type": "ceil",
+                            "value": 10,
+                            "field": "29c5-925d-5b1d-1e77"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "8cf8-9be5-91d6-c96d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Voidjumpers",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "6f0c-cd4f-15fd-a798",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": 10,
+                            "field": "a106-a779-d272-5e93"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "498f-dce1-59fd-d8d7"
+                          },
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "0cd5-b269-e3bc-028b"
+                          }
+                        ],
+                        "comment": "Abhuman Muster",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "36e7-0899-8689-0228",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "03bd-4ecb-351d-143b"
+                          },
+                          {
+                            "type": "floor",
+                            "value": 3,
+                            "field": "03bd-4ecb-351d-143b"
+                          }
+                        ],
+                        "comment": "Armoury of Old Night",
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "8cfa-d603-c5e3-995c",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "594d-fa82-13cb-a345",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Debased Rabble",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "9cd1-0e7c-2cd6-5f2f"
+                          },
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "29c5-925d-5b1d-1e77"
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "7beb-77c0-3e6e-52a8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Cyber-Augmentics",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "29c5-925d-5b1d-1e77"
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "a3c5-5465-34f7-4060",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "594d-fa82-13cb-a345",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Imperialis Provosts",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "9cd1-0e7c-2cd6-5f2f"
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "039c-e091-fc12-b5f1",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "594d-fa82-13cb-a345",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Kinfolk Helots",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "3120-8275-e537-ecd2"
+                          },
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "a106-a779-d272-5e93"
+                          },
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "af9d-7db8-dc95-71c1"
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "baca-1393-31e5-6d2b",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "594d-fa82-13cb-a345",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Legacy of the Great Crusade",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "0cd5-b269-e3bc-028b"
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "lessThan",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "afa3-a012-61dd-ae9c",
+                                "shared": true,
+                                "includeChildSelections": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "7665-bd37-c552-1876",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "3760-2dfb-561a-b603",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "comment": "Paragon of Battle",
+                        "modifiers": [
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "253c-d694-4695-c89e",
+                            "comment": "Paragon of Battle"
+                          },
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "0cd5-b269-e3bc-028b",
+                            "comment": "Paragon of Battle"
+                          },
+                          {
+                            "type": "increment",
+                            "value": 1,
+                            "field": "024e-bdb1-7982-25a0",
+                            "comment": "Paragon of Battle"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Point(s)",
+                    "typeId": "9893-c379-920b-8982",
+                    "value": 40
+                  },
+                  {
+                    "name": "Asset Point(s)",
+                    "typeId": "57e3-1031-7d4d-5ae3",
+                    "value": 0
+                  },
+                  {
+                    "name": "Reaction Point(s)",
+                    "typeId": "c9ba-097e-c47f-ecc2",
+                    "value": 0
+                  },
+                  {
+                    "name": "Auxiliary Detachment(s)",
+                    "typeId": "3e8e-05ee-be52-12d6",
+                    "value": 0
+                  },
+                  {
+                    "name": "Apex Detachment(s)",
+                    "typeId": "159d-855c-533d-f592",
+                    "value": 0
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Frag grenades",
+                    "hidden": false,
+                    "id": "c783-c43a-ceb6-08c1",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "238e-eccd-a22a-4f3f"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "a5c4-c85f-dfef-0abe"
+                      }
+                    ],
+                    "type": "selectionEntry",
+                    "targetId": "60e4-ca33-2e68-9afc"
+                  },
+                  {
+                    "import": true,
+                    "name": "Rad grenades",
+                    "hidden": true,
+                    "id": "25a1-6b10-5d0c-8658",
+                    "costs": [
+                      {
+                        "name": "Point(s)",
+                        "typeId": "9893-c379-920b-8982",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "a3c5-5465-34f7-4060",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "e5e4-4eb1-4078-6b69"
+                      }
+                    ],
+                    "type": "selectionEntry",
+                    "targetId": "cd5f-1eff-df69-6bd2"
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Options",
+                    "id": "388f-3ed4-15c4-b59e",
+                    "hidden": false,
+                    "selectionEntryGroups": [
+                      {
+                        "name": "May select one item from the Militia Assault Weapons list.",
+                        "id": "365a-b9c4-2286-10b1",
+                        "hidden": false,
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Militia Assault Weapons",
+                            "hidden": false,
+                            "id": "e2d3-81c3-1465-0855",
+                            "type": "selectionEntryGroup",
+                            "targetId": "0fea-c788-4956-a432"
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": false,
+                            "id": "0ad4-08db-5cb0-18e4"
+                          }
+                        ],
+                        "sortIndex": 3
+                      },
+                      {
+                        "name": "May select one item from the Militia Officer Weapons list or one item from the Militia Melee Weapons list.",
+                        "id": "16cb-1d21-683d-4776",
+                        "hidden": false,
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Militia Officer Weapons",
+                            "hidden": false,
+                            "id": "430c-3284-3d72-84e7",
+                            "type": "selectionEntryGroup",
+                            "targetId": "9edc-fe43-4c9e-bcac"
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": false,
+                            "id": "59e7-2e47-7508-de1c"
+                          }
+                        ],
+                        "sortIndex": 2
+                      },
+                      {
+                        "name": "Militia pistol may be exchanged for:",
+                        "id": "d5ad-9d1a-552e-c472",
+                        "hidden": false,
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Militia pistol",
+                            "hidden": false,
+                            "id": "5314-51fb-257f-5ef5",
+                            "constraints": [
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": false,
+                                "id": "cf33-3b3e-ab0b-406f"
+                              }
+                            ],
+                            "type": "selectionEntry",
+                            "targetId": "7702-e5d6-4f99-96b4"
+                          },
+                          {
+                            "import": true,
+                            "name": "Militia Officer Weapons",
+                            "hidden": false,
+                            "id": "f805-29d8-5b37-9c75",
+                            "type": "selectionEntryGroup",
+                            "targetId": "9edc-fe43-4c9e-bcac"
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": false,
+                            "id": "372f-e018-b6fa-bf9c"
+                          },
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": false,
+                            "id": "5802-66cf-a2d1-bc25"
+                          }
+                        ],
+                        "defaultSelectionEntryId": "5f39-690e-42bc-9fab",
+                        "sortIndex": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Officer of the Line",
+                        "hidden": false,
+                        "id": "6a01-d061-0c85-381b",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "shared": true,
+                            "id": "5c6c-0e5e-d717-4c97",
+                            "includeChildSelections": true
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Point(s)",
+                            "typeId": "9893-c379-920b-8982",
+                            "value": 20
+                          }
+                        ],
+                        "type": "selectionEntry",
+                        "targetId": "bdd6-6165-3349-ad0c",
+                        "sortIndex": 4
+                      }
+                    ],
+                    "sortIndex": 1
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "name": "Cavalry Model Type",
+                    "hidden": false,
+                    "id": "0da6-b4f4-6b5d-c55b",
+                    "targetId": "a073-2d4a-5bed-123e",
+                    "primary": false
+                  },
+                  {
+                    "name": "Command Model Sub-type",
+                    "hidden": false,
+                    "id": "3bb5-37c4-67e0-e4ea",
+                    "targetId": "9871-cb62-5283-2216",
+                    "primary": false
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Bulky (X)",
+                    "id": "d644-3cea-c940-735e",
+                    "hidden": false,
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Bulky (2)",
+                        "field": "name"
+                      }
+                    ],
+                    "type": "rule",
+                    "targetId": "50ad-a9a5-1f1d-9a25"
+                  },
+                  {
+                    "name": "Impact (X)",
+                    "id": "ae58-e431-f0ad-c1be",
+                    "hidden": false,
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Impact (S)",
+                        "field": "name"
+                      }
+                    ],
+                    "type": "rule",
+                    "targetId": "6ead-c31c-ab09-2f8c"
+                  },
+                  {
+                    "name": "Outflank",
+                    "id": "d083-5c46-a8e9-c2aa",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "92d2-cc57-1ef6-a712"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "add",
+                    "value": "3760-2dfb-561a-b603",
+                    "field": "category"
+                  },
+                  {
+                    "type": "add",
+                    "value": "f4ba-00e5-3d2e-eaac",
+                    "field": "category",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "b522-3ee5-c591-5ff6",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "3760-2dfb-561a-b603",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "594d-fa82-13cb-a345",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "20cb-4eec-0844-8a97",
+                        "shared": true,
+                        "childName": "Paragon of Battle",
+                        "includeChildSelections": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "9590-ee47-86fc-b163",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "53b5-6780-7fb1-b2c0",
+                        "shared": true,
+                        "childName": "Paragon Discipline Master"
+                      }
+                    ]
+                  }
+                ],
+                "page": 14,
+                "publicationId": "f5e5-c199-d3d4-ccf6",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9590-ee47-86fc-b163",
+                    "automatic": true
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "429e-164a-1908-5aed"
+                  }
+                ]
               }
             ],
             "constraints": [
@@ -32401,6 +33172,13 @@
             "hidden": false,
             "type": "profile",
             "targetId": "0ffd-e762-fef0-716d"
+          },
+          {
+            "name": "Irregulars",
+            "id": "213a-d5d9-317e-71af",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2d43-afcd-2393-d1bb"
           }
         ],
         "entryLinks": [
@@ -33028,24 +33806,6 @@
                     "value": 18
                   }
                 ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e442-f5f3-4f52-ba34"
-                  },
-                  {
-                    "type": "max",
-                    "value": 5,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "8b21-0f13-42d5-bda8"
-                  }
-                ],
                 "selectionEntryGroups": [
                   {
                     "selectionEntryGroups": [
@@ -33141,7 +33901,8 @@
                         "name": "Every Model must have one:",
                         "id": "d202-8d56-6877-f6ed",
                         "hidden": false,
-                        "sortIndex": 1
+                        "sortIndex": 1,
+                        "defaultSelectionEntryId": "none"
                       }
                     ],
                     "name": "Options",
@@ -33170,13 +33931,6 @@
                     "id": "0354-b563-4486-91f3",
                     "targetId": "d2d6-5a84-672b-2833",
                     "primary": false
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "add",
-                    "value": "3760-2dfb-561a-b603",
-                    "field": "category"
                   }
                 ],
                 "type": "model",
@@ -33690,16 +34444,6 @@
                       {
                         "entryLinks": [
                           {
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "86b6-56e6-3a2e-fbc6"
-                              }
-                            ],
                             "import": true,
                             "name": "Militia Melee Weapons",
                             "hidden": false,
@@ -33734,217 +34478,148 @@
                         "sortIndex": 2
                       },
                       {
-                        "entryLinks": [
-                          {
-                            "modifiers": [
-                              {
-                                "type": "set",
-                                "value": "Two heavy stubbers",
-                                "field": "name"
-                              }
-                            ],
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "3e74-3152-4f18-a42e"
-                              }
-                            ],
-                            "import": true,
-                            "name": "Heavy stubber",
-                            "hidden": false,
-                            "id": "7176-f057-4f84-83e2",
-                            "type": "selectionEntry",
-                            "targetId": "51af-9efb-4c72-90be"
-                          },
-                          {
-                            "modifiers": [
-                              {
-                                "type": "set",
-                                "value": "Two combi-bolters",
-                                "field": "name"
-                              }
-                            ],
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "f8fe-0a60-4d8b-8e9f"
-                              }
-                            ],
-                            "import": true,
-                            "name": "Combi-bolter",
-                            "hidden": false,
-                            "id": "d2bd-e9d7-42db-ba2c",
-                            "type": "selectionEntry",
-                            "targetId": "042d-9e60-db9e-c147",
-                            "defaultAmount": 1
-                          }
-                        ],
                         "constraints": [
+                          {
+                            "type": "min",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "f550-1904-39df-56ba"
+                          },
                           {
                             "type": "max",
                             "value": 1,
                             "field": "selections",
                             "scope": "parent",
                             "shared": true,
-                            "id": "7ef0-1d91-4761-b4c7",
-                            "automatic": true
-                          }
-                        ],
-                        "selectionEntryGroups": [
-                          {
-                            "selectionEntries": [
-                              {
-                                "comment": "Has to be unique in Unit and clashes with Quad Meltagun",
-                                "profiles": [
-                                  {
-                                    "characteristics": [
-                                      {
-                                        "$text": "12",
-                                        "name": "R",
-                                        "typeId": "cdb0-8654-6840-1037"
-                                      },
-                                      {
-                                        "$text": "1",
-                                        "name": "FP",
-                                        "typeId": "5037-1f27-1790-e355"
-                                      },
-                                      {
-                                        "$text": "8",
-                                        "name": "RS",
-                                        "typeId": "b9da-ee13-79f9-fa63"
-                                      },
-                                      {
-                                        "$text": "2",
-                                        "name": "AP",
-                                        "typeId": "7a23-0248-2b94-5951"
-                                      },
-                                      {
-                                        "$text": "3",
-                                        "name": "D",
-                                        "typeId": "88c3-1ca5-7dc1-f291"
-                                      },
-                                      {
-                                        "$text": "Melta (6)",
-                                        "name": "Special Rules",
-                                        "typeId": "5aad-137a-8ee2-63fd"
-                                      },
-                                      {
-                                        "$text": "Melta",
-                                        "name": "Traits",
-                                        "typeId": "1247-79d2-6cc1-8a03"
-                                      }
-                                    ],
-                                    "modifiers": [
-                                      {
-                                        "type": "set",
-                                        "value": "Meltagun (x2)",
-                                        "field": "name"
-                                      }
-                                    ],
-                                    "name": "Trike Meltagun",
-                                    "typeId": "c591-09ed-3e6f-eb2b",
-                                    "typeName": "Ranged Weapon",
-                                    "hidden": false,
-                                    "id": "68c2-0344-06cd-cba4",
-                                    "page": 53,
-                                    "publicationId": "a5ca-d2f8-fa5a-c120"
-                                  }
-                                ],
-                                "infoLinks": [
-                                  {
-                                    "modifiers": [
-                                      {
-                                        "type": "set",
-                                        "value": "Melta (6)",
-                                        "field": "name"
-                                      }
-                                    ],
-                                    "comment": "6",
-                                    "name": "Melta (X)",
-                                    "id": "8dc3-efe6-c175-3c70",
-                                    "hidden": false,
-                                    "type": "rule",
-                                    "targetId": "8ef6-917e-93da-43c3"
-                                  }
-                                ],
-                                "constraints": [
-                                  {
-                                    "type": "max",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "parent",
-                                    "shared": true,
-                                    "id": "4854-3d0a-4816-0148"
-                                  },
-                                  {
-                                    "type": "max",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "unit",
-                                    "shared": true,
-                                    "id": "4b8d-31a0-5165-bd99",
-                                    "includeChildSelections": true
-                                  }
-                                ],
-                                "modifiers": [
-                                  {
-                                    "type": "set",
-                                    "value": "Two meltaguns",
-                                    "field": "name"
-                                  }
-                                ],
-                                "costs": [
-                                  {
-                                    "name": "Point(s)",
-                                    "typeId": "9893-c379-920b-8982",
-                                    "value": 20
-                                  },
-                                  {
-                                    "name": "Asset Point(s)",
-                                    "typeId": "57e3-1031-7d4d-5ae3",
-                                    "value": 0
-                                  },
-                                  {
-                                    "name": "Reaction Point(s)",
-                                    "typeId": "c9ba-097e-c47f-ecc2",
-                                    "value": 0
-                                  },
-                                  {
-                                    "name": "Auxiliary Detachment(s)",
-                                    "typeId": "3e8e-05ee-be52-12d6",
-                                    "value": 0
-                                  },
-                                  {
-                                    "name": "Apex Detachment(s)",
-                                    "typeId": "159d-855c-533d-f592",
-                                    "value": 0
-                                  }
-                                ],
-                                "type": "upgrade",
-                                "import": true,
-                                "name": "Trike Meltagun",
-                                "hidden": false,
-                                "id": "45b1-eaea-bec4-ffe4"
-                              }
-                            ],
-                            "name": "One Militia Trike may take:",
-                            "id": "57df-9459-cd8b-8d6f",
-                            "hidden": false
+                            "id": "e6ea-712a-a696-4480"
                           }
                         ],
                         "name": "May have both of its combi-bolters exchanged for:",
                         "id": "5e71-d9e8-4976-b2b9",
                         "hidden": false,
-                        "defaultSelectionEntryId": "d2bd-e9d7-42db-ba2c",
-                        "sortIndex": 1
+                        "defaultSelectionEntryId": "d5c8-f57d-9079-64a5",
+                        "sortIndex": 1,
+                        "selectionEntries": [
+                          {
+                            "type": "upgrade",
+                            "import": true,
+                            "name": "Two combi-bolters",
+                            "hidden": false,
+                            "id": "d5c8-f57d-9079-64a5",
+                            "entryLinks": [
+                              {
+                                "import": true,
+                                "name": "Combi-bolter",
+                                "hidden": false,
+                                "id": "d2bd-e9d7-42db-ba2c",
+                                "constraints": [
+                                  {
+                                    "type": "max",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "f8fe-0a60-4d8b-8e9f"
+                                  },
+                                  {
+                                    "type": "min",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "4ead-dc0c-195a-c316"
+                                  }
+                                ],
+                                "type": "selectionEntry",
+                                "targetId": "042d-9e60-db9e-c147",
+                                "defaultAmount": 1
+                              }
+                            ]
+                          },
+                          {
+                            "type": "upgrade",
+                            "import": true,
+                            "name": "Two Heavy stubbers",
+                            "hidden": false,
+                            "id": "2414-a80a-c25e-e955",
+                            "entryLinks": [
+                              {
+                                "import": true,
+                                "name": "Heavy stubber",
+                                "hidden": false,
+                                "id": "7176-f057-4f84-83e2",
+                                "constraints": [
+                                  {
+                                    "type": "max",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "3e74-3152-4f18-a42e"
+                                  },
+                                  {
+                                    "type": "min",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "c36c-2394-45bd-33f1"
+                                  }
+                                ],
+                                "type": "selectionEntry",
+                                "targetId": "51af-9efb-4c72-90be"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "upgrade",
+                            "import": true,
+                            "name": "Two meltaguns (One trike only)",
+                            "hidden": false,
+                            "id": "de76-0077-ce45-0b97",
+                            "entryLinks": [
+                              {
+                                "import": true,
+                                "name": "Meltagun",
+                                "hidden": false,
+                                "id": "f736-5842-3eaa-f2e2",
+                                "type": "selectionEntry",
+                                "targetId": "b1e1-e164-5877-6734",
+                                "constraints": [
+                                  {
+                                    "type": "min",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "3f15-c051-3391-5637"
+                                  },
+                                  {
+                                    "type": "max",
+                                    "value": 2,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "514d-3308-c4e1-f54e"
+                                  }
+                                ]
+                              }
+                            ],
+                            "constraints": [
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "unit",
+                                "shared": true,
+                                "id": "7e7e-b657-c1c4-74ba",
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "name": "Options",
@@ -33973,13 +34648,6 @@
                     "id": "ddad-0e6f-40c4-a574",
                     "targetId": "d2d6-5a84-672b-2833",
                     "primary": false
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "add",
-                    "value": "3760-2dfb-561a-b603",
-                    "field": "category"
                   }
                 ],
                 "type": "model",
@@ -34012,7 +34680,8 @@
             "name": "Unit Option",
             "id": "b46f-8ed2-9310-5337",
             "hidden": false,
-            "sortIndex": 1
+            "sortIndex": 1,
+            "defaultSelectionEntryId": "19b9-8ac5-4b4d-88e4"
           }
         ],
         "categoryLinks": [
@@ -34027,6 +34696,11 @@
           {
             "type": "add",
             "value": "7f0e-74eb-0683-b34f",
+            "field": "category"
+          },
+          {
+            "type": "add",
+            "value": "3760-2dfb-561a-b603",
             "field": "category"
           }
         ],
@@ -37767,50 +38441,6 @@
         "name": "Paragon",
         "hidden": true,
         "id": "af6d-a8eb-5c34-1b8d"
-      },
-      {
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "168c-a8f7-d803-e457"
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "unit",
-            "shared": true,
-            "id": "e23d-01c3-8204-68e3",
-            "includeChildSelections": true
-          }
-        ],
-        "modifiers": [
-          {
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "unit",
-                "childId": "20cb-4eec-0844-8a97",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ],
-            "type": "set",
-            "value": false,
-            "field": "hidden"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Mounted Paragon",
-        "hidden": true,
-        "id": "35b9-4dc0-f68f-b758"
       }
     ],
     "sharedSelectionEntryGroups": [
