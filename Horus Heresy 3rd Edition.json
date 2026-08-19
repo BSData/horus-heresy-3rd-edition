@@ -91938,7 +91938,27 @@
                   {
                     "type": "set",
                     "value": false,
-                    "field": "tracked"
+                    "field": "tracked",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "610d-c9b0-ccb0-cba9",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "forces",
+                        "scope": "primary-catalogue",
+                        "childId": "c195-9a6a-a56b-4634",
+                        "shared": true
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Command",
@@ -92138,6 +92158,46 @@
                     "type": "set",
                     "value": 1,
                     "field": "18c9-c657-1c4a-d640"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "tracked",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "f5dc-c13a-5848-f3b8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          },
+                          {
+                            "type": "equalTo",
+                            "value": 0,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "610d-c9b0-ccb0-cba9",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "forces",
+                            "scope": "primary-catalogue",
+                            "childId": "c195-9a6a-a56b-4634",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "name": "Prime Elites",
