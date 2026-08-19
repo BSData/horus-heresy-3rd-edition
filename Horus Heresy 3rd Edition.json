@@ -4548,16 +4548,6 @@
                   {
                     "conditions": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "roster",
-                        "childId": "f5dc-c13a-5848-f3b8",
-                        "shared": true,
-                        "includeChildSelections": true,
-                        "includeChildForces": true
-                      },
-                      {
                         "type": "instanceOf",
                         "value": 1,
                         "field": "forces",
@@ -4568,7 +4558,34 @@
                     ],
                     "type": "set",
                     "value": 0,
-                    "field": "5a1b-bae6-7bea-4a8a"
+                    "field": "5a1b-bae6-7bea-4a8a",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "f5dc-c13a-5848-f3b8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "122b-0eda-4e29-401e",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
                     "conditionGroups": [
@@ -5855,22 +5872,39 @@
                     "field": "tracked",
                     "conditions": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "roster",
-                        "childId": "f5dc-c13a-5848-f3b8",
-                        "shared": true,
-                        "includeChildSelections": true,
-                        "includeChildForces": true
-                      },
-                      {
                         "type": "instanceOf",
                         "value": 1,
                         "field": "forces",
                         "scope": "primary-catalogue",
                         "childId": "c195-9a6a-a56b-4634",
                         "shared": true
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "f5dc-c13a-5848-f3b8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "122b-0eda-4e29-401e",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
                       }
                     ]
                   }
