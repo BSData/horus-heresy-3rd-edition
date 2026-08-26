@@ -223410,57 +223410,6 @@
         "sortIndex": 12
       },
       {
-        "entryLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Two Sponson Mounted lascannon arrays",
-                "field": "name"
-              }
-            ],
-            "import": true,
-            "name": "Lascannon array",
-            "hidden": false,
-            "id": "01ad-4cf9-66ae-5d85",
-            "type": "selectionEntry",
-            "targetId": "df65-7fb7-d1ff-8486",
-            "sortIndex": 1,
-            "defaultAmount": 1
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Two Sponson Mounted laser destroyers",
-                "field": "name"
-              }
-            ],
-            "import": true,
-            "name": "Laser destroyer",
-            "hidden": false,
-            "id": "d7f2-0f46-a570-1e9f",
-            "type": "selectionEntry",
-            "targetId": "e160-234f-e94c-bab6",
-            "sortIndex": 2
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Two Sponson Mounted Gravis heavy bolter batteries",
-                "field": "name"
-              }
-            ],
-            "import": true,
-            "name": "Gravis heavy bolter battery",
-            "hidden": false,
-            "id": "ad8d-a1b1-1dfb-1ab2",
-            "type": "selectionEntry",
-            "targetId": "5c0e-33c5-afb1-fed5",
-            "sortIndex": 3
-          }
-        ],
         "constraints": [
           {
             "type": "max",
@@ -223484,8 +223433,118 @@
         "name": "Legion Super-heavy Sponsons",
         "id": "4a4d-04c6-ba1f-f6f2",
         "hidden": false,
-        "defaultSelectionEntryId": "01ad-4cf9-66ae-5d85",
-        "sortIndex": 9
+        "defaultSelectionEntryId": "4dc5-72fb-5115-eeab",
+        "sortIndex": 9,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Two Sponson Mounted lascannon arrays",
+            "hidden": false,
+            "id": "4dc5-72fb-5115-eeab",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Lascannon array",
+                "hidden": false,
+                "id": "01ad-4cf9-66ae-5d85",
+                "type": "selectionEntry",
+                "targetId": "df65-7fb7-d1ff-8486",
+                "defaultAmount": 1,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "23ad-6a79-16aa-01f8"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d4b7-3776-60cf-9de5"
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 1
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Two Sponson Mounted laser destroyers",
+            "hidden": false,
+            "id": "ffd1-282b-29b1-e269",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Laser destroyer",
+                "hidden": false,
+                "id": "d7f2-0f46-a570-1e9f",
+                "type": "selectionEntry",
+                "targetId": "e160-234f-e94c-bab6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0dd5-c9bd-c353-bfc7"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0a67-01dd-5159-45f4"
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Two Sponson Mounted Gravis heavy bolter batteries",
+            "hidden": false,
+            "id": "3b91-4fe3-e0bb-9b56",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Gravis heavy bolter battery",
+                "hidden": false,
+                "id": "ad8d-a1b1-1dfb-1ab2",
+                "type": "selectionEntry",
+                "targetId": "5c0e-33c5-afb1-fed5",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1334-1d24-5a01-8d56"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a36b-64da-6288-d308"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "selectionEntries": [
