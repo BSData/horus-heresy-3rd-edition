@@ -2380,6 +2380,26 @@
         "name": "Invalid ZM Vehicle",
         "id": "8d49-126f-5500-aa28",
         "hidden": false
+      },
+      {
+        "name": "Cohort Doctrine: Oblitum Pattern Cohort",
+        "id": "4924-9c5d-9d41-1211",
+        "hidden": false
+      },
+      {
+        "name": "Command - Discipline Master Cadre only",
+        "id": "baa5-803e-1fc8-293d",
+        "hidden": false
+      },
+      {
+        "name": "Troops - Infantry Troop or Levy Troop only",
+        "id": "777c-2a47-2a20-153e",
+        "hidden": false
+      },
+      {
+        "name": "Support - Militia Medicae or Fire Support Troop only",
+        "id": "c6d8-d70d-c56c-d801",
+        "hidden": false
       }
     ],
     "forceEntries": [
@@ -90002,6 +90022,290 @@
                     "name": "Detachment Composition",
                     "typeId": "ec3f-877b-f887-18b2",
                     "$text": "3 Armour\nAll gain Armour Tercio Trait\nLeman Russ Strike Tank, Leman Russ Assault Tank or Malcador Heavy Tank Units only"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Auxiliary - Helot Tercio",
+            "id": "fd11-7b79-aba3-4e16",
+            "hidden": false,
+            "sortIndex": 108,
+            "costs": [
+              {
+                "name": "Point(s)",
+                "typeId": "9893-c379-920b-8982",
+                "value": 0
+              },
+              {
+                "name": "Reaction Point(s)",
+                "typeId": "c9ba-097e-c47f-ecc2",
+                "value": 0
+              },
+              {
+                "name": "Auxiliary Detachment(s)",
+                "typeId": "3e8e-05ee-be52-12d6",
+                "value": 0
+              },
+              {
+                "name": "Apex Detachment(s)",
+                "typeId": "159d-855c-533d-f592",
+                "value": 0
+              },
+              {
+                "name": "Combined Warlord and Lord of War Points",
+                "typeId": "14bd-cad0-cd3d-8b23",
+                "value": 0
+              },
+              {
+                "name": "Mech LB",
+                "typeId": "7275-cbe8-a563-7152",
+                "value": 0
+              },
+              {
+                "name": "Tank Detachments",
+                "typeId": "2cdf-186c-a655-d907",
+                "value": 0
+              },
+              {
+                "name": "ZM Primary Detachment",
+                "typeId": "37ff-b26e-18a9-7f57",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "1837-2d3f-e2c0-9a79",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "childId": "4924-9c5d-9d41-1211",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true,
+                    "childName": "Cohort Doctrine: Oblitum Pattern Cohort"
+                  }
+                ],
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "forces",
+                    "scope": "roster",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true,
+                    "includeChildForces": true,
+                    "childId": "e1a1-2699-4681-47ab",
+                    "childName": "Auxiliary - Veletaris Tercio"
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "childId": "7851-69ac-f701-034e",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "7851-69ac-f701-034e",
+                        "shared": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "4924-9c5d-9d41-1211",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Cohort Doctrine: Oblitum Pattern Cohort"
+                      }
+                    ],
+                    "comment": "Solar Auxilia"
+                  }
+                ]
+              },
+              {
+                "type": "add",
+                "value": "Each Helot Tercio requires a Veletaris Tercio",
+                "field": "error",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "4924-9c5d-9d41-1211",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Cohort Doctrine: Oblitum Pattern Cohort"
+                      },
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "forces",
+                        "scope": "roster",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childId": "e1a1-2699-4681-47ab",
+                        "childName": "Auxiliary - Veletaris Tercio"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "forces",
+                "scope": "roster",
+                "shared": true,
+                "id": "1837-2d3f-e2c0-9a79",
+                "includeChildSelections": true
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Prime Support",
+                "hidden": false,
+                "id": "0733-deff-7ba8-4cbe",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "01d4-d858-5e8f-b288",
+                    "includeChildSelections": true
+                  }
+                ],
+                "targetId": "1c79-ecdf-9a64-84c9"
+              },
+              {
+                "name": "Prime Troops",
+                "hidden": false,
+                "id": "60ce-643f-874f-bab5",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8c77-608c-9ca1-8cde",
+                    "includeChildSelections": true
+                  }
+                ],
+                "targetId": "c3f9-a7f3-984b-3fda"
+              },
+              {
+                "name": "Prime Command",
+                "hidden": false,
+                "id": "ccfe-cce6-1e13-9725",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "61f7-453c-d905-d683",
+                    "includeChildSelections": true
+                  }
+                ],
+                "targetId": "c85c-2963-658f-1bb9"
+              },
+              {
+                "name": "Command - Discipline Master Cadre only",
+                "hidden": false,
+                "id": "ff8f-13db-6334-8e0d",
+                "targetId": "baa5-803e-1fc8-293d",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0d87-fc6f-3a71-cbcb"
+                  }
+                ]
+              },
+              {
+                "name": "Troops - Infantry Troop or Levy Troop only",
+                "hidden": false,
+                "id": "7079-34aa-9834-f945",
+                "targetId": "777c-2a47-2a20-153e",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d0ee-74c4-e86e-b978"
+                  }
+                ]
+              },
+              {
+                "name": "Support - Militia Medicae or Fire Support Troop only",
+                "hidden": false,
+                "id": "c1a4-b2d0-0a95-8280",
+                "targetId": "c6d8-d70d-c56c-d801",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2b02-8581-ef37-7a6d"
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Auxiliary - Helot Tercio",
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "hidden": false,
+                "id": "244b-3399-1c18-d048",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "typeId": "ec3f-877b-f887-18b2",
+                    "$text": "1 Command\n2 Troops\n1 Support\nCommand must be Discipline Cadre\nTroops must be Infantry Troop or Levy Troop Units\nSupport must be Militia Medicae or Fire Support Troop Units only\n\n\nCommand Units do not grant additional Auxiliary Detachments"
                   }
                 ]
               }

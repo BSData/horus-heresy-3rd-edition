@@ -49,12 +49,6 @@
       },
       {
         "type": "catalogue",
-        "name": "Solar Auxilia",
-        "id": "d091-a1c5-d7eb-7650",
-        "targetId": "7851-69ac-f701-034e"
-      },
-      {
-        "type": "catalogue",
         "name": "Daemons of the Ruinstorm",
         "id": "d47d-43db-4fa2-1295",
         "targetId": "9396-cc24-458d-d358"
@@ -5065,7 +5059,26 @@
             "id": "a3e3-1a59-c656-1d74",
             "hidden": false,
             "type": "profile",
-            "targetId": "0ffd-e762-fef0-716d"
+            "targetId": "0ffd-e762-fef0-716d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "force",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio"
+                  }
+                ]
+              }
+            ]
           },
           {
             "modifiers": [
@@ -5092,9 +5105,61 @@
             "hidden": true,
             "type": "rule",
             "targetId": "3898-aafb-35e0-141b"
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "fef1-b77f-4688-4cb9",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "force",
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Auxiliary - Helot Tercio"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "f6af-34b3-2170-70fd",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "force",
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Auxiliary - Helot Tercio"
+                  }
+                ]
+              }
+            ]
           }
         ],
-        "comment": "Paragon of Battle is a little messy with multiple command",
+        "comment": "\n",
         "modifiers": [
           {
             "conditions": [
@@ -18029,9 +18094,9 @@
                                 "value": 1,
                                 "field": "selections",
                                 "scope": "parent",
-                                "childId": "40e8-fcb7-9e0e-1582",
+                                "childId": "b729-ca62-420a-9f76",
                                 "shared": true,
-                                "childName": "Lasrifle",
+                                "childName": "Lasrifle - Volley",
                                 "includeChildSelections": true
                               }
                             ],
@@ -19198,7 +19263,26 @@
             "id": "0b09-0980-2476-25e1",
             "hidden": false,
             "type": "profile",
-            "targetId": "0ffd-e762-fef0-716d"
+            "targetId": "0ffd-e762-fef0-716d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "force",
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Auxiliary - Helot Tercio"
+                  }
+                ]
+              }
+            ]
           },
           {
             "modifiers": [
@@ -19225,6 +19309,32 @@
             "hidden": true,
             "type": "rule",
             "targetId": "3898-aafb-35e0-141b"
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "1963-0313-a9d5-4a17",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "force",
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Auxiliary - Helot Tercio"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "entryLinks": [
@@ -19405,7 +19515,26 @@
             "id": "5807-c9df-797b-0376",
             "hidden": false,
             "type": "profile",
-            "targetId": "0ffd-e762-fef0-716d"
+            "targetId": "0ffd-e762-fef0-716d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "force",
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Auxiliary - Helot Tercio"
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "[Allegiance]",
@@ -19439,6 +19568,32 @@
             "hidden": true,
             "type": "rule",
             "targetId": "3898-aafb-35e0-141b"
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "33a9-f1d7-e129-b7da",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "force",
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Auxiliary - Helot Tercio"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "comment": "bayonet issue",
@@ -21938,7 +22093,26 @@
             "id": "8b4e-5412-bbec-6781",
             "hidden": false,
             "type": "profile",
-            "targetId": "0ffd-e762-fef0-716d"
+            "targetId": "0ffd-e762-fef0-716d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "force",
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Auxiliary - Helot Tercio"
+                  }
+                ]
+              }
+            ]
           },
           {
             "modifiers": [
@@ -21965,6 +22139,32 @@
             "hidden": true,
             "type": "rule",
             "targetId": "3898-aafb-35e0-141b"
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "c162-2c25-39f6-b09a",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "force",
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Auxiliary - Helot Tercio"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "entryLinks": [
@@ -22714,7 +22914,52 @@
             "id": "599c-deca-26d5-22eb",
             "hidden": false,
             "type": "profile",
-            "targetId": "0ffd-e762-fef0-716d"
+            "targetId": "0ffd-e762-fef0-716d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "force",
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Auxiliary - Helot Tercio"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "d968-bb9c-ec6b-1f7f",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "force",
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Auxiliary - Helot Tercio"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "entryLinks": [
@@ -39449,11 +39694,11 @@
               }
             ],
             "import": true,
-            "name": "Lasrifle",
+            "name": "Lasrifle - Volley",
             "hidden": true,
             "id": "20ca-c21e-fbee-6aab",
             "type": "selectionEntry",
-            "targetId": "40e8-fcb7-9e0e-1582"
+            "targetId": "b729-ca62-420a-9f76"
           }
         ],
         "name": "Militia Armaments",
