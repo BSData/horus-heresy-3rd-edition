@@ -1,2489 +1,1836 @@
 {
   "catalogue": {
+    "name": "Wargear",
+    "id": "fcc7-4319-bb04-2c25",
+    "authorContact": "https://github.com/BSData/horus-heresy-3rd-edition/issues",
+    "authorName": "The4D6",
+    "authorUrl": "https://github.com/BSData/horus-heresy-3rd-edition/",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
+    "gameSystemRevision": 1,
+    "library": true,
+    "revision": 24,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "catalogueLinks": [
+      {"name": "Special Rules", "id": "a167-1d9f-99b4-830c", "importRootEntries": true, "targetId": "106b-693b-99f2-00c3", "type": "catalogue"},
+      {"name": "Traits", "id": "f337-6ccb-bbe3-657c", "importRootEntries": false, "targetId": "df17-7a05-0826-6e22", "type": "catalogue"},
+      {"name": "Psychic", "id": "50ce-dc5a-06c4-bd38", "targetId": "1b2d-2038-39a7-f387", "type": "catalogue"}
+    ],
     "sharedSelectionEntries": [
       {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "A Model with this Wargear can enable other Deep Striking Units to arrive more reliably.",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "Reserves Tests made for a Unit that contains any Models with a strato-vox are automatically successful. While any Models with a strato-vox are on the Battlefield, before making a Reserves Test for a Unit in Reserves that only includes Models with the Deep Strike Special Rule, the Controlling Player can choose to activate that strato-vox. lf they do, that Reserves Test is automatically successful, but the Unit it was made for must make a Deep Strike instead of deploying normally.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Strato-vox",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "256b-875a-0dad-6e7b"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
         "name": "Strato-vox",
+        "id": "e3dd-d327-3f0b-265f",
         "hidden": false,
-        "id": "e3dd-d327-3f0b-265f"
-      },
-      {
+        "import": true,
+        "type": "upgrade",
         "profiles": [
           {
-            "characteristics": [
-              {
-                "$text": "\"Frag grenades can be used to make attacks during the Volley Step.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When making Volley Attacks during Step 4 of the Charge Procedure with a Unit that includes at least one Model with frag grenades, the Controlling Player may choose to make a single attack with a frag grenade instead of making a normal Shooting Attack.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Frag grenades",
+            "name": "Strato-vox",
+            "id": "256b-875a-0dad-6e7b",
+            "hidden": false,
             "typeId": "5ec5-e0c3-1701-6f16",
             "typeName": "Wargear",
-            "hidden": false,
-            "id": "3035-fae8-b4b2-ec46"
-          },
-          {
             "characteristics": [
-              {
-                "$text": "6",
-                "name": "R",
-                "typeId": "cdb0-8654-6840-1037"
-              },
-              {
-                "$text": "1",
-                "name": "FP",
-                "typeId": "5037-1f27-1790-e355"
-              },
-              {
-                "$text": "3",
-                "name": "RS",
-                "typeId": "b9da-ee13-79f9-fa63"
-              },
-              {
-                "$text": "6",
-                "name": "AP",
-                "typeId": "7a23-0248-2b94-5951"
-              },
-              {
-                "$text": "1",
-                "name": "D",
-                "typeId": "88c3-1ca5-7dc1-f291"
-              },
-              {
-                "$text": "Blast (3\")",
-                "name": "Special Rules",
-                "typeId": "5aad-137a-8ee2-63fd"
-              },
-              {
-                "$text": "Assault",
-                "name": "Traits",
-                "typeId": "1247-79d2-6cc1-8a03"
-              }
-            ],
-            "name": "Frag grenades",
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "c4a9-24d0-9e9e-99a6"
-          }
-        ],
-        "infoLinks": [
-          {
-            "comment": "3\"",
-            "modifiers": [
-              {
-                "type": "replace",
-                "value": "3\"",
-                "field": "name",
-                "arg": "X"
-              }
-            ],
-            "name": "Blast (X)",
-            "id": "448d-f29e-9a92-e9a7",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "8687-05f8-7034-412c"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Frag grenades",
-        "hidden": false,
-        "id": "60e4-ca33-2e68-9afc"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Thermal diffraction fields reduce the Damage of wounds inflicted by Weapons with specific Traits.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with a thermal diffraction field reduces the Strength of all Hits inflicted on it by Weapons with the Las, Plasma, Melta and Flame Trait by -1. In addition, when any Misfire Groups are generated by a Model with a thermal diffraction field as a result of the Overload (X) Special Rule, any instances of the Breaching (X) Special Rule on those Hits will only take effect on a Wound Test result of 6+, regardless of the value of X.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Thermal Diffraction Field",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "24f0-e464-a157-e1d5"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Thermal Diffraction Field",
-        "hidden": false,
-        "id": "ae43-8418-ecb1-ef6e"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When a Model with an occulix targeting auspex is selected to make a Shooting Attack, if that Model's Unit remained Stationary in the Controlling Player's preceding Movement Phase, that Model gains the Firing Protocols (2) Special Rule until the Shooting Attack is fully resolved.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Occulix targeting auspex",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "3ad7-63c7-4717-3f4d"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Occulix targeting auspex",
-        "hidden": false,
-        "id": "01d8-92c7-5399-5e2a"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with a Saturnine teleportation transponder has the Deep Strike Special Rule. While such a Model has joined a Saturnine Terminator Squad Unit in Reserves, Saturnine Terminator and Saturnine Terminator Sergeant Models in that Unit also gain the Deep Strike Special Rule.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Saturnine teleportation transponder",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "6dba-1981-dc99-80bd"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Saturnine teleportation transponder",
-        "hidden": false,
-        "id": "b347-5137-3d53-53ab"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Augury scanners allow attacks to ignore Shrouded Damage Mitigation Tests.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When a Shooting Attack made by a Unit that includes any Models with an augury scanner inflicts any Hits (excluding Hits from attacks made as Snap Shots), Shrouded Damage Mitigation Rolls cannot be made against those Hits.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Augury scanner",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "a16e-7808-1444-b312"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Augury scanner",
-        "hidden": false,
-        "id": "fede-99f5-4c76-4659"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Nuncio-vox allow Units to remove Statuses in the Start Phase.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "If a Unit that includes one or more Models with a nuncio-vox, and there are one or more friendly Models on the Battlefield with the Command Sub-Type, then the Controlling Player may activate the nuncio-vox during the Start Phase of their Turn as the Active Player. When activated, the Controlling Player may make a Check to remove a single Tactical Status from all Models in the Unit that includes the nuncio-vox. This Check is made using the Characteristics of any one friendly Model on the Battlefield with the Command Sub-Type, chosen by the Controlling Player (using Cool, unless attempting to remove Routed, in which case Leadership is used). A nuncio-vox can only be activated once per Turn, and each Friendly Model on the Battlefield with the Command Sub-Type may only be used once per Start Phase as part of this Special Rule.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Nuncio-vox",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "26f4-05e6-8c77-66a9"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Nuncio-vox",
-        "hidden": false,
-        "id": "4d7e-898a-f445-f1d8"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A combat shield grants a 5+ Invulnerable Save and a bonus to Focus Rolls.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with a combat shield has a 5+ Invulnerable Save against attacks made with Melee Weapons. In addition a Model with a combat shield gains a +1 modifier to Focus Rolls made for it.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Combat shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "d71e-e65a-7ef4-179e"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Combat shield",
-        "hidden": false,
-        "id": "5606-f0ad-360b-fe5b"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Boarding shields grant a 5+ Invulnerable Save, the Shield Trait and the Heavy Sub-Type.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A model with a boarding shield gains a 5+ Invulnerable Save. In addition it gains the Shield Trait and the Heavy Sub-Type.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Boarding shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "d01b-15f1-69fc-881e"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Boarding shield",
-        "hidden": false,
-        "id": "01e9-334c-80cb-f1c6"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A cognis-signum allows more accurate attacks to be made with Barrage Weapons.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "Instead of making a Shooting Attack with a Model with a cognis-signum, the Controlling Player may instead make an Intelligence Check. If the Check is passed, the Controlling Player may select a single enemy Unit within Line of Sight of the Model with a cognis-signum. The next time the selected enemy Unit is targeted by a Shooting Attack that includes any Weapons with the Barrage (X) Special Rule during the current Shooting Phase, the Controlling Player may make Hit Tests for the attacks that have the Barrage (X) Special Rule as normal, ignoring the limitations of the Barrage (X) Special Rule if the Unit making the Shooting Attack is without Line of Sight to the Target Unit. If the Check is not passed, the cognis-signum has no effect this turn.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Cognis-signum",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "02db-54f1-676f-ba40"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Cognis-signum",
-        "hidden": false,
-        "id": "268f-5e98-166a-6f01"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Searchlights allow attacks to ignore Shrouded Damage Mitigation Rolls.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "The Target Number of any Shrouded Damage Mitigation Tests is increased by +1 (to a maximum of 6+) when making Tests as a consequence of wounds, Penetrating Hits, or Glancing Hits inflicted by Shooting Attacks made by a Model that has searchlights that has Line of Sight to the Target Unit. Additionally a Model with searchlights may not make Shrouded Damage Mitigation Tests to negate wounds, Penetrating Hits or Glancing Hits.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Searchlight",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "f933-9aa8-2f82-e261"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Searchlight",
-        "hidden": false,
-        "id": "5a85-bf28-f790-7bf0"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A Model with a servo-arm repairs additional Wounds or Hull Points when using the Battlesmith (X) Special Rule.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "Each time the Controlling Player of a Model with a servo-arm selects the Repair option when activating the Battlesmith (X) Special Rule for that Model, increase the number of Hull Points or Wounds gained by the Target Model by +1.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Servo-arm",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "63a3-906b-dade-23b3"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Servo-arm",
-        "hidden": false,
-        "id": "9902-2d5f-0df2-5cf0"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A vexilla adds a bonus to Combat Resolution scores.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point for each Unit in that Combat that has any Models that have a vexilla.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Vexilla",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "fa91-7836-5402-066f"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Vexilla",
-        "hidden": false,
-        "id": "dfcd-0669-ad43-28aa"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A company standard adds a bonus to Combat Resolution.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution Point for each Unit in that Combat that has any Models that have a company standard. In addition, a Model with a company standard counts as an additional 5 Models for the purposes of Outside Support in a Challenge.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Company standard",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "cd32-fa74-692e-f3c0"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Company standard",
-        "hidden": false,
-        "id": "08b9-48cb-732a-aa75"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Cortex controllers allow Automata to make Reactions.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Unit that includes any Models with the Automata Type can ignore the restriction on making Reactions imposed by the Automata Type while it includes one or more Models with a cortex controller.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Cortex controller",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "7062-3e18-350b-a249"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Cortex controller",
-        "hidden": false,
-        "id": "e1c7-e5c2-8a4c-1e79"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Cyber-familiars grant a bonus to Intelligence Checks.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "The Controlling Play of a Model with a cyber-familiar can modify the results of Intelligence Checks made for that Model by -2.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Cyber-familiar",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "7adf-065c-7084-f87c"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Cyber-familiar",
-        "hidden": false,
-        "id": "a545-36ec-d50e-2ae4"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Dozer blades allow Models to ignore the Movement penalties of Difficult Terrain.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "If the Controlling Player chooses for a Model with a dozer blade to enter any area of Difficult Terrain, the Unit does not apply a modifier to its movement during that Phase.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Dozer blade",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "e4ea-07a4-c1ca-3981"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Dozer blade",
-        "hidden": false,
-        "id": "496e-da18-2afa-b99c"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Legion standards grant bonuses to Combat Resolution.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 2 Combat Resolution Points for each Unit that Combat that has any Models that have a Legion standard. In addition, a Model with a Legion Standard counts as an additional 6 Models for the purposes of Outside Support in a Challenge.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Legion standard",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "6bb8-df5f-4263-7fe8"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Legion standard",
-        "hidden": false,
-        "id": "df7f-540b-00d5-1d82"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A narthecium allows Recovery Tests to be made in the Morale Sub-Phase.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "If a Unit that includes any Models with a narthecium is not Locked in Combat, before the Controlling Player makes a Characteristic Check for that Unit during the Morale Sub-Phase, they can make a Recovery Test for that Unit. If that Recovery Test is successful, that Player can subtract -2 from the result of the Characteristic Check. Only one Recovery Test can be made for each Unit in this way during each Morale Sub-Phase.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Narthecium",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "17b1-8077-fed2-00cc"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Narthecium",
-        "hidden": false,
-        "id": "a7bb-ae7f-3ef2-90d1"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with an Icon of Allegiance immediately gains 1 Honour Point each time:\n\n• That Model is the winner of a Challenge.\n• That Model is part of a Combat that included at least one enemy Model that does not have the Vehicle Type, of which the Controlling Player is declared the winner.\n\nAll Honour Points gained by a Model are lost when:\n\n• That Model is Removed as a Casualty\n• That Mode is part of a Unit in which any Model gains the Disgraced Tactical Status.\n\nDuring the Decide Victor Step, at the end of the Battle, the Controlling Player of any Models with an Icon of Allegiance scores a number of Victory Points equal to the amount of Honour Points that any one of those Models, selected by the Controlling Player, currently has.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Icon of Allegiance",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "7923-80f1-b921-8cc9"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Icon of Allegiance",
-        "hidden": false,
-        "id": "b808-6eaa-6396-6ce3"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A command vox relay grants a bonus to Reserves Test and can be used to grant other benefits.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "While a Model with a command vox relay is on the Battlefield, before making a Reserves Test for a Unit in Reserves, the Controlling Player can select for that Model to activate that command vox relay. If they do, they can modify the result of that Reserves Test by +1. Only one command vox relay can be activated for each Reserves Test.\n\nIn addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player of a Model with a command vox relay can make an Intelligence Check for that Model (if that Model has the Vehicle Type, it is treated as having an Intelligence Characteristic of 8). If that Check is successful, the Controlling Player can select a friendly Unit which includes only Models with the same Faction Trait as the Model with the command vox relay and select one of the following effects:\n\n- Until the end of this Turn, Models in that Unit gain the Line (1) Special Rule (and lose the Vanguard (X) Special Rule if they had it).\n- Until the end of this Turn, Models in that Unit gain the Vanguard (1) Special Rule (and lose the Line (X) Special Rule if they had it.)",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Command vox relay",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "14e1-9aa6-8e77-e79f"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Command vox relay",
-        "hidden": false,
-        "id": "2012-4b76-43b0-c7dd"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Attacks which hit a Model with a flare shield gain no benefit from the Armourbane Special Rule.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When Making Armour Penetration Tests against a Model with a flare shield, no Weapon may make use of the Armourbane Special Rules.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Flare Shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "3767-71da-81e4-3cae"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "26e1-4cfc-5563-5d14"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Flare Shield",
-        "hidden": false,
-        "id": "988f-36eb-7aa2-9ef4"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A Model with a machinator array can use the Battlesmith (X) Special Rule twice in the same Turn.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "Each time the Controlling Player of a Model with a machinator array chooses to make use of the Battlesmith (X) Special Rule for that Model, it may be used twice - with each usage of the Special Rule targeting the same or different target Units as chosen by the Controlling Player and may apply different effects (all targets chosen must be valid targets). If a player chooses to apply the effects of a Machinator Array and makes two Battlesmith actions then neither of those actions may be modified by the effects of a servo-arm and use only the base value of the Model's Battlesmith (X) Special Rule to determine their effect.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Machinator array",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "054c-7251-9bfa-c116"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "7e8e-dddf-c369-64ca"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Machinator array",
-        "hidden": false,
-        "id": "4453-7c1d-15ff-f22c"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A Model with a rad furnace reduces the enemy's Toughness while Locked in Combat.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "Any model, friendly or enemy, that is part of a Combat that includes one of more Models with a rad furnace must reduce its Toughness Characteristic by 1 while a part of that Combat in the Fight Sub-Phase. This reduction is not cumulative with the effects of the Phage (X) Special Rule. Models with a rad furnace, the Automata Type or Cybernetica Trait are unaffected and do not reduce their Toughness Characteristic. Additionally, a Unit that is composed of a majority of Models with rad furnaces does not reduce any Characteristics due to the effects of the Phage (X) Special Rule.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Rad furnace",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "0c55-0abd-a85c-9e0b"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "ec7f-b557-491a-4c2a-max"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Rad furnace",
-        "hidden": false,
-        "id": "e269-7996-f41f-b892"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A Model with an arae-shrike gains the Deep Strike Special Rule and confers it to any Unit it joins, and can apply a penalty to Enemy Reserve Tests.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with an arae-shrike gains the Deep Strike Special Rule, and if it joins a Unit entirely composed of Models with the Legio Custodes Trait in Reserves, all Models in that Unit also gain the Deep Strike Special Rule. In addition, in the Effects Sub-Phase of the End Phase of their Player Turn, the Controlling Player of a Model with an arae-shrike which is on the Battlefield can make an Intelligence Check for that Model. If that Check is successful, then the opposing Player must apply a -1 modifier to the result of the first Reserves Test they make in the Reserves Sub-Phase of the subsequent Player Turn. Any Reserves Test may only be modified by a single araeshrike in this manner.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Arae-shrike",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "5fbb-46ca-83af-911f",
-            "page": 23,
-            "publicationId": "09c6-1c1d-03a7-9556"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Arae-shrike",
-        "hidden": false,
-        "id": "bd7b-1511-997a-f275"
-      },
-      {
-        "costs": [
-          {
-            "name": "Point(s)",
-            "typeId": "9893-c379-920b-8982",
-            "value": 0
-          },
-          {
-            "name": "Asset Point(s)",
-            "typeId": "57e3-1031-7d4d-5ae3",
-            "value": 0
-          },
-          {
-            "name": "Reaction Point(s)",
-            "typeId": "c9ba-097e-c47f-ecc2",
-            "value": 0
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Move Through Cover",
-            "id": "6d25-0c0c-5dcf-db68",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "44d9-f20d-00bf-dc98"
-          }
-        ],
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "Equip Unit gains Move Through Cover.",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "All Models in a Unit that includes any Models with a cyber-hawk gains the Move Through Cover Special Rule.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Cyber-hawk",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "3eed-90fc-7ce1-9d22",
-            "publicationId": "b905-0414-1057-bb34"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Cyber-hawk",
-        "hidden": false,
-        "id": "b596-2b99-fbf4-d536"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Eclipse shields grant a 5+ Shrouded Damage Mitigation Roll against Shooting Attacks once a Model suffers a Penetrating Hit.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "The first time in a Battle Turn a Model with an eclipse shield suffers a Penetrating Hit, it gains a 5+ Shrouded Damage Mitigation Roll against all subsequent Shooting Attacks until it is returned to Aerial Reserves.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Eclipse Shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "2571-5e20-da01-b0e6",
-            "page": 23,
-            "publicationId": "09c6-1c1d-03a7-9556"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Eclipse Shield",
-        "hidden": false,
-        "id": "0a6a-0e6c-887a-e8ed"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Models wholly within 3\" of this Model have a 5+ Invulnerable Save against Shooting Attacks.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
+              {"name": "Summary", "$text": "A Model with this Wargear can enable other Deep Striking Units to arrive more reliably.", "typeId": "8e7d-a0ae-fd85-983c"},
               {
                 "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Atomantic Pavise",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "aa14-e472-db74-a003"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Atomantic Pavise",
-        "hidden": false,
-        "id": "b755-a344-e9ca-5e2d"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with a Gravis Praesidium shield gains a 4+ Invulnerable Save and the Shield Trait.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Gravis Praesidium Shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "390c-33f4-7551-3097"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Gravis Praesidium Shield",
-        "hidden": false,
-        "id": "3e44-2761-9835-05cc"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"lon gauntlet shields provide an Invulnerable Save against Melee Attacks.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrating Hits inflicted with Melee Weapons. Additionally, a Model with an ion gauntlet shield may have Invulnerable Saves made for it against any Glancing Hits it has suffered in Step 10 of an Initiative Step, before any rolls on the Vehicle Damage Chart are made, discarding a single Glancing Hit for each successful save.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Ion Gauntlet Shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "d7c6-089e-da55-d49c"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Ion Gauntlet Shield",
-        "hidden": false,
-        "id": "a4d1-13ef-cb34-8737"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"lon shields provide a different Invulnerable Save against Shooting Attacks made against a Model's Front and Rear Facings, including against Glancing Hits.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with an ion shield has a 5+ Invulnerable Save against Shooting Attacks made against its Front Facing and a 6+ Invulnerable Save against Shooting Attacks made against its Rear Facing. Additionally, a Model with an ion shield may have Invulnerable Saves made for it against any Glancing Hits it has suffered in Step 11 of a Shooting Attack, before any rolls on the Vehicle Damage Chart are made, discarding a single Glancing Hit for each successful save.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Ion Shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "652a-dbe8-a302-bdb0"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Ion Shield",
-        "hidden": false,
-        "id": "b6e2-d84c-ca4a-c4db"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"lonic flare shields provide a different Invulnerable Save against Shooting Attacks made against a Model's Front and Rear Facings, including against Glancing Hits, and nullify the effect of the Armourbane Special Rule on any Shooting Attacks made against the Model.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When making Armour Penetration Tests against a Model with an ionic flare shield, no Weapon may make use of the Armourbane Special Rule.\n\nA Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting Attacks made against its Front Facing and a 6+ Invulnerable Save against Shooting Attacks made against its Rear Facing. Additionally, a Model with an ionic flare shield may have Invulnerable Saves made for it against any Glancing Hits it has suffered in Step 11 of a Shooting Attack, before any rolls on the Vehicle Damage Chart are made, discarding a single Glancing Hit for each successful save.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Ionic Flare Shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "401a-f07a-6749-4746"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Ionic Flare Shield",
-        "hidden": false,
-        "id": "8e65-c8a3-bc6c-c559"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A mag-inverter shield reduces the distance moved by enemy Units that Charge.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "If a Unit that includes a majority of Models that have mag-inverter shields is the target of a Charge, reduce the distance of the Charging Unit’s Charge Move by 1\", to a minimum of 1\".",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Mag-inverter Shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "5a46-461a-85be-1adf"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Mag-inverter Shield",
-        "hidden": false,
-        "id": "eb92-a542-32f0-85b5"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Units within 8\" of a Model with a magisterium vexilla must pass a Leadership Check when scoring an Objective or only a single Victory Point is scored.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model within Line of Sight and 8\" of a Model with a magisterium vexilla would score Victory Points for Controlling or Contesting an Objective, it must first make a Leadership Check. If this Check is failed, that Unit may only score 1 Victory Point for Controlling or Contesting the Objective in that Victory Sub-Phase, regardless of other Special Rules like Line (X) or Comptroller (X). If the Check is successful there is no further effect.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Magisterium Vexilla",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "16d1-ef81-a4c8-0551",
-            "page": 23,
-            "publicationId": "09c6-1c1d-03a7-9556"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Magisterium Vexilla",
-        "hidden": false,
-        "id": "55d9-d0c9-37bb-eeb2"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Unit containing any Models with a Misericordia may select a unique aftermath option in which it makes a special attack against an enemy Unit from the same Combat.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Unit which contains any Models with a Misericordia may have the Blade of Mercy aftermath option selected for it in Step 4 of the Resolution Sub-Phase of the Assault Phase for any Combat in which that Unit has won or drawn the Combat.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Misericordia",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "dfc0-6927-b042-8f75",
-            "page": 23,
-            "publicationId": "09c6-1c1d-03a7-9556"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Misericordia",
-        "hidden": false,
-        "id": "f728-6dc8-8feb-ff45"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "Any Charge declared against a Unit which contains any Models with nemesii grenades and which is not Locked in Combat is always a Disordered Charge, and if a Charge Move is made for such a Charge, all Models in the Charging Unit count as moving through Dangerous Terrain.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Nemesii Grenades",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "ca06-248d-da17-63e7"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Nemesii Grenades",
-        "hidden": false,
-        "id": "a93c-acf9-88d1-cb2b"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A model with a Praesidium shield gains a 5+ Invulnerable Save and the Shield Trait.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Praesidium Shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "944e-f228-fe09-2e53",
-            "page": 24,
-            "publicationId": "09c6-1c1d-03a7-9556"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Praesidium Shield",
-        "hidden": false,
-        "id": "90fb-50b1-d149-f233"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"A tarsus buckler grants a -1 to resolving Wound Tests against a Unit for attacks made as part of a Volley Attack or Overwatch Reaction.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "The Ranged Strength of attacks made as part of a Volley Attack or Overwatch Reaction are modified by -1 when resolving Wound Tests against a Unit that includes one or more Models with a tarsus buckler.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Tarsus Buckler",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "2fd8-ebb9-35ed-0e44"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Tarsus Buckler",
-        "hidden": false,
-        "id": "c9e4-4394-ee06-867c"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "I",
-                "name": "IM",
-                "typeId": "6eec-4093-f946-1014"
-              },
-              {
-                "$text": "A",
-                "name": "AM",
-                "typeId": "03d0-6094-84f0-e27e"
-              },
-              {
-                "$text": "+1",
-                "name": "SM",
-                "typeId": "4505-de6f-d4ae-6280"
-              },
-              {
-                "$text": "3",
-                "name": "AP",
-                "typeId": "a014-126b-3b7b-27e8"
-              },
-              {
-                "$text": "1",
-                "name": "D",
-                "typeId": "6a9d-4feb-065a-33e7"
-              },
-              {
-                "$text": "Impact (AP), Breaching (5+)",
-                "name": "Special Rules",
-                "typeId": "ebe0-7b28-b40c-694e"
-              },
-              {
-                "$text": "Power",
-                "name": "Traits",
-                "typeId": "76e3-c188-bc65-3467"
-              }
-            ],
-            "name": "Power Glaive",
-            "typeId": "3587-6dcd-005c-c263",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "493a-7465-123e-1a20",
-            "publicationId": "7d63-5df4-c656-52de"
-          }
-        ],
-        "costs": [
-          {
-            "name": "Point(s)",
-            "typeId": "9893-c379-920b-8982",
-            "value": 0
-          },
-          {
-            "name": "Asset Point(s)",
-            "typeId": "57e3-1031-7d4d-5ae3",
-            "value": 0
-          },
-          {
-            "name": "Reaction Point(s)",
-            "typeId": "c9ba-097e-c47f-ecc2",
-            "value": 0
-          }
-        ],
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Impact (AP)",
-                "field": "name"
-              }
-            ],
-            "name": "Impact (X)",
-            "id": "1ebb-b2f6-84b0-78fc",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "6ead-c31c-ab09-2f8c"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Breaching (5+)",
-                "field": "name"
-              }
-            ],
-            "name": "Breaching (X)",
-            "id": "7f62-dff5-cba8-bd9f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "b094-0b64-eb57-aed6"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Power Glaive",
-        "hidden": false,
-        "id": "ac01-88cb-3832-1ef8",
-        "publicationId": "b905-0414-1057-bb34"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with a Corvid Pattern Jump Pack has their Movement Characteristic set to 14 and replaces any instance of the Bulky (X) Special Rule with Bulky (3). Each time a Dangerous Terrain test is made for a Model with a Corvid Pattern Jump Pack, that Test is automatically passed.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Corvid Pattern Jump Pack",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "b9db-db51-f6b8-1ee3"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "9b70-28b7-db50-8336",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "61a8-09af-e753-34fd",
-            "includeChildSelections": false
-          }
-        ],
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Bulky (3)",
-                "field": "name"
-              }
-            ],
-            "name": "Bulky (X)",
-            "id": "e4a7-82e5-8cd5-6c21",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "50ad-a9a5-1f1d-9a25"
-          }
-        ],
-        "comment": "Bulky (3) Included",
-        "type": "upgrade",
-        "import": true,
-        "name": "Corvid Pattern Jump Pack",
-        "hidden": false,
-        "id": "3f94-3ed7-02ee-0c1b"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "Wounds with the Flame, Plasma, Melta or Volkite Trait allocated to a Model with Drakenscale have their Damage Characteristic set to 1.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Drakenscale",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "47b8-caba-85e8-3e19"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Drakenscale",
-        "hidden": false,
-        "id": "b021-e506-1ecd-b3c5"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "Template",
-                "name": "R",
-                "typeId": "cdb0-8654-6840-1037"
-              },
-              {
-                "$text": "1",
-                "name": "FP",
-                "typeId": "5037-1f27-1790-e355"
-              },
-              {
-                "$text": "2",
-                "name": "RS",
-                "typeId": "b9da-ee13-79f9-fa63"
-              },
-              {
-                "$text": "5",
-                "name": "AP",
-                "typeId": "7a23-0248-2b94-5951"
-              },
-              {
-                "$text": "1",
-                "name": "D",
-                "typeId": "88c3-1ca5-7dc1-f291"
-              },
-              {
-                "$text": "Template, Breaching (6+)",
-                "name": "Special Rules",
-                "typeId": "5aad-137a-8ee2-63fd"
-              },
-              {
-                "$text": "Sonic, Assault",
-                "name": "Traits",
-                "typeId": "1247-79d2-6cc1-8a03"
-              }
-            ],
-            "name": "Sonic lance",
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "4039-7b75-fcef-f699",
-            "publicationId": "e54c-7040-0f35-d85d",
-            "page": 125
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Template",
-            "id": "002a-854c-7e47-a760",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "7df2-9e88-3285-cf6a"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Breaching (6+)",
-                "field": "name"
-              }
-            ],
-            "name": "Breaching (X)",
-            "id": "6685-0cd5-37f0-5b54",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "b094-0b64-eb57-aed6"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Sonic lance",
-        "hidden": false,
-        "id": "5767-7e75-a9ce-d25b",
-        "publicationId": "e54c-7040-0f35-d85d",
-        "page": 125
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When a Unit that includes any Models with sonic shriekers makes a Charge Move, the Target Unit of that Charge cannot be selected to make Reactions until the Charge Procedure has been completed.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Sonic shriekers",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "b32f-d02f-ffad-3381",
-            "publicationId": "e54c-7040-0f35-d85d",
-            "page": 125
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Sonic shriekers",
-        "hidden": false,
-        "id": "f7a1-d5a3-c294-7ebd",
-        "publicationId": "e54c-7040-0f35-d85d",
-        "page": 125
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "A Model with Trophies of Judgement has the Fear (1) Special Rule",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Trophies of Judgement",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "84db-d6db-4cfb-0982"
-          }
-        ],
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Fear (1)",
-                "field": "name"
-              }
-            ],
-            "name": "Fear (X)",
-            "id": "8fb3-e3d4-9c24-c0fe",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0ebc-0c92-2209-6393"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Trophies of Judgement",
-        "hidden": false,
-        "id": "e48f-c377-59c5-35a7"
-      },
-      {
-        "modifiers": [
-          {
-            "type": "add",
-            "value": "9254-b1e9-98b2-6101",
-            "field": "category",
-            "scope": "parent"
-          }
-        ],
-        "entryLinks": [
-          {
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "6603-e7c8-1b40-373f",
-                "includeChildSelections": false
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "4321-0055-f899-ffa6",
-                "includeChildSelections": false
-              }
-            ],
-            "import": true,
-            "name": "Anathemata",
-            "hidden": false,
-            "id": "4c1d-8511-6390-b414",
-            "type": "selectionEntry",
-            "targetId": "091a-56c9-7eba-9fa7"
-          }
-        ],
-        "costs": [
-          {
-            "name": "Asset Point(s)",
-            "typeId": "57e3-1031-7d4d-5ae3",
-            "value": 0
-          },
-          {
-            "name": "Reaction Point(s)",
-            "typeId": "c9ba-097e-c47f-ecc2",
-            "value": 0
-          },
-          {
-            "name": "Auxiliary Detachment(s)",
-            "typeId": "3e8e-05ee-be52-12d6",
-            "value": 0
-          },
-          {
-            "name": "Apex Detachment(s)",
-            "typeId": "159d-855c-533d-f592",
-            "value": 0
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "8c08-f0f8-ca7e-24b4",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "f2d2-cfc0-e663-4261",
-            "includeChildSelections": false
-          }
-        ],
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "\"Word Bearers Models may gain the Psyker Trait and a specific Psychic Discipline.\"",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "Any Model with the High Command Battlefield Role and Word Bearers Trait may be given the Psyker Trait and the Anathemata Psychic Discipline.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Burning Lore",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "88a3-3c18-838e-d7b0"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Burning Lore",
-        "hidden": false,
-        "id": "1ca4-3804-949f-8ddd"
-      },
-      {
-        "modifiers": [
-          {
-            "type": "add",
-            "value": "1e7d-9066-28d2-97a0",
-            "field": "category",
-            "scope": "parent"
-          },
-          {
-            "type": "add",
-            "value": "26c6-e05c-0f72-7852",
-            "field": "category",
-            "scope": "parent"
-          }
-        ],
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "A Model with a Vigil pattern storm shield has a 4+ invulnerable Save. In addition, it gains the Shield Trait and the Heavy Sub-Type.",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Vigil Pattern Storm Shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "a2f8-eb80-1ef1-6e5e"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Vigil Pattern Storm Shield",
-        "hidden": false,
-        "id": "b672-10f1-20c8-c724"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "This Wargear provides an enhanced save against attacks made in close combat",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A model with a Argyrum pattern boarding shiled has a 5+ Invulnerable Save, increasing to a 4+ Invulnerable Save against Wounds inflicted by Melee Weapons. In addition, it gains the Shield Trait and the Heavy Sub-Type.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Argyrum pattern boarding shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "8fe1-9ce0-eb3c-16ae",
-            "publicationId": "b905-0414-1057-bb34",
-            "page": 245
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "add",
-            "value": "1e7d-9066-28d2-97a0",
-            "field": "category",
-            "scope": "parent"
-          },
-          {
-            "type": "add",
-            "value": "26c6-e05c-0f72-7852",
-            "field": "category",
-            "scope": "parent"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Argyrum pattern boarding shield",
-        "hidden": false,
-        "id": "08d0-c612-7007-103d"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c",
-                "$text": "Breacher charges can be used in Close Combat to \ndeal heavy damage to Fortifications."
-              },
-              {
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5",
-                "$text": "In Step 2 of the Fight Sub-Phase a Model with breacher charges that is part of a Combat where all enemy Units are composed entirely of Models with the Fortification or Building Type may have the breacher charges declared as the Weapon that Model will use in that Sub-Phase.\nA Model that has breacher charges selected as its Weapon always has a Combat Initiative of 0 and may only make a single attack. Any attacks made for such a Model automatically Hit and no Hit Test is made for them, each such Hit has a Strength of 10, an AP of – and a Damage of D3+3"
-              }
-            ],
-            "name": "Breacher Charges",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "31d4-de30-3d9c-b2b0"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Breacher Charges",
-        "hidden": false,
-        "id": "01bd-4377-904c-6625"
-      },
-      {
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Feel No Pain (5+)",
-                "field": "name"
-              }
-            ],
-            "name": "Feel No Pain (X)",
-            "id": "c6ae-b054-234a-5c8d",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "89b5-7320-db15-fd60"
-          }
-        ],
-        "comment": "IH",
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "Successful Armour Tests and Invulnerable Tests may inflict Tactical Statuses on enemy Models.",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "At the end of Step 4 of the Assault Phase, if any Models with Gorgon pattern Terminator armour passed at least one Armour or Invulnerable Test against wounds caused by Shooting Attacks in the same Assault Phase, the Unit which inflicted those wounds must make a Cool Check. If the Check is failed, the Unit gains the Suppressed Status.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Gorgon Pattern Terminator Armour",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "f047-e4d4-e887-c2f0"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Gorgon Pattern Terminator Armour",
-        "hidden": false,
-        "id": "a2ba-c8fc-f381-7d22"
-      },
-      {
-        "costs": [
-          {
-            "name": "Point(s)",
-            "typeId": "9893-c379-920b-8982",
-            "value": 20
-          },
-          {
-            "name": "Asset Point(s)",
-            "typeId": "57e3-1031-7d4d-5ae3",
-            "value": 0
-          },
-          {
-            "name": "Reaction Point(s)",
-            "typeId": "c9ba-097e-c47f-ecc2",
-            "value": 0
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "8201-5bc5-5716-265f",
-            "includeChildSelections": false
-          }
-        ],
-        "infoLinks": [
-          {
-            "comment": "2",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Bulky (2)",
-                "field": "name"
-              }
-            ],
-            "name": "Bulky (X)",
-            "id": "ce77-649f-0547-2e36",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "50ad-a9a5-1f1d-9a25"
-          },
-          {
-            "name": "Deep Strike",
-            "id": "eeaf-068e-63a1-2cca",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0553-d06b-52b9-34db"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Jump Pack",
-        "hidden": false,
-        "id": "9e29-3097-e7b7-8f26"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "A Unit which includes a Model with an ætheric juncture splicer can Deep Strike, but risks becoming Suppressed.",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with an ætheric juncture splicer has the Deep Strike Special Rule. While such a Model has joined a Unit in Reserves which only contains Models with the [Legiones Astartes] Trait, the Infantry Type and which do not have a version of the Bulky (X) Special Rule where the value of X is greater than 2, all Models in that Unit also gain the Deep Strike Special Rule. \n\n\nAdditionally, when a Unit which contains any Models with an ætheric juncture splicer suffers one or more Unsaved Wounds as a result of the Interceptor Advanced Reaction, that Unit immediately gains the Suppressed Tactical Status.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Ætheric Juncture Splicer",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "8491-b2cc-d716-3b23"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Ætheric Juncture Splicer",
-        "hidden": false,
-        "id": "61b1-747d-d563-d7e8"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with a Proteus pattern storm shield gains a 4+ Invulnerable Save. In addition it gains the Shield Trait.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Proteus Pattern Storm Shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "3c85-2a9a-c541-d34b"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "add",
-            "value": "26c6-e05c-0f72-7852",
-            "field": "category"
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Shield",
-            "id": "bfa0-52f3-d253-e39b",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "1af7-07d5-7558-0b64"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Proteus Pattern Storm Shield",
-        "hidden": false,
-        "id": "ff9a-9e63-cf28-5d51"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "Assault shields grant a variable Invulnerable Save, the Shield Trait and the Heavy Sub-Type.",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with an assault shield gains a 6+ Invulnerable Save that is modified to 5+ against attacks made as part of a Volley Attack or Overwatch Reaction. In addition it gains the Shield Trait and the Heavy Sub-Type.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Assault Shield",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "6ce9-7cfb-1902-109c",
-            "page": 46,
-            "publicationId": "a5ca-d2f8-fa5a-c120"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Assault Shield",
-        "hidden": false,
-        "id": "6421-5ab9-02f3-e545"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "A Militia vexilla adjusts the distance of Fall Back Moves.",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When making a Dice roll to determine the distance of a Fall Back move for a Unit which contains any Models with a Militia vexilla, the Controlling Player rolls an additional Dice and discards a single Dice of their choice.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Militia Vexilla",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "927a-4354-4aaf-9b09"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Militia Vexilla",
-        "hidden": false,
-        "id": "1420-40f4-617b-41bc"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "Militia voxes allows the Controlling Player to roll an additional dice when making Checks to  remove Statuses in the End Phase.",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When making a Cool or Leadership Check in the Statuses Sub-Phase of the End Phase to  remove a Tactical Status from a Unit which includes any Models with a Militia vox, the Controlling Player may roll an additional Dice, discarding the Dice which, once rolled, has the highest result, as long as at least one Model in that Unit has Line of Sight to a friendly Model with the Command Sub-Type and the Imperialis Militia Trait which is not affected by any Statuses.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Militia Vox",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "271a-3294-0810-5e42",
-            "page": 46,
-            "publicationId": "a5ca-d2f8-fa5a-c120"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Militia Vox",
-        "hidden": false,
-        "id": "5ffe-ced0-f3b4-f89a"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "A Militia standard removes the Routed Tactical Status from friendly Imperialis Militia Units when they end a Fall Back Move within 12\".",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "When at least one Model in a Unit entirely composed of Models with the Imperialis Militia Trait ends a Fall Back Move within 12\" of at least one Model from a Friendly Unit with a Militia  Standard, all Models in that Unit immediately remove the Routed Status.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Militia Standard",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "29c2-be4b-a5f9-e645",
-            "page": 47,
-            "publicationId": "a5ca-d2f8-fa5a-c120"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Militia Standard",
-        "hidden": false,
-        "id": "3f9b-6ab2-2963-8f01"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with smoke launchers gains the Smokescreen trait.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Smoke Launchers",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "5abf-10d6-1f24-45c3",
-            "page": 47,
-            "publicationId": "a5ca-d2f8-fa5a-c120"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Smoke Launchers",
-        "hidden": false,
-        "id": "b94f-e829-064a-9d60"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "I",
-                "typeId": "6eec-4093-f946-1014",
-                "name": "IM"
-              },
-              {
-                "$text": "A",
-                "typeId": "03d0-6094-84f0-e27e",
-                "name": "AM"
-              },
-              {
-                "$text": "+2",
-                "typeId": "4505-de6f-d4ae-6280",
-                "name": "SM"
-              },
-              {
-                "$text": "4",
-                "typeId": "a014-126b-3b7b-27e8",
-                "name": "AP"
-              },
-              {
-                "$text": "1",
-                "typeId": "6a9d-4feb-065a-33e7",
-                "name": "D"
-              },
-              {
-                "$text": "Reaping Blow (2), Shred (5+)",
-                "typeId": "ebe0-7b28-b40c-694e",
-                "name": "Special Rules"
-              },
-              {
-                "$text": "Chain",
-                "typeId": "76e3-c188-bc65-3467",
-                "name": "Traits"
-              }
-            ],
-            "name": "Sentinel chainblade",
-            "typeId": "3587-6dcd-005c-c263",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "217d-f1dc-42bc-9820",
-            "page": 56,
-            "publicationId": "a5ca-d2f8-fa5a-c120"
-          }
-        ],
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Reaping Blow (2)",
-                "field": "name"
-              }
-            ],
-            "name": "Reaping Blow (X)",
-            "id": "3f7a-2665-4c3f-df7b",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "951f-eee4-02b7-b014"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Shred (5+)",
-                "field": "name"
-              }
-            ],
-            "name": "Shred (X)",
-            "id": "fdca-e6ad-2573-231b",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "d01e-f96b-b5c1-8fb1"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Sentinel chainblade",
-        "hidden": false,
-        "id": "c685-c766-4b2c-a4d5"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "Flare launchers provide an Invulnerable Save against the Interceptor Reaction.",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with flare launchers gains a 5+ Invulnerable Save against any Hits inflicted as part of an Interceptor Reaction.",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Flare Launchers",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "1a5c-3e12-16f1-1d8d"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Flare Launchers",
-        "hidden": false,
-        "id": "3e26-cf69-2500-32d2"
-      },
-      {
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Hatred (Infantry, Cavalry, Automata)",
-                "field": "name"
-              }
-            ],
-            "name": "Hatred (X)",
-            "id": "6afc-6874-9ac2-9a47",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0612-95d5-46ae-c5ee"
-          },
-          {
-            "name": "Heedless",
-            "id": "c0a1-67b7-e22a-fbd0",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a3f3-72c6-7e01-6cab"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Frenzon",
-        "hidden": false,
-        "id": "e683-8578-5b18-d01c"
-      },
-      {
-        "costs": [
-          {
-            "name": "Asset Point(s)",
-            "typeId": "57e3-1031-7d4d-5ae3",
-            "value": 0
-          },
-          {
-            "name": "Reaction Point(s)",
-            "typeId": "c9ba-097e-c47f-ecc2",
-            "value": 0
-          },
-          {
-            "name": "Auxiliary Detachment(s)",
-            "typeId": "3e8e-05ee-be52-12d6",
-            "value": 0
-          },
-          {
-            "name": "Apex Detachment(s)",
-            "typeId": "159d-855c-533d-f592",
-            "value": 0
-          }
-        ],
-        "rules": [
-          {
-            "description": "The Controlling Player of a Model with an artificia kill-switch may choose to activate it in the Effects Sub-Phase of any End Phase. When activated, that Player may select one friendly Model that has the Artificia Type that is within 12\" of the Model with the artificia kill-switch. The selected Model with the Artificia Type suffers D6+2 Unsaved Wounds. If this would cause that Model to be Removed as a Casualty, then if that Model has any version of the Explodes (X) Special Rule, that Special Rule is automatically activated. If a Model is Destroyed and Removed from Play due to the activation of an artificia kill-switch, then no Player may score any Victory Points for that Model being removed from play.",
-            "name": "Artificia Kill-switch",
-            "id": "de0e-0da2-a814-17cd",
-            "hidden": false
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Artificia Kill-switch",
-        "hidden": false,
-        "id": "65d5-d4b2-ab9b-fb96"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "A Model with a Saturnine teleport synchroniser that is in Reserves gains the Deep Strike Special Rule if its Unit has been joined by a Model with a Saturnine teleportation transponder",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Saturnine Teleport Synchroniser",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "af6a-4447-5de2-3da9"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Saturnine Teleport Synchroniser",
-        "hidden": false,
-        "id": "bc43-a3f4-2d34-550a"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "$text": "A Model with the Super-Heavy Sub-Type and an Incursor pattern command array is able tomake the Overwatch and Return Fire Reactions in response to actions made by any Unit instead of only Units that contain Models with the Paragon Type, Super-heavy Sub-Type, Knight Sub-Type or Titan Sub-Type.\n\n\n\n\nIn addition, while a Model with an Incursor pattern command array has the Suppressed or Stunned Tactical Status, it has the Auto-repair (4+) Special Rule",
-                "name": "Description",
-                "typeId": "9944-2f6d-d61b-03b5"
-              }
-            ],
-            "name": "Incursor Pattern Command Array",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "5963-2046-554b-266c"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Incursor Pattern Command Array",
-        "hidden": false,
-        "id": "90c8-470d-de50-85c6"
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Auxilia vexilla",
-        "hidden": false,
-        "id": "abc6-851f-ab12-1ddd",
-        "profiles": [
-          {
-            "name": "Auxilia vexilla",
-            "typeId": "5ec5-e0c3-1701-6f16",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "044f-3095-9d9a-0ed3",
-            "characteristics": [
-              {
-                "$text": "An Auxilia vexilla increases the Casualty threshold when making Panic Checks for a Unit in the Shooting Phase from 25% to 50%.",
-                "name": "Summary",
-                "typeId": "8e7d-a0ae-fd85-983c"
-              },
-              {
-                "name": "Description",
+                "$text": "Reserves Tests made for a Unit that contains any Models with a strato-vox are automatically successful. While any Models with a strato-vox are on the Battlefield, before making a Reserves Test for a Unit in Reserves that only includes Models with the Deep Strike Special Rule, the Controlling Player can choose to activate that strato-vox. lf they do, that Reserves Test is automatically successful, but the Unit it was made for must make a Deep Strike instead of deploying normally.",
                 "typeId": "9944-2f6d-d61b-03b5"
               }
             ]
           }
         ]
-      }
-    ],
-    "catalogueLinks": [
-      {
-        "type": "catalogue",
-        "name": "Special Rules",
-        "id": "a167-1d9f-99b4-830c",
-        "targetId": "106b-693b-99f2-00c3",
-        "importRootEntries": true
       },
       {
-        "type": "catalogue",
-        "name": "Traits",
-        "id": "f337-6ccb-bbe3-657c",
-        "importRootEntries": false,
-        "targetId": "df17-7a05-0826-6e22"
+        "name": "Frag grenades",
+        "id": "60e4-ca33-2e68-9afc",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {
+            "name": "Blast (X)",
+            "id": "448d-f29e-9a92-e9a7",
+            "comment": "3\"",
+            "hidden": false,
+            "targetId": "8687-05f8-7034-412c",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "3\""}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Frag grenades",
+            "id": "3035-fae8-b4b2-ec46",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"Frag grenades can be used to make attacks during the Volley Step.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "When making Volley Attacks during Step 4 of the Charge Procedure with a Unit that includes at least one Model with frag grenades, the Controlling Player may choose to make a single attack with a frag grenade instead of making a normal Shooting Attack.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          },
+          {
+            "name": "Frag grenades",
+            "id": "c4a9-24d0-9e9e-99a6",
+            "hidden": false,
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "6", "typeId": "cdb0-8654-6840-1037"},
+              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
+              {"name": "RS", "$text": "3", "typeId": "b9da-ee13-79f9-fa63"},
+              {"name": "AP", "$text": "6", "typeId": "7a23-0248-2b94-5951"},
+              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
+              {"name": "Special Rules", "$text": "Blast (3\")", "typeId": "5aad-137a-8ee2-63fd"},
+              {"name": "Traits", "$text": "Assault", "typeId": "1247-79d2-6cc1-8a03"}
+            ]
+          }
+        ]
       },
       {
-        "type": "catalogue",
-        "name": "Psychic",
-        "id": "50ce-dc5a-06c4-bd38",
-        "targetId": "1b2d-2038-39a7-f387"
+        "name": "Thermal Diffraction Field",
+        "id": "ae43-8418-ecb1-ef6e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Thermal Diffraction Field",
+            "id": "24f0-e464-a157-e1d5",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"Thermal diffraction fields reduce the Damage of wounds inflicted by Weapons with specific Traits.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "A Model with a thermal diffraction field reduces the Strength of all Hits inflicted on it by Weapons with the Las, Plasma, Melta and Flame Trait by -1. In addition, when any Misfire Groups are generated by a Model with a thermal diffraction field as a result of the Overload (X) Special Rule, any instances of the Breaching (X) Special Rule on those Hits will only take effect on a Wound Test result of 6+, regardless of the value of X.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Occulix targeting auspex",
+        "id": "01d8-92c7-5399-5e2a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Occulix targeting auspex",
+            "id": "3ad7-63c7-4717-3f4d",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "When a Model with an occulix targeting auspex is selected to make a Shooting Attack, if that Model's Unit remained Stationary in the Controlling Player's preceding Movement Phase, that Model gains the Firing Protocols (2) Special Rule until the Shooting Attack is fully resolved.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Saturnine teleportation transponder",
+        "id": "b347-5137-3d53-53ab",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Saturnine teleportation transponder",
+            "id": "6dba-1981-dc99-80bd",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A Model with a Saturnine teleportation transponder has the Deep Strike Special Rule. While such a Model has joined a Saturnine Terminator Squad Unit in Reserves, Saturnine Terminator and Saturnine Terminator Sergeant Models in that Unit also gain the Deep Strike Special Rule.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Augury scanner",
+        "id": "fede-99f5-4c76-4659",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Augury scanner",
+            "id": "a16e-7808-1444-b312",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"Augury scanners allow attacks to ignore Shrouded Damage Mitigation Tests.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "When a Shooting Attack made by a Unit that includes any Models with an augury scanner inflicts any Hits (excluding Hits from attacks made as Snap Shots), Shrouded Damage Mitigation Rolls cannot be made against those Hits.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nuncio-vox",
+        "id": "4d7e-898a-f445-f1d8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Nuncio-vox",
+            "id": "26f4-05e6-8c77-66a9",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"Nuncio-vox allow Units to remove Statuses in the Start Phase.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "If a Unit that includes one or more Models with a nuncio-vox, and there are one or more friendly Models on the Battlefield with the Command Sub-Type, then the Controlling Player may activate the nuncio-vox during the Start Phase of their Turn as the Active Player. When activated, the Controlling Player may make a Check to remove a single Tactical Status from all Models in the Unit that includes the nuncio-vox. This Check is made using the Characteristics of any one friendly Model on the Battlefield with the Command Sub-Type, chosen by the Controlling Player (using Cool, unless attempting to remove Routed, in which case Leadership is used). A nuncio-vox can only be activated once per Turn, and each Friendly Model on the Battlefield with the Command Sub-Type may only be used once per Start Phase as part of this Special Rule.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Combat shield",
+        "id": "5606-f0ad-360b-fe5b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Combat shield",
+            "id": "d71e-e65a-7ef4-179e",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"A combat shield grants a 5+ Invulnerable Save and a bonus to Focus Rolls.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A Model with a combat shield has a 5+ Invulnerable Save against attacks made with Melee Weapons. In addition a Model with a combat shield gains a +1 modifier to Focus Rolls made for it.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Boarding shield",
+        "id": "01e9-334c-80cb-f1c6",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Boarding shield",
+            "id": "d01b-15f1-69fc-881e",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"Boarding shields grant a 5+ Invulnerable Save, the Shield Trait and the Heavy Sub-Type.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A model with a boarding shield gains a 5+ Invulnerable Save. In addition it gains the Shield Trait and the Heavy Sub-Type.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cognis-signum",
+        "id": "268f-5e98-166a-6f01",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Cognis-signum",
+            "id": "02db-54f1-676f-ba40",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"A cognis-signum allows more accurate attacks to be made with Barrage Weapons.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "Instead of making a Shooting Attack with a Model with a cognis-signum, the Controlling Player may instead make an Intelligence Check. If the Check is passed, the Controlling Player may select a single enemy Unit within Line of Sight of the Model with a cognis-signum. The next time the selected enemy Unit is targeted by a Shooting Attack that includes any Weapons with the Barrage (X) Special Rule during the current Shooting Phase, the Controlling Player may make Hit Tests for the attacks that have the Barrage (X) Special Rule as normal, ignoring the limitations of the Barrage (X) Special Rule if the Unit making the Shooting Attack is without Line of Sight to the Target Unit. If the Check is not passed, the cognis-signum has no effect this turn.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Searchlight",
+        "id": "5a85-bf28-f790-7bf0",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Searchlight",
+            "id": "f933-9aa8-2f82-e261",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"Searchlights allow attacks to ignore Shrouded Damage Mitigation Rolls.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "The Target Number of any Shrouded Damage Mitigation Tests is increased by +1 (to a maximum of 6+) when making Tests as a consequence of wounds, Penetrating Hits, or Glancing Hits inflicted by Shooting Attacks made by a Model that has searchlights that has Line of Sight to the Target Unit. Additionally a Model with searchlights may not make Shrouded Damage Mitigation Tests to negate wounds, Penetrating Hits or Glancing Hits.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Servo-arm",
+        "id": "9902-2d5f-0df2-5cf0",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Servo-arm",
+            "id": "63a3-906b-dade-23b3",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"A Model with a servo-arm repairs additional Wounds or Hull Points when using the Battlesmith (X) Special Rule.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "Each time the Controlling Player of a Model with a servo-arm selects the Repair option when activating the Battlesmith (X) Special Rule for that Model, increase the number of Hull Points or Wounds gained by the Target Model by +1.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vexilla",
+        "id": "dfcd-0669-ad43-28aa",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Vexilla",
+            "id": "fa91-7836-5402-066f",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"A vexilla adds a bonus to Combat Resolution scores.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point for each Unit in that Combat that has any Models that have a vexilla.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Company standard",
+        "id": "08b9-48cb-732a-aa75",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Company standard",
+            "id": "cd32-fa74-692e-f3c0",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"A company standard adds a bonus to Combat Resolution.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution Point for each Unit in that Combat that has any Models that have a company standard. In addition, a Model with a company standard counts as an additional 5 Models for the purposes of Outside Support in a Challenge.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cortex controller",
+        "id": "e1c7-e5c2-8a4c-1e79",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Cortex controller",
+            "id": "7062-3e18-350b-a249",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"Cortex controllers allow Automata to make Reactions.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A Unit that includes any Models with the Automata Type can ignore the restriction on making Reactions imposed by the Automata Type while it includes one or more Models with a cortex controller.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cyber-familiar",
+        "id": "a545-36ec-d50e-2ae4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Cyber-familiar",
+            "id": "7adf-065c-7084-f87c",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"Cyber-familiars grant a bonus to Intelligence Checks.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "The Controlling Play of a Model with a cyber-familiar can modify the results of Intelligence Checks made for that Model by -2.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dozer blade",
+        "id": "496e-da18-2afa-b99c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Dozer blade",
+            "id": "e4ea-07a4-c1ca-3981",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"Dozer blades allow Models to ignore the Movement penalties of Difficult Terrain.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "If the Controlling Player chooses for a Model with a dozer blade to enter any area of Difficult Terrain, the Unit does not apply a modifier to its movement during that Phase.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Legion standard",
+        "id": "df7f-540b-00d5-1d82",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Legion standard",
+            "id": "6bb8-df5f-4263-7fe8",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"Legion standards grant bonuses to Combat Resolution.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 2 Combat Resolution Points for each Unit that Combat that has any Models that have a Legion standard. In addition, a Model with a Legion Standard counts as an additional 6 Models for the purposes of Outside Support in a Challenge.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Narthecium",
+        "id": "a7bb-ae7f-3ef2-90d1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Narthecium",
+            "id": "17b1-8077-fed2-00cc",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"A narthecium allows Recovery Tests to be made in the Morale Sub-Phase.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "If a Unit that includes any Models with a narthecium is not Locked in Combat, before the Controlling Player makes a Characteristic Check for that Unit during the Morale Sub-Phase, they can make a Recovery Test for that Unit. If that Recovery Test is successful, that Player can subtract -2 from the result of the Characteristic Check. Only one Recovery Test can be made for each Unit in this way during each Morale Sub-Phase.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Icon of Allegiance",
+        "id": "b808-6eaa-6396-6ce3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Icon of Allegiance",
+            "id": "7923-80f1-b921-8cc9",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A Model with an Icon of Allegiance immediately gains 1 Honour Point each time:\n\n• That Model is the winner of a Challenge.\n• That Model is part of a Combat that included at least one enemy Model that does not have the Vehicle Type, of which the Controlling Player is declared the winner.\n\nAll Honour Points gained by a Model are lost when:\n\n• That Model is Removed as a Casualty\n• That Mode is part of a Unit in which any Model gains the Disgraced Tactical Status.\n\nDuring the Decide Victor Step, at the end of the Battle, the Controlling Player of any Models with an Icon of Allegiance scores a number of Victory Points equal to the amount of Honour Points that any one of those Models, selected by the Controlling Player, currently has.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Command vox relay",
+        "id": "2012-4b76-43b0-c7dd",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Command vox relay",
+            "id": "14e1-9aa6-8e77-e79f",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"A command vox relay grants a bonus to Reserves Test and can be used to grant other benefits.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "While a Model with a command vox relay is on the Battlefield, before making a Reserves Test for a Unit in Reserves, the Controlling Player can select for that Model to activate that command vox relay. If they do, they can modify the result of that Reserves Test by +1. Only one command vox relay can be activated for each Reserves Test.\n\nIn addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player of a Model with a command vox relay can make an Intelligence Check for that Model (if that Model has the Vehicle Type, it is treated as having an Intelligence Characteristic of 8). If that Check is successful, the Controlling Player can select a friendly Unit which includes only Models with the same Faction Trait as the Model with the command vox relay and select one of the following effects:\n\n- Until the end of this Turn, Models in that Unit gain the Line (1) Special Rule (and lose the Vanguard (X) Special Rule if they had it).\n- Until the end of this Turn, Models in that Unit gain the Vanguard (1) Special Rule (and lose the Line (X) Special Rule if they had it.)",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flare Shield",
+        "id": "988f-36eb-7aa2-9ef4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "26e1-4cfc-5563-5d14", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "profiles": [
+          {
+            "name": "Flare Shield",
+            "id": "3767-71da-81e4-3cae",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"Attacks which hit a Model with a flare shield gain no benefit from the Armourbane Special Rule.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "When Making Armour Penetration Tests against a Model with a flare shield, no Weapon may make use of the Armourbane Special Rules.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Machinator array",
+        "id": "4453-7c1d-15ff-f22c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "7e8e-dddf-c369-64ca", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "profiles": [
+          {
+            "name": "Machinator array",
+            "id": "054c-7251-9bfa-c116",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"A Model with a machinator array can use the Battlesmith (X) Special Rule twice in the same Turn.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "Each time the Controlling Player of a Model with a machinator array chooses to make use of the Battlesmith (X) Special Rule for that Model, it may be used twice - with each usage of the Special Rule targeting the same or different target Units as chosen by the Controlling Player and may apply different effects (all targets chosen must be valid targets). If a player chooses to apply the effects of a Machinator Array and makes two Battlesmith actions then neither of those actions may be modified by the effects of a servo-arm and use only the base value of the Model's Battlesmith (X) Special Rule to determine their effect.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rad furnace",
+        "id": "e269-7996-f41f-b892",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "ec7f-b557-491a-4c2a-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "profiles": [
+          {
+            "name": "Rad furnace",
+            "id": "0c55-0abd-a85c-9e0b",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"A Model with a rad furnace reduces the enemy's Toughness while Locked in Combat.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "Any model, friendly or enemy, that is part of a Combat that includes one of more Models with a rad furnace must reduce its Toughness Characteristic by 1 while a part of that Combat in the Fight Sub-Phase. This reduction is not cumulative with the effects of the Phage (X) Special Rule. Models with a rad furnace, the Automata Type or Cybernetica Trait are unaffected and do not reduce their Toughness Characteristic. Additionally, a Unit that is composed of a majority of Models with rad furnaces does not reduce any Characteristics due to the effects of the Phage (X) Special Rule.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Arae-shrike",
+        "id": "bd7b-1511-997a-f275",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Arae-shrike",
+            "id": "5fbb-46ca-83af-911f",
+            "hidden": false,
+            "page": 23,
+            "publicationId": "09c6-1c1d-03a7-9556",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"A Model with an arae-shrike gains the Deep Strike Special Rule and confers it to any Unit it joins, and can apply a penalty to Enemy Reserve Tests.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "A Model with an arae-shrike gains the Deep Strike Special Rule, and if it joins a Unit entirely composed of Models with the Legio Custodes Trait in Reserves, all Models in that Unit also gain the Deep Strike Special Rule. In addition, in the Effects Sub-Phase of the End Phase of their Player Turn, the Controlling Player of a Model with an arae-shrike which is on the Battlefield can make an Intelligence Check for that Model. If that Check is successful, then the opposing Player must apply a -1 modifier to the result of the first Reserves Test they make in the Reserves Sub-Phase of the subsequent Player Turn. Any Reserves Test may only be modified by a single araeshrike in this manner.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cyber-hawk",
+        "id": "b596-2b99-fbf4-d536",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+          {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0}
+        ],
+        "infoLinks": [{"name": "Move Through Cover", "id": "6d25-0c0c-5dcf-db68", "hidden": false, "targetId": "44d9-f20d-00bf-dc98", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Cyber-hawk",
+            "id": "3eed-90fc-7ce1-9d22",
+            "hidden": false,
+            "publicationId": "b905-0414-1057-bb34",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "Equip Unit gains Move Through Cover.", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "All Models in a Unit that includes any Models with a cyber-hawk gains the Move Through Cover Special Rule.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Eclipse Shield",
+        "id": "0a6a-0e6c-887a-e8ed",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Eclipse Shield",
+            "id": "2571-5e20-da01-b0e6",
+            "hidden": false,
+            "page": 23,
+            "publicationId": "09c6-1c1d-03a7-9556",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"Eclipse shields grant a 5+ Shrouded Damage Mitigation Roll against Shooting Attacks once a Model suffers a Penetrating Hit.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "The first time in a Battle Turn a Model with an eclipse shield suffers a Penetrating Hit, it gains a 5+ Shrouded Damage Mitigation Roll against all subsequent Shooting Attacks until it is returned to Aerial Reserves.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Atomantic Pavise",
+        "id": "b755-a344-e9ca-5e2d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Atomantic Pavise",
+            "id": "aa14-e472-db74-a003",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"Models wholly within 3\" of this Model have a 5+ Invulnerable Save against Shooting Attacks.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {"name": "Description", "typeId": "9944-2f6d-d61b-03b5"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gravis Praesidium Shield",
+        "id": "3e44-2761-9835-05cc",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Gravis Praesidium Shield",
+            "id": "390c-33f4-7551-3097",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {"name": "Description", "$text": "A Model with a Gravis Praesidium shield gains a 4+ Invulnerable Save and the Shield Trait.", "typeId": "9944-2f6d-d61b-03b5"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ion Gauntlet Shield",
+        "id": "a4d1-13ef-cb34-8737",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Ion Gauntlet Shield",
+            "id": "d7c6-089e-da55-d49c",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"lon gauntlet shields provide an Invulnerable Save against Melee Attacks.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrating Hits inflicted with Melee Weapons. Additionally, a Model with an ion gauntlet shield may have Invulnerable Saves made for it against any Glancing Hits it has suffered in Step 10 of an Initiative Step, before any rolls on the Vehicle Damage Chart are made, discarding a single Glancing Hit for each successful save.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ion Shield",
+        "id": "b6e2-d84c-ca4a-c4db",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Ion Shield",
+            "id": "652a-dbe8-a302-bdb0",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"lon shields provide a different Invulnerable Save against Shooting Attacks made against a Model's Front and Rear Facings, including against Glancing Hits.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "A Model with an ion shield has a 5+ Invulnerable Save against Shooting Attacks made against its Front Facing and a 6+ Invulnerable Save against Shooting Attacks made against its Rear Facing. Additionally, a Model with an ion shield may have Invulnerable Saves made for it against any Glancing Hits it has suffered in Step 11 of a Shooting Attack, before any rolls on the Vehicle Damage Chart are made, discarding a single Glancing Hit for each successful save.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ionic Flare Shield",
+        "id": "8e65-c8a3-bc6c-c559",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Ionic Flare Shield",
+            "id": "401a-f07a-6749-4746",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"lonic flare shields provide a different Invulnerable Save against Shooting Attacks made against a Model's Front and Rear Facings, including against Glancing Hits, and nullify the effect of the Armourbane Special Rule on any Shooting Attacks made against the Model.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "When making Armour Penetration Tests against a Model with an ionic flare shield, no Weapon may make use of the Armourbane Special Rule.\n\nA Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting Attacks made against its Front Facing and a 6+ Invulnerable Save against Shooting Attacks made against its Rear Facing. Additionally, a Model with an ionic flare shield may have Invulnerable Saves made for it against any Glancing Hits it has suffered in Step 11 of a Shooting Attack, before any rolls on the Vehicle Damage Chart are made, discarding a single Glancing Hit for each successful save.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mag-inverter Shield",
+        "id": "eb92-a542-32f0-85b5",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Mag-inverter Shield",
+            "id": "5a46-461a-85be-1adf",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"A mag-inverter shield reduces the distance moved by enemy Units that Charge.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "If a Unit that includes a majority of Models that have mag-inverter shields is the target of a Charge, reduce the distance of the Charging Unit’s Charge Move by 1\", to a minimum of 1\".",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Magisterium Vexilla",
+        "id": "55d9-d0c9-37bb-eeb2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Magisterium Vexilla",
+            "id": "16d1-ef81-a4c8-0551",
+            "hidden": false,
+            "page": 23,
+            "publicationId": "09c6-1c1d-03a7-9556",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"Units within 8\" of a Model with a magisterium vexilla must pass a Leadership Check when scoring an Objective or only a single Victory Point is scored.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model within Line of Sight and 8\" of a Model with a magisterium vexilla would score Victory Points for Controlling or Contesting an Objective, it must first make a Leadership Check. If this Check is failed, that Unit may only score 1 Victory Point for Controlling or Contesting the Objective in that Victory Sub-Phase, regardless of other Special Rules like Line (X) or Comptroller (X). If the Check is successful there is no further effect.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Misericordia",
+        "id": "f728-6dc8-8feb-ff45",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Misericordia",
+            "id": "dfc0-6927-b042-8f75",
+            "hidden": false,
+            "page": 23,
+            "publicationId": "09c6-1c1d-03a7-9556",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"Unit containing any Models with a Misericordia may select a unique aftermath option in which it makes a special attack against an enemy Unit from the same Combat.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "A Unit which contains any Models with a Misericordia may have the Blade of Mercy aftermath option selected for it in Step 4 of the Resolution Sub-Phase of the Assault Phase for any Combat in which that Unit has won or drawn the Combat.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nemesii Grenades",
+        "id": "a93c-acf9-88d1-cb2b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Nemesii Grenades",
+            "id": "ca06-248d-da17-63e7",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "Any Charge declared against a Unit which contains any Models with nemesii grenades and which is not Locked in Combat is always a Disordered Charge, and if a Charge Move is made for such a Charge, all Models in the Charging Unit count as moving through Dangerous Terrain.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Praesidium Shield",
+        "id": "90fb-50b1-d149-f233",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Praesidium Shield",
+            "id": "944e-f228-fe09-2e53",
+            "hidden": false,
+            "page": 24,
+            "publicationId": "09c6-1c1d-03a7-9556",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {"name": "Description", "$text": "A model with a Praesidium shield gains a 5+ Invulnerable Save and the Shield Trait.", "typeId": "9944-2f6d-d61b-03b5"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tarsus Buckler",
+        "id": "c9e4-4394-ee06-867c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Tarsus Buckler",
+            "id": "2fd8-ebb9-35ed-0e44",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "\"A tarsus buckler grants a -1 to resolving Wound Tests against a Unit for attacks made as part of a Volley Attack or Overwatch Reaction.\"",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "The Ranged Strength of attacks made as part of a Volley Attack or Overwatch Reaction are modified by -1 when resolving Wound Tests against a Unit that includes one or more Models with a tarsus buckler.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power Glaive",
+        "id": "ac01-88cb-3832-1ef8",
+        "hidden": false,
+        "import": true,
+        "publicationId": "b905-0414-1057-bb34",
+        "type": "upgrade",
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+          {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0}
+        ],
+        "infoLinks": [
+          {
+            "name": "Impact (X)",
+            "id": "1ebb-b2f6-84b0-78fc",
+            "hidden": false,
+            "targetId": "6ead-c31c-ab09-2f8c",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Impact (AP)"}]
+          },
+          {
+            "name": "Breaching (X)",
+            "id": "7f62-dff5-cba8-bd9f",
+            "hidden": false,
+            "targetId": "b094-0b64-eb57-aed6",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Power Glaive",
+            "id": "493a-7465-123e-1a20",
+            "hidden": false,
+            "publicationId": "7d63-5df4-c656-52de",
+            "typeId": "3587-6dcd-005c-c263",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
+              {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
+              {"name": "SM", "$text": "+1", "typeId": "4505-de6f-d4ae-6280"},
+              {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
+              {"name": "D", "$text": "1", "typeId": "6a9d-4feb-065a-33e7"},
+              {"name": "Special Rules", "$text": "Impact (AP), Breaching (5+)", "typeId": "ebe0-7b28-b40c-694e"},
+              {"name": "Traits", "$text": "Power", "typeId": "76e3-c188-bc65-3467"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Corvid Pattern Jump Pack",
+        "id": "3f94-3ed7-02ee-0c1b",
+        "comment": "Bulky (3) Included",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "9b70-28b7-db50-8336", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 0},
+          {"id": "61a8-09af-e753-34fd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "e4a7-82e5-8cd5-6c21",
+            "hidden": false,
+            "targetId": "50ad-a9a5-1f1d-9a25",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Bulky (3)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Corvid Pattern Jump Pack",
+            "id": "b9db-db51-f6b8-1ee3",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A Model with a Corvid Pattern Jump Pack has their Movement Characteristic set to 14 and replaces any instance of the Bulky (X) Special Rule with Bulky (3). Each time a Dangerous Terrain test is made for a Model with a Corvid Pattern Jump Pack, that Test is automatically passed.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drakenscale",
+        "id": "b021-e506-1ecd-b3c5",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Drakenscale",
+            "id": "47b8-caba-85e8-3e19",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "Wounds with the Flame, Plasma, Melta or Volkite Trait allocated to a Model with Drakenscale have their Damage Characteristic set to 1.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sonic lance",
+        "id": "5767-7e75-a9ce-d25b",
+        "hidden": false,
+        "import": true,
+        "page": 125,
+        "publicationId": "e54c-7040-0f35-d85d",
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Template", "id": "002a-854c-7e47-a760", "hidden": false, "targetId": "7df2-9e88-3285-cf6a", "type": "rule"},
+          {
+            "name": "Breaching (X)",
+            "id": "6685-0cd5-37f0-5b54",
+            "hidden": false,
+            "targetId": "b094-0b64-eb57-aed6",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (6+)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Sonic lance",
+            "id": "4039-7b75-fcef-f699",
+            "hidden": false,
+            "page": 125,
+            "publicationId": "e54c-7040-0f35-d85d",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "Template", "typeId": "cdb0-8654-6840-1037"},
+              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
+              {"name": "RS", "$text": "2", "typeId": "b9da-ee13-79f9-fa63"},
+              {"name": "AP", "$text": "5", "typeId": "7a23-0248-2b94-5951"},
+              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
+              {"name": "Special Rules", "$text": "Template, Breaching (6+)", "typeId": "5aad-137a-8ee2-63fd"},
+              {"name": "Traits", "$text": "Sonic, Assault", "typeId": "1247-79d2-6cc1-8a03"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sonic shriekers",
+        "id": "f7a1-d5a3-c294-7ebd",
+        "hidden": false,
+        "import": true,
+        "page": 125,
+        "publicationId": "e54c-7040-0f35-d85d",
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Sonic shriekers",
+            "id": "b32f-d02f-ffad-3381",
+            "hidden": false,
+            "page": 125,
+            "publicationId": "e54c-7040-0f35-d85d",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "When a Unit that includes any Models with sonic shriekers makes a Charge Move, the Target Unit of that Charge cannot be selected to make Reactions until the Charge Procedure has been completed.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Trophies of Judgement",
+        "id": "e48f-c377-59c5-35a7",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {
+            "name": "Fear (X)",
+            "id": "8fb3-e3d4-9c24-c0fe",
+            "hidden": false,
+            "targetId": "0ebc-0c92-2209-6393",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Fear (1)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Trophies of Judgement",
+            "id": "84db-d6db-4cfb-0982",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "A Model with Trophies of Judgement has the Fear (1) Special Rule", "typeId": "8e7d-a0ae-fd85-983c"},
+              {"name": "Description", "typeId": "9944-2f6d-d61b-03b5"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Burning Lore",
+        "id": "1ca4-3804-949f-8ddd",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "8c08-f0f8-ca7e-24b4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 0},
+          {"id": "f2d2-cfc0-e663-4261", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Anathemata",
+            "id": "4c1d-8511-6390-b414",
+            "hidden": false,
+            "import": true,
+            "targetId": "091a-56c9-7eba-9fa7",
+            "type": "selectionEntry",
+            "constraints": [
+              {"id": "6603-e7c8-1b40-373f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "4321-0055-f899-ffa6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ],
+        "modifiers": [{"field": "category", "scope": "parent", "type": "add", "value": "9254-b1e9-98b2-6101"}],
+        "profiles": [
+          {
+            "name": "Burning Lore",
+            "id": "88a3-3c18-838e-d7b0",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "\"Word Bearers Models may gain the Psyker Trait and a specific Psychic Discipline.\"", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "Any Model with the High Command Battlefield Role and Word Bearers Trait may be given the Psyker Trait and the Anathemata Psychic Discipline.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vigil Pattern Storm Shield",
+        "id": "b672-10f1-20c8-c724",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "modifiers": [
+          {"field": "category", "scope": "parent", "type": "add", "value": "1e7d-9066-28d2-97a0"},
+          {"field": "category", "scope": "parent", "type": "add", "value": "26c6-e05c-0f72-7852"}
+        ],
+        "profiles": [
+          {
+            "name": "Vigil Pattern Storm Shield",
+            "id": "a2f8-eb80-1ef1-6e5e",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "A Model with a Vigil pattern storm shield has a 4+ invulnerable Save. In addition, it gains the Shield Trait and the Heavy Sub-Type.",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {"name": "Description", "typeId": "9944-2f6d-d61b-03b5"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Argyrum pattern boarding shield",
+        "id": "08d0-c612-7007-103d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "modifiers": [
+          {"field": "category", "scope": "parent", "type": "add", "value": "1e7d-9066-28d2-97a0"},
+          {"field": "category", "scope": "parent", "type": "add", "value": "26c6-e05c-0f72-7852"}
+        ],
+        "profiles": [
+          {
+            "name": "Argyrum pattern boarding shield",
+            "id": "8fe1-9ce0-eb3c-16ae",
+            "hidden": false,
+            "page": 245,
+            "publicationId": "b905-0414-1057-bb34",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "This Wargear provides an enhanced save against attacks made in close combat", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A model with a Argyrum pattern boarding shiled has a 5+ Invulnerable Save, increasing to a 4+ Invulnerable Save against Wounds inflicted by Melee Weapons. In addition, it gains the Shield Trait and the Heavy Sub-Type.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Breacher Charges",
+        "id": "01bd-4377-904c-6625",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Breacher Charges",
+            "id": "31d4-de30-3d9c-b2b0",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "Breacher charges can be used in Close Combat to \ndeal heavy damage to Fortifications.", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "In Step 2 of the Fight Sub-Phase a Model with breacher charges that is part of a Combat where all enemy Units are composed entirely of Models with the Fortification or Building Type may have the breacher charges declared as the Weapon that Model will use in that Sub-Phase.\nA Model that has breacher charges selected as its Weapon always has a Combat Initiative of 0 and may only make a single attack. Any attacks made for such a Model automatically Hit and no Hit Test is made for them, each such Hit has a Strength of 10, an AP of – and a Damage of D3+3",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gorgon Pattern Terminator Armour",
+        "id": "a2ba-c8fc-f381-7d22",
+        "comment": "IH",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {
+            "name": "Feel No Pain (X)",
+            "id": "c6ae-b054-234a-5c8d",
+            "hidden": false,
+            "targetId": "89b5-7320-db15-fd60",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Feel No Pain (5+)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Gorgon Pattern Terminator Armour",
+            "id": "f047-e4d4-e887-c2f0",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "Successful Armour Tests and Invulnerable Tests may inflict Tactical Statuses on enemy Models.", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "At the end of Step 4 of the Assault Phase, if any Models with Gorgon pattern Terminator armour passed at least one Armour or Invulnerable Test against wounds caused by Shooting Attacks in the same Assault Phase, the Unit which inflicted those wounds must make a Cool Check. If the Check is failed, the Unit gains the Suppressed Status.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Jump Pack",
+        "id": "9e29-3097-e7b7-8f26",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "8201-5bc5-5716-265f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20},
+          {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0}
+        ],
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "ce77-649f-0547-2e36",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "50ad-a9a5-1f1d-9a25",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Bulky (2)"}]
+          },
+          {"name": "Deep Strike", "id": "eeaf-068e-63a1-2cca", "hidden": false, "targetId": "0553-d06b-52b9-34db", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Ætheric Juncture Splicer",
+        "id": "61b1-747d-d563-d7e8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Ætheric Juncture Splicer",
+            "id": "8491-b2cc-d716-3b23",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "A Unit which includes a Model with an ætheric juncture splicer can Deep Strike, but risks becoming Suppressed.",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "A Model with an ætheric juncture splicer has the Deep Strike Special Rule. While such a Model has joined a Unit in Reserves which only contains Models with the [Legiones Astartes] Trait, the Infantry Type and which do not have a version of the Bulky (X) Special Rule where the value of X is greater than 2, all Models in that Unit also gain the Deep Strike Special Rule. \n\n\nAdditionally, when a Unit which contains any Models with an ætheric juncture splicer suffers one or more Unsaved Wounds as a result of the Interceptor Advanced Reaction, that Unit immediately gains the Suppressed Tactical Status.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Proteus Pattern Storm Shield",
+        "id": "ff9a-9e63-cf28-5d51",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Shield", "id": "bfa0-52f3-d253-e39b", "hidden": false, "targetId": "1af7-07d5-7558-0b64", "type": "profile"}],
+        "modifiers": [{"field": "category", "type": "add", "value": "26c6-e05c-0f72-7852"}],
+        "profiles": [
+          {
+            "name": "Proteus Pattern Storm Shield",
+            "id": "3c85-2a9a-c541-d34b",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A Model with a Proteus pattern storm shield gains a 4+ Invulnerable Save. In addition it gains the Shield Trait.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Assault Shield",
+        "id": "6421-5ab9-02f3-e545",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Assault Shield",
+            "id": "6ce9-7cfb-1902-109c",
+            "hidden": false,
+            "page": 46,
+            "publicationId": "a5ca-d2f8-fa5a-c120",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "Assault shields grant a variable Invulnerable Save, the Shield Trait and the Heavy Sub-Type.", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A Model with an assault shield gains a 6+ Invulnerable Save that is modified to 5+ against attacks made as part of a Volley Attack or Overwatch Reaction. In addition it gains the Shield Trait and the Heavy Sub-Type.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Militia Vexilla",
+        "id": "1420-40f4-617b-41bc",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Militia Vexilla",
+            "id": "927a-4354-4aaf-9b09",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "A Militia vexilla adjusts the distance of Fall Back Moves.", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "When making a Dice roll to determine the distance of a Fall Back move for a Unit which contains any Models with a Militia vexilla, the Controlling Player rolls an additional Dice and discards a single Dice of their choice.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Militia Vox",
+        "id": "5ffe-ced0-f3b4-f89a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Militia Vox",
+            "id": "271a-3294-0810-5e42",
+            "hidden": false,
+            "page": 46,
+            "publicationId": "a5ca-d2f8-fa5a-c120",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "Militia voxes allows the Controlling Player to roll an additional dice when making Checks to  remove Statuses in the End Phase.",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "When making a Cool or Leadership Check in the Statuses Sub-Phase of the End Phase to  remove a Tactical Status from a Unit which includes any Models with a Militia vox, the Controlling Player may roll an additional Dice, discarding the Dice which, once rolled, has the highest result, as long as at least one Model in that Unit has Line of Sight to a friendly Model with the Command Sub-Type and the Imperialis Militia Trait which is not affected by any Statuses.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Militia Standard",
+        "id": "3f9b-6ab2-2963-8f01",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Militia Standard",
+            "id": "29c2-be4b-a5f9-e645",
+            "hidden": false,
+            "page": 47,
+            "publicationId": "a5ca-d2f8-fa5a-c120",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "A Militia standard removes the Routed Tactical Status from friendly Imperialis Militia Units when they end a Fall Back Move within 12\".",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {
+                "name": "Description",
+                "$text": "When at least one Model in a Unit entirely composed of Models with the Imperialis Militia Trait ends a Fall Back Move within 12\" of at least one Model from a Friendly Unit with a Militia  Standard, all Models in that Unit immediately remove the Routed Status.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Smoke Launchers",
+        "id": "b94f-e829-064a-9d60",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Smoke Launchers",
+            "id": "5abf-10d6-1f24-45c3",
+            "hidden": false,
+            "page": 47,
+            "publicationId": "a5ca-d2f8-fa5a-c120",
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {"name": "Description", "$text": "A Model with smoke launchers gains the Smokescreen trait.", "typeId": "9944-2f6d-d61b-03b5"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sentinel chainblade",
+        "id": "c685-c766-4b2c-a4d5",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {
+            "name": "Reaping Blow (X)",
+            "id": "3f7a-2665-4c3f-df7b",
+            "hidden": false,
+            "targetId": "951f-eee4-02b7-b014",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Reaping Blow (2)"}]
+          },
+          {
+            "name": "Shred (X)",
+            "id": "fdca-e6ad-2573-231b",
+            "hidden": false,
+            "targetId": "d01e-f96b-b5c1-8fb1",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Shred (5+)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Sentinel chainblade",
+            "id": "217d-f1dc-42bc-9820",
+            "hidden": false,
+            "page": 56,
+            "publicationId": "a5ca-d2f8-fa5a-c120",
+            "typeId": "3587-6dcd-005c-c263",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
+              {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
+              {"name": "SM", "$text": "+2", "typeId": "4505-de6f-d4ae-6280"},
+              {"name": "AP", "$text": "4", "typeId": "a014-126b-3b7b-27e8"},
+              {"name": "D", "$text": "1", "typeId": "6a9d-4feb-065a-33e7"},
+              {"name": "Special Rules", "$text": "Reaping Blow (2), Shred (5+)", "typeId": "ebe0-7b28-b40c-694e"},
+              {"name": "Traits", "$text": "Chain", "typeId": "76e3-c188-bc65-3467"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flare Launchers",
+        "id": "3e26-cf69-2500-32d2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Flare Launchers",
+            "id": "1a5c-3e12-16f1-1d8d",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "$text": "Flare launchers provide an Invulnerable Save against the Interceptor Reaction.", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A Model with flare launchers gains a 5+ Invulnerable Save against any Hits inflicted as part of an Interceptor Reaction.",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frenzon",
+        "id": "e683-8578-5b18-d01c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {
+            "name": "Hatred (X)",
+            "id": "6afc-6874-9ac2-9a47",
+            "hidden": false,
+            "targetId": "0612-95d5-46ae-c5ee",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Hatred (Infantry, Cavalry, Automata)"}]
+          },
+          {"name": "Heedless", "id": "c0a1-67b7-e22a-fbd0", "hidden": false, "targetId": "a3f3-72c6-7e01-6cab", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Artificia Kill-switch",
+        "id": "65d5-d4b2-ab9b-fb96",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [
+          {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0}
+        ],
+        "rules": [
+          {
+            "name": "Artificia Kill-switch",
+            "id": "de0e-0da2-a814-17cd",
+            "description": "The Controlling Player of a Model with an artificia kill-switch may choose to activate it in the Effects Sub-Phase of any End Phase. When activated, that Player may select one friendly Model that has the Artificia Type that is within 12\" of the Model with the artificia kill-switch. The selected Model with the Artificia Type suffers D6+2 Unsaved Wounds. If this would cause that Model to be Removed as a Casualty, then if that Model has any version of the Explodes (X) Special Rule, that Special Rule is automatically activated. If a Model is Destroyed and Removed from Play due to the activation of an artificia kill-switch, then no Player may score any Victory Points for that Model being removed from play.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Saturnine Teleport Synchroniser",
+        "id": "bc43-a3f4-2d34-550a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Saturnine Teleport Synchroniser",
+            "id": "af6a-4447-5de2-3da9",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "A Model with a Saturnine teleport synchroniser that is in Reserves gains the Deep Strike Special Rule if its Unit has been joined by a Model with a Saturnine teleportation transponder",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {"name": "Description", "typeId": "9944-2f6d-d61b-03b5"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Incursor Pattern Command Array",
+        "id": "90c8-470d-de50-85c6",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Incursor Pattern Command Array",
+            "id": "5963-2046-554b-266c",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {"name": "Summary", "typeId": "8e7d-a0ae-fd85-983c"},
+              {
+                "name": "Description",
+                "$text": "A Model with the Super-Heavy Sub-Type and an Incursor pattern command array is able tomake the Overwatch and Return Fire Reactions in response to actions made by any Unit instead of only Units that contain Models with the Paragon Type, Super-heavy Sub-Type, Knight Sub-Type or Titan Sub-Type.\n\n\n\n\nIn addition, while a Model with an Incursor pattern command array has the Suppressed or Stunned Tactical Status, it has the Auto-repair (4+) Special Rule",
+                "typeId": "9944-2f6d-d61b-03b5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Auxilia vexilla",
+        "id": "abc6-851f-ab12-1ddd",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Auxilia vexilla",
+            "id": "044f-3095-9d9a-0ed3",
+            "hidden": false,
+            "typeId": "5ec5-e0c3-1701-6f16",
+            "typeName": "Wargear",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "An Auxilia vexilla increases the Casualty threshold when making Panic Checks for a Unit in the Shooting Phase from 25% to 50%.",
+                "typeId": "8e7d-a0ae-fd85-983c"
+              },
+              {"name": "Description", "typeId": "9944-2f6d-d61b-03b5"}
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
       {
-        "selectionEntries": [
-          {
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "0e48-62e1-6476-25df"
-              }
-            ],
-            "type": "upgrade",
-            "import": true,
-            "name": "Outrider",
-            "hidden": false,
-            "id": "4f20-9a87-8334-9f26"
-          },
-          {
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "3084-522a-8981-60ea"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "add",
-                "value": "c504-9dfa-35d3-c98f",
-                "field": "category"
-              },
-              {
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "unit",
-                    "childId": "d929-8371-72d9-8cb4",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ],
-                "type": "set",
-                "value": 0,
-                "field": "9893-c379-920b-8982"
-              }
-            ],
-            "costs": [
-              {
-                "name": "Point(s)",
-                "typeId": "9893-c379-920b-8982",
-                "value": 10
-              },
-              {
-                "name": "Asset Point(s)",
-                "typeId": "57e3-1031-7d4d-5ae3",
-                "value": 0
-              },
-              {
-                "name": "Reaction Point(s)",
-                "typeId": "c9ba-097e-c47f-ecc2",
-                "value": 0
-              },
-              {
-                "name": "Auxiliary Detachment(s)",
-                "typeId": "3e8e-05ee-be52-12d6",
-                "value": 0
-              },
-              {
-                "name": "Apex Detachment(s)",
-                "typeId": "159d-855c-533d-f592",
-                "value": 0
-              }
-            ],
-            "type": "upgrade",
-            "import": true,
-            "name": "Scimitar Jetbike",
-            "hidden": false,
-            "id": "81b1-1fec-a45c-27aa"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "66dd-e7b5-5c36-b695"
-          },
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "3f29-c2a1-faad-c4bd"
-          }
-        ],
         "name": "Mount",
         "id": "9089-07e5-3653-84b6",
+        "defaultSelectionEntryId": "4f20-9a87-8334-9f26",
         "hidden": false,
-        "defaultSelectionEntryId": "4f20-9a87-8334-9f26"
+        "constraints": [
+          {"id": "66dd-e7b5-5c36-b695", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+          {"id": "3f29-c2a1-faad-c4bd", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Outrider",
+            "id": "4f20-9a87-8334-9f26",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "0e48-62e1-6476-25df", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+          },
+          {
+            "name": "Scimitar Jetbike",
+            "id": "81b1-1fec-a45c-27aa",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "3084-522a-8981-60ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10},
+              {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0}
+            ],
+            "modifiers": [
+              {"field": "category", "type": "add", "value": "c504-9dfa-35d3-c98f"},
+              {
+                "field": "9893-c379-920b-8982",
+                "type": "set",
+                "value": 0,
+                "conditions": [{"childId": "d929-8371-72d9-8cb4", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "instanceOf", "value": 1}]
+              }
+            ]
+          }
+        ]
       }
-    ],
-    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
-    "library": true,
-    "id": "fcc7-4319-bb04-2c25",
-    "name": "Wargear",
-    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
-    "gameSystemRevision": 1,
-    "revision": 24,
-    "authorName": "The4D6",
-    "battleScribeVersion": 2.03,
-    "type": "catalogue",
-    "authorContact": "https://github.com/BSData/horus-heresy-3rd-edition/issues",
-    "authorUrl": "https://github.com/BSData/horus-heresy-3rd-edition/"
+    ]
   }
 }
