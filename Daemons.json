@@ -4761,6 +4761,14 @@
                 "type": "selectionEntryGroup"
               }
             ]
+          },
+          {
+            "name": "High Command Detachment Choice",
+            "id": "c587-d28c-e8f4-6bec",
+            "hidden": false,
+            "import": true,
+            "targetId": "969e-8b5b-1410-cfc6",
+            "type": "selectionEntryGroup"
           }
         ],
         "infoLinks": [
@@ -5175,19 +5183,6 @@
             "constraints": [
               {"id": "d199-2143-19b2-cca0", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "b56c-f514-e5c0-ff5f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "modifiers": [
-              {
-                "field": "category",
-                "type": "add",
-                "value": "5a95-e564-96b2-8dc9",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [{"childId": "2c90-1d52-7075-59d3", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}]
-                  }
-                ]
-              }
             ],
             "profiles": [
               {
@@ -5904,6 +5899,19 @@
                 "targetId": "50ad-a9a5-1f1d-9a25",
                 "type": "rule",
                 "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "4"}]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "category",
+                "type": "add",
+                "value": "5a95-e564-96b2-8dc9",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [{"childId": "2c90-1d52-7075-59d3", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}]
+                  }
+                ]
               }
             ],
             "profiles": [
