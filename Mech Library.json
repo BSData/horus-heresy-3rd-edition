@@ -1,2200 +1,4247 @@
 {
   "catalogue": {
-    "name": "Mech Library",
-    "id": "a159-1624-dbac-7af8",
-    "battleScribeVersion": 2.03,
-    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
-    "gameSystemRevision": 2,
-    "library": true,
-    "revision": 6,
-    "type": "catalogue",
-    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
-    "catalogueLinks": [
-      {"name": "Special Rules", "id": "02c6-8592-a435-b590", "targetId": "106b-693b-99f2-00c3", "type": "catalogue"},
-      {"name": "Weapons", "id": "9c77-4046-66a1-74aa", "targetId": "a22d-4dd0-c59d-57d3", "type": "catalogue"}
-    ],
-    "sharedProfiles": [
-      {
-        "name": "Cybertheurgist",
-        "id": "e4bc-7baa-05c4-6945",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [
-          {
-            "name": "Description",
-            "$text": "Many of the Rules for Cybertheurgic Rites will only be usable by a 'Cybertheurgist'. A Cybertheurgist is any Model that has the Cybertheurgist Trait on their Profile. As with all Traits, the Cybertheurgist Trait grants no Rules to a Model in and of itself, not does it grant any Cybertheurgic Rites, it simply allows a Model to make use of Rules that require a Cybertheurgist in order to function, or as a trigger for Rules that target Cybertheurgists. For a Model to gain one or more Cybertheurgic Rites, they must either be listed on their profile or selected as options during Army Selection.",
-            "typeId": "d5eb-0b8b-0f26-6233"
-          }
-        ]
-      },
-      {
-        "name": "[Mechanicum]",
-        "id": "7aca-c779-952f-fcac",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}],
-        "modifiers": [
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Archimandrite",
-            "conditions": [{"childId": "3252-003d-1181-0f99", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Cybernetica",
-            "conditions": [{"childId": "df10-4634-c1aa-f6e0", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Lacrymaerta",
-            "conditions": [{"childId": "8268-aa48-f4dc-0506", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Myrmidax",
-            "conditions": [{"childId": "9e7d-913d-86f0-e05e", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Reductor",
-            "conditions": [{"childId": "e76a-e22d-9fc4-dc1f", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Malagra",
-            "conditions": [{"childId": "eba5-3e47-aa06-65fe", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Macrotek",
-            "conditions": [{"childId": "1ec3-1433-658a-f04e", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "2f57-6e9d-8a7b-5c2e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Heterodox",
-        "id": "c6ad-7327-3690-9219",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
-      }
-    ],
     "sharedSelectionEntries": [
       {
-        "name": "Maxima bolter",
-        "id": "350a-3713-d175-ab09",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "18",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "3",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "4",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "5",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Assault, Bolt",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "Maxima bolter",
-            "id": "62f5-b58c-0e13-c427",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "18", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "3", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "4", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "5", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Assault, Bolt", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "62f5-b58c-0e13-c427"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Maxima bolter",
+        "hidden": false,
+        "id": "350a-3713-d175-ab09"
       },
       {
-        "name": "Lightning gun",
-        "id": "9b86-e05d-8ce5-ab8b",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "18",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "3",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "5",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "5",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Shred (6+), Suppressive (0)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Assault, Arc",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Lightning gun",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "0f55-babc-d83e-a586"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shred (6+)",
+                "field": "name"
+              }
+            ],
+            "comment": "6+",
             "name": "Shred (X)",
             "id": "f110-c730-a478-8dc5",
-            "comment": "6+",
             "hidden": false,
-            "targetId": "d01e-f96b-b5c1-8fb1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shred (6+)"}]
+            "targetId": "d01e-f96b-b5c1-8fb1"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Suppressive (0)",
+                "field": "name"
+              }
+            ],
+            "comment": "0",
             "name": "Suppressive (X)",
             "id": "7ec2-c34f-caaa-a165",
-            "comment": "0",
             "hidden": false,
-            "targetId": "001f-53f3-4d87-4b43",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Suppressive (0)"}]
+            "targetId": "001f-53f3-4d87-4b43"
           }
         ],
-        "profiles": [
-          {
-            "name": "Lightning gun",
-            "id": "0f55-babc-d83e-a586",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "18", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "3", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "5", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "5", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Shred (6+), Suppressive (0)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Assault, Arc", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Lightning gun",
+        "hidden": false,
+        "id": "9b86-e05d-8ce5-ab8b"
       },
       {
-        "name": "Arc blaster",
-        "id": "e8bd-5972-dafc-783e",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "24",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "6",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "6",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "5",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Suppressive (1), Shock (Suppressed)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Arc",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Arc blaster",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "3d75-cb00-d4f4-e89c"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Suppressive (1)",
+                "field": "name"
+              }
+            ],
+            "comment": "1",
             "name": "Suppressive (X)",
             "id": "f577-4db2-9b01-396e",
-            "comment": "1",
             "hidden": false,
-            "targetId": "001f-53f3-4d87-4b43",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Suppressive (1)"}]
+            "targetId": "001f-53f3-4d87-4b43"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shock (Suppressed)",
+                "field": "name"
+              }
+            ],
+            "comment": "Suppressed",
             "name": "Shock (X)",
             "id": "82c7-c6bc-1c37-9796",
-            "comment": "Suppressed",
             "hidden": false,
-            "targetId": "c6fd-28d0-3f80-672c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shock (Suppressed)"}]
+            "targetId": "c6fd-28d0-3f80-672c"
           }
         ],
-        "profiles": [
-          {
-            "name": "Arc blaster",
-            "id": "3d75-cb00-d4f4-e89c",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "24", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "6", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "6", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "5", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Suppressive (1), Shock (Suppressed)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Arc", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Arc blaster",
+        "hidden": false,
+        "id": "e8bd-5972-dafc-783e"
       },
       {
-        "name": "Lightning lock",
-        "id": "d22a-d9bc-ed06-1a7f",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "36",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "7",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Blast (3\"), Shred (5+), Breaching (5+), Suppressive (0)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Arc",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Lightning lock",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "dcd8-0d07-1fe3-08ed"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Breaching (X)",
             "id": "9864-99e4-956c-c531",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Suppressive (0)",
+                "field": "name"
+              }
+            ],
+            "comment": "0",
             "name": "Suppressive (X)",
             "id": "0920-b7af-9973-6e61",
-            "comment": "0",
             "hidden": false,
-            "targetId": "001f-53f3-4d87-4b43",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Suppressive (0)"}]
+            "targetId": "001f-53f3-4d87-4b43"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shred (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Shred (X)",
             "id": "1d7d-0fc6-273c-f9bd",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "d01e-f96b-b5c1-8fb1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shred (5+)"}]
+            "targetId": "d01e-f96b-b5c1-8fb1"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Blast (3\")",
+                "field": "name"
+              }
+            ],
+            "comment": "3\"",
             "name": "Blast (X)",
             "id": "310a-eef1-92d7-f82a",
-            "comment": "3\"",
             "hidden": false,
-            "targetId": "8687-05f8-7034-412c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Blast (3\")"}]
+            "targetId": "8687-05f8-7034-412c"
           }
         ],
-        "profiles": [
-          {
-            "name": "Lightning lock",
-            "id": "dcd8-0d07-1fe3-08ed",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "36", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "7", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "3", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "2", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Blast (3\"), Shred (5+), Breaching (5+), Suppressive (0)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Arc", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Lightning lock",
+        "hidden": false,
+        "id": "d22a-d9bc-ed06-1a7f"
       },
       {
-        "name": "Lightning cannon",
-        "id": "fae1-04cd-0971-ee22",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "36",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "7",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Blast (5\"), Shred (5+), Breaching (5+), Suppressive (1)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Arc",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Lightning cannon",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "4f11-5186-91db-dd03"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Blast (5\")",
+                "field": "name"
+              }
+            ],
+            "comment": "5\"",
             "name": "Blast (X)",
             "id": "c2c7-9e9a-9a95-fa18",
-            "comment": "5\"",
             "hidden": false,
-            "targetId": "8687-05f8-7034-412c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Blast (5\")"}]
+            "targetId": "8687-05f8-7034-412c"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Breaching (X)",
             "id": "e7f6-4c45-bca2-c9d2",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shred (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Shred (X)",
             "id": "61c5-9cb1-2631-3d58",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "d01e-f96b-b5c1-8fb1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shred (5+)"}]
+            "targetId": "d01e-f96b-b5c1-8fb1"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Suppressive (1)",
+                "field": "name"
+              }
+            ],
+            "comment": "1",
             "name": "Suppressive (X)",
             "id": "a13a-4c83-8895-1293",
-            "comment": "1",
             "hidden": false,
-            "targetId": "001f-53f3-4d87-4b43",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Suppressive (1)"}]
+            "targetId": "001f-53f3-4d87-4b43"
           }
         ],
-        "profiles": [
-          {
-            "name": "Lightning cannon",
-            "id": "4f11-5186-91db-dd03",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "36", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "7", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "3", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "2", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Blast (5\"), Shred (5+), Breaching (5+), Suppressive (1)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Arc", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Lightning cannon",
+        "hidden": false,
+        "id": "fae1-04cd-0971-ee22"
       },
       {
-        "name": "Twin archaeotech pistols",
-        "id": "e4a5-b85a-1a93-6368",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Pistol", "id": "6cd0-d19b-e346-6be4", "hidden": false, "targetId": "2bf6-55c8-6810-a71c", "type": "rule"},
+        "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "12",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "2",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "6",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Pistol, Breaching (3+)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Assault",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Twin archaeotech pistols",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "cab5-825c-96af-589f"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Pistol",
+            "id": "6cd0-d19b-e346-6be4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2bf6-55c8-6810-a71c"
+          },
+          {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (3+)",
+                "field": "name"
+              }
+            ],
+            "comment": "3+",
             "name": "Breaching (X)",
             "id": "5d62-1243-617b-3ada",
-            "comment": "3+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (3+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           }
         ],
-        "profiles": [
-          {
-            "name": "Twin archaeotech pistols",
-            "id": "cab5-825c-96af-589f",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "12", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "2", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "6", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "4", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "2", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Pistol, Breaching (3+)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Assault", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Twin archaeotech pistols",
+        "hidden": false,
+        "id": "e4a5-b85a-1a93-6368"
       },
       {
-        "name": "Twin rotor cannon",
-        "id": "8346-d5be-e159-326d",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "24",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "5",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "4",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "-",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Heavy (FP), Suppressive (2)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Auto",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Twin rotor cannon",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "31f9-67de-05cf-1645"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Suppressive (2)",
+                "field": "name"
+              }
+            ],
+            "comment": "2",
             "name": "Suppressive (X)",
             "id": "cb95-e3ff-2428-d9b9",
-            "comment": "2",
             "hidden": false,
-            "targetId": "001f-53f3-4d87-4b43",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Suppressive (2)"}]
+            "targetId": "001f-53f3-4d87-4b43"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Heavy (FP)",
+                "field": "name"
+              }
+            ],
+            "comment": "FP",
             "name": "Heavy (X)",
             "id": "d808-d524-f87b-936a",
-            "comment": "FP",
             "hidden": false,
-            "targetId": "bc30-3b33-2683-01a2",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Heavy (FP)"}]
+            "targetId": "bc30-3b33-2683-01a2"
           }
         ],
-        "profiles": [
-          {
-            "name": "Twin rotor cannon",
-            "id": "31f9-67de-05cf-1645",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "24", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "5", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "4", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "-", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Heavy (FP), Suppressive (2)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Auto", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Twin rotor cannon",
+        "hidden": false,
+        "id": "8346-d5be-e159-326d"
       },
       {
-        "name": "Twin maxima bolters",
-        "id": "73ca-3919-fc33-5415",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "18",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "5",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "4",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "5",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Shred (6+)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Assault, Bolt",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Twin maxima bolters",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "1837-dc7b-12b6-038e"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shred (6+)",
+                "field": "name"
+              }
+            ],
+            "comment": "6+",
             "name": "Shred (X)",
             "id": "85cc-51c7-6e14-1992",
-            "comment": "6+",
             "hidden": false,
-            "targetId": "d01e-f96b-b5c1-8fb1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shred (6+)"}]
+            "targetId": "d01e-f96b-b5c1-8fb1"
           }
         ],
-        "profiles": [
-          {
-            "name": "Twin maxima bolters",
-            "id": "1837-dc7b-12b6-038e",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "18", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "5", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "4", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "5", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Shred (6+)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Assault, Bolt", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Twin maxima bolters",
+        "hidden": false,
+        "id": "73ca-3919-fc33-5415"
       },
       {
-        "name": "Mauler bolt cannon",
-        "id": "ec2c-185f-3e9e-7ccd",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "24",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "4",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "6",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Pinning (0), Shred (5+)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Bolt",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Mauler bolt cannon",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "a24a-6ab8-fdca-f397"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shred (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Shred (X)",
             "id": "65fc-c3d4-7a4a-6447",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "d01e-f96b-b5c1-8fb1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shred (5+)"}]
+            "targetId": "d01e-f96b-b5c1-8fb1"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Pinning (0)",
+                "field": "name"
+              }
+            ],
+            "comment": "0",
             "name": "Pinning (X)",
             "id": "1687-8eaa-bc7c-19c1",
-            "comment": "0",
             "hidden": false,
-            "targetId": "88b6-6493-e4d7-1805",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Pinning (0)"}]
+            "targetId": "88b6-6493-e4d7-1805"
           }
         ],
-        "profiles": [
-          {
-            "name": "Mauler bolt cannon",
-            "id": "a24a-6ab8-fdca-f397",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "24", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "4", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "6", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "4", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Pinning (0), Shred (5+)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Bolt", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Mauler bolt cannon",
+        "hidden": false,
+        "id": "ec2c-185f-3e9e-7ccd"
       },
       {
-        "name": "Twin mauler bolt cannon",
-        "id": "f55e-5279-ca20-3a9b",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "24",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "6",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "6",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Pinning (2), Shred (4+)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Bolt",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Twin mauler bolt cannon",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "8585-9dda-11eb-4783"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Pinning (2)",
+                "field": "name"
+              }
+            ],
+            "comment": "2",
             "name": "Pinning (X)",
             "id": "df58-20d2-001b-6ac5",
-            "comment": "2",
             "hidden": false,
-            "targetId": "88b6-6493-e4d7-1805",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Pinning (2)"}]
+            "targetId": "88b6-6493-e4d7-1805"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shred (4+)",
+                "field": "name"
+              }
+            ],
+            "comment": "4+",
             "name": "Shred (X)",
             "id": "4e5d-44dd-0a9c-b4fb",
-            "comment": "4+",
             "hidden": false,
-            "targetId": "d01e-f96b-b5c1-8fb1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shred (4+)"}]
+            "targetId": "d01e-f96b-b5c1-8fb1"
           }
         ],
-        "profiles": [
-          {
-            "name": "Twin mauler bolt cannon",
-            "id": "8585-9dda-11eb-4783",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "24", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "6", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "6", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "4", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Pinning (2), Shred (4+)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Bolt", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Twin mauler bolt cannon",
+        "hidden": false,
+        "id": "f55e-5279-ca20-3a9b"
       },
       {
-        "name": "Conversion beamer",
-        "id": "56d8-8979-e6b6-0311",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Blast (3\")",
+                "field": "name"
+              }
+            ],
+            "comment": "3\"",
             "name": "Blast (X)",
             "id": "0f62-97a1-c24c-315d",
-            "comment": "3\"",
             "hidden": false,
-            "targetId": "8687-05f8-7034-412c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Blast (3\")"}]
+            "targetId": "8687-05f8-7034-412c"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Heavy (RS)",
+                "field": "name"
+              }
+            ],
+            "comment": "RS",
             "name": "Heavy (X)",
             "id": "e571-9eb9-d269-3788",
-            "comment": "RS",
             "hidden": false,
-            "targetId": "bc30-3b33-2683-01a2",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Heavy (RS)"}]
+            "targetId": "bc30-3b33-2683-01a2"
           }
         ],
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "<15",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "5",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Heavy (RS), Blast (3\")",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Conversion",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "1) Conversion beamer <15",
-            "id": "cb66-1af4-c6c6-b0c6",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "<15", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "5", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "4", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Heavy (RS), Blast (3\")", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Conversion", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "cb66-1af4-c6c6-b0c6"
           },
           {
+            "characteristics": [
+              {
+                "$text": "15-30",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "6",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Heavy (RS), Blast (3\")",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Conversion",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "2) Conversion beamer 15-30",
-            "id": "90cd-4fb3-a62e-8b2a",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "15-30", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "6", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "3", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "2", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Heavy (RS), Blast (3\")", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Conversion", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "90cd-4fb3-a62e-8b2a"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Conversion beamer",
+        "hidden": false,
+        "id": "56d8-8979-e6b6-0311"
       },
       {
-        "name": "Twin graviton guns",
-        "id": "dd22-047d-158b-c0b5",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "18",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "6",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Blast (5\"), Breaching (6+), Shock (Pinned), Pinning (1)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Graviton",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Twin graviton guns",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "cd22-99d9-48f9-8b7d"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Blast (5\")",
+                "field": "name"
+              }
+            ],
+            "comment": "5\"",
             "name": "Blast (X)",
             "id": "def7-d90d-d4ca-1d25",
-            "comment": "5\"",
             "hidden": false,
-            "targetId": "8687-05f8-7034-412c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Blast (5\")"}]
+            "targetId": "8687-05f8-7034-412c"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (6+)",
+                "field": "name"
+              }
+            ],
+            "comment": "6+",
             "name": "Breaching (X)",
             "id": "ed25-aee5-5be2-494f",
-            "comment": "6+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (6+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shock (Pinned)",
+                "field": "name"
+              }
+            ],
+            "comment": "Pinned",
             "name": "Shock (X)",
             "id": "2b3a-1098-773d-32c3",
-            "comment": "Pinned",
             "hidden": false,
-            "targetId": "c6fd-28d0-3f80-672c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shock (Pinned)"}]
+            "targetId": "c6fd-28d0-3f80-672c"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Pinning (1)",
+                "field": "name"
+              }
+            ],
+            "comment": "1",
             "name": "Pinning (X)",
             "id": "1ea1-c861-c4b3-6aa4",
-            "comment": "1",
             "hidden": false,
-            "targetId": "88b6-6493-e4d7-1805",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Pinning (1)"}]
+            "targetId": "88b6-6493-e4d7-1805"
           }
         ],
-        "profiles": [
-          {
-            "name": "Twin graviton guns",
-            "id": "cd22-99d9-48f9-8b7d",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "18", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "6", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "4", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Blast (5\"), Breaching (6+), Shock (Pinned), Pinning (1)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Graviton", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Twin graviton guns",
+        "hidden": false,
+        "id": "dd22-047d-158b-c0b5"
       },
       {
-        "name": "Graviton hammers",
-        "id": "39bd-daf2-8118-1611",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Breaching (X)",
             "id": "de30-4fc2-df13-896a",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Pinning (0)",
+                "field": "name"
+              }
+            ],
+            "comment": "0",
             "name": "Pinning (X)",
             "id": "28d2-acbf-e2e5-5bc3",
-            "comment": "0",
             "hidden": false,
-            "targetId": "88b6-6493-e4d7-1805",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Pinning (0)"}]
+            "targetId": "88b6-6493-e4d7-1805"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shock (Pinned)",
+                "field": "name"
+              }
+            ],
+            "comment": "Pinned",
             "name": "Shock (X)",
             "id": "e687-ea64-9e66-f814",
-            "comment": "Pinned",
             "hidden": false,
-            "targetId": "c6fd-28d0-3f80-672c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shock (Pinned)"}]
+            "targetId": "c6fd-28d0-3f80-672c"
           }
         ],
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "12",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "4",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "6",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Breaching (5+), Shock (Pinned), Pinning (0)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Graviton",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "Graviton hammers",
-            "id": "804a-b41b-0417-b89b",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "12", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "4", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "6", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "4", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "2", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Breaching (5+), Shock (Pinned), Pinning (0)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Graviton", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "804a-b41b-0417-b89b"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Graviton hammers",
+        "hidden": false,
+        "id": "39bd-daf2-8118-1611"
       },
       {
-        "name": "Graviton pulsar",
-        "id": "bc2f-0d66-62c3-9494",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Blast (3\")",
+                "field": "name"
+              }
+            ],
+            "comment": "3\"",
             "name": "Blast (X)",
             "id": "b287-e071-8eb3-7c04",
-            "comment": "3\"",
             "hidden": false,
-            "targetId": "8687-05f8-7034-412c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Blast (3\")"}]
+            "targetId": "8687-05f8-7034-412c"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (6+)",
+                "field": "name"
+              }
+            ],
+            "comment": "6+",
             "name": "Breaching (X)",
             "id": "9747-53b4-ebb3-d520",
-            "comment": "6+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (6+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Pinning (2)",
+                "field": "name"
+              }
+            ],
+            "comment": "2",
             "name": "Pinning (X)",
             "id": "34ca-96df-e6a7-cf0c",
-            "comment": "2",
             "hidden": false,
-            "targetId": "88b6-6493-e4d7-1805",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Pinning (2)"}]
+            "targetId": "88b6-6493-e4d7-1805"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shock (Pinned)",
+                "field": "name"
+              }
+            ],
+            "comment": "Pinned",
             "name": "Shock (X)",
             "id": "de13-0951-f15e-72dd",
-            "comment": "Pinned",
             "hidden": false,
-            "targetId": "c6fd-28d0-3f80-672c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shock (Pinned)"}]
+            "targetId": "c6fd-28d0-3f80-672c"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Heavy (D)",
+                "field": "name"
+              }
+            ],
+            "comment": "D",
             "name": "Heavy (X)",
             "id": "d967-8771-e958-7450",
-            "comment": "D",
             "hidden": false,
-            "targetId": "bc30-3b33-2683-01a2",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Heavy (D)"}]
+            "targetId": "bc30-3b33-2683-01a2"
           }
         ],
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "24",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "2",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "6",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Heavy (D), Blast (3\"), Breaching (6+), Shock (Pinned), Pinning (2)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Graviton",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "Graviton pulsar",
-            "id": "4610-b922-5962-7568",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "24", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "2", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "6", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "3", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Heavy (D), Blast (3\"), Breaching (6+), Shock (Pinned), Pinning (2)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Graviton", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "4610-b922-5962-7568"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Graviton pulsar",
+        "hidden": false,
+        "id": "bc2f-0d66-62c3-9494"
       },
       {
-        "name": "Las-lock",
-        "id": "26a4-73a4-21de-2734",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "18",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "4",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "6",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Las",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "Las-lock",
-            "id": "9f4d-d35e-a5a9-f3c5",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "18", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "4", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "6", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Las", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "9f4d-d35e-a5a9-f3c5"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Las-lock",
+        "hidden": false,
+        "id": "26a4-73a4-21de-2734"
       },
       {
-        "name": "Photon thruster",
-        "id": "378a-3959-2f9f-8cf4",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Armourbane", "id": "4597-79e4-3460-4423", "hidden": false, "targetId": "36ee-4c54-bced-a696", "type": "rule"},
+        "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "24",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "2",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "8",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "2",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Armourbane, Suppressive (1), Armour-breaker (5+)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Las",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Photon thruster",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "dbf0-a346-cf7f-e9c8"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "4597-79e4-3460-4423",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "36ee-4c54-bced-a696"
+          },
+          {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Armour-Breaker (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Armour-Breaker (X)",
             "id": "221c-8aa2-653b-7c8b",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "3009-9bbb-a8f6-1b47",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Armour-Breaker (5+)"}]
+            "targetId": "3009-9bbb-a8f6-1b47"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Suppressive (1)",
+                "field": "name"
+              }
+            ],
+            "comment": "1",
             "name": "Suppressive (X)",
             "id": "137c-fedb-cd26-54ca",
-            "comment": "1",
             "hidden": false,
-            "targetId": "001f-53f3-4d87-4b43",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Suppressive (1)"}]
+            "targetId": "001f-53f3-4d87-4b43"
           }
         ],
-        "profiles": [
-          {
-            "name": "Photon thruster",
-            "id": "dbf0-a346-cf7f-e9c8",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "24", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "2", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "8", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "2", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Armourbane, Suppressive (1), Armour-breaker (5+)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Las", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Photon thruster",
+        "hidden": false,
+        "id": "378a-3959-2f9f-8cf4"
       },
       {
-        "name": "Pulsar-fusil",
-        "id": "d114-2798-e500-c4a4",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Suppressive (2)",
+                "field": "name"
+              }
+            ],
+            "comment": "2",
             "name": "Suppressive (X)",
             "id": "fb75-f7b0-1bf4-be28",
-            "comment": "2",
             "hidden": false,
-            "targetId": "001f-53f3-4d87-4b43",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Suppressive (2)"}]
+            "targetId": "001f-53f3-4d87-4b43"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Ordnance (FP)",
+                "field": "name"
+              }
+            ],
+            "comment": "FP",
             "name": "Ordnance (X)",
             "id": "4fbf-476f-da2f-8c70",
-            "comment": "FP",
             "hidden": false,
-            "targetId": "b6b3-909a-b78a-3dbf",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Ordnance (FP)"}]
+            "targetId": "b6b3-909a-b78a-3dbf"
           }
         ],
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "36",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "2",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "9",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "2",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "3",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Ordnance (FP), Suppressive (2)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Las",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "Pulsar-fusil",
-            "id": "e846-3cff-739e-f6c5",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "36", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "2", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "9", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "2", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "3", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Ordnance (FP), Suppressive (2)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Las", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "e846-3cff-739e-f6c5"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Pulsar-fusil",
+        "hidden": false,
+        "id": "d114-2798-e500-c4a4"
       },
       {
-        "name": "Darkfire cannon",
-        "id": "8e4e-4583-8871-8dfd",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Suppressive (2)",
+                "field": "name"
+              }
+            ],
+            "comment": "2",
             "name": "Suppressive (X)",
             "id": "5e86-09d3-5341-d34b",
-            "comment": "2",
             "hidden": false,
-            "targetId": "001f-53f3-4d87-4b43",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Suppressive (2)"}]
+            "targetId": "001f-53f3-4d87-4b43"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Heavy (D)",
+                "field": "name"
+              }
+            ],
+            "comment": "D",
             "name": "Heavy (X)",
             "id": "faa4-e11d-8e15-8edd",
-            "comment": "D",
             "hidden": false,
-            "targetId": "bc30-3b33-2683-01a2",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Heavy (D)"}]
+            "targetId": "bc30-3b33-2683-01a2"
           }
         ],
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "36",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "2",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "8",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "2",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Heavy (D), Suppressive (2)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Las",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "Darkfire cannon",
-            "id": "4fca-fcbd-5693-ac5a",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "36", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "2", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "8", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "2", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Heavy (D), Suppressive (2)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Las", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "4fca-fcbd-5693-ac5a"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Darkfire cannon",
+        "hidden": false,
+        "id": "8e4e-4583-8871-8dfd"
       },
       {
-        "name": "Sollex heavy-las",
-        "id": "b9bd-9270-b7b0-4440",
-        "collective": false,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "infoLinks": [
-          {"name": "Armourbane", "id": "9ffa-d0bc-09da-e2f1", "hidden": false, "targetId": "36ee-4c54-bced-a696", "type": "rule"},
           {
+            "name": "Armourbane",
+            "id": "9ffa-d0bc-09da-e2f1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "36ee-4c54-bced-a696"
+          },
+          {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Ordnance (D)",
+                "field": "name"
+              }
+            ],
+            "comment": "D",
             "name": "Ordnance (X)",
             "id": "5359-2227-dc79-b669",
-            "comment": "D",
             "hidden": false,
-            "targetId": "b6b3-909a-b78a-3dbf",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Ordnance (D)"}]
+            "targetId": "b6b3-909a-b78a-3dbf"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shock (Suppressed)",
+                "field": "name"
+              }
+            ],
+            "comment": "Suppressed",
             "name": "Shock (X)",
             "id": "085d-2c3e-47df-bb88",
-            "comment": "Suppressed",
             "hidden": false,
-            "targetId": "c6fd-28d0-3f80-672c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shock (Suppressed)"}]
+            "targetId": "c6fd-28d0-3f80-672c"
           }
         ],
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "48",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "2",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "10",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "2",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Ordnance (D), Shock (Suppressed), Armourbane",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Las",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "Sollex heavy-las",
-            "id": "9334-9804-041a-8818",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "48", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "2", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "10", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "2", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "2", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Ordnance (D), Shock (Suppressed), Armourbane", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Las", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "9334-9804-041a-8818"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Sollex heavy-las",
+        "hidden": false,
+        "id": "b9bd-9270-b7b0-4440",
+        "collective": false
       },
       {
-        "name": "Phased plasma-fusil",
-        "id": "3ab9-f287-1607-24c1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "24",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "3",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "5",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Breaching (5+)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Plasma",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Phased plasma-fusil",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "aaa2-fa4f-58ff-29ed"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Breaching (X)",
             "id": "2128-c728-f695-9985",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           }
         ],
-        "profiles": [
-          {
-            "name": "Phased plasma-fusil",
-            "id": "aaa2-fa4f-58ff-29ed",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "24", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "3", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "5", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "3", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Breaching (5+)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Plasma", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Phased plasma-fusil",
+        "hidden": false,
+        "id": "3ab9-f287-1607-24c1"
       },
       {
-        "name": "Plasma mortar",
-        "id": "1b63-cd6f-7762-2fb2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "36",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "8",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Ordnance (R), Breaching (5+), Blast (5\"), Barrage (2)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Plasma",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Plasma mortar",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "3fab-58fa-4739-b016"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Ordnance (R)",
+                "field": "name"
+              }
+            ],
+            "comment": "R",
             "name": "Ordnance (X)",
             "id": "3661-b00b-e374-0c4e",
-            "comment": "R",
             "hidden": false,
-            "targetId": "b6b3-909a-b78a-3dbf",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Ordnance (R)"}]
+            "targetId": "b6b3-909a-b78a-3dbf"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Breaching (X)",
             "id": "a10e-92ef-6a85-cef2",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Blast (5\")",
+                "field": "name"
+              }
+            ],
+            "comment": "5\"",
             "name": "Blast (X)",
             "id": "33e5-3d99-616a-f6df",
-            "comment": "5\"",
             "hidden": false,
-            "targetId": "8687-05f8-7034-412c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Blast (5\")"}]
+            "targetId": "8687-05f8-7034-412c"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Barrage (2)",
+                "field": "name"
+              }
+            ],
             "name": "Barrage (X)",
             "id": "38a2-d755-b51d-3b0a",
             "hidden": false,
-            "targetId": "85f5-3a91-69f4-c3b7",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Barrage (2)"}]
+            "targetId": "85f5-3a91-69f4-c3b7"
           }
         ],
-        "profiles": [
-          {
-            "name": "Plasma mortar",
-            "id": "3fab-58fa-4739-b016",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "36", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "8", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "4", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "2", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Ordnance (R), Breaching (5+), Blast (5\"), Barrage (2)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Plasma", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Plasma mortar",
+        "hidden": false,
+        "id": "1b63-cd6f-7762-2fb2"
       },
       {
-        "name": "Twin phased plasma-fusil",
-        "id": "4d48-a08f-a8f7-6a00",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (4+)",
+                "field": "name"
+              }
+            ],
+            "comment": "4+",
             "name": "Breaching (X)",
             "id": "7054-98be-662e-b068",
-            "comment": "4+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (4+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           }
         ],
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "24",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "4",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "5",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Breaching (4+)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Plasma",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "Twin phased plasma-fusil",
-            "id": "55db-1d0e-871c-7623",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "24", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "4", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "5", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "3", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Breaching (4+)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Plasma", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "55db-1d0e-871c-7623"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Twin phased plasma-fusil",
+        "hidden": false,
+        "id": "4d48-a08f-a8f7-6a00"
       },
       {
-        "name": "Irad-cleanser",
-        "id": "910e-3579-4968-44af",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Template", "id": "ed19-e2f3-5156-f34c", "hidden": false, "targetId": "7df2-9e88-3285-cf6a", "type": "rule"},
+        "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "Template",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "2",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "5",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Template, Phage (T), Poisoned (2+), Panic (1)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Rad",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Irad-cleanser",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "cdeb-1600-707f-5b9f"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Template",
+            "id": "ed19-e2f3-5156-f34c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7df2-9e88-3285-cf6a"
+          },
+          {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Phage (T)",
+                "field": "name"
+              }
+            ],
+            "comment": "T",
             "name": "Phage (X)",
             "id": "6d2c-b07d-7b7d-b3bd",
-            "comment": "T",
             "hidden": false,
-            "targetId": "3e26-d357-69d6-1341",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Phage (T)"}]
+            "targetId": "3e26-d357-69d6-1341"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Poisoned (2+)",
+                "field": "name"
+              }
+            ],
+            "comment": "2+",
             "name": "Poisoned (X)",
             "id": "7b00-0e1a-3056-ab8c",
-            "comment": "2+",
             "hidden": false,
-            "targetId": "076f-2c91-c58b-71b3",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Poisoned (2+)"}]
+            "targetId": "076f-2c91-c58b-71b3"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Panic (1)",
+                "field": "name"
+              }
+            ],
+            "comment": "1",
             "name": "Panic (X)",
             "id": "d7bc-d768-fbbb-d49d",
-            "comment": "1",
             "hidden": false,
-            "targetId": "82a7-f471-3fda-6ca1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Panic (1)"}]
+            "targetId": "82a7-f471-3fda-6ca1"
           }
         ],
-        "profiles": [
-          {
-            "name": "Irad-cleanser",
-            "id": "cdeb-1600-707f-5b9f",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "Template", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "2", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "5", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Template, Phage (T), Poisoned (2+), Panic (1)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Rad", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Irad-cleanser",
+        "hidden": false,
+        "id": "910e-3579-4968-44af"
       },
       {
-        "name": "Irradiation engine",
-        "id": "6053-f4b6-7d5e-552d",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Panic (1)",
+                "field": "name"
+              }
+            ],
+            "comment": "1",
             "name": "Panic (X)",
             "id": "641e-aee4-f005-e698",
-            "comment": "1",
             "hidden": false,
-            "targetId": "82a7-f471-3fda-6ca1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Panic (1)"}]
+            "targetId": "82a7-f471-3fda-6ca1"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Phage (T)",
+                "field": "name"
+              }
+            ],
+            "comment": "T",
             "name": "Phage (X)",
             "id": "3593-2a06-aef6-170f",
-            "comment": "T",
             "hidden": false,
-            "targetId": "3e26-d357-69d6-1341",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Phage (T)"}]
+            "targetId": "3e26-d357-69d6-1341"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Poisoned (2+)",
+                "field": "name"
+              }
+            ],
+            "comment": "2+",
             "name": "Poisoned (X)",
             "id": "ad32-652c-fdde-99ec",
-            "comment": "2+",
             "hidden": false,
-            "targetId": "076f-2c91-c58b-71b3",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Poisoned (2+)"}]
+            "targetId": "076f-2c91-c58b-71b3"
           },
-          {"name": "Template", "id": "c49b-fb49-f6b1-1f4c", "hidden": false, "targetId": "7df2-9e88-3285-cf6a", "type": "rule"},
           {
+            "name": "Template",
+            "id": "c49b-fb49-f6b1-1f4c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7df2-9e88-3285-cf6a"
+          },
+          {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Heavy (AP)",
+                "field": "name"
+              }
+            ],
+            "comment": "AP",
             "name": "Heavy (X)",
             "id": "c4fe-718c-472e-105c",
-            "comment": "AP",
             "hidden": false,
-            "targetId": "bc30-3b33-2683-01a2",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Heavy (AP)"}]
+            "targetId": "bc30-3b33-2683-01a2"
           }
         ],
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "Template",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "4",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "5",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Template, Heavy (AP), Phage (T), Poisoned (2+), Panic (1)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Rad",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "Irradiation engine",
-            "id": "f9ea-a976-85c6-a731",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "Template", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "4", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "5", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Template, Heavy (AP), Phage (T), Poisoned (2+), Panic (1)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Rad", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "f9ea-a976-85c6-a731"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Irradiation engine",
+        "hidden": false,
+        "id": "6053-f4b6-7d5e-552d"
       },
       {
-        "name": "Irradiation blaster",
-        "id": "c73b-0a8b-9437-503f",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "16",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "2",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Blast (5\"), Ordnance (D), Phage (T), Shock (Stunned), Poisoned (2+), Panic (2)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Rad",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Irradiation blaster",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "1fc6-b13b-ab7c-2fc3"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Blast (5\")",
+                "field": "name"
+              }
+            ],
+            "comment": "5\"",
             "name": "Blast (X)",
             "id": "f175-7cc0-a643-c82e",
-            "comment": "5\"",
             "hidden": false,
-            "targetId": "8687-05f8-7034-412c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Blast (5\")"}]
+            "targetId": "8687-05f8-7034-412c"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Ordnance (D)",
+                "field": "name"
+              }
+            ],
+            "comment": "D",
             "name": "Ordnance (X)",
             "id": "0ea2-dad0-96d2-a9aa",
-            "comment": "D",
             "hidden": false,
-            "targetId": "b6b3-909a-b78a-3dbf",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Ordnance (D)"}]
+            "targetId": "b6b3-909a-b78a-3dbf"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Phage (T)",
+                "field": "name"
+              }
+            ],
+            "comment": "T",
             "name": "Phage (X)",
             "id": "b4e6-4e87-b02c-48c6",
-            "comment": "T",
             "hidden": false,
-            "targetId": "3e26-d357-69d6-1341",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Phage (T)"}]
+            "targetId": "3e26-d357-69d6-1341"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Poisoned (2+)",
+                "field": "name"
+              }
+            ],
+            "comment": "2+",
             "name": "Poisoned (X)",
             "id": "827b-9e26-56de-3b94",
-            "comment": "2+",
             "hidden": false,
-            "targetId": "076f-2c91-c58b-71b3",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Poisoned (2+)"}]
+            "targetId": "076f-2c91-c58b-71b3"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Panic (2)",
+                "field": "name"
+              }
+            ],
+            "comment": "2",
             "name": "Panic (X)",
             "id": "f208-4b88-60dc-553a",
-            "comment": "2",
             "hidden": false,
-            "targetId": "82a7-f471-3fda-6ca1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Panic (2)"}]
+            "targetId": "82a7-f471-3fda-6ca1"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shock (Stunned)",
+                "field": "name"
+              }
+            ],
+            "comment": "Stunned",
             "name": "Shock (X)",
             "id": "2a9b-b706-ed6a-97fa",
-            "comment": "Stunned",
             "hidden": false,
-            "targetId": "c6fd-28d0-3f80-672c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shock (Stunned)"}]
+            "targetId": "c6fd-28d0-3f80-672c"
           }
         ],
-        "profiles": [
-          {
-            "name": "Irradiation blaster",
-            "id": "1fc6-b13b-ab7c-2fc3",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "16", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "2", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "4", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "2", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Blast (5\"), Ordnance (D), Phage (T), Shock (Stunned), Poisoned (2+), Panic (2)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Rad", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Irradiation blaster",
+        "hidden": false,
+        "id": "c73b-0a8b-9437-503f"
       },
       {
-        "name": "Karacnos mortar battery",
-        "id": "df6d-6b6e-feb8-e5f5",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "60",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "6",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Blast (5\"), Barrage (2), Poisoned (2+), Phage (T), Pinning (3)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Rad",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Karacnos mortar battery",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "2471-5405-cb39-9ba6"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Blast (5\")",
+                "field": "name"
+              }
+            ],
+            "comment": "5\"",
             "name": "Blast (X)",
             "id": "1f8b-c975-3c52-36aa",
-            "comment": "5\"",
             "hidden": false,
-            "targetId": "8687-05f8-7034-412c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Blast (5\")"}]
+            "targetId": "8687-05f8-7034-412c"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Poisoned (2+)",
+                "field": "name"
+              }
+            ],
+            "comment": "2+",
             "name": "Poisoned (X)",
             "id": "487b-4f80-fc60-2461",
-            "comment": "2+",
             "hidden": false,
-            "targetId": "076f-2c91-c58b-71b3",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Poisoned (2+)"}]
+            "targetId": "076f-2c91-c58b-71b3"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Phage (T)",
+                "field": "name"
+              }
+            ],
+            "comment": "T",
             "name": "Phage (X)",
             "id": "2d7b-070e-d560-5443",
-            "comment": "T",
             "hidden": false,
-            "targetId": "3e26-d357-69d6-1341",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Phage (T)"}]
+            "targetId": "3e26-d357-69d6-1341"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Barrage (2)",
+                "field": "name"
+              }
+            ],
+            "comment": "2",
             "name": "Barrage (X)",
             "id": "ab35-72d0-09fb-59fc",
-            "comment": "2",
             "hidden": false,
-            "targetId": "85f5-3a91-69f4-c3b7",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Barrage (2)"}]
+            "targetId": "85f5-3a91-69f4-c3b7"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Pinning (3)",
+                "field": "name"
+              }
+            ],
+            "comment": "3",
             "name": "Pinning (X)",
             "id": "d39c-0234-b86c-90b5",
-            "comment": "3",
             "hidden": false,
-            "targetId": "88b6-6493-e4d7-1805",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Pinning (3)"}]
+            "targetId": "88b6-6493-e4d7-1805"
           }
         ],
-        "profiles": [
-          {
-            "name": "Karacnos mortar battery",
-            "id": "2471-5405-cb39-9ba6",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "60", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "6", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "4", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Blast (5\"), Barrage (2), Poisoned (2+), Phage (T), Pinning (3)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Rad", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Karacnos mortar battery",
+        "hidden": false,
+        "id": "df6d-6b6e-feb8-e5f5"
       },
       {
-        "name": "Volkite incinerator",
-        "id": "7d55-4e92-9772-9a5f",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "10",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "2",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "5",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "6",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Deflagrate (5)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Assault, Volkite",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Volkite incinerator",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "b8f4-aab6-41ab-0897"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Deflagrate (5)",
+                "field": "name"
+              }
+            ],
+            "comment": "5",
             "name": "Deflagrate (X)",
             "id": "f097-7f58-7a0c-b71d",
-            "comment": "5",
             "hidden": false,
-            "targetId": "f4a0-f206-0dba-7d81",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Deflagrate (5)"}]
+            "targetId": "f4a0-f206-0dba-7d81"
           }
         ],
-        "profiles": [
-          {
-            "name": "Volkite incinerator",
-            "id": "b8f4-aab6-41ab-0897",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "10", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "2", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "5", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "6", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Deflagrate (5)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Assault, Volkite", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Volkite incinerator",
+        "hidden": false,
+        "id": "7d55-4e92-9772-9a5f"
       },
       {
-        "name": "Volkite veuglaire",
-        "id": "fd48-6c5b-4ac5-2a8f",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "30",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "5",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "7",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "5",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Heavy (FP), Deflagrate (7)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Volkite",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Volkite veuglaire",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "a97f-36e3-3e54-3baf"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Heavy (FP)",
+                "field": "name"
+              }
+            ],
+            "comment": "FP",
             "name": "Heavy (X)",
             "id": "a553-e4bc-e6ba-8c16",
-            "comment": "FP",
             "hidden": false,
-            "targetId": "bc30-3b33-2683-01a2",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Heavy (FP)"}]
+            "targetId": "bc30-3b33-2683-01a2"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Deflagrate (7)",
+                "field": "name"
+              }
+            ],
+            "comment": "7",
             "name": "Deflagrate (X)",
             "id": "c92a-6385-8144-b11e",
-            "comment": "7",
             "hidden": false,
-            "targetId": "f4a0-f206-0dba-7d81",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Deflagrate (7)"}]
+            "targetId": "f4a0-f206-0dba-7d81"
           }
         ],
-        "profiles": [
-          {
-            "name": "Volkite veuglaire",
-            "id": "a97f-36e3-3e54-3baf",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "30", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "5", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "7", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "5", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Heavy (FP), Deflagrate (7)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Volkite", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Volkite veuglaire",
+        "hidden": false,
+        "id": "fd48-6c5b-4ac5-2a8f"
       },
       {
-        "name": "Graviton ram",
-        "id": "ff87-51ad-f64f-85a9",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Armourbane", "id": "816a-c07b-2a17-9611", "hidden": false, "targetId": "36ee-4c54-bced-a696", "type": "rule"},
+        "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "I",
+                "name": "IM",
+                "typeId": "6eec-4093-f946-1014"
+              },
+              {
+                "$text": "A",
+                "name": "AM",
+                "typeId": "03d0-6094-84f0-e27e"
+              },
+              {
+                "$text": "+2",
+                "name": "SM",
+                "typeId": "4505-de6f-d4ae-6280"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "a014-126b-3b7b-27e8"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "6a9d-4feb-065a-33e7"
+              },
+              {
+                "$text": "Armourbane, Armour-breaker (4+)",
+                "name": "Special Rules",
+                "typeId": "ebe0-7b28-b40c-694e"
+              },
+              {
+                "$text": "Graviton",
+                "name": "Traits",
+                "typeId": "76e3-c188-bc65-3467"
+              }
+            ],
+            "name": "Graviton ram",
+            "typeId": "3587-6dcd-005c-c263",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "7460-2f27-e617-efca"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "816a-c07b-2a17-9611",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "36ee-4c54-bced-a696"
+          },
+          {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Armour-Breaker (4+)",
+                "field": "name"
+              }
+            ],
+            "comment": "4+",
             "name": "Armour-Breaker (X)",
             "id": "9b8d-7314-d40b-6c42",
-            "comment": "4+",
             "hidden": false,
-            "targetId": "3009-9bbb-a8f6-1b47",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Armour-Breaker (4+)"}]
+            "targetId": "3009-9bbb-a8f6-1b47"
           }
         ],
-        "profiles": [
-          {
-            "name": "Graviton ram",
-            "id": "7460-2f27-e617-efca",
-            "hidden": false,
-            "typeId": "3587-6dcd-005c-c263",
-            "typeName": "Melee Weapon",
-            "characteristics": [
-              {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
-              {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
-              {"name": "SM", "$text": "+2", "typeId": "4505-de6f-d4ae-6280"},
-              {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
-              {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
-              {"name": "Special Rules", "$text": "Armourbane, Armour-breaker (4+)", "typeId": "ebe0-7b28-b40c-694e"},
-              {"name": "Traits", "$text": "Graviton", "typeId": "76e3-c188-bc65-3467"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Graviton ram",
+        "hidden": false,
+        "id": "ff87-51ad-f64f-85a9"
       },
       {
-        "name": "Pair of power blades",
-        "id": "b6de-1568-2981-de20",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "I",
+                "name": "IM",
+                "typeId": "6eec-4093-f946-1014"
+              },
+              {
+                "$text": "A",
+                "name": "AM",
+                "typeId": "03d0-6094-84f0-e27e"
+              },
+              {
+                "$text": "S",
+                "name": "SM",
+                "typeId": "4505-de6f-d4ae-6280"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "a014-126b-3b7b-27e8"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "6a9d-4feb-065a-33e7"
+              },
+              {
+                "$text": "Breaching (5+), Shred (5+)",
+                "name": "Special Rules",
+                "typeId": "ebe0-7b28-b40c-694e"
+              },
+              {
+                "$text": "Power",
+                "name": "Traits",
+                "typeId": "76e3-c188-bc65-3467"
+              }
+            ],
+            "name": "Pair of power blades",
+            "typeId": "3587-6dcd-005c-c263",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "b305-11f0-96f1-4ce7"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Breaching (X)",
             "id": "8d18-9cee-1654-17b1",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shred (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Shred (X)",
             "id": "e663-54c3-a723-30f0",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "d01e-f96b-b5c1-8fb1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shred (5+)"}]
+            "targetId": "d01e-f96b-b5c1-8fb1"
           }
         ],
-        "profiles": [
-          {
-            "name": "Pair of power blades",
-            "id": "b305-11f0-96f1-4ce7",
-            "hidden": false,
-            "typeId": "3587-6dcd-005c-c263",
-            "typeName": "Melee Weapon",
-            "characteristics": [
-              {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
-              {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
-              {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
-              {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
-              {"name": "D", "$text": "1", "typeId": "6a9d-4feb-065a-33e7"},
-              {"name": "Special Rules", "$text": "Breaching (5+), Shred (5+)", "typeId": "ebe0-7b28-b40c-694e"},
-              {"name": "Traits", "$text": "Power", "typeId": "76e3-c188-bc65-3467"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Pair of power blades",
+        "hidden": false,
+        "id": "b6de-1568-2981-de20"
       },
       {
-        "name": "Shock chargers",
-        "id": "9f0d-5e6b-1a6e-0546",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "-1",
+                "name": "IM",
+                "typeId": "6eec-4093-f946-1014"
+              },
+              {
+                "$text": "A",
+                "name": "AM",
+                "typeId": "03d0-6094-84f0-e27e"
+              },
+              {
+                "$text": "+2",
+                "name": "SM",
+                "typeId": "4505-de6f-d4ae-6280"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "a014-126b-3b7b-27e8"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "6a9d-4feb-065a-33e7"
+              },
+              {
+                "$text": "-",
+                "name": "Special Rules",
+                "typeId": "ebe0-7b28-b40c-694e"
+              },
+              {
+                "$text": "-",
+                "name": "Traits",
+                "typeId": "76e3-c188-bc65-3467"
+              }
+            ],
             "name": "Shock chargers",
-            "id": "6c0a-6654-df92-5f42",
-            "hidden": false,
             "typeId": "3587-6dcd-005c-c263",
             "typeName": "Melee Weapon",
-            "characteristics": [
-              {"name": "IM", "$text": "-1", "typeId": "6eec-4093-f946-1014"},
-              {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
-              {"name": "SM", "$text": "+2", "typeId": "4505-de6f-d4ae-6280"},
-              {"name": "AP", "$text": "4", "typeId": "a014-126b-3b7b-27e8"},
-              {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
-              {"name": "Special Rules", "$text": "-", "typeId": "ebe0-7b28-b40c-694e"},
-              {"name": "Traits", "$text": "-", "typeId": "76e3-c188-bc65-3467"}
-            ]
+            "hidden": false,
+            "id": "6c0a-6654-df92-5f42"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Shock chargers",
+        "hidden": false,
+        "id": "9f0d-5e6b-1a6e-0546"
       },
       {
-        "name": "Dendrite talons",
-        "id": "5a33-b483-64cb-9853",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "I",
+                "name": "IM",
+                "typeId": "6eec-4093-f946-1014"
+              },
+              {
+                "$text": "A",
+                "name": "AM",
+                "typeId": "03d0-6094-84f0-e27e"
+              },
+              {
+                "$text": "S",
+                "name": "SM",
+                "typeId": "4505-de6f-d4ae-6280"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "a014-126b-3b7b-27e8"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "6a9d-4feb-065a-33e7"
+              },
+              {
+                "$text": "Breaching (6+)",
+                "name": "Special Rules",
+                "typeId": "ebe0-7b28-b40c-694e"
+              },
+              {
+                "$text": "-",
+                "name": "Traits",
+                "typeId": "76e3-c188-bc65-3467"
+              }
+            ],
+            "name": "Dendrite talons",
+            "typeId": "3587-6dcd-005c-c263",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "3183-cc86-3a57-846b"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (6+)",
+                "field": "name"
+              }
+            ],
+            "comment": "6+",
             "name": "Breaching (X)",
             "id": "deca-15c3-e466-a80d",
-            "comment": "6+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (6+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           }
         ],
-        "profiles": [
-          {
-            "name": "Dendrite talons",
-            "id": "3183-cc86-3a57-846b",
-            "hidden": false,
-            "typeId": "3587-6dcd-005c-c263",
-            "typeName": "Melee Weapon",
-            "characteristics": [
-              {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
-              {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
-              {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
-              {"name": "AP", "$text": "4", "typeId": "a014-126b-3b7b-27e8"},
-              {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
-              {"name": "Special Rules", "$text": "Breaching (6+)", "typeId": "ebe0-7b28-b40c-694e"},
-              {"name": "Traits", "$text": "-", "typeId": "76e3-c188-bc65-3467"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Dendrite talons",
+        "hidden": false,
+        "id": "5a33-b483-64cb-9853"
       },
       {
-        "name": "Paired Gyges siege claws",
-        "id": "9406-f4d1-d2ac-c664",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "I",
+                "name": "IM",
+                "typeId": "6eec-4093-f946-1014"
+              },
+              {
+                "$text": "A",
+                "name": "AM",
+                "typeId": "03d0-6094-84f0-e27e"
+              },
+              {
+                "$text": "+6",
+                "name": "SM",
+                "typeId": "4505-de6f-d4ae-6280"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "a014-126b-3b7b-27e8"
+              },
+              {
+                "$text": "4",
+                "name": "D",
+                "typeId": "6a9d-4feb-065a-33e7"
+              },
+              {
+                "$text": "Armour-breaker (5+), Breaching (5+)",
+                "name": "Special Rules",
+                "typeId": "ebe0-7b28-b40c-694e"
+              },
+              {
+                "$text": "Power",
+                "name": "Traits",
+                "typeId": "76e3-c188-bc65-3467"
+              }
+            ],
+            "name": "Paired Gyges siege claws",
+            "typeId": "3587-6dcd-005c-c263",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "a170-b2a6-6781-a640"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Armour-Breaker (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Armour-Breaker (X)",
             "id": "8c10-542e-b64a-abcf",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "3009-9bbb-a8f6-1b47",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Armour-Breaker (5+)"}]
+            "targetId": "3009-9bbb-a8f6-1b47"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Breaching (X)",
             "id": "ccb2-c4ba-4d81-293e",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           }
         ],
-        "profiles": [
-          {
-            "name": "Paired Gyges siege claws",
-            "id": "a170-b2a6-6781-a640",
-            "hidden": false,
-            "typeId": "3587-6dcd-005c-c263",
-            "typeName": "Melee Weapon",
-            "characteristics": [
-              {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
-              {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
-              {"name": "SM", "$text": "+6", "typeId": "4505-de6f-d4ae-6280"},
-              {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
-              {"name": "D", "$text": "4", "typeId": "6a9d-4feb-065a-33e7"},
-              {"name": "Special Rules", "$text": "Armour-breaker (5+), Breaching (5+)", "typeId": "ebe0-7b28-b40c-694e"},
-              {"name": "Traits", "$text": "Power", "typeId": "76e3-c188-bc65-3467"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Paired Gyges siege claws",
+        "hidden": false,
+        "id": "9406-f4d1-d2ac-c664"
       },
       {
-        "name": "Gyges siege claws",
-        "id": "8026-777a-5e74-7952",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "I",
+                "name": "IM",
+                "typeId": "6eec-4093-f946-1014"
+              },
+              {
+                "$text": "A",
+                "name": "AM",
+                "typeId": "03d0-6094-84f0-e27e"
+              },
+              {
+                "$text": "+5",
+                "name": "SM",
+                "typeId": "4505-de6f-d4ae-6280"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "a014-126b-3b7b-27e8"
+              },
+              {
+                "$text": "3",
+                "name": "D",
+                "typeId": "6a9d-4feb-065a-33e7"
+              },
+              {
+                "$text": "Armour-breaker (5+), Breaching (5+)",
+                "name": "Special Rules",
+                "typeId": "ebe0-7b28-b40c-694e"
+              },
+              {
+                "$text": "Power",
+                "name": "Traits",
+                "typeId": "76e3-c188-bc65-3467"
+              }
+            ],
+            "name": "Gyges siege claws",
+            "typeId": "3587-6dcd-005c-c263",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "8833-a90d-2f6e-f080"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Breaching (X)",
             "id": "d240-c55e-8f7d-5a27",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Armour-Breaker (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Armour-Breaker (X)",
             "id": "ba65-1ae6-24ef-3695",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "3009-9bbb-a8f6-1b47",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Armour-Breaker (5+)"}]
+            "targetId": "3009-9bbb-a8f6-1b47"
           }
         ],
-        "profiles": [
-          {
-            "name": "Gyges siege claws",
-            "id": "8833-a90d-2f6e-f080",
-            "hidden": false,
-            "typeId": "3587-6dcd-005c-c263",
-            "typeName": "Melee Weapon",
-            "characteristics": [
-              {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
-              {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
-              {"name": "SM", "$text": "+5", "typeId": "4505-de6f-d4ae-6280"},
-              {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
-              {"name": "D", "$text": "3", "typeId": "6a9d-4feb-065a-33e7"},
-              {"name": "Special Rules", "$text": "Armour-breaker (5+), Breaching (5+)", "typeId": "ebe0-7b28-b40c-694e"},
-              {"name": "Traits", "$text": "Power", "typeId": "76e3-c188-bc65-3467"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Gyges siege claws",
+        "hidden": false,
+        "id": "8026-777a-5e74-7952"
       },
       {
-        "name": "Slaughterer blades",
-        "id": "a0b4-c592-01f4-c5a7",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "I",
+                "name": "IM",
+                "typeId": "6eec-4093-f946-1014"
+              },
+              {
+                "$text": "A",
+                "name": "AM",
+                "typeId": "03d0-6094-84f0-e27e"
+              },
+              {
+                "$text": "S",
+                "name": "SM",
+                "typeId": "4505-de6f-d4ae-6280"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "a014-126b-3b7b-27e8"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "6a9d-4feb-065a-33e7"
+              },
+              {
+                "$text": "Shred (5+), Breaching (5+), Reaping Blow (1)",
+                "name": "Special Rules",
+                "typeId": "ebe0-7b28-b40c-694e"
+              },
+              {
+                "$text": "-",
+                "name": "Traits",
+                "typeId": "76e3-c188-bc65-3467"
+              }
+            ],
+            "name": "Slaughterer blades",
+            "typeId": "3587-6dcd-005c-c263",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "1f22-8ee5-fa9d-33fb"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Breaching (X)",
             "id": "879e-21de-d023-fffd",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shred (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
             "name": "Shred (X)",
             "id": "b83d-6b4a-2901-47e3",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "d01e-f96b-b5c1-8fb1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shred (5+)"}]
+            "targetId": "d01e-f96b-b5c1-8fb1"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Reaping Blow (1)",
+                "field": "name"
+              }
+            ],
+            "comment": "1",
             "name": "Reaping Blow (X)",
             "id": "4629-ef6a-75aa-7d87",
-            "comment": "1",
             "hidden": false,
-            "targetId": "951f-eee4-02b7-b014",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Reaping Blow (1)"}]
+            "targetId": "951f-eee4-02b7-b014"
           }
         ],
-        "profiles": [
-          {
-            "name": "Slaughterer blades",
-            "id": "1f22-8ee5-fa9d-33fb",
-            "hidden": false,
-            "typeId": "3587-6dcd-005c-c263",
-            "typeName": "Melee Weapon",
-            "characteristics": [
-              {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
-              {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
-              {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
-              {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
-              {"name": "D", "$text": "1", "typeId": "6a9d-4feb-065a-33e7"},
-              {"name": "Special Rules", "$text": "Shred (5+), Breaching (5+), Reaping Blow (1)", "typeId": "ebe0-7b28-b40c-694e"},
-              {"name": "Traits", "$text": "-", "typeId": "76e3-c188-bc65-3467"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Slaughterer blades",
+        "hidden": false,
+        "id": "a0b4-c592-01f4-c5a7"
       },
       {
-        "name": "Servo-harness",
-        "id": "a71c-d284-cb63-869e",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "I",
+                "name": "IM",
+                "typeId": "6eec-4093-f946-1014"
+              },
+              {
+                "$text": "A",
+                "name": "AM",
+                "typeId": "03d0-6094-84f0-e27e"
+              },
+              {
+                "$text": "+3",
+                "name": "SM",
+                "typeId": "4505-de6f-d4ae-6280"
+              },
+              {
+                "$text": "4",
+                "name": "AP",
+                "typeId": "a014-126b-3b7b-27e8"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "6a9d-4feb-065a-33e7"
+              },
+              {
+                "$text": "Breaching (6+)",
+                "name": "Special Rules",
+                "typeId": "ebe0-7b28-b40c-694e"
+              },
+              {
+                "$text": "-",
+                "name": "Traits",
+                "typeId": "76e3-c188-bc65-3467"
+              }
+            ],
+            "name": "Servo-harness",
+            "typeId": "3587-6dcd-005c-c263",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "8a7b-e008-ba0f-707f"
+          }
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (6+)",
+                "field": "name"
+              }
+            ],
+            "comment": "6+",
             "name": "Breaching (X)",
             "id": "51f4-9a05-c690-19dc",
-            "comment": "6+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (6+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           }
         ],
-        "profiles": [
-          {
-            "name": "Servo-harness",
-            "id": "8a7b-e008-ba0f-707f",
-            "hidden": false,
-            "typeId": "3587-6dcd-005c-c263",
-            "typeName": "Melee Weapon",
-            "characteristics": [
-              {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
-              {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
-              {"name": "SM", "$text": "+3", "typeId": "4505-de6f-d4ae-6280"},
-              {"name": "AP", "$text": "4", "typeId": "a014-126b-3b7b-27e8"},
-              {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
-              {"name": "Special Rules", "$text": "Breaching (6+)", "typeId": "ebe0-7b28-b40c-694e"},
-              {"name": "Traits", "$text": "-", "typeId": "76e3-c188-bc65-3467"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Servo-harness",
+        "hidden": false,
+        "id": "a71c-d284-cb63-869e"
       },
       {
-        "name": "Lightning gun w/Chain Bayonet",
-        "id": "bd7e-0109-83d2-ca59",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
         "infoLinks": [
-          {"name": "Lightning gun", "id": "3981-f571-7216-7411", "hidden": false, "targetId": "0f55-babc-d83e-a586", "type": "profile"},
           {
+            "name": "Lightning gun",
+            "id": "3981-f571-7216-7411",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "0f55-babc-d83e-a586"
+          },
+          {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shred (6+)",
+                "field": "name"
+              }
+            ],
+            "comment": "6+",
             "name": "Shred (X)",
             "id": "f629-5c27-4f87-c051",
-            "comment": "6+",
             "hidden": false,
-            "targetId": "d01e-f96b-b5c1-8fb1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shred (6+)"}]
+            "targetId": "d01e-f96b-b5c1-8fb1"
           },
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Suppressive (0)",
+                "field": "name"
+              }
+            ],
+            "comment": "0",
             "name": "Suppressive (X)",
             "id": "5406-d4a1-9ecd-f9b6",
-            "comment": "0",
             "hidden": false,
-            "targetId": "001f-53f3-4d87-4b43",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Suppressive (0)"}]
+            "targetId": "001f-53f3-4d87-4b43"
           },
-          {"name": "Chain bayonet", "id": "056d-32ff-8747-bb9c", "hidden": false, "targetId": "4de6-8ad8-3d57-360e", "type": "profile"}
-        ]
+          {
+            "name": "Chain bayonet",
+            "id": "056d-32ff-8747-bb9c",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "4de6-8ad8-3d57-360e"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Lightning gun w/Chain Bayonet",
+        "hidden": false,
+        "id": "bd7e-0109-83d2-ca59"
       },
       {
-        "name": "Decimator claw",
-        "id": "711e-da62-be5d-72b5",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {
-            "name": "Breaching (X)",
-            "id": "dd8b-c59f-4868-e6ac",
-            "comment": "5+",
-            "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
-            "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
-          },
-          {"name": "Armourbane", "id": "74de-47b7-2758-17c3", "hidden": false, "targetId": "36ee-4c54-bced-a696", "type": "rule"}
-        ],
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "I",
+                "name": "IM",
+                "typeId": "6eec-4093-f946-1014"
+              },
+              {
+                "$text": "A",
+                "name": "AM",
+                "typeId": "03d0-6094-84f0-e27e"
+              },
+              {
+                "$text": "S",
+                "name": "SM",
+                "typeId": "4505-de6f-d4ae-6280"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "a014-126b-3b7b-27e8"
+              },
+              {
+                "$text": "2",
+                "name": "D",
+                "typeId": "6a9d-4feb-065a-33e7"
+              },
+              {
+                "$text": "Breaching (5+), Armourbane",
+                "name": "Special Rules",
+                "typeId": "ebe0-7b28-b40c-694e"
+              },
+              {
+                "$text": "-",
+                "name": "Traits",
+                "typeId": "76e3-c188-bc65-3467"
+              }
+            ],
             "name": "Decimator claw",
-            "id": "825e-6bbe-65eb-5d32",
-            "hidden": false,
             "typeId": "3587-6dcd-005c-c263",
             "typeName": "Melee Weapon",
-            "characteristics": [
-              {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
-              {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
-              {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
-              {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
-              {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
-              {"name": "Special Rules", "$text": "Breaching (5+), Armourbane", "typeId": "ebe0-7b28-b40c-694e"},
-              {"name": "Traits", "$text": "-", "typeId": "76e3-c188-bc65-3467"}
-            ]
+            "hidden": false,
+            "id": "825e-6bbe-65eb-5d32"
           }
-        ]
-      },
-      {
-        "name": "Sonic destructor",
-        "id": "95b7-92a0-cdb9-8ecd",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        ],
         "infoLinks": [
           {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (5+)",
+                "field": "name"
+              }
+            ],
+            "comment": "5+",
+            "name": "Breaching (X)",
+            "id": "dd8b-c59f-4868-e6ac",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b094-0b64-eb57-aed6"
+          },
+          {
+            "name": "Armourbane",
+            "id": "74de-47b7-2758-17c3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "36ee-4c54-bced-a696"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Decimator claw",
+        "hidden": false,
+        "id": "711e-da62-be5d-72b5"
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "72",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "7",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "3",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Blast (7\"), Shred (4+), Panic (4), Breaching (5+)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Strategic",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Sonic destructor (Dispersed)",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "773d-f2f9-dfe2-94f7"
+          },
+          {
+            "characteristics": [
+              {
+                "$text": "72",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "10",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "2",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "8",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Macro-auspex, Armourbane, Panic (4)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Strategic",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Sonic destructor (Focussed)",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "a977-ec54-cde2-03d8"
+          }
+        ],
+        "infoLinks": [
+          {
+            "comment": "7\"",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Blast (7\")",
+                "field": "name"
+              }
+            ],
             "name": "Blast (X)",
             "id": "3bfe-62ae-bc3c-c2be",
-            "comment": "7\"",
             "hidden": false,
-            "targetId": "8687-05f8-7034-412c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Blast (7\")"}]
+            "targetId": "8687-05f8-7034-412c"
           },
           {
+            "comment": "4+",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Shred (4+)",
+                "field": "name"
+              }
+            ],
             "name": "Shred (X)",
             "id": "1342-321b-21bb-7609",
-            "comment": "4+",
             "hidden": false,
-            "targetId": "d01e-f96b-b5c1-8fb1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Shred (4+)"}]
+            "targetId": "d01e-f96b-b5c1-8fb1"
           },
           {
+            "comment": "5+",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Breaching (5+)",
+                "field": "name"
+              }
+            ],
             "name": "Breaching (X)",
             "id": "3a26-0252-307a-df05",
-            "comment": "5+",
             "hidden": false,
-            "targetId": "b094-0b64-eb57-aed6",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (5+)"}]
+            "targetId": "b094-0b64-eb57-aed6"
           },
           {
+            "comment": "4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Panic (4)",
+                "field": "name"
+              }
+            ],
             "name": "Panic (X)",
             "id": "60cc-914d-d20c-f849",
-            "comment": "4",
             "hidden": false,
-            "targetId": "82a7-f471-3fda-6ca1",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Panic (4)"}]
-          },
-          {"name": "Macro-Auspex", "id": "8086-75e4-a6b4-f077", "hidden": false, "targetId": "8120-65ac-c2d4-a555", "type": "rule"},
-          {"name": "Armourbane", "id": "7573-cedd-7f4d-22a9", "hidden": false, "targetId": "36ee-4c54-bced-a696", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Sonic destructor (Dispersed)",
-            "id": "773d-f2f9-dfe2-94f7",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "72", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "7", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "3", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Blast (7\"), Shred (4+), Panic (4), Breaching (5+)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Strategic", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "targetId": "82a7-f471-3fda-6ca1"
           },
           {
-            "name": "Sonic destructor (Focussed)",
-            "id": "a977-ec54-cde2-03d8",
+            "name": "Macro-Auspex",
+            "id": "8086-75e4-a6b4-f077",
             "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "72", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "10", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "2", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "8", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Macro-auspex, Armourbane, Panic (4)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Strategic", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "type": "rule",
+            "targetId": "8120-65ac-c2d4-a555"
+          },
+          {
+            "name": "Armourbane",
+            "id": "7573-cedd-7f4d-22a9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "36ee-4c54-bced-a696"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Sonic destructor",
+        "hidden": false,
+        "id": "95b7-92a0-cdb9-8ecd"
       },
       {
-        "name": "Ordinatus volkite culverin",
-        "id": "ee25-2ea5-c44d-2bcd",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "45",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "3",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "6",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "5",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "1",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Heavy (FP), Deflagrate (6)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Volkite, Tactical",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
+            "name": "Ordinatus volkite culverin",
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "6a7e-32c8-03f4-9ea7"
+          }
+        ],
         "infoLinks": [
           {
+            "comment": "FP",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Heavy (FP)",
+                "field": "name"
+              }
+            ],
             "name": "Heavy (X)",
             "id": "3dc2-3bd7-c770-f939",
-            "comment": "FP",
             "hidden": false,
-            "targetId": "bc30-3b33-2683-01a2",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Heavy (FP)"}]
+            "targetId": "bc30-3b33-2683-01a2"
           },
           {
+            "comment": "6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Deflagrate (6)",
+                "field": "name"
+              }
+            ],
             "name": "Deflagrate (X)",
             "id": "54d5-4916-aed1-7ea2",
-            "comment": "6",
             "hidden": false,
-            "targetId": "f4a0-f206-0dba-7d81",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Deflagrate (6)"}]
+            "targetId": "f4a0-f206-0dba-7d81"
           }
         ],
-        "profiles": [
-          {
-            "name": "Ordinatus volkite culverin",
-            "id": "6a7e-32c8-03f4-9ea7",
-            "hidden": false,
-            "typeId": "c591-09ed-3e6f-eb2b",
-            "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "45", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "3", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "6", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "5", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Heavy (FP), Deflagrate (6)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Volkite, Tactical", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
-          }
-        ]
+        "type": "upgrade",
+        "import": true,
+        "name": "Ordinatus volkite culverin",
+        "hidden": false,
+        "id": "ee25-2ea5-c44d-2bcd"
       },
       {
-        "name": "Belicosa volcano cannon",
-        "id": "8173-e259-7de6-163b",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Blast (X)", "id": "2434-a399-3aa2-0341", "comment": "3\"", "hidden": false, "targetId": "8687-05f8-7034-412c", "type": "rule"},
-          {"name": "Macro-Auspex", "id": "a2ee-0ff1-9428-6e0b", "hidden": false, "targetId": "8120-65ac-c2d4-a555", "type": "rule"}
-        ],
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "150",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "13",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "2",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "12",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Blast (3\"), Macro-auspex",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Las, Strategic",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "Belicosa volcano cannon",
-            "id": "47c4-5082-a71c-38d9",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "150", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "13", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "2", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "12", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Blast (3\"), Macro-auspex", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Las, Strategic", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "47c4-5082-a71c-38d9"
           }
-        ]
-      },
-      {
-        "name": "Seismic macro-drill",
-        "id": "9fff-a0a4-03d0-2777",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
+        ],
         "infoLinks": [
           {
+            "comment": "3\"",
             "name": "Blast (X)",
-            "id": "fc37-2d85-2a15-8d85",
-            "comment": "5\"",
+            "id": "2434-a399-3aa2-0341",
             "hidden": false,
-            "targetId": "8687-05f8-7034-412c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Blast (5\")"}]
+            "targetId": "8687-05f8-7034-412c"
           },
           {
-            "name": "Barrage (X)",
-            "id": "73ff-be61-21a9-8785",
-            "comment": "?",
+            "name": "Macro-Auspex",
+            "id": "a2ee-0ff1-9428-6e0b",
             "hidden": false,
-            "targetId": "85f5-3a91-69f4-c3b7",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Barrage"}]
+            "targetId": "8120-65ac-c2d4-a555"
           }
         ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Belicosa volcano cannon",
+        "hidden": false,
+        "id": "8173-e259-7de6-163b"
+      },
+      {
         "profiles": [
           {
+            "characteristics": [
+              {
+                "$text": "36",
+                "name": "R",
+                "typeId": "cdb0-8654-6840-1037"
+              },
+              {
+                "$text": "1",
+                "name": "FP",
+                "typeId": "5037-1f27-1790-e355"
+              },
+              {
+                "$text": "-",
+                "name": "RS",
+                "typeId": "b9da-ee13-79f9-fa63"
+              },
+              {
+                "$text": "-",
+                "name": "AP",
+                "typeId": "7a23-0248-2b94-5951"
+              },
+              {
+                "$text": "-",
+                "name": "D",
+                "typeId": "88c3-1ca5-7dc1-f291"
+              },
+              {
+                "$text": "Blast (5\"), Barrage, Seismic Macro-drill, Limited (1)",
+                "name": "Special Rules",
+                "typeId": "5aad-137a-8ee2-63fd"
+              },
+              {
+                "$text": "Strategic",
+                "name": "Traits",
+                "typeId": "1247-79d2-6cc1-8a03"
+              }
+            ],
             "name": "Seismic macro-drill",
-            "id": "746e-b8c2-e6df-1659",
-            "hidden": false,
             "typeId": "c591-09ed-3e6f-eb2b",
             "typeName": "Ranged Weapon",
-            "characteristics": [
-              {"name": "R", "$text": "36", "typeId": "cdb0-8654-6840-1037"},
-              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
-              {"name": "RS", "$text": "-", "typeId": "b9da-ee13-79f9-fa63"},
-              {"name": "AP", "$text": "-", "typeId": "7a23-0248-2b94-5951"},
-              {"name": "D", "$text": "-", "typeId": "88c3-1ca5-7dc1-f291"},
-              {"name": "Special Rules", "$text": "Blast (5\"), Barrage, Seismic Macro-drill, Limited (1)", "typeId": "5aad-137a-8ee2-63fd"},
-              {"name": "Traits", "$text": "Strategic", "typeId": "1247-79d2-6cc1-8a03"}
-            ]
+            "hidden": false,
+            "id": "746e-b8c2-e6df-1659"
+          }
+        ],
+        "infoLinks": [
+          {
+            "comment": "5\"",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Blast (5\")",
+                "field": "name"
+              }
+            ],
+            "name": "Blast (X)",
+            "id": "fc37-2d85-2a15-8d85",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8687-05f8-7034-412c"
+          },
+          {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Barrage",
+                "field": "name"
+              }
+            ],
+            "comment": "?",
+            "name": "Barrage (X)",
+            "id": "73ff-be61-21a9-8785",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "85f5-3a91-69f4-c3b7"
           }
         ],
         "rules": [
           {
+            "description": "When a Weapon with this Special Rule is used to make a Shooting Attack, the Player making the attack may choose to target any point on the Battlefield within range, ignoring Line of Sight and without the need to target an enemy Model. The Hit Test is made as normal, but once the final position of the Blast Marker is determined the Attacking Player does not resolve any Hits, regardless of whether there are Models under the Blast Marker or not, and must instead choose one of the following two options: Emerge or Tunnel.\n\n\nIf the Attacking Player chooses to Tunnel, then the Blast Marker is left in place, but no Hits are resolved and the Marker has no effect on Line of Sight, Movement or any other feature of play – it simply marks the position of the macro-drill deep underground. At the start of the Controlling Player’s next Shooting Phase, the Player must again choose to either Tunnel or Emerge. If they choose to Tunnel again, then the Blast Marker may be moved up to 36\" in any direction and is once more left in place until the Controlling Player’s next Shooting Phase.\n\n\nEmerge may only be chosen if no part of the Blast Marker is touching Impassable Terrain. Once selected, all enemy Models covered fully or partially by the Template suffer one wound with an AP of 2 and a Damage of 1 and all enemy Models not covered by the Marker, but within 2\" of any point on its edge, suffer one Strength 6 Hit with an AP of 4 and a Damage of 1. If any Unit suffers one or more Casualties from either of these two effects, then a Cool Check must be made for that Unit and if the Check is failed then all Models in that Unit gain the Stunned Status. \n\n\nOnce all Hits and wounds have been fully resolved, any enemy Models fully or partially covered by the Blast Marker are moved by their Controlling Player the shortest distance possible so that they are no longer covered by the Marker. The Controlling Player of the seismic macro-drill may then choose to Disembark any or all Units Embarked on the seismic macro-drill using any point on the Blast Marker as an Access Point. Models deployed in this fashion may be placed onto the Marker. The Blast Marker is left in place and any Models still Embarked on the seismic macro-drill may Disembark from the Marker in later Movement Phases as normal, but may not Embark again. The Marker is left in place until all Models have Disembarked from the seismic macro-drill and does not block Line of Sight or impede Movement, nor is it counted as any type of Terrain. \n\n\nDespite being a Strategic Weapon, a Weapon with this Special Rule may not be used to target Strategic Objectives",
             "name": "Seismic Macro-drill",
             "id": "1f93-7720-c765-1256",
-            "description": "When a Weapon with this Special Rule is used to make a Shooting Attack, the Player making the attack may choose to target any point on the Battlefield within range, ignoring Line of Sight and without the need to target an enemy Model. The Hit Test is made as normal, but once the final position of the Blast Marker is determined the Attacking Player does not resolve any Hits, regardless of whether there are Models under the Blast Marker or not, and must instead choose one of the following two options: Emerge or Tunnel.\n\n\nIf the Attacking Player chooses to Tunnel, then the Blast Marker is left in place, but no Hits are resolved and the Marker has no effect on Line of Sight, Movement or any other feature of play – it simply marks the position of the macro-drill deep underground. At the start of the Controlling Player’s next Shooting Phase, the Player must again choose to either Tunnel or Emerge. If they choose to Tunnel again, then the Blast Marker may be moved up to 36\" in any direction and is once more left in place until the Controlling Player’s next Shooting Phase.\n\n\nEmerge may only be chosen if no part of the Blast Marker is touching Impassable Terrain. Once selected, all enemy Models covered fully or partially by the Template suffer one wound with an AP of 2 and a Damage of 1 and all enemy Models not covered by the Marker, but within 2\" of any point on its edge, suffer one Strength 6 Hit with an AP of 4 and a Damage of 1. If any Unit suffers one or more Casualties from either of these two effects, then a Cool Check must be made for that Unit and if the Check is failed then all Models in that Unit gain the Stunned Status. \n\n\nOnce all Hits and wounds have been fully resolved, any enemy Models fully or partially covered by the Blast Marker are moved by their Controlling Player the shortest distance possible so that they are no longer covered by the Marker. The Controlling Player of the seismic macro-drill may then choose to Disembark any or all Units Embarked on the seismic macro-drill using any point on the Blast Marker as an Access Point. Models deployed in this fashion may be placed onto the Marker. The Blast Marker is left in place and any Models still Embarked on the seismic macro-drill may Disembark from the Marker in later Movement Phases as normal, but may not Embark again. The Marker is left in place until all Models have Disembarked from the seismic macro-drill and does not block Line of Sight or impede Movement, nor is it counted as any type of Terrain. \n\n\nDespite being a Strategic Weapon, a Weapon with this Special Rule may not be used to target Strategic Objectives",
             "hidden": false
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Seismic macro-drill",
+        "hidden": false,
+        "id": "9fff-a0a4-03d0-2777"
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "characteristics": [
+          {
+            "$text": "Many of the Rules for Cybertheurgic Rites will only be usable by a 'Cybertheurgist'. A Cybertheurgist is any Model that has the Cybertheurgist Trait on their Profile. As with all Traits, the Cybertheurgist Trait grants no Rules to a Model in and of itself, not does it grant any Cybertheurgic Rites, it simply allows a Model to make use of Rules that require a Cybertheurgist in order to function, or as a trigger for Rules that target Cybertheurgists. For a Model to gain one or more Cybertheurgic Rites, they must either be listed on their profile or selected as options during Army Selection.",
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "Cybertheurgist",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "e4bc-7baa-05c4-6945"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "3252-003d-1181-0f99",
+                "shared": true
+              }
+            ],
+            "type": "set",
+            "value": "Archimandrite",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "df10-4634-c1aa-f6e0",
+                "shared": true
+              }
+            ],
+            "type": "set",
+            "value": "Cybernetica",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "8268-aa48-f4dc-0506",
+                "shared": true
+              }
+            ],
+            "type": "set",
+            "value": "Lacrymaerta",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "9e7d-913d-86f0-e05e",
+                "shared": true
+              }
+            ],
+            "type": "set",
+            "value": "Myrmidax",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "e76a-e22d-9fc4-dc1f",
+                "shared": true
+              }
+            ],
+            "type": "set",
+            "value": "Reductor",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "eba5-3e47-aa06-65fe",
+                "shared": true
+              }
+            ],
+            "type": "set",
+            "value": "Malagra",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "1ec3-1433-658a-f04e",
+                "shared": true
+              }
+            ],
+            "type": "set",
+            "value": "Macrotek",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "notInstanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "2f57-6e9d-8a7b-5c2e",
+                "shared": true
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "name": "[Mechanicum]",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "7aca-c779-952f-fcac"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "Heterodox",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "c6ad-7327-3690-9219"
+      }
+    ],
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Special Rules",
+        "id": "02c6-8592-a435-b590",
+        "targetId": "106b-693b-99f2-00c3"
+      },
+      {
+        "type": "catalogue",
+        "name": "Weapons",
+        "id": "9c77-4046-66a1-74aa",
+        "targetId": "a22d-4dd0-c59d-57d3"
       }
     ],
     "sharedSelectionEntryGroups": [
       {
-        "name": "Power Weapon",
-        "id": "a5b3-cfaa-eb83-fb25",
-        "flatten": true,
-        "hidden": false,
         "entryLinks": [
           {
-            "name": "Power sword",
-            "id": "9dc3-3c40-cc3f-49d1",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "targetId": "59a9-57c1-fff9-ca75",
-            "type": "selectionEntry",
-            "constraints": [{"id": "4cc5-9e6b-afc2-ed25", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}],
-            "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}],
+            "costs": [
+              {
+                "name": "Point(s)",
+                "typeId": "9893-c379-920b-8982",
+                "value": 10
+              }
+            ],
             "modifiers": [
               {
-                "field": "9893-c379-920b-8982",
-                "type": "set",
-                "value": 0,
-                "conditionGroups": [
-                  {"type": "or", "conditions": [{"childId": "647c-faca-3c98-c203", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]}
-                ]
-              },
-              {
-                "field": "defaultAmount",
-                "type": "set",
-                "value": 1,
                 "conditionGroups": [
                   {
-                    "type": "and",
                     "conditions": [
-                      {"childId": "647c-faca-3c98-c203", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
-                      {"childId": "dd1b-70ef-6015-1291", "field": "selections", "scope": "ancestor", "shared": true, "type": "notInstanceOf", "value": 1}
-                    ]
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "647c-faca-3c98-c203",
+                        "shared": true
+                      }
+                    ],
+                    "type": "or"
                   }
-                ]
+                ],
+                "type": "set",
+                "value": 0,
+                "field": "9893-c379-920b-8982"
+              },
+              {
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "647c-faca-3c98-c203",
+                        "shared": true
+                      },
+                      {
+                        "type": "notInstanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "dd1b-70ef-6015-1291",
+                        "shared": true
+                      }
+                    ],
+                    "type": "and"
+                  }
+                ],
+                "type": "set",
+                "value": 1,
+                "field": "defaultAmount"
               }
-            ]
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "4cc5-9e6b-afc2-ed25"
+              }
+            ],
+            "import": true,
+            "name": "Power sword",
+            "hidden": false,
+            "id": "9dc3-3c40-cc3f-49d1",
+            "type": "selectionEntry",
+            "targetId": "59a9-57c1-fff9-ca75",
+            "sortIndex": 1
           },
           {
+            "costs": [
+              {
+                "name": "Point(s)",
+                "typeId": "9893-c379-920b-8982",
+                "value": 10
+              }
+            ],
+            "modifiers": [
+              {
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "647c-faca-3c98-c203",
+                        "shared": true
+                      }
+                    ],
+                    "type": "or"
+                  }
+                ],
+                "type": "set",
+                "value": 0,
+                "field": "9893-c379-920b-8982"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "fbf2-224c-de97-9e6c"
+              }
+            ],
+            "import": true,
             "name": "Power axe",
+            "hidden": false,
             "id": "5085-e3f1-0239-cdb2",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
+            "type": "selectionEntry",
             "targetId": "4861-b77a-620c-f0d6",
-            "type": "selectionEntry",
-            "constraints": [{"id": "fbf2-224c-de97-9e6c", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}],
-            "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}],
-            "modifiers": [
-              {
-                "field": "9893-c379-920b-8982",
-                "type": "set",
-                "value": 0,
-                "conditionGroups": [
-                  {"type": "or", "conditions": [{"childId": "647c-faca-3c98-c203", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]}
-                ]
-              }
-            ]
+            "sortIndex": 2
           },
           {
+            "costs": [
+              {
+                "name": "Point(s)",
+                "typeId": "9893-c379-920b-8982",
+                "value": 10
+              }
+            ],
+            "modifiers": [
+              {
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "647c-faca-3c98-c203",
+                        "shared": true
+                      }
+                    ],
+                    "type": "or"
+                  }
+                ],
+                "type": "set",
+                "value": 0,
+                "field": "9893-c379-920b-8982"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "5473-cd51-41a8-c268"
+              }
+            ],
+            "import": true,
             "name": "Power maul",
-            "id": "6527-d8a1-ce04-4707",
             "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "c4fa-659d-bf4b-bad1",
+            "id": "6527-d8a1-ce04-4707",
             "type": "selectionEntry",
-            "constraints": [{"id": "5473-cd51-41a8-c268", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}],
-            "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}],
-            "modifiers": [
-              {
-                "field": "9893-c379-920b-8982",
-                "type": "set",
-                "value": 0,
-                "conditionGroups": [
-                  {"type": "or", "conditions": [{"childId": "647c-faca-3c98-c203", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]}
-                ]
-              }
-            ]
+            "targetId": "c4fa-659d-bf4b-bad1",
+            "sortIndex": 3
           },
           {
-            "name": "Power lance",
-            "id": "b2b1-ce31-82e7-178a",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 4,
-            "targetId": "f56f-c410-b47c-58d9",
-            "type": "selectionEntry",
-            "constraints": [{"id": "9496-7781-39a7-31ec", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}],
-            "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}],
+            "costs": [
+              {
+                "name": "Point(s)",
+                "typeId": "9893-c379-920b-8982",
+                "value": 10
+              }
+            ],
             "modifiers": [
               {
-                "field": "9893-c379-920b-8982",
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "647c-faca-3c98-c203",
+                        "shared": true
+                      }
+                    ],
+                    "type": "or"
+                  }
+                ],
                 "type": "set",
                 "value": 0,
-                "conditionGroups": [
-                  {"type": "or", "conditions": [{"childId": "647c-faca-3c98-c203", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]}
-                ]
+                "field": "9893-c379-920b-8982"
               }
-            ]
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "9496-7781-39a7-31ec"
+              }
+            ],
+            "import": true,
+            "name": "Power lance",
+            "hidden": false,
+            "id": "b2b1-ce31-82e7-178a",
+            "type": "selectionEntry",
+            "targetId": "f56f-c410-b47c-58d9",
+            "sortIndex": 4
           }
-        ]
+        ],
+        "name": "Power Weapon",
+        "id": "a5b3-cfaa-eb83-fb25",
+        "hidden": false,
+        "flatten": true
       }
-    ]
+    ],
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "library": true,
+    "id": "a159-1624-dbac-7af8",
+    "name": "Mech Library",
+    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
+    "gameSystemRevision": 2,
+    "revision": 6,
+    "battleScribeVersion": 2.03,
+    "type": "catalogue"
   }
 }

@@ -1,576 +1,1134 @@
 {
   "catalogue": {
-    "name": "Traits",
-    "id": "df17-7a05-0826-6e22",
-    "authorContact": "https://github.com/BSData/horus-heresy-3rd-edition/issues",
-    "authorName": "The4D6",
-    "authorUrl": "https://github.com/BSData/horus-heresy-3rd-edition/",
-    "battleScribeVersion": 2.03,
-    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
-    "gameSystemRevision": 1,
-    "library": true,
-    "revision": 7,
-    "type": "catalogue",
-    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
-    "categoryEntries": [
-      {"name": "Master of the Legion", "id": "e3cd-7a38-34d7-9cbf", "hidden": false},
-      {"name": "Traitor", "id": "d251-944b-3c3b-0579", "hidden": false},
-      {"name": "Psyker", "id": "9254-b1e9-98b2-6101", "hidden": false},
-      {"name": "Smokescreen", "id": "49fc-361e-9168-c460", "hidden": false},
-      {"name": "Dark Angels", "id": "9776-4805-2e0b-1f0f", "hidden": false},
-      {"name": "Loyalist", "id": "4381-ed35-c3fa-a225", "hidden": false},
-      {"name": "Thousand Sons", "id": "7c3f-93c7-d5b9-89e3", "hidden": false},
-      {"name": "Alpha Legion", "id": "a114-fe5b-0a4f-632e", "hidden": false},
-      {"name": "Raven Guard", "id": "4346-67d5-360d-89fa", "hidden": false},
-      {"name": "Emperor's Children", "id": "a364-a983-c2b2-cbc7", "hidden": false},
-      {"name": "Iron Warriors", "id": "b5d8-c965-7970-673f", "hidden": false},
-      {"name": "White Scars", "id": "ad95-5dc4-7b15-8ff3", "hidden": false},
-      {"name": "Space Wolves", "id": "f804-d214-a195-58e7", "hidden": false},
-      {"name": "Imperial Fists", "id": "450e-112d-a64a-ef6e", "hidden": false},
-      {"name": "Night Lords", "id": "9c9d-4e53-09d5-8748", "hidden": false},
-      {"name": "Blood Angels", "id": "53b2-d251-a827-8e73", "hidden": false},
-      {"name": "Iron Hands", "id": "3db6-86ea-fd61-340b", "hidden": false},
-      {"name": "World Eaters", "id": "48b7-17a8-eaf4-d6c2", "hidden": false},
-      {"name": "Ultramarines", "id": "7fcf-5885-0a4d-ee31", "hidden": false},
-      {"name": "Death Guard", "id": "2399-482f-47f3-add5", "hidden": false},
-      {"name": "Sons of Horus", "id": "3b0c-6e3a-f5cd-02cd", "hidden": false},
-      {"name": "Word Bearers", "id": "2aba-8953-ea2f-ce59", "hidden": false},
-      {"name": "Salamanders", "id": "f6fe-18f5-7b4d-b57a", "hidden": false},
-      {"name": "Shield", "id": "26c6-e05c-0f72-7852", "hidden": false},
-      {"name": "Golden Exemplar", "id": "6da5-a1b8-41c0-b6fc", "hidden": false},
-      {"name": "Talons of the Emperor", "id": "af7f-ce65-7fad-6d0e", "hidden": false}
-    ],
     "sharedProfiles": [
       {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
         "name": "Master of the Legion",
-        "id": "6cd2-96be-b703-6d57",
-        "hidden": false,
         "typeId": "d5a9-9164-1e30-7a35",
         "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
+        "hidden": false,
+        "id": "6cd2-96be-b703-6d57"
       },
       {
-        "name": "[Allegiance]",
-        "id": "bb66-f1f6-4d65-5a07",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}],
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
         "modifiers": [
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "e1e1-a344-d3e2-0b91",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
             "type": "set",
             "value": "Loyalist",
-            "conditions": [
-              {
-                "childId": "e1e1-a344-d3e2-0b91",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "597e-83d8-32e1-8eaa",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
             "type": "set",
             "value": "Traitor",
-            "conditions": [
-              {
-                "childId": "597e-83d8-32e1-8eaa",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
+            "field": "name"
           }
-        ]
-      },
-      {
-        "name": "[Legiones Astartes]",
-        "id": "641c-ca0a-7093-4525",
-        "hidden": false,
+        ],
+        "name": "[Allegiance]",
         "typeId": "d5a9-9164-1e30-7a35",
         "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}],
+        "hidden": false,
+        "id": "bb66-f1f6-4d65-5a07"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
         "modifiers": [
           {
-            "field": "name",
-            "type": "set",
-            "value": "Dark Angels",
-            "conditions": [{"childId": "0a35-fce3-188c-b3aa", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Emperor's Children",
-            "conditions": [{"childId": "9a22-d01f-ab5c-ec07", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Iron Warriors",
-            "conditions": [{"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "White Scars",
             "conditions": [
               {
-                "childId": "f7b4-2531-0962-1379",
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "primary-catalogue",
-                "shared": true,
                 "type": "instanceOf",
-                "value": 1
+                "value": 1,
+                "field": "forces",
+                "scope": "primary-catalogue",
+                "childId": "0a35-fce3-188c-b3aa",
+                "shared": true
               }
-            ]
+            ],
+            "type": "set",
+            "value": "Dark Angels",
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "forces",
+                "scope": "primary-catalogue",
+                "childId": "9a22-d01f-ab5c-ec07",
+                "shared": true
+              }
+            ],
+            "type": "set",
+            "value": "Emperor's Children",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "21c0-18db-03dd-ae07",
+                "shared": true
+              }
+            ],
+            "type": "set",
+            "value": "Iron Warriors",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "f7b4-2531-0962-1379",
+                "shared": true,
+                "includeChildSelections": false
+              }
+            ],
+            "type": "set",
+            "value": "White Scars",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "d995-cb33-be41-ecf8",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Space Wolves",
-            "conditions": [{"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "d186-cffc-0950-f632",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Imperial Fists",
-            "conditions": [{"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "486f-b32a-ac87-73dd",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Night Lords",
-            "conditions": [{"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "9cff-ac34-56ca-260f",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Blood Angels",
-            "conditions": [{"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "736e-3967-e72b-e3ac",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Iron Hands",
-            "conditions": [{"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "a956-190d-3b47-6258",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "World Eaters",
-            "conditions": [{"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "656a-07b6-d4fd-57af",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Ultramarines",
-            "conditions": [{"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "be98-aa9d-64ef-f62c",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Death Guard",
-            "conditions": [{"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "2496-21e2-1870-e9b8",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Thousand Sons",
-            "conditions": [{"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "ac06-fcec-b634-5bd9",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Sons of Horus",
-            "conditions": [{"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "4935-1832-63f7-91aa",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Word Bearers",
-            "conditions": [{"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "f148-a6e4-5a8c-3aeb",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Salamanders",
-            "conditions": [{"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "340c-1d4f-1f31-fb70",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Raven Guard",
-            "conditions": [{"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "8813-5298-c368-ee16",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Alpha Legion",
-            "conditions": [{"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "forces",
+                "scope": "primary-catalogue",
+                "childId": "c195-9a6a-a56b-4634",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Blackshields",
-            "conditions": [{"childId": "c195-9a6a-a56b-4634", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           },
           {
-            "field": "name",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "forces",
+                "scope": "primary-catalogue",
+                "childId": "3256-29e9-1d7a-12a7",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": "Shattered Legions",
-            "conditions": [{"childId": "3256-29e9-1d7a-12a7", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "name"
           }
-        ]
+        ],
+        "name": "[Legiones Astartes]",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "641c-ca0a-7093-4525"
       },
       {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
         "name": "Smokescreen",
-        "id": "12ec-97aa-0b8a-7573",
-        "hidden": false,
         "typeId": "d5a9-9164-1e30-7a35",
         "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
+        "hidden": false,
+        "id": "12ec-97aa-0b8a-7573"
       },
       {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
         "name": "Explosive Asset",
-        "id": "d8fe-bf31-d56a-d665",
-        "hidden": false,
         "typeId": "d5a9-9164-1e30-7a35",
         "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
+        "hidden": false,
+        "id": "d8fe-bf31-d56a-d665"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "Psyker",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "0d5a-bf3a-7b46-785a"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "Anathemata",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "40b6-d6e2-da71-a384"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "Shield",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "1af7-07d5-7558-0b64"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "Interceptor",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "eb97-548b-dc3a-38a7"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "Solar Auxilia",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "c37a-f37f-860f-78a3"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "Imperialis Militia",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "0ffd-e762-fef0-716d"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "1ebf-72a3-b0b3-4944",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ],
+            "type": "set",
+            "value": "Acquisitor",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "ac12-7d1f-98e4-2b58",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ],
+            "type": "set",
+            "value": "Expugator",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "b2d5-2df6-b213-989b",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ],
+            "type": "set",
+            "value": "Vindictor",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "ancestor",
+                "childId": "b819-ac22-c04b-0932",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ],
+            "type": "set",
+            "value": "Scourger",
+            "field": "name"
+          },
+          {
+            "conditions": [
+              {
+                "type": "notInstanceOf",
+                "value": 1,
+                "field": "forces",
+                "scope": "primary-catalogue",
+                "childId": "079a-11b5-abfa-96da",
+                "shared": true
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "name": "[Skitarii]",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "e4fa-dbbf-91c1-d396"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "The Sodality",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "ec17-9d84-3666-e7c7"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "Talons of the Emperor",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "8974-94e5-d261-e4a2"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "Cohort Supreme Command",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "8bae-ee3d-3587-a615"
+      },
+      {
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "d5eb-0b8b-0f26-6233"
+          }
+        ],
+        "name": "Vagus",
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "hidden": false,
+        "id": "b713-a3cb-67da-5bb6"
+      }
+    ],
+    "categoryEntries": [
+      {
+        "name": "Master of the Legion",
+        "id": "e3cd-7a38-34d7-9cbf",
+        "hidden": false
+      },
+      {
+        "name": "Traitor",
+        "id": "d251-944b-3c3b-0579",
+        "hidden": false
       },
       {
         "name": "Psyker",
-        "id": "0d5a-bf3a-7b46-785a",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
+        "id": "9254-b1e9-98b2-6101",
+        "hidden": false
       },
       {
-        "name": "Anathemata",
-        "id": "40b6-d6e2-da71-a384",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
+        "name": "Smokescreen",
+        "id": "49fc-361e-9168-c460",
+        "hidden": false
+      },
+      {
+        "name": "Dark Angels",
+        "id": "9776-4805-2e0b-1f0f",
+        "hidden": false
+      },
+      {
+        "name": "Loyalist",
+        "id": "4381-ed35-c3fa-a225",
+        "hidden": false
+      },
+      {
+        "name": "Thousand Sons",
+        "id": "7c3f-93c7-d5b9-89e3",
+        "hidden": false
+      },
+      {
+        "name": "Alpha Legion",
+        "id": "a114-fe5b-0a4f-632e",
+        "hidden": false
+      },
+      {
+        "name": "Raven Guard",
+        "id": "4346-67d5-360d-89fa",
+        "hidden": false
+      },
+      {
+        "name": "Emperor's Children",
+        "id": "a364-a983-c2b2-cbc7",
+        "hidden": false
+      },
+      {
+        "name": "Iron Warriors",
+        "id": "b5d8-c965-7970-673f",
+        "hidden": false
+      },
+      {
+        "name": "White Scars",
+        "id": "ad95-5dc4-7b15-8ff3",
+        "hidden": false
+      },
+      {
+        "name": "Space Wolves",
+        "id": "f804-d214-a195-58e7",
+        "hidden": false
+      },
+      {
+        "name": "Imperial Fists",
+        "id": "450e-112d-a64a-ef6e",
+        "hidden": false
+      },
+      {
+        "name": "Night Lords",
+        "id": "9c9d-4e53-09d5-8748",
+        "hidden": false
+      },
+      {
+        "name": "Blood Angels",
+        "id": "53b2-d251-a827-8e73",
+        "hidden": false
+      },
+      {
+        "name": "Iron Hands",
+        "id": "3db6-86ea-fd61-340b",
+        "hidden": false
+      },
+      {
+        "name": "World Eaters",
+        "id": "48b7-17a8-eaf4-d6c2",
+        "hidden": false
+      },
+      {
+        "name": "Ultramarines",
+        "id": "7fcf-5885-0a4d-ee31",
+        "hidden": false
+      },
+      {
+        "name": "Death Guard",
+        "id": "2399-482f-47f3-add5",
+        "hidden": false
+      },
+      {
+        "name": "Sons of Horus",
+        "id": "3b0c-6e3a-f5cd-02cd",
+        "hidden": false
+      },
+      {
+        "name": "Word Bearers",
+        "id": "2aba-8953-ea2f-ce59",
+        "hidden": false
+      },
+      {
+        "name": "Salamanders",
+        "id": "f6fe-18f5-7b4d-b57a",
+        "hidden": false
       },
       {
         "name": "Shield",
-        "id": "1af7-07d5-7558-0b64",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
+        "id": "26c6-e05c-0f72-7852",
+        "hidden": false
       },
       {
-        "name": "Interceptor",
-        "id": "eb97-548b-dc3a-38a7",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
-      },
-      {
-        "name": "Solar Auxilia",
-        "id": "c37a-f37f-860f-78a3",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
-      },
-      {
-        "name": "Imperialis Militia",
-        "id": "0ffd-e762-fef0-716d",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
-      },
-      {
-        "name": "[Skitarii]",
-        "id": "e4fa-dbbf-91c1-d396",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}],
-        "modifiers": [
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Acquisitor",
-            "conditions": [
-              {"childId": "1ebf-72a3-b0b3-4944", "field": "selections", "includeChildSelections": true, "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Expugator",
-            "conditions": [
-              {"childId": "ac12-7d1f-98e4-2b58", "field": "selections", "includeChildSelections": true, "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Vindictor",
-            "conditions": [
-              {"childId": "b2d5-2df6-b213-989b", "field": "selections", "includeChildSelections": true, "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          },
-          {
-            "field": "name",
-            "type": "set",
-            "value": "Scourger",
-            "conditions": [
-              {"childId": "b819-ac22-c04b-0932", "field": "selections", "includeChildSelections": true, "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          },
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "079a-11b5-abfa-96da", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "notInstanceOf", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "The Sodality",
-        "id": "ec17-9d84-3666-e7c7",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
+        "name": "Golden Exemplar",
+        "id": "6da5-a1b8-41c0-b6fc",
+        "hidden": false
       },
       {
         "name": "Talons of the Emperor",
-        "id": "8974-94e5-d261-e4a2",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
-      },
-      {
-        "name": "Cohort Supreme Command",
-        "id": "8bae-ee3d-3587-a615",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
-      },
-      {
-        "name": "Vagus",
-        "id": "b713-a3cb-67da-5bb6",
-        "hidden": false,
-        "typeId": "d5a9-9164-1e30-7a35",
-        "typeName": "Traits",
-        "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
+        "id": "af7f-ce65-7fad-6d0e",
+        "hidden": false
       }
     ],
     "sharedSelectionEntryGroups": [
       {
-        "name": "Allegiance Traits",
-        "id": "edd3-9763-97ca-0323",
-        "hidden": false,
         "modifiers": [
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "597e-83d8-32e1-8eaa",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
             "type": "add",
             "value": "d251-944b-3c3b-0579",
-            "conditions": [
-              {
-                "childId": "597e-83d8-32e1-8eaa",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "equalTo",
-                "value": 1
-              }
-            ]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "e1e1-a344-d3e2-0b91",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
             "type": "add",
             "value": "4381-ed35-c3fa-a225",
-            "conditions": [
-              {
-                "childId": "e1e1-a344-d3e2-0b91",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "equalTo",
-                "value": 1
-              }
-            ]
+            "field": "category",
+            "scope": "parent"
           }
-        ]
+        ],
+        "name": "Allegiance Traits",
+        "id": "edd3-9763-97ca-0323",
+        "hidden": false
       },
       {
-        "name": "Legiones Astartes Trait",
-        "id": "3014-5f25-bc3b-4675",
-        "hidden": false,
         "modifiers": [
           {
-            "field": "category",
-            "scope": "parent",
-            "type": "add",
-            "value": "9776-4805-2e0b-1f0f",
-            "conditions": [{"childId": "0a35-fce3-188c-b3aa", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "category",
-            "scope": "parent",
-            "type": "add",
-            "value": "a364-a983-c2b2-cbc7",
-            "conditions": [{"childId": "9a22-d01f-ab5c-ec07", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "category",
-            "scope": "parent",
-            "type": "add",
-            "value": "b5d8-c965-7970-673f",
-            "conditions": [{"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "category",
-            "scope": "parent",
-            "type": "add",
-            "value": "ad95-5dc4-7b15-8ff3",
             "conditions": [
               {
-                "childId": "f7b4-2531-0962-1379",
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "primary-catalogue",
-                "shared": true,
                 "type": "instanceOf",
-                "value": 1
+                "value": 1,
+                "field": "forces",
+                "scope": "primary-catalogue",
+                "childId": "0a35-fce3-188c-b3aa",
+                "shared": true
               }
-            ]
+            ],
+            "type": "add",
+            "value": "9776-4805-2e0b-1f0f",
+            "field": "category",
+            "scope": "parent"
           },
           {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "forces",
+                "scope": "primary-catalogue",
+                "childId": "9a22-d01f-ab5c-ec07",
+                "shared": true
+              }
+            ],
+            "type": "add",
+            "value": "a364-a983-c2b2-cbc7",
             "field": "category",
-            "scope": "parent",
+            "scope": "parent"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "21c0-18db-03dd-ae07",
+                "shared": true
+              }
+            ],
+            "type": "add",
+            "value": "b5d8-c965-7970-673f",
+            "field": "category",
+            "scope": "parent"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "f7b4-2531-0962-1379",
+                "shared": true,
+                "includeChildSelections": false
+              }
+            ],
+            "type": "add",
+            "value": "ad95-5dc4-7b15-8ff3",
+            "field": "category",
+            "scope": "parent"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "d995-cb33-be41-ecf8",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "f804-d214-a195-58e7",
-            "conditions": [{"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "d186-cffc-0950-f632",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "450e-112d-a64a-ef6e",
-            "conditions": [{"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "486f-b32a-ac87-73dd",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "9c9d-4e53-09d5-8748",
-            "conditions": [{"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "9cff-ac34-56ca-260f",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "53b2-d251-a827-8e73",
-            "conditions": [{"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "736e-3967-e72b-e3ac",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "3db6-86ea-fd61-340b",
-            "conditions": [{"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "a956-190d-3b47-6258",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "48b7-17a8-eaf4-d6c2",
-            "conditions": [{"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "656a-07b6-d4fd-57af",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "7fcf-5885-0a4d-ee31",
-            "conditions": [{"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "be98-aa9d-64ef-f62c",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "2399-482f-47f3-add5",
-            "conditions": [{"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "2496-21e2-1870-e9b8",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "7c3f-93c7-d5b9-89e3",
-            "conditions": [{"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "ac06-fcec-b634-5bd9",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "3b0c-6e3a-f5cd-02cd",
-            "conditions": [{"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "4935-1832-63f7-91aa",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "2aba-8953-ea2f-ce59",
-            "conditions": [{"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "f148-a6e4-5a8c-3aeb",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "f6fe-18f5-7b4d-b57a",
-            "conditions": [{"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "340c-1d4f-1f31-fb70",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "4346-67d5-360d-89fa",
-            "conditions": [{"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "category",
-            "scope": "parent",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "8813-5298-c368-ee16",
+                "shared": true
+              }
+            ],
             "type": "add",
             "value": "a114-fe5b-0a4f-632e",
-            "conditions": [{"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "category",
+            "scope": "parent"
           },
           {
-            "field": "hidden",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "f477-a408-5e04-1e5a",
+                "shared": true
+              }
+            ],
             "type": "set",
             "value": true,
-            "conditions": [{"childId": "f477-a408-5e04-1e5a", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "hidden"
           }
-        ]
+        ],
+        "name": "Legiones Astartes Trait",
+        "id": "3014-5f25-bc3b-4675",
+        "hidden": false
       }
-    ]
+    ],
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "library": true,
+    "id": "df17-7a05-0826-6e22",
+    "name": "Traits",
+    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
+    "gameSystemRevision": 1,
+    "revision": 7,
+    "authorName": "The4D6",
+    "battleScribeVersion": 2.03,
+    "type": "catalogue",
+    "authorContact": "https://github.com/BSData/horus-heresy-3rd-edition/issues",
+    "authorUrl": "https://github.com/BSData/horus-heresy-3rd-edition/"
   }
 }

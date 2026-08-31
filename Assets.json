@@ -1,1286 +1,2151 @@
 {
   "catalogue": {
-    "name": "Battlefield Assets",
-    "id": "5334-5605-242c-d75e",
-    "authorContact": "https://github.com/BSData/horus-heresy-3rd-edition/issues",
-    "authorName": "The4D6",
-    "authorUrl": "https://github.com/BSData/horus-heresy-3rd-edition/",
-    "battleScribeVersion": 2.03,
-    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
-    "gameSystemRevision": 1,
-    "library": false,
-    "revision": 2,
-    "type": "catalogue",
-    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
-    "catalogueLinks": [{"name": "Special Rules", "id": "b2c2-5ac2-a2af-1f89", "targetId": "106b-693b-99f2-00c3", "type": "catalogue"}],
-    "costTypes": [
+    "sharedSelectionEntries": [
       {
-        "name": "Asset Point(s)",
-        "id": "29b4-fb27-da17-1e21",
-        "defaultCostLimit": -1,
-        "hidden": true,
-        "modifiers": [{"field": "hidden", "type": "set", "value": false}]
-      }
-    ],
-    "entryLinks": [
-      {
-        "name": "Disruption Emitter Charges",
-        "id": "ded0-3184-384d-e4d5",
-        "hidden": false,
-        "import": true,
-        "targetId": "9f06-57fd-b80a-1172",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "7e73-4d58-50c9-5a81", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "infoLinks": [{"name": "The Attacker Asset Trait", "id": "047d-9bbf-268a-743e", "hidden": false, "targetId": "dcb6-3210-cd5a-9d00", "type": "rule"}]
-      },
-      {
-        "name": "Strategic Cogitator Array",
-        "id": "aa98-b6d7-0420-3ae3",
-        "hidden": false,
-        "import": true,
-        "targetId": "a9df-6474-667c-6aee",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "896f-9cd0-cd68-2862", "primary": true, "targetId": "b720-ea51-7339-6a08"}]
-      },
-      {
-        "name": "Graviton Snares",
-        "id": "0118-03b1-4461-33bd",
-        "hidden": false,
-        "import": true,
-        "targetId": "0196-e7d7-7a49-8e00",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "20c4-862b-3b5d-f84d", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "infoLinks": [
-          {"name": "The Defender Asset Trait", "id": "f96d-304a-700d-4b0b", "hidden": false, "targetId": "ad11-1191-3191-7509", "type": "rule"},
-          {"name": "The Minefield Asset Trait", "id": "e608-5519-803d-c4a7", "hidden": false, "targetId": "1d82-cb03-376e-f062", "type": "rule"}
-        ]
-      },
-      {
-        "name": "Forward Ammunition Drop",
-        "id": "3f15-785f-15c3-5117",
-        "hidden": false,
-        "import": true,
-        "targetId": "aae5-1bb5-e4c1-595e",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "1596-adb0-c8d9-5b5c", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "infoLinks": [{"name": "The Explosive Asset Trait", "id": "c6d7-717c-a2ae-0129", "hidden": false, "targetId": "29af-b990-5cfb-cf20", "type": "rule"}]
-      },
-      {
-        "name": "Auto-Repair Servitor Clade",
-        "id": "355e-60d6-ade7-b29a",
-        "hidden": false,
-        "import": true,
-        "targetId": "2f1a-ca50-8f54-abfb",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "e4cb-da99-cb9c-ca41", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "infoLinks": [{"name": "The Defender Asset Trait", "id": "bda5-3c58-5709-2753", "hidden": false, "targetId": "ad11-1191-3191-7509", "type": "rule"}]
-      },
-      {
-        "name": "Contingency Device",
-        "id": "21b2-f34b-ae9b-ed4e",
-        "hidden": false,
-        "import": true,
-        "targetId": "41b1-f4a4-fb8a-cdb7",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "d6fd-267d-8a3f-6f0a", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "infoLinks": [
-          {"name": "The Defender Asset Trait", "id": "b0d5-9255-f879-7a29", "hidden": false, "targetId": "ad11-1191-3191-7509", "type": "rule"},
-          {"name": "The Explosive Asset Trait", "id": "83f0-cd34-dd9c-887d", "hidden": false, "targetId": "29af-b990-5cfb-cf20", "type": "rule"}
-        ]
-      },
-      {
-        "name": "Frag Minefield",
-        "id": "2ca2-6fcc-808f-1e6c",
-        "hidden": false,
-        "import": true,
-        "targetId": "70c6-7a69-afd3-6044",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "c04f-b897-b6f2-b0fb", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "infoLinks": [
-          {"name": "The Defender Asset Trait", "id": "448c-1f7c-7070-5270", "hidden": false, "targetId": "ad11-1191-3191-7509", "type": "rule"},
-          {"name": "The Minefield Asset Trait", "id": "987e-e2d0-ec32-0828", "hidden": false, "targetId": "1d82-cb03-376e-f062", "type": "rule"}
-        ]
-      },
-      {
-        "name": "Melta Minefield",
-        "id": "0dd3-b5c3-2b0b-217d",
-        "hidden": false,
-        "import": true,
-        "targetId": "5244-e331-d959-02db",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "978f-120c-6063-0ab8", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "infoLinks": [
-          {"name": "The Defender Asset Trait", "id": "4c90-1a19-ff08-1bf6", "hidden": false, "targetId": "ad11-1191-3191-7509", "type": "rule"},
-          {"name": "The Minefield Asset Trait", "id": "6d63-2c83-b37a-d0ce", "hidden": false, "targetId": "1d82-cb03-376e-f062", "type": "rule"}
-        ]
-      },
-      {
-        "name": "Neutron Bomb",
-        "id": "e08b-45c9-9920-768f",
-        "hidden": false,
-        "import": true,
-        "targetId": "a74f-010a-42ac-9d13",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "0101-2433-7a8c-0f3c", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "infoLinks": [
-          {"name": "The Defender Asset Trait", "id": "4047-963c-726e-e9cd", "hidden": false, "targetId": "ad11-1191-3191-7509", "type": "rule"},
-          {"name": "The Minefield Asset Trait", "id": "6516-c9c5-c81a-ab8a", "hidden": false, "targetId": "1d82-cb03-376e-f062", "type": "rule"}
-        ]
-      },
-      {
-        "name": "Shroud Canister",
-        "id": "c7f9-ccf6-01ac-a5ff",
-        "hidden": false,
-        "import": true,
-        "targetId": "02e0-ca11-ac55-0228",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "bff0-ab70-3e90-5cd6", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "infoLinks": [{"name": "The Attacker Asset Trait", "id": "e769-b398-512f-9d59", "hidden": false, "targetId": "dcb6-3210-cd5a-9d00", "type": "rule"}]
-      },
-      {
-        "name": "Tank Traps",
-        "id": "b6a0-c840-8a65-6d8c",
-        "hidden": false,
-        "import": true,
-        "targetId": "6a6b-ab2e-2570-ff12",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "766b-1041-f97e-d2ee", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "infoLinks": [{"name": "The Defender Asset Trait", "id": "9fde-7ecc-cc6e-5d7b", "hidden": false, "targetId": "ad11-1191-3191-7509", "type": "rule"}]
-      },
-      {
-        "name": "Wayfinder Device",
-        "id": "195d-5927-ef9f-7e6a",
-        "hidden": false,
-        "import": true,
-        "targetId": "897a-1ca7-ce3c-c361",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Asset", "id": "fac0-21df-b488-fba0", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "infoLinks": [{"name": "The Attacker Asset Trait", "id": "234f-893f-c2ff-726d", "hidden": false, "targetId": "dcb6-3210-cd5a-9d00", "type": "rule"}]
-      }
-    ],
-    "forceEntries": [
-      {
-        "name": "Battlefield Assets",
-        "id": "10ac-064d-70cc-cc99",
-        "hidden": false,
-        "constraints": [
-          {"id": "a697-3899-b304-6cb9", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1},
-          {"id": "d252-c75b-9e49-d7fc", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
+        "costs": [
           {
-            "id": "8009-17d9-2a5c-684f",
-            "field": "29b4-fb27-da17-1e21",
-            "includeChildForces": true,
-            "includeChildSelections": true,
-            "scope": "roster",
-            "shared": true,
-            "type": "max",
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
             "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 3
           }
         ],
-        "forceEntries": [
+        "profiles": [
           {
-            "name": "Battlefield Assets",
-            "id": "d68d-6aff-7d56-4312",
-            "hidden": true,
-            "categoryLinks": [
-              {"name": "Allegiance", "id": "95b9-8c82-2889-fb8b", "hidden": false, "targetId": "c408-52f1-b632-4c82"},
-              {"name": "Army Configuration", "id": "9ad5-bc0f-1944-fee6", "hidden": false, "targetId": "abfa-86ab-1726-077a"},
-              {"name": "Asset", "id": "5ddf-c70c-c587-b43c", "hidden": false, "targetId": "b720-ea51-7339-6a08"}
-            ],
-            "constraints": [
-              {"id": "3513-b756-b04d-ab69", "field": "forces", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "a304-1aec-f10e-4607", "field": "forces", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "modifiers": [
+            "characteristics": [
               {
-                "field": "hidden",
-                "type": "set",
-                "value": false,
-                "conditions": [
-                  {"childId": "5334-5605-242c-d75e", "childName": "Assets", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
-                  {
-                    "childId": "5334-5605-242c-d75e",
-                    "childName": "Battlefield Assets",
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "type": "instanceOf",
-                    "value": 1
-                  }
-                ]
+                "$text": "Disruption Emitters apply a negative modifier to certain characteristics of nearby models.",
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Disruption Emitter Marker must be set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield that is not within their Opponent's deployment zone.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "While any Models from a Unit are within 6\" of the centre of a Disruption Emitter Marker, modify the Leadership, Cool, Intelligence, and Willpower Characteristics of all Models in that Unit by -1.",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "At the end of each Battle Turn, the player that selected it rolls one Dice for each Disruption Emitter Marker they set up. On a 1, that Disruption Emitter Marker is removed from the Battlefield.",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "Attacker",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
               }
-            ]
+            ],
+            "name": "Disruption Emitter Charges",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "40a5-a5a5-8ab9-82c7"
           }
         ],
         "modifiers": [
           {
-            "field": "error",
-            "type": "add",
-            "value": "You have exceeded your Asset Point limit",
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "childId": "695d-27a5-1c3e-5cb2",
-                        "childName": "0-1500",
-                        "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "equalTo",
-                        "value": 1
-                      },
-                      {
-                        "childId": "b720-ea51-7339-6a08",
-                        "childName": "Asset",
-                        "field": "29b4-fb27-da17-1e21",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "greaterThan",
-                        "value": 2
-                      }
-                    ]
-                  },
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "childId": "e70a-ceeb-e5df-474f",
-                        "childName": "3501-5000",
-                        "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "equalTo",
-                        "value": 1
-                      },
-                      {
-                        "childId": "b720-ea51-7339-6a08",
-                        "childName": "Asset",
-                        "field": "29b4-fb27-da17-1e21",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "greaterThan",
-                        "value": 8
-                      }
-                    ]
-                  },
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "childId": "7a51-848e-4e60-d050",
-                        "childName": "5001+",
-                        "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "equalTo",
-                        "value": 1
-                      },
-                      {
-                        "childId": "b720-ea51-7339-6a08",
-                        "childName": "Asset",
-                        "field": "29b4-fb27-da17-1e21",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "greaterThan",
-                        "value": 10
-                      }
-                    ]
-                  },
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "childId": "6c42-8151-9658-9a25",
-                        "childName": "1501-3500",
-                        "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "equalTo",
-                        "value": 1
-                      },
-                      {
-                        "childId": "b720-ea51-7339-6a08",
-                        "childName": "Asset",
-                        "field": "29b4-fb27-da17-1e21",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "greaterThan",
-                        "value": 5
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "field": "8009-17d9-2a5c-684f",
-            "type": "increment",
-            "value": 2,
             "conditions": [
               {
-                "childId": "695d-27a5-1c3e-5cb2",
-                "childName": "0-1500",
+                "type": "atLeast",
+                "value": 1,
                 "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
                 "scope": "roster",
+                "childId": "81e6-a6ec-25e5-68ff",
                 "shared": true,
-                "type": "equalTo",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "8009-17d9-2a5c-684f",
-            "type": "increment",
-            "value": 8,
-            "conditions": [
-              {
-                "childId": "e70a-ceeb-e5df-474f",
-                "childName": "3501-5000",
-                "field": "selections",
-                "includeChildForces": true,
+                "childName": "Defender",
                 "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "equalTo",
-                "value": 1
+                "includeChildForces": true
               }
-            ]
-          },
-          {
-            "field": "8009-17d9-2a5c-684f",
-            "type": "increment",
-            "value": 10,
-            "conditions": [
-              {
-                "childId": "7a51-848e-4e60-d050",
-                "childName": "5001+",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "equalTo",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "8009-17d9-2a5c-684f",
-            "type": "increment",
-            "value": 5,
-            "conditions": [
-              {
-                "childId": "6c42-8151-9658-9a25",
-                "childName": "1501-3500",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "equalTo",
-                "value": 1
-              }
-            ]
+            ],
+            "comment": "Hidden From Defenders",
+            "type": "set",
+            "value": true,
+            "field": "hidden"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Disruption Emitter Charges",
+        "hidden": false,
+        "id": "9f06-57fd-b80a-1172"
+      },
+      {
+        "costs": [
+          {
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 2
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "A Unit near a Forward Ammunition Drop may gain a benefit when making certain Shooting Attacks.",
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Forward Ammunition Drop Marker is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield more than 6\" away from that Player's Deployment Zone.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "When a Unit that has Models within 3\" of the centre of a Forward Ammunition Drop Marker is selected to make a Shooting Attack, the Controlling Player of that Unit can declare they will activate that Marker. Only one Forward Ammunition Drop Marker can be utilised per Shooting Attack. When they do, that Player can nominate one Weapon which Models in that Unit have that has a Base Ranged Strength of 5 or less, and does not have the Heavy (X), Ordnance (X), Blast (X), or Template Special Rules. Until that Shooting Attack is resolved, the Firepower Characteristic of each nominated Weapon in that unit is increased by +1.",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "After that Shooting Attack has been resolved, the Controlling Player of the Unit making the Shooting Attack rolls one Dice. On a 4+, the Forward Ammunition Drop Marker is removed from the Battlefield.",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "Explosive",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
+              }
+            ],
+            "name": "Forward Ammunition Drop",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "736d-8b12-034f-b741"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Forward Ammunition Drop",
+        "hidden": false,
+        "id": "aae5-1bb5-e4c1-595e"
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "Models close to a Graviton Snare risk becoming Pinned.",
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Graviton Snare Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "If a Unit is selected to move in the Movement Phase or make a Charge Move while any Models from that Unit are within 6\" of the centre of a Graviton Snare Marker, the Controlling Player of that Unit must roll one Dice for each Model from that Unit that is within 6\" of the centre of that Graviton Snare Marker. On a 1, that Model triggers the snare and the Unit that includes that Model gains the Pinned Tactical Status, and that Graviton Snare Marker is removed from the Battlefield.",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "Removed when triggered (see above).",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "Defender, Minefield",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
+              }
+            ],
+            "name": "Graviton Snares",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "d099-232c-7c72-c88d"
+          }
+        ],
+        "costs": [
+          {
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 1
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "affa-726d-7fee-f272",
+                "shared": true,
+                "childName": "Attacker",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "comment": "Hidden From Attackers",
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Graviton Snares",
+        "hidden": false,
+        "id": "0196-e7d7-7a49-8e00"
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "A Strategic Cogitator Array allows a Player to increase the value of a Secondary Objective.",
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Strategic Cogitator Array is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere within that Player's Deployment Zone.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "If the Active Player has a Model with the Command Sub-Type within 3\" of the centre of a Strategic Cogitator Array Marker at the end of their Movement Phase, they can request new orders. If they do so, that Player rolls one Dice. If the result is higher than the current Battle Turn number, the request is successful and that Player may select one Secondary Objective in use in that Battle and increate the value of X on that Secondary Objective by 1, and then the Strategic Cogitator Array Marker is removed from the Battlefield. Each Model with the Command Sub-Type can only request new orders once per Turn, and each Secondary Objective can only have its value increased once in this manner",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "Removed when used successfully (see above).",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "-",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
+              }
+            ],
+            "name": "Strategic Cogitator Array",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "4e72-9a8e-c84e-3541"
+          }
+        ],
+        "costs": [
+          {
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 1
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Strategic Cogitator Array",
+        "hidden": false,
+        "id": "a9df-6474-667c-6aee"
+      },
+      {
+        "costs": [
+          {
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 2
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "94b6-3dd7-6b23-8348",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "Melta Mines may be triggered by larger war machines.",
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Melta Minefield Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "If a Unit that contains any Models with the Walker or Vehicle Types ends a move within 6\" of the centre of a Melta Minefield Marker, the Controlling Player of that Unit must roll a number of Dice for each Model from that Unit that is within 6\" of the centre of that Melta Minefield Marker. The number of Dice rolled for each Model is equal to the Base Wounds or Hull Points Characteristic of that Model. For each mine that is triggered, the Unit suffers a Hit, resolved against the weakest Armour Facing (if the unit has Armour Values) with a Strength of 9, an AP of 2, and a Damage of 2.",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "Once these its have been resolved, the Controlling Player of the Unit whose move triggered a mine rolls a Dice. On a 4+, that Melta Minefield Marker is removed from the Battlefield.",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "Defender, Minefield",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
+              }
+            ],
+            "name": "Melta Minefield",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "f366-6ac2-e3cb-a165"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "affa-726d-7fee-f272",
+                "shared": true,
+                "childName": "Attacker",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "comment": "Hidden From Attackers",
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Melta Minefield",
+        "hidden": false,
+        "id": "5244-e331-d959-02db"
+      },
+      {
+        "costs": [
+          {
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 2
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "e779-a38b-6cc9-58df",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Frag Minefield Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "If a Unit ends a move with one or more Models within 6\" of the centre of a Frag Minefield Marker, the Controlling Player of that Unit must roll one Dice for each Model from such a Unit that is within 6\" of the centre of that Frag Minefield Marker. On a 1, that Model triggers a mine. Centre a 3\" Blast Marker on that Model. Every Unit that has any Models under one of these Blast Markers suffers 1 Hit for each Model from that Unit that is under each Blast Marker. Each such Hit has a Strength of 5, an AP of 5, and a Damage of 1.",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "Once these its have been resolved, the Controlling Player of the Moving Unit rolls a Dice. On a 4+, that Frag Minefield Marker is removed from the Battlefield.",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "Defender, Minefield",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
+              }
+            ],
+            "name": "Frag Minefield",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "4668-6653-39a3-1eca"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "affa-726d-7fee-f272",
+                "shared": true,
+                "childName": "Attacker",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "comment": "Hidden From Attackers",
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Frag Minefield",
+        "hidden": false,
+        "id": "70c6-7a69-afd3-6044"
+      },
+      {
+        "costs": [
+          {
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 2
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "e10a-f5f2-36c5-84d3",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "A Contingency Device may be detonated when a nearby Unit falls back.",
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Contingency Device Marker is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere within that Payer's Deployment Zone.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "If the Player who set up a Contingency Device Marker would make a Panic Check during the Fight Sub-Phase for a Unit with at least one Model within 3\" of the centre of a Contingency Device Marker in their Deployment Zone, they can attempt to trigger the device. If they do so, that Player makes an Intelligence Check for that Unit. If the Check is successful, the device is triggered. When the device is triggered, every unit with at least one Model within 6\" of the centre of that Contingency Device Marker suffers a number of Hits equal to the number of Models from that Unit that are within 6\" of the centre of that Marker. Each such Hit has a Strength of 7, an AP of4, a Damage of 2, and the Breaching (5+) and Shred (6+) Special Rules.",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "Once these Hits have been resolved, that Contingency Device Marker is removed from the Battlefield and the Panic Check is made for the Unit as normal.",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "Defender, Explosive",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
+              }
+            ],
+            "name": "Contingency Device",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "f53e-1e54-6adb-8120"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "affa-726d-7fee-f272",
+                "shared": true,
+                "childName": "Attacker",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "comment": "Hidden From Attackers",
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Contingency Device",
+        "hidden": false,
+        "id": "41b1-f4a4-fb8a-cdb7"
+      },
+      {
+        "costs": [
+          {
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 1
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "3eaf-4045-9bc9-08e3",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "Tank Traps block the Movement of Vehicles.",
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Tank Traps Marker must be a maximum of 60mm wide and be set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield that is not within their Opponent's Deployment Zone.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "A Tank Traps Marker is treated as Impassable terrain for Vehicle Models (this is an exception to the Battlefield Asset Markers Rules).",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "Each Tank Traps Marker can be selected as the Target of Charges and of Ranged and Melee Attacks, and is treated as a Model with the Vehicle Type with a single Facing with an Armour Value of 14 and a Hull Points Characteristic of 2. A Each Tank Traps Marker cannot gain any Tactical Statuses.",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "Defender",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
+              }
+            ],
+            "name": "Tank Traps",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "c7d2-412f-f484-04b6"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "affa-726d-7fee-f272",
+                "shared": true,
+                "childName": "Attacker",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "comment": "Hidden From Attackers",
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Tank Traps",
+        "hidden": false,
+        "id": "6a6b-ab2e-2570-ff12"
+      },
+      {
+        "costs": [
+          {
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 1
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "When triggered, Shroud Canisters can provide the Shrouded (X) Special Rule to Models nearby.",
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Shroud Canister Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "In the Effects Sub-Phase of the End Phase of their Player Turn, the Player who set up each Shroud Canister can select to trigger it. If they do, until the Shroud Canister Marker is removed:\n- Models within 3\" of the centre of a triggered Shroud Canister Marker have the Shrouded (4+) Special Rule.\n- Models within 6\" of the centre of a triggered Shroud Canister Marker have the Shrouded (5+) Special Rule.\n- Models within 9\" of the centre of a triggered Shroud Canister Marker have the Shrouded (6+) Special Rule.",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "In the Effects Sub-Phase of the End Phase of the next Player Turn, a triggered Shroud Canister is removed from the Battlefield.",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "Attacker",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
+              }
+            ],
+            "name": "Shroud Canister",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "4ddd-5d7c-813f-79b0"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "81e6-a6ec-25e5-68ff",
+                "shared": true,
+                "childName": "Defender",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "comment": "Hidden From Defenders",
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Shroud Canister",
+        "hidden": false,
+        "id": "02e0-ca11-ac55-0228"
+      },
+      {
+        "costs": [
+          {
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 1
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "1a65-e6ba-025e-3161",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "When triggered, Vehicle and Walker Models near a Neutron Bomb may gain the Suppressed Tactical Status.",
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Neutron Bomb Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "If a Unit is selected to move in the Movement Phase or make a Charge Move while any Models from that Unit with the Vehicle or Walker Type are within 6\" of the centre of a Neutron Bomb Marker, the Controlling Player of that Unit must roll one Dice for each Model from that Unit which is within 6\" of the centre of a Neutron Bomb Marker. On a 4+, that Model triggers the Neutron Bomb and the Unit that includes that Model gains the Suppressed Tactical Status, and that Neutron Bomb Marker is removed from the Battlefield.",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "Removed when triggered (see above).",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "Defender, Minefield",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
+              }
+            ],
+            "name": "Neutron Bomb",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "b616-d64c-7dc9-e233"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "affa-726d-7fee-f272",
+                "shared": true,
+                "childName": "Attacker",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "comment": "Hidden From Attackers",
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Neutron Bomb",
+        "hidden": false,
+        "id": "a74f-010a-42ac-9d13"
+      },
+      {
+        "costs": [
+          {
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 2
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "acf4-e204-704c-120e",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "Auto-Repair Servitor Clades can assist in removing Tactical Statuses from friendly Vehicle Models.",
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Auto-Repair Servitor Clade Marker is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere within that Player's Deployment Zone.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "At the start of the Defender's Statuses Sub-Phase, that Player can select one Model with the Vehicle Type that is within 4\" of the centre of the Auto-Repair Servitor Clade Marker they set up. Until the end of that Sub-Phase, that Vehicle has the Auto-Repair (4+) Special Rule.",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "If a Blast Marker covers the centre of an Auto-Repair Servitor Clade Marker, then after that Shooting Attack has been resolved, the Controlling Player of the Unit making the Shooting Attack must roll one Dice. On a 4+, that Auto-Repair Servitor Clade Marker is removed.",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "Defender",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
+              }
+            ],
+            "name": "Auto-Repair Servitor Clade",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "785c-4a10-c618-056e"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "affa-726d-7fee-f272",
+                "shared": true,
+                "childName": "Attacker",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "comment": "Hidden From Attackers",
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "infoLinks": [
+          {
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Auto-Repair (4+)",
+                "field": "name"
+              }
+            ],
+            "comment": "4+",
+            "name": "Auto-Repair (X)",
+            "id": "5477-baa8-6883-0a9a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3973-ed50-1482-ff4a"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Auto-Repair Servitor Clade",
+        "hidden": false,
+        "id": "2f1a-ca50-8f54-abfb"
+      },
+      {
+        "costs": [
+          {
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 0
+          },
+          {
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
+          },
+          {
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
+          },
+          {
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
+          },
+          {
+            "name": "Combined Warlord and Lord of War Points",
+            "typeId": "14bd-cad0-cd3d-8b23",
+            "value": 0
+          },
+          {
+            "name": "Mech LB",
+            "typeId": "7275-cbe8-a563-7152",
+            "value": 0
+          },
+          {
+            "name": "Asset Point(s)",
+            "typeId": "29b4-fb27-da17-1e21",
+            "value": 2
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "A Wayfinder Device can grant nearby Models the Move Through Cover Special Rule.",
+                "name": "Summary",
+                "typeId": "3dcf-9034-fc2d-cd56"
+              },
+              {
+                "$text": "Each Wayfinder Device Marker must be set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield that is not within their Opponent's Deployment Zone.",
+                "name": "Setup",
+                "typeId": "e965-60bc-cd79-63e7"
+              },
+              {
+                "$text": "In the Effects Sub-Phase of their Player Turn, the Player who set up a Wayfinder Device can select to trigger it. If they do, they can select one Area of Difficult or Dangerous Terrain that is wholly within 12\" of the centre of that Wayfinder Device Marker. Models from that Player's Army are treated as having the Move Through Cover Special Rule while moving through the selected Area Terrain during that Turn.",
+                "name": "Effect",
+                "typeId": "bbd3-5482-ed3a-a3b3"
+              },
+              {
+                "$text": "N/A",
+                "name": "How To Destroy",
+                "typeId": "6888-e488-df3f-edcf"
+              },
+              {
+                "$text": "Attacker",
+                "name": "Traits",
+                "typeId": "a1e3-4f30-fa22-d127"
+              }
+            ],
+            "name": "Wayfinder Device",
+            "typeId": "7ae0-de68-04c6-8d8f",
+            "typeName": "Asset",
+            "hidden": false,
+            "id": "c4c7-d41f-c118-d2c4"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "81e6-a6ec-25e5-68ff",
+                "shared": true,
+                "childName": "Defender",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "comment": "Hidden From Defenders",
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Wayfinder Device",
+        "hidden": false,
+        "id": "897a-1ca7-ce3c-c361"
       }
     ],
     "selectionEntries": [
       {
-        "name": "Attacker/Defender",
-        "id": "e63d-058e-4fed-6dd5",
-        "hidden": true,
-        "import": true,
-        "sortIndex": 2,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Army Configuration", "id": "211e-b596-6ae3-7363", "primary": true, "targetId": "abfa-86ab-1726-077a"}],
-        "constraints": [
-          {"id": "6f04-2f85-3121-77c8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "2f3a-1e2e-18fe-a76f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "modifiers": [
+        "categoryLinks": [
           {
-            "field": "hidden",
-            "type": "set",
-            "value": false,
-            "conditions": [
-              {
-                "childId": "5334-5605-242c-d75e",
-                "childName": "Battlefield Assets",
-                "field": "selections",
-                "scope": "primary-catalogue",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
+            "targetId": "abfa-86ab-1726-077a",
+            "id": "211e-b596-6ae3-7363",
+            "primary": true,
+            "name": "Army Configuration"
           }
         ],
         "selectionEntryGroups": [
           {
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Attacker",
+                "hidden": false,
+                "id": "affa-726d-7fee-f272"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Defender",
+                "hidden": false,
+                "id": "81e6-a6ec-25e5-68ff"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8b48-af13-deec-0872",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "17d3-8cbb-0fce-a53d",
+                "includeChildSelections": false
+              }
+            ],
             "name": "Attacker/Defender",
             "id": "d254-a2e6-0b71-2345",
-            "hidden": false,
-            "constraints": [
-              {"id": "8b48-af13-deec-0872", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "17d3-8cbb-0fce-a53d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "selectionEntries": [
-              {"name": "Attacker", "id": "affa-726d-7fee-f272", "hidden": false, "import": true, "type": "upgrade"},
-              {"name": "Defender", "id": "81e6-a6ec-25e5-68ff", "hidden": false, "import": true, "type": "upgrade"}
-            ]
+            "hidden": false
           }
-        ]
-      },
-      {
-        "name": "Points Limit",
-        "id": "3fb9-43fc-41de-7c58",
-        "hidden": true,
-        "import": true,
-        "sortIndex": 1,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Army Configuration", "id": "b932-350f-624d-4176", "primary": true, "targetId": "abfa-86ab-1726-077a"}],
+        ],
         "constraints": [
-          {"id": "ae19-90d5-1ee3-830a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "b489-2a28-7306-56bf", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "6f04-2f85-3121-77c8",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "2f3a-1e2e-18fe-a76f",
+            "includeChildSelections": false
+          }
         ],
         "modifiers": [
           {
-            "field": "hidden",
-            "type": "set",
-            "value": false,
             "conditions": [
               {
-                "childId": "5334-5605-242c-d75e",
-                "childName": "Battlefield Assets",
+                "type": "instanceOf",
+                "value": 1,
                 "field": "selections",
                 "scope": "primary-catalogue",
+                "childId": "5334-5605-242c-d75e",
                 "shared": true,
-                "type": "instanceOf",
-                "value": 1
+                "childName": "Battlefield Assets"
               }
-            ]
+            ],
+            "type": "set",
+            "value": false,
+            "field": "hidden"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Attacker/Defender",
+        "hidden": true,
+        "id": "e63d-058e-4fed-6dd5",
+        "sortIndex": 2
+      },
+      {
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "5334-5605-242c-d75e",
+                "shared": true,
+                "childName": "Battlefield Assets"
+              }
+            ],
+            "type": "set",
+            "value": false,
+            "field": "hidden"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "abfa-86ab-1726-077a",
+            "id": "b932-350f-624d-4176",
+            "primary": true,
+            "name": "Army Configuration"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "ae19-90d5-1ee3-830a",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "b489-2a28-7306-56bf",
+            "includeChildSelections": false
           }
         ],
         "selectionEntryGroups": [
           {
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "0-1500",
+                "hidden": false,
+                "id": "695d-27a5-1c3e-5cb2",
+                "sortIndex": 1
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "1501-3500",
+                "hidden": false,
+                "id": "6c42-8151-9658-9a25",
+                "sortIndex": 2
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "3501-5000",
+                "hidden": false,
+                "id": "e70a-ceeb-e5df-474f",
+                "sortIndex": 3
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "5001+",
+                "hidden": false,
+                "id": "7a51-848e-4e60-d050",
+                "sortIndex": 4
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c848-135c-2e16-0372",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ade2-c362-a777-3e08",
+                "includeChildSelections": false
+              }
+            ],
             "name": "Points Limit",
             "id": "d7cf-bfaf-21bc-99f6",
-            "defaultSelectionEntryId": "695d-27a5-1c3e-5cb2",
             "hidden": false,
-            "constraints": [
-              {"id": "c848-135c-2e16-0372", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "ade2-c362-a777-3e08", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "selectionEntries": [
-              {"name": "0-1500", "id": "695d-27a5-1c3e-5cb2", "hidden": false, "import": true, "sortIndex": 1, "type": "upgrade"},
-              {"name": "1501-3500", "id": "6c42-8151-9658-9a25", "hidden": false, "import": true, "sortIndex": 2, "type": "upgrade"},
-              {"name": "3501-5000", "id": "e70a-ceeb-e5df-474f", "hidden": false, "import": true, "sortIndex": 3, "type": "upgrade"},
-              {"name": "5001+", "id": "7a51-848e-4e60-d050", "hidden": false, "import": true, "sortIndex": 4, "type": "upgrade"}
-            ]
+            "defaultSelectionEntryId": "695d-27a5-1c3e-5cb2"
           }
-        ]
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Points Limit",
+        "hidden": true,
+        "id": "3fb9-43fc-41de-7c58",
+        "sortIndex": 1
+      }
+    ],
+    "forceEntries": [
+      {
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "forces",
+            "scope": "roster",
+            "shared": true,
+            "id": "a697-3899-b304-6cb9",
+            "includeChildSelections": true
+          },
+          {
+            "type": "min",
+            "value": 1,
+            "field": "forces",
+            "scope": "roster",
+            "shared": true,
+            "id": "d252-c75b-9e49-d7fc",
+            "includeChildSelections": true
+          },
+          {
+            "type": "max",
+            "value": 0,
+            "field": "29b4-fb27-da17-1e21",
+            "scope": "roster",
+            "shared": true,
+            "id": "8009-17d9-2a5c-684f",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "modifiers": [
+          {
+            "conditionGroups": [
+              {
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "695d-27a5-1c3e-5cb2",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "0-1500",
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "greaterThan",
+                        "value": 2,
+                        "field": "29b4-fb27-da17-1e21",
+                        "scope": "roster",
+                        "childId": "b720-ea51-7339-6a08",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Asset"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "e70a-ceeb-e5df-474f",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "3501-5000",
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "greaterThan",
+                        "value": 8,
+                        "field": "29b4-fb27-da17-1e21",
+                        "scope": "roster",
+                        "childId": "b720-ea51-7339-6a08",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Asset"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "7a51-848e-4e60-d050",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "5001+",
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "greaterThan",
+                        "value": 10,
+                        "field": "29b4-fb27-da17-1e21",
+                        "scope": "roster",
+                        "childId": "b720-ea51-7339-6a08",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Asset"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "6c42-8151-9658-9a25",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "1501-3500",
+                        "includeChildForces": true
+                      },
+                      {
+                        "type": "greaterThan",
+                        "value": 5,
+                        "field": "29b4-fb27-da17-1e21",
+                        "scope": "roster",
+                        "childId": "b720-ea51-7339-6a08",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Asset"
+                      }
+                    ],
+                    "type": "and"
+                  }
+                ],
+                "type": "or"
+              }
+            ],
+            "type": "add",
+            "value": "You have exceeded your Asset Point limit",
+            "field": "error"
+          },
+          {
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "695d-27a5-1c3e-5cb2",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "0-1500",
+                "includeChildForces": true
+              }
+            ],
+            "type": "increment",
+            "value": 2,
+            "field": "8009-17d9-2a5c-684f"
+          },
+          {
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "e70a-ceeb-e5df-474f",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "3501-5000",
+                "includeChildForces": true
+              }
+            ],
+            "type": "increment",
+            "value": 8,
+            "field": "8009-17d9-2a5c-684f"
+          },
+          {
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "7a51-848e-4e60-d050",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "5001+",
+                "includeChildForces": true
+              }
+            ],
+            "type": "increment",
+            "value": 10,
+            "field": "8009-17d9-2a5c-684f"
+          },
+          {
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "6c42-8151-9658-9a25",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "1501-3500",
+                "includeChildForces": true
+              }
+            ],
+            "type": "increment",
+            "value": 5,
+            "field": "8009-17d9-2a5c-684f"
+          }
+        ],
+        "forceEntries": [
+          {
+            "modifiers": [
+              {
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "5334-5605-242c-d75e",
+                    "shared": true,
+                    "childName": "Assets"
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "5334-5605-242c-d75e",
+                    "shared": true,
+                    "childName": "Battlefield Assets"
+                  }
+                ],
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Allegiance",
+                "hidden": false,
+                "id": "95b9-8c82-2889-fb8b",
+                "targetId": "c408-52f1-b632-4c82"
+              },
+              {
+                "name": "Army Configuration",
+                "hidden": false,
+                "id": "9ad5-bc0f-1944-fee6",
+                "targetId": "abfa-86ab-1726-077a"
+              },
+              {
+                "name": "Asset",
+                "hidden": false,
+                "id": "5ddf-c70c-c587-b43c",
+                "targetId": "b720-ea51-7339-6a08"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "forces",
+                "scope": "parent",
+                "shared": true,
+                "id": "3513-b756-b04d-ab69",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "forces",
+                "scope": "parent",
+                "shared": true,
+                "id": "a304-1aec-f10e-4607",
+                "includeChildSelections": false
+              }
+            ],
+            "name": "Battlefield Assets",
+            "id": "d68d-6aff-7d56-4312",
+            "hidden": true
+          }
+        ],
+        "name": "Battlefield Assets",
+        "id": "10ac-064d-70cc-cc99",
+        "hidden": false
+      }
+    ],
+    "entryLinks": [
+      {
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "7e73-4d58-50c9-5a81",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "The Attacker Asset Trait",
+            "id": "047d-9bbf-268a-743e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dcb6-3210-cd5a-9d00"
+          }
+        ],
+        "import": true,
+        "name": "Disruption Emitter Charges",
+        "hidden": false,
+        "id": "ded0-3184-384d-e4d5",
+        "type": "selectionEntry",
+        "targetId": "9f06-57fd-b80a-1172"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "896f-9cd0-cd68-2862",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "import": true,
+        "name": "Strategic Cogitator Array",
+        "hidden": false,
+        "id": "aa98-b6d7-0420-3ae3",
+        "type": "selectionEntry",
+        "targetId": "a9df-6474-667c-6aee"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "20c4-862b-3b5d-f84d",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "The Defender Asset Trait",
+            "id": "f96d-304a-700d-4b0b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ad11-1191-3191-7509"
+          },
+          {
+            "name": "The Minefield Asset Trait",
+            "id": "e608-5519-803d-c4a7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "1d82-cb03-376e-f062"
+          }
+        ],
+        "import": true,
+        "name": "Graviton Snares",
+        "hidden": false,
+        "id": "0118-03b1-4461-33bd",
+        "type": "selectionEntry",
+        "targetId": "0196-e7d7-7a49-8e00"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "1596-adb0-c8d9-5b5c",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "The Explosive Asset Trait",
+            "id": "c6d7-717c-a2ae-0129",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "29af-b990-5cfb-cf20"
+          }
+        ],
+        "import": true,
+        "name": "Forward Ammunition Drop",
+        "hidden": false,
+        "id": "3f15-785f-15c3-5117",
+        "type": "selectionEntry",
+        "targetId": "aae5-1bb5-e4c1-595e"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "e4cb-da99-cb9c-ca41",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "The Defender Asset Trait",
+            "id": "bda5-3c58-5709-2753",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ad11-1191-3191-7509"
+          }
+        ],
+        "import": true,
+        "name": "Auto-Repair Servitor Clade",
+        "hidden": false,
+        "id": "355e-60d6-ade7-b29a",
+        "type": "selectionEntry",
+        "targetId": "2f1a-ca50-8f54-abfb"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "d6fd-267d-8a3f-6f0a",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "The Defender Asset Trait",
+            "id": "b0d5-9255-f879-7a29",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ad11-1191-3191-7509"
+          },
+          {
+            "name": "The Explosive Asset Trait",
+            "id": "83f0-cd34-dd9c-887d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "29af-b990-5cfb-cf20"
+          }
+        ],
+        "import": true,
+        "name": "Contingency Device",
+        "hidden": false,
+        "id": "21b2-f34b-ae9b-ed4e",
+        "type": "selectionEntry",
+        "targetId": "41b1-f4a4-fb8a-cdb7"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "c04f-b897-b6f2-b0fb",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "The Defender Asset Trait",
+            "id": "448c-1f7c-7070-5270",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ad11-1191-3191-7509"
+          },
+          {
+            "name": "The Minefield Asset Trait",
+            "id": "987e-e2d0-ec32-0828",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "1d82-cb03-376e-f062"
+          }
+        ],
+        "import": true,
+        "name": "Frag Minefield",
+        "hidden": false,
+        "id": "2ca2-6fcc-808f-1e6c",
+        "type": "selectionEntry",
+        "targetId": "70c6-7a69-afd3-6044"
+      },
+      {
+        "infoLinks": [
+          {
+            "name": "The Defender Asset Trait",
+            "id": "4c90-1a19-ff08-1bf6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ad11-1191-3191-7509"
+          },
+          {
+            "name": "The Minefield Asset Trait",
+            "id": "6d63-2c83-b37a-d0ce",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "1d82-cb03-376e-f062"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "978f-120c-6063-0ab8",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "import": true,
+        "name": "Melta Minefield",
+        "hidden": false,
+        "id": "0dd3-b5c3-2b0b-217d",
+        "type": "selectionEntry",
+        "targetId": "5244-e331-d959-02db"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "0101-2433-7a8c-0f3c",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "The Defender Asset Trait",
+            "id": "4047-963c-726e-e9cd",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ad11-1191-3191-7509"
+          },
+          {
+            "name": "The Minefield Asset Trait",
+            "id": "6516-c9c5-c81a-ab8a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "1d82-cb03-376e-f062"
+          }
+        ],
+        "import": true,
+        "name": "Neutron Bomb",
+        "hidden": false,
+        "id": "e08b-45c9-9920-768f",
+        "type": "selectionEntry",
+        "targetId": "a74f-010a-42ac-9d13"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "bff0-ab70-3e90-5cd6",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "The Attacker Asset Trait",
+            "id": "e769-b398-512f-9d59",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dcb6-3210-cd5a-9d00"
+          }
+        ],
+        "import": true,
+        "name": "Shroud Canister",
+        "hidden": false,
+        "id": "c7f9-ccf6-01ac-a5ff",
+        "type": "selectionEntry",
+        "targetId": "02e0-ca11-ac55-0228"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "766b-1041-f97e-d2ee",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "The Defender Asset Trait",
+            "id": "9fde-7ecc-cc6e-5d7b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ad11-1191-3191-7509"
+          }
+        ],
+        "import": true,
+        "name": "Tank Traps",
+        "hidden": false,
+        "id": "b6a0-c840-8a65-6d8c",
+        "type": "selectionEntry",
+        "targetId": "6a6b-ab2e-2570-ff12"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "b720-ea51-7339-6a08",
+            "id": "fac0-21df-b488-fba0",
+            "primary": true,
+            "name": "Asset"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "The Attacker Asset Trait",
+            "id": "234f-893f-c2ff-726d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dcb6-3210-cd5a-9d00"
+          }
+        ],
+        "import": true,
+        "name": "Wayfinder Device",
+        "hidden": false,
+        "id": "195d-5927-ef9f-7e6a",
+        "type": "selectionEntry",
+        "targetId": "897a-1ca7-ce3c-c361"
+      }
+    ],
+    "costTypes": [
+      {
+        "modifiers": [
+          {
+            "type": "set",
+            "value": false,
+            "field": "hidden"
+          }
+        ],
+        "name": "Asset Point(s)",
+        "id": "29b4-fb27-da17-1e21",
+        "defaultCostLimit": -1,
+        "hidden": true
+      }
+    ],
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Special Rules",
+        "id": "b2c2-5ac2-a2af-1f89",
+        "targetId": "106b-693b-99f2-00c3"
       }
     ],
     "sharedRules": [
       {
+        "description": "A Battlefield Asset with the Minefield Trait must be set up with the centre of the Marker anywhere on the Battlefield that is more than 6\" from the centre of any other Battlefield Asset Markers with the Minefield Asset Trait, and not within an opponent's Deployment Zone.",
         "name": "The Minefield Asset Trait",
         "id": "1d82-cb03-376e-f062",
-        "description": "A Battlefield Asset with the Minefield Trait must be set up with the centre of the Marker anywhere on the Battlefield that is more than 6\" from the centre of any other Battlefield Asset Markers with the Minefield Asset Trait, and not within an opponent's Deployment Zone.",
         "hidden": false
       },
       {
+        "description": "If a Blast Marker covers the centre of a Battlefield Asset Marker with the Explosive Asset Trait, then after that Shooting Attack has been resolved, the Controlling Player of the Unit making the Shooting Attack must roll one Dice. On a 4+, every Unit within 6\" of the centre of that Battlefield Asset Marker suffers a number of hits equal to the Asset Points cost of that Marker. Each such hit has a Strength of 8, an AP of '-', a Damage of 1, and the Breaching (5+) and Shred (5+) Special Rules.",
         "name": "The Explosive Asset Trait",
         "id": "29af-b990-5cfb-cf20",
-        "description": "If a Blast Marker covers the centre of a Battlefield Asset Marker with the Explosive Asset Trait, then after that Shooting Attack has been resolved, the Controlling Player of the Unit making the Shooting Attack must roll one Dice. On a 4+, every Unit within 6\" of the centre of that Battlefield Asset Marker suffers a number of hits equal to the Asset Points cost of that Marker. Each such hit has a Strength of 8, an AP of '-', a Damage of 1, and the Breaching (5+) and Shred (5+) Special Rules.",
         "hidden": false,
-        "page": 40,
-        "publicationId": "10e2-87c7-4862-2cc4"
+        "publicationId": "10e2-87c7-4862-2cc4",
+        "page": 40
       },
       {
+        "description": "Battlefield Assets with the Attacker Trait may only be selected by the Player taking that role in the Mission being played.",
         "name": "The Attacker Asset Trait",
         "id": "dcb6-3210-cd5a-9d00",
-        "description": "Battlefield Assets with the Attacker Trait may only be selected by the Player taking that role in the Mission being played.",
         "hidden": false
       },
       {
+        "description": "Battlefield Assets with the Defender Trait may only be selected by the Player taking that role in the Mission being played.",
         "name": "The Defender Asset Trait",
         "id": "ad11-1191-3191-7509",
-        "description": "Battlefield Assets with the Defender Trait may only be selected by the Player taking that role in the Mission being played.",
         "hidden": false
       }
     ],
-    "sharedSelectionEntries": [
-      {
-        "name": "Disruption Emitter Charges",
-        "id": "9f06-57fd-b80a-1172",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 3}
-        ],
-        "modifiers": [
-          {
-            "comment": "Hidden From Defenders",
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "81e6-a6ec-25e5-68ff",
-                "childName": "Defender",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Disruption Emitter Charges",
-            "id": "40a5-a5a5-8ab9-82c7",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {"name": "Summary", "$text": "Disruption Emitters apply a negative modifier to certain characteristics of nearby models.", "typeId": "3dcf-9034-fc2d-cd56"},
-              {
-                "name": "Setup",
-                "$text": "Each Disruption Emitter Marker must be set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield that is not within their Opponent's deployment zone.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "While any Models from a Unit are within 6\" of the centre of a Disruption Emitter Marker, modify the Leadership, Cool, Intelligence, and Willpower Characteristics of all Models in that Unit by -1.",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {
-                "name": "How To Destroy",
-                "$text": "At the end of each Battle Turn, the player that selected it rolls one Dice for each Disruption Emitter Marker they set up. On a 1, that Disruption Emitter Marker is removed from the Battlefield.",
-                "typeId": "6888-e488-df3f-edcf"
-              },
-              {"name": "Traits", "$text": "Attacker", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Forward Ammunition Drop",
-        "id": "aae5-1bb5-e4c1-595e",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 2}
-        ],
-        "profiles": [
-          {
-            "name": "Forward Ammunition Drop",
-            "id": "736d-8b12-034f-b741",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {"name": "Summary", "$text": "A Unit near a Forward Ammunition Drop may gain a benefit when making certain Shooting Attacks.", "typeId": "3dcf-9034-fc2d-cd56"},
-              {
-                "name": "Setup",
-                "$text": "Each Forward Ammunition Drop Marker is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield more than 6\" away from that Player's Deployment Zone.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "When a Unit that has Models within 3\" of the centre of a Forward Ammunition Drop Marker is selected to make a Shooting Attack, the Controlling Player of that Unit can declare they will activate that Marker. Only one Forward Ammunition Drop Marker can be utilised per Shooting Attack. When they do, that Player can nominate one Weapon which Models in that Unit have that has a Base Ranged Strength of 5 or less, and does not have the Heavy (X), Ordnance (X), Blast (X), or Template Special Rules. Until that Shooting Attack is resolved, the Firepower Characteristic of each nominated Weapon in that unit is increased by +1.",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {
-                "name": "How To Destroy",
-                "$text": "After that Shooting Attack has been resolved, the Controlling Player of the Unit making the Shooting Attack rolls one Dice. On a 4+, the Forward Ammunition Drop Marker is removed from the Battlefield.",
-                "typeId": "6888-e488-df3f-edcf"
-              },
-              {"name": "Traits", "$text": "Explosive", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Graviton Snares",
-        "id": "0196-e7d7-7a49-8e00",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 1}
-        ],
-        "modifiers": [
-          {
-            "comment": "Hidden From Attackers",
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "affa-726d-7fee-f272",
-                "childName": "Attacker",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Graviton Snares",
-            "id": "d099-232c-7c72-c88d",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {"name": "Summary", "$text": "Models close to a Graviton Snare risk becoming Pinned.", "typeId": "3dcf-9034-fc2d-cd56"},
-              {
-                "name": "Setup",
-                "$text": "Each Graviton Snare Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "If a Unit is selected to move in the Movement Phase or make a Charge Move while any Models from that Unit are within 6\" of the centre of a Graviton Snare Marker, the Controlling Player of that Unit must roll one Dice for each Model from that Unit that is within 6\" of the centre of that Graviton Snare Marker. On a 1, that Model triggers the snare and the Unit that includes that Model gains the Pinned Tactical Status, and that Graviton Snare Marker is removed from the Battlefield.",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {"name": "How To Destroy", "$text": "Removed when triggered (see above).", "typeId": "6888-e488-df3f-edcf"},
-              {"name": "Traits", "$text": "Defender, Minefield", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Strategic Cogitator Array",
-        "id": "a9df-6474-667c-6aee",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Strategic Cogitator Array",
-            "id": "4e72-9a8e-c84e-3541",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {"name": "Summary", "$text": "A Strategic Cogitator Array allows a Player to increase the value of a Secondary Objective.", "typeId": "3dcf-9034-fc2d-cd56"},
-              {
-                "name": "Setup",
-                "$text": "Each Strategic Cogitator Array is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere within that Player's Deployment Zone.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "If the Active Player has a Model with the Command Sub-Type within 3\" of the centre of a Strategic Cogitator Array Marker at the end of their Movement Phase, they can request new orders. If they do so, that Player rolls one Dice. If the result is higher than the current Battle Turn number, the request is successful and that Player may select one Secondary Objective in use in that Battle and increate the value of X on that Secondary Objective by 1, and then the Strategic Cogitator Array Marker is removed from the Battlefield. Each Model with the Command Sub-Type can only request new orders once per Turn, and each Secondary Objective can only have its value increased once in this manner",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {"name": "How To Destroy", "$text": "Removed when used successfully (see above).", "typeId": "6888-e488-df3f-edcf"},
-              {"name": "Traits", "$text": "-", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Melta Minefield",
-        "id": "5244-e331-d959-02db",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Asset", "id": "94b6-3dd7-6b23-8348", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 2}
-        ],
-        "modifiers": [
-          {
-            "comment": "Hidden From Attackers",
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "affa-726d-7fee-f272",
-                "childName": "Attacker",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Melta Minefield",
-            "id": "f366-6ac2-e3cb-a165",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {"name": "Summary", "$text": "Melta Mines may be triggered by larger war machines.", "typeId": "3dcf-9034-fc2d-cd56"},
-              {
-                "name": "Setup",
-                "$text": "Each Melta Minefield Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "If a Unit that contains any Models with the Walker or Vehicle Types ends a move within 6\" of the centre of a Melta Minefield Marker, the Controlling Player of that Unit must roll a number of Dice for each Model from that Unit that is within 6\" of the centre of that Melta Minefield Marker. The number of Dice rolled for each Model is equal to the Base Wounds or Hull Points Characteristic of that Model. For each mine that is triggered, the Unit suffers a Hit, resolved against the weakest Armour Facing (if the unit has Armour Values) with a Strength of 9, an AP of 2, and a Damage of 2.",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {
-                "name": "How To Destroy",
-                "$text": "Once these its have been resolved, the Controlling Player of the Unit whose move triggered a mine rolls a Dice. On a 4+, that Melta Minefield Marker is removed from the Battlefield.",
-                "typeId": "6888-e488-df3f-edcf"
-              },
-              {"name": "Traits", "$text": "Defender, Minefield", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Frag Minefield",
-        "id": "70c6-7a69-afd3-6044",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Asset", "id": "e779-a38b-6cc9-58df", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 2}
-        ],
-        "modifiers": [
-          {
-            "comment": "Hidden From Attackers",
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "affa-726d-7fee-f272",
-                "childName": "Attacker",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Frag Minefield",
-            "id": "4668-6653-39a3-1eca",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {"name": "Summary", "typeId": "3dcf-9034-fc2d-cd56"},
-              {
-                "name": "Setup",
-                "$text": "Each Frag Minefield Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "If a Unit ends a move with one or more Models within 6\" of the centre of a Frag Minefield Marker, the Controlling Player of that Unit must roll one Dice for each Model from such a Unit that is within 6\" of the centre of that Frag Minefield Marker. On a 1, that Model triggers a mine. Centre a 3\" Blast Marker on that Model. Every Unit that has any Models under one of these Blast Markers suffers 1 Hit for each Model from that Unit that is under each Blast Marker. Each such Hit has a Strength of 5, an AP of 5, and a Damage of 1.",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {
-                "name": "How To Destroy",
-                "$text": "Once these its have been resolved, the Controlling Player of the Moving Unit rolls a Dice. On a 4+, that Frag Minefield Marker is removed from the Battlefield.",
-                "typeId": "6888-e488-df3f-edcf"
-              },
-              {"name": "Traits", "$text": "Defender, Minefield", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Contingency Device",
-        "id": "41b1-f4a4-fb8a-cdb7",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Asset", "id": "e10a-f5f2-36c5-84d3", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 2}
-        ],
-        "modifiers": [
-          {
-            "comment": "Hidden From Attackers",
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "affa-726d-7fee-f272",
-                "childName": "Attacker",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Contingency Device",
-            "id": "f53e-1e54-6adb-8120",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {"name": "Summary", "$text": "A Contingency Device may be detonated when a nearby Unit falls back.", "typeId": "3dcf-9034-fc2d-cd56"},
-              {
-                "name": "Setup",
-                "$text": "Each Contingency Device Marker is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere within that Payer's Deployment Zone.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "If the Player who set up a Contingency Device Marker would make a Panic Check during the Fight Sub-Phase for a Unit with at least one Model within 3\" of the centre of a Contingency Device Marker in their Deployment Zone, they can attempt to trigger the device. If they do so, that Player makes an Intelligence Check for that Unit. If the Check is successful, the device is triggered. When the device is triggered, every unit with at least one Model within 6\" of the centre of that Contingency Device Marker suffers a number of Hits equal to the number of Models from that Unit that are within 6\" of the centre of that Marker. Each such Hit has a Strength of 7, an AP of4, a Damage of 2, and the Breaching (5+) and Shred (6+) Special Rules.",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {
-                "name": "How To Destroy",
-                "$text": "Once these Hits have been resolved, that Contingency Device Marker is removed from the Battlefield and the Panic Check is made for the Unit as normal.",
-                "typeId": "6888-e488-df3f-edcf"
-              },
-              {"name": "Traits", "$text": "Defender, Explosive", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Tank Traps",
-        "id": "6a6b-ab2e-2570-ff12",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Asset", "id": "3eaf-4045-9bc9-08e3", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 1}
-        ],
-        "modifiers": [
-          {
-            "comment": "Hidden From Attackers",
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "affa-726d-7fee-f272",
-                "childName": "Attacker",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Tank Traps",
-            "id": "c7d2-412f-f484-04b6",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {"name": "Summary", "$text": "Tank Traps block the Movement of Vehicles.", "typeId": "3dcf-9034-fc2d-cd56"},
-              {
-                "name": "Setup",
-                "$text": "Each Tank Traps Marker must be a maximum of 60mm wide and be set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield that is not within their Opponent's Deployment Zone.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "A Tank Traps Marker is treated as Impassable terrain for Vehicle Models (this is an exception to the Battlefield Asset Markers Rules).",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {
-                "name": "How To Destroy",
-                "$text": "Each Tank Traps Marker can be selected as the Target of Charges and of Ranged and Melee Attacks, and is treated as a Model with the Vehicle Type with a single Facing with an Armour Value of 14 and a Hull Points Characteristic of 2. A Each Tank Traps Marker cannot gain any Tactical Statuses.",
-                "typeId": "6888-e488-df3f-edcf"
-              },
-              {"name": "Traits", "$text": "Defender", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Shroud Canister",
-        "id": "02e0-ca11-ac55-0228",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 1}
-        ],
-        "modifiers": [
-          {
-            "comment": "Hidden From Defenders",
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "81e6-a6ec-25e5-68ff",
-                "childName": "Defender",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Shroud Canister",
-            "id": "4ddd-5d7c-813f-79b0",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {"name": "Summary", "$text": "When triggered, Shroud Canisters can provide the Shrouded (X) Special Rule to Models nearby.", "typeId": "3dcf-9034-fc2d-cd56"},
-              {
-                "name": "Setup",
-                "$text": "Each Shroud Canister Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "In the Effects Sub-Phase of the End Phase of their Player Turn, the Player who set up each Shroud Canister can select to trigger it. If they do, until the Shroud Canister Marker is removed:\n- Models within 3\" of the centre of a triggered Shroud Canister Marker have the Shrouded (4+) Special Rule.\n- Models within 6\" of the centre of a triggered Shroud Canister Marker have the Shrouded (5+) Special Rule.\n- Models within 9\" of the centre of a triggered Shroud Canister Marker have the Shrouded (6+) Special Rule.",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {
-                "name": "How To Destroy",
-                "$text": "In the Effects Sub-Phase of the End Phase of the next Player Turn, a triggered Shroud Canister is removed from the Battlefield.",
-                "typeId": "6888-e488-df3f-edcf"
-              },
-              {"name": "Traits", "$text": "Attacker", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Neutron Bomb",
-        "id": "a74f-010a-42ac-9d13",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Asset", "id": "1a65-e6ba-025e-3161", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 1}
-        ],
-        "modifiers": [
-          {
-            "comment": "Hidden From Attackers",
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "affa-726d-7fee-f272",
-                "childName": "Attacker",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Neutron Bomb",
-            "id": "b616-d64c-7dc9-e233",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {
-                "name": "Summary",
-                "$text": "When triggered, Vehicle and Walker Models near a Neutron Bomb may gain the Suppressed Tactical Status.",
-                "typeId": "3dcf-9034-fc2d-cd56"
-              },
-              {
-                "name": "Setup",
-                "$text": "Each Neutron Bomb Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "If a Unit is selected to move in the Movement Phase or make a Charge Move while any Models from that Unit with the Vehicle or Walker Type are within 6\" of the centre of a Neutron Bomb Marker, the Controlling Player of that Unit must roll one Dice for each Model from that Unit which is within 6\" of the centre of a Neutron Bomb Marker. On a 4+, that Model triggers the Neutron Bomb and the Unit that includes that Model gains the Suppressed Tactical Status, and that Neutron Bomb Marker is removed from the Battlefield.",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {"name": "How To Destroy", "$text": "Removed when triggered (see above).", "typeId": "6888-e488-df3f-edcf"},
-              {"name": "Traits", "$text": "Defender, Minefield", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Auto-Repair Servitor Clade",
-        "id": "2f1a-ca50-8f54-abfb",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Asset", "id": "acf4-e204-704c-120e", "primary": true, "targetId": "b720-ea51-7339-6a08"}],
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 2}
-        ],
-        "infoLinks": [
-          {
-            "name": "Auto-Repair (X)",
-            "id": "5477-baa8-6883-0a9a",
-            "comment": "4+",
-            "hidden": false,
-            "targetId": "3973-ed50-1482-ff4a",
-            "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Auto-Repair (4+)"}]
-          }
-        ],
-        "modifiers": [
-          {
-            "comment": "Hidden From Attackers",
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "affa-726d-7fee-f272",
-                "childName": "Attacker",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Auto-Repair Servitor Clade",
-            "id": "785c-4a10-c618-056e",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {
-                "name": "Summary",
-                "$text": "Auto-Repair Servitor Clades can assist in removing Tactical Statuses from friendly Vehicle Models.",
-                "typeId": "3dcf-9034-fc2d-cd56"
-              },
-              {
-                "name": "Setup",
-                "$text": "Each Auto-Repair Servitor Clade Marker is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere within that Player's Deployment Zone.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "At the start of the Defender's Statuses Sub-Phase, that Player can select one Model with the Vehicle Type that is within 4\" of the centre of the Auto-Repair Servitor Clade Marker they set up. Until the end of that Sub-Phase, that Vehicle has the Auto-Repair (4+) Special Rule.",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {
-                "name": "How To Destroy",
-                "$text": "If a Blast Marker covers the centre of an Auto-Repair Servitor Clade Marker, then after that Shooting Attack has been resolved, the Controlling Player of the Unit making the Shooting Attack must roll one Dice. On a 4+, that Auto-Repair Servitor Clade Marker is removed.",
-                "typeId": "6888-e488-df3f-edcf"
-              },
-              {"name": "Traits", "$text": "Defender", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Wayfinder Device",
-        "id": "897a-1ca7-ce3c-c361",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-          {"name": "Asset Point(s)", "typeId": "29b4-fb27-da17-1e21", "value": 2}
-        ],
-        "modifiers": [
-          {
-            "comment": "Hidden From Defenders",
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "81e6-a6ec-25e5-68ff",
-                "childName": "Defender",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Wayfinder Device",
-            "id": "c4c7-d41f-c118-d2c4",
-            "hidden": false,
-            "typeId": "7ae0-de68-04c6-8d8f",
-            "typeName": "Asset",
-            "characteristics": [
-              {"name": "Summary", "$text": "A Wayfinder Device can grant nearby Models the Move Through Cover Special Rule.", "typeId": "3dcf-9034-fc2d-cd56"},
-              {
-                "name": "Setup",
-                "$text": "Each Wayfinder Device Marker must be set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield that is not within their Opponent's Deployment Zone.",
-                "typeId": "e965-60bc-cd79-63e7"
-              },
-              {
-                "name": "Effect",
-                "$text": "In the Effects Sub-Phase of their Player Turn, the Player who set up a Wayfinder Device can select to trigger it. If they do, they can select one Area of Difficult or Dangerous Terrain that is wholly within 12\" of the centre of that Wayfinder Device Marker. Models from that Player's Army are treated as having the Move Through Cover Special Rule while moving through the selected Area Terrain during that Turn.",
-                "typeId": "bbd3-5482-ed3a-a3b3"
-              },
-              {"name": "How To Destroy", "$text": "N/A", "typeId": "6888-e488-df3f-edcf"},
-              {"name": "Traits", "$text": "Attacker", "typeId": "a1e3-4f30-fa22-d127"}
-            ]
-          }
-        ]
-      }
-    ]
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "library": false,
+    "id": "5334-5605-242c-d75e",
+    "name": "Battlefield Assets",
+    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
+    "gameSystemRevision": 1,
+    "revision": 2,
+    "authorName": "The4D6",
+    "battleScribeVersion": 2.03,
+    "type": "catalogue",
+    "authorContact": "https://github.com/BSData/horus-heresy-3rd-edition/issues",
+    "authorUrl": "https://github.com/BSData/horus-heresy-3rd-edition/"
   }
 }

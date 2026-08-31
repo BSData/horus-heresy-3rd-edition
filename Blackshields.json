@@ -1,247 +1,42 @@
 {
   "catalogue": {
-    "name": "Blackshields",
-    "id": "c195-9a6a-a56b-4634",
-    "battleScribeVersion": 2.03,
-    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
-    "gameSystemRevision": 54,
-    "library": false,
-    "revision": 3,
-    "type": "catalogue",
-    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
-      {"name": "Legiones Astartes", "id": "c2fd-27d7-96c1-290b", "importRootEntries": true, "targetId": "9b32-f350-6aa9-9c09", "type": "catalogue"},
-      {"name": "Special Rules", "id": "d16d-3512-4e61-2e6f", "targetId": "106b-693b-99f2-00c3", "type": "catalogue"},
-      {"name": "Weapons", "id": "55f9-970b-9a16-bd1d", "targetId": "a22d-4dd0-c59d-57d3", "type": "catalogue"},
-      {"name": "Wargear", "id": "1397-7864-8b0a-b3af", "targetId": "fcc7-4319-bb04-2c25", "type": "catalogue"},
-      {"name": "Traits", "id": "1aca-0cc9-47e1-f620", "targetId": "df17-7a05-0826-6e22", "type": "catalogue"},
-      {"name": "Mechanicum", "id": "c620-7423-ea4e-dcf2", "targetId": "2f57-6e9d-8a7b-5c2e", "type": "catalogue"}
-    ],
-    "entryLinks": [
       {
-        "name": "Endryd Haar",
-        "id": "cf9a-dc6b-56c2-1ef4",
-        "hidden": false,
-        "import": true,
-        "targetId": "e9a1-962f-bc19-7c86",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "High Command", "id": "7944-f1c8-2aa2-9abc", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}]
+        "type": "catalogue",
+        "name": "Legiones Astartes",
+        "id": "c2fd-27d7-96c1-290b",
+        "targetId": "9b32-f350-6aa9-9c09",
+        "importRootEntries": true
       },
       {
-        "name": "Rite of War",
-        "id": "1b10-1916-d98e-8513",
-        "hidden": false,
-        "import": true,
-        "targetId": "93b0-888c-694e-190f",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Army Configuration", "id": "15f7-fa10-ec8e-7dbf", "primary": true, "targetId": "abfa-86ab-1726-077a"}]
+        "type": "catalogue",
+        "name": "Special Rules",
+        "id": "d16d-3512-4e61-2e6f",
+        "targetId": "106b-693b-99f2-00c3"
       },
       {
-        "name": "Oaths of Moment",
-        "id": "5648-22da-ec9e-3d54",
-        "hidden": false,
-        "import": true,
-        "targetId": "b1f1-e5be-cfaa-3df9",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Army Configuration", "id": "82e8-72dc-b031-283f", "primary": true, "targetId": "abfa-86ab-1726-077a"}]
+        "type": "catalogue",
+        "name": "Weapons",
+        "id": "55f9-970b-9a16-bd1d",
+        "targetId": "a22d-4dd0-c59d-57d3"
       },
       {
-        "name": "Castellax Battle Maniple",
-        "id": "69cc-efef-5c43-9b29",
-        "hidden": false,
-        "import": true,
-        "targetId": "e8d6-2ba5-d10d-d617",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Support - Castellax Battle Maniple Only", "id": "b0f5-8811-b797-71b7", "primary": true, "targetId": "61eb-11e2-1592-3161"}],
-        "infoLinks": [{"name": "Vagus", "id": "3f7b-70e7-758a-a2db", "hidden": false, "targetId": "b713-a3cb-67da-5bb6", "type": "profile"}],
-        "modifierGroups": [
-          {
-            "comment": "Vagus",
-            "type": "and",
-            "conditions": [
-              {
-                "childId": "2dfc-259d-d11b-dc8b",
-                "childName": "Cohorts Vagus Detachment",
-                "field": "forces",
-                "includeChildSelections": false,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ],
-            "modifiers": [
-              {"field": "category", "type": "remove", "value": "df10-4634-c1aa-f6e0"},
-              {"field": "category", "type": "add", "value": "a59f-578b-8e20-efa1"},
-              {"field": "category", "type": "set-primary", "value": "61eb-11e2-1592-3161"}
-            ]
-          }
-        ]
+        "type": "catalogue",
+        "name": "Wargear",
+        "id": "1397-7864-8b0a-b3af",
+        "targetId": "fcc7-4319-bb04-2c25"
       },
       {
-        "name": "Castellax Destructor Maniple",
-        "id": "5d38-e1d8-0960-7d00",
-        "hidden": false,
-        "import": true,
-        "targetId": "112f-1168-d07c-7f8f",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Heavy Assault - Castellax Destructor Maniple only", "id": "a2ec-5bf7-c8b0-0006", "primary": true, "targetId": "d49e-048b-a8e2-ba52"}],
-        "infoLinks": [{"name": "Vagus", "id": "b8fd-9599-d60d-c0ef", "hidden": false, "targetId": "b713-a3cb-67da-5bb6", "type": "profile"}],
-        "modifierGroups": [
-          {
-            "comment": "Vagus",
-            "type": "and",
-            "conditions": [
-              {
-                "childId": "2dfc-259d-d11b-dc8b",
-                "childName": "Cohorts Vagus Detachment",
-                "field": "forces",
-                "includeChildSelections": false,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ],
-            "modifiers": [
-              {"field": "category", "type": "remove", "value": "df10-4634-c1aa-f6e0"},
-              {"field": "category", "type": "add", "value": "a59f-578b-8e20-efa1"},
-              {"field": "category", "type": "set-primary", "value": "d49e-048b-a8e2-ba52"}
-            ]
-          }
-        ]
+        "type": "catalogue",
+        "name": "Traits",
+        "id": "1aca-0cc9-47e1-f620",
+        "targetId": "df17-7a05-0826-6e22"
       },
       {
-        "name": "Domitar Battle Maniple",
-        "id": "7a9c-2466-a30b-b8c2",
-        "hidden": false,
-        "import": true,
-        "targetId": "cefd-9aca-871d-3263",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Elites - Domitar Battle Maniple Only", "id": "1b05-ec5f-2e7b-d5e6", "primary": true, "targetId": "826c-7b05-0f62-8b16"}],
-        "infoLinks": [{"name": "Vagus", "id": "2f69-c95d-fe0f-2e43", "hidden": false, "targetId": "b713-a3cb-67da-5bb6", "type": "profile"}],
-        "modifierGroups": [
-          {
-            "comment": "Vagus",
-            "type": "and",
-            "conditions": [
-              {
-                "childId": "2dfc-259d-d11b-dc8b",
-                "childName": "Cohorts Vagus Detachment",
-                "field": "forces",
-                "includeChildSelections": false,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ],
-            "modifiers": [
-              {"field": "category", "type": "remove", "value": "df10-4634-c1aa-f6e0"},
-              {"field": "category", "type": "add", "value": "a59f-578b-8e20-efa1"},
-              {"field": "category", "type": "set-primary", "value": "826c-7b05-0f62-8b16"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Thanatar Siege Maniple",
-        "id": "22db-9054-a96b-6973",
-        "hidden": false,
-        "import": true,
-        "targetId": "3833-2f09-7ec7-b5f5",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "War Engine - Thanatar Siege Maniple only", "id": "f645-889b-40b5-056f", "primary": true, "targetId": "64d7-855f-726b-803f"}],
-        "infoLinks": [{"name": "Vagus", "id": "c601-90cf-caca-33d9", "hidden": false, "targetId": "b713-a3cb-67da-5bb6", "type": "profile"}],
-        "modifierGroups": [
-          {
-            "comment": "Vagus",
-            "type": "and",
-            "conditions": [
-              {
-                "childId": "2dfc-259d-d11b-dc8b",
-                "childName": "Cohorts Vagus Detachment",
-                "field": "forces",
-                "includeChildSelections": false,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ],
-            "modifiers": [
-              {"field": "category", "type": "remove", "value": "df10-4634-c1aa-f6e0"},
-              {"field": "category", "type": "add", "value": "a59f-578b-8e20-efa1"},
-              {"field": "category", "type": "set-primary", "value": "64d7-855f-726b-803f"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Vorax Attack Maniple",
-        "id": "cd18-6659-22ba-14bb",
-        "hidden": false,
-        "import": true,
-        "targetId": "de2e-f9b5-abe6-b8b5",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Recon - Vorax Attack Maniple Only", "id": "60d7-4cb7-a948-40d7", "primary": true, "targetId": "0fb1-2125-2a33-b094"}],
-        "infoLinks": [{"name": "Vagus", "id": "6882-2cba-d1fa-0bcc", "hidden": false, "targetId": "b713-a3cb-67da-5bb6", "type": "profile"}],
-        "modifierGroups": [
-          {
-            "comment": "Vagus",
-            "type": "and",
-            "conditions": [
-              {
-                "childId": "2dfc-259d-d11b-dc8b",
-                "childName": "Cohorts Vagus Detachment",
-                "field": "forces",
-                "includeChildSelections": false,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ],
-            "modifiers": [
-              {"field": "category", "type": "remove", "value": "df10-4634-c1aa-f6e0"},
-              {"field": "category", "type": "add", "value": "a59f-578b-8e20-efa1"},
-              {"field": "category", "type": "set-primary", "value": "0fb1-2125-2a33-b094"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Vultarax Stratos Squadron",
-        "id": "5be2-b6ad-262f-c9c1",
-        "hidden": false,
-        "import": true,
-        "targetId": "710e-f1ea-0061-d3cb",
-        "type": "selectionEntry",
-        "categoryLinks": [{"name": "Fast Attack - Vultarax Stratos Squadron Only", "id": "8789-dc9e-48f0-2182", "primary": true, "targetId": "7db9-74d1-6ba1-061e"}],
-        "infoLinks": [{"name": "Vagus", "id": "8217-f722-729d-fd9b", "hidden": false, "targetId": "b713-a3cb-67da-5bb6", "type": "profile"}],
-        "modifierGroups": [
-          {
-            "comment": "Vagus",
-            "type": "and",
-            "conditions": [
-              {
-                "childId": "2dfc-259d-d11b-dc8b",
-                "childName": "Cohorts Vagus Detachment",
-                "field": "forces",
-                "includeChildSelections": false,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ],
-            "modifiers": [
-              {"field": "category", "type": "remove", "value": "df10-4634-c1aa-f6e0"},
-              {"field": "category", "type": "add", "value": "a59f-578b-8e20-efa1"},
-              {"field": "category", "type": "set-primary", "value": "7db9-74d1-6ba1-061e"}
-            ]
-          }
-        ]
+        "type": "catalogue",
+        "name": "Mechanicum",
+        "id": "c620-7423-ea4e-dcf2",
+        "targetId": "2f57-6e9d-8a7b-5c2e"
       }
     ],
     "publications": [
@@ -249,862 +44,2438 @@
         "name": " Legiones Astartes: Blackshields",
         "id": "92ae-2411-bd7d-3263",
         "hidden": false,
-        "publicationDate": "9th Oct 2025",
+        "shortName": "Blackshields",
         "publisher": " Legiones Astartes: Blackshields",
-        "publisherUrl": "https://assets.warhammer-community.com/eng_09-10_thehorusheresy_legacies_blackshields-19qd4ghgwp-azrdg7jskx.pdf",
-        "shortName": "Blackshields"
+        "publicationDate": "9th Oct 2025",
+        "publisherUrl": "https://assets.warhammer-community.com/eng_09-10_thehorusheresy_legacies_blackshields-19qd4ghgwp-azrdg7jskx.pdf"
       }
     ],
     "sharedSelectionEntries": [
       {
-        "name": "Endryd Haar",
-        "id": "e9a1-962f-bc19-7c86",
-        "hidden": false,
-        "import": true,
-        "type": "unit",
-        "constraints": [
-          {
-            "id": "ee2f-8e17-c8c5-c719",
-            "field": "selections",
-            "includeChildForces": true,
-            "includeChildSelections": true,
-            "scope": "roster",
-            "shared": true,
-            "type": "max",
-            "value": 1
-          }
-        ],
         "costs": [
-          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 165},
-          {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
-          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0}
-        ],
-        "entryLinks": [
           {
-            "name": "High Command Detachment Choice",
-            "id": "8629-b689-fb42-280d",
-            "hidden": false,
-            "import": true,
-            "targetId": "969e-8b5b-1410-cfc6",
-            "type": "selectionEntryGroup"
+            "name": "Point(s)",
+            "typeId": "9893-c379-920b-8982",
+            "value": 165
           },
           {
-            "name": "Prime Unit",
-            "id": "c0b5-d327-8e86-9c6f",
-            "hidden": false,
-            "import": true,
-            "targetId": "3fa2-78b1-637f-7fb2",
-            "type": "selectionEntry",
-            "entryLinks": [{"name": "Prime Benefits", "id": "01f6-50cc-38fc-4d5a", "hidden": false, "import": true, "targetId": "a396-b846-c263-6767", "type": "selectionEntryGroup"}]
-          }
-        ],
-        "infoLinks": [
-          {"name": "[Allegiance]", "id": "90eb-1760-d063-1958", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "[Legiones Astartes]", "id": "05ec-df15-13f3-a523", "hidden": false, "targetId": "641c-ca0a-7093-4525", "type": "profile"},
-          {"name": "Master of the Legion", "id": "8a0f-59f2-5fd2-3c2e", "hidden": false, "targetId": "6cd2-96be-b703-6d57", "type": "profile"},
-          {
-            "name": "Hatred (X)",
-            "id": "2e7e-4f49-2d30-52d0",
-            "comment": "World Eaters",
-            "hidden": false,
-            "targetId": "0612-95d5-46ae-c5ee",
-            "type": "rule",
-            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "World Eaters"}]
+            "name": "Asset Point(s)",
+            "typeId": "57e3-1031-7d4d-5ae3",
+            "value": 0
           },
           {
-            "name": "Eternal Warrior (X)",
-            "id": "9863-fc41-b8ff-661f",
-            "comment": "1",
-            "hidden": false,
-            "targetId": "15b4-9e4a-f361-c5a3",
-            "type": "rule",
-            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": 1}]
+            "name": "Reaction Point(s)",
+            "typeId": "c9ba-097e-c47f-ecc2",
+            "value": 0
           },
           {
-            "name": "Doomed Heroics (X)",
-            "id": "5777-c7aa-ba1e-36e5",
-            "hidden": true,
-            "targetId": "aea9-7451-7b2c-5b40",
-            "type": "rule",
-            "modifiers": [
-              {"arg": "X", "field": "name", "type": "replace", "value": 3},
-              {
-                "field": "hidden",
-                "type": "set",
-                "value": false,
-                "conditions": [
-                  {
-                    "childId": "4ec2-4dab-205b-36a2",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "597e-83d8-32e1-8eaa",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "The Riven Hound",
-            "id": "1ea7-a9ca-18d8-1d46",
-            "hidden": false,
-            "typeId": "9b5f-da4e-5739-cbcf",
-            "typeName": "Gambit",
-            "characteristics": [
-              {
-                "name": "Summary",
-                "$text": "This Gambit allows Endryd Haar to make a single attack with a higher Strength and that causes more Damage.",
-                "typeId": "98f3-41cf-e3be-2ae7"
-              },
-              {
-                "name": "Description",
-                "$text": "If this Gambit is selected, then the Controlling Player may only make a single attack in the Strike Step for the Model this Gambit was selected for, regardless of the value of the Model’s Attacks Characteristic. However, that Model gains a bonus of +4 to their Strength Characteristic and a bonus of +2 to the Damage Characteristic of their selected Weapon, for the single attack made for them in the Strike Step",
-                "typeId": "2d7d-b1d9-dead-605a"
-              }
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": " Fangs of the Emperor ",
-            "id": "bd25-f108-3015-dd31",
-            "description": "If Endryd Haar is selected as the only High Command Choice in a Primary Detachment, then all Units from that Primary Detachment that are composed entirely of Models with the Blackshields Trait, the Infantry Type and that do not have any variant of the Bulky (X) Special Rule gain the Infiltrate (12) Special Rule",
-            "hidden": false
+            "name": "Auxiliary Detachment(s)",
+            "typeId": "3e8e-05ee-be52-12d6",
+            "value": 0
           },
           {
-            "name": " The Riven Hound",
-            "id": "6864-01df-8848-bc77",
-            "description": "While a Model with this Special Rule is engaged in a Challenge, its Controlling Player can select The Riven Hound Gambit:",
-            "hidden": false
+            "name": "Apex Detachment(s)",
+            "typeId": "159d-855c-533d-f592",
+            "value": 0
           }
         ],
         "selectionEntries": [
           {
-            "name": "Endryd Haar",
-            "id": "65ac-6a04-dccb-3d20",
-            "hidden": false,
-            "import": true,
-            "type": "model",
             "categoryLinks": [
-              {"name": "Infantry Model Type", "id": "11c6-54bc-2fc0-a9d0", "primary": false, "targetId": "594d-fa82-13cb-a345"},
-              {"name": "Command Model Sub-type", "id": "7dd2-5a30-53bf-74c4", "primary": false, "targetId": "9871-cb62-5283-2216"},
-              {"name": "Unique Model Sub-Type", "id": "b4e2-5403-77c2-275e", "primary": false, "targetId": "b980-187b-2b17-d635"}
-            ],
-            "constraints": [
-              {"id": "1b8d-ff94-da09-25e3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "a4f2-5783-e3b2-feab", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
               {
-                "name": "Archeotech pistol",
-                "id": "c24c-77f2-e300-6748",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "targetId": "0600-3af1-d080-abf7",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "a714-e286-9cc0-6aff", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "fe95-dd43-2b5e-0a99", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "targetId": "594d-fa82-13cb-a345",
+                "id": "11c6-54bc-2fc0-a9d0",
+                "primary": false,
+                "name": "Infantry Model Type"
               },
               {
-                "name": "Frag grenades",
-                "id": "09a5-e5f4-cc2f-44ea",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 3,
-                "targetId": "60e4-ca33-2e68-9afc",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "07de-150f-2c5f-cb61", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "f4c1-148f-d6c6-ffd6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
+                "targetId": "9871-cb62-5283-2216",
+                "id": "7dd2-5a30-53bf-74c4",
+                "primary": false,
+                "name": "Command Model Sub-type"
               },
               {
-                "name": "Krak grenades",
-                "id": "8a07-5af4-ee25-96e0",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 4,
-                "targetId": "fa20-82bc-c7de-9e97",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "64d6-04ed-350d-5aae", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "3792-83a8-58f5-af73", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {"name": "Oath(s) of Moment", "id": "4d67-e55d-008d-7579", "hidden": false, "import": true, "targetId": "fd0c-8569-5b52-0ce8", "type": "selectionEntryGroup"}
+                "targetId": "b980-187b-2b17-d635",
+                "id": "b4e2-5403-77c2-275e",
+                "primary": false,
+                "name": "Unique Model Sub-Type"
+              }
             ],
             "profiles": [
               {
-                "name": "Endryd Haar",
-                "id": "c5c8-69ec-7ef9-a696",
-                "hidden": false,
-                "typeId": "a76f-8e23-8c3e-166d",
-                "typeName": "Profile",
                 "characteristics": [
-                  {"name": "Type", "$text": "Infantry (Command, Unique)", "typeId": "50fc-9241-d4a2-045b"},
-                  {"name": "M", "$text": "7", "typeId": "a106-a779-d272-5e93"},
-                  {"name": "WS", "$text": "6", "typeId": "253c-d694-4695-c89e"},
-                  {"name": "BS", "$text": "5", "typeId": "0cd5-b269-e3bc-028b"},
-                  {"name": "S", "$text": "4", "typeId": "498f-dce1-59fd-d8d7"},
-                  {"name": "T", "$text": "5", "typeId": "3120-8275-e537-ecd2"},
-                  {"name": "W", "$text": "4", "typeId": "f5cc-79a3-d302-cc1d"},
-                  {"name": "I", "$text": "5", "typeId": "af9d-7db8-dc95-71c1"},
-                  {"name": "A", "$text": "5", "typeId": "024e-bdb1-7982-25a0"},
-                  {"name": "LD", "$text": "10", "typeId": "02ad-ebe6-86e7-9fd6"},
-                  {"name": "CL", "$text": "9", "typeId": "9cd1-0e7c-2cd6-5f2f"},
-                  {"name": "WP", "$text": "10", "typeId": "f714-1726-37d3-44df"},
-                  {"name": "IN", "$text": "8", "typeId": "29c5-925d-5b1d-1e77"},
-                  {"name": "SAV", "$text": "2+", "typeId": "03bd-4ecb-351d-143b"},
-                  {"name": "INV", "$text": "4+", "typeId": "a951-a772-7ce0-0b64"}
+                  {
+                    "$text": "Infantry (Command, Unique)",
+                    "name": "Type",
+                    "typeId": "50fc-9241-d4a2-045b"
+                  },
+                  {
+                    "$text": "7",
+                    "name": "M",
+                    "typeId": "a106-a779-d272-5e93"
+                  },
+                  {
+                    "$text": "6",
+                    "name": "WS",
+                    "typeId": "253c-d694-4695-c89e"
+                  },
+                  {
+                    "$text": "5",
+                    "name": "BS",
+                    "typeId": "0cd5-b269-e3bc-028b"
+                  },
+                  {
+                    "$text": "4",
+                    "name": "S",
+                    "typeId": "498f-dce1-59fd-d8d7"
+                  },
+                  {
+                    "$text": "5",
+                    "name": "T",
+                    "typeId": "3120-8275-e537-ecd2"
+                  },
+                  {
+                    "$text": "4",
+                    "name": "W",
+                    "typeId": "f5cc-79a3-d302-cc1d"
+                  },
+                  {
+                    "$text": "5",
+                    "name": "I",
+                    "typeId": "af9d-7db8-dc95-71c1"
+                  },
+                  {
+                    "$text": "5",
+                    "name": "A",
+                    "typeId": "024e-bdb1-7982-25a0"
+                  },
+                  {
+                    "$text": "10",
+                    "name": "LD",
+                    "typeId": "02ad-ebe6-86e7-9fd6"
+                  },
+                  {
+                    "$text": "9",
+                    "name": "CL",
+                    "typeId": "9cd1-0e7c-2cd6-5f2f"
+                  },
+                  {
+                    "$text": "10",
+                    "name": "WP",
+                    "typeId": "f714-1726-37d3-44df"
+                  },
+                  {
+                    "$text": "8",
+                    "name": "IN",
+                    "typeId": "29c5-925d-5b1d-1e77"
+                  },
+                  {
+                    "$text": "2+",
+                    "name": "SAV",
+                    "typeId": "03bd-4ecb-351d-143b"
+                  },
+                  {
+                    "$text": "4+",
+                    "name": "INV",
+                    "typeId": "a951-a772-7ce0-0b64"
+                  }
                 ],
                 "modifierGroups": [
                   {
                     "comment": "The Flesh is Weak",
-                    "type": "and",
-                    "conditions": [
+                    "modifiers": [
                       {
-                        "childId": "d563-c8da-2cce-aa7d",
-                        "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
+                        "type": "replace",
+                        "value": "Automata",
+                        "field": "50fc-9241-d4a2-045b",
+                        "arg": "Infantry"
                       }
                     ],
-                    "modifiers": [{"arg": "Infantry", "field": "50fc-9241-d4a2-045b", "type": "replace", "value": "Automata"}]
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "d563-c8da-2cce-aa7d",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      }
+                    ],
+                    "type": "and"
                   }
-                ]
+                ],
+                "name": "Endryd Haar",
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "hidden": false,
+                "id": "c5c8-69ec-7ef9-a696"
+              }
+            ],
+            "entryLinks": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a714-e286-9cc0-6aff"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fe95-dd43-2b5e-0a99"
+                  }
+                ],
+                "import": true,
+                "name": "Archeotech pistol",
+                "hidden": false,
+                "id": "c24c-77f2-e300-6748",
+                "type": "selectionEntry",
+                "targetId": "0600-3af1-d080-abf7",
+                "sortIndex": 1
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "07de-150f-2c5f-cb61"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f4c1-148f-d6c6-ffd6"
+                  }
+                ],
+                "import": true,
+                "name": "Frag grenades",
+                "hidden": false,
+                "id": "09a5-e5f4-cc2f-44ea",
+                "type": "selectionEntry",
+                "targetId": "60e4-ca33-2e68-9afc",
+                "sortIndex": 3
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "64d6-04ed-350d-5aae"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3792-83a8-58f5-af73"
+                  }
+                ],
+                "import": true,
+                "name": "Krak grenades",
+                "hidden": false,
+                "id": "8a07-5af4-ee25-96e0",
+                "type": "selectionEntry",
+                "targetId": "fa20-82bc-c7de-9e97",
+                "sortIndex": 4
+              },
+              {
+                "import": true,
+                "name": "Oath(s) of Moment",
+                "hidden": false,
+                "id": "4d67-e55d-008d-7579",
+                "type": "selectionEntryGroup",
+                "targetId": "fd0c-8569-5b52-0ce8"
               }
             ],
             "selectionEntries": [
               {
-                "name": "Terrawatt-pattern power gauntlet",
-                "id": "aa3f-18f5-8e71-21f6",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "5dc4-4241-5b3b-b8b5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "ca02-d865-28c5-8bd9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
                 "profiles": [
                   {
+                    "characteristics": [
+                      {
+                        "$text": "2",
+                        "name": "IM",
+                        "typeId": "6eec-4093-f946-1014"
+                      },
+                      {
+                        "$text": "-1",
+                        "name": "AM",
+                        "typeId": "03d0-6094-84f0-e27e"
+                      },
+                      {
+                        "$text": "+4",
+                        "name": "SM",
+                        "typeId": "4505-de6f-d4ae-6280"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "AP",
+                        "typeId": "a014-126b-3b7b-27e8"
+                      },
+                      {
+                        "$text": "3",
+                        "name": "D",
+                        "typeId": "6a9d-4feb-065a-33e7"
+                      },
+                      {
+                        "$text": "-",
+                        "name": "Special Rules",
+                        "typeId": "ebe0-7b28-b40c-694e"
+                      },
+                      {
+                        "$text": "Power",
+                        "name": "Traits",
+                        "typeId": "76e3-c188-bc65-3467"
+                      }
+                    ],
                     "name": "Terrawatt-pattern power gauntlet",
-                    "id": "bc04-768f-5065-3236",
-                    "hidden": false,
                     "typeId": "3587-6dcd-005c-c263",
                     "typeName": "Melee Weapon",
-                    "characteristics": [
-                      {"name": "IM", "$text": "2", "typeId": "6eec-4093-f946-1014"},
-                      {"name": "AM", "$text": "-1", "typeId": "03d0-6094-84f0-e27e"},
-                      {"name": "SM", "$text": "+4", "typeId": "4505-de6f-d4ae-6280"},
-                      {"name": "AP", "$text": "2", "typeId": "a014-126b-3b7b-27e8"},
-                      {"name": "D", "$text": "3", "typeId": "6a9d-4feb-065a-33e7"},
-                      {"name": "Special Rules", "$text": "-", "typeId": "ebe0-7b28-b40c-694e"},
-                      {"name": "Traits", "$text": "Power", "typeId": "76e3-c188-bc65-3467"}
-                    ]
+                    "hidden": false,
+                    "id": "bc04-768f-5065-3236"
                   }
-                ]
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5dc4-4241-5b3b-b8b5"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ca02-d865-28c5-8bd9"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Terrawatt-pattern power gauntlet",
+                "hidden": false,
+                "id": "aa3f-18f5-8e71-21f6",
+                "sortIndex": 2
               }
-            ]
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1b8d-ff94-da09-25e3"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a4f2-5783-e3b2-feab"
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "Endryd Haar",
+            "hidden": false,
+            "id": "65ac-6a04-dccb-3d20"
           }
-        ]
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "ee2f-8e17-c8c5-c719",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "[Allegiance]",
+            "id": "90eb-1760-d063-1958",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "bb66-f1f6-4d65-5a07"
+          },
+          {
+            "name": "[Legiones Astartes]",
+            "id": "05ec-df15-13f3-a523",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "641c-ca0a-7093-4525"
+          },
+          {
+            "name": "Master of the Legion",
+            "id": "8a0f-59f2-5fd2-3c2e",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "6cd2-96be-b703-6d57"
+          },
+          {
+            "comment": "World Eaters",
+            "modifiers": [
+              {
+                "type": "replace",
+                "value": "World Eaters",
+                "field": "name",
+                "arg": "X"
+              }
+            ],
+            "name": "Hatred (X)",
+            "id": "2e7e-4f49-2d30-52d0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0612-95d5-46ae-c5ee"
+          },
+          {
+            "comment": "1",
+            "modifiers": [
+              {
+                "type": "replace",
+                "value": 1,
+                "field": "name",
+                "arg": "X"
+              }
+            ],
+            "name": "Eternal Warrior (X)",
+            "id": "9863-fc41-b8ff-661f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "15b4-9e4a-f361-c5a3"
+          },
+          {
+            "modifiers": [
+              {
+                "type": "replace",
+                "value": 3,
+                "field": "name",
+                "arg": "X"
+              },
+              {
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "childId": "4ec2-4dab-205b-36a2",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ],
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              }
+            ],
+            "name": "Doomed Heroics (X)",
+            "id": "5777-c7aa-ba1e-36e5",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "aea9-7451-7b2c-5b40"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "597e-83d8-32e1-8eaa",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "rules": [
+          {
+            "description": "If Endryd Haar is selected as the only High Command Choice in a Primary Detachment, then all Units from that Primary Detachment that are composed entirely of Models with the Blackshields Trait, the Infantry Type and that do not have any variant of the Bulky (X) Special Rule gain the Infiltrate (12) Special Rule",
+            "name": " Fangs of the Emperor ",
+            "id": "bd25-f108-3015-dd31",
+            "hidden": false
+          },
+          {
+            "description": "While a Model with this Special Rule is engaged in a Challenge, its Controlling Player can select The Riven Hound Gambit:",
+            "name": " The Riven Hound",
+            "id": "6864-01df-8848-bc77",
+            "hidden": false
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "This Gambit allows Endryd Haar to make a single attack with a higher Strength and that causes more Damage.",
+                "name": "Summary",
+                "typeId": "98f3-41cf-e3be-2ae7"
+              },
+              {
+                "$text": "If this Gambit is selected, then the Controlling Player may only make a single attack in the Strike Step for the Model this Gambit was selected for, regardless of the value of the Model’s Attacks Characteristic. However, that Model gains a bonus of +4 to their Strength Characteristic and a bonus of +2 to the Damage Characteristic of their selected Weapon, for the single attack made for them in the Strike Step",
+                "name": "Description",
+                "typeId": "2d7d-b1d9-dead-605a"
+              }
+            ],
+            "name": "The Riven Hound",
+            "typeId": "9b5f-da4e-5739-cbcf",
+            "typeName": "Gambit",
+            "hidden": false,
+            "id": "1ea7-a9ca-18d8-1d46"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "High Command Detachment Choice",
+            "hidden": false,
+            "id": "8629-b689-fb42-280d",
+            "type": "selectionEntryGroup",
+            "targetId": "969e-8b5b-1410-cfc6"
+          },
+          {
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Prime Benefits",
+                "hidden": false,
+                "id": "01f6-50cc-38fc-4d5a",
+                "type": "selectionEntryGroup",
+                "targetId": "a396-b846-c263-6767"
+              }
+            ],
+            "import": true,
+            "name": "Prime Unit",
+            "hidden": false,
+            "id": "c0b5-d327-8e86-9c6f",
+            "type": "selectionEntry",
+            "targetId": "3fa2-78b1-637f-7fb2"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "Endryd Haar",
+        "hidden": false,
+        "id": "e9a1-962f-bc19-7c86"
       },
       {
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Rite of War",
+            "hidden": false,
+            "id": "65a3-c5ca-4da7-42a0",
+            "type": "selectionEntryGroup",
+            "targetId": "e45b-b0b9-a21e-935f"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "ed1e-2f8c-bf66-2e29"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "1571-3878-06df-cecb"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
         "name": "Rite of War",
-        "id": "93b0-888c-694e-190f",
         "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "ed1e-2f8c-bf66-2e29", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "1571-3878-06df-cecb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "entryLinks": [{"name": "Rite of War", "id": "65a3-c5ca-4da7-42a0", "hidden": false, "import": true, "targetId": "e45b-b0b9-a21e-935f", "type": "selectionEntryGroup"}]
+        "id": "93b0-888c-694e-190f"
       },
       {
-        "name": "Oaths of Moment",
-        "id": "b1f1-e5be-cfaa-3df9",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "f25a-ba73-1bf7-9516", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "992c-efca-ab6b-bb08", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Oaths of Moment",
+            "hidden": false,
+            "id": "22df-9003-2119-1185",
+            "type": "selectionEntryGroup",
+            "targetId": "e6c2-1fbd-b0b2-555a"
+          }
         ],
-        "entryLinks": [{"name": "Oaths of Moment", "id": "22df-9003-2119-1185", "hidden": false, "import": true, "targetId": "e6c2-1fbd-b0b2-555a", "type": "selectionEntryGroup"}]
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "f25a-ba73-1bf7-9516"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "992c-efca-ab6b-bb08"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Oaths of Moment",
+        "hidden": false,
+        "id": "b1f1-e5be-cfaa-3df9"
+      }
+    ],
+    "entryLinks": [
+      {
+        "categoryLinks": [
+          {
+            "targetId": "d9a6-9b5f-b18a-4d63",
+            "id": "7944-f1c8-2aa2-9abc",
+            "primary": true,
+            "name": "High Command"
+          }
+        ],
+        "import": true,
+        "name": "Endryd Haar",
+        "hidden": false,
+        "id": "cf9a-dc6b-56c2-1ef4",
+        "type": "selectionEntry",
+        "targetId": "e9a1-962f-bc19-7c86"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "abfa-86ab-1726-077a",
+            "id": "15f7-fa10-ec8e-7dbf",
+            "primary": true,
+            "name": "Army Configuration"
+          }
+        ],
+        "import": true,
+        "name": "Rite of War",
+        "hidden": false,
+        "id": "1b10-1916-d98e-8513",
+        "type": "selectionEntry",
+        "targetId": "93b0-888c-694e-190f"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "abfa-86ab-1726-077a",
+            "id": "82e8-72dc-b031-283f",
+            "primary": true,
+            "name": "Army Configuration"
+          }
+        ],
+        "import": true,
+        "name": "Oaths of Moment",
+        "hidden": false,
+        "id": "5648-22da-ec9e-3d54",
+        "type": "selectionEntry",
+        "targetId": "b1f1-e5be-cfaa-3df9"
+      },
+      {
+        "modifierGroups": [
+          {
+            "comment": "Vagus",
+            "modifiers": [
+              {
+                "type": "remove",
+                "value": "df10-4634-c1aa-f6e0",
+                "field": "category"
+              },
+              {
+                "type": "add",
+                "value": "a59f-578b-8e20-efa1",
+                "field": "category"
+              },
+              {
+                "type": "set-primary",
+                "value": "61eb-11e2-1592-3161",
+                "field": "category"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "forces",
+                "scope": "force",
+                "childId": "2dfc-259d-d11b-dc8b",
+                "shared": true,
+                "includeChildSelections": false,
+                "childName": "Cohorts Vagus Detachment"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "61eb-11e2-1592-3161",
+            "id": "b0f5-8811-b797-71b7",
+            "primary": true,
+            "name": "Support - Castellax Battle Maniple Only"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Vagus",
+            "id": "3f7b-70e7-758a-a2db",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "b713-a3cb-67da-5bb6"
+          }
+        ],
+        "import": true,
+        "name": "Castellax Battle Maniple",
+        "hidden": false,
+        "id": "69cc-efef-5c43-9b29",
+        "type": "selectionEntry",
+        "targetId": "e8d6-2ba5-d10d-d617"
+      },
+      {
+        "modifierGroups": [
+          {
+            "comment": "Vagus",
+            "modifiers": [
+              {
+                "type": "remove",
+                "value": "df10-4634-c1aa-f6e0",
+                "field": "category"
+              },
+              {
+                "type": "add",
+                "value": "a59f-578b-8e20-efa1",
+                "field": "category"
+              },
+              {
+                "type": "set-primary",
+                "value": "d49e-048b-a8e2-ba52",
+                "field": "category"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "forces",
+                "scope": "force",
+                "childId": "2dfc-259d-d11b-dc8b",
+                "shared": true,
+                "includeChildSelections": false,
+                "childName": "Cohorts Vagus Detachment"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "d49e-048b-a8e2-ba52",
+            "id": "a2ec-5bf7-c8b0-0006",
+            "primary": true,
+            "name": "Heavy Assault - Castellax Destructor Maniple only"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Vagus",
+            "id": "b8fd-9599-d60d-c0ef",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "b713-a3cb-67da-5bb6"
+          }
+        ],
+        "import": true,
+        "name": "Castellax Destructor Maniple",
+        "hidden": false,
+        "id": "5d38-e1d8-0960-7d00",
+        "type": "selectionEntry",
+        "targetId": "112f-1168-d07c-7f8f"
+      },
+      {
+        "modifierGroups": [
+          {
+            "comment": "Vagus",
+            "modifiers": [
+              {
+                "type": "remove",
+                "value": "df10-4634-c1aa-f6e0",
+                "field": "category"
+              },
+              {
+                "type": "add",
+                "value": "a59f-578b-8e20-efa1",
+                "field": "category"
+              },
+              {
+                "type": "set-primary",
+                "value": "826c-7b05-0f62-8b16",
+                "field": "category"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "forces",
+                "scope": "force",
+                "childId": "2dfc-259d-d11b-dc8b",
+                "shared": true,
+                "includeChildSelections": false,
+                "childName": "Cohorts Vagus Detachment"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "826c-7b05-0f62-8b16",
+            "id": "1b05-ec5f-2e7b-d5e6",
+            "primary": true,
+            "name": "Elites - Domitar Battle Maniple Only"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Vagus",
+            "id": "2f69-c95d-fe0f-2e43",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "b713-a3cb-67da-5bb6"
+          }
+        ],
+        "import": true,
+        "name": "Domitar Battle Maniple",
+        "hidden": false,
+        "id": "7a9c-2466-a30b-b8c2",
+        "type": "selectionEntry",
+        "targetId": "cefd-9aca-871d-3263"
+      },
+      {
+        "modifierGroups": [
+          {
+            "comment": "Vagus",
+            "modifiers": [
+              {
+                "type": "remove",
+                "value": "df10-4634-c1aa-f6e0",
+                "field": "category"
+              },
+              {
+                "type": "add",
+                "value": "a59f-578b-8e20-efa1",
+                "field": "category"
+              },
+              {
+                "type": "set-primary",
+                "value": "64d7-855f-726b-803f",
+                "field": "category"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "forces",
+                "scope": "force",
+                "childId": "2dfc-259d-d11b-dc8b",
+                "shared": true,
+                "includeChildSelections": false,
+                "childName": "Cohorts Vagus Detachment"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "64d7-855f-726b-803f",
+            "id": "f645-889b-40b5-056f",
+            "primary": true,
+            "name": "War Engine - Thanatar Siege Maniple only"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Vagus",
+            "id": "c601-90cf-caca-33d9",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "b713-a3cb-67da-5bb6"
+          }
+        ],
+        "import": true,
+        "name": "Thanatar Siege Maniple",
+        "hidden": false,
+        "id": "22db-9054-a96b-6973",
+        "type": "selectionEntry",
+        "targetId": "3833-2f09-7ec7-b5f5"
+      },
+      {
+        "modifierGroups": [
+          {
+            "comment": "Vagus",
+            "modifiers": [
+              {
+                "type": "remove",
+                "value": "df10-4634-c1aa-f6e0",
+                "field": "category"
+              },
+              {
+                "type": "add",
+                "value": "a59f-578b-8e20-efa1",
+                "field": "category"
+              },
+              {
+                "type": "set-primary",
+                "value": "0fb1-2125-2a33-b094",
+                "field": "category"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "forces",
+                "scope": "force",
+                "childId": "2dfc-259d-d11b-dc8b",
+                "shared": true,
+                "includeChildSelections": false,
+                "childName": "Cohorts Vagus Detachment"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "0fb1-2125-2a33-b094",
+            "id": "60d7-4cb7-a948-40d7",
+            "primary": true,
+            "name": "Recon - Vorax Attack Maniple Only"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Vagus",
+            "id": "6882-2cba-d1fa-0bcc",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "b713-a3cb-67da-5bb6"
+          }
+        ],
+        "import": true,
+        "name": "Vorax Attack Maniple",
+        "hidden": false,
+        "id": "cd18-6659-22ba-14bb",
+        "type": "selectionEntry",
+        "targetId": "de2e-f9b5-abe6-b8b5"
+      },
+      {
+        "modifierGroups": [
+          {
+            "comment": "Vagus",
+            "modifiers": [
+              {
+                "type": "remove",
+                "value": "df10-4634-c1aa-f6e0",
+                "field": "category"
+              },
+              {
+                "type": "add",
+                "value": "a59f-578b-8e20-efa1",
+                "field": "category"
+              },
+              {
+                "type": "set-primary",
+                "value": "7db9-74d1-6ba1-061e",
+                "field": "category"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "forces",
+                "scope": "force",
+                "childId": "2dfc-259d-d11b-dc8b",
+                "shared": true,
+                "includeChildSelections": false,
+                "childName": "Cohorts Vagus Detachment"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "7db9-74d1-6ba1-061e",
+            "id": "8789-dc9e-48f0-2182",
+            "primary": true,
+            "name": "Fast Attack - Vultarax Stratos Squadron Only"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Vagus",
+            "id": "8217-f722-729d-fd9b",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "b713-a3cb-67da-5bb6"
+          }
+        ],
+        "import": true,
+        "name": "Vultarax Stratos Squadron",
+        "hidden": false,
+        "id": "5be2-b6ad-262f-c9c1",
+        "type": "selectionEntry",
+        "targetId": "710e-f1ea-0061-d3cb"
       }
     ],
     "sharedSelectionEntryGroups": [
       {
-        "name": "Oaths of Moment",
-        "id": "e6c2-1fbd-b0b2-555a",
-        "hidden": false,
-        "constraints": [{"id": "de68-5d1b-843b-939d", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "de68-5d1b-843b-939d",
+            "automatic": true
+          }
+        ],
         "modifiers": [
           {
-            "field": "de68-5d1b-843b-939d",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "7469-bbd2-a2ad-f8a8",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ],
             "type": "set",
             "value": 1,
-            "conditions": [{"childId": "7469-bbd2-a2ad-f8a8", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+            "field": "de68-5d1b-843b-939d"
           }
         ],
         "selectionEntries": [
           {
-            "name": "The Eternal Vendetta",
-            "id": "bba0-2407-10cc-1ca1",
-            "hidden": false,
-            "import": true,
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "afc8-df99-7cb2-c0c2"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "fdfa-3e5d-370e-e470",
+                "id": "8da9-befd-29cb-a2fe",
+                "primary": false,
+                "name": "The Eternal Vendetta"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "The Eternal Vendetta",
+                "id": "997b-a9ee-f9a4-2e24",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d6d0-9273-d1d4-b167"
+              }
+            ],
             "type": "upgrade",
-            "categoryLinks": [{"name": "The Eternal Vendetta", "id": "8da9-befd-29cb-a2fe", "primary": false, "targetId": "fdfa-3e5d-370e-e470"}],
-            "constraints": [{"id": "afc8-df99-7cb2-c0c2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [{"name": "The Eternal Vendetta", "id": "997b-a9ee-f9a4-2e24", "hidden": false, "targetId": "d6d0-9273-d1d4-b167", "type": "rule"}]
+            "import": true,
+            "name": "The Eternal Vendetta",
+            "hidden": false,
+            "id": "bba0-2407-10cc-1ca1"
           },
           {
-            "name": "Panoply of Old",
-            "id": "96b0-14eb-99a0-fe6c",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [{"id": "e5b0-dc1b-c3b2-2288", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e5b0-dc1b-c3b2-2288"
+              }
+            ],
             "selectionEntryGroups": [
               {
-                "name": "Legion",
-                "id": "7b8c-7d9d-df5f-2655",
-                "hidden": false,
-                "constraints": [
-                  {"id": "6bd9-d323-543c-af2d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "fced-fd2a-b19a-a7d9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [{"name": "Panoply of Old", "id": "cf92-333c-e3c8-cc9a", "hidden": false, "targetId": "c768-6f33-f07c-7b92", "type": "rule"}],
                 "selectionEntries": [
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "b176-b6a9-0906-e7ed"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "c99b-7cb2-a79c-b632",
+                        "id": "721d-9270-10d6-97fc",
+                        "primary": false,
+                        "name": "Panoply of Old - Dark Angels"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "I - Dark Angels",
+                    "hidden": false,
                     "id": "0fbf-8ab3-e142-5391",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 1,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Dark Angels", "id": "721d-9270-10d6-97fc", "primary": false, "targetId": "c99b-7cb2-a79c-b632"}],
-                    "constraints": [{"id": "b176-b6a9-0906-e7ed", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 1
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "40a0-98b7-c484-51d4"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "fc3a-a4e6-8a2c-01a8",
+                        "id": "a49a-5b82-b786-a6fc",
+                        "primary": false,
+                        "name": "Panoply of Old - Emperor's Children"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "III - Emperor's Children",
+                    "hidden": false,
                     "id": "b354-6ea7-7e37-ed8b",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 3,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Emperor's Children", "id": "a49a-5b82-b786-a6fc", "primary": false, "targetId": "fc3a-a4e6-8a2c-01a8"}],
-                    "constraints": [{"id": "40a0-98b7-c484-51d4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 3
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "c46b-3aff-de71-13e6"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "4061-bc47-ebca-dc39",
+                        "id": "a1b4-043e-6c03-5199",
+                        "primary": false,
+                        "name": "Panoply of Old - Iron Warriors"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "IV - Iron Warriors",
+                    "hidden": false,
                     "id": "bf48-11b5-e966-8074",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 4,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Iron Warriors", "id": "a1b4-043e-6c03-5199", "primary": false, "targetId": "4061-bc47-ebca-dc39"}],
-                    "constraints": [{"id": "c46b-3aff-de71-13e6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 4
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "8af3-a67b-a048-3fdf"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "d479-57dc-b494-7f80",
+                        "id": "4d04-dae6-e80f-1fe8",
+                        "primary": false,
+                        "name": "Panoply of Old - White Scars"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "V - White Scars",
+                    "hidden": false,
                     "id": "6d74-1ee0-ff22-2c60",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 5,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - White Scars", "id": "4d04-dae6-e80f-1fe8", "primary": false, "targetId": "d479-57dc-b494-7f80"}],
-                    "constraints": [{"id": "8af3-a67b-a048-3fdf", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 5
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "9a6d-a4c4-7e52-865a"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "3e12-20bf-607f-c531",
+                        "id": "8d9b-b597-b71d-b785",
+                        "primary": false,
+                        "name": "Panoply of Old - Space Wolves"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "VI - Space Wolves",
+                    "hidden": false,
                     "id": "e97a-c98a-3003-9235",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 6,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Space Wolves", "id": "8d9b-b597-b71d-b785", "primary": false, "targetId": "3e12-20bf-607f-c531"}],
-                    "constraints": [{"id": "9a6d-a4c4-7e52-865a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 6
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "1ab5-1ec1-3b00-c359"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "de6f-f206-4bb4-d176",
+                        "id": "2e54-9273-a444-198a",
+                        "primary": false,
+                        "name": "Panoply of Old - Imperial Fists"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "VII - Imperial Fists",
+                    "hidden": false,
                     "id": "03a4-c15d-11b8-001b",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 7,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Imperial Fists", "id": "2e54-9273-a444-198a", "primary": false, "targetId": "de6f-f206-4bb4-d176"}],
-                    "constraints": [{"id": "1ab5-1ec1-3b00-c359", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 7
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "1120-1006-e222-029a"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "d63e-1849-e763-05ee",
+                        "id": "34e7-2f63-3180-8cc1",
+                        "primary": false,
+                        "name": "Panoply of Old - Night Lords"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "VIII - Night Lords",
+                    "hidden": false,
                     "id": "92e4-8349-1218-3d21",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 8,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Night Lords", "id": "34e7-2f63-3180-8cc1", "primary": false, "targetId": "d63e-1849-e763-05ee"}],
-                    "constraints": [{"id": "1120-1006-e222-029a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 8
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "09d7-587e-99a1-9bb8"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "8ae1-c83b-a225-826f",
+                        "id": "37af-d61b-a87e-9933",
+                        "primary": false,
+                        "name": "Panoply of Old - Blood Angels"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "IX - Blood Angels",
+                    "hidden": false,
                     "id": "e150-3aab-2a98-5efc",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 9,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Blood Angels", "id": "37af-d61b-a87e-9933", "primary": false, "targetId": "8ae1-c83b-a225-826f"}],
-                    "constraints": [{"id": "09d7-587e-99a1-9bb8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 9
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "2fce-8333-629e-16dc"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "1c05-5fde-9ef6-9807",
+                        "id": "be49-893d-f5b5-b16c",
+                        "primary": false,
+                        "name": "Panoply of Old - Iron Hands"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "X - Iron Hands",
+                    "hidden": false,
                     "id": "c77e-8e2f-f020-81ca",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 10,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Iron Hands", "id": "be49-893d-f5b5-b16c", "primary": false, "targetId": "1c05-5fde-9ef6-9807"}],
-                    "constraints": [{"id": "2fce-8333-629e-16dc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 10
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "aeea-905f-5944-06cc"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "0d39-355e-7faa-51a0",
+                        "id": "26f6-eab0-821f-0831",
+                        "primary": false,
+                        "name": "Panoply of Old - World Eaters"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "XII - World Eaters",
+                    "hidden": false,
                     "id": "247c-ce35-b6f0-e666",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 12,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - World Eaters", "id": "26f6-eab0-821f-0831", "primary": false, "targetId": "0d39-355e-7faa-51a0"}],
-                    "constraints": [{"id": "aeea-905f-5944-06cc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 12
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "1a8d-92d5-3aae-9ac3"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "147b-ad1e-1848-e5d3",
+                        "id": "09b6-8332-c8fa-25f1",
+                        "primary": false,
+                        "name": "Panoply of Old - Ultramarines"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "XIII - Ultramarines",
+                    "hidden": false,
                     "id": "e630-ee58-10b5-ac7d",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 13,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Ultramarines", "id": "09b6-8332-c8fa-25f1", "primary": false, "targetId": "147b-ad1e-1848-e5d3"}],
-                    "constraints": [{"id": "1a8d-92d5-3aae-9ac3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 13
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "f3d4-938d-31a8-967c"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "606f-00c4-a49b-ff1c",
+                        "id": "7fae-5c4e-49c6-2bf8",
+                        "primary": false,
+                        "name": "Panoply of Old - Death Guard"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "XIV - Death Guard",
+                    "hidden": false,
                     "id": "2b3f-57d2-dccf-4306",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 14,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Death Guard", "id": "7fae-5c4e-49c6-2bf8", "primary": false, "targetId": "606f-00c4-a49b-ff1c"}],
-                    "constraints": [{"id": "f3d4-938d-31a8-967c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 14
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "fd1c-b4d9-5ddc-9de0"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "4eec-9111-7656-2023",
+                        "id": "5b8c-f6bd-ee9a-a739",
+                        "primary": false,
+                        "name": "Panoply of Old - Thousand Sons"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "XV - Thousand Sons",
+                    "hidden": false,
                     "id": "ff69-f308-23ed-2118",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 15,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Thousand Sons", "id": "5b8c-f6bd-ee9a-a739", "primary": false, "targetId": "4eec-9111-7656-2023"}],
-                    "constraints": [{"id": "fd1c-b4d9-5ddc-9de0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 15
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "427f-b193-e062-37bb"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "59b9-6955-2307-aa98",
+                        "id": "3132-107d-c8b7-3f4c",
+                        "primary": false,
+                        "name": "Panoply of Old - Sons of Horus"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "XVI - Sons of Horus",
+                    "hidden": false,
                     "id": "91ac-d25c-42e6-0883",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 16,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Sons of Horus", "id": "3132-107d-c8b7-3f4c", "primary": false, "targetId": "59b9-6955-2307-aa98"}],
-                    "constraints": [{"id": "427f-b193-e062-37bb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 16
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "d059-0074-64ef-67c9"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "a7b1-f3cb-b648-834a",
+                        "id": "6a14-190c-3765-6a40",
+                        "primary": false,
+                        "name": "Panoply of Old - Word Bearers"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "XVII - Word Bearers",
+                    "hidden": false,
                     "id": "eafd-d734-5a92-2355",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 17,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Word Bearers", "id": "6a14-190c-3765-6a40", "primary": false, "targetId": "a7b1-f3cb-b648-834a"}],
-                    "constraints": [{"id": "d059-0074-64ef-67c9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 17
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7a48-61b8-9cb7-dc4c"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "fde7-fb71-1ecc-7365",
+                        "id": "e6f2-61ba-5d58-3f2e",
+                        "primary": false,
+                        "name": "Panoply of Old - Salamanders"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "XVIII - Salamanders",
+                    "hidden": false,
                     "id": "3b1f-6699-fe81-eb91",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 18,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Salamanders", "id": "e6f2-61ba-5d58-3f2e", "primary": false, "targetId": "fde7-fb71-1ecc-7365"}],
-                    "constraints": [{"id": "7a48-61b8-9cb7-dc4c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "sortIndex": 18
                   },
                   {
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "eaef-565d-c139-5549"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "754a-10dd-0b2e-1b19",
+                        "id": "ac6d-9e1c-60fd-10de",
+                        "primary": false,
+                        "name": "Panoply of Old - Raven Guard"
+                      }
+                    ],
+                    "type": "upgrade",
+                    "import": true,
                     "name": "XIX - Raven Guard",
-                    "id": "48f5-40ab-49f7-f179",
                     "hidden": false,
-                    "import": true,
-                    "sortIndex": 19,
-                    "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Raven Guard", "id": "ac6d-9e1c-60fd-10de", "primary": false, "targetId": "754a-10dd-0b2e-1b19"}],
-                    "constraints": [{"id": "eaef-565d-c139-5549", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "id": "48f5-40ab-49f7-f179",
+                    "sortIndex": 19
                   },
                   {
-                    "name": "XX - Alpha Legion",
-                    "id": "9655-083a-3165-dcd5",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 20,
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "3aa7-623c-dda3-a0ab"
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "0e0a-e490-ee7f-7033",
+                        "id": "a75c-511c-87f1-9081",
+                        "primary": false,
+                        "name": "Panoply of Old - Alpha Legion"
+                      }
+                    ],
                     "type": "upgrade",
-                    "categoryLinks": [{"name": "Panoply of Old - Alpha Legion", "id": "a75c-511c-87f1-9081", "primary": false, "targetId": "0e0a-e490-ee7f-7033"}],
-                    "constraints": [{"id": "3aa7-623c-dda3-a0ab", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                    "import": true,
+                    "name": "XX - Alpha Legion",
+                    "hidden": false,
+                    "id": "9655-083a-3165-dcd5",
+                    "sortIndex": 20
                   }
-                ]
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6bd9-d323-543c-af2d"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fced-fd2a-b19a-a7d9"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Panoply of Old",
+                    "id": "cf92-333c-e3c8-cc9a",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "c768-6f33-f07c-7b92"
+                  }
+                ],
+                "name": "Legion",
+                "id": "7b8c-7d9d-df5f-2655",
+                "hidden": false
               }
-            ]
+            ],
+            "type": "upgrade",
+            "import": true,
+            "name": "Panoply of Old",
+            "hidden": false,
+            "id": "96b0-14eb-99a0-fe6c"
           },
           {
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e9da-3697-7088-c3d0"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "8026-d8cc-eea8-cd3d",
+                "id": "4138-995f-8aa2-b59a",
+                "primary": false,
+                "name": "Only in Death does Duty End"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Only in Death does  Duty End",
+                "id": "0403-948d-5a45-39b8",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "58df-6c2a-de82-81a0"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "Only in Death does  Duty End",
-            "id": "dabf-d459-2d9f-d53e",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "Only in Death does Duty End", "id": "4138-995f-8aa2-b59a", "primary": false, "targetId": "8026-d8cc-eea8-cd3d"}],
-            "constraints": [{"id": "e9da-3697-7088-c3d0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [{"name": "Only in Death does  Duty End", "id": "0403-948d-5a45-39b8", "hidden": false, "targetId": "58df-6c2a-de82-81a0", "type": "rule"}]
+            "id": "dabf-d459-2d9f-d53e"
           },
           {
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "741d-0fbd-5555-5d6d",
+                "automatic": true
+              },
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "394a-fbb4-197d-6c9c",
+                "automatic": true
+              }
+            ],
+            "modifiers": [
+              {
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "40ff-d0cc-3254-f83e",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ],
+                "type": "set",
+                "value": 0,
+                "field": "741d-0fbd-5555-5d6d"
+              },
+              {
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "40ff-d0cc-3254-f83e",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ],
+                "type": "set",
+                "value": 0,
+                "field": "394a-fbb4-197d-6c9c"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "49f4-c066-6fe6-fbfd",
+                "id": "a346-ad0f-d00f-b155",
+                "primary": false,
+                "name": "The Spoils of Victory"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "The Spoils of Victory",
+                "id": "ae27-912c-d359-12aa",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "dd0a-1123-9b03-5ad9"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "The Spoils of Victory",
-            "id": "e39d-fff6-6325-47d1",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "The Spoils of Victory", "id": "a346-ad0f-d00f-b155", "primary": false, "targetId": "49f4-c066-6fe6-fbfd"}],
-            "constraints": [
-              {"id": "741d-0fbd-5555-5d6d", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-              {"id": "394a-fbb4-197d-6c9c", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
-            ],
-            "infoLinks": [{"name": "The Spoils of Victory", "id": "ae27-912c-d359-12aa", "hidden": false, "targetId": "dd0a-1123-9b03-5ad9", "type": "rule"}],
-            "modifiers": [
-              {
-                "field": "741d-0fbd-5555-5d6d",
-                "type": "set",
-                "value": 0,
-                "conditions": [{"childId": "40ff-d0cc-3254-f83e", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
-              },
-              {
-                "field": "394a-fbb4-197d-6c9c",
-                "type": "set",
-                "value": 0,
-                "conditions": [{"childId": "40ff-d0cc-3254-f83e", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
-              }
-            ]
+            "id": "e39d-fff6-6325-47d1"
           },
           {
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7d4d-6417-4fed-93f6"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "ac6a-e4c3-b5aa-fe61",
+                "id": "6faf-c8b6-158d-5bf7",
+                "primary": false,
+                "name": "An Eternity of War"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "An Eternity of War",
+                "id": "1ca8-ce34-c3f2-e0fb",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "3e9a-f17a-c60e-dcfa"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "An Eternity of War",
-            "id": "0174-c909-411e-c107",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "An Eternity of War", "id": "6faf-c8b6-158d-5bf7", "primary": false, "targetId": "ac6a-e4c3-b5aa-fe61"}],
-            "constraints": [{"id": "7d4d-6417-4fed-93f6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [{"name": "An Eternity of War", "id": "1ca8-ce34-c3f2-e0fb", "hidden": false, "targetId": "3e9a-f17a-c60e-dcfa", "type": "rule"}]
+            "id": "0174-c909-411e-c107"
           },
           {
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "86b9-1768-e8db-2ee4"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "d563-c8da-2cce-aa7d",
+                "id": "ee94-301d-013e-d7b3",
+                "primary": false,
+                "name": "The Flesh is Weak"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "The Flesh is Weak",
+                "id": "f853-90cb-d266-b9af",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e895-dda1-cacc-5105"
+              },
+              {
+                "name": "Linked Cogitator Units",
+                "id": "b8ee-7882-e339-922c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "686e-7abe-2bf8-103e"
+              },
+              {
+                "name": "Augmetic Transport Bay",
+                "id": "6e94-29ef-2a1d-4b93",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "9f41-c4ba-509a-20c3"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "The Flesh is Weak",
-            "id": "cd7d-bd5e-fe39-cf34",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "The Flesh is Weak", "id": "ee94-301d-013e-d7b3", "primary": false, "targetId": "d563-c8da-2cce-aa7d"}],
-            "constraints": [{"id": "86b9-1768-e8db-2ee4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [
-              {"name": "The Flesh is Weak", "id": "f853-90cb-d266-b9af", "hidden": false, "targetId": "e895-dda1-cacc-5105", "type": "rule"},
-              {"name": "Linked Cogitator Units", "id": "b8ee-7882-e339-922c", "hidden": false, "targetId": "686e-7abe-2bf8-103e", "type": "rule"},
-              {"name": "Augmetic Transport Bay", "id": "6e94-29ef-2a1d-4b93", "hidden": false, "targetId": "9f41-c4ba-509a-20c3", "type": "rule"}
-            ]
+            "id": "cd7d-bd5e-fe39-cf34"
           },
           {
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "939b-b6f5-3daf-7d8b"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "d26c-456d-f04d-12d0",
+                "id": "f36f-af90-d59a-6048",
+                "primary": false,
+                "name": "The Legacy of Nikaea"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "The Legacy of Nikaea",
+                "id": "6935-c68c-3bfb-4d82",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "4140-2a99-e941-539f"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "The Legacy of Nikaea",
-            "id": "84f9-5c94-cd8b-869b",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "The Legacy of Nikaea", "id": "f36f-af90-d59a-6048", "primary": false, "targetId": "d26c-456d-f04d-12d0"}],
-            "constraints": [{"id": "939b-b6f5-3daf-7d8b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [{"name": "The Legacy of Nikaea", "id": "6935-c68c-3bfb-4d82", "hidden": false, "targetId": "4140-2a99-e941-539f", "type": "rule"}]
+            "id": "84f9-5c94-cd8b-869b"
           },
           {
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "855b-4a59-47d3-d061"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "53f8-ca8c-239c-1d3d",
+                "id": "d798-f710-2beb-c585",
+                "primary": false,
+                "name": "The Broken Helix"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "The Broken Helix",
+                "id": "b1b3-53f9-d309-7325",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "1a93-fdf9-dd1e-3df9"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "The Broken Helix",
-            "id": "e379-ff93-c9c3-c67e",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "The Broken Helix", "id": "d798-f710-2beb-c585", "primary": false, "targetId": "53f8-ca8c-239c-1d3d"}],
-            "constraints": [{"id": "855b-4a59-47d3-d061", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [{"name": "The Broken Helix", "id": "b1b3-53f9-d309-7325", "hidden": false, "targetId": "1a93-fdf9-dd1e-3df9", "type": "rule"}]
+            "id": "e379-ff93-c9c3-c67e"
           },
           {
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1615-c401-0072-4380"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "610d-c9b0-ccb0-cba9",
+                "id": "6551-a34a-7125-acc3",
+                "primary": false,
+                "name": "In Disgrace all are Equal"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "In Disgrace all are Equal",
+                "id": "86dd-6e70-36ad-d306",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d35b-fa21-0757-9df7"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "In Disgrace all are Equal",
-            "id": "04a5-602d-7853-9555",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "In Disgrace all are Equal", "id": "6551-a34a-7125-acc3", "primary": false, "targetId": "610d-c9b0-ccb0-cba9"}],
-            "constraints": [{"id": "1615-c401-0072-4380", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [{"name": "In Disgrace all are Equal", "id": "86dd-6e70-36ad-d306", "hidden": false, "targetId": "d35b-fa21-0757-9df7", "type": "rule"}]
+            "id": "04a5-602d-7853-9555"
           },
           {
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b311-a351-4a2d-d987"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "f5dc-c13a-5848-f3b8",
+                "id": "00e5-ace7-d6bb-76d4",
+                "primary": false,
+                "name": "Pride is our Armour"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Pride is our Armour",
+                "id": "a182-2a7e-2dfb-6dd3",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "6c48-fb06-2b89-ffb1"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "Pride is our Armour",
-            "id": "c2ee-2f53-1ba9-fd1b",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "Pride is our Armour", "id": "00e5-ace7-d6bb-76d4", "primary": false, "targetId": "f5dc-c13a-5848-f3b8"}],
-            "constraints": [{"id": "b311-a351-4a2d-d987", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [{"name": "Pride is our Armour", "id": "a182-2a7e-2dfb-6dd3", "hidden": false, "targetId": "6c48-fb06-2b89-ffb1", "type": "rule"}]
+            "id": "c2ee-2f53-1ba9-fd1b"
           },
           {
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "96ad-2670-5119-d345"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "6049-c010-d9b7-8cca",
+                "id": "4630-6622-813a-73b1",
+                "primary": false,
+                "name": "The Taint of Xenos"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "The Taint of the Xenos",
+                "id": "efdf-266b-d42f-9fe1",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a8c4-6c76-4105-4e19"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "The Taint of the Xenos",
-            "id": "e0a5-1eb2-7234-37c3",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "The Taint of Xenos", "id": "4630-6622-813a-73b1", "primary": false, "targetId": "6049-c010-d9b7-8cca"}],
-            "constraints": [{"id": "96ad-2670-5119-d345", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [{"name": "The Taint of the Xenos", "id": "efdf-266b-d42f-9fe1", "hidden": false, "targetId": "a8c4-6c76-4105-4e19", "type": "rule"}]
+            "id": "e0a5-1eb2-7234-37c3"
           },
           {
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5a99-c7e1-12c3-a620"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "4d86-d6e9-8bca-0ad5",
+                "id": "7c06-840a-4e55-32fd",
+                "primary": false,
+                "name": "The Weapons of Desperation"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "The Weapons of Desperation",
+                "id": "7730-fac1-8cf9-afc5",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "49ea-388e-cee3-7053"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "The Weapons of Desperation",
-            "id": "32f7-f105-f87e-5c1e",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "The Weapons of Desperation", "id": "7c06-840a-4e55-32fd", "primary": false, "targetId": "4d86-d6e9-8bca-0ad5"}],
-            "constraints": [{"id": "5a99-c7e1-12c3-a620", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [{"name": "The Weapons of Desperation", "id": "7730-fac1-8cf9-afc5", "hidden": false, "targetId": "49ea-388e-cee3-7053", "type": "rule"}]
+            "id": "32f7-f105-f87e-5c1e"
           },
           {
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "cb62-4579-e99e-1d82",
+                "automatic": true
+              },
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ac71-f536-996b-0222",
+                "automatic": true
+              }
+            ],
+            "modifiers": [
+              {
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "e39d-fff6-6325-47d1",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "40ff-d0cc-3254-f83e",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "type": "or"
+                  }
+                ],
+                "type": "set",
+                "value": 0,
+                "field": "cb62-4579-e99e-1d82"
+              },
+              {
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "e39d-fff6-6325-47d1",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "40ff-d0cc-3254-f83e",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "type": "or"
+                  }
+                ],
+                "type": "set",
+                "value": 0,
+                "field": "ac71-f536-996b-0222"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "4ec2-4dab-205b-36a2",
+                "id": "0966-7b8b-22f6-8293",
+                "primary": false,
+                "name": "The Blade of the Just"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "The Blade of the Just",
+                "id": "3f31-ffbf-36c0-fc76",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "1592-e29d-a111-dfef"
+              },
+              {
+                "name": "Doomed Heroics (X)",
+                "id": "e2b4-9600-1176-64a1",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "aea9-7451-7b2c-5b40"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "The Blade of the Just",
-            "id": "b523-6fb7-45b3-3669",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "The Blade of the Just", "id": "0966-7b8b-22f6-8293", "primary": false, "targetId": "4ec2-4dab-205b-36a2"}],
+            "id": "b523-6fb7-45b3-3669"
+          },
+          {
             "constraints": [
-              {"id": "cb62-4579-e99e-1d82", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-              {"id": "ac71-f536-996b-0222", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
-            ],
-            "infoLinks": [
-              {"name": "The Blade of the Just", "id": "3f31-ffbf-36c0-fc76", "hidden": false, "targetId": "1592-e29d-a111-dfef", "type": "rule"},
-              {"name": "Doomed Heroics (X)", "id": "e2b4-9600-1176-64a1", "hidden": false, "targetId": "aea9-7451-7b2c-5b40", "type": "rule"}
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2496-3ee4-4c9b-9d85",
+                "automatic": true
+              },
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4c86-eaae-6086-437b",
+                "automatic": true
+              }
             ],
             "modifiers": [
               {
-                "field": "cb62-4579-e99e-1d82",
-                "type": "set",
-                "value": 0,
                 "conditionGroups": [
                   {
-                    "type": "or",
                     "conditions": [
-                      {"childId": "e39d-fff6-6325-47d1", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1},
-                      {"childId": "40ff-d0cc-3254-f83e", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}
-                    ]
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "e39d-fff6-6325-47d1",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "b523-6fb7-45b3-3669",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "type": "or"
                   }
-                ]
+                ],
+                "type": "set",
+                "value": 0,
+                "field": "2496-3ee4-4c9b-9d85"
               },
               {
-                "field": "ac71-f536-996b-0222",
-                "type": "set",
-                "value": 0,
                 "conditionGroups": [
                   {
-                    "type": "or",
                     "conditions": [
-                      {"childId": "e39d-fff6-6325-47d1", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1},
-                      {"childId": "40ff-d0cc-3254-f83e", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}
-                    ]
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "e39d-fff6-6325-47d1",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "b523-6fb7-45b3-3669",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "type": "or"
                   }
-                ]
+                ],
+                "type": "set",
+                "value": 0,
+                "field": "4c86-eaae-6086-437b"
               }
-            ]
-          },
-          {
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "90a5-d491-7576-a537",
+                "id": "14a5-10dd-af4d-5be8",
+                "primary": false,
+                "name": "Reapers of Lives"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Reapers of Lives",
+                "id": "6218-c00e-2dcb-9e21",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "0b42-1704-ec3c-c821"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
             "name": "Reapers of Lives",
-            "id": "40ff-d0cc-3254-f83e",
             "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "Reapers of Lives", "id": "14a5-10dd-af4d-5be8", "primary": false, "targetId": "90a5-d491-7576-a537"}],
-            "constraints": [
-              {"id": "2496-3ee4-4c9b-9d85", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-              {"id": "4c86-eaae-6086-437b", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
-            ],
-            "infoLinks": [{"name": "Reapers of Lives", "id": "6218-c00e-2dcb-9e21", "hidden": false, "targetId": "0b42-1704-ec3c-c821", "type": "rule"}],
-            "modifiers": [
-              {
-                "field": "2496-3ee4-4c9b-9d85",
-                "type": "set",
-                "value": 0,
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {"childId": "e39d-fff6-6325-47d1", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1},
-                      {"childId": "b523-6fb7-45b3-3669", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}
-                    ]
-                  }
-                ]
-              },
-              {
-                "field": "4c86-eaae-6086-437b",
-                "type": "set",
-                "value": 0,
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {"childId": "e39d-fff6-6325-47d1", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1},
-                      {"childId": "b523-6fb7-45b3-3669", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}
-                    ]
-                  }
-                ]
-              }
-            ]
+            "id": "40ff-d0cc-3254-f83e"
           },
           {
-            "name": "Alone and Forgotten",
-            "id": "9f95-fefa-8065-0094",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "categoryLinks": [{"name": "Alone and Forgotten", "id": "1ba0-cf03-a59a-c36b", "primary": false, "targetId": "122b-0eda-4e29-401e"}],
-            "constraints": [{"id": "6a72-6a3e-4000-ac74", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6a72-6a3e-4000-ac74"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "122b-0eda-4e29-401e",
+                "id": "1ba0-cf03-a59a-c36b",
+                "primary": false,
+                "name": "Alone and Forgotten"
+              }
+            ],
             "infoLinks": [
-              {"name": "Alone and Forgotten", "id": "3329-f10c-48ec-0b33", "hidden": false, "targetId": "1f14-ed97-b397-d409", "type": "rule"},
-              {"name": "To Fight and Die Alone", "id": "6ffa-f16c-b2a0-32d0", "hidden": false, "targetId": "525c-b678-98e7-43ff", "type": "rule"}
-            ]
+              {
+                "name": "Alone and Forgotten",
+                "id": "3329-f10c-48ec-0b33",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "1f14-ed97-b397-d409"
+              },
+              {
+                "name": "To Fight and Die Alone",
+                "id": "6ffa-f16c-b2a0-32d0",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "525c-b678-98e7-43ff"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
+            "name": "Alone and Forgotten",
+            "hidden": false,
+            "id": "9f95-fefa-8065-0094"
           }
-        ]
+        ],
+        "name": "Oaths of Moment",
+        "id": "e6c2-1fbd-b0b2-555a",
+        "hidden": false
       },
       {
-        "name": "Rite of War",
-        "id": "e45b-b0b9-a21e-935f",
-        "hidden": false,
         "selectionEntries": [
           {
-            "name": "Rite of War: Blackshields",
-            "id": "a959-6650-e35d-3c31",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "429e-8e2a-fea6-d481-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "429e-8e2a-fea6-d481-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
             "selectionEntries": [
               {
-                "name": "Blackshields Tactica",
-                "id": "ebf2-a8f1-00c2-c7d9",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "bd75-1e39-0a0f-0fd2-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "bd75-1e39-0a0f-0fd2-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
                 "rules": [
                   {
+                    "description": "\" Blackshields gain bonuses to Toughness and Strength when under the effect of certain Battlefield Statuses.\"\n\n\nWhile affected by any of the Pinned, Suppressed or Stunned Battlefield Statuses, a Model with the Blackshields Trait gains a bonus of +1 to their Toughness and Strength Characteristics. If affected by more than one such Battlefield Status then this bonus is increased to +2.",
                     "name": "Bastard Sons of Fate",
                     "id": "4351-d554-72bb-7820",
-                    "description": "\" Blackshields gain bonuses to Toughness and Strength when under the effect of certain Battlefield Statuses.\"\n\n\nWhile affected by any of the Pinned, Suppressed or Stunned Battlefield Statuses, a Model with the Blackshields Trait gains a bonus of +1 to their Toughness and Strength Characteristics. If affected by more than one such Battlefield Status then this bonus is increased to +2.",
                     "hidden": false
                   }
-                ]
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bd75-1e39-0a0f-0fd2-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bd75-1e39-0a0f-0fd2-max"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Blackshields Tactica",
+                "hidden": false,
+                "id": "ebf2-a8f1-00c2-c7d9"
               },
               {
-                "name": "Gambit",
-                "id": "00ba-3187-f889-3bc9",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "afa3-a09a-c7f0-037f-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "afa3-a09a-c7f0-037f-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
                 "profiles": [
                   {
-                    "name": "Beholden to None",
-                    "id": "6992-fae3-8591-c712",
-                    "hidden": false,
-                    "typeId": "9b5f-da4e-5739-cbcf",
-                    "typeName": "Gambit",
                     "characteristics": [
-                      {"name": "Summary", "$text": "If slain by the opposing Model, D3 wounds are inflicted on that Model.", "typeId": "98f3-41cf-e3be-2ae7"},
                       {
-                        "name": "Description",
+                        "$text": "If slain by the opposing Model, D3 wounds are inflicted on that Model.",
+                        "name": "Summary",
+                        "typeId": "98f3-41cf-e3be-2ae7"
+                      },
+                      {
                         "$text": "This Gambit may only be selected if the opposing Model in the Challenge has either the Unique Trait or the Paragon Type. If a Model is Removed as a Casualty during the Strike Step when this Gambit has been selected for them, then D3 wounds are automatically inflicted on the opposing Model at the end of the Glory Step that follows. These wounds have the Damage and AP of the Weapon used by the Model for which this Gambit was selected.",
+                        "name": "Description",
                         "typeId": "2d7d-b1d9-dead-605a"
                       }
-                    ]
+                    ],
+                    "name": "Beholden to None",
+                    "typeId": "9b5f-da4e-5739-cbcf",
+                    "typeName": "Gambit",
+                    "hidden": false,
+                    "id": "6992-fae3-8591-c712"
                   }
-                ]
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "afa3-a09a-c7f0-037f-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "afa3-a09a-c7f0-037f-max"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Gambit",
+                "hidden": false,
+                "id": "00ba-3187-f889-3bc9"
               },
               {
-                "name": "Oaths of Moment",
-                "id": "7285-1826-9124-0b8a",
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "96d0-b6ad-ec95-5efd-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "96d0-b6ad-ec95-5efd-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
                 "rules": [
                   {
+                    "description": "An Army that includes any Detachments with the Blackshields Faction may select a number of Oaths of Moment for each such Detachment, these are sets of rules that add a number of additional options and Special Rules to Units in that Detachment. The number of Oaths of Moment that may be selected for a Detachment depends on what type of Detachment it is, as shown on the table below:\n \nPrimary Detachment : 2 \nAllied Detachment : 1\n\n\nNote that any Auxiliary or Apex Detachments attached to a Blackshields Allied or Primary Detachment must use the same Oaths of Moment as the Detachment to which they are attached. Other types of Detachment may not have Oaths of Moment selected for them.\n\n\nOaths of Moment are selected when a Detachment is added to the Army Roster, and each such Oath of Moment will explain any effects it may have on which Units may be selected for the Detachment. Most Oaths of Moment will also add Special Rules or other effects to some or all Units in the Detachment, this will also be explained by each individual Oath of Moment.\n\n\nNote that some Oaths of Moment require that certain Special Rules be removed from Models and replaced with other Special Rules. In a Detachment that has more than one Oath of Moment, the effects of these are applied one at a time in an order of the Controlling Player's choice – and if the first Oath of Moment removes a Special Rule it cannot then be affected, modified or removed by the second.",
                     "name": "Oaths of Moment",
                     "id": "e8c6-3113-c65d-f636",
-                    "description": "An Army that includes any Detachments with the Blackshields Faction may select a number of Oaths of Moment for each such Detachment, these are sets of rules that add a number of additional options and Special Rules to Units in that Detachment. The number of Oaths of Moment that may be selected for a Detachment depends on what type of Detachment it is, as shown on the table below:\n \nPrimary Detachment : 2 \nAllied Detachment : 1\n\n\nNote that any Auxiliary or Apex Detachments attached to a Blackshields Allied or Primary Detachment must use the same Oaths of Moment as the Detachment to which they are attached. Other types of Detachment may not have Oaths of Moment selected for them.\n\n\nOaths of Moment are selected when a Detachment is added to the Army Roster, and each such Oath of Moment will explain any effects it may have on which Units may be selected for the Detachment. Most Oaths of Moment will also add Special Rules or other effects to some or all Units in the Detachment, this will also be explained by each individual Oath of Moment.\n\n\nNote that some Oaths of Moment require that certain Special Rules be removed from Models and replaced with other Special Rules. In a Detachment that has more than one Oath of Moment, the effects of these are applied one at a time in an order of the Controlling Player's choice – and if the first Oath of Moment removes a Special Rule it cannot then be affected, modified or removed by the second.",
                     "hidden": false
                   }
-                ]
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "96d0-b6ad-ec95-5efd-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "96d0-b6ad-ec95-5efd-max"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Oaths of Moment",
+                "hidden": false,
+                "id": "7285-1826-9124-0b8a"
               }
-            ]
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "429e-8e2a-fea6-d481-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "429e-8e2a-fea6-d481-max"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
+            "name": "Rite of War: Blackshields",
+            "hidden": false,
+            "id": "a959-6650-e35d-3c31"
           }
-        ]
+        ],
+        "name": "Rite of War",
+        "id": "e45b-b0b9-a21e-935f",
+        "hidden": false
       }
-    ]
+    ],
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "library": false,
+    "id": "c195-9a6a-a56b-4634",
+    "name": "Blackshields",
+    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
+    "gameSystemRevision": 54,
+    "revision": 3,
+    "battleScribeVersion": 2.03,
+    "type": "catalogue"
   }
 }
