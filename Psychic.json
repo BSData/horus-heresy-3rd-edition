@@ -1,1629 +1,964 @@
 {
   "catalogue": {
+    "name": "Psychic",
+    "id": "1b2d-2038-39a7-f387",
+    "authorContact": "https://github.com/BSData/horus-heresy-3rd-edition/",
+    "authorName": "Arkangelmark5",
+    "authorUrl": "https://github.com/BSData/horus-heresy-3rd-edition/",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
+    "gameSystemRevision": 2,
+    "library": true,
+    "revision": 5,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "catalogueLinks": [
+      {"name": "Special Rules", "id": "c361-7259-1878-a576", "targetId": "106b-693b-99f2-00c3", "type": "catalogue"},
+      {"name": "Traits", "id": "ce5a-0aad-0f34-ef52", "targetId": "df17-7a05-0826-6e22", "type": "catalogue"},
+      {"name": "Weapons", "id": "5dcf-e2bf-9fd5-b867", "targetId": "a22d-4dd0-c59d-57d3", "type": "catalogue"}
+    ],
+    "categoryEntries": [
+      {"name": "Biomancer", "id": "5339-4a3d-9631-18a4", "hidden": false},
+      {"name": "Pyromancer", "id": "5cb9-c07e-dc73-733f", "hidden": false},
+      {"name": "Telekine", "id": "693c-964f-9dd6-9963", "hidden": false},
+      {"name": "Diviner", "id": "c457-4d05-c6b9-9a82", "hidden": false},
+      {"name": "Telepath", "id": "d269-d26a-cac1-c953", "hidden": false},
+      {"name": "Thaumaturge", "id": "689b-c1f1-9d47-fd2d", "hidden": false},
+      {"name": "Anathemata", "id": "8e24-2d8b-26e7-d7aa", "hidden": false},
+      {"name": "Diabolist", "id": "3897-23c5-f4e7-e4a8", "hidden": false},
+      {"name": "Malignant", "id": "fd99-2f5a-6c86-3245", "hidden": false}
+    ],
     "profileTypes": [
       {
-        "characteristicTypes": [
-          {
-            "name": "Summary",
-            "id": "981f-bb86-6a74-9b20"
-          },
-          {
-            "name": "Trigger",
-            "id": "1be9-f118-1cf3-357e"
-          },
-          {
-            "name": "Focus",
-            "id": "3f2d-f6e7-e6d3-1f86"
-          },
-          {
-            "name": "Target",
-            "id": "2ba0-fbf8-ed6c-3770"
-          },
-          {
-            "name": "Duration",
-            "id": "d7d5-5b31-5b37-66c4"
-          },
-          {
-            "name": "Process",
-            "id": "3804-b2cf-9f1a-4ff0"
-          }
-        ],
         "name": "Psychic Power",
         "id": "9dfb-2fa3-00e7-8cfd",
         "hidden": false,
-        "sortIndex": 18
+        "sortIndex": 18,
+        "characteristicTypes": [
+          {"name": "Summary", "id": "981f-bb86-6a74-9b20"},
+          {"name": "Trigger", "id": "1be9-f118-1cf3-357e"},
+          {"name": "Focus", "id": "3f2d-f6e7-e6d3-1f86"},
+          {"name": "Target", "id": "2ba0-fbf8-ed6c-3770"},
+          {"name": "Duration", "id": "d7d5-5b31-5b37-66c4"},
+          {"name": "Process", "id": "3804-b2cf-9f1a-4ff0"}
+        ]
       },
       {
-        "characteristicTypes": [
-          {
-            "name": "Summary",
-            "id": "c8a8-29f2-605b-5969"
-          },
-          {
-            "name": "Trigger",
-            "id": "4e6b-ebca-53df-fcf7"
-          },
-          {
-            "name": "Cost",
-            "id": "f25a-9ced-eb9b-4587"
-          },
-          {
-            "name": "Focus",
-            "id": "0b45-591a-ee11-488e"
-          },
-          {
-            "name": "Target",
-            "id": "cf1d-e201-caac-3d45"
-          },
-          {
-            "name": "Duration",
-            "id": "daae-40ac-68e2-fa78"
-          },
-          {
-            "name": "Process",
-            "id": "8d43-934e-e511-0cfd"
-          }
-        ],
         "name": "Psychic Reaction",
         "id": "d59e-df4b-630f-f185",
         "hidden": false,
-        "sortIndex": 17
+        "sortIndex": 17,
+        "characteristicTypes": [
+          {"name": "Summary", "id": "c8a8-29f2-605b-5969"},
+          {"name": "Trigger", "id": "4e6b-ebca-53df-fcf7"},
+          {"name": "Cost", "id": "f25a-9ced-eb9b-4587"},
+          {"name": "Focus", "id": "0b45-591a-ee11-488e"},
+          {"name": "Target", "id": "cf1d-e201-caac-3d45"},
+          {"name": "Duration", "id": "daae-40ac-68e2-fa78"},
+          {"name": "Process", "id": "8d43-934e-e511-0cfd"}
+        ]
       },
       {
-        "characteristicTypes": [
-          {
-            "name": "R",
-            "id": "6d86-f7c6-c184-8bf4"
-          },
-          {
-            "name": "FP",
-            "id": "99a5-a4b9-8862-5092"
-          },
-          {
-            "name": "RS",
-            "id": "ff4a-ab25-1be8-4545"
-          },
-          {
-            "name": "AP",
-            "id": "c8d6-d2ec-1344-07e3"
-          },
-          {
-            "name": "D",
-            "id": "e840-f63c-5bc4-27b3"
-          },
-          {
-            "name": "Special Rules",
-            "id": "e87b-e7a3-5562-a456"
-          },
-          {
-            "name": "Traits",
-            "id": "a229-21ce-4177-c4b1"
-          }
-        ],
         "name": "Psychic Ranged Weapon",
         "id": "7d31-7144-3b28-c850",
         "hidden": false,
-        "sortIndex": 12
+        "sortIndex": 12,
+        "characteristicTypes": [
+          {"name": "R", "id": "6d86-f7c6-c184-8bf4"},
+          {"name": "FP", "id": "99a5-a4b9-8862-5092"},
+          {"name": "RS", "id": "ff4a-ab25-1be8-4545"},
+          {"name": "AP", "id": "c8d6-d2ec-1344-07e3"},
+          {"name": "D", "id": "e840-f63c-5bc4-27b3"},
+          {"name": "Special Rules", "id": "e87b-e7a3-5562-a456"},
+          {"name": "Traits", "id": "a229-21ce-4177-c4b1"}
+        ]
       },
       {
-        "characteristicTypes": [
-          {
-            "name": "IM",
-            "id": "079b-2c1c-979b-1fe0"
-          },
-          {
-            "name": "AM",
-            "id": "c6d4-d31f-a563-78f8"
-          },
-          {
-            "name": "SM",
-            "id": "562d-ec0b-83ee-541c"
-          },
-          {
-            "name": "AP",
-            "id": "46ac-d3d4-36f0-6a1e"
-          },
-          {
-            "name": "D",
-            "id": "cca6-168c-5576-e0ee"
-          },
-          {
-            "name": "Special Rules",
-            "id": "0da4-845e-b008-2d17"
-          },
-          {
-            "name": "Traits",
-            "id": "dbf5-ab06-5eb4-7d00"
-          }
-        ],
         "name": "Psychic Melee Weapon",
         "id": "f553-2eab-e909-ee56",
         "hidden": false,
-        "sortIndex": 13
-      }
-    ],
-    "sharedSelectionEntries": [
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "-3",
-                "name": "IM",
-                "typeId": "079b-2c1c-979b-1fe0"
-              },
-              {
-                "$text": "1",
-                "name": "AM",
-                "typeId": "c6d4-d31f-a563-78f8"
-              },
-              {
-                "$text": "12",
-                "name": "SM",
-                "typeId": "562d-ec0b-83ee-541c"
-              },
-              {
-                "$text": "2",
-                "name": "AP",
-                "typeId": "46ac-d3d4-36f0-6a1e"
-              },
-              {
-                "$text": "2",
-                "name": "D",
-                "typeId": "cca6-168c-5576-e0ee"
-              },
-              {
-                "$text": "Armourbane, Force (D)",
-                "name": "Special Rules",
-                "typeId": "0da4-845e-b008-2d17"
-              },
-              {
-                "$text": "Melee, Psychic",
-                "name": "Traits",
-                "typeId": "dbf5-ab06-5eb4-7d00"
-              }
-            ],
-            "name": "Biomantic Slam",
-            "typeId": "f553-2eab-e909-ee56",
-            "typeName": "Psychic Melee Weapon",
-            "hidden": false,
-            "id": "c5df-010a-1bdd-85c7"
-          },
-          {
-            "characteristics": [
-              {
-                "$text": "This Power is used in the Charge Sub-Phase to add a bonus to a Unit's Strength and Toughness.",
-                "name": "Summary",
-                "typeId": "981f-bb86-6a74-9b20"
-              },
-              {
-                "$text": "The Active Player may choose to Manifest the Biomantic Rage Psychic Power in the Charge Sub-Phase, at Step 4 of the Charge process before any Unit makes a Volley Attack.",
-                "name": "Trigger",
-                "typeId": "1be9-f118-1cf3-357e"
-              },
-              {
-                "$text": "The Focus of the Power must be a Model with the Biomancer Trait under the Active Player's control, and must be either part of the Unit making a Charge or within 18\" and with Line of Sight to one or more Models in that Unit.",
-                "name": "Focus",
-                "typeId": "3f2d-f6e7-e6d3-1f86"
-              },
-              {
-                "$text": "The Target Unit must be the Unit currently selected and in the process of making a Charge.",
-                "name": "Target",
-                "typeId": "2ba0-fbf8-ed6c-3770"
-              },
-              {
-                "$text": "If successfully Manifested, the effects of this Psychic Power last until the end of the current Assault Phase.",
-                "name": "Duration",
-                "typeId": "d7d5-5b31-5b37-66c4"
-              },
-              {
-                "$text": "1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then no Volley Attack may be made for the Target Unit, but all Models in the Target Unit gain a bonus of +2 to their Strength and Toughness Characteristics.\n3. If the Manifestation Check fails then there is no further effect.",
-                "name": "Process",
-                "typeId": "3804-b2cf-9f1a-4ff0"
-              }
-            ],
-            "name": "Biomantic Rage",
-            "typeId": "9dfb-2fa3-00e7-8cfd",
-            "typeName": "Psychic Power",
-            "hidden": false,
-            "id": "fe7f-a6ad-b858-a3a0"
-          }
-        ],
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Force (D)",
-                "field": "name"
-              }
-            ],
-            "comment": "D",
-            "name": "Force (X)",
-            "id": "9854-0918-be0b-33c9",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "25cd-60d0-a0a4-6b18"
-          },
-          {
-            "name": "Armourbane",
-            "id": "c811-b2a2-d066-a7d9",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "36ee-4c54-bced-a696"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Impact (S)",
-                "field": "name"
-              }
-            ],
-            "comment": "S",
-            "name": "Impact (X)",
-            "id": "7cb6-7869-da43-daa4",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "6ead-c31c-ab09-2f8c"
-          }
-        ],
-        "categoryLinks": [
-          {
-            "targetId": "5339-4a3d-9631-18a4",
-            "id": "090e-ac4f-0447-d1ac",
-            "primary": false,
-            "name": "Biomancer"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Biomancy",
-        "hidden": false,
-        "id": "7f0b-3a53-fbba-de05"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "18",
-                "name": "R",
-                "typeId": "6d86-f7c6-c184-8bf4"
-              },
-              {
-                "$text": "1",
-                "name": "FP",
-                "typeId": "99a5-a4b9-8862-5092"
-              },
-              {
-                "$text": "4",
-                "name": "RS",
-                "typeId": "ff4a-ab25-1be8-4545"
-              },
-              {
-                "$text": "4",
-                "name": "AP",
-                "typeId": "c8d6-d2ec-1344-07e3"
-              },
-              {
-                "$text": "1",
-                "name": "D",
-                "typeId": "e840-f63c-5bc4-27b3"
-              },
-              {
-                "$text": "Panic (1), Blast (5\"), Force (S)",
-                "name": "Special Rules",
-                "typeId": "e87b-e7a3-5562-a456"
-              },
-              {
-                "$text": "Ranged, Psychic",
-                "name": "Traits",
-                "typeId": "a229-21ce-4177-c4b1"
-              }
-            ],
-            "name": "Wildfire",
-            "typeId": "7d31-7144-3b28-c850",
-            "typeName": "Psychic Ranged Weapon",
-            "hidden": false,
-            "id": "32c6-600a-1d16-18c2"
-          },
-          {
-            "characteristics": [
-              {
-                "$text": "-1",
-                "name": "IM",
-                "typeId": "079b-2c1c-979b-1fe0"
-              },
-              {
-                "$text": "6+D3",
-                "name": "AM",
-                "typeId": "c6d4-d31f-a563-78f8"
-              },
-              {
-                "$text": "5",
-                "name": "SM",
-                "typeId": "562d-ec0b-83ee-541c"
-              },
-              {
-                "$text": "4",
-                "name": "AP",
-                "typeId": "46ac-d3d4-36f0-6a1e"
-              },
-              {
-                "$text": "1",
-                "name": "D",
-                "typeId": "cca6-168c-5576-e0ee"
-              },
-              {
-                "$text": "Deflagrate (5)",
-                "name": "Special Rules",
-                "typeId": "0da4-845e-b008-2d17"
-              },
-              {
-                "$text": "Melee, Psychic",
-                "name": "Traits",
-                "typeId": "dbf5-ab06-5eb4-7d00"
-              }
-            ],
-            "name": "Conflagration",
-            "typeId": "f553-2eab-e909-ee56",
-            "typeName": "Psychic Melee Weapon",
-            "hidden": false,
-            "id": "345e-6b0d-03c7-1e44"
-          }
-        ],
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Force (S)",
-                "field": "name"
-              }
-            ],
-            "comment": "S",
-            "name": "Force (X)",
-            "id": "9c3e-2a39-e64c-153e",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "25cd-60d0-a0a4-6b18"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Panic (1)",
-                "field": "name"
-              }
-            ],
-            "comment": "1",
-            "name": "Panic (X)",
-            "id": "61c3-5cb5-1a06-ce3b",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "82a7-f471-3fda-6ca1"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Blast (5\")",
-                "field": "name"
-              }
-            ],
-            "comment": "5\"",
-            "name": "Blast (X)",
-            "id": "0184-d9b5-57fe-9804",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "8687-05f8-7034-412c"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Deflagrate (5)",
-                "field": "name"
-              }
-            ],
-            "comment": "5",
-            "name": "Deflagrate (X)",
-            "id": "7e75-d499-4a86-ef40",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "f4a0-f206-0dba-7d81"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Explodes (4+)",
-                "field": "name"
-              }
-            ],
-            "comment": "4+",
-            "name": "Explodes (X)",
-            "id": "cc44-7188-d687-4b02",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "da5b-b871-20da-3e70"
-          }
-        ],
-        "categoryLinks": [
-          {
-            "targetId": "5cb9-c07e-dc73-733f",
-            "id": "a66b-5d7a-ea1e-d51f",
-            "primary": false,
-            "name": "Pyromancer"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Pyromancy",
-        "hidden": false,
-        "id": "b8f6-c7cb-3596-fb48"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "This Power can be used in either the Shooting or Assault Phase and grants a Shrouded Damage Mitigation Test.",
-                "name": "Summary",
-                "typeId": "c8a8-29f2-605b-5969"
-              },
-              {
-                "$text": "The Reactive Player may choose to declare a Force Barrier Psychic Reaction in either the Assault Phase, at the start of Step 4 of the Charge Process, or in the Shooting Phase, at the start of Step 3 of a Shooting Attack made by the Active Player.",
-                "name": "Trigger",
-                "typeId": "4e6b-ebca-53df-fcf7"
-              },
-              {
-                "$text": "The Reactive Player must spend 1 point of their Reaction Allotment to declare a Force Barrier Psychic Reaction - this cost paid as soon as the declaration is made.",
-                "name": "Cost",
-                "typeId": "f25a-9ced-eb9b-4587"
-              },
-              {
-                "$text": "The Focus of this Psychic Reaction must be a Model with the Telekine Trait under the Reactive Player's control, and must be a part of the Unit targeted by the Charge or Shooting Attack that triggers this Psychic Reaction.",
-                "name": "Focus",
-                "typeId": "0b45-591a-ee11-488e"
-              },
-              {
-                "$text": "The Target Unit must be the Unit that is the target of the Shooting Attack or Charge that triggered the Reaction.",
-                "name": "Target",
-                "typeId": "cf1d-e201-caac-3d45"
-              },
-              {
-                "$text": "If successfully Manifested, the effects of this Psychic Reaction last until the end of the Sub-Phase in which it was declared.",
-                "name": "Duration",
-                "typeId": "daae-40ac-68e2-fa78"
-              },
-              {
-                "$text": "1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all Models in the Target Unit gain a 3+ Shrouded Damage Mitigation Test against any wounds inflicted during a Volley or Shooting Attack.\n3. If the Manifestation Check fails then there is no further effect.",
-                "name": "Process",
-                "typeId": "8d43-934e-e511-0cfd"
-              }
-            ],
-            "name": "Force Barrier",
-            "typeId": "d59e-df4b-630f-f185",
-            "typeName": "Psychic Reaction",
-            "hidden": false,
-            "id": "c553-3874-e6b9-a098"
-          },
-          {
-            "characteristics": [
-              {
-                "$text": "18",
-                "name": "R",
-                "typeId": "6d86-f7c6-c184-8bf4"
-              },
-              {
-                "$text": "3",
-                "name": "FP",
-                "typeId": "99a5-a4b9-8862-5092"
-              },
-              {
-                "$text": "6",
-                "name": "RS",
-                "typeId": "ff4a-ab25-1be8-4545"
-              },
-              {
-                "$text": "4",
-                "name": "AP",
-                "typeId": "c8d6-d2ec-1344-07e3"
-              },
-              {
-                "$text": "1",
-                "name": "D",
-                "typeId": "e840-f63c-5bc4-27b3"
-              },
-              {
-                "$text": "Pinning (2), Force (FP)",
-                "name": "Special Rules",
-                "typeId": "e87b-e7a3-5562-a456"
-              },
-              {
-                "$text": "Ranged, Psychic",
-                "name": "Traits",
-                "typeId": "a229-21ce-4177-c4b1"
-              }
-            ],
-            "name": "Immovable Force",
-            "typeId": "7d31-7144-3b28-c850",
-            "typeName": "Psychic Ranged Weapon",
-            "hidden": false,
-            "id": "31de-4d17-0779-5524"
-          }
-        ],
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Pinning (2)",
-                "field": "name"
-              }
-            ],
-            "comment": "2",
-            "name": "Pinning (X)",
-            "id": "4b78-c61b-cc54-a252",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "88b6-6493-e4d7-1805"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Force (FP)",
-                "field": "name"
-              }
-            ],
-            "comment": "FP",
-            "name": "Force (X)",
-            "id": "ae6c-d145-4f75-7407",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "25cd-60d0-a0a4-6b18"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Shrouded (4+)",
-                "field": "name"
-              }
-            ],
-            "comment": "4+",
-            "name": "Shrouded (X)",
-            "id": "8d85-32cf-2618-55c2",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "c7e7-3bad-3de0-d6cc"
-          }
-        ],
-        "categoryLinks": [
-          {
-            "targetId": "693c-964f-9dd6-9963",
-            "id": "33d4-52f5-c7b4-3e79",
-            "primary": false,
-            "name": "Telekine"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Telekinesis",
-        "hidden": false,
-        "id": "3a5d-8574-6913-d83c"
-      },
-      {
-        "categoryLinks": [
-          {
-            "targetId": "c457-4d05-c6b9-9a82",
-            "id": "8a91-cafe-9f3e-1fcc",
-            "primary": false,
-            "name": "Diviner"
-          }
-        ],
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "98f3-41cf-e3be-2ae7"
-              },
-              {
-                "$text": "If this Gambit is selected, the Controlling Player must make a Willpower Check for the Model using this Gambit. If the Check is successful then in the Strike Step of the Challenge any Hit Tests made for this Model are successful on a result of 2+ regardless of the Weapon Skill Characteristics of the Models involved in the Challenge. If the Willpower Check is not successful then Hit Tests are made as normal, Note that this Willpower Check cannot inflict Perils of the Warp.",
-                "name": "Description",
-                "typeId": "2d7d-b1d9-dead-605a"
-              }
-            ],
-            "name": "Every Strike Foreseen",
-            "typeId": "9b5f-da4e-5739-cbcf",
-            "typeName": "Gambit",
-            "hidden": false,
-            "id": "aae8-6c9f-73f3-9cb3"
-          },
-          {
-            "characteristics": [
-              {
-                "$text": "This Power is used as part of a Shooting Attack to grant a Unit the Precision (5+) Special Rule.",
-                "name": "Summary",
-                "typeId": "981f-bb86-6a74-9b20"
-              },
-              {
-                "$text": "The Active Player may choose to Manifest the Foresight's Blessing Psychic Power in the Shooting Phase, at Step 4 of any Shooting Attack made by the Active Player.",
-                "name": "Trigger",
-                "typeId": "1be9-f118-1cf3-357e"
-              },
-              {
-                "$text": "The Focus of the Power must be a Model with the Diviner Trait under the Active Player's control, and must be either part of the Unit making the Shooting Attack or within 18\" and with Line of Sight to one or more Models in that Unit.",
-                "name": "Focus",
-                "typeId": "3f2d-f6e7-e6d3-1f86"
-              },
-              {
-                "$text": "The Target Unit must be the Unit currently selected and in the process of making a Shooting Attack.",
-                "name": "Target",
-                "typeId": "2ba0-fbf8-ed6c-3770"
-              },
-              {
-                "$text": "If successfully Manifested, the effects of this Psychic Power last until the end of the Shooting Attack being resolved.",
-                "name": "Duration",
-                "typeId": "d7d5-5b31-5b37-66c4"
-              },
-              {
-                "$text": "1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all Models in the Target Unit gain the Precision (5+) Special Rule.\n3. If the Manifestation Check fails then there is no further effect.",
-                "name": "Process",
-                "typeId": "3804-b2cf-9f1a-4ff0"
-              }
-            ],
-            "name": "Foresight's Blessing",
-            "typeId": "9dfb-2fa3-00e7-8cfd",
-            "typeName": "Psychic Power",
-            "hidden": false,
-            "id": "58c6-f57d-ec06-9c39"
-          }
-        ],
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Duellist's Edge (2)",
-                "field": "name"
-              }
-            ],
-            "comment": "2",
-            "name": "Duellist's Edge (X)",
-            "id": "023a-032c-20c6-2f15",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "94bc-c69f-99b6-8ba0"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Divination",
-        "hidden": false,
-        "id": "5f50-43e2-30a1-01c8"
-      },
-      {
-        "categoryLinks": [
-          {
-            "targetId": "d269-d26a-cac1-c953",
-            "id": "e865-1b7d-b71b-0faa",
-            "primary": false,
-            "name": "Telepath"
-          }
-        ],
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Fear (1)",
-                "field": "name"
-              }
-            ],
-            "comment": "1",
-            "name": "Fear (X)",
-            "id": "501c-85e4-dbb9-0998",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0ebc-0c92-2209-6393"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Stun (-)",
-                "field": "name"
-              }
-            ],
-            "comment": "-",
-            "name": "Stun (X)",
-            "id": "4abb-215d-857d-43a2",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "c7c1-bbc9-f852-6f71"
-          }
-        ],
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "This Power is used in the Movement Phase and can force the target to Fall Back or become Routed.",
-                "name": "Summary",
-                "typeId": "981f-bb86-6a74-9b20"
-              },
-              {
-                "$text": "The Active Player may choose to Manifest the Mind-burst Psychic Power in the Movement Phase, when selecting a Unit under their control that includes at least one Model with the Telepath Trait to move and before any move is made for that Unit.",
-                "name": "Trigger",
-                "typeId": "1be9-f118-1cf3-357e"
-              },
-              {
-                "$text": "The Focus of the Power must be a Model with the Telepath Trait that is part of the Unit that was selected to move.",
-                "name": "Focus",
-                "typeId": "3f2d-f6e7-e6d3-1f86"
-              },
-              {
-                "$text": "The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18\" of the Focus and with Line of Sight to the Focus. The target may not be a Unit that is Locked in Combat or otherwise ineligible to be the target of a Shooting Attack and may not include any Models with the Vehicle Type.",
-                "name": "Target",
-                "typeId": "2ba0-fbf8-ed6c-3770"
-              },
-              {
-                "$text": "If successfully Manifested, the effects of this Psychic Power are resolved immediately.",
-                "name": "Duration",
-                "typeId": "d7d5-5b31-5b37-66c4"
-              },
-              {
-                "$text": "1. Once the Focus and Target Unit have been decided, the Target Unit’s Controlling Player makes a Resistance Check for that Unit.\n2. If the Resistance Check is failed, then all Statuses are removed from all Models in the Target Unit, and then the Target Unit must immediately make a Fall Back Move. Once that Fall Back Move has been resolved, a Leadership Check must be made for the Target Unit by its Controlling Player, this Check may not be modified by any effect or Special Rule. If the Leadership Check is successful, then there is no further effect, if it is unsuccessful then all Models in the Target Unit gain the Routed Status.\n3. If the Resistance Check succeeds then there is no further effect to the Target Unit.\n4. Regardless of whether the Resistance Check succeeds or fails, the Unit that includes the Focus of this Psychic Power may not make a move or Rush in this Movement Phase.",
-                "name": "Process",
-                "typeId": "3804-b2cf-9f1a-4ff0"
-              }
-            ],
-            "name": "Mind-Burst",
-            "typeId": "9dfb-2fa3-00e7-8cfd",
-            "typeName": "Psychic Power",
-            "hidden": false,
-            "id": "8ac2-c2e3-73c6-0984"
-          },
-          {
-            "characteristics": [
-              {
-                "name": "R",
-                "typeId": "6d86-f7c6-c184-8bf4",
-                "$text": "18"
-              },
-              {
-                "name": "FP",
-                "typeId": "99a5-a4b9-8862-5092",
-                "$text": "2D6"
-              },
-              {
-                "name": "RS",
-                "typeId": "ff4a-ab25-1be8-4545",
-                "$text": "3"
-              },
-              {
-                "name": "AP",
-                "typeId": "c8d6-d2ec-1344-07e3",
-                "$text": "-"
-              },
-              {
-                "name": "D",
-                "typeId": "e840-f63c-5bc4-27b3",
-                "$text": "1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "e87b-e7a3-5562-a456",
-                "$text": "Stun (-)"
-              },
-              {
-                "name": "Traits",
-                "typeId": "a229-21ce-4177-c4b1",
-                "$text": "Ranged, Psychic"
-              }
-            ],
-            "name": "Cursed Whispers",
-            "typeId": "7d31-7144-3b28-c850",
-            "typeName": "Psychic Ranged Weapon",
-            "hidden": false,
-            "id": "0bb5-a147-4251-fde0"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Telepathy",
-        "hidden": false,
-        "id": "13c2-f899-efef-20cb"
-      },
-      {
-        "categoryLinks": [
-          {
-            "targetId": "689b-c1f1-9d47-fd2d",
-            "id": "a534-fb59-7a98-0651",
-            "primary": false,
-            "name": "Thaumaturge"
-          }
-        ],
-        "infoLinks": [
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Hatred (Psyker)",
-                "field": "name"
-              }
-            ],
-            "comment": "Psyker",
-            "name": "Hatred (X)",
-            "id": "83ab-9ef8-dbb6-cc6f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0612-95d5-46ae-c5ee"
-          }
-        ],
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "This Power can be used in the Shooting Phase and can return a single Casualty to the Unit with all Wounds restored.",
-                "name": "Summary",
-                "typeId": "c8a8-29f2-605b-5969"
-              },
-              {
-                "$text": "The Reactive Player may choose to declare a Resurrection Psychic Reaction in the Shooting Phase, at the start of Step 11 of any Shooting Attack made by the Active Player.",
-                "name": "Trigger",
-                "typeId": "4e6b-ebca-53df-fcf7"
-              },
-              {
-                "$text": "The Reactive Player must spend 1 point of their Reaction Allotment to declare a Resurrection Psychic Reaction - this cost paid as soon as the declaration is made.",
-                "name": "Cost",
-                "typeId": "f25a-9ced-eb9b-4587"
-              },
-              {
-                "$text": "The Focus of this Psychic Reaction must be a Model with the Thaumaturge Trait and under the Reactive Player's Control, and must be a part of the Unit targeted by the Shooting Attack that triggers this Psychic Reaction.",
-                "name": "Focus",
-                "typeId": "0b45-591a-ee11-488e"
-              },
-              {
-                "$text": "The Target Unit must be the Unit that is the target of the Shooting Attack that triggered the Reaction.",
-                "name": "Target",
-                "typeId": "cf1d-e201-caac-3d45"
-              },
-              {
-                "$text": "If successfully Manifested, the effects of this Psychic Reaction are resolved immediately.",
-                "name": "Duration",
-                "typeId": "daae-40ac-68e2-fa78"
-              },
-              {
-                "$text": "1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2.If the Manifestation Check is successful then, before any Models in the Target Unit are Removed as Casualties, the Controlling Player of the Target Unit must select one Model being Removed as a Casualty and roll a Dice. If the Dice roll for the chosen Model is equal to or higher than a '4', then that Model is not Removed as a Casualty and is returned to play in Unit Coherency with its Unit and with its Wounds Characteristic set to its Base Value, as listed on that Model's profile. This Psychic Reaction has no effect on Models that do not have a Wounds Characteristic and if the result of the Manifestation Check causes Perils of the Warp, then this instance of Perils of the Warp is resolved after any Models are returned to the Unit.\n3.If the Manifestation Check fails then there is no further effect.",
-                "name": "Process",
-                "typeId": "8d43-934e-e511-0cfd"
-              }
-            ],
-            "name": "Resurrection",
-            "typeId": "d59e-df4b-630f-f185",
-            "typeName": "Psychic Reaction",
-            "hidden": false,
-            "id": "9f18-3d26-5c15-0b24"
-          },
-          {
-            "characteristics": [
-              {
-                "$text": "This Power is used in the Start Phase and makes it harder for the Target Unit to use Psychic Powers, Psychic Reactions or to attack with Psychic Weapons.",
-                "name": "Summary",
-                "typeId": "981f-bb86-6a74-9b20"
-              },
-              {
-                "$text": "The Active Player may choose to Manifest the Tranquillity Psychic Power in the Effects Sub-Phase of the Start Phase.",
-                "name": "Trigger",
-                "typeId": "1be9-f118-1cf3-357e"
-              },
-              {
-                "$text": "The Focus of the Power must be a Model with the Thaumaturge Trait and must be controlled by the Active Player.",
-                "name": "Focus",
-                "typeId": "3f2d-f6e7-e6d3-1f86"
-              },
-              {
-                "$text": "The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18\" of the Focus and with Line of Sight to the Focus. The Target Unit must include at least one Model with the Psyker Trait.",
-                "name": "Target",
-                "typeId": "2ba0-fbf8-ed6c-3770"
-              },
-              {
-                "$text": "If successfully Manifested, the effects of this Psychic Power last until the start of the Active Player's next Turn as the Active Player.",
-                "name": "Duration",
-                "typeId": "d7d5-5b31-5b37-66c4"
-              },
-              {
-                "$text": "1. Once the Focus and Target Unit have been decided, the Target Unit’s Controlling Player makes a Resistance Check for that Unit.\n2.  If the Resistance Check is failed, then all Models in the Target Unit suffer a penalty of -2 to their Willpower Characteristic when attempting to Manifest any Psychic Power or Psychic Reaction. If any Model in the Target Unit makes attacks with a Weapon that has the Psychic Trait, then the Strength Characteristic of all Hits inflicted is reduced by 1.\n3. If the Resistance Check succeeds then there is no further effect.",
-                "name": "Process",
-                "typeId": "3804-b2cf-9f1a-4ff0"
-              }
-            ],
-            "name": "Tranquility",
-            "typeId": "9dfb-2fa3-00e7-8cfd",
-            "typeName": "Psychic Power",
-            "hidden": false,
-            "id": "cfb2-5d69-b138-0097"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Thaumaturgy",
-        "hidden": false,
-        "id": "15a9-e44f-2393-0d6a"
-      },
-      {
-        "categoryLinks": [
-          {
-            "targetId": "8e24-2d8b-26e7-d7aa",
-            "id": "cd69-9900-1c45-f5f8",
-            "primary": false,
-            "name": "Anathemata"
-          }
-        ],
-        "infoLinks": [
-          {
-            "comment": "D",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Force (D)",
-                "field": "name"
-              }
-            ],
-            "name": "Force (X)",
-            "id": "4673-5c9b-5d09-1ced",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "25cd-60d0-a0a4-6b18"
-          },
-          {
-            "comment": "1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Fear (1)",
-                "field": "name"
-              }
-            ],
-            "name": "Fear (X)",
-            "id": "e527-e21b-2fb5-33e7",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0ebc-0c92-2209-6393"
-          },
-          {
-            "comment": "5+",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Shred (5+)",
-                "field": "name"
-              }
-            ],
-            "name": "Shred (X)",
-            "id": "47a9-832b-6480-1c2e",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "d01e-f96b-b5c1-8fb1"
-          },
-          {
-            "name": "Seal the Veil ",
-            "id": "0c3b-5aaf-063d-fb64",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "e590-9996-7a9e-e74a"
-          },
-          {
-            "name": "Breach the Veil",
-            "id": "47cb-3dbd-757b-d5f7",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "0e6b-31ce-26ee-f05e"
-          }
-        ],
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "18",
-                "name": "R",
-                "typeId": "6d86-f7c6-c184-8bf4"
-              },
-              {
-                "$text": "D6",
-                "name": "FP",
-                "typeId": "99a5-a4b9-8862-5092"
-              },
-              {
-                "$text": "5",
-                "name": "RS",
-                "typeId": "ff4a-ab25-1be8-4545"
-              },
-              {
-                "$text": "4",
-                "name": "AP",
-                "typeId": "c8d6-d2ec-1344-07e3"
-              },
-              {
-                "$text": "1",
-                "name": "D",
-                "typeId": "e840-f63c-5bc4-27b3"
-              },
-              {
-                "$text": "Shred (5+), Force (D)",
-                "name": "Special Rules",
-                "typeId": "e87b-e7a3-5562-a456"
-              },
-              {
-                "$text": "Psychic",
-                "name": "Traits",
-                "typeId": "a229-21ce-4177-c4b1"
-              }
-            ],
-            "name": "Void Darts",
-            "typeId": "7d31-7144-3b28-c850",
-            "typeName": "Psychic Ranged Weapon",
-            "hidden": false,
-            "id": "feab-af5c-9bcb-c78b"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Anathemata",
-        "hidden": false,
-        "id": "091a-56c9-7eba-9fa7"
-      },
-      {
-        "infoLinks": [
-          {
-            "comment": "1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Fear (1)",
-                "field": "name"
-              }
-            ],
-            "name": "Fear (X)",
-            "id": "7932-a213-c607-fa1f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0ebc-0c92-2209-6393"
-          },
-          {
-            "comment": "6+",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Breaching (6+)",
-                "field": "name"
-              }
-            ],
-            "name": "Breaching (X)",
-            "id": "7fff-e925-4021-876f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "b094-0b64-eb57-aed6"
-          },
-          {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Deflagrate (7)",
-                "field": "name"
-              }
-            ],
-            "name": "Deflagrate (X)",
-            "id": "010b-d4a4-87e5-fe5e",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "f4a0-f206-0dba-7d81"
-          },
-          {
-            "comment": "D",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Force (D)",
-                "field": "name"
-              }
-            ],
-            "name": "Force (X)",
-            "id": "6b18-2fc8-b8b7-b081",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "25cd-60d0-a0a4-6b18"
-          }
-        ],
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "12",
-                "name": "R",
-                "typeId": "6d86-f7c6-c184-8bf4"
-              },
-              {
-                "$text": "D3",
-                "name": "FP",
-                "typeId": "99a5-a4b9-8862-5092"
-              },
-              {
-                "$text": "7",
-                "name": "RS",
-                "typeId": "ff4a-ab25-1be8-4545"
-              },
-              {
-                "$text": "4",
-                "name": "AP",
-                "typeId": "c8d6-d2ec-1344-07e3"
-              },
-              {
-                "$text": "1",
-                "name": "D",
-                "typeId": "e840-f63c-5bc4-27b3"
-              },
-              {
-                "$text": "Breaching (6+), Deflagrate (7), Force (D)",
-                "name": "Special Rules",
-                "typeId": "e87b-e7a3-5562-a456"
-              },
-              {
-                "$text": "Psychic",
-                "name": "Traits",
-                "typeId": "a229-21ce-4177-c4b1"
-              }
-            ],
-            "name": "Hellfire",
-            "typeId": "7d31-7144-3b28-c850",
-            "typeName": "Psychic Ranged Weapon",
-            "hidden": false,
-            "id": "e662-ffe9-26e9-a1ff"
-          },
-          {
-            "characteristics": [
-              {
-                "name": "Summary",
-                "typeId": "981f-bb86-6a74-9b20"
-              },
-              {
-                "$text": "The Active Player may choose to Manifest the Dark Channeling Psychic Power at the start of the Fight Sub-Phase of their Assault Phase.",
-                "name": "Trigger",
-                "typeId": "1be9-f118-1cf3-357e"
-              },
-              {
-                "$text": "The Focus of the Power must be a Model with the Diabolist Trait under the Active Player’s control.",
-                "name": "Focus",
-                "typeId": "3f2d-f6e7-e6d3-1f86"
-              },
-              {
-                "$text": "The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 12\" of the Focus and with Line of Sight to the Focus, and which is entirely composed of Models with the Word Bearers Trait.",
-                "name": "Target",
-                "typeId": "2ba0-fbf8-ed6c-3770"
-              },
-              {
-                "$text": "If Successfully Manifested, the effects of this Psychic Power last until the end the Assault Phase.",
-                "name": "Duration",
-                "typeId": "d7d5-5b31-5b37-66c4"
-              },
-              {
-                "$text": "1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, all Models in the Target Unit gain the Aflame (1) and Feel No Pain (6+) Special Rules.\n3. If the Manifestation Check fails then there is no further effect.",
-                "name": "Process",
-                "typeId": "3804-b2cf-9f1a-4ff0"
-              }
-            ],
-            "name": "Dark Channeling",
-            "typeId": "9dfb-2fa3-00e7-8cfd",
-            "typeName": "Psychic Power",
-            "hidden": false,
-            "id": "167f-3362-68d8-b92a"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "add",
-            "value": "3897-23c5-f4e7-e4a8",
-            "field": "category"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Diabolism",
-        "hidden": false,
-        "id": "f6c0-5042-9c80-f993"
-      },
-      {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "12",
-                "name": "R",
-                "typeId": "6d86-f7c6-c184-8bf4"
-              },
-              {
-                "$text": "4",
-                "name": "FP",
-                "typeId": "99a5-a4b9-8862-5092"
-              },
-              {
-                "$text": "5",
-                "name": "RS",
-                "typeId": "ff4a-ab25-1be8-4545"
-              },
-              {
-                "$text": "4",
-                "name": "AP",
-                "typeId": "c8d6-d2ec-1344-07e3"
-              },
-              {
-                "$text": "1",
-                "name": "D",
-                "typeId": "e840-f63c-5bc4-27b3"
-              },
-              {
-                "$text": "Deflagrate (5), Overload (1), Force (FP)",
-                "name": "Special Rules",
-                "typeId": "e87b-e7a3-5562-a456"
-              },
-              {
-                "$text": "Assault",
-                "name": "Traits",
-                "typeId": "a229-21ce-4177-c4b1"
-              }
-            ],
-            "name": "Warp Torrent - Torrent",
-            "typeId": "7d31-7144-3b28-c850",
-            "typeName": "Psychic Ranged Weapon",
-            "hidden": false,
-            "id": "bd87-5f4b-23e6-e6c3"
-          },
-          {
-            "characteristics": [
-              {
-                "$text": "12",
-                "name": "R",
-                "typeId": "6d86-f7c6-c184-8bf4"
-              },
-              {
-                "$text": "1",
-                "name": "FP",
-                "typeId": "99a5-a4b9-8862-5092"
-              },
-              {
-                "$text": "5",
-                "name": "RS",
-                "typeId": "ff4a-ab25-1be8-4545"
-              },
-              {
-                "$text": "2",
-                "name": "AP",
-                "typeId": "c8d6-d2ec-1344-07e3"
-              },
-              {
-                "$text": "2",
-                "name": "D",
-                "typeId": "e840-f63c-5bc4-27b3"
-              },
-              {
-                "$text": "Deflagrate (5), Overload (2), Force (RS)",
-                "name": "Special Rules",
-                "typeId": "e87b-e7a3-5562-a456"
-              },
-              {
-                "$text": "Assault",
-                "name": "Traits",
-                "typeId": "a229-21ce-4177-c4b1"
-              }
-            ],
-            "name": "Warp Torrent - Malignant",
-            "typeId": "7d31-7144-3b28-c850",
-            "typeName": "Psychic Ranged Weapon",
-            "hidden": false,
-            "id": "71b8-95dd-6b07-ecf0"
-          }
-        ],
-        "infoLinks": [
-          {
-            "comment": "5",
-            "modifiers": [
-              {
-                "type": "replace",
-                "value": 5,
-                "field": "name",
-                "arg": "X"
-              }
-            ],
-            "name": "Deflagrate (X)",
-            "id": "8bd2-acd3-0539-036b",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "f4a0-f206-0dba-7d81"
-          },
-          {
-            "comment": "1",
-            "modifiers": [
-              {
-                "type": "replace",
-                "value": 1,
-                "field": "name",
-                "arg": "X"
-              }
-            ],
-            "name": "Overload (X)",
-            "id": "b904-8950-05db-3a00",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1d3a-d1e2-871a-63ae"
-          },
-          {
-            "comment": "FP",
-            "modifiers": [
-              {
-                "type": "replace",
-                "value": "FP",
-                "field": "name",
-                "arg": "X"
-              }
-            ],
-            "name": "Force (X)",
-            "id": "efbd-56c9-c866-0209",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "25cd-60d0-a0a4-6b18"
-          },
-          {
-            "comment": "2",
-            "modifiers": [
-              {
-                "type": "replace",
-                "value": 2,
-                "field": "name",
-                "arg": "X"
-              }
-            ],
-            "name": "Overload (X)",
-            "id": "4d7e-dd20-0b58-b87f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1d3a-d1e2-871a-63ae"
-          },
-          {
-            "comment": "RS",
-            "modifiers": [
-              {
-                "type": "replace",
-                "value": "RS",
-                "field": "name",
-                "arg": "X"
-              }
-            ],
-            "name": "Force (X)",
-            "id": "11f9-2689-e3b3-bc3a",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "25cd-60d0-a0a4-6b18"
-          }
-        ],
-        "categoryLinks": [
-          {
-            "targetId": "fd99-2f5a-6c86-3245",
-            "id": "34aa-5ad0-71ca-8fbc",
-            "primary": false,
-            "name": "Malignant"
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Malignant",
-        "hidden": false,
-        "id": "7c9f-29fc-0fe6-41ee"
-      }
-    ],
-    "catalogueLinks": [
-      {
-        "type": "catalogue",
-        "name": "Special Rules",
-        "id": "c361-7259-1878-a576",
-        "targetId": "106b-693b-99f2-00c3"
-      },
-      {
-        "type": "catalogue",
-        "name": "Traits",
-        "id": "ce5a-0aad-0f34-ef52",
-        "targetId": "df17-7a05-0826-6e22"
-      },
-      {
-        "type": "catalogue",
-        "name": "Weapons",
-        "id": "5dcf-e2bf-9fd5-b867",
-        "targetId": "a22d-4dd0-c59d-57d3"
-      }
-    ],
-    "categoryEntries": [
-      {
-        "name": "Biomancer",
-        "id": "5339-4a3d-9631-18a4",
-        "hidden": false
-      },
-      {
-        "name": "Pyromancer",
-        "id": "5cb9-c07e-dc73-733f",
-        "hidden": false
-      },
-      {
-        "name": "Telekine",
-        "id": "693c-964f-9dd6-9963",
-        "hidden": false
-      },
-      {
-        "name": "Diviner",
-        "id": "c457-4d05-c6b9-9a82",
-        "hidden": false
-      },
-      {
-        "name": "Telepath",
-        "id": "d269-d26a-cac1-c953",
-        "hidden": false
-      },
-      {
-        "name": "Thaumaturge",
-        "id": "689b-c1f1-9d47-fd2d",
-        "hidden": false
-      },
-      {
-        "name": "Anathemata",
-        "id": "8e24-2d8b-26e7-d7aa",
-        "hidden": false
-      },
-      {
-        "name": "Diabolist",
-        "id": "3897-23c5-f4e7-e4a8",
-        "hidden": false
-      },
-      {
-        "name": "Malignant",
-        "id": "fd99-2f5a-6c86-3245",
-        "hidden": false
+        "sortIndex": 13,
+        "characteristicTypes": [
+          {"name": "IM", "id": "079b-2c1c-979b-1fe0"},
+          {"name": "AM", "id": "c6d4-d31f-a563-78f8"},
+          {"name": "SM", "id": "562d-ec0b-83ee-541c"},
+          {"name": "AP", "id": "46ac-d3d4-36f0-6a1e"},
+          {"name": "D", "id": "cca6-168c-5576-e0ee"},
+          {"name": "Special Rules", "id": "0da4-845e-b008-2d17"},
+          {"name": "Traits", "id": "dbf5-ab06-5eb4-7d00"}
+        ]
       }
     ],
     "sharedProfiles": [
       {
+        "name": "Breach the Veil",
+        "id": "0e6b-31ce-26ee-f05e",
+        "hidden": false,
+        "typeId": "9dfb-2fa3-00e7-8cfd",
+        "typeName": "Psychic Power",
         "characteristics": [
+          {"name": "Summary", "typeId": "981f-bb86-6a74-9b20"},
           {
-            "name": "Summary",
-            "typeId": "981f-bb86-6a74-9b20"
-          },
-          {
-            "$text": "The Active Player may choose to Manifest the Breach the Veil Psychic Power at the start of the Reserves Sub-Phase of their Movement Phase.",
             "name": "Trigger",
+            "$text": "The Active Player may choose to Manifest the Breach the Veil Psychic Power at the start of the Reserves Sub-Phase of their Movement Phase.",
             "typeId": "1be9-f118-1cf3-357e"
           },
           {
-            "$text": "The Focus of the Power must be a Model with the Anathemata Trait and under the Active Player's control.",
             "name": "Focus",
+            "$text": "The Focus of the Power must be a Model with the Anathemata Trait and under the Active Player's control.",
             "typeId": "3f2d-f6e7-e6d3-1f86"
           },
+          {"name": "Target", "$text": "This Psychic Power does not have a Target.", "typeId": "2ba0-fbf8-ed6c-3770"},
           {
-            "$text": "This Psychic Power does not have a Target.",
-            "name": "Target",
-            "typeId": "2ba0-fbf8-ed6c-3770"
-          },
-          {
-            "$text": "If successfully Manifested, the effects of this Psychic Power last until the end of the Reserves Sub-Phase.",
             "name": "Duration",
+            "$text": "If successfully Manifested, the effects of this Psychic Power last until the end of the Reserves Sub-Phase.",
             "typeId": "d7d5-5b31-5b37-66c4"
           },
           {
-            "$text": "1. Once the Focus has been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, the Active Player can select one Unit from a Demonic Manifestation Detachment from the same Army as the Focus that is in Reserves.Reserve Rolls made for that Unit are automatically successful for the duration of this Psychic Power.",
             "name": "Process",
+            "$text": "1. Once the Focus has been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, the Active Player can select one Unit from a Demonic Manifestation Detachment from the same Army as the Focus that is in Reserves.Reserve Rolls made for that Unit are automatically successful for the duration of this Psychic Power.",
             "typeId": "3804-b2cf-9f1a-4ff0"
           }
         ],
         "modifiers": [
           {
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "4381-ed35-c3fa-a225",
-                "shared": true,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
+            "field": "hidden",
             "type": "set",
             "value": true,
-            "field": "hidden"
+            "conditions": [
+              {
+                "childId": "4381-ed35-c3fa-a225",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
-        ],
-        "name": "Breach the Veil",
-        "typeId": "9dfb-2fa3-00e7-8cfd",
-        "typeName": "Psychic Power",
-        "hidden": false,
-        "id": "0e6b-31ce-26ee-f05e"
+        ]
       },
       {
+        "name": "Seal the Veil ",
+        "id": "e590-9996-7a9e-e74a",
+        "hidden": false,
+        "typeId": "d59e-df4b-630f-f185",
+        "typeName": "Psychic Reaction",
         "characteristics": [
+          {"name": "Summary", "typeId": "c8a8-29f2-605b-5969"},
           {
-            "name": "Summary",
-            "typeId": "c8a8-29f2-605b-5969"
-          },
-          {
-            "$text": "The Reactive Player may choose to declare a Seal the Veil Psychic Reaction at the start of Step 3 of theCharge Procedure for a Charge declared by the Active Player for a Unit which includes any Models with the Malefic Sub-Type.",
             "name": "Trigger",
+            "$text": "The Reactive Player may choose to declare a Seal the Veil Psychic Reaction at the start of Step 3 of theCharge Procedure for a Charge declared by the Active Player for a Unit which includes any Models with the Malefic Sub-Type.",
             "typeId": "4e6b-ebca-53df-fcf7"
           },
           {
-            "$text": "The Reactive Player must spend 1 point of their Reaction Allotment to declare a Seal the Veil Psychic Reaction, this cost paid as soon as the declaration is made.",
             "name": "Cost",
+            "$text": "The Reactive Player must spend 1 point of their Reaction Allotment to declare a Seal the Veil Psychic Reaction, this cost paid as soon as the declaration is made.",
             "typeId": "f25a-9ced-eb9b-4587"
           },
           {
-            "$text": "The Focus of this Psychic Reaction must be a Model with the Anathemata Trait and under the Reactive Player's Control, and must be a part of the Unit targeted by the Charge that triggers this Psychic Reaction.",
             "name": "Focus",
+            "$text": "The Focus of this Psychic Reaction must be a Model with the Anathemata Trait and under the Reactive Player's Control, and must be a part of the Unit targeted by the Charge that triggers this Psychic Reaction.",
             "typeId": "0b45-591a-ee11-488e"
           },
+          {"name": "Target", "$text": "The Target Unit must be the Unit that is making the Charge that triggered the Reaction.", "typeId": "cf1d-e201-caac-3d45"},
+          {"name": "Duration", "$text": "If successfully Manifested, the effects of this Psychic Reaction are resolved immediately.", "typeId": "daae-40ac-68e2-fa78"},
           {
-            "$text": "The Target Unit must be the Unit that is making the Charge that triggered the Reaction.",
-            "name": "Target",
-            "typeId": "cf1d-e201-caac-3d45"
-          },
-          {
-            "$text": "If successfully Manifested, the effects of this Psychic Reaction are resolved immediately.",
-            "name": "Duration",
-            "typeId": "daae-40ac-68e2-fa78"
-          },
-          {
-            "$text": "1. Once the Focus and Target Unit have been decided, the Target Unit’s Controlling Player makes a Resistance Check for that Unit.\n2. If the Resistance Check is failed, then the Target Unit cannot make a Set-Up Move of more than 1\", and when a Charge Roll is made for that Unit in Step 5 of the Charge Procedure, the highest Dice is discarded instead of the lowest.",
             "name": "Process",
+            "$text": "1. Once the Focus and Target Unit have been decided, the Target Unit’s Controlling Player makes a Resistance Check for that Unit.\n2. If the Resistance Check is failed, then the Target Unit cannot make a Set-Up Move of more than 1\", and when a Charge Roll is made for that Unit in Step 5 of the Charge Procedure, the highest Dice is discarded instead of the lowest.",
             "typeId": "8d43-934e-e511-0cfd"
           }
         ],
         "modifiers": [
           {
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "597e-83d8-32e1-8eaa",
-                "shared": true,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
+            "field": "hidden",
             "type": "set",
             "value": true,
-            "field": "hidden"
+            "conditions": [
+              {
+                "childId": "597e-83d8-32e1-8eaa",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
-        ],
-        "name": "Seal the Veil ",
-        "typeId": "d59e-df4b-630f-f185",
-        "typeName": "Psychic Reaction",
-        "hidden": false,
-        "id": "e590-9996-7a9e-e74a"
+        ]
       }
     ],
-    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
-    "library": true,
-    "id": "1b2d-2038-39a7-f387",
-    "name": "Psychic",
-    "gameSystemId": "sys-9fe4-1dc3-b7c2-73cf",
-    "gameSystemRevision": 2,
-    "revision": 5,
-    "battleScribeVersion": 2.03,
-    "authorContact": "https://github.com/BSData/horus-heresy-3rd-edition/",
-    "authorUrl": "https://github.com/BSData/horus-heresy-3rd-edition/",
-    "authorName": "Arkangelmark5",
-    "type": "catalogue"
+    "sharedSelectionEntries": [
+      {
+        "name": "Biomancy",
+        "id": "7f0b-3a53-fbba-de05",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Biomancer", "id": "090e-ac4f-0447-d1ac", "primary": false, "targetId": "5339-4a3d-9631-18a4"}],
+        "infoLinks": [
+          {
+            "name": "Force (X)",
+            "id": "9854-0918-be0b-33c9",
+            "comment": "D",
+            "hidden": false,
+            "targetId": "25cd-60d0-a0a4-6b18",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Force (D)"}]
+          },
+          {"name": "Armourbane", "id": "c811-b2a2-d066-a7d9", "hidden": false, "targetId": "36ee-4c54-bced-a696", "type": "rule"},
+          {
+            "name": "Impact (X)",
+            "id": "7cb6-7869-da43-daa4",
+            "comment": "S",
+            "hidden": false,
+            "targetId": "6ead-c31c-ab09-2f8c",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Impact (S)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Biomantic Slam",
+            "id": "c5df-010a-1bdd-85c7",
+            "hidden": false,
+            "typeId": "f553-2eab-e909-ee56",
+            "typeName": "Psychic Melee Weapon",
+            "characteristics": [
+              {"name": "IM", "$text": "-3", "typeId": "079b-2c1c-979b-1fe0"},
+              {"name": "AM", "$text": "1", "typeId": "c6d4-d31f-a563-78f8"},
+              {"name": "SM", "$text": "12", "typeId": "562d-ec0b-83ee-541c"},
+              {"name": "AP", "$text": "2", "typeId": "46ac-d3d4-36f0-6a1e"},
+              {"name": "D", "$text": "2", "typeId": "cca6-168c-5576-e0ee"},
+              {"name": "Special Rules", "$text": "Armourbane, Force (D)", "typeId": "0da4-845e-b008-2d17"},
+              {"name": "Traits", "$text": "Melee, Psychic", "typeId": "dbf5-ab06-5eb4-7d00"}
+            ]
+          },
+          {
+            "name": "Biomantic Rage",
+            "id": "fe7f-a6ad-b858-a3a0",
+            "hidden": false,
+            "typeId": "9dfb-2fa3-00e7-8cfd",
+            "typeName": "Psychic Power",
+            "characteristics": [
+              {"name": "Summary", "$text": "This Power is used in the Charge Sub-Phase to add a bonus to a Unit's Strength and Toughness.", "typeId": "981f-bb86-6a74-9b20"},
+              {
+                "name": "Trigger",
+                "$text": "The Active Player may choose to Manifest the Biomantic Rage Psychic Power in the Charge Sub-Phase, at Step 4 of the Charge process before any Unit makes a Volley Attack.",
+                "typeId": "1be9-f118-1cf3-357e"
+              },
+              {
+                "name": "Focus",
+                "$text": "The Focus of the Power must be a Model with the Biomancer Trait under the Active Player's control, and must be either part of the Unit making a Charge or within 18\" and with Line of Sight to one or more Models in that Unit.",
+                "typeId": "3f2d-f6e7-e6d3-1f86"
+              },
+              {"name": "Target", "$text": "The Target Unit must be the Unit currently selected and in the process of making a Charge.", "typeId": "2ba0-fbf8-ed6c-3770"},
+              {
+                "name": "Duration",
+                "$text": "If successfully Manifested, the effects of this Psychic Power last until the end of the current Assault Phase.",
+                "typeId": "d7d5-5b31-5b37-66c4"
+              },
+              {
+                "name": "Process",
+                "$text": "1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then no Volley Attack may be made for the Target Unit, but all Models in the Target Unit gain a bonus of +2 to their Strength and Toughness Characteristics.\n3. If the Manifestation Check fails then there is no further effect.",
+                "typeId": "3804-b2cf-9f1a-4ff0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pyromancy",
+        "id": "b8f6-c7cb-3596-fb48",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Pyromancer", "id": "a66b-5d7a-ea1e-d51f", "primary": false, "targetId": "5cb9-c07e-dc73-733f"}],
+        "infoLinks": [
+          {
+            "name": "Force (X)",
+            "id": "9c3e-2a39-e64c-153e",
+            "comment": "S",
+            "hidden": false,
+            "targetId": "25cd-60d0-a0a4-6b18",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Force (S)"}]
+          },
+          {
+            "name": "Panic (X)",
+            "id": "61c3-5cb5-1a06-ce3b",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "82a7-f471-3fda-6ca1",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Panic (1)"}]
+          },
+          {
+            "name": "Blast (X)",
+            "id": "0184-d9b5-57fe-9804",
+            "comment": "5\"",
+            "hidden": false,
+            "targetId": "8687-05f8-7034-412c",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Blast (5\")"}]
+          },
+          {
+            "name": "Deflagrate (X)",
+            "id": "7e75-d499-4a86-ef40",
+            "comment": "5",
+            "hidden": false,
+            "targetId": "f4a0-f206-0dba-7d81",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Deflagrate (5)"}]
+          },
+          {
+            "name": "Explodes (X)",
+            "id": "cc44-7188-d687-4b02",
+            "comment": "4+",
+            "hidden": false,
+            "targetId": "da5b-b871-20da-3e70",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Explodes (4+)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Wildfire",
+            "id": "32c6-600a-1d16-18c2",
+            "hidden": false,
+            "typeId": "7d31-7144-3b28-c850",
+            "typeName": "Psychic Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "18", "typeId": "6d86-f7c6-c184-8bf4"},
+              {"name": "FP", "$text": "1", "typeId": "99a5-a4b9-8862-5092"},
+              {"name": "RS", "$text": "4", "typeId": "ff4a-ab25-1be8-4545"},
+              {"name": "AP", "$text": "4", "typeId": "c8d6-d2ec-1344-07e3"},
+              {"name": "D", "$text": "1", "typeId": "e840-f63c-5bc4-27b3"},
+              {"name": "Special Rules", "$text": "Panic (1), Blast (5\"), Force (S)", "typeId": "e87b-e7a3-5562-a456"},
+              {"name": "Traits", "$text": "Ranged, Psychic", "typeId": "a229-21ce-4177-c4b1"}
+            ]
+          },
+          {
+            "name": "Conflagration",
+            "id": "345e-6b0d-03c7-1e44",
+            "hidden": false,
+            "typeId": "f553-2eab-e909-ee56",
+            "typeName": "Psychic Melee Weapon",
+            "characteristics": [
+              {"name": "IM", "$text": "-1", "typeId": "079b-2c1c-979b-1fe0"},
+              {"name": "AM", "$text": "6+D3", "typeId": "c6d4-d31f-a563-78f8"},
+              {"name": "SM", "$text": "5", "typeId": "562d-ec0b-83ee-541c"},
+              {"name": "AP", "$text": "4", "typeId": "46ac-d3d4-36f0-6a1e"},
+              {"name": "D", "$text": "1", "typeId": "cca6-168c-5576-e0ee"},
+              {"name": "Special Rules", "$text": "Deflagrate (5)", "typeId": "0da4-845e-b008-2d17"},
+              {"name": "Traits", "$text": "Melee, Psychic", "typeId": "dbf5-ab06-5eb4-7d00"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Telekinesis",
+        "id": "3a5d-8574-6913-d83c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Telekine", "id": "33d4-52f5-c7b4-3e79", "primary": false, "targetId": "693c-964f-9dd6-9963"}],
+        "infoLinks": [
+          {
+            "name": "Pinning (X)",
+            "id": "4b78-c61b-cc54-a252",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "88b6-6493-e4d7-1805",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Pinning (2)"}]
+          },
+          {
+            "name": "Force (X)",
+            "id": "ae6c-d145-4f75-7407",
+            "comment": "FP",
+            "hidden": false,
+            "targetId": "25cd-60d0-a0a4-6b18",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Force (FP)"}]
+          },
+          {
+            "name": "Shrouded (X)",
+            "id": "8d85-32cf-2618-55c2",
+            "comment": "4+",
+            "hidden": false,
+            "targetId": "c7e7-3bad-3de0-d6cc",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Shrouded (4+)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Force Barrier",
+            "id": "c553-3874-e6b9-a098",
+            "hidden": false,
+            "typeId": "d59e-df4b-630f-f185",
+            "typeName": "Psychic Reaction",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "This Power can be used in either the Shooting or Assault Phase and grants a Shrouded Damage Mitigation Test.",
+                "typeId": "c8a8-29f2-605b-5969"
+              },
+              {
+                "name": "Trigger",
+                "$text": "The Reactive Player may choose to declare a Force Barrier Psychic Reaction in either the Assault Phase, at the start of Step 4 of the Charge Process, or in the Shooting Phase, at the start of Step 3 of a Shooting Attack made by the Active Player.",
+                "typeId": "4e6b-ebca-53df-fcf7"
+              },
+              {
+                "name": "Cost",
+                "$text": "The Reactive Player must spend 1 point of their Reaction Allotment to declare a Force Barrier Psychic Reaction - this cost paid as soon as the declaration is made.",
+                "typeId": "f25a-9ced-eb9b-4587"
+              },
+              {
+                "name": "Focus",
+                "$text": "The Focus of this Psychic Reaction must be a Model with the Telekine Trait under the Reactive Player's control, and must be a part of the Unit targeted by the Charge or Shooting Attack that triggers this Psychic Reaction.",
+                "typeId": "0b45-591a-ee11-488e"
+              },
+              {
+                "name": "Target",
+                "$text": "The Target Unit must be the Unit that is the target of the Shooting Attack or Charge that triggered the Reaction.",
+                "typeId": "cf1d-e201-caac-3d45"
+              },
+              {
+                "name": "Duration",
+                "$text": "If successfully Manifested, the effects of this Psychic Reaction last until the end of the Sub-Phase in which it was declared.",
+                "typeId": "daae-40ac-68e2-fa78"
+              },
+              {
+                "name": "Process",
+                "$text": "1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all Models in the Target Unit gain a 3+ Shrouded Damage Mitigation Test against any wounds inflicted during a Volley or Shooting Attack.\n3. If the Manifestation Check fails then there is no further effect.",
+                "typeId": "8d43-934e-e511-0cfd"
+              }
+            ]
+          },
+          {
+            "name": "Immovable Force",
+            "id": "31de-4d17-0779-5524",
+            "hidden": false,
+            "typeId": "7d31-7144-3b28-c850",
+            "typeName": "Psychic Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "18", "typeId": "6d86-f7c6-c184-8bf4"},
+              {"name": "FP", "$text": "3", "typeId": "99a5-a4b9-8862-5092"},
+              {"name": "RS", "$text": "6", "typeId": "ff4a-ab25-1be8-4545"},
+              {"name": "AP", "$text": "4", "typeId": "c8d6-d2ec-1344-07e3"},
+              {"name": "D", "$text": "1", "typeId": "e840-f63c-5bc4-27b3"},
+              {"name": "Special Rules", "$text": "Pinning (2), Force (FP)", "typeId": "e87b-e7a3-5562-a456"},
+              {"name": "Traits", "$text": "Ranged, Psychic", "typeId": "a229-21ce-4177-c4b1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Divination",
+        "id": "5f50-43e2-30a1-01c8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Diviner", "id": "8a91-cafe-9f3e-1fcc", "primary": false, "targetId": "c457-4d05-c6b9-9a82"}],
+        "infoLinks": [
+          {
+            "name": "Duellist's Edge (X)",
+            "id": "023a-032c-20c6-2f15",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "94bc-c69f-99b6-8ba0",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Duellist's Edge (2)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Every Strike Foreseen",
+            "id": "aae8-6c9f-73f3-9cb3",
+            "hidden": false,
+            "typeId": "9b5f-da4e-5739-cbcf",
+            "typeName": "Gambit",
+            "characteristics": [
+              {"name": "Summary", "typeId": "98f3-41cf-e3be-2ae7"},
+              {
+                "name": "Description",
+                "$text": "If this Gambit is selected, the Controlling Player must make a Willpower Check for the Model using this Gambit. If the Check is successful then in the Strike Step of the Challenge any Hit Tests made for this Model are successful on a result of 2+ regardless of the Weapon Skill Characteristics of the Models involved in the Challenge. If the Willpower Check is not successful then Hit Tests are made as normal, Note that this Willpower Check cannot inflict Perils of the Warp.",
+                "typeId": "2d7d-b1d9-dead-605a"
+              }
+            ]
+          },
+          {
+            "name": "Foresight's Blessing",
+            "id": "58c6-f57d-ec06-9c39",
+            "hidden": false,
+            "typeId": "9dfb-2fa3-00e7-8cfd",
+            "typeName": "Psychic Power",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "This Power is used as part of a Shooting Attack to grant a Unit the Precision (5+) Special Rule.",
+                "typeId": "981f-bb86-6a74-9b20"
+              },
+              {
+                "name": "Trigger",
+                "$text": "The Active Player may choose to Manifest the Foresight's Blessing Psychic Power in the Shooting Phase, at Step 4 of any Shooting Attack made by the Active Player.",
+                "typeId": "1be9-f118-1cf3-357e"
+              },
+              {
+                "name": "Focus",
+                "$text": "The Focus of the Power must be a Model with the Diviner Trait under the Active Player's control, and must be either part of the Unit making the Shooting Attack or within 18\" and with Line of Sight to one or more Models in that Unit.",
+                "typeId": "3f2d-f6e7-e6d3-1f86"
+              },
+              {
+                "name": "Target",
+                "$text": "The Target Unit must be the Unit currently selected and in the process of making a Shooting Attack.",
+                "typeId": "2ba0-fbf8-ed6c-3770"
+              },
+              {
+                "name": "Duration",
+                "$text": "If successfully Manifested, the effects of this Psychic Power last until the end of the Shooting Attack being resolved.",
+                "typeId": "d7d5-5b31-5b37-66c4"
+              },
+              {
+                "name": "Process",
+                "$text": "1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all Models in the Target Unit gain the Precision (5+) Special Rule.\n3. If the Manifestation Check fails then there is no further effect.",
+                "typeId": "3804-b2cf-9f1a-4ff0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Telepathy",
+        "id": "13c2-f899-efef-20cb",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Telepath", "id": "e865-1b7d-b71b-0faa", "primary": false, "targetId": "d269-d26a-cac1-c953"}],
+        "infoLinks": [
+          {
+            "name": "Fear (X)",
+            "id": "501c-85e4-dbb9-0998",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "0ebc-0c92-2209-6393",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Fear (1)"}]
+          },
+          {
+            "name": "Stun (X)",
+            "id": "4abb-215d-857d-43a2",
+            "comment": "-",
+            "hidden": false,
+            "targetId": "c7c1-bbc9-f852-6f71",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Stun (-)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Mind-Burst",
+            "id": "8ac2-c2e3-73c6-0984",
+            "hidden": false,
+            "typeId": "9dfb-2fa3-00e7-8cfd",
+            "typeName": "Psychic Power",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "This Power is used in the Movement Phase and can force the target to Fall Back or become Routed.",
+                "typeId": "981f-bb86-6a74-9b20"
+              },
+              {
+                "name": "Trigger",
+                "$text": "The Active Player may choose to Manifest the Mind-burst Psychic Power in the Movement Phase, when selecting a Unit under their control that includes at least one Model with the Telepath Trait to move and before any move is made for that Unit.",
+                "typeId": "1be9-f118-1cf3-357e"
+              },
+              {
+                "name": "Focus",
+                "$text": "The Focus of the Power must be a Model with the Telepath Trait that is part of the Unit that was selected to move.",
+                "typeId": "3f2d-f6e7-e6d3-1f86"
+              },
+              {
+                "name": "Target",
+                "$text": "The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18\" of the Focus and with Line of Sight to the Focus. The target may not be a Unit that is Locked in Combat or otherwise ineligible to be the target of a Shooting Attack and may not include any Models with the Vehicle Type.",
+                "typeId": "2ba0-fbf8-ed6c-3770"
+              },
+              {"name": "Duration", "$text": "If successfully Manifested, the effects of this Psychic Power are resolved immediately.", "typeId": "d7d5-5b31-5b37-66c4"},
+              {
+                "name": "Process",
+                "$text": "1. Once the Focus and Target Unit have been decided, the Target Unit’s Controlling Player makes a Resistance Check for that Unit.\n2. If the Resistance Check is failed, then all Statuses are removed from all Models in the Target Unit, and then the Target Unit must immediately make a Fall Back Move. Once that Fall Back Move has been resolved, a Leadership Check must be made for the Target Unit by its Controlling Player, this Check may not be modified by any effect or Special Rule. If the Leadership Check is successful, then there is no further effect, if it is unsuccessful then all Models in the Target Unit gain the Routed Status.\n3. If the Resistance Check succeeds then there is no further effect to the Target Unit.\n4. Regardless of whether the Resistance Check succeeds or fails, the Unit that includes the Focus of this Psychic Power may not make a move or Rush in this Movement Phase.",
+                "typeId": "3804-b2cf-9f1a-4ff0"
+              }
+            ]
+          },
+          {
+            "name": "Cursed Whispers",
+            "id": "0bb5-a147-4251-fde0",
+            "hidden": false,
+            "typeId": "7d31-7144-3b28-c850",
+            "typeName": "Psychic Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "18", "typeId": "6d86-f7c6-c184-8bf4"},
+              {"name": "FP", "$text": "2D6", "typeId": "99a5-a4b9-8862-5092"},
+              {"name": "RS", "$text": "3", "typeId": "ff4a-ab25-1be8-4545"},
+              {"name": "AP", "$text": "-", "typeId": "c8d6-d2ec-1344-07e3"},
+              {"name": "D", "$text": "1", "typeId": "e840-f63c-5bc4-27b3"},
+              {"name": "Special Rules", "$text": "Stun (-)", "typeId": "e87b-e7a3-5562-a456"},
+              {"name": "Traits", "$text": "Ranged, Psychic", "typeId": "a229-21ce-4177-c4b1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Thaumaturgy",
+        "id": "15a9-e44f-2393-0d6a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Thaumaturge", "id": "a534-fb59-7a98-0651", "primary": false, "targetId": "689b-c1f1-9d47-fd2d"}],
+        "infoLinks": [
+          {
+            "name": "Hatred (X)",
+            "id": "83ab-9ef8-dbb6-cc6f",
+            "comment": "Psyker",
+            "hidden": false,
+            "targetId": "0612-95d5-46ae-c5ee",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Hatred (Psyker)"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Resurrection",
+            "id": "9f18-3d26-5c15-0b24",
+            "hidden": false,
+            "typeId": "d59e-df4b-630f-f185",
+            "typeName": "Psychic Reaction",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "This Power can be used in the Shooting Phase and can return a single Casualty to the Unit with all Wounds restored.",
+                "typeId": "c8a8-29f2-605b-5969"
+              },
+              {
+                "name": "Trigger",
+                "$text": "The Reactive Player may choose to declare a Resurrection Psychic Reaction in the Shooting Phase, at the start of Step 11 of any Shooting Attack made by the Active Player.",
+                "typeId": "4e6b-ebca-53df-fcf7"
+              },
+              {
+                "name": "Cost",
+                "$text": "The Reactive Player must spend 1 point of their Reaction Allotment to declare a Resurrection Psychic Reaction - this cost paid as soon as the declaration is made.",
+                "typeId": "f25a-9ced-eb9b-4587"
+              },
+              {
+                "name": "Focus",
+                "$text": "The Focus of this Psychic Reaction must be a Model with the Thaumaturge Trait and under the Reactive Player's Control, and must be a part of the Unit targeted by the Shooting Attack that triggers this Psychic Reaction.",
+                "typeId": "0b45-591a-ee11-488e"
+              },
+              {
+                "name": "Target",
+                "$text": "The Target Unit must be the Unit that is the target of the Shooting Attack that triggered the Reaction.",
+                "typeId": "cf1d-e201-caac-3d45"
+              },
+              {"name": "Duration", "$text": "If successfully Manifested, the effects of this Psychic Reaction are resolved immediately.", "typeId": "daae-40ac-68e2-fa78"},
+              {
+                "name": "Process",
+                "$text": "1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2.If the Manifestation Check is successful then, before any Models in the Target Unit are Removed as Casualties, the Controlling Player of the Target Unit must select one Model being Removed as a Casualty and roll a Dice. If the Dice roll for the chosen Model is equal to or higher than a '4', then that Model is not Removed as a Casualty and is returned to play in Unit Coherency with its Unit and with its Wounds Characteristic set to its Base Value, as listed on that Model's profile. This Psychic Reaction has no effect on Models that do not have a Wounds Characteristic and if the result of the Manifestation Check causes Perils of the Warp, then this instance of Perils of the Warp is resolved after any Models are returned to the Unit.\n3.If the Manifestation Check fails then there is no further effect.",
+                "typeId": "8d43-934e-e511-0cfd"
+              }
+            ]
+          },
+          {
+            "name": "Tranquility",
+            "id": "cfb2-5d69-b138-0097",
+            "hidden": false,
+            "typeId": "9dfb-2fa3-00e7-8cfd",
+            "typeName": "Psychic Power",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "This Power is used in the Start Phase and makes it harder for the Target Unit to use Psychic Powers, Psychic Reactions or to attack with Psychic Weapons.",
+                "typeId": "981f-bb86-6a74-9b20"
+              },
+              {
+                "name": "Trigger",
+                "$text": "The Active Player may choose to Manifest the Tranquillity Psychic Power in the Effects Sub-Phase of the Start Phase.",
+                "typeId": "1be9-f118-1cf3-357e"
+              },
+              {
+                "name": "Focus",
+                "$text": "The Focus of the Power must be a Model with the Thaumaturge Trait and must be controlled by the Active Player.",
+                "typeId": "3f2d-f6e7-e6d3-1f86"
+              },
+              {
+                "name": "Target",
+                "$text": "The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18\" of the Focus and with Line of Sight to the Focus. The Target Unit must include at least one Model with the Psyker Trait.",
+                "typeId": "2ba0-fbf8-ed6c-3770"
+              },
+              {
+                "name": "Duration",
+                "$text": "If successfully Manifested, the effects of this Psychic Power last until the start of the Active Player's next Turn as the Active Player.",
+                "typeId": "d7d5-5b31-5b37-66c4"
+              },
+              {
+                "name": "Process",
+                "$text": "1. Once the Focus and Target Unit have been decided, the Target Unit’s Controlling Player makes a Resistance Check for that Unit.\n2.  If the Resistance Check is failed, then all Models in the Target Unit suffer a penalty of -2 to their Willpower Characteristic when attempting to Manifest any Psychic Power or Psychic Reaction. If any Model in the Target Unit makes attacks with a Weapon that has the Psychic Trait, then the Strength Characteristic of all Hits inflicted is reduced by 1.\n3. If the Resistance Check succeeds then there is no further effect.",
+                "typeId": "3804-b2cf-9f1a-4ff0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Anathemata",
+        "id": "091a-56c9-7eba-9fa7",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Anathemata", "id": "cd69-9900-1c45-f5f8", "primary": false, "targetId": "8e24-2d8b-26e7-d7aa"}],
+        "infoLinks": [
+          {
+            "name": "Force (X)",
+            "id": "4673-5c9b-5d09-1ced",
+            "comment": "D",
+            "hidden": false,
+            "targetId": "25cd-60d0-a0a4-6b18",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Force (D)"}]
+          },
+          {
+            "name": "Fear (X)",
+            "id": "e527-e21b-2fb5-33e7",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "0ebc-0c92-2209-6393",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Fear (1)"}]
+          },
+          {
+            "name": "Shred (X)",
+            "id": "47a9-832b-6480-1c2e",
+            "comment": "5+",
+            "hidden": false,
+            "targetId": "d01e-f96b-b5c1-8fb1",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Shred (5+)"}]
+          },
+          {"name": "Seal the Veil ", "id": "0c3b-5aaf-063d-fb64", "hidden": false, "targetId": "e590-9996-7a9e-e74a", "type": "profile"},
+          {"name": "Breach the Veil", "id": "47cb-3dbd-757b-d5f7", "hidden": false, "targetId": "0e6b-31ce-26ee-f05e", "type": "profile"}
+        ],
+        "profiles": [
+          {
+            "name": "Void Darts",
+            "id": "feab-af5c-9bcb-c78b",
+            "hidden": false,
+            "typeId": "7d31-7144-3b28-c850",
+            "typeName": "Psychic Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "18", "typeId": "6d86-f7c6-c184-8bf4"},
+              {"name": "FP", "$text": "D6", "typeId": "99a5-a4b9-8862-5092"},
+              {"name": "RS", "$text": "5", "typeId": "ff4a-ab25-1be8-4545"},
+              {"name": "AP", "$text": "4", "typeId": "c8d6-d2ec-1344-07e3"},
+              {"name": "D", "$text": "1", "typeId": "e840-f63c-5bc4-27b3"},
+              {"name": "Special Rules", "$text": "Shred (5+), Force (D)", "typeId": "e87b-e7a3-5562-a456"},
+              {"name": "Traits", "$text": "Psychic", "typeId": "a229-21ce-4177-c4b1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Diabolism",
+        "id": "f6c0-5042-9c80-f993",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {
+            "name": "Fear (X)",
+            "id": "7932-a213-c607-fa1f",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "0ebc-0c92-2209-6393",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Fear (1)"}]
+          },
+          {
+            "name": "Breaching (X)",
+            "id": "7fff-e925-4021-876f",
+            "comment": "6+",
+            "hidden": false,
+            "targetId": "b094-0b64-eb57-aed6",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Breaching (6+)"}]
+          },
+          {
+            "name": "Deflagrate (X)",
+            "id": "010b-d4a4-87e5-fe5e",
+            "hidden": false,
+            "targetId": "f4a0-f206-0dba-7d81",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Deflagrate (7)"}]
+          },
+          {
+            "name": "Force (X)",
+            "id": "6b18-2fc8-b8b7-b081",
+            "comment": "D",
+            "hidden": false,
+            "targetId": "25cd-60d0-a0a4-6b18",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Force (D)"}]
+          }
+        ],
+        "modifiers": [{"field": "category", "type": "add", "value": "3897-23c5-f4e7-e4a8"}],
+        "profiles": [
+          {
+            "name": "Hellfire",
+            "id": "e662-ffe9-26e9-a1ff",
+            "hidden": false,
+            "typeId": "7d31-7144-3b28-c850",
+            "typeName": "Psychic Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "12", "typeId": "6d86-f7c6-c184-8bf4"},
+              {"name": "FP", "$text": "D3", "typeId": "99a5-a4b9-8862-5092"},
+              {"name": "RS", "$text": "7", "typeId": "ff4a-ab25-1be8-4545"},
+              {"name": "AP", "$text": "4", "typeId": "c8d6-d2ec-1344-07e3"},
+              {"name": "D", "$text": "1", "typeId": "e840-f63c-5bc4-27b3"},
+              {"name": "Special Rules", "$text": "Breaching (6+), Deflagrate (7), Force (D)", "typeId": "e87b-e7a3-5562-a456"},
+              {"name": "Traits", "$text": "Psychic", "typeId": "a229-21ce-4177-c4b1"}
+            ]
+          },
+          {
+            "name": "Dark Channeling",
+            "id": "167f-3362-68d8-b92a",
+            "hidden": false,
+            "typeId": "9dfb-2fa3-00e7-8cfd",
+            "typeName": "Psychic Power",
+            "characteristics": [
+              {"name": "Summary", "typeId": "981f-bb86-6a74-9b20"},
+              {
+                "name": "Trigger",
+                "$text": "The Active Player may choose to Manifest the Dark Channeling Psychic Power at the start of the Fight Sub-Phase of their Assault Phase.",
+                "typeId": "1be9-f118-1cf3-357e"
+              },
+              {
+                "name": "Focus",
+                "$text": "The Focus of the Power must be a Model with the Diabolist Trait under the Active Player’s control.",
+                "typeId": "3f2d-f6e7-e6d3-1f86"
+              },
+              {
+                "name": "Target",
+                "$text": "The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 12\" of the Focus and with Line of Sight to the Focus, and which is entirely composed of Models with the Word Bearers Trait.",
+                "typeId": "2ba0-fbf8-ed6c-3770"
+              },
+              {
+                "name": "Duration",
+                "$text": "If Successfully Manifested, the effects of this Psychic Power last until the end the Assault Phase.",
+                "typeId": "d7d5-5b31-5b37-66c4"
+              },
+              {
+                "name": "Process",
+                "$text": "1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, all Models in the Target Unit gain the Aflame (1) and Feel No Pain (6+) Special Rules.\n3. If the Manifestation Check fails then there is no further effect.",
+                "typeId": "3804-b2cf-9f1a-4ff0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Malignant",
+        "id": "7c9f-29fc-0fe6-41ee",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Malignant", "id": "34aa-5ad0-71ca-8fbc", "primary": false, "targetId": "fd99-2f5a-6c86-3245"}],
+        "infoLinks": [
+          {
+            "name": "Deflagrate (X)",
+            "id": "8bd2-acd3-0539-036b",
+            "comment": "5",
+            "hidden": false,
+            "targetId": "f4a0-f206-0dba-7d81",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": 5}]
+          },
+          {
+            "name": "Overload (X)",
+            "id": "b904-8950-05db-3a00",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "1d3a-d1e2-871a-63ae",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": 1}]
+          },
+          {
+            "name": "Force (X)",
+            "id": "efbd-56c9-c866-0209",
+            "comment": "FP",
+            "hidden": false,
+            "targetId": "25cd-60d0-a0a4-6b18",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "FP"}]
+          },
+          {
+            "name": "Overload (X)",
+            "id": "4d7e-dd20-0b58-b87f",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "1d3a-d1e2-871a-63ae",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": 2}]
+          },
+          {
+            "name": "Force (X)",
+            "id": "11f9-2689-e3b3-bc3a",
+            "comment": "RS",
+            "hidden": false,
+            "targetId": "25cd-60d0-a0a4-6b18",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "RS"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Warp Torrent - Torrent",
+            "id": "bd87-5f4b-23e6-e6c3",
+            "hidden": false,
+            "typeId": "7d31-7144-3b28-c850",
+            "typeName": "Psychic Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "12", "typeId": "6d86-f7c6-c184-8bf4"},
+              {"name": "FP", "$text": "4", "typeId": "99a5-a4b9-8862-5092"},
+              {"name": "RS", "$text": "5", "typeId": "ff4a-ab25-1be8-4545"},
+              {"name": "AP", "$text": "4", "typeId": "c8d6-d2ec-1344-07e3"},
+              {"name": "D", "$text": "1", "typeId": "e840-f63c-5bc4-27b3"},
+              {"name": "Special Rules", "$text": "Deflagrate (5), Overload (1), Force (FP)", "typeId": "e87b-e7a3-5562-a456"},
+              {"name": "Traits", "$text": "Assault", "typeId": "a229-21ce-4177-c4b1"}
+            ]
+          },
+          {
+            "name": "Warp Torrent - Malignant",
+            "id": "71b8-95dd-6b07-ecf0",
+            "hidden": false,
+            "typeId": "7d31-7144-3b28-c850",
+            "typeName": "Psychic Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "12", "typeId": "6d86-f7c6-c184-8bf4"},
+              {"name": "FP", "$text": "1", "typeId": "99a5-a4b9-8862-5092"},
+              {"name": "RS", "$text": "5", "typeId": "ff4a-ab25-1be8-4545"},
+              {"name": "AP", "$text": "2", "typeId": "c8d6-d2ec-1344-07e3"},
+              {"name": "D", "$text": "2", "typeId": "e840-f63c-5bc4-27b3"},
+              {"name": "Special Rules", "$text": "Deflagrate (5), Overload (2), Force (RS)", "typeId": "e87b-e7a3-5562-a456"},
+              {"name": "Traits", "$text": "Assault", "typeId": "a229-21ce-4177-c4b1"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
