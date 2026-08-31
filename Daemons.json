@@ -5381,6 +5381,18 @@
         "sortIndex": 106,
         "type": "unit",
         "categoryLinks": [{"name": "Tzeench", "id": "13a0-b988-d7bc-7efa", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
+        "constraints": [
+          {
+            "id": "59d3-c3f1-d672-3993",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
         "costs": [
           {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 400},
           {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
@@ -5448,17 +5460,7 @@
             ],
             "constraints": [
               {"id": "789f-9f84-de17-f1b4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "b6b3-a445-f633-62b6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-              {
-                "id": "59d3-c3f1-d672-3993",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
+              {"id": "b6b3-a445-f633-62b6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "profiles": [
               {
