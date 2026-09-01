@@ -1547,6 +1547,46 @@
         "categoryLinks": [{"name": "Support", "id": "5101-26e3-41c6-9aa9", "hidden": false, "primary": true, "targetId": "345f-9ba6-9b02-ed5c"}],
         "infoLinks": [{"name": "Talons of the Emperor", "id": "5d85-b9a3-f2b1-aef6", "hidden": false, "targetId": "8974-94e5-d261-e4a2", "type": "profile"}],
         "modifiers": [{"field": "category", "type": "set-primary", "value": "c6d8-d70d-c56c-d801"}]
+      },
+      {
+        "name": "Herald of Tzeench",
+        "id": "9edc-9e46-da8d-9229",
+        "hidden": false,
+        "import": true,
+        "targetId": "e306-6512-1f49-49c7",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Command", "id": "1cc8-e40d-91c6-c398", "hidden": false, "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [{"field": "category", "type": "set-primary", "value": "1cca-b725-743f-e851"}]
+      },
+      {
+        "name": "Horrors of Tzeench",
+        "id": "a95e-7dbd-ee5a-c5fb",
+        "hidden": false,
+        "import": true,
+        "targetId": "d950-0c4a-5d81-0578",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Troops", "id": "7724-00dd-1529-7511", "hidden": false, "primary": true, "targetId": "88e6-d373-4152-0dd8"}],
+        "modifiers": [{"field": "category", "type": "set-primary", "value": "5e69-359f-6bc1-6868"}]
+      },
+      {
+        "name": "Flamers of Tzeench",
+        "id": "4fbf-ab46-1f53-6e48",
+        "hidden": false,
+        "import": true,
+        "targetId": "b8de-a6ca-73b3-72df",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Support", "id": "6c12-5359-1f7f-dd60", "hidden": false, "primary": true, "targetId": "345f-9ba6-9b02-ed5c"}],
+        "modifiers": [{"field": "category", "type": "set-primary", "value": "8e14-b4d2-59c9-e474"}]
+      },
+      {
+        "name": "Screamers of Tzeench",
+        "id": "ef7d-1bd8-b502-1041",
+        "hidden": false,
+        "import": true,
+        "targetId": "6e09-fdbd-dc83-ed56",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Fast Attack", "id": "748c-82d6-c3f5-0158", "hidden": false, "primary": true, "targetId": "cf96-8891-3f9a-8921"}],
+        "modifiers": [{"field": "category", "type": "set-primary", "value": "6bea-2cb9-c6b9-d183"}]
       }
     ],
     "sharedProfiles": [
@@ -1762,6 +1802,114 @@
                   {"id": "e6e7-4457-a0a0-34f3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "9893-c379-920b-8982", "type": "set", "value": 10}]
+              },
+              {
+                "name": "Fateweaving",
+                "id": "e078-172b-d117-d24c",
+                "hidden": true,
+                "import": true,
+                "targetId": "f48c-34a7-c395-be6c",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "0014-7fb0-92d6-2db8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "fefa-4f75-33d1-5942", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "cb73-8d71-1d7a-cb1a",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Psyker",
+                "id": "ea9e-1139-05a1-1507",
+                "hidden": true,
+                "targetId": "0d5a-bf3a-7b46-785a",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "cb73-8d71-1d7a-cb1a",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tzeench",
+                "id": "0d99-f470-be4f-bb88",
+                "hidden": true,
+                "targetId": "445c-dc68-019d-79d8",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "cb73-8d71-1d7a-cb1a",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "category",
+                "type": "add",
+                "value": "9254-b1e9-98b2-6101",
+                "conditions": [
+                  {
+                    "childId": "cb73-8d71-1d7a-cb1a",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
               }
             ],
             "profiles": [
@@ -2307,6 +2455,38 @@
                   {"id": "cd95-ea8c-1b0e-2eb0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "modifiers": [{"field": "9893-c379-920b-8982", "type": "set", "value": 10}]
+              },
+              {
+                "name": "Fateweaving",
+                "id": "4ae6-055e-51f0-c589",
+                "hidden": true,
+                "import": true,
+                "targetId": "f48c-34a7-c395-be6c",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "faa0-daca-b160-a3b4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "41b8-c5fd-17fa-08c9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "cb73-8d71-1d7a-cb1a",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "infoLinks": [
@@ -2318,6 +2498,80 @@
                 "targetId": "7779-47c8-99a8-b935",
                 "type": "rule",
                 "modifiers": [{"field": "name", "type": "set", "value": "Officer of the Line (2)"}]
+              },
+              {
+                "name": "Psyker",
+                "id": "fa28-1b40-f218-e6af",
+                "hidden": true,
+                "targetId": "0d5a-bf3a-7b46-785a",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "cb73-8d71-1d7a-cb1a",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tzeench",
+                "id": "1c09-e448-9094-4768",
+                "hidden": true,
+                "targetId": "445c-dc68-019d-79d8",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "cb73-8d71-1d7a-cb1a",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "category",
+                "type": "add",
+                "value": "9254-b1e9-98b2-6101",
+                "conditions": [
+                  {
+                    "childId": "cb73-8d71-1d7a-cb1a",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
               }
             ],
             "profiles": [
@@ -16280,6 +16534,60 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Fateweaver",
+            "id": "3918-d233-971b-7123",
+            "hidden": true,
+            "targetId": "5551-2eee-e6b4-094b",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tzeench",
+            "id": "5f50-9e51-365b-d357",
+            "hidden": true,
+            "targetId": "445c-dc68-019d-79d8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [
@@ -16316,7 +16624,27 @@
             "hidden": false,
             "typeId": "d5a9-9164-1e30-7a35",
             "typeName": "Traits",
-            "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}]
+            "characteristics": [{"name": "Description", "typeId": "d5eb-0b8b-0f26-6233"}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "selectionEntries": [
@@ -16352,6 +16680,38 @@
                 "constraints": [
                   {"id": "75c6-9937-6518-ddc6", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "244d-b531-3d7a-ba40", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Fateweaving",
+                "id": "bd5a-df18-6118-f4fd",
+                "hidden": true,
+                "import": true,
+                "targetId": "f48c-34a7-c395-be6c",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "61d5-7de5-a056-39b3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "c7b7-cd14-b4bf-5b03", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "88af-1dcd-1e95-1f6e",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
                 ]
               }
             ],
@@ -16801,6 +17161,60 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Tzeench",
+            "id": "7e2e-a497-6a8d-5094",
+            "hidden": true,
+            "targetId": "445c-dc68-019d-79d8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fateweaver",
+            "id": "773a-17b8-c34c-eb7d",
+            "hidden": true,
+            "targetId": "5551-2eee-e6b4-094b",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "profiles": [
@@ -16863,6 +17277,38 @@
                 "constraints": [
                   {"id": "620e-5f0e-1829-6388", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "93c6-69e6-2dfd-8537", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Fateweaving",
+                "id": "c164-d1d3-0775-7119",
+                "hidden": true,
+                "import": true,
+                "targetId": "f48c-34a7-c395-be6c",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "aded-0c21-b552-9930", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "86a7-f7d7-ba38-9119", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "88af-1dcd-1e95-1f6e",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
                 ]
               }
             ],
@@ -23107,6 +23553,113 @@
                     "name": "Psycho-Conditioned",
                     "id": "b6e2-7a13-6e66-e992",
                     "description": "*Models with this Special Rule ignore negative Leadership modifiers, but must make Willpower Checks in order to make Reactions or Score Objectives.*\n\n\nModels with this Special Rule may never have negative modifiers applied to their Leadership Characteristic.\n\n\nIn Addition, when a Unit entirely composed of Models with this Special Rule is selected to score an Objective Marker or is declared as the Reacting Unit for a Reaction, a Willpower Check must first be made for that Unit before any Victory Points are Scored or Reaction Allotment is expended. If the Willpower Check is successful, then the Objective Marker is scored or the Reaction proceeds as normal respectively, but if the Willpower Check is unsuccessful, that Unit immediately gains the Stunned Status, preventing the Unit from scoring the Objective or proceeding with the Reaction - if the Controlling Player has other Units eligible to score that Objective Marker, those Units may still do so.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cohort Doctrine: Fateweaver Cohort",
+            "id": "88af-1dcd-1e95-1f6e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Cohort Doctrine: Fateweaver Cohort", "id": "c384-0b19-6385-30a6", "hidden": false, "primary": false, "targetId": "cb73-8d71-1d7a-cb1a"}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "e1e1-a344-d3e2-0b91",
+                    "childName": "Loyalist",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Cohort Tactica: Servants of the Empyrean",
+                "id": "9932-f66f-bff9-f035",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "b242-2c72-4c0a-6ed5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "670b-2e92-ac06-d083", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Fateweaving",
+                    "id": "afb9-0752-4d52-8bfc",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f48c-34a7-c395-be6c",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "9871-cb62-5283-2216",
+                            "childName": "Command Model Sub-type",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit-self",
+                            "shared": true,
+                            "type": "notInstanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {"name": "Tzeench", "id": "1f67-c13b-56d4-86da", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
+                  {
+                    "name": "Psyker",
+                    "id": "67ca-6198-0eea-6e54",
+                    "hidden": false,
+                    "targetId": "0d5a-bf3a-7b46-785a",
+                    "type": "profile",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "9871-cb62-5283-2216",
+                            "childName": "Command Model Sub-type",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "unit-self",
+                            "shared": true,
+                            "type": "notInstanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Servants of the Empyrean",
+                    "id": "28e8-792e-175a-1e32",
+                    "description": "All Models with this Special Rule gain the following\n\n\n- The Tzeench Trait\n- The Traitor Trait\n- A 6+ invulnerable Saving Throw against wounds inflicted by Perils of the Warp or a Weapon with the Psychic Trait\n\n\nIf a Model with this Special Rule has the Command Sub-Type they also gain the Psyker Trait and the Fateweaving Psychic Discipline. They may not be given any other Psychic Discipline.\n\n\nNote that due to the Rules associated with the Tzeench Trait, a Model with both the Tzeench and Psyker Traits gain the Fateweaver Psychic Discipline and maynot be given any other Psychic Discipline",
                     "hidden": false
                   }
                 ]
