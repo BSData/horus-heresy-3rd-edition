@@ -5717,7 +5717,7 @@
               {"name": "Malefic Sub-type", "id": "ea8f-169f-13e4-43b8", "hidden": false, "primary": false, "targetId": "2de1-ddd6-ebb4-10df"}
             ],
             "constraints": [
-              {"id": "f0c4-63dd-cb69-1ac9", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 3},
+              {"id": "f0c4-63dd-cb69-1ac9", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "49c9-a07d-b6e9-a682", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 9}
             ],
             "costs": [
@@ -5745,17 +5745,17 @@
               {
                 "field": "f0c4-63dd-cb69-1ac9",
                 "type": "set",
-                "value": 2,
+                "value": 3,
                 "conditions": [
                   {
                     "childId": "34a6-68ad-0b75-b4ac",
                     "childName": "Exalted Flamer of Tzeench",
                     "field": "selections",
                     "includeChildSelections": true,
-                    "scope": "unit",
+                    "scope": "unit-self",
                     "shared": true,
-                    "type": "atLeast",
-                    "value": 1
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -6115,6 +6115,7 @@
             "id": "a7b7-ec54-d898-d43b",
             "hidden": false,
             "import": true,
+            "sortIndex": 1,
             "type": "model",
             "categoryLinks": [
               {"name": "Cavalry Model Type", "id": "1843-deb9-0e0d-c81e", "hidden": false, "primary": false, "targetId": "a073-2d4a-5bed-123e"},
@@ -6185,6 +6186,10 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
+                "constraints": [
+                  {"id": "f14c-cedc-6505-f3c1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "6880-fa01-baee-2b09", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
                 "infoLinks": [
                   {
                     "name": "Impact (X)",
