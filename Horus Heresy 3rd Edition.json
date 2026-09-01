@@ -1032,7 +1032,8 @@
       {"name": "Cohort Doctrine: Oblitum Pattern Cohort", "id": "4924-9c5d-9d41-1211", "hidden": false},
       {"name": "Command - Discipline Master Cadre only", "id": "baa5-803e-1fc8-293d", "hidden": false},
       {"name": "Troops - Infantry Troop or Levy Troop only", "id": "777c-2a47-2a20-153e", "hidden": false},
-      {"name": "Support - Militia Medicae or Fire Support Troop only", "id": "c6d8-d70d-c56c-d801", "hidden": false}
+      {"name": "Support - Militia Medicae or Fire Support Troop only", "id": "c6d8-d70d-c56c-d801", "hidden": false},
+      {"name": "Alignment mismatch", "id": "ee84-02b2-5444-e62b", "hidden": false}
     ],
     "costTypes": [
       {
@@ -41727,6 +41728,24 @@
                 "roundUp": false,
                 "scope": "parent",
                 "shared": true,
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "warning",
+            "type": "add",
+            "value": "Daemonic alignment mismatch",
+            "conditions": [
+              {
+                "childId": "ee84-02b2-5444-e62b",
+                "childName": "Alignment mismatch",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
                 "value": 1
               }
             ]
