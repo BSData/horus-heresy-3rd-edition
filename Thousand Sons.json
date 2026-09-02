@@ -18,7 +18,8 @@
       {"name": "Weapons", "id": "535f-9e4b-b083-53c2", "targetId": "a22d-4dd0-c59d-57d3", "type": "catalogue"},
       {"name": "Special Rules", "id": "b09d-71c4-7d8f-38e4", "targetId": "106b-693b-99f2-00c3", "type": "catalogue"},
       {"name": "Traits", "id": "6051-427a-30c1-8d3f", "targetId": "df17-7a05-0826-6e22", "type": "catalogue"},
-      {"name": "Psychic", "id": "0c9e-bf57-21df-b03e", "importRootEntries": true, "targetId": "1b2d-2038-39a7-f387", "type": "catalogue"}
+      {"name": "Psychic", "id": "0c9e-bf57-21df-b03e", "importRootEntries": true, "targetId": "1b2d-2038-39a7-f387", "type": "catalogue"},
+      {"name": "Daemons", "id": "4f75-88c8-543c-96d5", "targetId": "9396-cc24-458d-d358", "type": "catalogue"}
     ],
     "categoryEntries": [
       {"name": "Raptora", "id": "b148-3740-2c66-0b53", "hidden": false},
@@ -161,6 +162,46 @@
         "targetId": "8dfd-8240-4e8d-8e0e",
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Troops", "id": "a646-d1e1-abec-c7fb", "primary": true, "targetId": "88e6-d373-4152-0dd8"}]
+      },
+      {
+        "name": "Flamers of Tzeench",
+        "id": "6e82-aa39-dba1-8a8f",
+        "hidden": false,
+        "import": true,
+        "targetId": "b8de-a6ca-73b3-72df",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Support", "id": "6a2a-badb-4529-8448", "hidden": false, "primary": true, "targetId": "345f-9ba6-9b02-ed5c"}],
+        "modifiers": [{"field": "category", "type": "set-primary", "value": "8e14-b4d2-59c9-e474"}]
+      },
+      {
+        "name": "Herald of Tzeench",
+        "id": "9c8d-1c17-7244-1e53",
+        "hidden": false,
+        "import": true,
+        "targetId": "e306-6512-1f49-49c7",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Command", "id": "88bb-d1e0-1f0c-d89c", "hidden": false, "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [{"field": "category", "type": "set-primary", "value": "1cca-b725-743f-e851"}]
+      },
+      {
+        "name": "Horrors of Tzeench",
+        "id": "d33c-d7c4-20c3-e515",
+        "hidden": false,
+        "import": true,
+        "targetId": "d950-0c4a-5d81-0578",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Troops", "id": "9588-126e-5f8a-46ee", "hidden": false, "primary": true, "targetId": "88e6-d373-4152-0dd8"}],
+        "modifiers": [{"field": "category", "type": "set-primary", "value": "5e69-359f-6bc1-6868"}]
+      },
+      {
+        "name": "Screamers of Tzeench",
+        "id": "1a82-456d-cc72-4570",
+        "hidden": false,
+        "import": true,
+        "targetId": "6e09-fdbd-dc83-ed56",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Fast Attack", "id": "0029-077b-e57b-09f8", "hidden": false, "primary": true, "targetId": "cf96-8891-3f9a-8921"}],
+        "modifiers": [{"field": "category", "type": "set-primary", "value": "6bea-2cb9-c6b9-d183"}]
       }
     ],
     "sharedProfiles": [
@@ -1138,6 +1179,7 @@
           {"name": "[Legiones Astartes]", "id": "d52b-b263-4c5d-7635", "hidden": false, "targetId": "641c-ca0a-7093-4525", "type": "profile"},
           {"name": "Psyker", "id": "59ef-615e-0251-9c86", "hidden": false, "targetId": "0d5a-bf3a-7b46-785a", "type": "profile"}
         ],
+        "modifiers": [{"field": "category", "type": "add", "value": "04b3-9ebe-bf51-20f2"}],
         "selectionEntries": [
           {
             "name": "Prosperine Sorcerer",

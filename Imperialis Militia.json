@@ -17,8 +17,7 @@
       {"name": "Mech Library", "id": "0e7b-ab6c-1432-0c67", "targetId": "a159-1624-dbac-7af8", "type": "catalogue"},
       {"name": "Mechanicum", "id": "6364-b137-000d-d755", "targetId": "2f57-6e9d-8a7b-5c2e", "type": "catalogue"},
       {"name": "Legiones Astartes", "id": "5e7b-f270-2911-7c6d", "targetId": "9b32-f350-6aa9-9c09", "type": "catalogue"},
-      {"name": "Solar Auxilia", "id": "d091-a1c5-d7eb-7650", "targetId": "7851-69ac-f701-034e", "type": "catalogue"},
-      {"name": "Daemons of the Ruinstorm", "id": "d47d-43db-4fa2-1295", "targetId": "9396-cc24-458d-d358", "type": "catalogue"}
+      {"name": "Daemons", "id": "d47d-43db-4fa2-1295", "targetId": "9396-cc24-458d-d358", "type": "catalogue"}
     ],
     "entryLinks": [
       {
@@ -1363,7 +1362,7 @@
       {
         "name": "Discipline Master Cadre",
         "id": "2e95-2117-4d59-acbd",
-        "comment": "Paragon of Battle is a little messy with multiple command",
+        "comment": "\n",
         "page": 14,
         "publicationId": "f5e5-c199-d3d4-ccf6",
         "type": "unit",
@@ -1403,7 +1402,32 @@
           {"name": "Among the Ranks", "id": "65c7-1552-40dc-0168", "hidden": false, "targetId": "1b09-3c2f-dfdf-bcf4", "type": "rule"},
           {"name": "Instil Order", "id": "3db2-5fdd-1a8f-91c8", "hidden": false, "targetId": "1db8-0c91-88d9-0515", "type": "rule"},
           {"name": "[Allegiance]", "id": "dcce-4bbc-eaca-8091", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "Imperialis Militia", "id": "a3e3-1a59-c656-1d74", "hidden": false, "targetId": "0ffd-e762-fef0-716d", "type": "profile"},
+          {
+            "name": "Imperialis Militia",
+            "id": "a3e3-1a59-c656-1d74",
+            "hidden": false,
+            "targetId": "0ffd-e762-fef0-716d",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {
             "name": "Implacable Advance",
             "id": "22e0-4d7a-9cdc-4aa8",
@@ -1424,6 +1448,58 @@
                     "scope": "roster",
                     "shared": true,
                     "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "fef1-b77f-4688-4cb9",
+            "hidden": true,
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "f6af-34b3-2170-70fd",
+            "hidden": true,
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ]
@@ -9165,7 +9241,32 @@
           },
           {"name": "Irregulars", "id": "d936-e094-815a-dc90", "hidden": false, "targetId": "2d43-afcd-2393-d1bb", "type": "rule"},
           {"name": "[Allegiance]", "id": "e4e3-fd62-54ff-c7ca", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "Imperialis Militia", "id": "0b09-0980-2476-25e1", "hidden": false, "targetId": "0ffd-e762-fef0-716d", "type": "profile"},
+          {
+            "name": "Imperialis Militia",
+            "id": "0b09-0980-2476-25e1",
+            "hidden": false,
+            "targetId": "0ffd-e762-fef0-716d",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {
             "name": "Implacable Advance",
             "id": "c37e-f8ea-1b3e-3791",
@@ -9186,6 +9287,32 @@
                     "scope": "roster",
                     "shared": true,
                     "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "1963-0313-a9d5-4a17",
+            "hidden": true,
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ]
@@ -9535,8 +9662,8 @@
                                 "value": 1
                               },
                               {
-                                "childId": "40e8-fcb7-9e0e-1582",
-                                "childName": "Lasrifle",
+                                "childId": "b729-ca62-420a-9f76",
+                                "childName": "Lasrifle - Volley",
                                 "field": "selections",
                                 "includeChildSelections": true,
                                 "scope": "parent",
@@ -10259,7 +10386,32 @@
             "modifiers": [{"field": "name", "type": "set", "value": "Expendable (3)"}]
           },
           {"name": "Irregulars", "id": "922e-98de-d031-34f6", "hidden": false, "targetId": "2d43-afcd-2393-d1bb", "type": "rule"},
-          {"name": "Imperialis Militia", "id": "5807-c9df-797b-0376", "hidden": false, "targetId": "0ffd-e762-fef0-716d", "type": "profile"},
+          {
+            "name": "Imperialis Militia",
+            "id": "5807-c9df-797b-0376",
+            "hidden": false,
+            "targetId": "0ffd-e762-fef0-716d",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "[Allegiance]", "id": "aca8-3641-06ae-ddd5", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
           {
             "name": "Implacable Advance",
@@ -10281,6 +10433,32 @@
                     "scope": "roster",
                     "shared": true,
                     "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "33a9-f1d7-e129-b7da",
+            "hidden": true,
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ]
@@ -11221,7 +11399,32 @@
           },
           {"name": "Irregulars", "id": "6dd6-c153-44c8-b580", "hidden": false, "targetId": "2d43-afcd-2393-d1bb", "type": "rule"},
           {"name": "[Allegiance]", "id": "6d55-01a9-cbb8-67e8", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "Imperialis Militia", "id": "8b4e-5412-bbec-6781", "hidden": false, "targetId": "0ffd-e762-fef0-716d", "type": "profile"},
+          {
+            "name": "Imperialis Militia",
+            "id": "8b4e-5412-bbec-6781",
+            "hidden": false,
+            "targetId": "0ffd-e762-fef0-716d",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {
             "name": "Implacable Advance",
             "id": "cd97-7249-3412-07ba",
@@ -11242,6 +11445,32 @@
                     "scope": "roster",
                     "shared": true,
                     "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "c162-2c25-39f6-b09a",
+            "hidden": true,
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
                     "value": 1
                   }
                 ]
@@ -11578,7 +11807,58 @@
           },
           {"name": "Slow and Purposeful", "id": "724e-5c94-4d29-80c5", "hidden": false, "targetId": "6a8e-e508-abc9-cb3e", "type": "rule"},
           {"name": "[Allegiance]", "id": "d30c-7f14-3773-a649", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "Imperialis Militia", "id": "599c-deca-26d5-22eb", "hidden": false, "targetId": "0ffd-e762-fef0-716d", "type": "profile"}
+          {
+            "name": "Imperialis Militia",
+            "id": "599c-deca-26d5-22eb",
+            "hidden": false,
+            "targetId": "0ffd-e762-fef0-716d",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Writ",
+            "id": "d968-bb9c-ec6b-1f7f",
+            "hidden": true,
+            "targetId": "a10c-2795-fd8e-ad5f",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "fd11-7b79-aba3-4e16",
+                    "childName": "Auxiliary - Helot Tercio",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "3760-2dfb-561a-b603"}],
         "selectionEntries": [
@@ -19580,11 +19860,11 @@
             ]
           },
           {
-            "name": "Lasrifle",
+            "name": "Lasrifle - Volley",
             "id": "20ca-c21e-fbee-6aab",
             "hidden": true,
             "import": true,
-            "targetId": "40e8-fcb7-9e0e-1582",
+            "targetId": "b729-ca62-420a-9f76",
             "type": "selectionEntry",
             "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 1}],
             "modifiers": [

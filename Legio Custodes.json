@@ -454,6 +454,15 @@
             "modifiers": [{"field": "category", "type": "remove", "value": "df10-4634-c1aa-f6e0"}, {"field": "category", "type": "set-primary", "value": "7db9-74d1-6ba1-061e"}]
           }
         ]
+      },
+      {
+        "name": "Adjutorum Sodality",
+        "id": "457e-466a-0e86-9095",
+        "hidden": false,
+        "import": true,
+        "targetId": "1996-574f-1f43-7779",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Retinue", "id": "d983-72aa-4ef4-22b1", "hidden": false, "primary": true, "targetId": "a38e-50ff-310f-f19e"}]
       }
     ],
     "sharedProfiles": [
@@ -6575,6 +6584,447 @@
               {"name": "D", "$text": "4", "typeId": "88c3-1ca5-7dc1-f291"},
               {"name": "Special Rules", "$text": "Rending (4+)", "typeId": "5aad-137a-8ee2-63fd"},
               {"name": "Traits", "$text": "Disintegrator", "typeId": "1247-79d2-6cc1-8a03"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Adjutorum Sodality",
+        "id": "1996-574f-1f43-7779",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 20,
+        "type": "unit",
+        "constraints": [
+          {
+            "id": "8872-ba8d-4680-46e0",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 275},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Prime Unit",
+            "id": "4bb0-880d-e714-92b1",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [{"name": "Prime Benefits", "id": "f13f-79fb-edef-7e6d", "hidden": false, "import": true, "targetId": "6f4b-388a-b001-abde", "type": "selectionEntryGroup"}]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "21c2-5ba7-9c7c-2511",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "50ad-a9a5-1f1d-9a25",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "2"}]
+          },
+          {
+            "name": "Eternal Warrior (X)",
+            "id": "2914-b781-02a7-5c27",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "15b4-9e4a-f361-c5a3",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {"name": "Lightning Blows", "id": "25e7-866d-07c8-416c", "hidden": false, "targetId": "9f68-a519-8e29-cb44", "type": "rule"},
+          {
+            "name": "Vanguard (X)",
+            "id": "7db7-75be-2f7b-8f18",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "530f-b733-993c-ec84",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {"name": "[Allegiance]", "id": "0839-cb17-196c-a0a3", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
+          {"name": "Legio Custodes", "id": "9b7c-6b82-af27-e34b", "hidden": false, "targetId": "c717-38ae-cee2-19f7", "type": "profile"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Vestarios",
+            "id": "ea82-ba7f-3289-fd8f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Infantry Model Type", "id": "a96c-1f03-35ce-697e", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"},
+              {"name": "Sergeant Model Sub-Type", "id": "c356-1c15-c7c8-079f", "hidden": false, "primary": false, "targetId": "8045-89a4-76d4-fcef"}
+            ],
+            "constraints": [
+              {"id": "250e-e99b-a209-36dc", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "a470-1a1e-5610-c4e4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Guardian spear",
+                "id": "f5d9-a7f3-84cb-7fad",
+                "hidden": false,
+                "import": true,
+                "targetId": "f11a-9969-7f94-2ea8",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "3f85-7b5f-e4ac-df77", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "fe5b-ec69-f7a0-8260", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Misericordia",
+                "id": "6f0a-3608-a351-ad4a",
+                "hidden": false,
+                "import": true,
+                "targetId": "e15c-465c-8a7a-7e34",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "c076-0ade-40f8-bf50", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "5681-5011-7539-cb08", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "category",
+                "type": "add",
+                "value": "5a95-e564-96b2-8dc9",
+                "conditions": [{"childId": "2c90-1d52-7075-59d3", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Vestarios",
+                "id": "9195-78b1-b541-5020",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Infantry (Sergeant)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "8", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "5", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "5", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "5", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "5", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "2", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "5", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "3", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "10", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "10", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "9", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "9", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "2+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "5+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  },
+                  {
+                    "comment": "Master Sergeant",
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2c90-1d52-7075-59d3",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "253c-d694-4695-c89e", "type": "increment", "value": 1},
+                      {"field": "024e-bdb1-7982-25a0", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"arg": "Sergeant", "field": "50fc-9241-d4a2-045b", "type": "replace", "value": "Sergeant, Champion"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Promulgation (Vestarios only)",
+                "id": "f231-5f09-2a84-7597",
+                "description": "*This Special Rule allows the removal of Tactical Statuses from Friendly Units with a magisterium vexilla.*\n\n\nThe Controlling Player of any Model with this Special Rule may choose to make a single Cool or Leadership Check for each of their Units which contains one or more Models with this Special Rule during the Start Phase of their Turn as Active Player. For each successful Check, a single Tactical Status (either Pinned, Stunned or Suppressed if Cool was used for the corresponding Check, or Routed if Leadership was used) may be removed from every Model in a single friendly Unit which includes at least one Model with a magisterium vexilla.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Signifier",
+            "id": "3dee-1562-86cd-c1fb",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Infantry Model Type", "id": "cc1d-0901-f4b9-3749", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"}],
+            "constraints": [
+              {"id": "9387-f0fc-f243-1bed", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "7e10-f54f-0e25-1650", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Sentinel warblade",
+                "id": "7665-7259-69d2-d318",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "e50e-bfd0-7701-9a40",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "a1e0-6b96-3eb9-2751", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "9647-7865-1661-c579", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Misericordia",
+                "id": "3e8b-bca6-5e5d-130c",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "e15c-465c-8a7a-7e34",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "6ea1-1736-c11d-ca9d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "a3c9-fee0-c331-ef7f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Signifier",
+                "id": "93f5-3afb-048a-ec90",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Infantry", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "8", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "5", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "5", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "5", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "5", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "3", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "5", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "3", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "10", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "10", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "8", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "8", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "2+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "5+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Imperatoris vexilla",
+                "id": "f81e-9cb0-6f14-f1f6",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "0cd5-d881-abdc-aca9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2f8e-18fc-b7d4-a62d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Imperatoris vexilla",
+                    "id": "713a-c8b3-6eff-a605",
+                    "hidden": false,
+                    "typeId": "5ec5-e0c3-1701-6f16",
+                    "typeName": "Wargear",
+                    "characteristics": [
+                      {
+                        "name": "Summary",
+                        "$text": "An imperatoris vexilla allows a Unit to Score an Objective before setting its Value to 1 for the rest of the Battle.",
+                        "typeId": "8e7d-a0ae-fd85-983c"
+                      },
+                      {
+                        "name": "Description",
+                        "$text": "Once per Battle, at the stary of the Vicory Sub-Phase of any of their Turns as Active Player, the Controlling Player of a Unit which includes a Model with an imperatoris vexilla and which is Contesting or Controlling an Objective Marker (or which would be eligable to Contest or Control an Objective Marker if it was not Locked in Combat) may choose to activate that imperatoris vexilla. If they do, the Unit immediately scores that Objective Marker, ignoring any instance of the Vanguard (X) Special Rule which Models in the Unit have. Once the Objective Marker has been scored in this way, it may not be scored again in the same Victory Sub-Phase and its Value is immediately set to '1' for the rest of the Battle (unless subsequently modified by Mission Special Rules).",
+                        "typeId": "9944-2f6d-d61b-03b5"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Blade Champion",
+            "id": "9590-9ee6-584a-6bb8",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Infantry Model Type", "id": "efb6-15b4-71b2-0cc4", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"},
+              {"name": "Champion Model Sub-Type", "id": "8d47-b67a-0b9d-6afe", "hidden": false, "primary": false, "targetId": "5a95-e564-96b2-8dc9"}
+            ],
+            "constraints": [
+              {"id": "07d6-f36e-efad-5078", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "b009-a0ec-96ed-7f67", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Misericordia",
+                "id": "5755-fa0e-e1b1-5270",
+                "hidden": false,
+                "import": true,
+                "targetId": "e15c-465c-8a7a-7e34",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "8ca6-8a67-4ad6-3110", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "c9e3-7d4d-697b-bda5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Blade Champion",
+                "id": "ccfa-29df-c67e-c7db",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Infantry (Champion)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "8", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "6", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "5", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "5", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "5", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "2", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "5", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "3", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "10", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "10", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "8", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "8", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "2+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "5+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Vaultsword",
+                "id": "e235-75aa-97a7-14d1",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "bc34-c1c4-eaa6-1bbf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "506c-9a8b-3add-70b1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Duellist's Edge (X)",
+                    "id": "3361-ed57-81f7-a19a",
+                    "comment": "1",
+                    "hidden": false,
+                    "targetId": "94bc-c69f-99b6-8ba0",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+                  },
+                  {
+                    "name": "Precision (X)",
+                    "id": "463b-d6e9-942b-3334",
+                    "comment": "4+",
+                    "hidden": false,
+                    "targetId": "4fbd-e0bc-8f72-6e3f",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "4+"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Vaultsword",
+                    "id": "20ee-cbd1-3687-8710",
+                    "hidden": false,
+                    "typeId": "3587-6dcd-005c-c263",
+                    "typeName": "Melee Weapon",
+                    "characteristics": [
+                      {"name": "IM", "$text": "+1", "typeId": "6eec-4093-f946-1014"},
+                      {"name": "AM", "$text": "+2", "typeId": "03d0-6094-84f0-e27e"},
+                      {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
+                      {"name": "AP", "$text": "2", "typeId": "a014-126b-3b7b-27e8"},
+                      {"name": "D", "$text": "1", "typeId": "6a9d-4feb-065a-33e7"},
+                      {"name": "Special Rules", "$text": "Duellist's Edge (1), Precision (4+)", "typeId": "ebe0-7b28-b40c-694e"},
+                      {"name": "Traits", "$text": "Power", "typeId": "76e3-c188-bc65-3467"}
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ]
