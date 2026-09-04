@@ -13371,24 +13371,7 @@
             "sortIndex": 4,
             "constraints": [{"id": "ab90-23ee-f55e-154c", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "modifiers": [
-              {
-                "field": "ab90-23ee-f55e-154c",
-                "type": "set",
-                "value": 0,
-                "conditions": [
-                  {
-                    "childId": "4d86-d6e9-8bca-0ad5",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
-                  },
-                  {"childId": "c195-9a6a-a56b-4634", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
-                ]
-              },
+              {"field": "ab90-23ee-f55e-154c", "type": "set", "value": 0},
               {
                 "field": "hidden",
                 "type": "set",
@@ -13415,13 +13398,31 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "constraints": [{"id": "115a-c621-71b6-2ad1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "constraints": [{"id": "115a-c621-71b6-2ad1", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "modifiers": [
                   {
                     "field": "9893-c379-920b-8982",
                     "type": "increment",
                     "value": 2,
                     "repeats": [{"childId": "model", "field": "selections", "includeChildSelections": true, "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 1}]
+                  },
+                  {
+                    "field": "115a-c621-71b6-2ad1",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "4d86-d6e9-8bca-0ad5",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {"childId": "c195-9a6a-a56b-4634", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                    ]
                   }
                 ]
               }
