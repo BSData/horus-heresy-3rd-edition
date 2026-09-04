@@ -13369,7 +13369,45 @@
             "id": "d6d2-abfc-e09b-2752",
             "hidden": false,
             "sortIndex": 4,
-            "constraints": [{"id": "ab90-23ee-f55e-154c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "ab90-23ee-f55e-154c", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "ab90-23ee-f55e-154c",
+                "type": "set",
+                "value": 0,
+                "conditions": [
+                  {
+                    "childId": "4d86-d6e9-8bca-0ad5",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {"childId": "c195-9a6a-a56b-4634", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "4d86-d6e9-8bca-0ad5",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {"childId": "c195-9a6a-a56b-4634", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              }
+            ],
             "selectionEntries": [
               {
                 "name": "Unit swaps Bolt Pistol for Combat Shields",
@@ -24934,8 +24972,26 @@
                     "hidden": false,
                     "sortIndex": 2,
                     "constraints": [
-                      {"id": "5610-5697-c7cc-19c4", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": false, "type": "min", "value": 1},
-                      {"id": "31ab-ca4b-15e9-8891", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": false, "type": "max", "value": 1}
+                      {
+                        "id": "5610-5697-c7cc-19c4",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "31ab-ca4b-15e9-8891",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "max",
+                        "value": 1
+                      }
                     ],
                     "entryLinks": [
                       {
@@ -25194,8 +25250,26 @@
                     "hidden": false,
                     "sortIndex": 3,
                     "constraints": [
-                      {"id": "cae3-587f-14e4-f628", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": false, "type": "max", "value": 1},
-                      {"id": "6246-e731-9ed4-b88d", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": false, "type": "min", "value": 1}
+                      {
+                        "id": "cae3-587f-14e4-f628",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "max",
+                        "value": 1
+                      },
+                      {
+                        "id": "6246-e731-9ed4-b88d",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "min",
+                        "value": 1
+                      }
                     ],
                     "entryLinks": [
                       {
@@ -90461,8 +90535,8 @@
                     "hidden": false,
                     "sortIndex": 1,
                     "constraints": [
-                      {"id": "60e2-4ca8-5a90-6c70", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                      {"id": "2672-7534-b21e-2d55", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                      {"id": "60e2-4ca8-5a90-6c70", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "2672-7534-b21e-2d55", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
                     ],
                     "entryLinks": [
                       {
