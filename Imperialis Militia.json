@@ -16119,7 +16119,7 @@
                     "name": "Any Model in this Unit may have one item:",
                     "id": "3c2e-24c5-498d-a15d",
                     "hidden": false,
-                    "sortIndex": 3,
+                    "sortIndex": 1,
                     "constraints": [{"id": "5f37-b217-4514-9dab", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                     "entryLinks": [
                       {
@@ -16179,7 +16179,6 @@
                     "id": "e333-775c-42ad-8f42",
                     "hidden": false,
                     "sortIndex": 2,
-                    "constraints": [{"id": "1e23-5392-48a5-860d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
                     "entryLinks": [
                       {
                         "name": "Melta bombs",
@@ -16188,16 +16187,31 @@
                         "import": true,
                         "targetId": "2eb4-687e-a515-ee3d",
                         "type": "selectionEntry",
-                        "constraints": [{"id": "2fa9-c6be-486b-bf05", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                        "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}]
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "field": "1e23-5392-48a5-860d",
-                        "type": "increment",
-                        "value": 1,
-                        "repeats": [{"childId": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 1}]
+                        "constraints": [
+                          {"id": "2fa9-c6be-486b-bf05", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                          {"id": "94f3-4c26-c60f-b02a", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}
+                        ],
+                        "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}],
+                        "modifiers": [
+                          {
+                            "field": "94f3-4c26-c60f-b02a",
+                            "type": "increment",
+                            "value": 1,
+                            "repeats": [
+                              {
+                                "childId": "model",
+                                "childName": "model",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "repeats": 1,
+                                "roundUp": false,
+                                "scope": "unit",
+                                "shared": true,
+                                "value": 5
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   },
@@ -16653,64 +16667,6 @@
                         "targetId": "0f77-ee5f-4484-b423",
                         "type": "selectionEntry",
                         "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 5}]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Any Model in this Unit may have one item:",
-                    "id": "abd6-fbef-c0c0-b31e",
-                    "hidden": false,
-                    "constraints": [{"id": "5773-9d07-de2e-d93c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "entryLinks": [
-                      {
-                        "name": "Militia Melee Weapons",
-                        "id": "09f4-f2e5-c327-286c",
-                        "flatten": true,
-                        "hidden": false,
-                        "import": true,
-                        "sortIndex": 1,
-                        "targetId": "01b9-96bd-443f-9756",
-                        "type": "selectionEntryGroup",
-                        "constraints": [{"id": "557a-3f5c-932d-8a3c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
-                      },
-                      {
-                        "name": "Militia Armaments",
-                        "id": "cc31-959c-e989-d3cf",
-                        "flatten": true,
-                        "hidden": false,
-                        "import": true,
-                        "sortIndex": 2,
-                        "targetId": "0718-3e41-4cd9-87ca",
-                        "type": "selectionEntryGroup"
-                      },
-                      {
-                        "name": "Militia lance",
-                        "id": "7c58-519f-c2bf-4183",
-                        "hidden": false,
-                        "import": true,
-                        "sortIndex": 3,
-                        "targetId": "0f77-ee5f-4484-b423",
-                        "type": "selectionEntry",
-                        "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 5}]
-                      }
-                    ],
-                    "selectionEntryGroups": [
-                      {
-                        "name": "One Model may take:",
-                        "id": "ce13-02dc-4e3c-d235",
-                        "hidden": false,
-                        "constraints": [{"id": "c7e1-ae2a-1e77-eef1", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}],
-                        "entryLinks": [
-                          {
-                            "name": "Militia Special Weapons",
-                            "id": "417e-b09b-230f-6337",
-                            "hidden": false,
-                            "import": true,
-                            "targetId": "77d0-78ae-4a2b-b301",
-                            "type": "selectionEntryGroup",
-                            "constraints": [{"id": "7a27-e014-279d-5557", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
-                          }
-                        ]
                       }
                     ]
                   }
