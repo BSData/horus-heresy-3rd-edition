@@ -7281,7 +7281,7 @@
                     "value": "Infantry (Champion, Heavy, Sergeant, Specialist)",
                     "conditionGroups": [
                       {
-                        "type": "or",
+                        "type": "and",
                         "conditions": [
                           {"childId": "9e7d-913d-86f0-e05e", "field": "selections", "includeChildSelections": true, "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
                           {
@@ -7318,6 +7318,60 @@
                             "value": 1
                           },
                           {"childId": "9e7d-913d-86f0-e05e", "field": "selections", "includeChildSelections": true, "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "field": "50fc-9241-d4a2-045b",
+                    "type": "set",
+                    "value": "Infantry (Champion, Sergeant, Specialist)",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "9e7d-913d-86f0-e05e",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "ancestor",
+                            "shared": true,
+                            "type": "notInstanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "2c90-1d52-7075-59d3",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "field": "50fc-9241-d4a2-045b",
+                    "type": "set",
+                    "value": "Infantry (Heavy, Sergeant, Specialist)",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9e7d-913d-86f0-e05e", "field": "selections", "includeChildSelections": true, "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
+                          {
+                            "childId": "2c90-1d52-7075-59d3",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "scope": "unit",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 0
+                          }
                         ]
                       }
                     ]

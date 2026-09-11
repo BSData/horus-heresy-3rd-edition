@@ -13369,7 +13369,45 @@
             "id": "d6d2-abfc-e09b-2752",
             "hidden": false,
             "sortIndex": 4,
-            "constraints": [{"id": "ab90-23ee-f55e-154c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "ab90-23ee-f55e-154c", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "ab90-23ee-f55e-154c",
+                "type": "set",
+                "value": 0,
+                "conditions": [
+                  {
+                    "childId": "4d86-d6e9-8bca-0ad5",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {"childId": "c195-9a6a-a56b-4634", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "4d86-d6e9-8bca-0ad5",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {"childId": "c195-9a6a-a56b-4634", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              }
+            ],
             "selectionEntries": [
               {
                 "name": "Unit swaps Bolt Pistol for Combat Shields",
@@ -13377,13 +13415,31 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "constraints": [{"id": "115a-c621-71b6-2ad1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "constraints": [{"id": "115a-c621-71b6-2ad1", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "modifiers": [
                   {
                     "field": "9893-c379-920b-8982",
                     "type": "increment",
                     "value": 2,
                     "repeats": [{"childId": "model", "field": "selections", "includeChildSelections": true, "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 1}]
+                  },
+                  {
+                    "field": "115a-c621-71b6-2ad1",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "4d86-d6e9-8bca-0ad5",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {"childId": "c195-9a6a-a56b-4634", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                    ]
                   }
                 ]
               }
@@ -24934,8 +24990,26 @@
                     "hidden": false,
                     "sortIndex": 2,
                     "constraints": [
-                      {"id": "5610-5697-c7cc-19c4", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": false, "type": "min", "value": 1},
-                      {"id": "31ab-ca4b-15e9-8891", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": false, "type": "max", "value": 1}
+                      {
+                        "id": "5610-5697-c7cc-19c4",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "31ab-ca4b-15e9-8891",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "max",
+                        "value": 1
+                      }
                     ],
                     "entryLinks": [
                       {
@@ -25194,8 +25268,26 @@
                     "hidden": false,
                     "sortIndex": 3,
                     "constraints": [
-                      {"id": "cae3-587f-14e4-f628", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": false, "type": "max", "value": 1},
-                      {"id": "6246-e731-9ed4-b88d", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": false, "type": "min", "value": 1}
+                      {
+                        "id": "cae3-587f-14e4-f628",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "max",
+                        "value": 1
+                      },
+                      {
+                        "id": "6246-e731-9ed4-b88d",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "min",
+                        "value": 1
+                      }
                     ],
                     "entryLinks": [
                       {
@@ -90461,8 +90553,8 @@
                     "hidden": false,
                     "sortIndex": 1,
                     "constraints": [
-                      {"id": "60e2-4ca8-5a90-6c70", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                      {"id": "2672-7534-b21e-2d55", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                      {"id": "60e2-4ca8-5a90-6c70", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "2672-7534-b21e-2d55", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
                     ],
                     "entryLinks": [
                       {
@@ -102320,6 +102412,146 @@
                       }
                     ]
                   }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "For every five Models in this Unit, one Mortalis Destroyer in this Unit may have it's weapons exchanged for:",
+                    "id": "5ec2-683b-c560-5e2e",
+                    "hidden": false,
+                    "constraints": [
+                      {"id": "a898-f16f-9217-334a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {
+                        "id": "2dd7-159b-1f7c-b740",
+                        "automatic": true,
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "max",
+                        "value": 0
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": true,
+                        "conditions": [
+                          {
+                            "childId": "4d86-d6e9-8bca-0ad5",
+                            "field": "selections",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "scope": "roster",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "field": "2dd7-159b-1f7c-b740",
+                        "type": "increment",
+                        "value": 1,
+                        "repeats": [{"childId": "model", "field": "selections", "includeChildSelections": true, "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "name": "One Bolt Pistol and a Destroyer Missile Launcher",
+                        "id": "3ddd-fc90-d0ff-9ee3",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [{"id": "0de4-2ff5-d4ba-2e17", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                        "costs": [
+                          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15},
+                          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Destroyer Missile Launcher",
+                            "id": "996e-21ee-4d7b-76f2",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "bcb8-e658-5a0e-0c1a",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {"id": "32b8-b81b-ba60-4fe3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                              {"id": "9ba6-febf-6e5f-cda6", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                            ],
+                            "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0}]
+                          },
+                          {
+                            "name": "Bolt pistol",
+                            "id": "1923-ef4a-14dd-d175",
+                            "defaultAmount": 1,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "2942-f783-d627-33c5",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {"id": "991b-f108-5c46-ec5c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                              {"id": "262e-8aef-4033-28bf", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "One Bolt pistol and a Plasma pistol",
+                        "id": "cfbb-f545-3f07-e3d5",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [{"id": "e02d-4570-e2b8-0ff1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                        "costs": [
+                          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 5},
+                          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Plasma pistol",
+                            "id": "9943-11f7-b0c8-f271",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "659f-d52e-1515-2912",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {"id": "c461-a609-b101-fc49", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                              {"id": "4abf-c693-a5c2-7254", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                            ],
+                            "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0}]
+                          },
+                          {
+                            "name": "Bolt pistol",
+                            "id": "990d-e93f-3845-0fb8",
+                            "defaultAmount": 1,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "2942-f783-d627-33c5",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {"id": "3194-2b58-2acb-17fc", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                              {"id": "3deb-75f6-f93c-04a6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -102357,64 +102589,6 @@
                     "type": "increment",
                     "value": 1,
                     "repeats": [{"childId": "model", "field": "selections", "includeChildSelections": true, "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
-                  }
-                ]
-              },
-              {
-                "name": "For every five Models in this Unit, one Mortalis Destroyer in this Unit may have one of its bolt pistols exchanged for one of the following:",
-                "id": "5ec2-683b-c560-5e2e",
-                "hidden": false,
-                "sortIndex": 3,
-                "constraints": [
-                  {"id": "2dd7-159b-1f7c-b740", "automatic": true, "field": "selections", "scope": "unit", "shared": true, "type": "max", "value": 0},
-                  {"id": "a898-f16f-9217-334a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "entryLinks": [
-                  {
-                    "name": "Plasma pistol",
-                    "id": "9943-11f7-b0c8-f271",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "659f-d52e-1515-2912",
-                    "type": "selectionEntry",
-                    "constraints": [{"id": "c461-a609-b101-fc49", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 5}]
-                  },
-                  {
-                    "name": "Destroyer Missile Launcher",
-                    "id": "996e-21ee-4d7b-76f2",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "bcb8-e658-5a0e-0c1a",
-                    "type": "selectionEntry",
-                    "constraints": [{"id": "32b8-b81b-ba60-4fe3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15}]
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "field": "2dd7-159b-1f7c-b740",
-                    "type": "increment",
-                    "value": 1,
-                    "repeats": [{"childId": "model", "field": "selections", "includeChildSelections": true, "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
-                  },
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "4d86-d6e9-8bca-0ad5",
-                        "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      },
-                      {"childId": "c195-9a6a-a56b-4634", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
-                    ]
                   }
                 ]
               },
