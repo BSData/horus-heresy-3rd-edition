@@ -1028,7 +1028,18 @@
       {"name": "Iron Tercio", "id": "6c30-79ee-136f-d340", "hidden": false},
       {"name": "Tank Commander", "id": "3134-c5e1-b266-d2e0", "hidden": false},
       {"name": "ZM Primary Detachment", "id": "c83f-3c44-31ab-1ffd", "hidden": false},
-      {"name": "Invalid ZM Vehicle", "id": "8d49-126f-5500-aa28", "hidden": false}
+      {"name": "Invalid ZM Vehicle", "id": "8d49-126f-5500-aa28", "hidden": false},
+      {"name": "Cohort Doctrine: Oblitum Pattern Cohort", "id": "4924-9c5d-9d41-1211", "hidden": false},
+      {"name": "Command - Discipline Master Cadre only", "id": "baa5-803e-1fc8-293d", "hidden": false},
+      {"name": "Troops - Infantry Troop or Levy Troop only", "id": "777c-2a47-2a20-153e", "hidden": false},
+      {"name": "Support - Militia Medicae or Fire Support Troop only", "id": "c6d8-d70d-c56c-d801", "hidden": false},
+      {"name": "Alignment mismatch", "id": "ee84-02b2-5444-e62b", "hidden": false},
+      {"name": "Command - Tzeench only", "id": "1cca-b725-743f-e851", "hidden": false},
+      {"name": "Troops - Tzeench only", "id": "5e69-359f-6bc1-6868", "hidden": false},
+      {"name": "Support - Tzeench only", "id": "8e14-b4d2-59c9-e474", "hidden": false},
+      {"name": "Fast Attack - Tzeench only", "id": "6bea-2cb9-c6b9-d183", "hidden": false},
+      {"name": "Cohort Doctrine: Fateweaver Cohort", "id": "cb73-8d71-1d7a-cb1a", "hidden": false},
+      {"name": "Prosperine Sorcerer", "id": "04b3-9ebe-bf51-20f2", "hidden": false}
     ],
     "costTypes": [
       {
@@ -40279,6 +40290,553 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Auxiliary - Helot Tercio",
+            "id": "fd11-7b79-aba3-4e16",
+            "hidden": true,
+            "sortIndex": 108,
+            "categoryLinks": [
+              {
+                "name": "Prime Support",
+                "id": "0733-deff-7ba8-4cbe",
+                "hidden": false,
+                "targetId": "1c79-ecdf-9a64-84c9",
+                "constraints": [{"id": "01d4-d858-5e8f-b288", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Troops",
+                "id": "60ce-643f-874f-bab5",
+                "hidden": false,
+                "targetId": "c3f9-a7f3-984b-3fda",
+                "constraints": [{"id": "8c77-608c-9ca1-8cde", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Command",
+                "id": "ccfe-cce6-1e13-9725",
+                "hidden": false,
+                "targetId": "c85c-2963-658f-1bb9",
+                "constraints": [{"id": "61f7-453c-d905-d683", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Command - Discipline Master Cadre only",
+                "id": "ff8f-13db-6334-8e0d",
+                "hidden": false,
+                "targetId": "baa5-803e-1fc8-293d",
+                "constraints": [{"id": "0d87-fc6f-3a71-cbcb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Troops - Infantry Troop or Levy Troop only",
+                "id": "7079-34aa-9834-f945",
+                "hidden": false,
+                "targetId": "777c-2a47-2a20-153e",
+                "constraints": [{"id": "d0ee-74c4-e86e-b978", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Support - Militia Medicae or Fire Support Troop only",
+                "id": "c1a4-b2d0-0a95-8280",
+                "hidden": false,
+                "targetId": "c6d8-d70d-c56c-d801",
+                "constraints": [{"id": "2b02-8581-ef37-7a6d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              }
+            ],
+            "constraints": [{"id": "1837-2d3f-e2c0-9a79", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 0}],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+            ],
+            "modifiers": [
+              {
+                "field": "1837-2d3f-e2c0-9a79",
+                "type": "increment",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "4924-9c5d-9d41-1211",
+                    "childName": "Cohort Doctrine: Oblitum Pattern Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ],
+                "repeats": [
+                  {
+                    "childId": "e1a1-2699-4681-47ab",
+                    "childName": "Auxiliary - Veletaris Tercio",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "comment": "Solar Auxilia",
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "7851-69ac-f701-034e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                      {"childId": "7851-69ac-f701-034e", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "4924-9c5d-9d41-1211",
+                        "childName": "Cohort Doctrine: Oblitum Pattern Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "error",
+                "type": "add",
+                "value": "Each Helot Tercio requires a Veletaris Tercio detachment",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "4924-9c5d-9d41-1211",
+                        "childName": "Cohort Doctrine: Oblitum Pattern Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e1a1-2699-4681-47ab",
+                        "childName": "Auxiliary - Veletaris Tercio",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Auxiliary - Helot Tercio",
+                "id": "244b-3399-1c18-d048",
+                "hidden": false,
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "$text": "1 Command\n2 Troops\n1 Support\nCommand must be Discipline Cadre\nTroops must be Infantry Troop or Levy Troop Units\nSupport must be Militia Medicae or Fire Support Troop Units only\n\n\nCommand Units do not grant additional Auxiliary Detachments",
+                    "typeId": "ec3f-877b-f887-18b2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Auxiliary - Ætheric Incursion Detachment",
+            "id": "b88e-e21c-c5e2-80be",
+            "hidden": true,
+            "sortIndex": 110,
+            "categoryLinks": [
+              {
+                "name": "Prime Support",
+                "id": "915a-6d0a-ad21-7b6f",
+                "hidden": false,
+                "targetId": "1c79-ecdf-9a64-84c9",
+                "constraints": [{"id": "f201-0122-a072-67bb", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Troops",
+                "id": "4e97-6658-c2ba-eb7c",
+                "hidden": false,
+                "targetId": "c3f9-a7f3-984b-3fda",
+                "constraints": [{"id": "43a8-5ab2-02a7-802f", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Command",
+                "id": "198a-d181-ae15-5150",
+                "hidden": false,
+                "targetId": "c85c-2963-658f-1bb9",
+                "constraints": [{"id": "7ee1-d71f-5d85-30fd", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Command - Tzeench only",
+                "id": "8aee-fd73-9cb9-acc2",
+                "hidden": false,
+                "targetId": "1cca-b725-743f-e851",
+                "constraints": [{"id": "8687-618c-5efd-0823", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Troops - Tzeench only",
+                "id": "e6c6-8666-523c-37b9",
+                "hidden": false,
+                "targetId": "5e69-359f-6bc1-6868",
+                "constraints": [{"id": "66ea-3d26-1cd4-ff32", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Support - Tzeench only",
+                "id": "0ba6-fd96-0787-68a7",
+                "hidden": false,
+                "targetId": "8e14-b4d2-59c9-e474",
+                "constraints": [{"id": "b950-436d-689c-bae0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Fast Attack - Tzeench only",
+                "id": "f5a0-03bf-0c9a-323a",
+                "hidden": false,
+                "targetId": "6bea-2cb9-c6b9-d183",
+                "constraints": [{"id": "a208-e934-bd0f-a3b8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime Fast Attack",
+                "id": "90ec-922f-c627-12fd",
+                "hidden": false,
+                "targetId": "c291-144b-3da6-37ed",
+                "constraints": [{"id": "ff99-1c16-9dcf-5da2", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              }
+            ],
+            "constraints": [{"id": "dd1b-c95d-52d3-d06d", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 0}],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+            ],
+            "modifiers": [
+              {
+                "field": "dd1b-c95d-52d3-d06d",
+                "type": "increment",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "cb73-8d71-1d7a-cb1a",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ],
+                "repeats": [
+                  {
+                    "childId": "243b-4ffd-9808-11d8",
+                    "childName": "Auxiliary - Infantry Tercio",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "comment": "Solar Auxilia",
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "7851-69ac-f701-034e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                      {"childId": "7851-69ac-f701-034e", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "cb73-8d71-1d7a-cb1a",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "error",
+                "type": "add",
+                "value": "Each Ætheric Incursion Detachment requires an Infantry Tercio detachment",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "cb73-8d71-1d7a-cb1a",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "243b-4ffd-9808-11d8",
+                        "childName": "Auxiliary - Infantry Tercio",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Auxiliary - Ætheric Incursion Detachment",
+                "id": "dfdb-afc6-5783-62bf",
+                "hidden": false,
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "$text": "1 Command\n2 Troops\n1 Support\n1 Fast Attack\nSlots in this detachment may only be filled with Units from the Daemons of Tzeench Army list\nCommand Units do not grant additional Auxiliary Detachments",
+                    "typeId": "ec3f-877b-f887-18b2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Auxiliary - Ætheric Incursion",
+            "id": "6018-b4fb-d64a-4b42",
+            "hidden": true,
+            "sortIndex": 109,
+            "categoryLinks": [
+              {
+                "name": "Prime Support",
+                "id": "8674-b2d7-d663-758d",
+                "hidden": false,
+                "targetId": "1c79-ecdf-9a64-84c9",
+                "constraints": [{"id": "8052-0008-8341-7e75", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Troops",
+                "id": "12bd-6912-ac42-c38f",
+                "hidden": false,
+                "targetId": "c3f9-a7f3-984b-3fda",
+                "constraints": [{"id": "2219-6725-7bc0-ffd5", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Command",
+                "id": "3b5d-65e5-e7d3-9e6c",
+                "hidden": false,
+                "targetId": "c85c-2963-658f-1bb9",
+                "constraints": [{"id": "f484-a9cb-5fe9-e797", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Command - Tzeench only",
+                "id": "5750-53c4-c99b-2f53",
+                "hidden": false,
+                "targetId": "1cca-b725-743f-e851",
+                "constraints": [{"id": "a8b7-c1b9-0fe2-2ae9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Troops - Tzeench only",
+                "id": "4c0b-ccc5-f76e-d206",
+                "hidden": false,
+                "targetId": "5e69-359f-6bc1-6868",
+                "constraints": [{"id": "a6c9-f0b8-da6d-7c4f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Support - Tzeench only",
+                "id": "946a-84cf-c060-7d60",
+                "hidden": false,
+                "targetId": "8e14-b4d2-59c9-e474",
+                "constraints": [{"id": "815a-0595-831f-11f4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Fast Attack - Tzeench only",
+                "id": "216a-66e2-860b-e802",
+                "hidden": false,
+                "targetId": "6bea-2cb9-c6b9-d183",
+                "constraints": [{"id": "83a9-774e-0752-d56e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime Fast Attack",
+                "id": "e2c1-f2eb-5bcf-fe06",
+                "hidden": false,
+                "targetId": "c291-144b-3da6-37ed",
+                "constraints": [{"id": "66aa-7363-4d13-2c29", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              }
+            ],
+            "constraints": [{"id": "a5fd-9f7e-7308-3285", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 0}],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 1},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+            ],
+            "modifiers": [
+              {
+                "field": "a5fd-9f7e-7308-3285",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "e835-f513-2c3c-9697",
+                    "childName": "Esoterist",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "comment": "TS",
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                      {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "597e-83d8-32e1-8eaa",
+                        "childName": "Traitor",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "a5fd-9f7e-7308-3285",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "04b3-9ebe-bf51-20f2",
+                    "childName": "Prosperine Sorcerer",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "error",
+                "type": "add",
+                "value": "Ætheric Incursion requires an Esoterist or a Prosperine Sorcerer",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "e835-f513-2c3c-9697",
+                        "childName": "Esoterist",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      },
+                      {
+                        "childId": "04b3-9ebe-bf51-20f2",
+                        "childName": "Prosperine Sorcerer",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Auxiliary - Ætheric Incursion",
+                "id": "b9ee-c20d-ce11-c21f",
+                "hidden": false,
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "$text": "1 Command\n2 Troops\n1 Support\n1 Fast Attack\nSlots in this detachment may only be filled with Units from the Daemons of Tzeench Army list\n",
+                    "typeId": "ec3f-877b-f887-18b2"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "forceEntryLinks": [
@@ -41552,6 +42110,24 @@
                 "roundUp": false,
                 "scope": "parent",
                 "shared": true,
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "warning",
+            "type": "add",
+            "value": "Daemonic alignment mismatch",
+            "conditions": [
+              {
+                "childId": "ee84-02b2-5444-e62b",
+                "childName": "Alignment mismatch",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
                 "value": 1
               }
             ]
@@ -45065,7 +45641,9 @@
           {"name": "Auxiliary - Hykanatoi Convocation", "id": "d5fb-55db-e9db-d1af", "hidden": false, "targetId": "7fdf-9f23-ceee-41cc", "type": "forceEntry"},
           {"name": "Auxiliary - Tharanatoi Convocation", "id": "685f-cc07-eb1c-8ef5", "hidden": false, "targetId": "6da2-db78-0174-d0b1", "type": "forceEntry"},
           {"name": "Auxiliary - Ephoroi Convocation", "id": "a711-638a-89bb-5643", "hidden": false, "targetId": "f226-fdc7-a249-e980", "type": "forceEntry"},
-          {"name": "Auxiliary - Kataphractoi Convocation", "id": "9ce1-554e-0358-3d4e", "hidden": false, "targetId": "750e-bcb0-0a41-3731", "type": "forceEntry"}
+          {"name": "Auxiliary - Kataphractoi Convocation", "id": "9ce1-554e-0358-3d4e", "hidden": false, "targetId": "750e-bcb0-0a41-3731", "type": "forceEntry"},
+          {"name": "Auxiliary - Helot Tercio", "id": "8d36-76c8-72a0-dafb", "hidden": false, "targetId": "fd11-7b79-aba3-4e16", "type": "forceEntry"},
+          {"name": "Auxiliary - Ætheric Incursion Detachment", "id": "263f-618e-1143-9f0e", "hidden": false, "targetId": "b88e-e21c-c5e2-80be", "type": "forceEntry"}
         ],
         "modifiers": [
           {
@@ -45326,6 +45904,24 @@
                 "roundUp": false,
                 "scope": "force",
                 "shared": true,
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "warning",
+            "type": "add",
+            "value": "Daemonic alignment mismatch",
+            "conditions": [
+              {
+                "childId": "ee84-02b2-5444-e62b",
+                "childName": "Alignment mismatch",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
                 "value": 1
               }
             ]
@@ -45662,6 +46258,24 @@
                 "roundUp": false,
                 "scope": "roster",
                 "shared": true,
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "warning",
+            "type": "add",
+            "value": "Daemonic alignment mismatch",
+            "conditions": [
+              {
+                "childId": "ee84-02b2-5444-e62b",
+                "childName": "Alignment mismatch",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
                 "value": 1
               }
             ]
@@ -57357,7 +57971,10 @@
           {"name": "Apex - Cavalry Wing", "id": "4ec5-4669-86af-79d8", "hidden": false, "targetId": "a611-ff21-3714-48e6", "type": "forceEntry"},
           {"name": "Apex - Armoured Phalanx", "id": "628c-728c-c367-e47a", "hidden": false, "targetId": "388d-f480-70ab-8bed", "type": "forceEntry"},
           {"name": "Auxiliary - Oversight Delegation", "id": "d54e-f1ea-764b-330d", "hidden": false, "targetId": "2291-5e67-64bd-5edc", "type": "forceEntry"},
-          {"name": "Apex - Moritoi Convocation", "id": "4a1e-d63b-c17f-64b7", "hidden": false, "targetId": "0b43-afde-9f1b-307e", "type": "forceEntry"}
+          {"name": "Apex - Moritoi Convocation", "id": "4a1e-d63b-c17f-64b7", "hidden": false, "targetId": "0b43-afde-9f1b-307e", "type": "forceEntry"},
+          {"name": "Auxiliary - Helot Tercio", "id": "c551-7174-041e-8b1d", "hidden": true, "targetId": "fd11-7b79-aba3-4e16", "type": "forceEntry"},
+          {"name": "Auxiliary - Ætheric Incursion Detachment", "id": "2170-8e08-1f14-721c", "hidden": false, "targetId": "b88e-e21c-c5e2-80be", "type": "forceEntry"},
+          {"name": "Auxiliary - Ætheric Incursion", "id": "2ce0-5435-24cc-a066", "hidden": false, "targetId": "6018-b4fb-d64a-4b42", "type": "forceEntry"}
         ],
         "modifiers": [
           {
@@ -58285,6 +58902,24 @@
               {
                 "childId": "8d49-126f-5500-aa28",
                 "childName": "Invalid ZM Vehicle",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "warning",
+            "type": "add",
+            "value": "Daemonic alignment mismatch",
+            "conditions": [
+              {
+                "childId": "ee84-02b2-5444-e62b",
+                "childName": "Alignment mismatch",
                 "field": "selections",
                 "includeChildForces": true,
                 "includeChildSelections": true,

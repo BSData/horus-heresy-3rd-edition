@@ -190,6 +190,14 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Fateweaver",
+        "id": "5551-2eee-e6b4-094b",
+        "hidden": false,
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "characteristics": [{"name": "Description", "$text": "", "typeId": "d5eb-0b8b-0f26-6233"}]
       }
     ],
     "sharedSelectionEntries": [
@@ -955,6 +963,117 @@
               {"name": "D", "$text": "2", "typeId": "e840-f63c-5bc4-27b3"},
               {"name": "Special Rules", "$text": "Deflagrate (5), Overload (2), Force (RS)", "typeId": "e87b-e7a3-5562-a456"},
               {"name": "Traits", "$text": "Assault", "typeId": "a229-21ce-4177-c4b1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fateweaving",
+        "id": "f48c-34a7-c395-be6c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Metamorphise",
+            "id": "76e9-b5a7-806a-d2fa",
+            "hidden": false,
+            "typeId": "9dfb-2fa3-00e7-8cfd",
+            "typeName": "Psychic Power",
+            "characteristics": [
+              {"name": "Summary", "$text": "If it is successful, the Target of this Curse gains a random Tactical Status", "typeId": "981f-bb86-6a74-9b20"},
+              {"name": "Trigger", "$text": "The Active Player may choose to Manifest the Metamorphise Psychic Power in the Shooting Phase", "typeId": "1be9-f118-1cf3-357e"},
+              {
+                "name": "Focus",
+                "$text": "The Focus of the Power must be a Model with the Fateweaver Trait and must be controlled by the Active Player",
+                "typeId": "3f2d-f6e7-e6d3-1f86"
+              },
+              {
+                "name": "Target",
+                "$text": "The Target Unit must be a Unit that has no Models with the Vehicle Type under the control of the Reactive Player with at least one Model within 15\" of the Focus and with Line of Sight to the Focus.",
+                "typeId": "2ba0-fbf8-ed6c-3770"
+              },
+              {"name": "Duration", "$text": "If successfully Manifested, the effect of the Psychic Power are resolved immediately.", "typeId": "d7d5-5b31-5b37-66c4"},
+              {
+                "name": "Process",
+                "$text": "1. Once the Focus and Target Unit have been decided, the Controlling Player of the Target Unit must make a Resistance Check. If the Willpower Characteristic of the Focus is greater than the Willpower Characteristic of the Target the result of the Resistance Check is modified by the amount that the characteristics differ, for example, if the Willpower Characteristic of the Focus is 10 and the Willpower Characteristic of the Target is 8, the Result of the Resistance Check is modified by +2. Likewise if the Willpower Characteristic of the Focus is less than the Willpower Characteristic of the Target the Resistance Check is modified by the amount that the characteristics differ, for example, if the Willpower Characteristic of the Focus is 7 and the Willpower Characteristic of the Target is 9 the result of the Resistance Check is modified by -2. Models without a Willpower Characteristic are considered to have a Willpower Characteristic of 12 for the purposes of resolving this Psychic Power.\n2. If the Resistance Check is failed then the Controlling Player of the Target Unit must roll on the following table, and the Target Unit gains the corresponding Tactical Status\n\n\n1 - Pinned\n2-3 Stunned\n4-6 Suppressed\n\n\n3. If the Resistance Check is passed then there is no further effect.",
+                "typeId": "3804-b2cf-9f1a-4ff0"
+              }
+            ]
+          },
+          {
+            "name": "Phasewarp",
+            "id": "2ffc-7fa3-2eab-0aee",
+            "hidden": false,
+            "typeId": "9dfb-2fa3-00e7-8cfd",
+            "typeName": "Psychic Power",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "If it is successful, the Area Terrain that is the Target of this Curse does not block Line of Sight",
+                "typeId": "981f-bb86-6a74-9b20"
+              },
+              {"name": "Trigger", "$text": "The Active Player may choose to Manifest the Phasewarp Psychic Power in the Shooting Phase", "typeId": "1be9-f118-1cf3-357e"},
+              {
+                "name": "Focus",
+                "$text": "The Focus of the Power must be a Model with the Fateweaver Trait and must be controller by the Active Player",
+                "typeId": "3f2d-f6e7-e6d3-1f86"
+              },
+              {
+                "name": "Target",
+                "$text": "The Target of this Power must be a zone of Medium or Heavy Area Terrain no larger than 10\" in any dimension. If no such Area Terrain is on the Battlefield the Target of this Power must be a single point within a zone of Medium or Heavy Terrain.",
+                "typeId": "2ba0-fbf8-ed6c-3770"
+              },
+              {
+                "name": "Duration",
+                "$text": "If successfully Manifested, the effects of this Psychic Power last until the end of the Opposing Player's Shooting Phase.",
+                "typeId": "d7d5-5b31-5b37-66c4"
+              },
+              {
+                "name": "Process",
+                "$text": "1. Once the Focus and Target have been decided make a Manifestation Check.\n2. If the Manifestation Check is successful, then the selected zone of Area Terrain or all Area Terrain within 5\" of the selected point within a zone of Area Terrain does not block Line of Sight for the Duration of this Power's effect\n3. If the Manifestation Check fails then there is no further effect.\n\n\n",
+                "typeId": "3804-b2cf-9f1a-4ff0"
+              }
+            ]
+          },
+          {
+            "name": "Warpshield",
+            "id": "a1e0-159e-b50c-28fb",
+            "hidden": false,
+            "typeId": "d59e-df4b-630f-f185",
+            "typeName": "Psychic Reaction",
+            "characteristics": [
+              {"name": "Summary", "$text": "This Psychic Reaction allows a Unit to gain a Shrouded Damage Mitigation Roll.", "typeId": "c8a8-29f2-605b-5969"},
+              {
+                "name": "Trigger",
+                "$text": "The Reactive Player may choose to declare a Warpshield Psychic Reaction at the start of Step 3 of a Shooting Attack made by the Active Player that targets a Unit that includes at least one Model with the Fateweaver Trait",
+                "typeId": "4e6b-ebca-53df-fcf7"
+              },
+              {
+                "name": "Cost",
+                "$text": "The Reactive Player must spend 1 point of their Reaction Allotment to declare a Warpshield Psychic Reaction, this cost is paid if the Willpower check is successful. If the Willpower Check fails the cost is not paid.",
+                "typeId": "f25a-9ced-eb9b-4587"
+              },
+              {
+                "name": "Focus",
+                "$text": "The Focus of this Psychic Reaction must be a Model with the Fateweaver Trait under the Reactive Player's control, and must be part of the Unit targeted by the Shooting Attack that triggered this Psychic Reaction.",
+                "typeId": "0b45-591a-ee11-488e"
+              },
+              {
+                "name": "Target",
+                "$text": "The Target Unit must be the Unit that the Focus is part of that is the target of the Shooting Attack that triggered the Reaction",
+                "typeId": "cf1d-e201-caac-3d45"
+              },
+              {
+                "name": "Duration",
+                "$text": "If successfully Manifested, the effects of this Psychic Reaction last until the end of the Sub-Phase in which it was declared.",
+                "typeId": "daae-40ac-68e2-fa78"
+              },
+              {
+                "name": "Process",
+                "$text": "1. Once the Focus and Target have been decided the Controlling Player of the Focus must make a Manifestation Check.\n2. If the Manifestation Check is successful, then all Models in the Target Unit gain a Shrouded (5+) Damage Mitigation Roll against any wounds inflicted.\n3. If the Manifestation Check fails then there is no further effect.",
+                "typeId": "8d43-934e-e511-0cfd"
+              }
             ]
           }
         ]
