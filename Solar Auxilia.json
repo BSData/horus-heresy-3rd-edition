@@ -708,7 +708,27 @@
         "import": true,
         "targetId": "8b83-93d0-a1e1-a05a",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Army Configuration", "id": "0501-2f99-1c64-a41f", "primary": true, "targetId": "abfa-86ab-1726-077a"}]
+        "categoryLinks": [{"name": "Army Configuration", "id": "0501-2f99-1c64-a41f", "primary": true, "targetId": "abfa-86ab-1726-077a"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fd11-7b79-aba3-4e16",
+                "childName": "Auxiliary - Helot Tercio",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Legiones Auxilia designation:",
@@ -730,6 +750,26 @@
         "constraints": [
           {"id": "9ebc-828d-b80b-2dbf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "de0b-2000-13d6-47f6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fd11-7b79-aba3-4e16",
+                "childName": "Auxiliary - Helot Tercio",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
         ]
       },
       {
@@ -1587,6 +1627,35 @@
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Fast Attack", "id": "748c-82d6-c3f5-0158", "hidden": false, "primary": true, "targetId": "cf96-8891-3f9a-8921"}],
         "modifiers": [{"field": "category", "type": "set-primary", "value": "6bea-2cb9-c6b9-d183"}]
+      },
+      {
+        "name": "Provenances of War",
+        "id": "c6d2-e863-c467-bfc0",
+        "hidden": true,
+        "import": true,
+        "targetId": "4fc7-e43d-4322-5e54",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Army Configuration", "id": "2e18-382f-abed-dffa", "hidden": false, "primary": true, "targetId": "abfa-86ab-1726-077a"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "fd11-7b79-aba3-4e16",
+                "childName": "Auxiliary - Helot Tercio",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedProfiles": [
@@ -14544,7 +14613,48 @@
         "import": true,
         "type": "upgrade",
         "categoryLinks": [{"name": "Army Configuration", "id": "7eea-cb4d-0602-7401", "primary": true, "targetId": "abfa-86ab-1726-077a"}],
-        "constraints": [{"id": "0648-f101-6e93-c55b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}],
+        "constraints": [
+          {"id": "0648-f101-6e93-c55b", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "6e41-88be-843d-1f30", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "modifiers": [
+          {
+            "field": "0648-f101-6e93-c55b",
+            "type": "set",
+            "value": 0,
+            "conditions": [
+              {
+                "childId": "fd11-7b79-aba3-4e16",
+                "childName": "Auxiliary - Helot Tercio",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "6e41-88be-843d-1f30",
+            "type": "set",
+            "value": 0,
+            "conditions": [
+              {
+                "childId": "fd11-7b79-aba3-4e16",
+                "childName": "Auxiliary - Helot Tercio",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
         "selectionEntryGroups": [
           {
             "name": "Reactions",
