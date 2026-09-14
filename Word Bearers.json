@@ -3955,32 +3955,6 @@
               }
             ],
             "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15}],
-            "entryLinks": [
-              {
-                "name": "Bolt pistol",
-                "id": "d256-e7d0-4abb-9e4e",
-                "hidden": false,
-                "sortIndex": 1,
-                "targetId": "2942-f783-d627-33c5",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "890b-ee07-4bb7-ac11", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "bd80-ee85-4aae-a0ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Chainsword",
-                "id": "211d-38fc-4c51-a58a",
-                "hidden": false,
-                "sortIndex": 2,
-                "targetId": "78f4-4967-2896-c3a5",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "649b-73ea-4ceb-8c98", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "f8c4-5e58-4ede-bed3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              }
-            ],
             "modifiers": [
               {
                 "field": "5404-8948-4ae0-aec4",
@@ -4063,18 +4037,32 @@
             ],
             "selectionEntryGroups": [
               {
-                "name": "For every five Models in this Unit, one Procurant in this Unit may:",
-                "id": "ee23-504a-4532-9782",
-                "constraints": [{"id": "e354-9c11-473c-8d80", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "name": "Ranged",
+                "id": "b916-02b3-0bb2-1c25",
+                "defaultSelectionEntryId": "d256-e7d0-4abb-9e4e",
+                "hidden": false,
+                "sortIndex": 1,
+                "constraints": [
+                  {"id": "5e60-24ab-6ec9-0f52", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "00dc-404e-44b7-8b12", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Bolt pistol",
+                    "id": "d256-e7d0-4abb-9e4e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2942-f783-d627-33c5",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "bd80-ee85-4aae-a0ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                  }
+                ],
                 "selectionEntryGroups": [
                   {
-                    "name": "Exchange Bolt Pistol for",
-                    "id": "9ba7-e2ca-2866-012a",
+                    "name": "1 in 5 may exchange Bolt pistol for:",
+                    "id": "6b23-43db-7fbd-9cee",
                     "hidden": false,
-                    "constraints": [
-                      {"id": "7c45-fe77-dae3-d83f", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0},
-                      {"id": "6c70-fbc4-49a6-7a8f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                    ],
+                    "constraints": [{"id": "2e54-afdb-b1aa-0408", "field": "selections", "scope": "unit", "shared": true, "type": "max", "value": 0}],
                     "entryLinks": [
                       {
                         "name": "Hand flamer",
@@ -4109,21 +4097,42 @@
                     ],
                     "modifiers": [
                       {
-                        "field": "7c45-fe77-dae3-d83f",
+                        "field": "2e54-afdb-b1aa-0408",
                         "type": "increment",
                         "value": 1,
-                        "repeats": [{"childId": "model", "field": "selections", "includeChildSelections": true, "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
+                        "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
                       }
                     ]
-                  },
+                  }
+                ]
+              },
+              {
+                "name": "Melee",
+                "id": "8d72-f72d-81ca-dd1d",
+                "defaultSelectionEntryId": "211d-38fc-4c51-a58a",
+                "hidden": false,
+                "sortIndex": 2,
+                "constraints": [
+                  {"id": "69f2-7f4b-ce86-4b12", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f7fb-abe4-78aa-b4b7", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
                   {
-                    "name": "Exchange Chainsword for",
-                    "id": "c02d-2f9a-bcf3-773e",
+                    "name": "Chainsword",
+                    "id": "211d-38fc-4c51-a58a",
                     "hidden": false,
-                    "constraints": [
-                      {"id": "0854-7c6b-9aad-2d78", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                      {"id": "3471-b380-f901-d962", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}
-                    ],
+                    "import": true,
+                    "targetId": "78f4-4967-2896-c3a5",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "f8c4-5e58-4ede-bed3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "1 in 5 may exchange Chainsword for:",
+                    "id": "8463-2916-df68-f9df",
+                    "hidden": false,
+                    "constraints": [{"id": "924d-13e3-de83-7078", "field": "selections", "scope": "unit", "shared": true, "type": "max", "value": 0}],
                     "entryLinks": [
                       {
                         "name": "Power fist",
@@ -4138,10 +4147,10 @@
                     ],
                     "modifiers": [
                       {
-                        "field": "3471-b380-f901-d962",
+                        "field": "924d-13e3-de83-7078",
                         "type": "increment",
                         "value": 1,
-                        "repeats": [{"childId": "model", "field": "selections", "includeChildSelections": true, "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
+                        "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
                       }
                     ]
                   }
@@ -4160,7 +4169,6 @@
               {"name": "Infantry Model Type", "id": "daec-bed5-497d-9d99", "primary": false, "targetId": "594d-fa82-13cb-a345"},
               {"name": "Sergeant Model Sub-Type", "id": "da2f-fb81-49c3-90e7", "primary": false, "targetId": "8045-89a4-76d4-fcef"}
             ],
-            "constraints": [{"id": "ea7d-0004-535e-efb5", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
             "costs": [
               {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20},
               {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
@@ -4298,7 +4306,10 @@
                 "name": "May have its chainsword exchanged for ",
                 "id": "a24c-04db-4d9e-9f7f",
                 "defaultSelectionEntryId": "b418-6516-425e-8472",
-                "constraints": [{"id": "174f-6cfb-4be9-9965", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "constraints": [
+                  {"id": "174f-6cfb-4be9-9965", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "a702-fc1e-1c00-f90b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
                 "entryLinks": [
                   {
                     "name": "Chainsword",
@@ -4469,34 +4480,6 @@
               {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
               {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0}
             ],
-            "entryLinks": [
-              {
-                "name": "Bolt pistol",
-                "id": "be40-4202-d47b-96dc",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "targetId": "2942-f783-d627-33c5",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "f42a-040f-0daa-efd5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "3fd2-7258-0ac9-ece1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Chainsword",
-                "id": "a7e3-38f0-1eff-cb98",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "targetId": "78f4-4967-2896-c3a5",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "7bb2-8a3d-2bf5-d701", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "c4e5-6a2f-6713-8204", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ]
-              }
-            ],
             "modifiers": [
               {
                 "field": "b508-aa7f-904e-cb2b",
@@ -4580,86 +4563,120 @@
             ],
             "selectionEntryGroups": [
               {
-                "name": "For every five Models in this Unit, one Procurant in this Unit may:",
-                "id": "ec3c-65d5-1aa6-52ae",
+                "name": "Ranged",
+                "id": "5010-e7b8-7995-34fe",
+                "defaultSelectionEntryId": "d256-e7d0-4abb-9e4e",
                 "hidden": false,
-                "constraints": [{"id": "482b-c759-6c3c-c446", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "sortIndex": 1,
+                "constraints": [
+                  {"id": "09a9-6838-522f-8cc2", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "e69d-92cf-89ba-d489", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Bolt pistol",
+                    "id": "e64d-c119-d3f4-16aa",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2942-f783-d627-33c5",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "0436-89e6-e974-6c79", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                  }
+                ],
                 "selectionEntryGroups": [
                   {
-                    "name": "Exchange Bolt Pistol for",
-                    "id": "bfa5-0848-529f-400e",
+                    "name": "1 in 5 may exchange Bolt pistol for:",
+                    "id": "a1fd-638e-7164-8944",
                     "hidden": false,
-                    "constraints": [
-                      {"id": "878a-acba-1d8b-3392", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0},
-                      {"id": "5b12-c258-8df1-dfa5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                    ],
+                    "constraints": [{"id": "572f-5655-6c3a-88f5", "field": "selections", "scope": "unit", "shared": true, "type": "max", "value": 0}],
                     "entryLinks": [
                       {
                         "name": "Hand flamer",
-                        "id": "e1bb-0777-989a-4b5e",
+                        "id": "7a4d-8781-fd6e-961f",
                         "hidden": false,
                         "import": true,
                         "targetId": "9322-09ed-abec-6e13",
                         "type": "selectionEntry",
-                        "constraints": [{"id": "a499-43a2-432d-d9a8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                        "constraints": [{"id": "8472-a41a-965a-0282", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                         "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}]
                       },
                       {
                         "name": "Plasma pistol",
-                        "id": "0722-df89-7485-9053",
+                        "id": "3ac3-bdd6-5af5-5e97",
                         "hidden": false,
                         "import": true,
                         "targetId": "659f-d52e-1515-2912",
                         "type": "selectionEntry",
-                        "constraints": [{"id": "b022-e063-f06f-5e4e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                        "constraints": [{"id": "ad4a-5f49-010b-0648", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                         "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15}]
                       },
                       {
                         "name": "Warpfire pistol",
-                        "id": "1371-230b-d061-3922",
+                        "id": "7d4b-7e85-91b8-33ad",
                         "hidden": false,
                         "import": true,
                         "targetId": "6c9f-bd82-3658-4e6f",
                         "type": "selectionEntry",
-                        "constraints": [{"id": "76e6-0926-393d-ffa4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                        "constraints": [{"id": "fa81-f443-7e3d-81b3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                         "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15}]
                       }
                     ],
                     "modifiers": [
                       {
-                        "field": "878a-acba-1d8b-3392",
+                        "field": "572f-5655-6c3a-88f5",
                         "type": "increment",
                         "value": 1,
-                        "repeats": [{"childId": "model", "field": "selections", "includeChildSelections": true, "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
+                        "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
                       }
                     ]
-                  },
+                  }
+                ]
+              },
+              {
+                "name": "Melee",
+                "id": "bad8-d82e-0008-bac8",
+                "defaultSelectionEntryId": "211d-38fc-4c51-a58a",
+                "hidden": false,
+                "sortIndex": 2,
+                "constraints": [
+                  {"id": "a5c1-c5ee-33cf-0185", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "b60b-808b-d2f3-4f63", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
                   {
-                    "name": "Exchange Chainsword for",
-                    "id": "d401-7007-f8aa-9926",
+                    "name": "Chainsword",
+                    "id": "d932-f424-0baf-8acd",
                     "hidden": false,
-                    "constraints": [
-                      {"id": "de7c-484f-42c0-4439", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                      {"id": "26dd-9759-e3c0-88a2", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}
-                    ],
+                    "import": true,
+                    "targetId": "78f4-4967-2896-c3a5",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "8422-0803-f751-2a3b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "1 in 5 may exchange Chainsword for:",
+                    "id": "591d-2f64-df7b-1f31",
+                    "hidden": false,
+                    "constraints": [{"id": "c47d-1afb-5d9f-a19d", "field": "selections", "scope": "unit", "shared": true, "type": "max", "value": 0}],
                     "entryLinks": [
                       {
                         "name": "Power fist",
-                        "id": "9b06-bb78-259c-c320",
+                        "id": "3249-40e6-a8bd-cd77",
                         "hidden": false,
                         "import": true,
                         "targetId": "2fcc-92a6-d03a-4b55",
                         "type": "selectionEntry",
-                        "constraints": [{"id": "aa74-8da7-a1d7-1356", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                        "constraints": [{"id": "247b-7594-984e-c705", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                         "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15}]
                       }
                     ],
                     "modifiers": [
                       {
-                        "field": "26dd-9759-e3c0-88a2",
+                        "field": "c47d-1afb-5d9f-a19d",
                         "type": "increment",
                         "value": 1,
-                        "repeats": [{"childId": "model", "field": "selections", "includeChildSelections": true, "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
+                        "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
                       }
                     ]
                   }
@@ -4682,7 +4699,6 @@
               {"name": "Sergeant Model Sub-Type", "id": "9eb4-81a4-0d98-9af7", "hidden": false, "primary": false, "targetId": "8045-89a4-76d4-fcef"},
               {"name": "Antigrav Model Sub-Type", "id": "7a78-6b71-71ca-b397", "primary": false, "targetId": "c504-9dfa-35d3-c98f"}
             ],
-            "constraints": [{"id": "18c0-8590-1398-04b0", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 0}],
             "costs": [
               {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20},
               {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
@@ -4824,7 +4840,10 @@
                 "id": "c40a-f621-dfad-5723",
                 "defaultSelectionEntryId": "d2a8-4cc9-6225-3f8a",
                 "hidden": false,
-                "constraints": [{"id": "75c5-ceee-b6a6-8c02", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "constraints": [
+                  {"id": "75c5-ceee-b6a6-8c02", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "636b-4b31-7a31-c581", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
                 "entryLinks": [
                   {
                     "name": "Chainsword",
