@@ -2706,6 +2706,26 @@
                     "type": "selectionEntryGroup"
                   }
                 ]
+              },
+              {
+                "name": "Up to two Morlocks in this Unit may have one item each from",
+                "id": "42a1-744a-4537-8ece",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "name": "Legion Equipment",
+                    "id": "a373-2e51-d53e-11c5",
+                    "flatten": true,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "0e69-ccf1-cde7-acaf",
+                    "type": "selectionEntryGroup",
+                    "constraints": [
+                      {"id": "b87d-d863-df51-c00a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "b535-7a1d-cc34-d6b3", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 2}
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -2934,25 +2954,6 @@
                 "name": "The Augmentor in this Unit may have its combi-bolter exchanged for one of the following:",
                 "id": "4b9b-3a1f-46bb-b5cb",
                 "constraints": [{"id": "8861-b6d0-4e95-b0c5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
-              }
-            ]
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Up to two Morlocks in this Unit may have one item each from",
-            "id": "42a1-744a-4537-8ece",
-            "hidden": false,
-            "constraints": [{"id": "9cb3-13d8-45a4-9958", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "entryLinks": [
-              {
-                "name": "Legion Equipment",
-                "id": "a373-2e51-d53e-11c5",
-                "flatten": true,
-                "hidden": false,
-                "import": true,
-                "targetId": "0e69-ccf1-cde7-acaf",
-                "type": "selectionEntryGroup"
               }
             ]
           }
