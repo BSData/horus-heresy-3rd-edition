@@ -105878,7 +105878,7 @@
                     "name": "Astartes shotgun",
                     "id": "33c8-648b-4b6e-8996",
                     "hidden": false,
-                    "sortIndex": 5,
+                    "sortIndex": 6,
                     "targetId": "6068-d203-27e6-318a",
                     "type": "selectionEntry",
                     "constraints": [{"id": "4b18-bd4a-4f3f-9506", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
@@ -106062,7 +106062,7 @@
                     "id": "d247-32e6-6f78-be2d",
                     "hidden": true,
                     "import": true,
-                    "sortIndex": 4,
+                    "sortIndex": 5,
                     "targetId": "278c-bdcf-2780-d9cf",
                     "type": "selectionEntry",
                     "constraints": [{"id": "430f-764d-2b91-1b5d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
@@ -106118,6 +106118,54 @@
                               }
                             ],
                             "conditions": [{"childId": "d995-cb33-be41-ecf8", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Chainaxe",
+                    "id": "5df4-7080-02f9-abed",
+                    "hidden": true,
+                    "import": true,
+                    "sortIndex": 4,
+                    "targetId": "31a4-f8de-de6d-1fd9",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "comment": "WE",
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditionGroups": [
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {
+                                    "childId": "0d39-355e-7faa-51a0",
+                                    "field": "selections",
+                                    "includeChildForces": true,
+                                    "includeChildSelections": true,
+                                    "scope": "roster",
+                                    "shared": true,
+                                    "type": "atLeast",
+                                    "value": 1
+                                  },
+                                  {"childId": "c195-9a6a-a56b-4634", "field": "forces", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                                ]
+                              },
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {"childId": "ad72-2b78-509c-286d", "field": "selections", "includeChildSelections": true, "scope": "model", "shared": true, "type": "atLeast", "value": 1},
+                                  {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                                ]
+                              }
+                            ],
+                            "conditions": [{"childId": "a956-190d-3b47-6258", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
                           }
                         ]
                       }
@@ -106931,7 +106979,7 @@
                     "name": "Astartes shotgun",
                     "id": "c370-76a9-4002-bc3d",
                     "hidden": false,
-                    "sortIndex": 7,
+                    "sortIndex": 8,
                     "targetId": "6068-d203-27e6-318a",
                     "type": "selectionEntry",
                     "constraints": [{"id": "7a2c-3679-4606-b87f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
@@ -107325,6 +107373,54 @@
                               }
                             ],
                             "conditions": [{"childId": "d995-cb33-be41-ecf8", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Chainaxe",
+                    "id": "2cd7-faa2-e9df-38ee",
+                    "hidden": true,
+                    "import": true,
+                    "sortIndex": 7,
+                    "targetId": "31a4-f8de-de6d-1fd9",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "comment": "WE",
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditionGroups": [
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {
+                                    "childId": "0d39-355e-7faa-51a0",
+                                    "field": "selections",
+                                    "includeChildForces": true,
+                                    "includeChildSelections": true,
+                                    "scope": "roster",
+                                    "shared": true,
+                                    "type": "atLeast",
+                                    "value": 1
+                                  },
+                                  {"childId": "c195-9a6a-a56b-4634", "field": "forces", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                                ]
+                              },
+                              {
+                                "type": "and",
+                                "conditions": [
+                                  {"childId": "ad72-2b78-509c-286d", "field": "selections", "includeChildSelections": true, "scope": "model", "shared": true, "type": "atLeast", "value": 1},
+                                  {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                                ]
+                              }
+                            ],
+                            "conditions": [{"childId": "a956-190d-3b47-6258", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
                           }
                         ]
                       }
