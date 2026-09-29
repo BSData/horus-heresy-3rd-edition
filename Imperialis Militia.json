@@ -18629,67 +18629,148 @@
                 ]
               },
               {
-                "name": "This Model may have both Sponson Mounted multi-lasers exchanged for one of the following:",
+                "name": "This Model may have both Sponson Mounted multi-lasers exchanged for ",
                 "id": "db5e-2b8c-4a07-b6df",
-                "defaultSelectionEntryId": "b281-f362-4ac8-9cd0",
+                "defaultSelectionEntryId": "ce8c-15d0-d3ce-856b",
                 "sortIndex": 3,
                 "constraints": [
                   {"id": "b4c5-7784-45fc-9d60", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                   {"id": "8073-d11d-1ed9-995f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
                 ],
-                "entryLinks": [
+                "selectionEntries": [
                   {
-                    "name": "Heavy flamer",
-                    "id": "d2bc-052c-4982-8654",
-                    "hidden": false,
-                    "sortIndex": 2,
-                    "targetId": "4fa7-ea45-2a89-ad86",
-                    "type": "selectionEntry",
-                    "constraints": [{"id": "f794-0cb5-451c-96d5", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}],
-                    "modifiers": [{"field": "name", "type": "set", "value": "Two Sponson Mounted heavy flamers"}]
-                  },
-                  {
-                    "name": "Heavy bolter",
-                    "id": "2f45-b537-4554-aaed",
-                    "hidden": false,
-                    "sortIndex": 3,
-                    "targetId": "bc40-b14a-978e-0232",
-                    "type": "selectionEntry",
-                    "constraints": [{"id": "654f-44ba-4fc1-a4d1", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}],
-                    "modifiers": [{"field": "name", "type": "set", "value": "Two Sponson Mounted heavy bolters"}]
-                  },
-                  {
-                    "name": "Autocannon",
-                    "id": "e42b-ba5d-4057-a5b0",
-                    "hidden": false,
-                    "sortIndex": 4,
-                    "targetId": "da6e-3b8a-ea61-1e93",
-                    "type": "selectionEntry",
-                    "constraints": [{"id": "a6e1-36bb-4a60-9530", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}],
-                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}],
-                    "modifiers": [{"field": "name", "type": "set", "value": "Two Sponson Mounted autocannon"}]
-                  },
-                  {
-                    "name": "Lascannon",
-                    "id": "ef60-0552-416c-91b1",
-                    "hidden": false,
-                    "sortIndex": 5,
-                    "targetId": "b6d5-4be2-c37e-2197",
-                    "type": "selectionEntry",
-                    "constraints": [{"id": "dfe5-4b09-4e40-8c73", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}],
-                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20}],
-                    "modifiers": [{"field": "name", "type": "set", "value": "Two Sponson Mounted lascannon"}]
-                  },
-                  {
-                    "name": "Multi-laser",
-                    "id": "b281-f362-4ac8-9cd0",
+                    "name": "Two Sponson Mounted Multi-lasers",
+                    "id": "ce8c-15d0-d3ce-856b",
                     "hidden": false,
                     "import": true,
                     "sortIndex": 1,
-                    "targetId": "36e7-212d-449c-b07d",
-                    "type": "selectionEntry",
-                    "constraints": [{"id": "ea45-2bf1-4ca3-bffc", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}],
-                    "modifiers": [{"field": "name", "type": "set", "value": "Two Sponson Mounted multi-lasers"}]
+                    "type": "upgrade",
+                    "constraints": [{"id": "5b2d-0893-04c0-72d1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "entryLinks": [
+                      {
+                        "name": "Multi-laser",
+                        "id": "b281-f362-4ac8-9cd0",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "36e7-212d-449c-b07d",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "ea45-2bf1-4ca3-bffc", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                          {"id": "6de6-4210-e36c-fe84", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Two Sponson Mounted Heavy flamers",
+                    "id": "4a74-cb0e-03f3-4416",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "type": "upgrade",
+                    "constraints": [{"id": "f8ce-599a-ef8a-8687", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "entryLinks": [
+                      {
+                        "name": "Heavy flamer",
+                        "id": "d2bc-052c-4982-8654",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "4fa7-ea45-2a89-ad86",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "f794-0cb5-451c-96d5", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2},
+                          {"id": "b29e-780d-22af-082d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Two Sponson Mounted Heavy bolters",
+                    "id": "67fa-64b1-673a-b0ee",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 3,
+                    "type": "upgrade",
+                    "constraints": [{"id": "8976-8cd4-0103-4354", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "entryLinks": [
+                      {
+                        "name": "Heavy bolter",
+                        "id": "2f45-b537-4554-aaed",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "bc40-b14a-978e-0232",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "654f-44ba-4fc1-a4d1", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                          {"id": "67e1-b8f8-57c7-0c51", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Two Sponson Mounted Autocannon",
+                    "id": "dbd7-1b99-e62a-72b8",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 4,
+                    "type": "upgrade",
+                    "constraints": [{"id": "43cf-fb09-fc34-02e1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "costs": [
+                      {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10},
+                      {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                      {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                      {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                      {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                      {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                      {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                      {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Autocannon",
+                        "id": "e42b-ba5d-4057-a5b0",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "da6e-3b8a-ea61-1e93",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "a6e1-36bb-4a60-9530", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2},
+                          {"id": "c351-4f34-64d4-65cd", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Two Sponson Mounted Lascannon",
+                    "id": "970e-7929-1d02-26ff",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [{"id": "c2e3-64d2-ab75-8ff5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "costs": [
+                      {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20},
+                      {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                      {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                      {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                      {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                      {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                      {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                      {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Lascannon",
+                        "id": "ef60-0552-416c-91b1",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "b6d5-4be2-c37e-2197",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "dfe5-4b09-4e40-8c73", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2},
+                          {"id": "dade-7b3b-2fb6-3b11", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2}
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
