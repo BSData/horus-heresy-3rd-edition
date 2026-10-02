@@ -472,6 +472,15 @@
         "targetId": "882b-21b4-c4e9-5734",
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Command", "id": "847a-8e9e-73ea-7871", "hidden": false, "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+      },
+      {
+        "name": "Hykanatoi Proconsul-Delegate",
+        "id": "38eb-e084-e184-84a0",
+        "hidden": false,
+        "import": true,
+        "targetId": "c268-c125-67a4-8acd",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Command", "id": "f482-f2a3-db7c-77c0", "hidden": false, "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       }
     ],
     "sharedProfiles": [
@@ -7359,6 +7368,297 @@
               {"name": "D", "$text": "1", "typeId": "6a9d-4feb-065a-33e7"},
               {"name": "Special Rules", "$text": "Duellist's Edge (1), Precision (4+)", "typeId": "ebe0-7b28-b40c-694e"},
               {"name": "Traits", "$text": "Power", "typeId": "76e3-c188-bc65-3467"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hykanatoi Proconsul-Delegate",
+        "id": "c268-c125-67a4-8acd",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 22,
+        "type": "unit",
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 80},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Prime Unit",
+            "id": "e808-9391-3463-44bd",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [{"name": "Prime Benefits", "id": "bd17-66f1-9f97-d7d6", "hidden": false, "import": true, "targetId": "6f4b-388a-b001-abde", "type": "selectionEntryGroup"}]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "2c75-8021-3f17-49f3",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "50ad-a9a5-1f1d-9a25",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Bulky (2)"}]
+          },
+          {
+            "name": "Eternal Warrior (X)",
+            "id": "1109-e699-4706-f4b8",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "15b4-9e4a-f361-c5a3",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "name",
+                "type": "set",
+                "value": "Eternal Warrior (1)",
+                "conditions": [{"childId": "680b-53b4-4f4b-551f", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "equalTo", "value": 0}]
+              },
+              {
+                "field": "name",
+                "type": "set",
+                "value": "Eternal Warrior (2)",
+                "conditions": [{"childId": "680b-53b4-4f4b-551f", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          },
+          {"name": "Lightning Blows", "id": "cc1f-a98d-e62b-bcc2", "hidden": false, "targetId": "9f68-a519-8e29-cb44", "type": "rule"},
+          {
+            "name": "Vanguard (X)",
+            "id": "143e-5b4a-cc3a-09f5",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "530f-b733-993c-ec84",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Vanguard (2)"}]
+          },
+          {"name": "[Allegiance]", "id": "e07c-6c40-09a0-3e08", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
+          {"name": "Legio Custodes", "id": "7abe-1cbf-dfc4-7c3e", "hidden": false, "targetId": "c717-38ae-cee2-19f7", "type": "profile"},
+          {"name": "The Sodality", "id": "dd42-c8fe-5b65-b1ba", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"}
+        ],
+        "rules": [
+          {
+            "name": "Hykanatoi Excelsis",
+            "id": "59f5-d6fc-9d38-0ec8",
+            "description": "*Magisterium Vexillas in the same Unit as a Model with this Special Rule have a range of 10\".*\n\n\nWhile a Model with this Special Rule has joined a Custodian Guard Sodality or Sentinel Guard Sodality Unit, any Model in that Unit with a Magisterium Vexilla is considered to be 2\" closer to any enemy Model when determining whether that item of Wargear comes into effect.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Hykanatoi Proconsul-Delegate",
+            "id": "323e-e4f4-4ec4-1c61",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Infantry Model Type", "id": "7b56-cebe-6821-e2c8", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"},
+              {"name": "Command Model Sub-type", "id": "051c-069c-1cc5-6136", "hidden": false, "primary": false, "targetId": "9871-cb62-5283-2216"}
+            ],
+            "constraints": [
+              {"id": "9d4a-42f7-daec-389a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "8a07-00a0-06df-e06b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Misericordia",
+                "id": "6c06-1156-d4da-6f11",
+                "hidden": false,
+                "import": true,
+                "targetId": "e15c-465c-8a7a-7e34",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "e2c9-1ea0-ca0d-7776", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2d57-f576-a452-695e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hykanatoi Proconsul-Delegate",
+                "id": "d205-b8fe-3f75-89d2",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Infantry (Command)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "8", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "5", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "5", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "5", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "5", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "2", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "5", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "3", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "10", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "10", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "9", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "9", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "2+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "6+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Paragon of Battle",
+                    "type": "and",
+                    "conditions": [{"childId": "20cb-4eec-0844-8a97", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"comment": "Paragon of Battle", "field": "253c-d694-4695-c89e", "type": "increment", "value": 1},
+                      {"comment": "Paragon of Battle", "field": "0cd5-b269-e3bc-028b", "type": "increment", "value": 1},
+                      {"comment": "Paragon of Battle", "field": "024e-bdb1-7982-25a0", "type": "increment", "value": 1}
+                    ]
+                  },
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "comment": "Prefect",
+                    "field": "f5cc-79a3-d302-cc1d",
+                    "type": "increment",
+                    "value": 1,
+                    "conditions": [{"childId": "43e4-8335-e000-62a6", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Options",
+                "id": "8b20-b6df-4baa-80d8",
+                "defaultSelectionEntryId": "c505-7e93-eff1-8be5",
+                "hidden": false,
+                "sortIndex": 1,
+                "constraints": [
+                  {"id": "b136-0363-e100-c38e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "199a-7a0a-7388-8c4a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "One sentinel warblade",
+                    "id": "c505-7e93-eff1-8be5",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Sentinel warblade",
+                        "id": "e610-0de3-4b7c-559f",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "e50e-bfd0-7701-9a40",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "593f-feb4-7258-7ea6", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "aba0-7158-841f-379f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "One sentinel warblade and one praesidium shield",
+                    "id": "75e1-a607-2a64-02b2",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "type": "upgrade",
+                    "costs": [
+                      {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 5},
+                      {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                      {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                      {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                      {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                      {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                      {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                      {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Sentinel warblade",
+                        "id": "e103-6794-cba6-289f",
+                        "hidden": false,
+                        "import": true,
+                        "sortIndex": 1,
+                        "targetId": "e50e-bfd0-7701-9a40",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "5af6-fe7b-a56e-3cbf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "d30c-da75-fdad-3156", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Praesidium Shield",
+                        "id": "e137-a144-31ba-8cb8",
+                        "hidden": false,
+                        "import": true,
+                        "sortIndex": 2,
+                        "targetId": "7148-e1ac-796f-b6f8",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "ff10-8547-acba-89f8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "bf8f-3a25-eb94-ef09", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "One guardian spear",
+                    "id": "24dc-64cd-ae49-164f",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 3,
+                    "type": "upgrade",
+                    "costs": [
+                      {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10},
+                      {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                      {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                      {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                      {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                      {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                      {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                      {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Guardian spear",
+                        "id": "7ec0-e03f-3fcd-815e",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f11a-9969-7f94-2ea8",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "4df2-9cd5-7d18-2e6b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "b60e-ecc5-2c40-e894", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ]
