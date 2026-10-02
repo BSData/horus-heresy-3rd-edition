@@ -2548,7 +2548,33 @@
           {"name": "[Allegiance]", "id": "9db3-dbc8-b44f-4d1d", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
           {"name": "Legio Custodes", "id": "bc6e-8da0-979f-ad5f", "hidden": false, "targetId": "c717-38ae-cee2-19f7", "type": "profile"},
           {"name": "Golden Exemplar", "id": "eaee-8e6d-ebe8-e0c2", "hidden": false, "targetId": "ac3d-8bec-254d-3c8b", "type": "profile"},
-          {"name": "The Sodality", "id": "b924-c54f-8fec-b7c6", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"}
+          {"name": "The Sodality", "id": "b924-c54f-8fec-b7c6", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"},
+          {
+            "name": "Shield",
+            "id": "7aec-5038-8421-4892",
+            "hidden": true,
+            "targetId": "1af7-07d5-7558-0b64",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "332f-3cf7-5b05-925b",
+                    "childName": "Eternity Blade and Praesidium Shield",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [
           {
@@ -2783,7 +2809,33 @@
         "infoLinks": [
           {"name": "Legio Custodes", "id": "0ef9-87d6-535a-f5da", "hidden": false, "targetId": "c717-38ae-cee2-19f7", "type": "profile"},
           {"name": "[Allegiance]", "id": "6832-7fff-ca8d-163c", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "The Sodality", "id": "bc0f-399f-dda3-e84d", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"}
+          {"name": "The Sodality", "id": "bc0f-399f-dda3-e84d", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"},
+          {
+            "name": "Shield",
+            "id": "e58a-7630-8c8d-27b8",
+            "hidden": true,
+            "targetId": "1af7-07d5-7558-0b64",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "007b-3d2c-c684-90b0",
+                    "childName": "Eternity Blade and Praesidium Shield",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "selectionEntries": [
           {
@@ -7444,7 +7496,33 @@
           },
           {"name": "[Allegiance]", "id": "e07c-6c40-09a0-3e08", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
           {"name": "Legio Custodes", "id": "7abe-1cbf-dfc4-7c3e", "hidden": false, "targetId": "c717-38ae-cee2-19f7", "type": "profile"},
-          {"name": "The Sodality", "id": "dd42-c8fe-5b65-b1ba", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"}
+          {"name": "The Sodality", "id": "dd42-c8fe-5b65-b1ba", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"},
+          {
+            "name": "Shield",
+            "id": "c393-5acc-e72e-587a",
+            "hidden": true,
+            "targetId": "1af7-07d5-7558-0b64",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "75e1-a607-2a64-02b2",
+                    "childName": "One sentinel warblade and one praesidium shield",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "rules": [
           {
@@ -7541,6 +7619,23 @@
                     "type": "increment",
                     "value": 1,
                     "conditions": [{"childId": "43e4-8335-e000-62a6", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+                  },
+                  {
+                    "field": "a951-a772-7ce0-0b64",
+                    "type": "set",
+                    "value": "5+",
+                    "conditions": [
+                      {
+                        "childId": "75e1-a607-2a64-02b2",
+                        "childName": "One sentinel warblade and one praesidium shield",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
