@@ -7056,7 +7056,17 @@
           {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
           {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
         ],
-        "entryLinks": [{"name": "Prime Unit", "id": "73dd-7b62-ab95-5ec9", "hidden": false, "import": true, "targetId": "3fa2-78b1-637f-7fb2", "type": "selectionEntry"}],
+        "entryLinks": [
+          {
+            "name": "Prime Unit",
+            "id": "73dd-7b62-ab95-5ec9",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [{"name": "Prime Benefits", "id": "3899-f392-9a64-7d16", "hidden": false, "import": true, "targetId": "6f4b-388a-b001-abde", "type": "selectionEntryGroup"}]
+          }
+        ],
         "infoLinks": [
           {"name": "[Allegiance]", "id": "cc77-3af7-a545-db80", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
           {"name": "Legio Custodes", "id": "8130-8a98-d69a-6e96", "hidden": false, "targetId": "c717-38ae-cee2-19f7", "type": "profile"},
@@ -7149,7 +7159,19 @@
               {"id": "44cf-7372-491f-7145", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "entryLinks": [
-              {"name": "Misericordia", "id": "59dc-5949-25c4-019b", "hidden": false, "import": true, "targetId": "e15c-465c-8a7a-7e34", "type": "selectionEntry"},
+              {
+                "name": "Misericordia",
+                "id": "59dc-5949-25c4-019b",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "e15c-465c-8a7a-7e34",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "f7a9-3c50-569e-5f34", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f1c4-3dbe-7175-9a5d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
               {
                 "name": "Neutronium cascade mine",
                 "id": "766d-7bd0-666d-4665",
@@ -7184,63 +7206,108 @@
                   {"name": "IN", "$text": "9", "typeId": "29c5-925d-5b1d-1e77"},
                   {"name": "SAV", "$text": "3+", "typeId": "03bd-4ecb-351d-143b"},
                   {"name": "INV", "$text": "4+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Paragon of Battle",
+                    "type": "and",
+                    "conditions": [{"childId": "20cb-4eec-0844-8a97", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"comment": "Paragon of Battle", "field": "253c-d694-4695-c89e", "type": "increment", "value": 1},
+                      {"comment": "Paragon of Battle", "field": "0cd5-b269-e3bc-028b", "type": "increment", "value": 1},
+                      {"comment": "Paragon of Battle", "field": "024e-bdb1-7982-25a0", "type": "increment", "value": 1}
+                    ]
+                  },
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "f5cc-79a3-d302-cc1d",
+                    "type": "increment",
+                    "value": 1,
+                    "conditions": [{"childId": "43e4-8335-e000-62a6", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+                  }
                 ]
               }
             ],
-            "selectionEntries": [
+            "selectionEntryGroups": [
               {
-                "name": "Two Kinetic destroyers",
-                "id": "9ba9-452d-dc03-0330",
+                "name": "Weapons",
+                "id": "afcb-2ad7-861a-2f5f",
+                "defaultSelectionEntryId": "9ba9-452d-dc03-0330",
                 "hidden": false,
-                "import": true,
                 "sortIndex": 1,
-                "type": "upgrade",
-                "entryLinks": [
+                "constraints": [{"id": "5bb9-61c2-0f63-0673", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "selectionEntries": [
                   {
-                    "name": "Kinetic destroyer",
-                    "id": "0d5f-5c65-1a8b-bd6a",
+                    "name": "Two Kinetic destroyers",
+                    "id": "9ba9-452d-dc03-0330",
                     "hidden": false,
                     "import": true,
-                    "targetId": "2f8b-e409-6a0c-896f",
-                    "type": "selectionEntry",
-                    "constraints": [
-                      {"id": "4092-5ad5-378d-7dfe", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-                      {"id": "8b04-0bc4-fd17-f6a6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "One Kinetic destroyer and one Vaultsword",
-                "id": "0605-3060-0dab-4b7a",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "type": "upgrade",
-                "costs": [
-                  {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15},
-                  {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
-                  {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
-                  {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
-                  {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
-                  {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
-                  {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
-                  {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
-                ],
-                "entryLinks": [
-                  {
-                    "name": "Kinetic destroyer",
-                    "id": "bcf8-d6a2-8a78-7e95",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "2f8b-e409-6a0c-896f",
-                    "type": "selectionEntry",
-                    "constraints": [
-                      {"id": "2780-3a0a-7c0c-9124", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                      {"id": "7791-b9cf-e228-5bb2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    "sortIndex": 1,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Kinetic destroyer",
+                        "id": "0d5f-5c65-1a8b-bd6a",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "2f8b-e409-6a0c-896f",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "4092-5ad5-378d-7dfe", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "8b04-0bc4-fd17-f6a6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
                     ]
                   },
-                  {"name": "Vaultsword", "id": "f6a7-2963-f1b5-42fc", "hidden": false, "import": true, "targetId": "e235-75aa-97a7-14d1", "type": "selectionEntry"}
+                  {
+                    "name": "One Kinetic destroyer and one Vaultsword",
+                    "id": "0605-3060-0dab-4b7a",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "type": "upgrade",
+                    "costs": [
+                      {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15},
+                      {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                      {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                      {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                      {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                      {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                      {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                      {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Kinetic destroyer",
+                        "id": "bcf8-d6a2-8a78-7e95",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "2f8b-e409-6a0c-896f",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "4529-2b37-3286-e41f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "102e-839c-2196-e19a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {"name": "Vaultsword", "id": "f6a7-2963-f1b5-42fc", "hidden": false, "import": true, "targetId": "e235-75aa-97a7-14d1", "type": "selectionEntry"}
+                    ]
+                  }
                 ]
               }
             ]
@@ -7358,7 +7425,7 @@
                   {
                     "name": "Prefect",
                     "id": "28fb-ffb2-ad9d-8596",
-                    "description": "All Models in the Unit selected to fill a Prime Slot with thisd Prime Advantage modify their Base Wounds Characteristic by +1 and gain the Officer of the Line (2) Special Rule",
+                    "description": "This Prime Advantage may only be selected for a Prime Slot used to select a Shield Captain Unit. All Models in the Unit selected to fill a Prime Slot with this Prime Advantage modify their Base Wounds Characteristic by +1 and gain the Officer of the Line (2) Special Rule",
                     "hidden": false
                   }
                 ]
