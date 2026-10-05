@@ -1742,6 +1742,26 @@
                         "targetId": "4338-dbe9-1e94-7e6d",
                         "type": "selectionEntry",
                         "modifiers": [{"field": "9893-c379-920b-8982", "type": "set", "value": 10}]
+                      },
+                      {
+                        "name": "Carsoran power tabar",
+                        "id": "b408-73f7-126a-af63",
+                        "hidden": true,
+                        "import": true,
+                        "sortIndex": 4,
+                        "targetId": "8fde-41bb-9695-74b1",
+                        "type": "selectionEntry",
+                        "constraints": [{"id": "8cd8-d0cd-52f5-06d5", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}],
+                        "modifiers": [
+                          {
+                            "comment": "SH",
+                            "field": "hidden",
+                            "type": "set",
+                            "value": false,
+                            "conditions": [{"childId": "ac06-fcec-b634-5bd9", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+                          },
+                          {"field": "9893-c379-920b-8982", "type": "set", "value": 10}
+                        ]
                       }
                     ],
                     "modifiers": [
