@@ -8103,6 +8103,10 @@
             "import": true,
             "sortIndex": 1,
             "type": "model",
+            "categoryLinks": [
+              {"name": "Cavalry Model Type", "id": "0707-03c4-c21b-5194", "hidden": false, "primary": false, "targetId": "a073-2d4a-5bed-123e"},
+              {"name": "Malefic Sub-type", "id": "2657-70ef-6346-d036", "hidden": false, "primary": false, "targetId": "2de1-ddd6-ebb4-10df"}
+            ],
             "constraints": [
               {"id": "4457-2352-d482-da5b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5},
               {"id": "10c7-0de5-e9a0-d9ed", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}
@@ -8475,7 +8479,7 @@
             "hidden": false,
             "import": true,
             "sortIndex": 2,
-            "type": "upgrade",
+            "type": "model",
             "categoryLinks": [
               {"name": "Infantry Model Type", "id": "a09f-06d8-7f4e-8884", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"},
               {"name": "Malefic Sub-type", "id": "c4d2-d194-2648-da26", "hidden": false, "primary": false, "targetId": "2de1-ddd6-ebb4-10df"},
@@ -8669,6 +8673,26 @@
           {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
           {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
         ],
+        "entryLinks": [
+          {
+            "name": "Prime Unit",
+            "id": "957c-799c-89d8-5eed",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [
+              {
+                "name": "Daemonic Prime Benefits",
+                "id": "0d54-0dc7-51a8-62bc",
+                "hidden": false,
+                "import": true,
+                "targetId": "6a33-a28e-9c63-5829",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ],
         "infoLinks": [
           {"name": "[Allegiance]", "id": "492a-8e95-8df3-c815", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
           {"name": "Slaanesh", "id": "5596-af50-10b5-574f", "hidden": false, "targetId": "1068-9b65-d819-bb26", "type": "profile"},
@@ -8745,7 +8769,7 @@
                 "typeId": "a76f-8e23-8c3e-166d",
                 "typeName": "Profile",
                 "characteristics": [
-                  {"name": "Type", "$text": "Infantry (Maelefic)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "Type", "$text": "Infantry (Malefic)", "typeId": "50fc-9241-d4a2-045b"},
                   {"name": "M", "$text": "7", "typeId": "a106-a779-d272-5e93"},
                   {"name": "WS", "$text": "4", "typeId": "253c-d694-4695-c89e"},
                   {"name": "BS", "$text": "4", "typeId": "0cd5-b269-e3bc-028b"},
