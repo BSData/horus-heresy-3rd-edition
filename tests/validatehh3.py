@@ -47,7 +47,7 @@ PRIME_ADVANTAGE_SLOTS = ["Rewards of Treachery",
                          "Exemplars of the Legion - World Eaters",
                          "Asset",
                          "Command - Slaanesh only",
-                         "Troopas - Slaanesh only",
+                         "Troops - Slaanesh only",
                          "Heavy Assault - Slaanesh only",
                          "Fast Attack - Slaanesh only",
                          ]
