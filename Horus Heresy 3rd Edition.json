@@ -1044,7 +1044,8 @@
       {"name": "Command - Slaanesh only", "id": "6b78-1ab8-6d76-0054", "hidden": false},
       {"name": "Troops - Slaanesh only", "id": "db64-3f93-35f9-8b0f", "hidden": false},
       {"name": "Heavy Assault - Slaanesh only", "id": "9a66-9be2-1995-1bac", "hidden": false},
-      {"name": "Fast Attack - Slaanesh only", "id": "6f0e-f0dc-a02b-fafb", "hidden": false}
+      {"name": "Fast Attack - Slaanesh only", "id": "6f0e-f0dc-a02b-fafb", "hidden": false},
+      {"name": "Cohort Doctrine: Sublime Cohort", "id": "6624-90cd-fbeb-7a2a", "hidden": false}
     ],
     "costTypes": [
       {
@@ -41166,6 +41167,191 @@
                   {
                     "name": "Detachment Composition",
                     "$text": "1 Command\n2 Troops\n1 Heavy Assault\n1 Fast Attack\nTraitor only - Requires Esoterist \n\nOnly models with Slaanesh Trait",
+                    "typeId": "ec3f-877b-f887-18b2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Auxiliary - Antemasque Detachment",
+            "id": "4f41-6be7-41a2-13c4",
+            "hidden": true,
+            "sortIndex": 112,
+            "categoryLinks": [
+              {
+                "name": "Prime Troops",
+                "id": "fc84-5280-23cb-430c",
+                "hidden": false,
+                "targetId": "c3f9-a7f3-984b-3fda",
+                "constraints": [{"id": "8595-0474-411c-4fbd", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Command",
+                "id": "016b-7180-709b-4e1d",
+                "hidden": false,
+                "targetId": "c85c-2963-658f-1bb9",
+                "constraints": [{"id": "024f-f2cb-4726-a61c", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Fast Attack",
+                "id": "ae96-dc27-b2c0-47c0",
+                "hidden": false,
+                "targetId": "c291-144b-3da6-37ed",
+                "constraints": [{"id": "bf3c-7941-9d63-f7f9", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Heavy Assault",
+                "id": "6936-8a18-fb16-1874",
+                "hidden": false,
+                "targetId": "1e95-35f0-1353-ffa1",
+                "constraints": [{"id": "6529-892a-e3d7-9cba", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Command - Slaanesh only",
+                "id": "f4e3-6d8c-bce6-2fbb",
+                "hidden": false,
+                "targetId": "6b78-1ab8-6d76-0054",
+                "constraints": [{"id": "69e2-e4e4-28c7-dc1c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Troops - Slaanesh only",
+                "id": "62a9-116f-f6fa-38ed",
+                "hidden": false,
+                "targetId": "db64-3f93-35f9-8b0f",
+                "constraints": [{"id": "2498-332c-c66a-bf58", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Fast Attack - Slaanesh only",
+                "id": "5ccb-b76f-ff9f-0767",
+                "hidden": false,
+                "targetId": "6f0e-f0dc-a02b-fafb",
+                "constraints": [{"id": "9e63-bcb3-bc1c-678d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Heavy Assault - Slaanesh only",
+                "id": "96be-fe6a-8b43-3632",
+                "hidden": false,
+                "targetId": "9a66-9be2-1995-1bac",
+                "constraints": [{"id": "80ba-9831-02f8-2450", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              }
+            ],
+            "constraints": [{"id": "6ca9-085c-ab7d-8110", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 0}],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+            ],
+            "modifiers": [
+              {
+                "field": "6ca9-085c-ab7d-8110",
+                "type": "increment",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "6624-90cd-fbeb-7a2a",
+                    "childName": "Cohort Doctrine: Sublime Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ],
+                "repeats": [
+                  {
+                    "childId": "243b-4ffd-9808-11d8",
+                    "childName": "Auxiliary - Infantry Tercio",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "comment": "Solar Auxilia",
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "7851-69ac-f701-034e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                      {"childId": "7851-69ac-f701-034e", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "6624-90cd-fbeb-7a2a",
+                        "childName": "Cohort Doctrine: Sublime Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "error",
+                "type": "add",
+                "value": "Each Antemasque Detachment requires an Infantry Tercio detachment",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "cb73-8d71-1d7a-cb1a",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "243b-4ffd-9808-11d8",
+                        "childName": "Auxiliary - Infantry Tercio",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Auxiliary - Antemasque Detachment",
+                "id": "91cf-63be-4009-cb5d",
+                "hidden": false,
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "$text": "1 Command\n2 Troops\n1 Fast Attack\n1 Heavy Assault\nSlots in this detachment may only be filled with Units from the Daemons of Slaanesh Army list\nCommand Units do not grant additional Auxiliary Detachments",
                     "typeId": "ec3f-877b-f887-18b2"
                   }
                 ]
