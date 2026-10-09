@@ -13991,7 +13991,7 @@
                 "id": "afde-bd65-6eb5-18b8",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 6,
+                "sortIndex": 7,
                 "targetId": "eafe-beb3-8d27-ec50",
                 "type": "selectionEntryGroup"
               },
@@ -14022,6 +14022,15 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Insidious Corruption",
+                "id": "5ee6-0275-ab0f-daba",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 6,
+                "targetId": "344d-734a-b71a-b759",
+                "type": "selectionEntry"
               }
             ],
             "profiles": [
@@ -14099,6 +14108,25 @@
                     "type": "increment",
                     "value": 1,
                     "conditions": [{"childId": "2496-21e2-1870-e9b8", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+                  },
+                  {
+                    "arg": ")",
+                    "comment": "Insidious Corruption",
+                    "field": "50fc-9241-d4a2-045b",
+                    "type": "replace",
+                    "value": ", Malefic)",
+                    "conditions": [
+                      {
+                        "childId": "344d-734a-b71a-b759",
+                        "childName": "Insidious Corruption",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -29399,7 +29427,7 @@
                 "id": "ef28-f458-e409-7f30",
                 "hidden": true,
                 "import": true,
-                "sortIndex": 10,
+                "sortIndex": 11,
                 "targetId": "eafe-beb3-8d27-ec50",
                 "type": "selectionEntryGroup"
               },
@@ -29455,6 +29483,15 @@
                   {"id": "7b28-0cff-870b-c580", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "8cd9-8de0-c1f7-e2d8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
+              },
+              {
+                "name": "Insidious Corruption",
+                "id": "cb76-9ab6-e859-fd12",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 10,
+                "targetId": "344d-734a-b71a-b759",
+                "type": "selectionEntry"
               }
             ],
             "modifiers": [
@@ -29604,6 +29641,25 @@
                     "type": "increment",
                     "value": 1,
                     "conditions": [{"childId": "2496-21e2-1870-e9b8", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+                  },
+                  {
+                    "arg": ")",
+                    "comment": "Insidious Corruption",
+                    "field": "50fc-9241-d4a2-045b",
+                    "type": "replace",
+                    "value": ", Malefic)",
+                    "conditions": [
+                      {
+                        "childId": "344d-734a-b71a-b759",
+                        "childName": "Insidious Corruption",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -29622,6 +29678,7 @@
                     "id": "8a74-e63a-a3cf-fad7",
                     "hidden": false,
                     "import": true,
+                    "sortIndex": 3,
                     "targetId": "6754-24dd-5be0-26ff",
                     "type": "selectionEntry",
                     "constraints": [{"id": "716a-cd5c-bc17-e9fa", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
@@ -29652,6 +29709,7 @@
                     "id": "b45d-7def-84b5-fefe",
                     "hidden": true,
                     "import": true,
+                    "sortIndex": 4,
                     "targetId": "ab57-e7ca-3fc7-b256",
                     "type": "selectionEntry",
                     "constraints": [{"id": "f39b-c40e-131e-360f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
@@ -29701,6 +29759,7 @@
                     "id": "40d5-3c21-dc8c-186e",
                     "hidden": true,
                     "import": true,
+                    "sortIndex": 5,
                     "targetId": "e1d9-d2ce-e0fe-4f54",
                     "type": "selectionEntryGroup",
                     "modifiers": [
@@ -29730,6 +29789,7 @@
                     "id": "749c-fb9a-9cd4-76a5",
                     "hidden": true,
                     "import": true,
+                    "sortIndex": 6,
                     "targetId": "e1d9-d2ce-e0fe-4f54",
                     "type": "selectionEntryGroup",
                     "modifiers": [
@@ -29777,7 +29837,7 @@
                     "id": "7241-f7af-2c37-bf3b",
                     "defaultSelectionEntryId": "6c81-0bfe-8e5b-d222",
                     "hidden": false,
-                    "sortIndex": 0,
+                    "sortIndex": 2,
                     "constraints": [
                       {"id": "3c2d-b890-c128-d87b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": false, "type": "max", "value": 1},
                       {"id": "f8f4-706a-8e2e-d151", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -30118,7 +30178,7 @@
                     "id": "2165-7d66-56a4-9a2e",
                     "defaultSelectionEntryId": "43d6-a430-ef8f-774d",
                     "hidden": false,
-                    "sortIndex": 0,
+                    "sortIndex": 1,
                     "constraints": [
                       {"id": "5790-ded1-b5e8-d738", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                       {"id": "6d65-f0ec-f9b4-ca10", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -30682,7 +30742,7 @@
                 "id": "8dc8-c5af-5e57-91ce",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 5,
                 "targetId": "eafe-beb3-8d27-ec50",
                 "type": "selectionEntryGroup"
               },
@@ -30721,6 +30781,15 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Insidious Corruption",
+                "id": "13b0-7dc6-22cb-2bb1",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "344d-734a-b71a-b759",
+                "type": "selectionEntry"
               }
             ],
             "modifiers": [
@@ -30838,7 +30907,7 @@
                       }
                     ],
                     "modifiers": [
-                      {"arg": ", Heavy)", "field": "50fc-9241-d4a2-045b", "type": "replace", "value": ")"},
+                      {"arg": ", Heavy", "field": "50fc-9241-d4a2-045b", "type": "replace", "value": ""},
                       {"field": "a106-a779-d272-5e93", "type": "set", "value": 7},
                       {"arg": "Cataphractii", "field": "name", "type": "replace", "value": "Tartaros"}
                     ]
@@ -30875,6 +30944,25 @@
                     "type": "replace",
                     "value": "Tartaros",
                     "conditions": [{"childId": "4041-105d-29a6-2c22", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "equalTo", "value": 1}]
+                  },
+                  {
+                    "arg": ")",
+                    "comment": "Insidious Corruption",
+                    "field": "50fc-9241-d4a2-045b",
+                    "type": "replace",
+                    "value": ", Malefic)",
+                    "conditions": [
+                      {
+                        "childId": "344d-734a-b71a-b759",
+                        "childName": "Insidious Corruption",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -114833,6 +114921,115 @@
                 ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Insidious Corruption",
+        "id": "344d-734a-b71a-b759",
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "2bbd-6acb-1068-fd5c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+        ],
+        "modifiers": [
+          {"field": "category", "type": "add", "value": "2de1-ddd6-ebb4-10df"},
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "8f12-c30a-6c20-6296",
+                        "childName": "Crusade Primary Detachment",
+                        "field": "forces",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "1792-ddc3-0761-cccd",
+                        "childName": "Primary - Crusade Primary Detachment",
+                        "field": "forces",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "33cf-087a-39ee-2532",
+                        "childName": "Primary - Zone Mortalis Strike Force",
+                        "field": "forces",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "a4bf-9629-2065-4885",
+                        "childName": "Primary - Zone Mortalis Bulwark",
+                        "field": "forces",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e46a-e7a0-2dfe-66cf",
+                        "childName": "Primary - Zone Mortalis Linebreaker",
+                        "field": "forces",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "e1e1-a344-d3e2-0b91",
+                    "childName": "Loyalist",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Insidious Corruption",
+            "id": "bfb9-8812-f3f4-bedd",
+            "description": "Any of the following Units selected as part of the Primary Detachment of an Army with the Traitor Allegiance may be given the Malefic Sub-Type for +20 Points per Model\n\n\n- Praetor\n- Praetor with Jump Pack\n- Cataphractii Praetor\n- Tartaros Praetor\n- Saturnine Praetor",
+            "hidden": false
           }
         ]
       }
