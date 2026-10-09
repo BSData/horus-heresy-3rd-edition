@@ -1039,7 +1039,13 @@
       {"name": "Support - Tzeench only", "id": "8e14-b4d2-59c9-e474", "hidden": false},
       {"name": "Fast Attack - Tzeench only", "id": "6bea-2cb9-c6b9-d183", "hidden": false},
       {"name": "Cohort Doctrine: Fateweaver Cohort", "id": "cb73-8d71-1d7a-cb1a", "hidden": false},
-      {"name": "Prosperine Sorcerer", "id": "04b3-9ebe-bf51-20f2", "hidden": false}
+      {"name": "Prosperine Sorcerer", "id": "04b3-9ebe-bf51-20f2", "hidden": false},
+      {"name": "Slaanesh", "id": "e7b7-e508-e6c9-58ba", "hidden": false},
+      {"name": "Command - Slaanesh only", "id": "6b78-1ab8-6d76-0054", "hidden": false},
+      {"name": "Troops - Slaanesh only", "id": "db64-3f93-35f9-8b0f", "hidden": false},
+      {"name": "Heavy Assault - Slaanesh only", "id": "9a66-9be2-1995-1bac", "hidden": false},
+      {"name": "Fast Attack - Slaanesh only", "id": "6f0e-f0dc-a02b-fafb", "hidden": false},
+      {"name": "Cohort Doctrine: Sublime Cohort", "id": "6624-90cd-fbeb-7a2a", "hidden": false}
     ],
     "costTypes": [
       {
@@ -40841,6 +40847,516 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Auxiliary - Rapturous Host",
+            "id": "93b6-10db-e72b-3e32",
+            "comment": "Traitor Legions Only, Esoterist",
+            "hidden": true,
+            "page": 16,
+            "publicationId": "e54c-7040-0f35-d85d",
+            "sortIndex": 111,
+            "categoryLinks": [
+              {
+                "name": "Command - Slaanesh only",
+                "id": "1887-9657-4be1-b021",
+                "hidden": false,
+                "targetId": "6b78-1ab8-6d76-0054",
+                "constraints": [{"id": "d1f3-366f-1e08-dfc6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime Troops",
+                "id": "35fa-5e6f-5c45-27c8",
+                "hidden": false,
+                "targetId": "c3f9-a7f3-984b-3fda",
+                "constraints": [{"id": "035a-f88e-b960-b742", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Command",
+                "id": "02b1-9164-661a-656d",
+                "hidden": false,
+                "targetId": "c85c-2963-658f-1bb9",
+                "constraints": [{"id": "1286-6d70-53a1-fa7a", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Troops - Slaanesh only",
+                "id": "f97c-5632-e6aa-434d",
+                "hidden": false,
+                "targetId": "db64-3f93-35f9-8b0f",
+                "constraints": [{"id": "ea33-7d60-53d8-b739", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Heavy Assault - Slaanesh only",
+                "id": "160f-5c3d-3730-6b00",
+                "hidden": false,
+                "targetId": "9a66-9be2-1995-1bac",
+                "constraints": [{"id": "56cd-553c-9eb3-9e19", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime Heavy Assault",
+                "id": "0c7b-72b7-08cc-9cbd",
+                "hidden": false,
+                "targetId": "1e95-35f0-1353-ffa1",
+                "constraints": [{"id": "e93e-4a5c-8089-f9ee", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Fast Attack - Slaanesh only",
+                "id": "4fda-afa8-91ee-f6ab",
+                "hidden": false,
+                "targetId": "6f0e-f0dc-a02b-fafb",
+                "constraints": [{"id": "800e-09af-a1f5-9eca", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime Fast Attack",
+                "id": "1c7a-883e-0d97-5c4e",
+                "hidden": false,
+                "targetId": "c291-144b-3da6-37ed",
+                "constraints": [{"id": "1d0e-e18f-7a3d-4304", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              }
+            ],
+            "constraints": [{"id": "4587-4f6e-8c07-bf1c", "field": "forces", "scope": "roster", "shared": true, "type": "max", "value": 0}],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 1},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0}
+            ],
+            "modifiers": [
+              {
+                "comment": "Legions",
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "comment": "Legions",
+                    "type": "or",
+                    "conditionGroups": [
+                      {
+                        "comment": "DA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "EC",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IF",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "NL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "BA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WE",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "UM",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "DG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "TS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WB",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "RG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "AL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Blackshields",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Shattered Legions",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "error",
+                "type": "add",
+                "value": "Demonic Rapturous Detachment requires an Esoterist",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "e835-f513-2c3c-9697",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      },
+                      {
+                        "childId": "ed12-2e38-312e-83e6",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "4587-4f6e-8c07-bf1c",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "e835-f513-2c3c-9697",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Auxiliary - Rapturous Host",
+                "id": "22c8-ea22-e652-1ace",
+                "hidden": false,
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "$text": "1 Command\n2 Troops\n1 Heavy Assault\n1 Fast Attack\nTraitor only - Requires Esoterist \n\nOnly models with Slaanesh Trait",
+                    "typeId": "ec3f-877b-f887-18b2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Auxiliary - Antemasque Detachment",
+            "id": "4f41-6be7-41a2-13c4",
+            "hidden": true,
+            "sortIndex": 112,
+            "categoryLinks": [
+              {
+                "name": "Prime Troops",
+                "id": "fc84-5280-23cb-430c",
+                "hidden": false,
+                "targetId": "c3f9-a7f3-984b-3fda",
+                "constraints": [{"id": "8595-0474-411c-4fbd", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Command",
+                "id": "016b-7180-709b-4e1d",
+                "hidden": false,
+                "targetId": "c85c-2963-658f-1bb9",
+                "constraints": [{"id": "024f-f2cb-4726-a61c", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Fast Attack",
+                "id": "ae96-dc27-b2c0-47c0",
+                "hidden": false,
+                "targetId": "c291-144b-3da6-37ed",
+                "constraints": [{"id": "bf3c-7941-9d63-f7f9", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Prime Heavy Assault",
+                "id": "6936-8a18-fb16-1874",
+                "hidden": false,
+                "targetId": "1e95-35f0-1353-ffa1",
+                "constraints": [{"id": "6529-892a-e3d7-9cba", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Command - Slaanesh only",
+                "id": "f4e3-6d8c-bce6-2fbb",
+                "hidden": false,
+                "targetId": "6b78-1ab8-6d76-0054",
+                "constraints": [{"id": "69e2-e4e4-28c7-dc1c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Troops - Slaanesh only",
+                "id": "62a9-116f-f6fa-38ed",
+                "hidden": false,
+                "targetId": "db64-3f93-35f9-8b0f",
+                "constraints": [{"id": "2498-332c-c66a-bf58", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Fast Attack - Slaanesh only",
+                "id": "5ccb-b76f-ff9f-0767",
+                "hidden": false,
+                "targetId": "6f0e-f0dc-a02b-fafb",
+                "constraints": [{"id": "9e63-bcb3-bc1c-678d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Heavy Assault - Slaanesh only",
+                "id": "96be-fe6a-8b43-3632",
+                "hidden": false,
+                "targetId": "9a66-9be2-1995-1bac",
+                "constraints": [{"id": "80ba-9831-02f8-2450", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              }
+            ],
+            "constraints": [{"id": "6ca9-085c-ab7d-8110", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 0}],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+            ],
+            "modifiers": [
+              {
+                "field": "6ca9-085c-ab7d-8110",
+                "type": "increment",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "6624-90cd-fbeb-7a2a",
+                    "childName": "Cohort Doctrine: Sublime Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ],
+                "repeats": [
+                  {
+                    "childId": "243b-4ffd-9808-11d8",
+                    "childName": "Auxiliary - Infantry Tercio",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "comment": "Solar Auxilia",
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "7851-69ac-f701-034e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                      {"childId": "7851-69ac-f701-034e", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "6624-90cd-fbeb-7a2a",
+                        "childName": "Cohort Doctrine: Sublime Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "error",
+                "type": "add",
+                "value": "Each Antemasque Detachment requires an Infantry Tercio detachment",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "cb73-8d71-1d7a-cb1a",
+                        "childName": "Cohort Doctrine: Fateweaver Cohort",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "243b-4ffd-9808-11d8",
+                        "childName": "Auxiliary - Infantry Tercio",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Auxiliary - Antemasque Detachment",
+                "id": "91cf-63be-4009-cb5d",
+                "hidden": false,
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "$text": "1 Command\n2 Troops\n1 Fast Attack\n1 Heavy Assault\nSlots in this detachment may only be filled with Units from the Daemons of Slaanesh Army list\nCommand Units do not grant additional Auxiliary Detachments",
+                    "typeId": "ec3f-877b-f887-18b2"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "forceEntryLinks": [
@@ -45648,7 +46164,8 @@
           {"name": "Auxiliary - Ephoroi Convocation", "id": "a711-638a-89bb-5643", "hidden": false, "targetId": "f226-fdc7-a249-e980", "type": "forceEntry"},
           {"name": "Auxiliary - Kataphractoi Convocation", "id": "9ce1-554e-0358-3d4e", "hidden": false, "targetId": "750e-bcb0-0a41-3731", "type": "forceEntry"},
           {"name": "Auxiliary - Helot Tercio", "id": "8d36-76c8-72a0-dafb", "hidden": false, "targetId": "fd11-7b79-aba3-4e16", "type": "forceEntry"},
-          {"name": "Auxiliary - Ætheric Incursion Detachment", "id": "263f-618e-1143-9f0e", "hidden": false, "targetId": "b88e-e21c-c5e2-80be", "type": "forceEntry"}
+          {"name": "Auxiliary - Ætheric Incursion Detachment", "id": "263f-618e-1143-9f0e", "hidden": false, "targetId": "b88e-e21c-c5e2-80be", "type": "forceEntry"},
+          {"name": "Auxiliary - Rapturous Host", "id": "5514-f5be-b767-5d0b", "hidden": false, "targetId": "93b6-10db-e72b-3e32", "type": "forceEntry"}
         ],
         "modifiers": [
           {
@@ -57986,7 +58503,8 @@
           {"name": "Apex - Moritoi Convocation", "id": "4a1e-d63b-c17f-64b7", "hidden": false, "targetId": "0b43-afde-9f1b-307e", "type": "forceEntry"},
           {"name": "Auxiliary - Helot Tercio", "id": "c551-7174-041e-8b1d", "hidden": true, "targetId": "fd11-7b79-aba3-4e16", "type": "forceEntry"},
           {"name": "Auxiliary - Ætheric Incursion Detachment", "id": "2170-8e08-1f14-721c", "hidden": false, "targetId": "b88e-e21c-c5e2-80be", "type": "forceEntry"},
-          {"name": "Auxiliary - Ætheric Incursion", "id": "2ce0-5435-24cc-a066", "hidden": false, "targetId": "6018-b4fb-d64a-4b42", "type": "forceEntry"}
+          {"name": "Auxiliary - Ætheric Incursion", "id": "2ce0-5435-24cc-a066", "hidden": false, "targetId": "6018-b4fb-d64a-4b42", "type": "forceEntry"},
+          {"name": "Auxiliary - Rapturous Host", "id": "6ffe-ce41-0559-06ae", "hidden": false, "targetId": "93b6-10db-e72b-3e32", "type": "forceEntry"}
         ],
         "modifiers": [
           {

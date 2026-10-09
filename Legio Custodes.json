@@ -463,6 +463,24 @@
         "targetId": "1996-574f-1f43-7779",
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Retinue", "id": "d983-72aa-4ef4-22b1", "hidden": false, "primary": true, "targetId": "a38e-50ff-310f-f19e"}]
+      },
+      {
+        "name": "Ephoroi Venetari Proconsul",
+        "id": "0c99-0cb8-9c84-8d23",
+        "hidden": false,
+        "import": true,
+        "targetId": "882b-21b4-c4e9-5734",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Command", "id": "847a-8e9e-73ea-7871", "hidden": false, "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+      },
+      {
+        "name": "Hykanatoi Proconsul-Delegate",
+        "id": "38eb-e084-e184-84a0",
+        "hidden": false,
+        "import": true,
+        "targetId": "c268-c125-67a4-8acd",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Command", "id": "f482-f2a3-db7c-77c0", "hidden": false, "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       }
     ],
     "sharedProfiles": [
@@ -2530,7 +2548,33 @@
           {"name": "[Allegiance]", "id": "9db3-dbc8-b44f-4d1d", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
           {"name": "Legio Custodes", "id": "bc6e-8da0-979f-ad5f", "hidden": false, "targetId": "c717-38ae-cee2-19f7", "type": "profile"},
           {"name": "Golden Exemplar", "id": "eaee-8e6d-ebe8-e0c2", "hidden": false, "targetId": "ac3d-8bec-254d-3c8b", "type": "profile"},
-          {"name": "The Sodality", "id": "b924-c54f-8fec-b7c6", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"}
+          {"name": "The Sodality", "id": "b924-c54f-8fec-b7c6", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"},
+          {
+            "name": "Shield",
+            "id": "7aec-5038-8421-4892",
+            "hidden": true,
+            "targetId": "1af7-07d5-7558-0b64",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "332f-3cf7-5b05-925b",
+                    "childName": "Eternity Blade and Praesidium Shield",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [
           {
@@ -2765,7 +2809,33 @@
         "infoLinks": [
           {"name": "Legio Custodes", "id": "0ef9-87d6-535a-f5da", "hidden": false, "targetId": "c717-38ae-cee2-19f7", "type": "profile"},
           {"name": "[Allegiance]", "id": "6832-7fff-ca8d-163c", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "The Sodality", "id": "bc0f-399f-dda3-e84d", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"}
+          {"name": "The Sodality", "id": "bc0f-399f-dda3-e84d", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"},
+          {
+            "name": "Shield",
+            "id": "e58a-7630-8c8d-27b8",
+            "hidden": true,
+            "targetId": "1af7-07d5-7558-0b64",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "007b-3d2c-c684-90b0",
+                    "childName": "Eternity Blade and Praesidium Shield",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "selectionEntries": [
           {
@@ -5000,6 +5070,16 @@
                     "sortIndex": 1,
                     "targetId": "5256-456a-6818-29d1",
                     "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Arachnus Volley Cannon",
+                    "id": "6e32-8874-f00c-3e37",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 4,
+                    "targetId": "9996-0ea6-bbde-0232",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20}]
                   }
                 ]
               }
@@ -6929,7 +7009,8 @@
                   {"id": "8ca6-8a67-4ad6-3110", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "c9e3-7d4d-697b-bda5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ]
-              }
+              },
+              {"name": "Vaultsword", "id": "c6a4-27a8-716e-69d5", "hidden": false, "import": true, "targetId": "e235-75aa-97a7-14d1", "type": "selectionEntry"}
             ],
             "profiles": [
               {
@@ -6973,54 +7054,702 @@
                   }
                 ]
               }
-            ],
-            "selectionEntries": [
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Arachnus Volley Cannon",
+        "id": "9996-0ea6-bbde-0232",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Armourbane", "id": "6987-e166-ecbc-1731", "hidden": false, "targetId": "36ee-4c54-bced-a696", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Arachnus Volley Cannon - Concentrated fire",
+            "id": "dcf3-eebc-86ec-0b0d",
+            "hidden": false,
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "36", "typeId": "cdb0-8654-6840-1037"},
+              {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
+              {"name": "RS", "$text": "8", "typeId": "b9da-ee13-79f9-fa63"},
+              {"name": "AP", "$text": "2", "typeId": "7a23-0248-2b94-5951"},
+              {"name": "D", "$text": "2", "typeId": "88c3-1ca5-7dc1-f291"},
+              {"name": "Special Rules", "$text": "Armourbane", "typeId": "5aad-137a-8ee2-63fd"},
+              {"name": "Traits", "$text": "Las", "typeId": "1247-79d2-6cc1-8a03"}
+            ]
+          },
+          {
+            "name": "Arachnus Volley Cannon - Burst fire",
+            "id": "9eef-2ecc-7479-ca2b",
+            "hidden": false,
+            "typeId": "c591-09ed-3e6f-eb2b",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "24", "typeId": "cdb0-8654-6840-1037"},
+              {"name": "FP", "$text": "3", "typeId": "5037-1f27-1790-e355"},
+              {"name": "RS", "$text": "5", "typeId": "b9da-ee13-79f9-fa63"},
+              {"name": "AP", "$text": "3", "typeId": "7a23-0248-2b94-5951"},
+              {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
+              {"name": "Special Rules", "$text": "-", "typeId": "5aad-137a-8ee2-63fd"},
+              {"name": "Traits", "$text": "Las", "typeId": "1247-79d2-6cc1-8a03"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ephoroi Venetari Proconsul",
+        "id": "882b-21b4-c4e9-5734",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 21,
+        "type": "unit",
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 160},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Prime Unit",
+            "id": "73dd-7b62-ab95-5ec9",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [{"name": "Prime Benefits", "id": "3899-f392-9a64-7d16", "hidden": false, "import": true, "targetId": "6f4b-388a-b001-abde", "type": "selectionEntryGroup"}]
+          }
+        ],
+        "infoLinks": [
+          {"name": "[Allegiance]", "id": "cc77-3af7-a545-db80", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
+          {"name": "Legio Custodes", "id": "8130-8a98-d69a-6e96", "hidden": false, "targetId": "c717-38ae-cee2-19f7", "type": "profile"},
+          {"name": "The Sodality", "id": "1b60-8405-6847-5d81", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"},
+          {
+            "name": "Bulky (X)",
+            "id": "3362-fb7d-b3da-174e",
+            "comment": "3",
+            "hidden": false,
+            "targetId": "50ad-a9a5-1f1d-9a25",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Bulky (3)"}]
+          },
+          {"name": "Deep Strike", "id": "6118-4ab5-25e7-d5c6", "hidden": false, "targetId": "0553-d06b-52b9-34db", "type": "rule"},
+          {
+            "name": "Eternal Warrior (X)",
+            "id": "67d9-202d-c046-d026",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "15b4-9e4a-f361-c5a3",
+            "type": "rule",
+            "modifiers": [
               {
-                "name": "Vaultsword",
-                "id": "e235-75aa-97a7-14d1",
+                "field": "name",
+                "type": "set",
+                "value": "Eternal Warrior (1)",
+                "conditions": [{"childId": "680b-53b4-4f4b-551f", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "equalTo", "value": 0}]
+              },
+              {
+                "field": "name",
+                "type": "set",
+                "value": "Eternal Warrior (2)",
+                "conditions": [{"childId": "680b-53b4-4f4b-551f", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          },
+          {"name": "Firestorm", "id": "326d-a996-84a3-b036", "hidden": false, "targetId": "3ed1-c5b3-a98d-1b12", "type": "rule"},
+          {"name": "Outflank", "id": "55e1-9ea5-89c3-0a41", "hidden": false, "targetId": "92d2-cc57-1ef6-a712", "type": "rule"},
+          {
+            "name": "Vanguard (X)",
+            "id": "ffb4-4f49-e397-e5c9",
+            "comment": "3",
+            "hidden": false,
+            "targetId": "530f-b733-993c-ec84",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Vanguard (3)"}]
+          },
+          {
+            "name": "Firing Protocols (X)",
+            "id": "4e90-1e74-fd4a-bfde",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "84f2-5a93-c2eb-826f",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "2"}]
+          },
+          {
+            "name": "Precision (X)",
+            "id": "6ec5-c918-0d61-687f",
+            "comment": "5+",
+            "hidden": false,
+            "targetId": "4fbd-e0bc-8f72-6e3f",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "5+"}]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Ephoroi Excelsis",
+            "id": "946e-726d-21fa-cd76",
+            "description": "If a Model with this Special Rule has joined a Venatari Sodality Unit in Reserves, the Controlling Player may choose to automatically succeed at any Reserves Test they make for that Unit.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Ephoroi Venatari Proconsul",
+            "id": "7bf6-936f-5f2f-3a12",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Infantry Model Type", "id": "b137-6735-0804-a85e", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"},
+              {"name": "Command Model Sub-type", "id": "8786-e303-1ece-857a", "hidden": false, "primary": false, "targetId": "9871-cb62-5283-2216"},
+              {"name": "Antigrav Model Sub-Type", "id": "65dc-e882-0ef7-8a2a", "hidden": false, "primary": false, "targetId": "c504-9dfa-35d3-c98f"},
+              {"name": "Light Model Sub-Type", "id": "0377-3948-1e95-238e", "hidden": false, "primary": false, "targetId": "f4ba-00e5-3d2e-eaac"}
+            ],
+            "constraints": [
+              {"id": "cc6a-824f-6b8d-ffc7", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "44cf-7372-491f-7145", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Misericordia",
+                "id": "59dc-5949-25c4-019b",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
-                "type": "upgrade",
+                "sortIndex": 2,
+                "targetId": "e15c-465c-8a7a-7e34",
+                "type": "selectionEntry",
                 "constraints": [
-                  {"id": "bc34-c1c4-eaa6-1bbf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "506c-9a8b-3add-70b1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                  {"id": "f7a9-3c50-569e-5f34", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f1c4-3dbe-7175-9a5d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Neutronium cascade mine",
+                "id": "766d-7bd0-666d-4665",
+                "hidden": false,
+                "import": true,
+                "targetId": "7dd1-1135-784d-12fc",
+                "type": "selectionEntry",
+                "constraints": [{"id": "ee1f-57a5-3648-77c4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Ephoroi Venatari Proconsul",
+                "id": "b46a-7844-93ed-ca1f",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Infantry (Command, Antigrav, Light)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "14", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "6", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "7", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "5", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "5", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "3", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "5", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "3", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "10", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "10", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "9", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "9", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "3+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "4+", "typeId": "a951-a772-7ce0-0b64"}
                 ],
-                "infoLinks": [
+                "modifierGroups": [
                   {
-                    "name": "Duellist's Edge (X)",
-                    "id": "3361-ed57-81f7-a19a",
-                    "comment": "1",
-                    "hidden": false,
-                    "targetId": "94bc-c69f-99b6-8ba0",
-                    "type": "rule",
-                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+                    "comment": "Paragon of Battle",
+                    "type": "and",
+                    "conditions": [{"childId": "20cb-4eec-0844-8a97", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"comment": "Paragon of Battle", "field": "253c-d694-4695-c89e", "type": "increment", "value": 1},
+                      {"comment": "Paragon of Battle", "field": "0cd5-b269-e3bc-028b", "type": "increment", "value": 1},
+                      {"comment": "Paragon of Battle", "field": "024e-bdb1-7982-25a0", "type": "increment", "value": 1}
+                    ]
                   },
                   {
-                    "name": "Precision (X)",
-                    "id": "463b-d6e9-942b-3334",
-                    "comment": "4+",
-                    "hidden": false,
-                    "targetId": "4fbd-e0bc-8f72-6e3f",
-                    "type": "rule",
-                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "4+"}]
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
                   }
                 ],
-                "profiles": [
+                "modifiers": [
                   {
-                    "name": "Vaultsword",
-                    "id": "20ee-cbd1-3687-8710",
+                    "field": "f5cc-79a3-d302-cc1d",
+                    "type": "increment",
+                    "value": 1,
+                    "conditions": [{"childId": "43e4-8335-e000-62a6", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Weapons",
+                "id": "afcb-2ad7-861a-2f5f",
+                "defaultSelectionEntryId": "9ba9-452d-dc03-0330",
+                "hidden": false,
+                "sortIndex": 1,
+                "constraints": [{"id": "5bb9-61c2-0f63-0673", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "selectionEntries": [
+                  {
+                    "name": "Two Kinetic destroyers",
+                    "id": "9ba9-452d-dc03-0330",
                     "hidden": false,
-                    "typeId": "3587-6dcd-005c-c263",
-                    "typeName": "Melee Weapon",
-                    "characteristics": [
-                      {"name": "IM", "$text": "+1", "typeId": "6eec-4093-f946-1014"},
-                      {"name": "AM", "$text": "+2", "typeId": "03d0-6094-84f0-e27e"},
-                      {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
-                      {"name": "AP", "$text": "2", "typeId": "a014-126b-3b7b-27e8"},
-                      {"name": "D", "$text": "1", "typeId": "6a9d-4feb-065a-33e7"},
-                      {"name": "Special Rules", "$text": "Duellist's Edge (1), Precision (4+)", "typeId": "ebe0-7b28-b40c-694e"},
-                      {"name": "Traits", "$text": "Power", "typeId": "76e3-c188-bc65-3467"}
+                    "import": true,
+                    "sortIndex": 1,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Kinetic destroyer",
+                        "id": "0d5f-5c65-1a8b-bd6a",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "2f8b-e409-6a0c-896f",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "4092-5ad5-378d-7dfe", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "8b04-0bc4-fd17-f6a6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "One Kinetic destroyer and one Vaultsword",
+                    "id": "0605-3060-0dab-4b7a",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "type": "upgrade",
+                    "costs": [
+                      {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15},
+                      {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                      {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                      {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                      {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                      {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                      {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                      {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Kinetic destroyer",
+                        "id": "bcf8-d6a2-8a78-7e95",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "2f8b-e409-6a0c-896f",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "4529-2b37-3286-e41f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "102e-839c-2196-e19a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {"name": "Vaultsword", "id": "f6a7-2963-f1b5-42fc", "hidden": false, "import": true, "targetId": "e235-75aa-97a7-14d1", "type": "selectionEntry"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vaultsword",
+        "id": "e235-75aa-97a7-14d1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "bc34-c1c4-eaa6-1bbf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "506c-9a8b-3add-70b1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {
+            "name": "Duellist's Edge (X)",
+            "id": "3361-ed57-81f7-a19a",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "94bc-c69f-99b6-8ba0",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {
+            "name": "Precision (X)",
+            "id": "463b-d6e9-942b-3334",
+            "comment": "4+",
+            "hidden": false,
+            "targetId": "4fbd-e0bc-8f72-6e3f",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "4+"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Vaultsword",
+            "id": "20ee-cbd1-3687-8710",
+            "hidden": false,
+            "typeId": "3587-6dcd-005c-c263",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "IM", "$text": "+1", "typeId": "6eec-4093-f946-1014"},
+              {"name": "AM", "$text": "+2", "typeId": "03d0-6094-84f0-e27e"},
+              {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
+              {"name": "AP", "$text": "2", "typeId": "a014-126b-3b7b-27e8"},
+              {"name": "D", "$text": "1", "typeId": "6a9d-4feb-065a-33e7"},
+              {"name": "Special Rules", "$text": "Duellist's Edge (1), Precision (4+)", "typeId": "ebe0-7b28-b40c-694e"},
+              {"name": "Traits", "$text": "Power", "typeId": "76e3-c188-bc65-3467"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hykanatoi Proconsul-Delegate",
+        "id": "c268-c125-67a4-8acd",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 22,
+        "type": "unit",
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 80},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Prime Unit",
+            "id": "e808-9391-3463-44bd",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [{"name": "Prime Benefits", "id": "bd17-66f1-9f97-d7d6", "hidden": false, "import": true, "targetId": "6f4b-388a-b001-abde", "type": "selectionEntryGroup"}]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "2c75-8021-3f17-49f3",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "50ad-a9a5-1f1d-9a25",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Bulky (2)"}]
+          },
+          {
+            "name": "Eternal Warrior (X)",
+            "id": "1109-e699-4706-f4b8",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "15b4-9e4a-f361-c5a3",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "name",
+                "type": "set",
+                "value": "Eternal Warrior (1)",
+                "conditions": [{"childId": "680b-53b4-4f4b-551f", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "equalTo", "value": 0}]
+              },
+              {
+                "field": "name",
+                "type": "set",
+                "value": "Eternal Warrior (2)",
+                "conditions": [{"childId": "680b-53b4-4f4b-551f", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          },
+          {"name": "Lightning Blows", "id": "cc1f-a98d-e62b-bcc2", "hidden": false, "targetId": "9f68-a519-8e29-cb44", "type": "rule"},
+          {
+            "name": "Vanguard (X)",
+            "id": "143e-5b4a-cc3a-09f5",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "530f-b733-993c-ec84",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "set", "value": "Vanguard (2)"}]
+          },
+          {"name": "[Allegiance]", "id": "e07c-6c40-09a0-3e08", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
+          {"name": "Legio Custodes", "id": "7abe-1cbf-dfc4-7c3e", "hidden": false, "targetId": "c717-38ae-cee2-19f7", "type": "profile"},
+          {"name": "The Sodality", "id": "dd42-c8fe-5b65-b1ba", "hidden": false, "targetId": "ec17-9d84-3666-e7c7", "type": "profile"},
+          {
+            "name": "Shield",
+            "id": "c393-5acc-e72e-587a",
+            "hidden": true,
+            "targetId": "1af7-07d5-7558-0b64",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "75e1-a607-2a64-02b2",
+                    "childName": "One sentinel warblade and one praesidium shield",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Hykanatoi Excelsis",
+            "id": "59f5-d6fc-9d38-0ec8",
+            "description": "*Magisterium Vexillas in the same Unit as a Model with this Special Rule have a range of 10\".*\n\n\nWhile a Model with this Special Rule has joined a Custodian Guard Sodality or Sentinel Guard Sodality Unit, any Model in that Unit with a Magisterium Vexilla is considered to be 2\" closer to any enemy Model when determining whether that item of Wargear comes into effect.",
+            "hidden": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Hykanatoi Proconsul-Delegate",
+            "id": "323e-e4f4-4ec4-1c61",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Infantry Model Type", "id": "7b56-cebe-6821-e2c8", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"},
+              {"name": "Command Model Sub-type", "id": "051c-069c-1cc5-6136", "hidden": false, "primary": false, "targetId": "9871-cb62-5283-2216"}
+            ],
+            "constraints": [
+              {"id": "9d4a-42f7-daec-389a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "8a07-00a0-06df-e06b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Misericordia",
+                "id": "6c06-1156-d4da-6f11",
+                "hidden": false,
+                "import": true,
+                "targetId": "e15c-465c-8a7a-7e34",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "e2c9-1ea0-ca0d-7776", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2d57-f576-a452-695e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hykanatoi Proconsul-Delegate",
+                "id": "d205-b8fe-3f75-89d2",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Infantry (Command)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "8", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "5", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "5", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "5", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "5", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "2", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "5", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "3", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "10", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "10", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "9", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "9", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "2+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "6+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Paragon of Battle",
+                    "type": "and",
+                    "conditions": [{"childId": "20cb-4eec-0844-8a97", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"comment": "Paragon of Battle", "field": "253c-d694-4695-c89e", "type": "increment", "value": 1},
+                      {"comment": "Paragon of Battle", "field": "0cd5-b269-e3bc-028b", "type": "increment", "value": 1},
+                      {"comment": "Paragon of Battle", "field": "024e-bdb1-7982-25a0", "type": "increment", "value": 1}
+                    ]
+                  },
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "comment": "Prefect",
+                    "field": "f5cc-79a3-d302-cc1d",
+                    "type": "increment",
+                    "value": 1,
+                    "conditions": [{"childId": "43e4-8335-e000-62a6", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+                  },
+                  {
+                    "field": "a951-a772-7ce0-0b64",
+                    "type": "set",
+                    "value": "5+",
+                    "conditions": [
+                      {
+                        "childId": "75e1-a607-2a64-02b2",
+                        "childName": "One sentinel warblade and one praesidium shield",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Options",
+                "id": "8b20-b6df-4baa-80d8",
+                "defaultSelectionEntryId": "c505-7e93-eff1-8be5",
+                "hidden": false,
+                "sortIndex": 1,
+                "constraints": [
+                  {"id": "b136-0363-e100-c38e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "199a-7a0a-7388-8c4a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "One sentinel warblade",
+                    "id": "c505-7e93-eff1-8be5",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Sentinel warblade",
+                        "id": "e610-0de3-4b7c-559f",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "e50e-bfd0-7701-9a40",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "593f-feb4-7258-7ea6", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "aba0-7158-841f-379f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "One sentinel warblade and one praesidium shield",
+                    "id": "75e1-a607-2a64-02b2",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "type": "upgrade",
+                    "costs": [
+                      {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 5},
+                      {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                      {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                      {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                      {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                      {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                      {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                      {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Sentinel warblade",
+                        "id": "e103-6794-cba6-289f",
+                        "hidden": false,
+                        "import": true,
+                        "sortIndex": 1,
+                        "targetId": "e50e-bfd0-7701-9a40",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "5af6-fe7b-a56e-3cbf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "d30c-da75-fdad-3156", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Praesidium Shield",
+                        "id": "e137-a144-31ba-8cb8",
+                        "hidden": false,
+                        "import": true,
+                        "sortIndex": 2,
+                        "targetId": "7148-e1ac-796f-b6f8",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "ff10-8547-acba-89f8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "bf8f-3a25-eb94-ef09", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "One guardian spear",
+                    "id": "24dc-64cd-ae49-164f",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 3,
+                    "type": "upgrade",
+                    "costs": [
+                      {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10},
+                      {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                      {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                      {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                      {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                      {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                      {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                      {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Guardian spear",
+                        "id": "7ec0-e03f-3fcd-815e",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f11a-9969-7f94-2ea8",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "4df2-9cd5-7d18-2e6b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "b60e-ecc5-2c40-e894", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -7091,7 +7820,7 @@
                   {
                     "name": "Prefect",
                     "id": "28fb-ffb2-ad9d-8596",
-                    "description": "All Models in the Unit selected to fill a Prime Slot with thisd Prime Advantage modify their Base Wounds Characteristic by +1 and gain the Officer of the Line (2) Special Rule",
+                    "description": "This Prime Advantage may only be selected for a Prime Slot used to select a Shield Captain Unit. All Models in the Unit selected to fill a Prime Slot with this Prime Advantage modify their Base Wounds Characteristic by +1 and gain the Officer of the Line (2) Special Rule",
                     "hidden": false
                   }
                 ]

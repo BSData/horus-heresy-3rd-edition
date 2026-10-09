@@ -198,6 +198,14 @@
         "typeId": "d5a9-9164-1e30-7a35",
         "typeName": "Traits",
         "characteristics": [{"name": "Description", "$text": "", "typeId": "d5eb-0b8b-0f26-6233"}]
+      },
+      {
+        "name": "Whisperer",
+        "id": "afb6-1aff-2a08-20f2",
+        "hidden": false,
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "characteristics": [{"name": "Description", "$text": "", "typeId": "d5eb-0b8b-0f26-6233"}]
       }
     ],
     "sharedSelectionEntries": [
@@ -1075,6 +1083,75 @@
                 "typeId": "8d43-934e-e511-0cfd"
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Enraptura",
+        "id": "6aa2-27ff-e02c-4621",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Whisperer", "id": "cc54-4e86-347c-2c99", "hidden": false, "targetId": "afb6-1aff-2a08-20f2", "type": "profile"}],
+        "profiles": [
+          {
+            "name": "Beguile",
+            "id": "f64a-846b-655c-3ab5",
+            "hidden": false,
+            "typeId": "9dfb-2fa3-00e7-8cfd",
+            "typeName": "Psychic Power",
+            "characteristics": [
+              {
+                "name": "Summary",
+                "$text": "If it is successful, the Target of this Curse cannot make Reactions that are triggered by a Unit with the Slaanesh Trait.",
+                "typeId": "981f-bb86-6a74-9b20"
+              },
+              {"name": "Trigger", "$text": "The Active Player may choose to Manifest the Beguile Psychic Power in any Phase.", "typeId": "1be9-f118-1cf3-357e"},
+              {
+                "name": "Focus",
+                "$text": "The Focus of the Power must be a Model with the Whisperer Trait and must be controlled by the Active Player.",
+                "typeId": "3f2d-f6e7-e6d3-1f86"
+              },
+              {
+                "name": "Target",
+                "$text": "The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18\" of the Focus and with Line of Sight to the Focus.",
+                "typeId": "2ba0-fbf8-ed6c-3770"
+              },
+              {
+                "name": "Duration",
+                "$text": "If successfully Manifested, the effects of this Psychic Power are resolved immediately and last for the duration of the current Player Turn.",
+                "typeId": "d7d5-5b31-5b37-66c4"
+              },
+              {
+                "name": "Process",
+                "$text": "1. Once the Focus and Target Unit have been decided, the Controlling Player of the Target Unit must make a Resistance Check. Models without a Willpower Characteristic are considered to have a Base Willpower Characteristic of 8 for the purposes of resolving this Psychic Power.\n2. If the Resistance Check is failed, the Target Unit may not have any Reactions declared for it, if the Unit that Triggered the Reaction contains and Models with the Shaanesh Trait.\n3. If the Resistance Check is passed then there is no further effect. However, if the Resistance Check is passed with a result of doubles, the Focus suffers Perils of the Warp.",
+                "typeId": "3804-b2cf-9f1a-4ff0"
+              }
+            ]
+          },
+          {
+            "name": "Malignity",
+            "id": "bede-8362-1b85-c589",
+            "hidden": false,
+            "typeId": "7d31-7144-3b28-c850",
+            "typeName": "Psychic Ranged Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "12", "typeId": "6d86-f7c6-c184-8bf4"},
+              {"name": "FP", "$text": "*", "typeId": "99a5-a4b9-8862-5092"},
+              {"name": "RS", "$text": "*", "typeId": "ff4a-ab25-1be8-4545"},
+              {"name": "AP", "$text": "*", "typeId": "c8d6-d2ec-1344-07e3"},
+              {"name": "D", "$text": "*", "typeId": "e840-f63c-5bc4-27b3"},
+              {"name": "Special Rules", "$text": "Malignity", "typeId": "e87b-e7a3-5562-a456"},
+              {"name": "Traits", "$text": "Psychi", "typeId": "a229-21ce-4177-c4b1"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Malignity",
+            "id": "3e96-1e50-5d01-4a17",
+            "description": "After selecting a Target Unit for an attack with this Special Rule, but before making any Hit Tests, first make a Willpower Check for the Model making the attack. If the check is failed, then the attack ends immediately, and if a double is rolled when making the Willpower Check then the attacking Unit suffers Perils of the Warp. If the check is passed, then the attacker selects a single ranged weapon from any Model in the Target Unit. The rest of this attack is then resolved using the FP, RS, AP, D and Special Rules of the selected weapon. If the selected Weapon had the Blast (X) or Template special rules, then the FP of this attack is treated as D6 instead of the value of the selected weapon and the attack does not use the Blast (X) or Template Special Rules and no blast markers or templates are placed.",
+            "hidden": false
           }
         ]
       }
