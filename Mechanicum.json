@@ -11362,46 +11362,6 @@
         ],
         "selectionEntries": [
           {
-            "name": "Decimator claw w/ Heavy Flamer",
-            "id": "e99c-fb1f-382f-98e8",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "b1e7-85fa-99da-1843", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
-              {"id": "d4ec-e5f3-2b05-7c31", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
-            ],
-            "entryLinks": [
-              {
-                "name": "Heavy flamer",
-                "id": "171f-defd-4da2-6900",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "targetId": "4fa7-ea45-2a89-ad86",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "c4b6-6ccc-4c70-ddf6", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
-                  {"id": "9159-18a1-4412-c4d8", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
-                ]
-              },
-              {
-                "name": "Decimator claw",
-                "id": "7e4a-7df9-aaf4-1d9e",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "targetId": "711e-da62-be5d-72b5",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "2d8f-f843-9ec1-6d76", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
-                  {"id": "55f7-a319-5847-8bba", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
-                ]
-              }
-            ]
-          },
-          {
             "name": "Decimator ",
             "id": "5d38-5ed9-f018-126b",
             "hidden": false,
@@ -11489,7 +11449,7 @@
         ],
         "selectionEntryGroups": [
           {
-            "name": "May exchange:",
+            "name": "Arm 1",
             "id": "2c6f-ec5e-43dc-aa20",
             "defaultSelectionEntryId": "1d2f-c9ff-ecbd-b1b8",
             "hidden": false,
@@ -11642,6 +11602,166 @@
                     "constraints": [
                       {"id": "aab8-cbac-ac5a-0782", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
                       {"id": "4629-bf6c-a482-b5a1", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Arm 2",
+            "id": "f8e5-7be8-4034-e294",
+            "defaultSelectionEntryId": "1d2f-c9ff-ecbd-b1b8",
+            "hidden": false,
+            "sortIndex": 3,
+            "constraints": [
+              {"id": "863f-59de-7dfd-f472", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0282-2a29-287e-c24a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Soulburner petard",
+                "id": "2883-7895-7ea5-1468",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "type": "upgrade",
+                "costs": [
+                  {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15},
+                  {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
+                  {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0}
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Shred (X)",
+                    "id": "9751-e3ad-a4f2-16bd",
+                    "comment": "5+",
+                    "hidden": false,
+                    "targetId": "d01e-f96b-b5c1-8fb1",
+                    "type": "rule",
+                    "modifiers": [{"field": "name", "type": "set", "value": "Shred (5+)"}]
+                  },
+                  {
+                    "name": "Blast (X)",
+                    "id": "e683-35a8-7b7d-a554",
+                    "comment": "3\"",
+                    "hidden": false,
+                    "targetId": "8687-05f8-7034-412c",
+                    "type": "rule",
+                    "modifiers": [{"field": "name", "type": "set", "value": "Blast (3\")"}]
+                  },
+                  {
+                    "name": "Poisoned (X)",
+                    "id": "ed53-beb2-12dd-59bf",
+                    "comment": "2+",
+                    "hidden": false,
+                    "targetId": "076f-2c91-c58b-71b3",
+                    "type": "rule",
+                    "modifiers": [{"field": "name", "type": "set", "value": "Poisoned (2+)"}]
+                  },
+                  {
+                    "name": "Stun (X)",
+                    "id": "ccc9-22e2-437b-fbac",
+                    "comment": "0",
+                    "hidden": false,
+                    "targetId": "c7c1-bbc9-f852-6f71",
+                    "type": "rule",
+                    "modifiers": [{"field": "name", "type": "set", "value": "Stun (0)"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Soulburner petard",
+                    "id": "b8b6-152a-ce89-6216",
+                    "hidden": false,
+                    "typeId": "c591-09ed-3e6f-eb2b",
+                    "typeName": "Ranged Weapon",
+                    "characteristics": [
+                      {"name": "R", "$text": "24", "typeId": "cdb0-8654-6840-1037"},
+                      {"name": "FP", "$text": "1", "typeId": "5037-1f27-1790-e355"},
+                      {"name": "RS", "$text": "7", "typeId": "b9da-ee13-79f9-fa63"},
+                      {"name": "AP", "$text": "4", "typeId": "7a23-0248-2b94-5951"},
+                      {"name": "D", "$text": "1", "typeId": "88c3-1ca5-7dc1-f291"},
+                      {"name": "Special Rules", "$text": "Blast (3\"), Shred (5+), Poisoned (2+), Stun (0)", "typeId": "5aad-137a-8ee2-63fd"},
+                      {"name": "Traits", "$text": "-", "typeId": "1247-79d2-6cc1-8a03"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Butcher cannon",
+                "id": "ea08-18fb-b691-66d7",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "upgrade",
+                "costs": [
+                  {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20},
+                  {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
+                  {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0}
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Breaching (X)",
+                    "id": "556f-e21a-a9f8-55e8",
+                    "comment": "6+",
+                    "hidden": false,
+                    "targetId": "b094-0b64-eb57-aed6",
+                    "type": "rule",
+                    "modifiers": [{"field": "name", "type": "set", "value": "Breaching (6+)"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Butcher cannon",
+                    "id": "7bcf-02c6-81ef-e533",
+                    "hidden": false,
+                    "typeId": "c591-09ed-3e6f-eb2b",
+                    "typeName": "Ranged Weapon",
+                    "characteristics": [
+                      {"name": "R", "$text": "36", "typeId": "cdb0-8654-6840-1037"},
+                      {"name": "FP", "$text": "4", "typeId": "5037-1f27-1790-e355"},
+                      {"name": "RS", "$text": "8", "typeId": "b9da-ee13-79f9-fa63"},
+                      {"name": "AP", "$text": "4", "typeId": "7a23-0248-2b94-5951"},
+                      {"name": "D", "$text": "2", "typeId": "88c3-1ca5-7dc1-f291"},
+                      {"name": "Special Rules", "$text": "Breaching (6+)", "typeId": "5aad-137a-8ee2-63fd"},
+                      {"name": "Traits", "$text": "Assault, Auto", "typeId": "1247-79d2-6cc1-8a03"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Decimator claw w/ Heavy Flamer",
+                "id": "f167-78ea-bb1e-dc22",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "upgrade",
+                "entryLinks": [
+                  {
+                    "name": "Heavy flamer",
+                    "id": "4599-e019-fc7b-e056",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "4fa7-ea45-2a89-ad86",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "547b-ce4e-96ce-8ec8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "a0d7-1599-38d1-53b3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Decimator claw",
+                    "id": "66dc-32df-88ee-11be",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "711e-da62-be5d-72b5",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "64da-c2e6-2c06-658a", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                      {"id": "46d8-56eb-28b9-c47f", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
                     ]
                   }
                 ]
@@ -13041,6 +13161,14 @@
                 ]
               }
             ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Heterodox",
+            "id": "1917-7357-3442-eb83",
+            "description": "The controlling player of a Model with the Cybertheurgist Trait may choose to give that Model the Heterodox Trait at no additional cost and may also give a Model with the Heterodox Trait the Malefic Sub-Type for no additional cost. \n\n\nA Model with the Heterodox Trait and the Malefic Sub-Type may have its Characteristics modified for the purposes of invoking Cybertheurgic Rites. This change is a specific exception to the Rules for Models with the Malefic Sub-Type.\n\n\nA Model with the Heterodox Trait must have the Traitor Allegiance Trait. A Model that is given the Heterodox Trait may, if permitted to select Cybertheurgic Rites, select from the additional Heterodox Cybertheurgic Rites detailed in this section.",
+            "hidden": false
           }
         ],
         "selectionEntries": [
