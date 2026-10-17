@@ -418,6 +418,60 @@
         "targetId": "d950-0c4a-5d81-0578",
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Troops", "id": "5221-7dc7-378d-1f1c", "hidden": false, "primary": true, "targetId": "88e6-d373-4152-0dd8"}]
+      },
+      {
+        "name": "Ascendant Lord of Slaanesh",
+        "id": "d226-bef4-9678-1f7b",
+        "hidden": false,
+        "import": true,
+        "targetId": "cf32-c148-1133-34ea",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "High Command", "id": "9d58-306c-e5f4-0569", "hidden": false, "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}]
+      },
+      {
+        "name": "Herald of Slaanesh",
+        "id": "058f-3dff-7974-3dc5",
+        "hidden": false,
+        "import": true,
+        "targetId": "d4d6-521f-1b9c-df20",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Command", "id": "a474-97eb-1073-5dd2", "hidden": false, "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+      },
+      {
+        "name": "Slaaneshi Seekers",
+        "id": "a1f3-3032-709d-5ee4",
+        "hidden": false,
+        "import": true,
+        "targetId": "682f-b327-9448-077c",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Fast Attack", "id": "f5c0-4838-5a2b-9746", "hidden": false, "primary": true, "targetId": "cf96-8891-3f9a-8921"}]
+      },
+      {
+        "name": "Slaaneshi Fiends",
+        "id": "a6d1-0add-8a36-6083",
+        "hidden": false,
+        "import": true,
+        "targetId": "0cb6-8347-3729-59fc",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Heavy Assault", "id": "b400-4e74-5e3a-ac8b", "hidden": false, "primary": true, "targetId": "3235-bd79-e9b1-60fa"}]
+      },
+      {
+        "name": "Daemonettes",
+        "id": "bb7b-942b-eb0c-b613",
+        "hidden": false,
+        "import": true,
+        "targetId": "fc92-692b-94f5-3bfa",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Troops", "id": "33d1-9316-858e-e270", "hidden": false, "primary": true, "targetId": "88e6-d373-4152-0dd8"}]
+      },
+      {
+        "name": "Keeper of Secrets",
+        "id": "42a9-9c49-e1c9-d773",
+        "hidden": false,
+        "import": true,
+        "targetId": "ed79-0be2-d662-ef65",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Warlord", "id": "50f5-721c-079a-88f6", "hidden": false, "primary": true, "targetId": "22ee-7208-4089-b005"}]
       }
     ],
     "sharedProfiles": [
@@ -540,19 +594,80 @@
         "typeId": "d5a9-9164-1e30-7a35",
         "typeName": "Traits",
         "characteristics": [{"name": "Description", "$text": "\n", "typeId": "d5eb-0b8b-0f26-6233"}]
+      },
+      {
+        "name": "Slaanesh",
+        "id": "1068-9b65-d819-bb26",
+        "hidden": false,
+        "typeId": "d5a9-9164-1e30-7a35",
+        "typeName": "Traits",
+        "characteristics": [{"name": "Description", "$text": "", "typeId": "d5eb-0b8b-0f26-6233"}]
+      },
+      {
+        "name": "Blissful Pain",
+        "id": "d67b-a21e-fea4-0c35",
+        "hidden": false,
+        "typeId": "9b5f-da4e-5739-cbcf",
+        "typeName": "Gambit",
+        "characteristics": [
+          {
+            "name": "Summary",
+            "$text": "The Controlling Player gains attacks during the Strike Step for each Wound inflicted upon them, whether the Wounds are saved or not.",
+            "typeId": "98f3-41cf-e3be-2ae7"
+          },
+          {
+            "name": "Description",
+            "$text": "This Gambit may be selected once per Challenge. When selected, the Opposing Player gains Challenge Advantage without any Focus Roll being made. However, for each successful Wound Test made by the Opposing Player in the Strike Step, the Model this Gambit was selected for has their Attacks Characteristic modified by +2 for the duration of that Strike Step.",
+            "typeId": "2d7d-b1d9-dead-605a"
+          }
+        ]
+      },
+      {
+        "name": "Battlelust",
+        "id": "1406-6378-b2e6-0bc1",
+        "hidden": false,
+        "typeId": "c14c-ecfd-ea65-58c9",
+        "typeName": "Reaction",
+        "characteristics": [
+          {
+            "name": "Summary",
+            "$text": "This Reaction allows the Reacting Unit to move when it is the target of an Enemy Shooting Attack, and Models that survive gain a +1 Initiative Modifier until the end of their following Turn.",
+            "typeId": "5d02-0e54-0f6a-0f0b"
+          },
+          {
+            "name": "Trigger",
+            "$text": "Once per Turn, the Reactive Player may declare a Battlelust Advanced Reaction in the Shooting Phase, during step 11 of the Shooting Attack sequence of any Shooting Attack made by the Active Player, after Removing any Casualties caused by that Shooting Attack.",
+            "typeId": "02e4-3f90-3125-f8b4"
+          },
+          {
+            "name": "Cost",
+            "$text": "The Reactive Player must spend 1 point of their Reaction Allowance to declare a Battlelust Advanced Reaction.",
+            "typeId": "954a-972f-5c94-2ede"
+          },
+          {
+            "name": "Target",
+            "$text": "The Target Unit of this Reaction is always the Unit whose Shooting Attacktriggered the Reaction. The Reacting Unit is always the Unit that was the Target Unit of the Shooting Attack that triggered the Reaction",
+            "typeId": "e102-8fdd-9cd4-c0f9"
+          },
+          {
+            "name": "Process",
+            "$text": "1. Once a Battlelust Advanced Reaction has been declared, the Reactive Player must roll a Dice. Each model in the Reacting Unit may be moved up to a distance in inches equal to the result of the Dice roll.\n2. Once the Reacting Unit has been moved, all Models in the Unit gain an additional +1 modifier to their Initiative Characteristic until the end of the Controlling Player's next Player Turn.",
+            "typeId": "57cf-1c68-a020-2529"
+          }
+        ]
       }
     ],
     "sharedRules": [
       {
         "name": "Desecrators",
         "id": "abbc-74e2-bd52-60fd",
-        "description": "\"Models with this Special Rule that pass a Willpower Check gain the Line (X) Special Rule.\"\n\n\n\n\nAt the start of each Victory Sub-Phase, the Controlling Player of a Unit composed entirely of Models with this Special Rule may make a Willpower Check. If the Willpower Check is passed all Models in the Unit gain the Line (X) Special Rule until the end of the current Victory Sub-Phase. The value of X is determined by how much the final result of the Check is less than the Willpower Characteristic used for the Check:\n\n\n0-1           = Line (1)\n2              = Line (2)\n3 or more = Line (3)\n\n\nIf the Willpower Check is failed, the Unit suffers Perils of the Warp.",
+        "description": "**Models with this Special Rule that pass a Willpower Check gain the Line (X) Special Rule.**\n\n\n\n\nAt the start of each Victory Sub-Phase, the Controlling Player of a Unit composed entirely of Models with this Special Rule may make a Willpower Check. If the Willpower Check is passed all Models in the Unit gain the Line (X) Special Rule until the end of the current Victory Sub-Phase. The value of X is determined by how much the final result of the Check is less than the Willpower Characteristic used for the Check:\n\n\n0-1 = Line (1)\n2 = Line (2)\n3 or more = Line (3)\n\n\nIf the Willpower Check is failed, the Unit suffers Perils of the Warp.",
         "hidden": false
       },
       {
         "name": "Primal Terror",
         "id": "44bb-4eee-0299-caba",
-        "description": "\"Opposing Units must make Leadership Checks when making a Reaction triggered by, or a Charge targeting, a Model with this Special Rule.\"\n\n\n\n\nWhen a Unit with a Model with the Primal Terror Special Rule is declared as the Target Unit of a Charge or as the Target Unit of a Reaction or Advanced Reaction, the Controlling Player of the Unit the Charge or Reaction is declared for must make a Leadership Check. If the Leadership is passed, the Charge or Reaction is resolved as normal. If the Check is failed, the Unit for which the Charge or Reaction was declared for immediately gains the Stunned Status and the Controlling Player may not declare another Charge or Reaction for that Unit during this Phase, but their remaining Reaction Allotment is not reduced.",
+        "description": "**Opposing Units must make Leadership Checks when making a Reaction triggered by, or a Charge targeting, a Model with this Special Rule.**\n\n\n\n\nWhen a Unit with a Model with the Primal Terror Special Rule is declared as the Target Unit of a Charge or as the Target Unit of a Reaction or Advanced Reaction, the Controlling Player of the Unit the Charge or Reaction is declared for must make a Leadership Check. If the Leadership is passed, the Charge or Reaction is resolved as normal. If the Check is failed, the Unit for which the Charge or Reaction was declared for immediately gains the Stunned Status and the Controlling Player may not declare another Charge or Reaction for that Unit during this Phase, but their remaining Reaction Allotment is not reduced.",
         "hidden": false
       },
       {
@@ -564,7 +679,13 @@
       {
         "name": "Herald of Unreality",
         "id": "395b-8055-cbc3-2642",
-        "description": "During the Declare Mission Reserves Step, the Controlling Player may select one other Unit from the Daemons of the Ruinstorm Army List that is part of the Army, for each Model with this Special Rule in an Army. Each Model in each of the selected Units gains the Deep Strike Special Rule and the Warp Rift Trait for the duration of the Battle.\n\n\n\n\nDuring any of their Reserves Sub-Phases, the Controlling Player of any Model with this Special Rule can select one friendly Model with this Special Rule, that is not Locked in Combat, to open a warp rift. If they do so, they can select one Unit from their Army that is in Reserves that only contains Models with the Warp Rift Trait. Reserve Rolls made for that Unit during this Sub-Phase are automatically successful, and the Unit performs a Deep Strike as normal, with the following exceptions:\n\n\n- The first Model from the Unit must be placed in Base-to-Base Contact with the Model that opened the warp rift.\n- The Unit may have a Charge declared for it in the Charge Sub-Phase of the same Player Turn.",
+        "description": "**During the Declare Mission Reserves Step, the Controlling Player may select one other Unit from the Daemons of the Ruinstorm Army List that is part of the Army, for each Model with this Special Rule in an Army. Each Model in each of the selected Units gains the Deep Strike Special Rule and the Warp Rift Trait for the duration of the Battle.**\n\n\n\n\nDuring any of their Reserves Sub-Phases, the Controlling Player of any Model with this Special Rule can select one friendly Model with this Special Rule, that is not Locked in Combat, to open a warp rift. If they do so, they can select one Unit from their Army that is in Reserves that only contains Models with the Warp Rift Trait. Reserve Rolls made for that Unit during this Sub-Phase are automatically successful, and the Unit performs a Deep Strike as normal, with the following exceptions:\n\n\n- The first Model from the Unit must be placed in Base-to-Base Contact with the Model that opened the warp rift.\n- The Unit may have a Charge declared for it in the Charge Sub-Phase of the same Player Turn.",
+        "hidden": false
+      },
+      {
+        "name": "Exquisite Suffering",
+        "id": "a034-592a-3661-13a6",
+        "description": "**Daemonettes score additional Combat Resolution Points when their opponents fail Feel No Pain Damage Mitigation Rolls.**\n\n\nWhen totalling the Combat Resolution Points scored by Players in a Combat, the Controlling Player of any Models with this Special Rule gain +1 Combat Resolution Point for each Feel No Pain Damage Mitigation Roll made for an Enemy Model, against a Wound from a Melee Attack made by any Models with this Special Rule that resulted in a 1.",
         "hidden": false
       }
     ],
@@ -7210,6 +7331,1972 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Ascendant Lord of Slaanesh",
+        "id": "cf32-c148-1133-34ea",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 201,
+        "type": "unit",
+        "categoryLinks": [{"name": "Slaanesh", "id": "8531-573f-5542-a6bb", "hidden": false, "primary": false, "targetId": "e7b7-e508-e6c9-58ba"}],
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 300},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "High Command Detachment Choice",
+            "id": "41a8-102a-7d32-e63f",
+            "hidden": false,
+            "import": true,
+            "targetId": "969e-8b5b-1410-cfc6",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Prime Unit",
+            "id": "2fb6-fc8f-f241-3071",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [
+              {
+                "name": "Daemonic Prime Benefits",
+                "id": "661b-473c-8b0c-9a9b",
+                "hidden": false,
+                "import": true,
+                "targetId": "6a33-a28e-9c63-5829",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "3763-58a4-9f49-6094",
+            "comment": "7",
+            "hidden": false,
+            "targetId": "50ad-a9a5-1f1d-9a25",
+            "type": "rule",
+            "modifiers": [
+              {
+                "arg": "X",
+                "field": "name",
+                "type": "replace",
+                "value": "7",
+                "conditions": [
+                  {
+                    "childId": "dce4-2d4c-558b-2f38",
+                    "childName": "Wings",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "arg": "X",
+                "field": "name",
+                "type": "replace",
+                "value": "8",
+                "conditions": [
+                  {
+                    "childId": "dce4-2d4c-558b-2f38",
+                    "childName": "Wings",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"name": "Champion of the Dark Gods", "id": "82f6-a579-1cca-8391", "hidden": false, "targetId": "b086-4006-5762-38f1", "type": "rule"},
+          {
+            "name": "Eternal Warrior (X)",
+            "id": "6ee4-07bf-e39c-42fc",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "15b4-9e4a-f361-c5a3",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {
+            "name": "Fear (X)",
+            "id": "f17a-4fda-5d90-6188",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "0ebc-0c92-2209-6393",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {"name": "[Allegiance]", "id": "0f8b-390a-3042-0711", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
+          {"name": "Slaanesh", "id": "7f54-7c64-21b7-d053", "hidden": false, "targetId": "1068-9b65-d819-bb26", "type": "profile"},
+          {"name": "Psyker", "id": "6fac-fc65-118b-9b48", "hidden": false, "targetId": "0d5a-bf3a-7b46-785a", "type": "profile"},
+          {"name": "Blissful Pain", "id": "79db-e614-3349-e06c", "hidden": false, "targetId": "d67b-a21e-fea4-0c35", "type": "profile"},
+          {"name": "Hedonists", "id": "49c9-e247-575a-a4db", "hidden": false, "targetId": "9b7e-edb4-353c-3a3e", "type": "rule"},
+          {"name": "Soporific Musk", "id": "64e8-40d5-44e4-0c2c", "hidden": false, "targetId": "cdb4-49d4-88d7-a2c6", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Ascendant Lord of Slaanesh",
+            "id": "b377-30a1-14af-a632",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Infantry Model Type", "id": "62bd-7309-5a8a-bb12", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"},
+              {"name": "Malefic Sub-type", "id": "b8b3-edff-cca2-c4a7", "hidden": false, "primary": false, "targetId": "2de1-ddd6-ebb4-10df"},
+              {"name": "Champion Model Sub-Type", "id": "bc53-fd1d-f8d6-2eaf", "hidden": false, "primary": false, "targetId": "5a95-e564-96b2-8dc9"}
+            ],
+            "constraints": [
+              {"id": "97f0-6f91-6a05-9818", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "41e5-1a51-dbbe-cd3a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [
+              {
+                "name": "Wings",
+                "id": "19a6-d3e9-c8ce-e366",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "8d4f-9caf-eaba-c817",
+                "type": "selectionEntry",
+                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 30}]
+              }
+            ],
+            "infoLinks": [{"name": "Battlelust", "id": "f8fb-d366-4759-8438", "hidden": false, "targetId": "1406-6378-b2e6-0bc1", "type": "profile"}],
+            "modifierGroups": [
+              {
+                "comment": "Wings",
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "19a6-d3e9-c8ce-e366",
+                    "childName": "Wings",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [{"field": "category", "type": "add", "value": "c504-9dfa-35d3-c98f"}, {"field": "name", "join": " ", "type": "append", "value": "with Wings"}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Ascendant Lord of Slaanesh",
+                "id": "eac5-f1e8-0b26-b196",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Infantry (Champion, Malefic)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "7", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "6", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "5", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "6", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "6", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "6", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "5", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "4", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "9", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "9", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "9", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "7", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "2+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "4+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Wings",
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "19a6-d3e9-c8ce-e366",
+                        "childName": "Wings",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "a106-a779-d272-5e93", "type": "set", "value": "12"},
+                      {"field": "name", "join": " ", "type": "append", "value": "with Wings"},
+                      {"arg": ")", "field": "50fc-9241-d4a2-045b", "type": "replace", "value": ", Antigrav)"}
+                    ]
+                  },
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  },
+                  {
+                    "comment": "Alignment mismatch",
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "ee84-02b2-5444-e62b",
+                        "childName": "Alignment mismatch",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "decrement", "value": 2},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "decrement", "value": 2},
+                      {"field": "f714-1726-37d3-44df", "type": "decrement", "value": 2},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "decrement", "value": 2}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Weapon",
+                "id": "65be-3f61-c0c5-3fe9",
+                "defaultSelectionEntryId": "ec24-5c2b-33c4-01d0",
+                "hidden": false,
+                "sortIndex": 2,
+                "constraints": [
+                  {"id": "4908-1599-5a16-32cd", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "c8bf-4757-01cb-1a25", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Tormentor Blade",
+                    "id": "ec24-5c2b-33c4-01d0",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "infoLinks": [
+                      {
+                        "name": "Duellist's Edge (X)",
+                        "id": "d461-ec2e-2f80-63ea",
+                        "comment": "1",
+                        "hidden": false,
+                        "targetId": "94bc-c69f-99b6-8ba0",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+                      },
+                      {
+                        "name": "Critical Hit (X)",
+                        "id": "3b48-7a33-0b4f-59bf",
+                        "comment": "6+",
+                        "hidden": false,
+                        "targetId": "fe5a-a52a-468f-3f88",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "6+"}]
+                      },
+                      {
+                        "name": "Phage (X)",
+                        "id": "eb47-7fd8-ca74-96ca",
+                        "comment": "WP",
+                        "hidden": false,
+                        "targetId": "3e26-d357-69d6-1341",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "WP"}]
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Tormentor Blade",
+                        "id": "3bb6-4030-5a0b-01ad",
+                        "hidden": false,
+                        "typeId": "3587-6dcd-005c-c263",
+                        "typeName": "Melee Weapon",
+                        "characteristics": [
+                          {"name": "IM", "$text": "+1", "typeId": "6eec-4093-f946-1014"},
+                          {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
+                          {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
+                          {"name": "AP", "$text": "2", "typeId": "a014-126b-3b7b-27e8"},
+                          {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
+                          {"name": "Special Rules", "$text": "Duellist's Edge (1), Critical Hit (6+), Phage (WP)", "typeId": "ebe0-7b28-b40c-694e"},
+                          {"name": "Traits", "$text": "Immaterial", "typeId": "76e3-c188-bc65-3467"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tormentor Greatblade",
+                    "id": "2719-3516-7fee-70f4",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [
+                      {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15},
+                      {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                      {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                      {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                      {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                      {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                      {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                      {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Critical Hit (X)",
+                        "id": "0f14-969d-bb4f-3440",
+                        "comment": "5+",
+                        "hidden": false,
+                        "targetId": "fe5a-a52a-468f-3f88",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "5+"}]
+                      },
+                      {
+                        "name": "Phage (X)",
+                        "id": "b519-b3f6-9bb4-f609",
+                        "comment": "WP",
+                        "hidden": false,
+                        "targetId": "3e26-d357-69d6-1341",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "WP"}]
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Tormentor Greatblade",
+                        "id": "0309-d7b8-7315-dd9a",
+                        "hidden": false,
+                        "typeId": "3587-6dcd-005c-c263",
+                        "typeName": "Melee Weapon",
+                        "characteristics": [
+                          {"name": "IM", "$text": "-2", "typeId": "6eec-4093-f946-1014"},
+                          {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
+                          {"name": "SM", "$text": "+2", "typeId": "4505-de6f-d4ae-6280"},
+                          {"name": "AP", "$text": "2", "typeId": "a014-126b-3b7b-27e8"},
+                          {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
+                          {"name": "Special Rules", "$text": "Critical Hit (5+), Phage (WP)", "typeId": "ebe0-7b28-b40c-694e"},
+                          {"name": "Traits", "$text": "Immaterial", "typeId": "76e3-c188-bc65-3467"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Psychic Disciplines",
+                "id": "4900-e866-b643-8713",
+                "hidden": false,
+                "sortIndex": 3,
+                "constraints": [{"id": "510b-4467-a307-b06c", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+                "entryLinks": [
+                  {
+                    "name": "Biomancy",
+                    "id": "5045-1532-36e8-160e",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "7f0b-3a53-fbba-de05",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "aad1-8ba6-79de-1f59", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20}]
+                  },
+                  {
+                    "name": "Telepathy",
+                    "id": "24b6-577c-495f-8ec7",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 3,
+                    "targetId": "13c2-f899-efef-20cb",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "64d0-3da2-21b5-afad", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}]
+                  },
+                  {
+                    "name": "Enraptura",
+                    "id": "72a4-e2df-286a-81d6",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "6aa2-27ff-e02c-4621",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "0f34-f635-f8fb-cda9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "337d-d09e-2c3b-bad9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Herald of Slaanesh",
+        "id": "d4d6-521f-1b9c-df20",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 202,
+        "type": "unit",
+        "categoryLinks": [{"name": "Slaanesh", "id": "fc32-5b7c-52b6-93e9", "hidden": false, "primary": false, "targetId": "e7b7-e508-e6c9-58ba"}],
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 135},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Prime Unit",
+            "id": "fb38-342c-8ae0-d126",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [
+              {
+                "name": "Daemonic Prime Benefits",
+                "id": "537a-8ff2-4b19-057e",
+                "hidden": false,
+                "import": true,
+                "targetId": "6a33-a28e-9c63-5829",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {"name": "[Allegiance]", "id": "cb17-d008-f900-bf5e", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
+          {"name": "Psyker", "id": "9764-a196-f80c-d07e", "hidden": false, "targetId": "0d5a-bf3a-7b46-785a", "type": "profile"},
+          {"name": "Slaanesh", "id": "dbaa-a8f9-4058-46ce", "hidden": false, "targetId": "1068-9b65-d819-bb26", "type": "profile"},
+          {"name": "Herald of Unreality", "id": "c3ef-d3eb-73bb-79ad", "hidden": false, "targetId": "395b-8055-cbc3-2642", "type": "rule"},
+          {
+            "name": "Fear (X)",
+            "id": "39cf-b123-6bb3-eaab",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "0ebc-0c92-2209-6393",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {
+            "name": "Eternal Warrior (X)",
+            "id": "3244-f395-5792-63fd",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "15b4-9e4a-f361-c5a3",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {
+            "name": "Fast (X)",
+            "id": "b140-ff16-84db-4d59",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "9ebf-3b90-be22-b9c2",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {
+            "name": "Impact (X)",
+            "id": "3626-6363-6ecb-ad3f",
+            "comment": "I",
+            "hidden": false,
+            "targetId": "6ead-c31c-ab09-2f8c",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "I"}]
+          },
+          {"name": "Battlelust", "id": "a7fb-64e4-6576-9276", "hidden": false, "targetId": "1406-6378-b2e6-0bc1", "type": "profile"},
+          {"name": "Blissful Pain", "id": "b3ce-07c7-1628-68fc", "hidden": false, "targetId": "d67b-a21e-fea4-0c35", "type": "profile"},
+          {"name": "Hedonists", "id": "6820-96da-1e68-0eef", "hidden": false, "targetId": "9b7e-edb4-353c-3a3e", "type": "rule"},
+          {"name": "Soporific Musk", "id": "918a-57d9-0f43-8c6b", "hidden": false, "targetId": "cdb4-49d4-88d7-a2c6", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Herald of Slaanesh",
+            "id": "8ce9-ec62-87e3-acff",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Infantry Model Type", "id": "0fb3-64b3-66ce-dad0", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"},
+              {"name": "Malefic Sub-type", "id": "7d7c-328f-0a89-7de5", "hidden": false, "primary": false, "targetId": "2de1-ddd6-ebb4-10df"},
+              {"name": "Command Model Sub-type", "id": "ad47-8bb7-7966-0ef1", "hidden": false, "primary": false, "targetId": "9871-cb62-5283-2216"}
+            ],
+            "constraints": [
+              {"id": "94b7-0b0a-2319-fbb6", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "4611-4268-e47f-4f4c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "Herald of Slaanesh",
+                "id": "2c8c-7d11-dd9e-432c",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Infantry (Command, Malefic)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "7", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "5", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "3", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "5", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "3", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "3", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "5", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "4", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "8", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "8", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "9", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "8", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "4+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "5+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  },
+                  {
+                    "comment": "Paragon of Battle",
+                    "type": "and",
+                    "conditions": [{"childId": "20cb-4eec-0844-8a97", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"comment": "Paragon of Battle", "field": "253c-d694-4695-c89e", "type": "increment", "value": 1},
+                      {"comment": "Paragon of Battle", "field": "0cd5-b269-e3bc-028b", "type": "increment", "value": 1},
+                      {"comment": "Paragon of Battle", "field": "024e-bdb1-7982-25a0", "type": "increment", "value": 1}
+                    ]
+                  },
+                  {
+                    "comment": "Alignment mismatch",
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "ee84-02b2-5444-e62b",
+                        "childName": "Alignment mismatch",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "decrement", "value": 2},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "decrement", "value": 2},
+                      {"field": "f714-1726-37d3-44df", "type": "decrement", "value": 2},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "decrement", "value": 2}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Ripclaws",
+                "id": "a723-0873-4731-1e4b",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "af28-272c-7789-1276", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "3d98-edeb-b983-1b6b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Rending (X)",
+                    "id": "d8bd-6516-5346-b6bd",
+                    "comment": "6+",
+                    "hidden": false,
+                    "targetId": "167f-2a64-6e61-505b",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "6+"}]
+                  },
+                  {
+                    "name": "Breaching (X)",
+                    "id": "4783-16e3-5373-f129",
+                    "comment": "6+",
+                    "hidden": false,
+                    "targetId": "b094-0b64-eb57-aed6",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "6+"}]
+                  },
+                  {
+                    "name": "Force (X)",
+                    "id": "d648-ce3b-dc9a-802d",
+                    "comment": "D",
+                    "hidden": false,
+                    "targetId": "25cd-60d0-a0a4-6b18",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "D"}]
+                  },
+                  {
+                    "name": "Phage (X)",
+                    "id": "fc2f-33f4-2890-4646",
+                    "comment": "WP",
+                    "hidden": false,
+                    "targetId": "3e26-d357-69d6-1341",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "WP"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Ripclaws",
+                    "id": "1c27-b585-a3dc-a6aa",
+                    "hidden": false,
+                    "typeId": "3587-6dcd-005c-c263",
+                    "typeName": "Melee Weapon",
+                    "characteristics": [
+                      {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
+                      {"name": "AM", "$text": "+2", "typeId": "03d0-6094-84f0-e27e"},
+                      {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
+                      {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
+                      {"name": "D", "$text": "1", "typeId": "6a9d-4feb-065a-33e7"},
+                      {"name": "Special Rules", "$text": "Rending (6+), Breaching (6+), Force (D), Phage (WP)", "typeId": "ebe0-7b28-b40c-694e"},
+                      {"name": "Traits", "$text": "Immaterial", "typeId": "76e3-c188-bc65-3467"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Psychic Disciplines",
+                "id": "d305-aa11-d47e-07ca",
+                "hidden": false,
+                "constraints": [{"id": "0023-8572-35fa-f6f3", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "entryLinks": [
+                  {
+                    "name": "Enraptura",
+                    "id": "2c25-ce46-38a3-0ffb",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "6aa2-27ff-e02c-4621",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "18dd-3877-eab6-e36a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "4045-8546-a6cb-2755", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slaaneshi Seekers",
+        "id": "682f-b327-9448-077c",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 203,
+        "type": "unit",
+        "categoryLinks": [{"name": "Slaanesh", "id": "507f-cd0c-0378-f732", "hidden": false, "primary": false, "targetId": "e7b7-e508-e6c9-58ba"}],
+        "entryLinks": [
+          {
+            "name": "Prime Unit",
+            "id": "15f1-9387-7143-4324",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [
+              {
+                "name": "Daemonic Prime Benefits",
+                "id": "bcec-c59e-5514-ebe2",
+                "hidden": false,
+                "import": true,
+                "targetId": "6a33-a28e-9c63-5829",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {"name": "Slaanesh", "id": "990f-9b03-ee54-5173", "hidden": false, "targetId": "1068-9b65-d819-bb26", "type": "profile"},
+          {"name": "[Allegiance]", "id": "7a7a-fc7c-fc0d-56f6", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
+          {
+            "name": "Bulky (X)",
+            "id": "5c9f-2391-2e68-4f08",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "50ad-a9a5-1f1d-9a25",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": 2}]
+          },
+          {
+            "name": "Fear (X)",
+            "id": "55be-e89d-a297-7da8",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "0ebc-0c92-2209-6393",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": 1}]
+          },
+          {
+            "name": "Vanguard (X)",
+            "id": "066e-f1ee-fa74-a9d7",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "530f-b733-993c-ec84",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "2"}]
+          },
+          {"name": "Outflank", "id": "eac5-d317-65cc-7136", "hidden": false, "targetId": "92d2-cc57-1ef6-a712", "type": "rule"},
+          {
+            "name": "Impact (X)",
+            "id": "a92a-a7ec-5ad1-70ce",
+            "comment": "S",
+            "hidden": false,
+            "targetId": "6ead-c31c-ab09-2f8c",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "S"}]
+          },
+          {"name": "Exquisite Suffering", "id": "fa85-4c71-feac-4b24", "hidden": false, "targetId": "a034-592a-3661-13a6", "type": "rule"},
+          {"name": "Hedonists", "id": "db19-a906-b7f8-546a", "hidden": false, "targetId": "9b7e-edb4-353c-3a3e", "type": "rule"},
+          {"name": "Soporific Musk", "id": "952f-2161-f211-7598", "hidden": false, "targetId": "cdb4-49d4-88d7-a2c6", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Slaaneshi Seeker",
+            "id": "5882-6271-b81a-36b7",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Cavalry Model Type", "id": "0707-03c4-c21b-5194", "hidden": false, "primary": false, "targetId": "a073-2d4a-5bed-123e"},
+              {"name": "Malefic Sub-type", "id": "2657-70ef-6346-d036", "hidden": false, "primary": false, "targetId": "2de1-ddd6-ebb4-10df"}
+            ],
+            "constraints": [
+              {"id": "4457-2352-d482-da5b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "10c7-0de5-e9a0-d9ed", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}
+            ],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 18},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+            ],
+            "entryLinks": [
+              {
+                "name": "Razorclaws",
+                "id": "74ad-d257-4e33-74ab",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "d668-6f61-deb7-adf3",
+                "type": "selectionEntry"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Slaaneshi Seeker",
+                "id": "fe2f-7b1e-4304-f73b",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Cavalry (Malefic)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "12", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "4", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "4", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "4", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "4", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "2", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "4", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "2", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "7", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "7", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "8", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "7", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "5+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "5+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  },
+                  {
+                    "comment": "Alignment mismatch",
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "ee84-02b2-5444-e62b",
+                        "childName": "Alignment mismatch",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "decrement", "value": 2},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "decrement", "value": 2},
+                      {"field": "f714-1726-37d3-44df", "type": "decrement", "value": 2},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "decrement", "value": 2}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "One may take",
+                "id": "a0b6-210e-afc5-efd3",
+                "hidden": false,
+                "sortIndex": 2,
+                "constraints": [{"id": "28ba-8000-9039-ace2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "entryLinks": [
+                  {
+                    "name": "Totem of Dominion",
+                    "id": "8ad5-8633-0f3b-c90d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "1ee5-47ae-e35a-bc86",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "6bab-2726-18e3-92fe", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "2a0a-0268-fa26-647c", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20}]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slaaneshi Fiends",
+        "id": "0cb6-8347-3729-59fc",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 204,
+        "type": "unit",
+        "categoryLinks": [{"name": "Slaanesh", "id": "f78c-d544-87a3-7561", "hidden": false, "primary": false, "targetId": "e7b7-e508-e6c9-58ba"}],
+        "entryLinks": [
+          {
+            "name": "Prime Unit",
+            "id": "909c-fa65-3e4f-8f1d",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [
+              {
+                "name": "Daemonic Prime Benefits",
+                "id": "9f1f-494b-a9da-9ef4",
+                "hidden": false,
+                "import": true,
+                "targetId": "6a33-a28e-9c63-5829",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {"name": "Slaanesh", "id": "e33d-ee7f-3cf0-86f4", "hidden": false, "targetId": "1068-9b65-d819-bb26", "type": "profile"},
+          {"name": "[Allegiance]", "id": "cdbd-8e8f-1862-e80d", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
+          {
+            "name": "Bulky (X)",
+            "id": "fa5c-90dd-517e-d3ee",
+            "comment": "4",
+            "hidden": false,
+            "targetId": "50ad-a9a5-1f1d-9a25",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "4"}]
+          },
+          {
+            "name": "Fear (X)",
+            "id": "e763-a43c-e0e1-03e6",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "0ebc-0c92-2209-6393",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": 1}]
+          },
+          {
+            "name": "Impact (X)",
+            "id": "eb7f-1149-176b-16ed",
+            "comment": "I",
+            "hidden": false,
+            "targetId": "6ead-c31c-ab09-2f8c",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "I"}]
+          },
+          {"name": "Hedonists", "id": "b922-1ffd-c099-b889", "hidden": false, "targetId": "9b7e-edb4-353c-3a3e", "type": "rule"},
+          {"name": "Soporific Musk", "id": "d703-2793-847e-2e7f", "hidden": false, "targetId": "cdb4-49d4-88d7-a2c6", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Slaaneshi Fiend",
+            "id": "e7e3-d878-301a-8797",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Infantry Model Type", "id": "3d13-fd4f-8dba-db94", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"},
+              {"name": "Malefic Sub-type", "id": "eea2-1fb1-8dfa-9ef2", "hidden": false, "primary": false, "targetId": "2de1-ddd6-ebb4-10df"}
+            ],
+            "constraints": [
+              {"id": "583f-c716-08c1-7608", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 3},
+              {"id": "53ab-5d8a-fa4e-c4f5", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+            ],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 50},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+            ],
+            "modifiers": [
+              {
+                "field": "583f-c716-08c1-7608",
+                "type": "set",
+                "value": 2,
+                "conditions": [
+                  {
+                    "childId": "5098-408b-1938-fe74",
+                    "childName": "Slaaneshi Fiendlord",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "53ab-5d8a-fa4e-c4f5",
+                "type": "set",
+                "value": 2,
+                "conditions": [
+                  {
+                    "childId": "5098-408b-1938-fe74",
+                    "childName": "Slaaneshi Fiendlord",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Slaaneshi Fiend",
+                "id": "a9ab-4d29-e048-d770",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Infantry (Malefic)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "8", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "4", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "2", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "5", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "5", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "5", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "4", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "3", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "6", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "7", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "7", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "6", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "4+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "5+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  },
+                  {
+                    "comment": "Alignment mismatch",
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "ee84-02b2-5444-e62b",
+                        "childName": "Alignment mismatch",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "decrement", "value": 2},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "decrement", "value": 2},
+                      {"field": "f714-1726-37d3-44df", "type": "decrement", "value": 2},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "decrement", "value": 2}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Great Razorclaws",
+                "id": "9f12-ca38-cb34-bee3",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "c147-da64-52d7-5ec9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "c8a3-7407-41ff-ebfb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Breaching (X)",
+                    "id": "4ada-caaf-57b9-fb5a",
+                    "comment": "6+",
+                    "hidden": false,
+                    "targetId": "b094-0b64-eb57-aed6",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "6+"}]
+                  },
+                  {
+                    "name": "Phage (X)",
+                    "id": "be43-8688-3256-b962",
+                    "comment": "WP",
+                    "hidden": false,
+                    "targetId": "3e26-d357-69d6-1341",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "WP"}]
+                  },
+                  {
+                    "name": "Rending (X)",
+                    "id": "45c0-2c3d-f7b5-1722",
+                    "comment": "6+",
+                    "hidden": false,
+                    "targetId": "167f-2a64-6e61-505b",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "6+"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Great Razorclaws",
+                    "id": "2b0b-3460-0a28-eca2",
+                    "hidden": false,
+                    "typeId": "3587-6dcd-005c-c263",
+                    "typeName": "Melee Weapon",
+                    "characteristics": [
+                      {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
+                      {"name": "AM", "$text": "+1", "typeId": "03d0-6094-84f0-e27e"},
+                      {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
+                      {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
+                      {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
+                      {"name": "Special Rules", "$text": "Rending (6+), Breaching (6+), Phage (WP)", "typeId": "ebe0-7b28-b40c-694e"},
+                      {"name": "Traits", "$text": "Immaterial", "typeId": "76e3-c188-bc65-3467"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Slaaneshi Fiendlord",
+            "id": "5098-408b-1938-fe74",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Infantry Model Type", "id": "a09f-06d8-7f4e-8884", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"},
+              {"name": "Malefic Sub-type", "id": "c4d2-d194-2648-da26", "hidden": false, "primary": false, "targetId": "2de1-ddd6-ebb4-10df"},
+              {"name": "Sergeant Model Sub-Type", "id": "fed3-9460-90a6-ca9e", "hidden": false, "primary": false, "targetId": "8045-89a4-76d4-fcef"}
+            ],
+            "constraints": [{"id": "dae9-09ba-1200-2821", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 70},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+            ],
+            "modifiers": [
+              {
+                "field": "category",
+                "type": "add",
+                "value": "5a95-e564-96b2-8dc9",
+                "conditions": [{"childId": "2c90-1d52-7075-59d3", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Slaaneshi Fiendlord",
+                "id": "362d-b43b-1057-e230",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Infantry (Sergeant, Malefic)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "8", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "4", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "2", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "5", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "5", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "5", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "4", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "4", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "7", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "7", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "7", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "6", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "4+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "5+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  },
+                  {
+                    "comment": "Alignment mismatch",
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "ee84-02b2-5444-e62b",
+                        "childName": "Alignment mismatch",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "decrement", "value": 2},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "decrement", "value": 2},
+                      {"field": "f714-1726-37d3-44df", "type": "decrement", "value": 2},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "decrement", "value": 2}
+                    ]
+                  },
+                  {
+                    "comment": "Master Sergeant",
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2c90-1d52-7075-59d3",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "253c-d694-4695-c89e", "type": "increment", "value": 1},
+                      {"field": "024e-bdb1-7982-25a0", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"arg": "Sergeant", "field": "50fc-9241-d4a2-045b", "type": "replace", "value": "Sergeant, Champion"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Great Razorclaws",
+                "id": "6dbc-6320-51c4-638d",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "a69a-a26a-0e2c-c65f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "ad47-9f98-dac2-506f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Breaching (X)",
+                    "id": "7b80-ef04-651b-894a",
+                    "comment": "6+",
+                    "hidden": false,
+                    "targetId": "b094-0b64-eb57-aed6",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "6+"}]
+                  },
+                  {
+                    "name": "Phage (X)",
+                    "id": "9adf-3c02-9bbd-3a91",
+                    "comment": "WP",
+                    "hidden": false,
+                    "targetId": "3e26-d357-69d6-1341",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "WP"}]
+                  },
+                  {
+                    "name": "Rending (X)",
+                    "id": "8d58-a784-670d-6d5b",
+                    "comment": "6+",
+                    "hidden": false,
+                    "targetId": "167f-2a64-6e61-505b",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "6+"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Great Razorclaws",
+                    "id": "c406-1ea6-0751-bca6",
+                    "hidden": false,
+                    "typeId": "3587-6dcd-005c-c263",
+                    "typeName": "Melee Weapon",
+                    "characteristics": [
+                      {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
+                      {"name": "AM", "$text": "+1", "typeId": "03d0-6094-84f0-e27e"},
+                      {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
+                      {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
+                      {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
+                      {"name": "Special Rules", "$text": "Rending (6+), Breaching (6+), Phage (WP)", "typeId": "ebe0-7b28-b40c-694e"},
+                      {"name": "Traits", "$text": "Immaterial", "typeId": "76e3-c188-bc65-3467"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Daemonettes",
+        "id": "fc92-692b-94f5-3bfa",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 205,
+        "type": "unit",
+        "categoryLinks": [{"name": "Slaanesh", "id": "0624-5066-5baf-24b4", "hidden": false, "primary": false, "targetId": "e7b7-e508-e6c9-58ba"}],
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Prime Unit",
+            "id": "957c-799c-89d8-5eed",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [
+              {
+                "name": "Daemonic Prime Benefits",
+                "id": "0d54-0dc7-51a8-62bc",
+                "hidden": false,
+                "import": true,
+                "targetId": "6a33-a28e-9c63-5829",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {"name": "[Allegiance]", "id": "492a-8e95-8df3-c815", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
+          {"name": "Slaanesh", "id": "5596-af50-10b5-574f", "hidden": false, "targetId": "1068-9b65-d819-bb26", "type": "profile"},
+          {
+            "name": "Fear (X)",
+            "id": "98dd-4210-a9d0-b14d",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "0ebc-0c92-2209-6393",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": 1}]
+          },
+          {
+            "name": "Fast (X)",
+            "id": "fb5b-a684-2dc7-42a2",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "9ebf-3b90-be22-b9c2",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {
+            "name": "Impact (X)",
+            "id": "4417-703a-cc7f-b10b",
+            "comment": "I",
+            "hidden": false,
+            "targetId": "6ead-c31c-ab09-2f8c",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "I"}]
+          },
+          {"name": "Exquisite Suffering", "id": "a02d-21d7-bfcc-ecd8", "hidden": false, "targetId": "a034-592a-3661-13a6", "type": "rule"},
+          {"name": "Hedonists", "id": "8253-df2d-b1fc-8f68", "hidden": false, "targetId": "9b7e-edb4-353c-3a3e", "type": "rule"},
+          {"name": "Soporific Musk", "id": "680a-9246-7c00-e42d", "hidden": false, "targetId": "cdb4-49d4-88d7-a2c6", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Daemonette",
+            "id": "5e72-839f-215b-1a40",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Infantry Model Type", "id": "6d1c-d26a-a0cf-bd0b", "hidden": false, "primary": false, "targetId": "594d-fa82-13cb-a345"},
+              {"name": "Malefic Sub-type", "id": "6e12-2c01-4612-5927", "hidden": false, "primary": false, "targetId": "2de1-ddd6-ebb4-10df"}
+            ],
+            "constraints": [
+              {"id": "0af0-dbca-77ae-8a45", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 10},
+              {"id": "cd12-1d23-966f-208f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 20}
+            ],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 12},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+            ],
+            "entryLinks": [
+              {
+                "name": "Razorclaws",
+                "id": "be82-1089-198d-1fc8",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "d668-6f61-deb7-adf3",
+                "type": "selectionEntry"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Daemonette",
+                "id": "64de-4cc3-5414-bed0",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Infantry (Malefic)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "7", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "4", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "4", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "4", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "3", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "1", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "4", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "2", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "7", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "7", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "8", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "7", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "5+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "5+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Combat Veterans",
+                    "type": "and",
+                    "conditions": [{"childId": "8cf8-9be5-91d6-c96d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "increment", "value": 1},
+                      {"field": "f714-1726-37d3-44df", "type": "increment", "value": 1},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "increment", "value": 1},
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "ceil", "value": 10},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "ceil", "value": 10},
+                      {"field": "f714-1726-37d3-44df", "type": "ceil", "value": 10},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "ceil", "value": 10}
+                    ]
+                  },
+                  {
+                    "comment": "Alignment mismatch",
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "ee84-02b2-5444-e62b",
+                        "childName": "Alignment mismatch",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "decrement", "value": 2},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "decrement", "value": 2},
+                      {"field": "f714-1726-37d3-44df", "type": "decrement", "value": 2},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "decrement", "value": 2}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "One may take",
+                "id": "ffef-d8d8-3fc3-6362",
+                "hidden": false,
+                "constraints": [{"id": "680e-d4c0-4958-a253", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "entryLinks": [
+                  {
+                    "name": "Totem of Dominion",
+                    "id": "2ee7-e905-da02-d40d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "1ee5-47ae-e35a-bc86",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "c8be-09c2-e683-6df1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "ad6c-5926-1152-b385", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20}]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Razorclaws",
+        "id": "d668-6f61-deb7-adf3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "77ce-8f03-036d-cdf3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "0db1-3629-2368-ac6d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {
+            "name": "Breaching (X)",
+            "id": "b5ad-4bdf-b655-7bab",
+            "comment": "6+",
+            "hidden": false,
+            "targetId": "b094-0b64-eb57-aed6",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "6+"}]
+          },
+          {
+            "name": "Phage (X)",
+            "id": "b7b8-26e5-65a1-76ed",
+            "comment": "WP",
+            "hidden": false,
+            "targetId": "3e26-d357-69d6-1341",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "WP"}]
+          },
+          {
+            "name": "Rending (X)",
+            "id": "9c82-3608-ca44-88a8",
+            "comment": "6+",
+            "hidden": false,
+            "targetId": "167f-2a64-6e61-505b",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "6+"}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Razorclaws",
+            "id": "6a38-c837-1993-ab2a",
+            "hidden": false,
+            "typeId": "3587-6dcd-005c-c263",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
+              {"name": "AM", "$text": "+1", "typeId": "03d0-6094-84f0-e27e"},
+              {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
+              {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
+              {"name": "D", "$text": "1", "typeId": "6a9d-4feb-065a-33e7"},
+              {"name": "Special Rules", "$text": "Rending (6+), Breaching (6+), Phage (WP)", "typeId": "ebe0-7b28-b40c-694e"},
+              {"name": "Traits", "$text": "Immaterial", "typeId": "76e3-c188-bc65-3467"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Keeper of Secrets",
+        "id": "ed79-0be2-d662-ef65",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 206,
+        "type": "unit",
+        "categoryLinks": [{"name": "Slaanesh", "id": "0be6-6748-3e8f-1607", "hidden": false, "primary": false, "targetId": "e7b7-e508-e6c9-58ba"}],
+        "constraints": [
+          {
+            "id": "c739-3929-2b1a-5799",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 400},
+          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Prime Unit",
+            "id": "5dcd-6453-09fe-1518",
+            "hidden": false,
+            "import": true,
+            "targetId": "3fa2-78b1-637f-7fb2",
+            "type": "selectionEntry",
+            "entryLinks": [
+              {
+                "name": "Daemonic Prime Benefits",
+                "id": "6c51-776e-76dc-e153",
+                "hidden": false,
+                "import": true,
+                "targetId": "6a33-a28e-9c63-5829",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {"name": "[Allegiance]", "id": "28e1-1537-0917-aafb", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
+          {"name": "Blissful Pain", "id": "e66b-96b8-fd63-75bd", "hidden": false, "targetId": "d67b-a21e-fea4-0c35", "type": "profile"},
+          {"name": "Psyker", "id": "26eb-e356-05a8-db2d", "hidden": false, "targetId": "0d5a-bf3a-7b46-785a", "type": "profile"},
+          {"name": "Slaanesh", "id": "53b3-67e5-dfc6-e333", "hidden": false, "targetId": "1068-9b65-d819-bb26", "type": "profile"},
+          {
+            "name": "Bulky (X)",
+            "id": "39e9-b3af-d699-3a84",
+            "comment": "7",
+            "hidden": false,
+            "targetId": "50ad-a9a5-1f1d-9a25",
+            "type": "rule",
+            "modifiers": [
+              {
+                "arg": "X",
+                "field": "name",
+                "type": "replace",
+                "value": "7",
+                "conditions": [
+                  {
+                    "childId": "dce4-2d4c-558b-2f38",
+                    "childName": "Wings",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "arg": "X",
+                "field": "name",
+                "type": "replace",
+                "value": "8",
+                "conditions": [
+                  {
+                    "childId": "dce4-2d4c-558b-2f38",
+                    "childName": "Wings",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Eternal Warrior (X)",
+            "id": "cfdb-1bdd-a51f-a618",
+            "comment": "2",
+            "hidden": false,
+            "targetId": "15b4-9e4a-f361-c5a3",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "2"}]
+          },
+          {
+            "name": "Fear (X)",
+            "id": "0404-b1e5-4401-c1ef",
+            "comment": "1",
+            "hidden": false,
+            "targetId": "0ebc-0c92-2209-6393",
+            "type": "rule",
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+          },
+          {"name": "Primal Terror", "id": "314f-d0d0-f2bc-7033", "hidden": false, "targetId": "44bb-4eee-0299-caba", "type": "rule"},
+          {"name": "Battlelust", "id": "2637-be2d-2b3d-80e1", "hidden": false, "targetId": "1406-6378-b2e6-0bc1", "type": "profile"},
+          {"name": "Hedonists", "id": "c04d-ef24-b1cc-8354", "hidden": false, "targetId": "9b7e-edb4-353c-3a3e", "type": "rule"},
+          {"name": "Soporific Musk", "id": "a414-30b4-4a1f-4b90", "hidden": false, "targetId": "cdb4-49d4-88d7-a2c6", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Keeper of Secrets",
+            "id": "2ca2-660c-cb5c-9f0d",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Paragon Model Type", "id": "c8d8-cd6f-edda-db07", "hidden": false, "primary": false, "targetId": "7799-e1d6-762b-700b"},
+              {"name": "Unique Model Sub-Type", "id": "c606-751e-2f12-e8be", "hidden": false, "primary": false, "targetId": "b980-187b-2b17-d635"},
+              {"name": "Malefic Sub-type", "id": "8c99-ca0e-8a1b-bc8b", "hidden": false, "primary": false, "targetId": "2de1-ddd6-ebb4-10df"}
+            ],
+            "constraints": [
+              {"id": "ba5b-442b-24f8-cb4d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "b0d4-807e-94fc-aa23", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "Keeper of Secrets",
+                "id": "f213-5f1c-6c3f-f359",
+                "hidden": false,
+                "typeId": "a76f-8e23-8c3e-166d",
+                "typeName": "Profile",
+                "characteristics": [
+                  {"name": "Type", "$text": "Paragon (Unique, Malefic)", "typeId": "50fc-9241-d4a2-045b"},
+                  {"name": "M", "$text": "10", "typeId": "a106-a779-d272-5e93"},
+                  {"name": "WS", "$text": "6", "typeId": "253c-d694-4695-c89e"},
+                  {"name": "BS", "$text": "6", "typeId": "0cd5-b269-e3bc-028b"},
+                  {"name": "S", "$text": "5", "typeId": "498f-dce1-59fd-d8d7"},
+                  {"name": "T", "$text": "6", "typeId": "3120-8275-e537-ecd2"},
+                  {"name": "W", "$text": "6", "typeId": "f5cc-79a3-d302-cc1d"},
+                  {"name": "I", "$text": "7", "typeId": "af9d-7db8-dc95-71c1"},
+                  {"name": "A", "$text": "6", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "LD", "$text": "10", "typeId": "02ad-ebe6-86e7-9fd6"},
+                  {"name": "CL", "$text": "11", "typeId": "9cd1-0e7c-2cd6-5f2f"},
+                  {"name": "WP", "$text": "10", "typeId": "f714-1726-37d3-44df"},
+                  {"name": "IN", "$text": "12", "typeId": "29c5-925d-5b1d-1e77"},
+                  {"name": "SAV", "$text": "2+", "typeId": "03bd-4ecb-351d-143b"},
+                  {"name": "INV", "$text": "4+", "typeId": "a951-a772-7ce0-0b64"}
+                ],
+                "modifierGroups": [
+                  {
+                    "comment": "Alignment mismatch",
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "ee84-02b2-5444-e62b",
+                        "childName": "Alignment mismatch",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ],
+                    "modifiers": [
+                      {"field": "02ad-ebe6-86e7-9fd6", "type": "decrement", "value": 2},
+                      {"field": "9cd1-0e7c-2cd6-5f2f", "type": "decrement", "value": 2},
+                      {"field": "f714-1726-37d3-44df", "type": "decrement", "value": 2},
+                      {"field": "29c5-925d-5b1d-1e77", "type": "decrement", "value": 2}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Options",
+                "id": "ac0a-9c3e-f9e9-4620",
+                "defaultSelectionEntryId": "ad07-77da-9227-7f98",
+                "hidden": false,
+                "constraints": [
+                  {"id": "a873-f24d-e178-5049", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f9ea-101d-cb64-0d29", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Shimmerblade",
+                    "id": "ad07-77da-9227-7f98",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "infoLinks": [
+                      {
+                        "name": "Critical Hit (X)",
+                        "id": "e89d-fdbc-4724-1780",
+                        "comment": "5+",
+                        "hidden": false,
+                        "targetId": "fe5a-a52a-468f-3f88",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "5+"}]
+                      },
+                      {
+                        "name": "Phage (X)",
+                        "id": "04c9-3094-c235-f6bc",
+                        "comment": "WP",
+                        "hidden": false,
+                        "targetId": "3e26-d357-69d6-1341",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "WP"}]
+                      },
+                      {
+                        "name": "Force (X)",
+                        "id": "b92f-3e07-ed35-8e27",
+                        "comment": "S",
+                        "hidden": false,
+                        "targetId": "25cd-60d0-a0a4-6b18",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "S"}]
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Shimmerblade",
+                        "id": "89e8-7fea-dd62-21f2",
+                        "hidden": false,
+                        "typeId": "3587-6dcd-005c-c263",
+                        "typeName": "Melee Weapon",
+                        "characteristics": [
+                          {"name": "IM", "$text": "I", "typeId": "6eec-4093-f946-1014"},
+                          {"name": "AM", "$text": "A", "typeId": "03d0-6094-84f0-e27e"},
+                          {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
+                          {"name": "AP", "$text": "2", "typeId": "a014-126b-3b7b-27e8"},
+                          {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
+                          {"name": "Special Rules", "$text": "Critical Hit (5+), Force (S), Phage (WP)", "typeId": "ebe0-7b28-b40c-694e"},
+                          {"name": "Traits", "$text": "Immaterial", "typeId": "76e3-c188-bc65-3467"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Shimmerspear and shield",
+                    "id": "04eb-225e-6926-e362",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "infoLinks": [
+                      {
+                        "name": "Critical Hit (X)",
+                        "id": "c3f5-7219-c9b5-ae23",
+                        "comment": "6+",
+                        "hidden": false,
+                        "targetId": "fe5a-a52a-468f-3f88",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "6+"}]
+                      },
+                      {
+                        "name": "Phage (X)",
+                        "id": "b12b-0d05-48d3-7033",
+                        "comment": "WP",
+                        "hidden": false,
+                        "targetId": "3e26-d357-69d6-1341",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "WP"}]
+                      },
+                      {
+                        "name": "Force (X)",
+                        "id": "cfd0-ad4c-b6e4-b924",
+                        "comment": "S",
+                        "hidden": false,
+                        "targetId": "25cd-60d0-a0a4-6b18",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "S"}]
+                      },
+                      {
+                        "name": "Impact (X)",
+                        "id": "8722-f226-5200-ea9b",
+                        "comment": "I",
+                        "hidden": false,
+                        "targetId": "6ead-c31c-ab09-2f8c",
+                        "type": "rule",
+                        "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "I"}]
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Shimmerspear and shield",
+                        "id": "b111-71a2-5dc7-a2f4",
+                        "hidden": false,
+                        "typeId": "3587-6dcd-005c-c263",
+                        "typeName": "Melee Weapon",
+                        "characteristics": [
+                          {"name": "IM", "$text": "+1", "typeId": "6eec-4093-f946-1014"},
+                          {"name": "AM", "$text": "-1", "typeId": "03d0-6094-84f0-e27e"},
+                          {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
+                          {"name": "AP", "$text": "2", "typeId": "a014-126b-3b7b-27e8"},
+                          {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
+                          {"name": "Special Rules", "$text": "Impact (I), Critical Hit (6+), Force (S), Phage (WP), Deflect", "typeId": "ebe0-7b28-b40c-694e"},
+                          {"name": "Traits", "$text": "Immaterial", "typeId": "76e3-c188-bc65-3467"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Deflect",
+                        "id": "c5f3-2df6-05fe-25a3",
+                        "description": "When a Weapon with this Special Rule is selected for a Model during a Challenge, the Controlling Player may select one successful Hit Test made by the opposing Player with a result of 6 and set the result to 1.",
+                        "hidden": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Psychic Disciplines",
+                "id": "6eea-6e05-5d58-7256",
+                "hidden": false,
+                "constraints": [{"id": "6fbb-8e0f-e96d-a95a", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+                "entryLinks": [
+                  {
+                    "name": "Biomancy",
+                    "id": "8605-046d-7a3e-ee81",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "7f0b-3a53-fbba-de05",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "a5fb-b943-dba9-ad7a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20}]
+                  },
+                  {
+                    "name": "Telepathy",
+                    "id": "b10c-7628-3c2e-0e87",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 3,
+                    "targetId": "13c2-f899-efef-20cb",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "342f-7d03-6a93-81e7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}]
+                  },
+                  {
+                    "name": "Enraptura",
+                    "id": "2acc-5be2-eee9-d86b",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "6aa2-27ff-e02c-4621",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "0b42-d1e0-7b82-4206", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "f875-e598-2d01-5e79", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -7331,17 +9418,33 @@
                 "field": "category",
                 "type": "add",
                 "value": "ee84-02b2-5444-e62b",
-                "conditions": [
+                "conditionGroups": [
                   {
-                    "childId": "ae2f-1378-9622-a874",
-                    "childName": "Tzeench",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "ae2f-1378-9622-a874",
+                        "childName": "Tzeench",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e7b7-e508-e6c9-58ba",
+                        "childName": "Slaanesh",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -7418,17 +9521,33 @@
                 "field": "category",
                 "type": "add",
                 "value": "ee84-02b2-5444-e62b",
-                "conditions": [
+                "conditionGroups": [
                   {
-                    "childId": "ae2f-1378-9622-a874",
-                    "childName": "Tzeench",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "ae2f-1378-9622-a874",
+                        "childName": "Tzeench",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e7b7-e508-e6c9-58ba",
+                        "childName": "Slaanesh",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -7603,6 +9722,29 @@
                     ]
                   }
                 ]
+              },
+              {
+                "field": "category",
+                "type": "add",
+                "value": "ee84-02b2-5444-e62b",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "e7b7-e508-e6c9-58ba",
+                        "childName": "Slaanesh",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "rules": [
@@ -7770,17 +9912,33 @@
                 "field": "category",
                 "type": "add",
                 "value": "ee84-02b2-5444-e62b",
-                "conditions": [
+                "conditionGroups": [
                   {
-                    "childId": "ae2f-1378-9622-a874",
-                    "childName": "Tzeench",
-                    "field": "selections",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "ae2f-1378-9622-a874",
+                        "childName": "Tzeench",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e7b7-e508-e6c9-58ba",
+                        "childName": "Slaanesh",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
