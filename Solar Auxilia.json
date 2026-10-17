@@ -32793,74 +32793,13 @@
                   {
                     "name": "Breaching shotgun",
                     "id": "a7ff-34e3-c302-9ee0",
+                    "defaultAmount": "1",
                     "hidden": false,
                     "import": true,
                     "sortIndex": 1,
                     "targetId": "7285-3e58-f523-d2b0",
                     "type": "selectionEntry",
                     "constraints": [{"id": "1df0-8be7-f04b-e989", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "field": "4fb1-6c3d-1b0f-0009",
-                    "type": "increment",
-                    "value": 1,
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {
-                            "childId": "f880-af00-3aa5-0f97",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "9a13-cc56-7e4e-7b3d",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          },
-                          {
-                            "childId": "7a7f-abd5-55f5-3339",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "9a13-cc56-7e4e-7b3d",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "field": "26f7-1cd0-8cc4-c5c8",
-                    "type": "increment",
-                    "value": 1,
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {
-                            "childId": "f880-af00-3aa5-0f97",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "9a13-cc56-7e4e-7b3d",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          },
-                          {
-                            "childId": "7a7f-abd5-55f5-3339",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "9a13-cc56-7e4e-7b3d",
-                            "shared": true,
-                            "type": "atLeast",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
                   }
                 ],
                 "selectionEntries": [
@@ -32908,56 +32847,37 @@
                         ]
                       }
                     ]
-                  }
-                ],
-                "selectionEntryGroups": [
+                  },
                   {
                     "name": "Laspistol and Charnable Tabar",
-                    "id": "2853-6935-d633-6168",
+                    "id": "24fa-ec5a-0d69-7a89",
                     "hidden": false,
-                    "sortIndex": 2,
-                    "constraints": [{"id": "5f82-b040-01f8-bdf1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}],
-                    "modifiers": [
-                      {
-                        "field": "5f82-b040-01f8-bdf1",
-                        "type": "set",
-                        "value": 2,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "7285-3e58-f523-d2b0",
-                                "childName": "Breaching shotgun",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "equalTo",
-                                "value": 0
-                              },
-                              {
-                                "childId": "3031-e7c0-9e46-e788",
-                                "childName": "Storm Maul and Boarding Shield",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "parent",
-                                "shared": true,
-                                "type": "equalTo",
-                                "value": 0
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
+                    "import": true,
+                    "type": "upgrade",
                     "selectionEntryGroups": [
+                      {
+                        "name": "Pistol",
+                        "id": "7a7f-abd5-55f5-3339",
+                        "defaultSelectionEntryId": "951f-aa3f-4612-e6fe",
+                        "hidden": false,
+                        "constraints": [
+                          {"id": "9846-26ea-a81a-c9af", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                          {"id": "b8c0-98b6-ad49-ff81", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                        ],
+                        "entryLinks": [
+                          {"name": "Laspistol", "id": "951f-aa3f-4612-e6fe", "hidden": false, "import": true, "targetId": "3104-0111-4490-bf84", "type": "selectionEntry"},
+                          {"name": "Auxilia Pistols", "id": "6097-13ce-a379-ff69", "hidden": false, "import": true, "targetId": "22a3-5b09-13b0-2624", "type": "selectionEntryGroup"}
+                        ]
+                      },
                       {
                         "name": "Melee",
                         "id": "f880-af00-3aa5-0f97",
                         "defaultSelectionEntryId": "1183-2877-594f-4915",
                         "hidden": false,
-                        "constraints": [{"id": "07a3-821b-11d1-5450", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                        "constraints": [
+                          {"id": "07a3-821b-11d1-5450", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                          {"id": "c2b3-d37b-3674-dea5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                        ],
                         "entryLinks": [
                           {"name": "Charnabal tabar", "id": "1183-2877-594f-4915", "hidden": false, "import": true, "targetId": "1580-e085-cb65-6e80", "type": "selectionEntry"},
                           {
@@ -32968,18 +32888,6 @@
                             "targetId": "012b-9848-784b-3663",
                             "type": "selectionEntryGroup"
                           }
-                        ]
-                      },
-                      {
-                        "name": "Pistol",
-                        "id": "7a7f-abd5-55f5-3339",
-                        "defaultSelectionEntryId": "951f-aa3f-4612-e6fe",
-                        "hidden": false,
-                        "sortIndex": 1,
-                        "constraints": [{"id": "9846-26ea-a81a-c9af", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                        "entryLinks": [
-                          {"name": "Laspistol", "id": "951f-aa3f-4612-e6fe", "hidden": false, "import": true, "targetId": "3104-0111-4490-bf84", "type": "selectionEntry"},
-                          {"name": "Auxilia Pistols", "id": "6097-13ce-a379-ff69", "hidden": false, "import": true, "targetId": "22a3-5b09-13b0-2624", "type": "selectionEntryGroup"}
                         ]
                       }
                     ]
