@@ -40752,32 +40752,6 @@
                 ]
               },
               {
-                "field": "hidden",
-                "type": "set",
-                "value": false,
-                "conditionGroups": [
-                  {
-                    "comment": "TS",
-                    "type": "and",
-                    "conditions": [
-                      {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
-                      {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1},
-                      {
-                        "childId": "597e-83d8-32e1-8eaa",
-                        "childName": "Traitor",
-                        "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
                 "field": "a5fd-9f7e-7308-3285",
                 "type": "increment",
                 "value": 1,
@@ -40825,6 +40799,205 @@
                         "shared": true,
                         "type": "equalTo",
                         "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "comment": "Traitor Legions Only",
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditionGroups": [
+                          {
+                            "comment": "DA",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "EC",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "IW",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "WS",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "SW",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "WS",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "IF",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "NL",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "BA",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "IH",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "WE",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "UM",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "DG",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "TS",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "SH",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "WB",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "SL",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "RG",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "AL",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "Blackshields",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          },
+                          {
+                            "comment": "Shattered Legions",
+                            "type": "and",
+                            "conditions": [
+                              {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "childId": "597e-83d8-32e1-8eaa",
+                        "childName": "Traitor",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
                       }
                     ]
                   }
