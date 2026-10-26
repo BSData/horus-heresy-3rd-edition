@@ -2204,21 +2204,6 @@
               {"id": "5c68-fe5e-4677-b70b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 14}
             ],
             "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15}],
-            "entryLinks": [
-              {
-                "name": "Bolt pistol",
-                "id": "ad17-9da2-48cc-a817",
-                "hidden": false,
-                "sortIndex": 1,
-                "targetId": "2942-f783-d627-33c5",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "3ba3-822e-4b0a-b206", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "8e5f-e8c8-419c-b1bf", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "name", "type": "set", "value": "Two bolt pistols"}]
-              }
-            ],
             "profiles": [
               {
                 "name": "Ravager",
@@ -2310,41 +2295,148 @@
                 ]
               },
               {
-                "name": "For every five Models in this Unit, one Ravager may have one bolt pistol exchanged for ",
-                "id": "96d4-b3e6-4214-8b29",
+                "name": "Ranged Options",
+                "id": "f3e2-2a87-52cd-71dc",
+                "defaultSelectionEntryId": "a983-8b80-3c7e-b66b",
                 "hidden": false,
-                "sortIndex": 3,
-                "constraints": [{"id": "2e25-8451-4913-b971", "field": "selections", "scope": "unit", "shared": true, "type": "max", "value": 0}],
-                "entryLinks": [
+                "sortIndex": 1,
+                "constraints": [
+                  {"id": "013f-639f-b3db-c9ed", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "53d6-c8a4-67df-63f6", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "selectionEntries": [
                   {
-                    "name": "Thunder hammer",
-                    "id": "c979-6f56-4a84-93bb",
+                    "name": "Two Bolt pistols",
+                    "id": "a983-8b80-3c7e-b66b",
                     "hidden": false,
                     "import": true,
-                    "sortIndex": 2,
-                    "targetId": "4338-dbe9-1e94-7e6d",
-                    "type": "selectionEntry",
-                    "constraints": [{"id": "dec5-356d-481e-86be", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15}]
-                  },
-                  {
-                    "name": "Destroyer Missile Launcher",
-                    "id": "ce34-2b4e-32b4-0cfa",
-                    "hidden": false,
-                    "import": true,
-                    "sortIndex": 1,
-                    "targetId": "bcb8-e658-5a0e-0c1a",
-                    "type": "selectionEntry",
-                    "constraints": [{"id": "7e69-cfcc-2b10-752f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15}]
+                    "type": "upgrade",
+                    "constraints": [{"id": "2e42-e07e-5a35-1182", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "entryLinks": [
+                      {
+                        "name": "Bolt pistol",
+                        "id": "ad17-9da2-48cc-a817",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "2942-f783-d627-33c5",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "3ba3-822e-4b0a-b206", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "8e5f-e8c8-419c-b1bf", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ]
+                      }
+                    ]
                   }
                 ],
-                "modifiers": [
+                "selectionEntryGroups": [
                   {
-                    "field": "2e25-8451-4913-b971",
-                    "type": "increment",
-                    "value": 1,
-                    "repeats": [{"childId": "model", "field": "selections", "includeChildSelections": true, "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
+                    "name": "For every five Models in this Unit, one Ravager may have ",
+                    "id": "96d4-b3e6-4214-8b29",
+                    "hidden": false,
+                    "constraints": [
+                      {"id": "2e25-8451-4913-b971", "field": "selections", "scope": "unit", "shared": true, "type": "max", "value": 0},
+                      {"id": "314e-851e-5369-83cd", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "2e25-8451-4913-b971",
+                        "type": "increment",
+                        "value": 1,
+                        "repeats": [{"childId": "model", "field": "selections", "includeChildSelections": true, "repeats": 1, "roundUp": false, "scope": "unit", "shared": true, "value": 5}]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "name": "One Bolt pistol and One Destroyer missile launcher",
+                        "id": "c3d3-8fe2-363c-7516",
+                        "hidden": false,
+                        "import": true,
+                        "sortIndex": 1,
+                        "type": "upgrade",
+                        "constraints": [{"id": "d068-e183-6295-23a8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                        "costs": [
+                          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15},
+                          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Destroyer Missile Launcher",
+                            "id": "b08c-8305-4e5d-0cb6",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "bcb8-e658-5a0e-0c1a",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {"id": "6bac-cec4-1479-cf01", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                              {"id": "d5a7-edc3-368c-6e78", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                            ]
+                          },
+                          {
+                            "name": "Bolt pistol",
+                            "id": "96a3-cfc3-1db2-ff44",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "2942-f783-d627-33c5",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {"id": "ae13-248d-9551-0b8b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                              {"id": "f403-c741-e4a8-d3c2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "One Bolt pistol and one Thunder hammer",
+                        "id": "873f-fa77-1055-eccb",
+                        "hidden": false,
+                        "import": true,
+                        "sortIndex": 2,
+                        "type": "upgrade",
+                        "constraints": [{"id": "3f0c-b81a-a357-1a8c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                        "costs": [
+                          {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 15},
+                          {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+                          {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+                          {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+                          {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+                          {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+                          {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+                          {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0}
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Thunder hammer",
+                            "id": "1d5e-114c-4208-ffca",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "4338-dbe9-1e94-7e6d",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {"id": "f9af-d4c2-ce51-7530", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                              {"id": "3bdc-b553-1a1f-ca9b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                            ]
+                          },
+                          {
+                            "name": "Bolt pistol",
+                            "id": "4680-1fbe-3d4b-d809",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "2942-f783-d627-33c5",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {"id": "664b-5f05-a16b-5f23", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                              {"id": "8d46-8f66-84e3-8f6a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2367,19 +2459,6 @@
             ],
             "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0}],
             "entryLinks": [
-              {
-                "name": "Bolt pistol",
-                "id": "5ca2-a6f6-47e4-b247",
-                "hidden": false,
-                "sortIndex": 1,
-                "targetId": "2942-f783-d627-33c5",
-                "type": "selectionEntry",
-                "constraints": [
-                  {"id": "83a5-bb7f-48c9-8a9f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "51b2-38b6-4c03-8335", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "name", "type": "set", "value": "Two bolt pistols"}]
-              },
               {
                 "name": "Melta bombs",
                 "id": "4b8c-b996-470d-b14c",
@@ -2479,6 +2558,34 @@
                       {"field": "024e-bdb1-7982-25a0", "type": "increment", "value": 1},
                       {"field": "02ad-ebe6-86e7-9fd6", "type": "increment", "value": 1},
                       {"arg": "Sergeant", "field": "50fc-9241-d4a2-045b", "type": "replace", "value": "Sergeant, Champion"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Two Bolt pistols",
+                "id": "edaa-ab70-ae62-11c7",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "ea3d-cc81-068c-b3ee", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "7139-149e-fa9c-d9fa", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Bolt pistol",
+                    "id": "5ca2-a6f6-47e4-b247",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2942-f783-d627-33c5",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "83a5-bb7f-48c9-8a9f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                      {"id": "51b2-38b6-4c03-8335", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
                     ]
                   }
                 ]
